@@ -1,5 +1,13 @@
 prose:
-	metadata:
+rooturl: '_posts'
+  siteurl: 'http://maskard.linuxpl.info/'
+  relativeLinks: 'http://maskarad.linuxpl.info'
+  media: 'media'
+  ignore:
+    - index.md
+    - _config.yml
+    - css	
+metadata:
 		_posts:
 			- name: "date"
   				field:
