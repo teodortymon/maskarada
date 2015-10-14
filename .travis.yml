@@ -8,6 +8,7 @@ addons:
 #    - ubuntu-toolchain-r-test
     packages:
     - lftp
+LOOOOOOOOOL
 fdsfdsfsdf
 
 #before_install:
@@ -24,4 +25,5 @@ env:
 script: bundle exec jekyll build
 
 after_success: lftp -c "open -u maskarad,tmfev2101 s84.vdl.pl; set ftp:ssl-allow off; mirror -R /home/travis/build/skonina/maskarada_jekyll/_site /domains/maskarad.linuxpl.info/public_html"
+
 
