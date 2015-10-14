@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.1
+env:
+  global:
+  - secure: F9tRCe2AZqJSG8HDHcbsFXM7YLF+lXGRe3p2hKZ7eFCVq38JZW9whfozEWfQDlue/33Z$
+  - secure: StkRj8XvYVcVeXXtZqV2jeYIJG4UB1jKWRWSO97M6RVXcgrmsocUDPhgesefu79uu2+9$
+  - secure: sWuKpS8yKWQVjfoPrpVtWRg/EYCr+qQltLTGppnVINOl15MjcbcFwFJ0kwxSBWaJr8Dj$
+  - secure: eMSI1+0Uf9sJ2m/RtlC3azR3egQqtM6Ay71eROIomLzAFYV7wYToYKDwTSLvMxtL2r0K$
+
+script: bundle exec jekyll build
+
+after_success: lftp -c "open -u $DEPLOY_USERNAME,$DEPLOY_PASSWORD $DEPLOY_HOST; set ssl:verify-certificate no; mirror -R ${HOME}/_site/ $DEPLOY_DIR"
+
