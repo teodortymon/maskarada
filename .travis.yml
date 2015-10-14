@@ -18,7 +18,7 @@ env:
   - secure: sWuKpS8yKWQVjfoPrpVtWRg/EYCr+qQltLTGppnVINOl15MjcbcFwFJ0kwxSBWaJr8Dj$
   - secure: eMSI1+0Uf9sJ2m/RtlC3azR3egQqtM6Ay71eROIomLzAFYV7wYToYKDwTSLvMxtL2r0K$
 
-script: bundle exec jekyll build
+script: scripts/cibuild
 
 after_success: lftp -c "open -u maskarad,tmfev2101 s84.vdl.pl; set ftp:ssl-allow off; mirror -R /home/travis/build/skonina/maskarada_jekyll/_site /domains/maskarad.linuxpl.info/public_html"
 
