@@ -1,4 +1,5 @@
 language: ruby
+cache: bundler
 rvm:
 - 2.1
 addons:
@@ -10,7 +11,6 @@ addons:
 # - sudo apt-get update -qq
 #  - sudo apt-get install -y lftp
 
-cache:bundler
 
 env:
   global:
