@@ -1,7 +1,9 @@
 language: ruby
+
 cache:
-	- bundler
-	- apt
+- bundler
+- apt
+
 rvm: 2.1
 addons:
   apt:
