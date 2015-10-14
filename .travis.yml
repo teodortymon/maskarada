@@ -23,5 +23,5 @@ env:
 
 script: bundle exec jekyll build
 
-after_success: lftp -c "open -u $DEPLOY_USERNAME,$DEPLOY_PASSWORD $DEPLOY_HOST; set ssl:verify-certificate no; mirror -R /home/travis/build/skonina/maskarada_jekyll/_site $DEPLOY_DIR"
+after_success: lftp -c "open -u $DEPLOY_USERNAME,$DEPLOY_PASSWORD $DEPLOY_HOST; set ftp:ssl-allow off; mirror -R /home/travis/build/skonina/maskarada_jekyll/_site $DEPLOY_DIR"
 
