@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Welcome to Jekyll!"
-date: {}
+date: 
+  "Wed Jun 10 2015 02:00:00 GMT+0200 (CEST)": null
 categories: jekyll update
 published: true
 ---
+
 
 
 NAKURWIAM WĘGORZA, NANANAANANN!
