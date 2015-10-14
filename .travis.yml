@@ -18,8 +18,8 @@ env:
   - secure: sWuKpS8yKWQVjfoPrpVtWRg/EYCr+qQltLTGppnVINOl15MjcbcFwFJ0kwxSBWaJr8Dj$
   - secure: eMSI1+0Uf9sJ2m/RtlC3azR3egQqtM6Ay71eROIomLzAFYV7wYToYKDwTSLvMxtL2r0K$
 
-script: .script/cibuild
+script: ./script/cibuild
 
-after_success: .script/cideploy
+after_success: ./script/cideploy
 
 
