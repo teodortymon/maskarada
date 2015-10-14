@@ -1,19 +1,12 @@
 prose:
 rooturl: '_posts'
-  siteurl: 'http://maskard.linuxpl.info/'
+  siteurl: 'http://maskarad.linuxpl.info/'
   relativeLinks: 'http://maskarad.linuxpl.info'
   media: 'media'
   ignore:
     - index.md
     - _config.yml
     - css	
-metadata:
-		_posts:
-			- name: "date"
-  				field:
-    				element: "text"
-    				label: "Date"
-    				value: "CURRENT_DATETIME"
 
 
 
