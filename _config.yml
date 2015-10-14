@@ -10,5 +10,15 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+
+prose:
+  metadata:
+    _posts:
+      - name: "date"
+  				field:
+    			element: "text"
+    			label: "Date"
+    			value: "CURRENT_DATETIME"
+
 # Build settings
 markdown: kramdown
