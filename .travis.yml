@@ -2,9 +2,14 @@ language: ruby
 rvm:
 - 2.1
 addons:
-	apt:
-		packages:
-			- lftp
+  apt:
+    sources:
+    - deadsnakes
+    - ubuntu-toolchain-r-test
+    packages:
+    - cmake
+    - time
+
 
 #before_install:
 # - sudo apt-get update -qq
