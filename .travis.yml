@@ -10,6 +10,8 @@ addons:
 # - sudo apt-get update -qq
 #  - sudo apt-get install -y lftp
 
+cache:bundler
+
 env:
   global:
   - secure: F9tRCe2AZqJSG8HDHcbsFXM7YLF+lXGRe3p2hKZ7eFCVq38JZW9whfozEWfQDlue/33Z$
