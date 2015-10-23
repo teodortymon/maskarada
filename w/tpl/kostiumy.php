@@ -1,7 +1,7 @@
 ---
 layout: w
 ---
-<a href="kostiumy" class="button2">Powrót</a>
+<a href="kostiumy.php" class="button2">Powrót</a>
 <h2><?php echo $this->group["group"]; ?></h2>
 
 <ul class="lista-kostiumow">
