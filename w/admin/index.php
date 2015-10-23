@@ -40,8 +40,9 @@ switch($cmd)
 		break;
 }
 
-
+include "tpl/header.php";
 $Page->display();
+include "tpl/footer.php";
 
 
 ?>
