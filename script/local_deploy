@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e # halt script on error
+lftp -c "open -u maskarad,tmfev2101 s84.vdl.pl; set ftp:ssl-allow off; mirror -R /media/removable/SD/Dev/maskarada_jekyll/_site /domains/maskarad.linuxpl.info/public_html"
