@@ -1,7 +1,7 @@
 ---
 layout: w
 ---
-
+<?php include "config.php"; ?>
 <h2>Kostiumy</h2>
 
 <ul class="lista-grup">

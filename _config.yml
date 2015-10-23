@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://maskarad.linuxpl.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-exclude: [vendor]
+exclude: [vendor, w/costumes]
 
 # Build settings
 markdown: kramdown

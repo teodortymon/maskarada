@@ -1,7 +1,7 @@
 ---
 layout: w
 ---
-
+<?php include "config.php"; ?>
 <a href="kostiumy" class="button2">Powrót</a>
 <h2><?php echo $this->group["group"]; ?></h2>
 
