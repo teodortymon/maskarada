@@ -1,18 +1,34 @@
----
-layout: w
----
-<?php include "config.php"; ?>
-<a href="kostiumy" class="button2">Powrót</a>
-<h2><?php echo $this->group["group"]; ?></h2>
+<?php
 
-<ul class="lista-kostiumow">
-<?php foreach($this->photos as $photo): ?>
+error_reporting(E_ALL);
+ini_set('display_errors','On');
 
-<li><a href="costumes/large/<?php echo $photo["id"];?>.jpg" rel="group">
-	<img src="costumes/thumb/<?php echo $photo["id"];?>.jpg" alt="<?php echo $photo["name"];?>" />
-	<?php echo $photo["name"];?>
-	</a>
-</li>
+function __autoload($class){
+	include "classes/$class.class.php";
+}
 
-<?php endforeach; ?>
-</ul>
+
+include "config.php";
+$Page=new Page();
+
+$Page->setContent(new ContentKostiumy());
+
+$Page->display();
+
+
+?>
+
+<!--<a href="kostiumy.php" class="button2">Powrót</a>-->
+<!--<h2><?php echo $this->group["group"]; ?></h2>-->
+
+<!--<ul class="lista-kostiumow">-->
+<!--<?php foreach($this->photos as $photo): ?>-->
+
+<!--<li><a href="costumes/large/<?php echo $photo["id"];?>.jpg" rel="group">-->
+<!--	<img src="costumes/thumb/<?php echo $photo["id"];?>.jpg" alt="<?php echo $photo["name"];?>" />-->
+<!--	<?php echo $photo["name"];?>-->
+<!--	</a>-->
+<!--</li>-->
+
+<!--<?php endforeach; ?>-->
+<!--</ul>-->

@@ -1,7 +1,6 @@
 ---
 layout: w
 ---
-
 <h2>Kostiumy</h2>
 
 <ul class="lista-grup">
