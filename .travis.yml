@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
     - ncftp
+		- lftp
 env:
   global:
   - secure: F9tRCe2AZqJSG8HDHcbsFXM7YLF+lXGRe3p2hKZ7eFCVq38JZW9whfozEWfQDlue/33Z$
