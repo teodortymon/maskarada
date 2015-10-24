@@ -4,6 +4,7 @@ published: true
 ---
 
 
+
 ## Repertuar  
 
 <br />
@@ -33,6 +34,8 @@ w pięknej Wielkiej Sali Centralnej Biblioteki Rolniczej przy Krakowskim Przedmi
 <br />  
 
 ## Grudzień
+
+6.12 niedziela - Elfy i fabryka prezentów - godz. 12:30
 
 7.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 
