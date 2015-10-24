@@ -4,22 +4,24 @@ published: true
 ---
 
 
+
 ## Repertuar  
 
 <br />
 
 **Szanowni widzowie!**  
-Z przyjemnością informujemy o wznowieniu przestawień Teatru Maskarada  
+Z przyjemnością informujemy o wznowieniu przestawień Teatru Maskarada
 w pięknej Wielkiej Sali Centralnej Biblioteki Rolniczej przy Krakowskim Przedmieściu 66.
 <br /><br />
 
 ## Listopad
 
-8.11 niedziela - Calineczka - godz. 12:30  
+8.11 niedziela - **Calineczka** - godz. 12:30  
 
-9.11 poniedziałek - Calineczka - godz. 11:00  
+9.11 poniedziałek - **Calineczka** - godz. 11:00  
 
 10.11 wtorek - Księżniczka na ziarnku grochu - godz. 11:00  
+<sub>(spektakl dla grup zorganizowanych, rezerwacja telefoniczna)</sub>
 
 11.11 środa - Księżniczka na ziarnku grochu - godz. 12:30  
 
@@ -33,6 +35,8 @@ w pięknej Wielkiej Sali Centralnej Biblioteki Rolniczej przy Krakowskim Przedmi
 <br />  
 
 ## Grudzień
+
+6.12 niedziela - Elfy i fabryka prezentów - godz. 12:30
 
 7.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 
