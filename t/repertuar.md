@@ -5,6 +5,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 <br />
@@ -18,9 +19,7 @@ w pięknej Wielkiej Sali Centralnej Biblioteki Rolniczej przy Krakowskim Przedmi
 
 8.11 niedziela - Calineczka - godz. 12:30  
 
-9.11 poniedziałek - Calineczka - godz. 11:00  
-
-10.11 wtorek - Księżniczka na ziarnku grochu - godz. 11:00  
+9.11 poniedziałek - Księżniczka na ziarnku grochu - godz. 11:00  
 
 11.11 środa - Księżniczka na ziarnku grochu - godz. 12:30  
 
