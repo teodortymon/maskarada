@@ -10,7 +10,7 @@ published: true
 
 <br />
 
-#**Szanowni widzowie!**
+**Szanowni widzowie!**
 
 Z radością informujemy o wznowieniu przestawień Teatru Maskarada
 
