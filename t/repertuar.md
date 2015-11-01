@@ -10,11 +10,11 @@ published: true
 
 <br />
 
-**Szanowni widzowie!**
+**Szanowni widzowie!
 
-Z radością informujemy o wznowieniu przestawień Teatru Maskarada
+z radością informujemy o wznowieniu przestawień Teatru Maskarada
 
-w pięknej Sali Wielkiej Centralnej Biblioteki Rolniczej przy Krakowskim Przedmieściu 66.
+w pięknej Sali Wielkiej Centralnej Biblioteki Rolniczej przy Krakowskim Przedmieściu 66**
 <br /><br />
 
 ## Listopad
