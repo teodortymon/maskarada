@@ -14,7 +14,7 @@ published: true
 
 Z przyjemnością informujemy o wznowieniu przestawień Teatru Maskarada
 
-w pięknej Wielkiej Sali Centralnej Biblioteki Rolniczej przy Krakowskim Przedmieściu 66.
+w pięknej Sali Wielkiej Centralnej Biblioteki Rolniczej przy Krakowskim Przedmieściu 66.
 <br /><br />
 
 ## Listopad
