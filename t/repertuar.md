@@ -6,6 +6,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 <br />
@@ -27,15 +28,22 @@ w pięknej Sali Wielkiej Centralnej Biblioteki Rolniczej przy Krakowskim Przedmi
 
 15.11 niedziela - Księżniczka na ziarnku grochu - godz. 12:30  
 
-16.11 poniedziałek - Kuba i Buba czyli awantura do kwadratu - godz. 11:00  
+<s>16.11 poniedziałek - Kuba i Buba czyli awantura do kwadratu - godz. 11:00</s>  
+<small>przedstawienie odwołane</small>
 
-24.11 wtorek - Elfy i fabryka prezentów - godz. 11:00  
+23.11 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 
 30.11 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 <br />  
 
 ## Grudzień
 
+6.12 niedziela - Elfy i fabryka prezentów - godz. 12:30 
+
 7.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 
 8.12 wtorek - Elfy i fabryka prezentów - godz. 12:00
+
+13.12 niedziela - Elfy i fabryka prezentów - godz. 12:30 
+
+14.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
