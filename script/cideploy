@@ -3,5 +3,6 @@
 #lftp -c "open -u maskarad,tmfev2101 s84.vdl.pl; set ftp:ssl-allow off; mirror --reverse --only-newer --verbose /home/travis/build/skonina/maskarada_jekyll/_site/t /domains/maskarad.linuxpl.info/public_html/t"
 #lftp -c "open -u maskarad,tmfev2101 s84.vdl.pl; set ftp:ssl-allow off; mirror --reverse --verbose /home/travis/build/skonina/maskarada_jekyll/_site /domains/maskarada.waw.pl/public_html"
 #ncftpput -R -v -z -u maskarad -p tmfev2101 s84.vdl.pl /domains/maskarada.waw.pl/public_html/ /home/travis/build/skonina/maskarada_jekyll/_site/
-ncftpput -z -u maskarad -p tmfev2101 s84.vdl.pl /domains/maskarada.waw.pl/public_html/t /home/travis/build/skonina/maskarada_jekyll/_site/t/*
-ncftpput -z -u maskarad -p tmfev2101 s84.vdl.pl /domains/maskarada.waw.pl/public_html/w /home/travis/build/skonina/maskarada_jekyll/_site/w/*
+ncftpput -z -u maskarad -p tmfev2101 ftp.maskarad.linuxpl.info /domains/maskarada.waw.pl/public_html/t /home/travis/build/skonina/maskarada_jekyll/_site/t/*
+ncftpput -z -u maskarad -p tmfev2101 ftp.maskarad.linuxpl.info /domains/maskarada.waw.pl/public_html/w /home/travis/build/skonina/maskarada_jekyll/_site/w/*
+ncftpput -z -u maskarad -p tmfev2101 ftp.maskarad.linuxpl.info /domains/maskarada.waw.pl/public_html/ /home/travis/build/skonina/maskarada_jekyll/_site/index.html
