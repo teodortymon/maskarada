@@ -6,11 +6,12 @@ published: true
 
 
 
+
 ## Repertuar  
 
 <br />
 
-Szanowni widzowie!
+Szanowni Widzowie!
 
 z radością informujemy o wznowieniu przestawień Teatru Maskarada
 
