@@ -4,27 +4,6 @@ published: true
 ---
 
 
-<script type="text/javascript">
-//    $(document).ready(function(){
-//        if ($.cookie('hello')) {
-//            // don't fire the modal
-//            //if cookie is not set
-//        }else{
-//        $.fancybox({
-//        href : 'lay/img/plakat_big.jpg'
-//            });
-//        // set the cookie so the modal doesn't open again
-//        $.cookie('hello', 'foo', { expires: 1 });
-//        }
-//    });
-</script>
-
-<br />
-<h2 style="text-shadow: 2px 2px rgba(212, 235, 30, 0.74)"><ul class="photos">
-
-<br /><br />
-
-<br />
 
 <br />
 <h2 style="text-shadow: 2px 2px rgba(255, 42, 206, 0.58)"><ul class="photos">Kuba i Buba,<br />czyli awantura do kwadratu</ul></h2>
