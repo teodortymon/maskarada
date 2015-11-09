@@ -1,13 +1,11 @@
 ---
 layout: t
+published: true
 ---
+
 <!--<h1>Warsztaty</h1>-->
 <!--<br /><br />-->
-<!--<h2 style="text-shadow: 2px 2px rgba(212, 235, 30, 0.74)"><ul class="photos">Warsztaty teatralne po angielsku</ul></h2>-->
-
-<!--Nauka angielskiego na Ursynowie, niedaleko metra Stokłosy.<br /> Grupy 4-6 osób.-->
-<!--Zapraszamy dzieci w wieku 6-12 lat. <br />Zajęcia w weekendy w grupach dla początkujących i zaawansowanych.<br />-->
-<!--Kontakt i zapisy:  tel. 605 235 732-->
+<!--<h2 style="text-shadow: 2px 2px rgba(212, 235, 30, 0.74)"><ul class="photos">-->
 
 <!--<br /><br /><br /><br />-->
 
