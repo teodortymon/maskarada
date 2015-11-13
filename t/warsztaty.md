@@ -22,5 +22,5 @@ Zapraszamy dzieci w wieku od 3 lat.
 
 <h2 style="text-shadow: 2px 2px rgba(30, 235, 140, 0.74)"><ul class="photos">Teatr tańca dla dzieci</ul></h2>
 
-Zapraszamy na warsztaty taneczno-teatralne łączące elementy improwizacji teatralnej, działań w przestrzeni, zabawy ruchem i dźwiękiem oraz tańca współczesnego i jazzowego. Dzieci poznają magiczny świat teatru oraz nauczą się pracy głosem i ciałem. Każde zajęcia są zamkniętą formą warsztatową.   Zapraszamy zarówno na pojedyncze spotkania jak i na cykl zajęć.  
+Zapraszamy na warsztaty taneczno-teatralne łączące elementy improwizacji teatralnej, działań w przestrzeni, zabawy ruchem i dźwiękiem oraz tańca współczesnego i jazzowego. Dzieci poznają magiczny świat teatru oraz nauczą się pracy głosem i ciałem. Każde zajęcia są zamkniętą formą warsztatową.  <br />Zapraszamy zarówno na pojedyncze spotkania jak i na cykl zajęć.  
 Warsztaty kierujemy do dzieci w wieku 3-6 i 7-14 lat.
