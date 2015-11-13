@@ -7,7 +7,8 @@ published: true
 ## Kontakt
 
 **Adres**  
-Warszawa, Krakowskie Przedmieście 66 
+Warszawa, Krakowskie Przedmieście 66
+
 (Sala Wielka, Centralna Biblioteka Rolnicza)  
 
 **Rezerwacja biletów**  
