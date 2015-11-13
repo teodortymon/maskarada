@@ -1,11 +1,14 @@
 ---
 layout: t
+published: true
 ---
+
 
 ## Kontakt
 
 **Adres**  
-Ulica Krakowskie Przedmieście 66 (CBR)  
+Warszawa, Krakowskie Przedmieście 66 
+(Sala Wielka, Centralna Biblioteka Rolnicza)  
 
 **Rezerwacja biletów**  
 tel. 501 027 278  
