@@ -13,7 +13,7 @@ Kasa biletowa otwarta jest na godzinę przed spektaklem w teatrze
 Płatność w kasie tylko gotówką  
 
 Rezerwacji biletów można dokonać telefonicznie pod numerem:  
-501 027 278 lub www.ebilet.pl
+501 027 278 lub [www.ebilet.pl](https://www.ebilet.pl/szukaj.php?t=t&tid=18979 "www.ebilet.pl")
 
 **Szkoły i przedszkola/cena biletu grupowego - 25 zł**  
 
