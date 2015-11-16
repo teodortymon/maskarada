@@ -23,14 +23,6 @@ przy Krakowskim Przedmieściu 66
 
 ## Listopad
 
-8.11 niedziela - Calineczka - godz. 12:30  
-
-9.11 poniedziałek - Księżniczka na ziarnku grochu - godz. 11:00  
-
-11.11 środa - Księżniczka na ziarnku grochu - godz. 12:30  
-
-15.11 niedziela - Księżniczka na ziarnku grochu - godz. 12:30  
-
 30.11 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 <br />  
 
