@@ -9,6 +9,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 <br />
@@ -30,11 +31,6 @@ przy Krakowskim Przedmieściu 66
 
 15.11 niedziela - Księżniczka na ziarnku grochu - godz. 12:30  
 
-<del>16.11 poniedziałek - Kuba i Buba czyli awantura do kwadratu - godz. 11:00</del>
-<small>przedstawienie odwołane</small>
-
-23.11 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
-
 30.11 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 <br />  
 
@@ -48,4 +44,4 @@ przy Krakowskim Przedmieściu 66
 
 13.12 niedziela - Elfy i fabryka prezentów - godz. 12:30 
 
-14.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
+14.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00
