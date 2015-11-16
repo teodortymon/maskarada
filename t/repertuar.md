@@ -45,3 +45,7 @@ przy Krakowskim Przedmieściu 66
 13.12 niedziela - Elfy i fabryka prezentów - godz. 12:30 
 
 14.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00
+
+27.12 niedziela - Elfy i fabryka prezentów 
+
+
