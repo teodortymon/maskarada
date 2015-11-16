@@ -48,4 +48,6 @@ przy Krakowskim Przedmieściu 66
 
 27.12 niedziela - Elfy i fabryka prezentów 
 
+28.12 poniedziałek - Elfy i fabryka prezentów
+
 
