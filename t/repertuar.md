@@ -10,6 +10,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 <br />
@@ -38,10 +39,8 @@ przy Krakowskim Przedmieściu 66
 
 13.12 niedziela - Elfy i fabryka prezentów - godz. 12:30 
 
-14.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00
+14.12 poniedziałek - Kuba i Buba, czyli awantura do kwadratu - godz. 10:00
 
-27.12 niedziela - Elfy i fabryka prezentów 
+27.12 niedziela - Elfy i fabryka prezentów - godz. 13.00  
 
-28.12 poniedziałek - Elfy i fabryka prezentów
-
-
+28.12 poniedziałek - Elfy i fabryka prezentów godz. 17.30
