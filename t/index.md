@@ -5,6 +5,7 @@ published: true
 
 
 
+
 <br />
 <h2 style="text-shadow: 2px 2px rgba(255, 42, 206, 0.58)"><ul class="photos">Kuba i Buba,<br />czyli awantura do kwadratu</ul></h2>
 <br /><strong>Na podstawie książek Grzegorza Kasdepke</strong><br /><br />
@@ -178,7 +179,7 @@ Premiera: 7 grudzień 2013
 	<td><strong>Reżyseria</strong><br />Ewa Tucholska i Tomasz Piątkowski</td>
 </tr>
 <tr>
-	<td><strong>Elfy</strong><br />Ewa Tucholska<br />Tomasz Piątkowski/<br />Adam Biernat<br /><br /></td>
+	<td><strong>Elfy</strong><br />Ewa Tucholska<br />Adam Biernat/<br />Zbigniew Kozłowski/<br />Tomasz Piątkowski<br /><br /></td>
 	<td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
 </tr>
 <tr>
