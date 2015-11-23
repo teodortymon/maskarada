@@ -11,6 +11,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 <br />
@@ -38,6 +39,8 @@ przy Krakowskim Przedmieściu 66
 7.12 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 
 8.12 wtorek - Elfy i fabryka prezentów - godz. 12:00
+
+11.12 piątek - Elfy i fabryka prezentów - godz. 9:15
 
 13.12 niedziela - Elfy i fabryka prezentów - godz. 12:30 
 
