@@ -4,6 +4,7 @@ published: true
 ---
 
 
+
 ## Kontakt
 
 **Adres**  
@@ -17,7 +18,7 @@ Kasa czynna godzinę przed spektaklem.
 teatr.maskarada@gmail.com
 
 
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Krakowskie%20Przedmie%C5%9Bcie%2066%2C%20Warsaw%2C%20Poland&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU" allowfullscreen></iframe>
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=krakowskie%20przedmiescie%2066%20maskarada&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU" allowfullscreen></iframe>
 
 
 
