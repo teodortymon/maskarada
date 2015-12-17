@@ -6,6 +6,7 @@ published: true
 
 
 
+
 <br />
 <h2 style="text-shadow: 2px 2px rgba(255, 42, 206, 0.58)"><ul class="photos">Kuba i Buba,<br />czyli awantura do kwadratu</ul></h2>
 <br /><strong>Na podstawie książek Grzegorza Kasdepke</strong><br /><br />
@@ -63,7 +64,7 @@ Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania spektaklu - 45 minut.</p>
 </tr>
 <tr>
     <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
-    <td><strong>Scengrafia</strong><br />Małgorzata Domańska</td>
+    <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
 </tr>
 </table>
 <br />
