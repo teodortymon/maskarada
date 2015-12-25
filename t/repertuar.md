@@ -4,6 +4,7 @@ published: true
 ---
 
 
+
 ## Repertuar  
 
 <br />
@@ -45,7 +46,7 @@ przy Krakowskim Przedmieściu 66
 
 ## Styczeń
 
-3.01 niedziela -     Elfy i fabryka prezentów - godz. 12:30  
+3.01 niedziela -     Elfy i fabryka prezentów - godz. 15:30  
 
 10.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30  
 
