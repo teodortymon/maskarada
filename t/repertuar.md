@@ -4,6 +4,7 @@ published: true
 ---
 
 
+
 ## Repertuar  
 
 <br />
@@ -45,13 +46,15 @@ przy Krakowskim Przedmieściu 66
 
 ## Styczeń
 
-3.01 niedziela -     Elfy i fabryka prezentów - godz. 12:30  
+3.01 niedziela -     Elfy i fabryka prezentów - godz. 15:30  
 
 10.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30  
 
 11.01 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
 
-17.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30  
+17.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30 
+
+18.01 niedziela -    Elfy i fabryka prezentów - godz. 11:00 
 
 24.01 niedziela -    Kuba i Buba, czyli awantura do kwadratu - godz. 15:30
 
