@@ -11,13 +11,13 @@ published: true
 
 <br />
 
-#Szanowni Widzowie!
+Szanowni Widzowie!
 
 zapraszamy do pięknej 
 
 ##Sali Wielkiej - Centralnej Biblioteki Rolniczej
 
-#przy Krakowskim Przedmieściu 66.
+przy Krakowskim Przedmieściu 66.
 
 Tylko 100 metrów od Kolumny Zygmunta, 
 
