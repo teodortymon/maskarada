@@ -6,6 +6,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 <br />
@@ -21,10 +22,8 @@ w pięknej
 przy Krakowskim Przedmieściu 66
 <br /><br /><br />
 
-## Listopad
 
-30.11 poniedziałek - Elfy i fabryka prezentów - godz. 11:00  
-<br />  
+
 
 ## Grudzień
 
