@@ -13,13 +13,11 @@ published: true
 
 Szanowni Widzowie!
 
-Z radością informujemy o wznowieniu przestawień Teatru Maskarada
+zapraszamy do pięknej 
 
-w pięknej 
+##Sali Wielkiej - Centralnej Biblioteki Rolniczej
 
-##Sali Wielkiej Centralnej Biblioteki Rolniczej
-
-przy Krakowskim Przedmieściu 66
+przy Krakowskim Przedmieściu 66. Tylko 100 metrów od Kolumny Zygmunta na Starym Mieście w Warszawie
 <br /><br /><br /><br />
 
 ## Styczeń
