@@ -5,13 +5,14 @@ published: true
 
 
 
+
 ## Kontakt
 
 **Adres**  
-Warszawa, Krakowskie Przedmieście 66<br />(Sala Wielka, Centralna Biblioteka Rolnicza)  
+Warszawa, Krakowskie Przedmieście 66<br />Sala Wielka, Centralna Biblioteka Rolnicza  
 
 **Rezerwacja biletów**  
-tel. 501 027 278  [www.ebilet.pl](https://www.ebilet.pl "www.ebilet.pl")
+tel. 501 027 278    [www.ebilet.pl](https://www.ebilet.pl 
 
 Kasa czynna godzinę przed spektaklem.  
 
