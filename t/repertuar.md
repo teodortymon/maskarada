@@ -22,9 +22,6 @@ w pięknej
 przy Krakowskim Przedmieściu 66
 <br /><br /><br />
 
-
-
-
 ## Grudzień
 
 6.12 niedziela - Elfy i fabryka prezentów - godz. 12:30 
