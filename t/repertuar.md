@@ -20,9 +20,7 @@ w pięknej
 ##Sali Wielkiej Centralnej Biblioteki Rolniczej
 
 przy Krakowskim Przedmieściu 66
-<br /><br /><br />
-
-<br />
+<br /><br /><br /><br />
 
 ## Styczeń
 
