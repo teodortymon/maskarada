@@ -9,7 +9,6 @@ published: true
 
 ## Repertuar  
 
-<br />
 
 Szanowni Widzowie!
 
