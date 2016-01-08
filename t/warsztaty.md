@@ -6,14 +6,8 @@ published: true
 
 
 
+
 ## Warsztaty
-
-<h2><ul class="photos">Warsztaty teatralne po angielsku</ul></h2>  
-
-Nauka angielskiego na Ursynowie, niedaleko metra Stokłosy.  
-Grupy 4-6 osób. Zapraszamy dzieci w wieku 6-12 lat.  
-Zajęcia w weekendy w grupach dla początkujących i zaawansowanych.  
-Kontakt i zapisy: tel. 605 235 732  
 
 <h2><ul class="photos">Lalka w teatrze</ul></h2>
 
