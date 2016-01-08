@@ -17,7 +17,9 @@ zapraszamy do pięknej
 
 ##Sali Wielkiej - Centralnej Biblioteki Rolniczej
 
-przy Krakowskim Przedmieściu 66. Tylko 100 metrów od Kolumny Zygmunta na Starym Mieście w Warszawie
+przy Krakowskim Przedmieściu 66.
+Tylko 100 metrów od Kolumny Zygmunta 
+na Starym Mieście w Warszawie
 <br /><br /><br /><br />
 
 ## Styczeń
