@@ -8,7 +8,7 @@ published: true
 
 ## Kontakt
 
-**Adres**  
+**SCENA**  
 Warszawa, Krakowskie Przedmieście 66<br />Sala Wielka - Centralna Biblioteka Rolnicza  
 
 **Rezerwacja biletów**  
