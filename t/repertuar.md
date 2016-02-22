@@ -43,8 +43,6 @@ na Starym Mieście w Warszawie
 
 21.02 niedziela -     Calineczka - godz. 12:30  
 
-26.02 piątek -    Chmurka i Bratek - godz. 11:00  
-
 28.02 niedziela -    Kuba i Buba, czyli awantura do kwadratu - godz. 12:30  
 
 29.02 poniedziałek -    Kuba i Buba, czyli awantura do kwadratu - godz. 11:00
