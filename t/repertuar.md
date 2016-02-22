@@ -38,7 +38,6 @@ na Starym Mieście w Warszawie
 
 <br /><br />
 
-
 ## Luty
 
 21.02 niedziela -     Calineczka - godz. 12:30  
