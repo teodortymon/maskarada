@@ -9,6 +9,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 
@@ -26,8 +27,6 @@ na Starym Mieście w Warszawie
 <br /><br /><br /><br />
 
 ## Styczeń
-
-3.01 niedziela -     Elfy i fabryka prezentów - godz. 15:30  
 
 10.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30  
 
