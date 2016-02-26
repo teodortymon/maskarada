@@ -10,6 +10,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 
@@ -26,6 +27,15 @@ tylko 100 metrów od Kolumny Zygmunta,
 na Starym Mieście w Warszawie
 <br /><br /><br /><br />
 
+## Luty
+
+21.02 niedziela -     Calineczka - godz. 12:30  
+
+28.02 niedziela -    Kuba i Buba, czyli awantura do kwadratu - godz. 12:30  
+
+29.02 poniedziałek -    Kuba i Buba, czyli awantura do kwadratu - godz. 11:00
+
+
 ## Styczeń
 
 10.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30  
@@ -38,10 +48,4 @@ na Starym Mieście w Warszawie
 
 <br /><br />
 
-## Luty
 
-21.02 niedziela -     Calineczka - godz. 12:30  
-
-28.02 niedziela -    Kuba i Buba, czyli awantura do kwadratu - godz. 12:30  
-
-29.02 poniedziałek -    Kuba i Buba, czyli awantura do kwadratu - godz. 11:00
