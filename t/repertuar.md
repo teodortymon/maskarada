@@ -35,6 +35,7 @@ na Starym Mieście w Warszawie
 
 29.02 poniedziałek -    Kuba i Buba, czyli awantura do kwadratu - godz. 11:00
 
+
 ## Styczeń
 
 10.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30  
