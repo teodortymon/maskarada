@@ -8,11 +8,12 @@ published: true
 
 
 
+
 <br />
 <h2 style="text-shadow: 2px 2px rgba(255, 42, 206, 0.58)"><ul class="photos">Kuba i Buba,<br />czyli awantura do kwadratu</ul></h2>
 <br /><strong>Na podstawie książek Grzegorza Kasdepke</strong><br /><br />
 <!--<a id="single_image" href="lay/img/kuba_big.jpg"><img src="lay/img/kuba_min.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>-->
-<p>Przedstawienie "Kuba i Buba, czyli awantura do kwadratu" powstało na podstawie cieszących się wielką popularnością książek Grzegorza Kasdepke. Kuba i Buba są niesfornymi bliźniakami, nie zawsze wiadomo, które jest które. W domu  trudno je opanować, a w szkole dokazują jeszcze bardziej. <br />Przedstawienie dla dzieci od 3 do 12 lat trwa 60 minut. 
+<p>Przedstawienie "Kuba i Buba, czyli awantura do kwadratu" powstało na podstawie cieszących się wielką popularnością książek Grzegorza Kasdepke. Kuba i Buba są niesfornymi bliźniakami, nie zawsze wiadomo, które jest które. W domu  trudno je opanować, a w szkole dokazują jeszcze bardziej. <br />Przedstawienie dla dzieci od 4 do 12 lat trwa 55 minut. 
 <br /><br />
 <td><strong>Reżyseria</strong><br />Ewa Tucholska<br /><br /></td>
 <table border="0">
@@ -57,7 +58,7 @@ Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania spektaklu - 45 minut.</p>
 <table border="0">
 <tr>
     <td><strong>Tekst</strong><br />Pola Wójcik<br /></td>
-    <td><strong>Występują</strong><br />Magdalena Pawelec<br />Jerzy Dowgiałło<br /><br /></td>
+    <td><strong>Występują</strong><br />Justyna Gumienna / Magdalena Pawelec<br />Michał Węgrzyński / Jerzy Dowgiałło<br /><br /></td>
 </tr>
 <tr>
     <td><strong>Konsultacja reżyserska</strong><br />Katarzyna Kawalec<br /></td>
