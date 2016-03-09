@@ -11,6 +11,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 
@@ -27,25 +28,25 @@ tylko 100 metrów od Kolumny Zygmunta,
 na Starym Mieście w Warszawie
 <br /><br /><br /><br />
 
-## Luty
+Uprzejmie informujemy, że w związku z remontem posadzki w foyer CBR
+Teatr Maskarada w miesiącu marcu występuje tylko na scenach "gościnnych"
+Zamawianie przedstawień : tel. 501 027 278
 
-21.02 niedziela -     Calineczka - godz. 12:30  
+## Kwiecień
 
-28.02 niedziela -    Kuba i Buba, czyli awantura do kwadratu - godz. 12:30  
+03.04 niedziela -    "Kuba i Buba, czyli awantura do kwadratu" godz. 12.30
 
-29.02 poniedziałek -    Kuba i Buba, czyli awantura do kwadratu - godz. 11:00
+04.04 poniedziałek - "Kuba i Buba, czyli awantura do kwadratu"  godz. 10.00 
 
+04.04 poniedziałek - "Kuba i Buba, czyli awantura do kwadratu"  godz. 11.30
 
-## Styczeń
+05.04 wtorek		- "Calineczka"		godz.11.00
 
-10.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30  
+11.04 poniedziałek	- "Calineczka"		godz. 11.00
 
-17.01 niedziela -    Elfy i fabryka prezentów - godz. 12:30  
+17.04 niedziela		- "Co w trawie bzyczy?"	godz. 12.30
 
-24.01 niedziela -    Kuba i Buba, czyli awantura do kwadratu - godz. 15:30
+18.04 poniedziałek	- "Calineczka"		godz.11
 
-25.01 poniedziałek - Kuba i Buba, czyli awantura do kwadratu - godz. 10:00
 
 <br /><br />
-
-
