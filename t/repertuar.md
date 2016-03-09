@@ -28,9 +28,9 @@ tylko 100 metrów od Kolumny Zygmunta,
 na Starym Mieście w Warszawie
 <br /><br /><br /><br />
 
-Uprzejmie informujemy, że w związku z remontem posadzki w foyer CBR
-Teatr Maskarada w miesiącu marcu występuje tylko na scenach "gościnnych"
-Zamawianie przedstawień : tel. 501 027 278
+##Uprzejmie informujemy, że w związku z remontem posadzki w foyer CBR
+**Teatr Maskarada w miesiącu marcu występuje tylko na scenach "gościnnych"
+Zamawianie przedstawień : tel. 501 027 278**
 
 ## Kwiecień
 
