@@ -32,6 +32,8 @@ na Starym Mieście w Warszawie
 **Teatr Maskarada w miesiącu marcu występuje tylko na scenach "gościnnych"
 Zamawianie przedstawień : tel. 501 027 278**
 
+
+
 ## Kwiecień
 
 03.04 niedziela -    "Kuba i Buba, czyli awantura do kwadratu" godz. 12.30
