@@ -39,23 +39,23 @@ na Starym Mieście w Warszawie
 
 ## Kwiecień
 
-03.04 niedziela godz. 12.30    "Kuba i Buba, czyli awantura do kwadratu" 
+03.04 niedziela - godz. 12.30    "Kuba i Buba, czyli awantura do kwadratu" 
 
-04.04 poniedziałek - "Kuba i Buba, czyli awantura do kwadratu"  godz. 10.00 
+04.04 poniedziałek - godz. 10.00 "Kuba i Buba, czyli awantura do kwadratu"   
 
-04.04 poniedziałek - "Kuba i Buba, czyli awantura do kwadratu"  godz. 11.30
+04.04 poniedziałek - godz. 11.30 "Kuba i Buba, czyli awantura do kwadratu"  
 
-05.04 wtorek		- "Calineczka"		godz. 11.00
+05.04 wtorek - godz. 11.00 "Calineczka"		
 
-10.04 niedziela		- "Calineczka"		godz.11.00
+10.04 niedziela	- godz.11.00 "Calineczka"		
 
-11.04 poniedziałek	- "Calineczka"		godz. 11.00
+11.04 poniedziałek - godz. 11.00 "Calineczka"		
 
-17.04 niedziela		- "Co w trawie bzyczy?"	godz. 12.30
+17.04 niedziela	- godz. 12.30 "Co w trawie bzyczy?"	
 
-18.04 poniedziałek	- "Calineczka"		godz. 11:00
+18.04 poniedziałek - godz. 11:00 "Calineczka"		
 
-24.04 niedziela	- "Chmurka i Bratek"		godz. 11:00
+24.04 niedziela	- godz. 11:00 "Chmurka i Bratek"		
 
 
 
