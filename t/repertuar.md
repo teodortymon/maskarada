@@ -13,6 +13,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 
@@ -38,7 +39,7 @@ na Starym Mieście w Warszawie
 
 ## Kwiecień
 
-03.04 niedziela -    "Kuba i Buba, czyli awantura do kwadratu" godz. 12.30
+03.04 niedziela godz. 12.30    "Kuba i Buba, czyli awantura do kwadratu" 
 
 04.04 poniedziałek - "Kuba i Buba, czyli awantura do kwadratu"  godz. 10.00 
 
@@ -54,7 +55,7 @@ na Starym Mieście w Warszawie
 
 18.04 poniedziałek	- "Calineczka"		godz. 11:00
 
-24.04 czwartek	- "Chmurka"		godz. 11:00
+24.04 niedziela	- "Chmurka i Bratek"		godz. 11:00
 
 
 
