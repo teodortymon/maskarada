@@ -39,7 +39,7 @@ na Starym Mieście w Warszawie
 
 ## Kwiecień
 
-03.04 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu" 
+03.04 niedziela - godz. 12.30  -  #"Kuba i Buba, czyli awantura do kwadratu" 
 
 04.04 poniedziałek - godz. 10.00 - "Kuba i Buba, czyli awantura do kwadratu"   
 
