@@ -12,6 +12,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 
@@ -43,13 +44,18 @@ na Starym Mieście w Warszawie
 
 04.04 poniedziałek - "Kuba i Buba, czyli awantura do kwadratu"  godz. 11.30
 
-05.04 wtorek		- "Calineczka"		godz.11.00
+05.04 wtorek		- "Calineczka"		godz. 11.00
+
+10.04 niedziela		- "Calineczka"		godz.11.00
 
 11.04 poniedziałek	- "Calineczka"		godz. 11.00
 
 17.04 niedziela		- "Co w trawie bzyczy?"	godz. 12.30
 
-18.04 poniedziałek	- "Calineczka"		godz.11
+18.04 poniedziałek	- "Calineczka"		godz. 11:00
+
+24.04 czwartek	- "Chmurka"		godz. 11:00
+
 
 
 <br /><br />
