@@ -9,6 +9,7 @@ published: true
 
 
 
+
 <br />
 <h2 style="text-shadow: 2px 2px rgba(255, 42, 206, 0.58)"><ul class="photos">Kuba i Buba,<br />czyli awantura do kwadratu</ul></h2>
 <br /><strong>Na podstawie książek Grzegorza Kasdepke</strong><br /><br />
@@ -28,7 +29,7 @@ published: true
 </tr>
 </table>
 <br />
-<strong>Występują</strong><br /><br />Buba - Ewa Tucholska<br /><br />Kuba - Adam Biernat<br /><br />Tata/Nauczyciel - Michał Maliszewski<br /><br />Woźny - Jan Falba<br /><br />
+<strong>Występują</strong><br /><br />Buba - Ewa Tucholska<br /><br />Kuba - Adam Biernat<br /><br />Tata/Nauczyciel - Michał Maliszewski<br /><br />Woźny - Jan Falba<br /><br /> Premiera: 7 grudzień 2014
 
 
 <ul class="photos">
@@ -249,7 +250,7 @@ Premiera: 13 październik 2013
 </tr>
 
 <tr>
-	<td><strong>Król, Młody Książę</strong><br />Tomasz Piątkowski/<br />Hubert Mrozowicz<br /><br /></td>
+	<td><strong>Król, Młody Książę</strong><br />Zbigniew Kozłowski/<br />Hubert Mrozowicz<br /><br /></td>
 	<td><strong>Choreografia</strong> Agnieszka Senderowska</td>
 </tr>
 
@@ -337,7 +338,7 @@ Zapraszamy maluchy na kameralny spektakl, w którym spotkają pszczółki, ślim
 </tr>
 
 <tr>
-	<td>Ewa Tucholska<br />Tomasz Piątkowski</td>
+	<td>Ewa Tucholska<br />Zbigniew Kozłowski</td>
 	<td>Małgorzata Domańska<br />Ewa Tucholska<br />Tomasz Piątkowski</td>
 </tr>
 </table>
