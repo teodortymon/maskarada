@@ -129,7 +129,7 @@ Premiera: 30 marzec 2014 <br />
 <br /><br />
 <table border="0">
 <tr>
-	<td><strong>Występują</strong><br />Agnieszka Senderowska<br />Monika Głowienko<br />Jan Falba<br /><br /></td>
+	<td><strong>Występują</strong><br />Agnieszka Senderowska<br />Monika Głowienko / Anna Bakalarska<br />Jan Falba<br /><br /></td>
     <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
 </tr>
 <tr>
