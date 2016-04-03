@@ -10,11 +10,12 @@ published: true
 
 
 
+
 <br />
 <h2 style="text-shadow: 2px 2px rgba(255, 42, 206, 0.58)"><ul class="photos">Kuba i Buba,<br />czyli awantura do kwadratu</ul></h2>
 <br /><strong>Na podstawie książek Grzegorza Kasdepke</strong><br /><br />
 <!--<a id="single_image" href="lay/img/kuba_big.jpg"><img src="lay/img/kuba_min.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>-->
-<p>Przedstawienie "Kuba i Buba, czyli awantura do kwadratu" powstało na podstawie cieszących się wielką popularnością książek Grzegorza Kasdepke. Kuba i Buba są niesfornymi bliźniakami, nie zawsze wiadomo, które jest które. W domu  trudno je opanować, a w szkole dokazują jeszcze bardziej. <br />Przedstawienie dla dzieci od 4 do 12 lat trwa 55 minut. 
+<p>Przedstawienie "Kuba i Buba, czyli awantura do kwadratu" powstało na podstawie cieszących się wielką popularnością książek Grzegorza Kasdepke. Kuba i Buba są niesfornymi bliźniakami, nie zawsze wiadomo, które jest które. W domu  trudno je opanować, a w szkole dokazują jeszcze bardziej. <br />Przedstawienie dla dzieci od 4 do 12 lat trwa 55 minut. <br /> Premiera: 7 grudzień 2014
 <br /><br />
 <td><strong>Reżyseria</strong><br />Ewa Tucholska<br /><br /></td>
 <table border="0">
@@ -29,7 +30,7 @@ published: true
 </tr>
 </table>
 <br />
-<strong>Występują</strong><br /><br />Buba - Ewa Tucholska<br /><br />Kuba - Adam Biernat<br /><br />Tata/Nauczyciel - Michał Maliszewski<br /><br />Woźny - Jan Falba<br /><br /> Premiera: 7 grudzień 2014
+<strong>Występują</strong><br /><br />Buba - Ewa Tucholska<br /><br />Kuba - Adam Biernat<br /><br />Tata/Nauczyciel - Michał Maliszewski<br /><br />Woźny - Jan Falba<br /><br /> 
 
 
 <ul class="photos">
