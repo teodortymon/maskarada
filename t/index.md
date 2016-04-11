@@ -6,9 +6,8 @@ published: true
 
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Urodziny Turli i Taja</ul></h2>
-<br /><strong>Na podstawie książek Grzegorza Kasdepke</strong><br /><br />
-<!--<a id="single_image" href="lay/img/kuba_big.jpg"><img src="lay/img/kuba_min.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>-->
-<p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br / >Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat. Czas trwania 30 minut + 15 świętowania z aktorami.<br /> Premiera: maj 2016
+<a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+<p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania 30 minut + 15 świętowania z aktorami.<br /> Premiera: maj 2016
 <br /><br />
 <table border="0">
 <tr>
@@ -29,6 +28,7 @@ Monika Głowienko<br />
 Agnieszka Senderowska
 <br />Jan Falba<br />
 
+<br />
 <br />
 <br />
 <br />
