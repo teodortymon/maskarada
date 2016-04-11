@@ -15,10 +15,6 @@ published: true
     <td><strong>Muzyka</strong><br />Zuzanna Całka<br /><br /></td>
     
 </tr>
-<tr>
-    <td><strong>Scenografia</strong><br />Małgorzata Domańska<br /></td>
-    <td><strong>Muzyka</strong><br />Krzysztof Jaszczak<br /><br /></td>
-</tr>
 </table>
 <br />
 <strong>Występują</strong>
