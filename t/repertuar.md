@@ -16,6 +16,7 @@ published: true
 
 
 
+
 ## Repertuar  
 
 
@@ -53,5 +54,19 @@ na Starym Mieście w Warszawie
 24.04 niedziela	- godz. 11:00 - "Chmurka i Bratek"		
 
 
+
+<br /><br />
+
+## Maj
+
+9.05 poniedziałek - godz. 11.00 - "Calineczka"
+
+10.05 wtorek - godz. 11.00 - "Calineczka"   
+
+15.05 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu" 
+
+16.05 poniedziałek - godz. 9.50 - "Kuba i Buba, czyli awantura do kwadratu"   
+
+16.05 poniedziałek - godz. 11.30 - "Kuba i Buba, czyli awantura do kwadratu"  
 
 <br /><br />
