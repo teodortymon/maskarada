@@ -59,14 +59,26 @@ na Starym Mieście w Warszawie
 
 ## Maj
 
+3.05 wtorek - godz. 15.30 - "Co w trawie bzyczy"   
+
 9.05 poniedziałek - godz. 11.00 - "Calineczka"
 
 10.05 wtorek - godz. 11.00 - "Calineczka"   
 
-15.05 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu" 
+15.05 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu"
+
+15.05 niedziela - godz. 15.00 - "Urodziny Turli i Taja" ****Premiera****
 
 16.05 poniedziałek - godz. 9.50 - "Kuba i Buba, czyli awantura do kwadratu"   
 
-16.05 poniedziałek - godz. 11.30 - "Kuba i Buba, czyli awantura do kwadratu"  
+16.05 poniedziałek - godz. 11.30 - "Kuba i Buba, czyli awantura do kwadratu"
+
+22.05 niedziela - godz. 12.30 - "Chmurka i Bratek"
+
+23.05 poniedziałek - godz. 11.00 - "Co w trawie bzyczy"
+
+29.05 niedziela - godz. 12.30 - "Księżniczka na ziarnku grochu"
+
+30.05 poniedziałek - godz. 11.00 - "Księżniczka na ziarnku grochu"
 
 <br /><br />
