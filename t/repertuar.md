@@ -69,3 +69,21 @@ na Starym Mieście w Warszawie
 30.05 poniedziałek - godz. 11.00 - "Księżniczka na ziarnku grochu"
 
 <br /><br />
+
+## Czerwiec
+
+05.06 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu"
+
+06.6 poniedziałek - godz. 9.50 - "Kuba i Buba, czyli awantura do kwadratu"   
+
+06.06 poniedziałek - godz. 11.30 - "Kuba i Buba, czyli awantura do kwadratu"
+
+07.06 wtorek - godz. 11.00 - "Calineczka" 
+
+12.06 niedziela - godz. 12.30 - "Calineczka"
+
+12.06 niedziela - godz. 15.00 - "Urodziny Turli i Taja"
+
+13.06 poniedziałek - godz. 11.00 - "Calineczka"
+
+<br /><br />
