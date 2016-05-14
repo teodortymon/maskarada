@@ -35,7 +35,7 @@ na Starym Mieście w Warszawie
 
 
 
-<br /><br />
+
 
 ## Maj
 
