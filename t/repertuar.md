@@ -61,4 +61,16 @@ na Starym Mieście w Warszawie
 
 5.06 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu"
 
+6.06 poniedziałek - godz. 9.50 - "Kuba i Buba, czyli awantura do kwadratu"
+
+6.06 poniedziałek - godz. 11.30 - "Kuba i Buba, czyli awantura do kwadratu"
+
+12.06 niedziela   - godz. 12.30 - "Urodziny Turli i Taja"
+
+17.06 piątek 	  - godz. 11.00 - "Calineczka"
+
+19.06 niedziela   - godz. 12.30 - "Księżniczka na ziarnku grochu"
+
+26.06 niedziela   - godz. 12.30 - "Urodziny Turli i Taja"
+
 <br /><br />
