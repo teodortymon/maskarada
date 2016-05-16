@@ -31,7 +31,7 @@ przy Krakowskim Przedmieściu 66,
 tylko 100 metrów od Kolumny Zygmunta, 
 
 na Starym Mieście w Warszawie
-<br /><br /><br /><br /> <br />
+<br /><br /><br /><br /> 
 
 
 
