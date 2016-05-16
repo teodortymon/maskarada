@@ -59,4 +59,8 @@ na Starym Mieście w Warszawie
 
 30.05 poniedziałek - godz. 11.00 - "Księżniczka na ziarnku grochu"
 
+## Czerwiec
+
+5.06 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu"
+
 <br /><br />
