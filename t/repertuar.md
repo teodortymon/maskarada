@@ -35,8 +35,6 @@ na Starym Mieście w Warszawie
 
 
 
-
-
 ## Maj
 
 3.05 wtorek - godz. 15.30 - "Co w trawie bzyczy"   
