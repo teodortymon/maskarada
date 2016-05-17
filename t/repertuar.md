@@ -67,6 +67,8 @@ na Starym Mieście w Warszawie
 
 12.06 niedziela   - godz. 12.30 - "Urodziny Turli i Taja"
 
+13.06 poniedziałek - godz. 11.00 - "Calineczka"
+
 17.06 piątek 	  - godz. 11.00 - "Calineczka"
 
 19.06 niedziela   - godz. 12.30 - "Księżniczka na ziarnku grochu"
