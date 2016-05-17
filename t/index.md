@@ -24,6 +24,14 @@ Monika Głowienko<br />
 Agnieszka Senderowska
 <br />Jan Falba<br />
 
+<ul class="photos">
+    <a id="single_image" rel="7" href="lay/img/turlitaj/large/1.jpg"><img src="lay/img/turlitaj/small/1.jpg"/></a>
+    <a id="single_image" rel="7" href="lay/img/turlitaj/large/2.jpg"><img src="lay/img/turlitaj/small/2.jpg"/></a>
+    <a id="single_image" rel="7" href="lay/img/turlitaj/large/3.jpg"><img src="lay/img/turlitaj/small/3.jpg"/></a>
+    <a id="single_image" rel="7" href="lay/img/turlitaj/large/4.jpg"><img src="lay/img/turlitaj/small/4.jpg"/></a>
+    
+</ul>
+
 <br />
 <br />
 <br />
