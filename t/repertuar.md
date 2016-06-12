@@ -73,6 +73,4 @@ na Starym Mieście w Warszawie
 
 19.06 niedziela   - godz. 12.30 - "Księżniczka na ziarnku grochu"
 
-26.06 niedziela   - godz. 12.30 - "Urodziny Turli i Taja"
-
 <br /><br />
