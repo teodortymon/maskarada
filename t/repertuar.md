@@ -37,13 +37,14 @@ na Starym Mieście w Warszawie
 
 ## Wrzesień
 
-4.09 niedziela - godz. 12.30  -  "Wesołe Koty" ****Wielka zabawa wrześniowa z M. Konopnicką <br /> cena biletu: 15zł****
+**Spektakl i wielka zabawa wrześniowa z M. Konopnicką cena biletu: 15zł**<br/>
+4.09 niedziela - godz. 12.30  -  "Wesołe Koty"
 
 11.09 niedziela - godz. 12.30 - "Urodziny Turli i Taja"
 
 18.09 niedziela - godz. 12.30 - "Calineczka"
 
-18.09 niedziela - godz. 15.30 - "Urodziny Turli i Taja"
+18.09 niedziela - godz. 16.00 - "Urodziny Turli i Taja"
 
 19.09 poniedziałek - godz. 11.00 - "Calineczka" 
 
