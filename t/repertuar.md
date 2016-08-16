@@ -35,42 +35,20 @@ na Starym Mieście w Warszawie
 
 
 
-## Maj
+## Wrzesień
 
-3.05 wtorek - godz. 15.30 - "Co w trawie bzyczy"   
+4.09 niedziela - godz. 12.30  -  "Wesołe Koty" ****Wielka zabawa wrześniowa z M. Konopnicką <br /> cena biletu: 15zł****
 
-9.05 poniedziałek - godz. 11.00 - "Calineczka"
+11.09 niedziela - godz. 12.30 - "Urodziny Turli i Taja"
 
-10.05 wtorek - godz. 11.00 - "Calineczka"   
+18.09 niedziela - godz. 12.30 - "Calineczka"
 
-15.05 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu"
+18.09 niedziela - godz. 15.30 - "Urodziny Turli i Taja"
 
-15.05 niedziela - godz. 15.00 - "Urodziny Turli i Taja" ****Premiera****
+19.09 poniedziałek - godz. 11.00 - "Calineczka" 
 
-16.05 poniedziałek - godz. 11.30 - "Kuba i Buba, czyli awantura do kwadratu"
+25.09 niedziela - godz. 12.30 - "Wesołe Koty" ****Premiera****
 
-22.05 niedziela - godz. 12.30 - "Chmurka i Bratek"
-
-23.05 poniedziałek - godz. 11.00 - "Co w trawie bzyczy"
-
-29.05 niedziela - godz. 12.30 - "Księżniczka na ziarnku grochu"
-
-30.05 poniedziałek - godz. 11.00 - "Księżniczka na ziarnku grochu"
-
-## Czerwiec
-
-5.06 niedziela - godz. 12.30  -  "Kuba i Buba, czyli awantura do kwadratu"
-
-6.06 poniedziałek - godz. 9.50 - "Kuba i Buba, czyli awantura do kwadratu"
-
-6.06 poniedziałek - godz. 11.30 - "Kuba i Buba, czyli awantura do kwadratu"
-
-12.06 niedziela   - godz. 12.30 - "Urodziny Turli i Taja"
-
-13.06 poniedziałek - godz. 11.00 - "Calineczka"
-
-17.06 piątek 	  - godz. 11.00 - "Calineczka"
-
-19.06 niedziela   - godz. 12.30 - "Księżniczka na ziarnku grochu"
+26.09 poniedziałek - godz. 11.00 - "Wesołe Koty"
 
 <br /><br />
