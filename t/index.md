@@ -6,17 +6,18 @@ published: true
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Wesołe Koty</ul></h2>
 <a id="single_image" href="lay/img/koty_big.jpg"><img src="lay/img/koty_min.jpg" alt="Wesołe Koty" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
-<p>
 <i>wg Marii Konopnickiej</i><br /><br />
 Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. Filuś, Miluś i Kizia zaproszą młodych widzów do zabawy i na koci bal. Piękne wiersze M. Konopnickiej, barokowe kocie kostiumy, muzyka H. Wieniawskiego i piosenki Zuzanny Całki tworzą magiczny i interaktywny koci świat dla młodych widzów.
 
 <br />
-<br /> Czas trwania: 45minut. <br />Przedstawienie dla dzieci 2-8 lat. <br />Premiera: 25 wrzesień 2016
+<br /> Czas trwania: 45minut.
+<br />Przedstawienie dla dzieci 2-8 lat.
+<br />Premiera: 25 wrzesień 2016
 <br /><br />
 <table border="0">
 <tr>
     <td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td>
-    <td><strong>Występują</strong><br />Pamela Adamik <br /> Marek Grabiniok<br /><Jan Falba</td>
+    <td><strong>Występują</strong><br />Pamela Adamik <br /> Marek Grabiniok<br />Jan Falba</td>
 </tr>
 <tr>
     <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
