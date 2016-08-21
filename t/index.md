@@ -37,12 +37,14 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Urodziny Turli i Taja</ul></h2>
 <a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
-<p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania 30 minut + 15 świętowania z aktorami.<br /> Premiera: maj 2016
+<p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania 30 minut + 15 świętowania z aktorami.<br /> Premiera: 15 maj 2016
 <br /><br />
 <table border="0">
 <tr>
     <td><strong>Tekst</strong><br />Pola Wójcik<br /></td>
     <td><strong>Muzyka</strong><br />Zuzanna Całka<br /><br /></td>
+    <td><strong>Scenografia</strong><br />Małgorzata Domańska<br /><br /></td>
+    <td><strong>Choreografia</strong><br />Agnieszka Senderowska<br /><br /></td>
     
 </tr>
 </table>
@@ -50,9 +52,9 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
 <strong>Występują</strong>
 <br /><br />
 Anna Bakalarska<br />
-Monika Głowienko<br />
-Agnieszka Senderowska
-<br />Jan Falba<br />
+Agnieszka Senderowska<br />
+Joanna Bangowska<br />
+Jan Falba<br />
 
 <ul class="photos">
     <a id="single_image" rel="7" href="lay/img/turlitaj/large/1.jpg"><img src="lay/img/turlitaj/small/1.jpg"/></a>
@@ -302,7 +304,7 @@ Premiera: 13 październik 2013
 </tr>
 
 <tr>
-	<td><strong>Królowa, Księżniczka Pirlipatka</strong><br />Agnieszka Senderowska/ <br />Monika Głowienko<br /><br /></td>
+	<td><strong>Królowa, Księżniczka Pirlipatka</strong><br />Agnieszka Senderowska/ <br />Monika Głowienko/ <br />Anna Bakalarska/ <br /> Ewa Tucholska<br /><br /></td>
 	<td><strong>Scenografia</strong> Małgorzata Domańska</td>
 </tr>
 
