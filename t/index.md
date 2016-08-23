@@ -26,6 +26,12 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
 </table>
 <br />
     
+<ul class="photos">
+    <a id="single_image" rel="8" href="lay/img/koty/large/1.jpg"><img src="lay/img/koty/small/1.jpg"/></a>
+    <a id="single_image" rel="8" href="lay/img/koty/large/2.jpg"><img src="lay/img/koty/small/2.jpg"/></a>
+    <a id="single_image" rel="8" href="lay/img/koty/large/3.jpg"><img src="lay/img/koty/small/3.jpg"/></a>
+    <a id="single_image" rel="8" href="lay/img/koty/large/4.jpg"><img src="lay/img/koty/small/4.jpg"/></a>
+    <a id="single_image" rel="8" href="lay/img/koty/large/5.jpg"><img src="lay/img/koty/small/5.jpg"/></a> 
 </ul>
 
 <br />
