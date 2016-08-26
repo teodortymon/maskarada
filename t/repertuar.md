@@ -53,3 +53,23 @@ na Starym Mieście w Warszawie
 26.09 poniedziałek - godz. 11.00 - "Wesołe Koty"
 
 <br /><br />
+
+## Październik
+
+3.10 poniedziałek - godz. 11 00 - "Księżniczka na ziarnku grochu"
+
+9.10 niedziela - godz. 12.30 - "Księżniczka na ziarnku grochu"
+
+9.10 niedziela - godz. 16.00 - "Urodziny Turli i Taja"
+
+16.10 niedziela - godz. 12.30 - "Co w trawie bzyczy?"
+
+16.10 niedziela - godz. 16.00 - "Wesołe Koty"
+
+17.10 poniedziałek - godz. 11.00 - "Wesołe Koty"
+
+23.10 niedziela - godz. 12.30 - "Kuba i Buba"
+
+24.10 poniedziałek - godz. 10.30 - "Kuba i Buba czyli awantura do kwadratu"
+
+24.10 poniedziałek - godz. 12.00 - "Kuba i Buba czyli awantura do kwadratu"
