@@ -32,6 +32,13 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
     <a id="single_image" rel="8" href="lay/img/koty/large/3.jpg"><img src="lay/img/koty/small/3.jpg"/></a>
     <a id="single_image" rel="8" href="lay/img/koty/large/4.jpg"><img src="lay/img/koty/small/4.jpg"/></a>
     <a id="single_image" rel="8" href="lay/img/koty/large/5.jpg"><img src="lay/img/koty/small/5.jpg"/></a> 
+     <a id="single_image" rel="8" href="lay/img/koty/large/6.jpg"><img src="lay/img/koty/small/6.jpg"/></a> 
+      <a id="single_image" rel="8" href="lay/img/koty/large/7.jpg"><img src="lay/img/koty/small/7.jpg"/></a> 
+       <a id="single_image" rel="8" href="lay/img/koty/large/8.jpg"><img src="lay/img/koty/small/8.jpg"/></a> 
+        <a id="single_image" rel="8" href="lay/img/koty/large/9.jpg"><img src="lay/img/koty/small/9.jpg"/></a> 
+         <a id="single_image" rel="8" href="lay/img/koty/large/10.jpg"><img src="lay/img/koty/small/10.jpg"/></a> 
+          <a id="single_image" rel="8" href="lay/img/koty/large/11.jpg"><img src="lay/img/koty/small/11.jpg"/></a> 
+           <a id="single_image" rel="8" href="lay/img/koty/large/12.jpg"><img src="lay/img/koty/small/12.jpg"/></a> 
 </ul>
 
 <br />
