@@ -45,6 +45,10 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
 <a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 <p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania 30 minut + 15 świętowania z aktorami.<br /> Premiera: maj 2016
 <br /><br />
+Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji portalu Czas Dzieci:</a>
+<br /> <i>Co wyróżnia spektakl? Brak sceny, czyli znika bariera między twórca a odbiorcą. Dzieci mogły wszędzie wejść, zajrzeć, wszystko dotykać, przekładać itp. A taka eksploracja otoczenia, szczególnie nowego, ciekawego, to dla maluszków niesamowity rozwój i przed wszystkim frajda. Dotychczas prawie wszystkie spektakle dla najmłodszych dzieci, na których byłam, odbywały się w ciszy. To znaczy, aktorzy, prawie wcale albo bardzo rzadko, odzywali się do publiczności. A tu od początku, dwie młode, bardzo utalentowane aktorki, mówią i śpiewają do dzieci. Zadają pytania, przynoszą rekwizyty do każdego dziecka, reagują na spontaniczne na ich prośby. Są prawdziwymi gospodarzami swojego przyjęcia urodzinowego!</i>
+<br />
+
 <table border="0">
 <tr>
     <td><strong>Tekst</strong><br />Pola Wójcik<br /></td>
@@ -56,7 +60,7 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
 <strong>Występują</strong>
 <br /><br />
 Anna Bakalarska<br />
-Monika Głowienko<br />
+Joanna Bangowska<br />
 Agnieszka Senderowska
 <br />Jan Falba<br />
 
