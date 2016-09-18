@@ -23,6 +23,9 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
     <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
     <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
 </tr>
+<tr>
+    <td><strong>Charakteryzacja</strong><br />MAKE UP STAR<td>
+</tr>
 </table>
 <br />
     
