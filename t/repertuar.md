@@ -59,7 +59,7 @@ na Starym Mieście w Warszawie
 
 17.10 poniedziałek - godz. 11.00 - "Wesołe Koty"
 
-18.10 wtorek - godz. 11.00 - "Calineczka"
+18.10 wtorek - godz. 10.00 - "Calineczka"
 
 23.10 niedziela - godz. 12.30 - "Kuba i Buba czyli awantura do kwadratu"
 
