@@ -12,7 +12,7 @@ published: true
 <h2><ul class="photos">Szkoła szycia</ul></h2>
 <a id="single_image" href="lay/img/szycie_big.jpg"><img src="lay/img/szycie_min.jpg" alt="Szkoła szycia" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
-Cykl warsztatów dla dorosłych i dzieci od ośmiu lat. Indywidualnym podejściem do każdego kursanta uczymy praktycznego szycia. W miłej atmosferze i w otoczeniu kostiumów teatralnych nauczymy się korzystać z maszyny do szycia, wykonywać wykroje, projektować, uszyć kreację, rozwinąć swoje umiejętności. Zajęcia prowadzone pod okiem kostiumologa i krawcowej. Spotykamy się w sobotnie popołudnia.
+Cykl warsztatów dla dorosłych i dzieci od ośmiu lat. Indywidualnym podejściem do każdego kursanta uczymy praktycznego szycia. W miłej atmosferze i w otoczeniu kostiumów teatralnych nauczymy się korzystać z maszyny , wykonywać wykroje, projektować i szyć kreacje, rozwinąć swoje umiejętności. Zajęcia prowadzone będą pod okiem kostiumologa i krawcowej. Spotykamy się w sobotnie popołudnia.
 <br />
 <br />Grupa młodsza 15:00 - 16:30.
 <br />Grupa starsza 16:30 - 18:00.
