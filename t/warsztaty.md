@@ -12,14 +12,14 @@ published: true
 <h2><ul class="photos">Szkoła szycia</ul></h2>
 <a id="single_image" href="lay/img/szycie_big.jpg"><img src="lay/img/szycie_min.jpg" alt="Szkoła szycia" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
-Cykl warsztatów dal dorosłych i dzieci od ośmiu lat. Indywidualnym podejściem do każdego kursanta uczymy praktycznego szycia. W miłej atmosferze i w otoczeniu kostiumów teatralnych nauczymy się korzystać z maszyny szycia, wykonywać wykroje, projektowac, uszyć kreację, rozwinąć swoje umiejętności. Zajęcia prowadzone pod okiem kostiumologa i krawcowej. Spotykamy się w sobotnie popołudnia.
+Cykl warsztatów dla dorosłych i dzieci od ośmiu lat. Indywidualnym podejściem do każdego kursanta uczymy praktycznego szycia. W miłej atmosferze i w otoczeniu kostiumów teatralnych nauczymy się korzystać z maszyny do szycia, wykonywać wykroje, projektować, uszyć kreację, rozwinąć swoje umiejętności. Zajęcia prowadzone pod okiem kostiumologa i krawcowej. Spotykamy się w sobotnie popołudnia.
 <br />
 <br />Grupa młodsza 15:00 - 16:30.
 <br />Grupa starsza 16:30 - 18:00.
 <br />Cena spotkania 50zł.
 <br /> Zapisy: 501 - 027 - 278.
 <br />Miejsce: Kostiumeria Teatru Maskarada, Dunikowskiego 3
-<br />wejście od podwórka, Ursynów.
+<br />wejście od podwórka, Ursynów - metro Stokłosy.
 
 
 <h2><ul class="photos">Lalka w teatrze</ul></h2>
