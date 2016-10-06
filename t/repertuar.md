@@ -68,3 +68,5 @@ na Starym Mieście w Warszawie
 24.10 poniedziałek - godz. 10.30 - "Kuba i Buba czyli awantura do kwadratu"
 
 24.10 poniedziałek - godz. 12.00 - "Kuba i Buba czyli awantura do kwadratu"
+
+15.10 wtorek - godz. 10.00 - "Wesołe Koty"
