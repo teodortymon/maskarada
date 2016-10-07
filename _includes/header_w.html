@@ -18,9 +18,7 @@
     //<![CDATA[
 		$(document).ready(function () {
 			$(".lista-kostiumow a").fancybox();
-		});
-
-		var isshow = localStorage.getItem('status');
+			var isshow = localStorage.getItem('status');
 	    // var isshow = null;
 	    if (isshow== null) {
 	        localStorage.setItem('status', 1);
@@ -37,6 +35,8 @@
 	        		}
 	        	);
 	    }
+		});
+
     //]]>
     </script>
 	<script type="text/javascript">
