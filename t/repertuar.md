@@ -95,9 +95,9 @@ na Starym Mieście w Warszawie
 
 4.12 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
 
-5.12 poniedziałek -  godz. 11.00 - "Elfy i fabryka prezentów"
-
 5.12 poniedziałek - godz. 9.45 - "Elfy i fabryka prezentów"
+
+5.12 poniedziałek -  godz. 11.00 - "Elfy i fabryka prezentów"
 
 6.12 wtorek - godz. 9.45 - "Elfy i fabryka prezentów"
 
