@@ -35,17 +35,6 @@ na Starym Mieście w Warszawie
 
 
 
-## Wrzesień
-
-11.09 niedziela - godz. 12.30 - "Urodziny Turli i Taja"
-
-18.09 niedziela - godz. 16.00 - "Urodziny Turli i Taja"
-
-25.09 niedziela - godz. 12.30 - "Wesołe Koty" ****Premiera****
-
-26.09 poniedziałek - godz. 11.00 - "Wesołe Koty"
-
-<br /><br />
 
 ## Październik
 
@@ -100,6 +89,8 @@ na Starym Mieście w Warszawie
 5.12 poniedziałek -  godz. 11.00 - "Elfy i fabryka prezentów"
 
 6.12 wtorek - godz. 9.45 - "Elfy i fabryka prezentów"
+
+6.12 wtorek - godz. 11.00 - "Elfy i fabryka prezentów"
 
 11.12 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
 
