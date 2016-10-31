@@ -80,7 +80,9 @@ na Starym Mieście w Warszawie
 
 27.11 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
 
-28.11 poniedziałek - godz. 10.00 - "Kuba i Buba czyli awantura do kwadratu"
+28.11 poniedziałek - godz. 9.45 - "Kuba i Buba czyli awantura do kwadratu"
+
+28.11 poniedziałek - godz. 11.00 - "Kuba i Buba czyli awantura do kwadratu"
 
 ## Grudzień
 
