@@ -82,6 +82,8 @@ na Starym Mieście w Warszawie
 
 18.12 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
 
+18.12 niedziela - godz. 16.00 - "Urodziny Turlitaja"
+
 19.12 poniedziałek - godz. 9.45 - "Elfy i fabryka prezentów"
 
 19.12 poniedziałek - godz. 11.00 - "Elfy i fabryka prezentów"
