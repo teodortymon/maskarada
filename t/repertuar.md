@@ -69,3 +69,17 @@ na Starym Mieście w Warszawie
 20.12 wtorek - godz. 9.45 - "Elfy i fabryka prezentów"
 
 20.12 wtorek - godz. 11.00 - "Elfy i fabryka prezentów"
+
+## Styczeń
+
+8.01.2017 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
+
+15.01.2017 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
+
+22.01.2017 niedziela - godz. 12.30 - "Chmurka i Bratek"
+
+22.01.2017 niedziela - godz. 16.00 - "Urodziny Turli i Taja"
+
+29.01.2017 niedziela - godz. 12.30 - "Kuba i Buba czyli awantura do kwadratu"
+
+
