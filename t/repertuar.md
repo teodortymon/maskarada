@@ -78,11 +78,13 @@ na Starym Mieście w Warszawie
 
 15.01.2017 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
 
+16.01.2017 poniedziałek - godz.11.00 "Calineczka" 
+
 22.01.2017 niedziela - godz. 12.30 - "Chmurka i Bratek"
 
-23.01.2017 poniedziałek - godz.11.00 - "Chmurka i Bratek"
-
 22.01.2017 niedziela - godz. 16.00 - "Urodziny Turli i Taja"
+
+23.01.2017 poniedziałek - godz.11.00 - "Chmurka i Bratek"
 
 29.01.2017 niedziela - godz. 12.30 - "Kuba i Buba czyli awantura do kwadratu"
 
