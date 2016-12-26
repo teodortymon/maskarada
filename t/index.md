@@ -233,7 +233,7 @@ Premiera: 30 marzec 2014 <br />
 
 <h2 style="text-shadow: 2px 2px rgba(255, 68, 68, 0.72)">Elfy i fabryka prezentów</h2>
 <br />
-<a id="single_image" href="lay/img/elfy_big.jpg"><img src="lay/img/elfy_mini.png" alt="Elfy i fabryka prezentów" style="float:left;"/></a>
+<a id="single_image" href="lay/img/elfy_big.jpg"><img src="lay/img/elfy_mini.jpg" alt="Elfy i fabryka prezentów" style="float:left;"/></a>
 <p>
 W fabryce prezentów na biegunie praca wre. Zbliża się północ, Mikołaj odpoczywa przed podróżą, a dwa Elfy spieszą się, by przygotować wszystkie prezenty. Oczywiśćie nie obędzie się bez komplikacji.
 <br />
