@@ -22,15 +22,8 @@ published: true
 
 Szanowni Widzowie!
 
-zapraszamy do pięknej 
-
-##Sali Wielkiej - Centralnej Biblioteki Rolniczej
-
-przy Krakowskim Przedmieściu 66,
-
-tylko 100 metrów od Kolumny Zygmunta, 
-
-na Starym Mieście w Warszawie
+Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienia siedzibę.
+O nowym adresie poinformujemy przed końcem tego miesiąca
 <br /><br /><br /><br /> 
 
 
