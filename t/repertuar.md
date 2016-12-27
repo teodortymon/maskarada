@@ -20,10 +20,10 @@ published: true
 ## Repertuar  
 
 
-Szanowni Widzowie!
+## Szanowni Widzowie!
 
-Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienia siedzibę.
-O nowym adresie poinformujemy przed końcem tego miesiąca
+## Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienia siedzibę.
+## O nowym adresie poinformujemy przed końcem tego miesiąca
 <br /><br /><br /><br /> 
 
 
