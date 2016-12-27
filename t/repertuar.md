@@ -23,7 +23,8 @@ published: true
 ## Szanowni Widzowie!
 
 ## Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienia siedzibę.
-## O nowym adresie poinformujemy przed końcem tego miesiąca
+
+O nowym adresie poinformujemy przed końcem tego miesiąca
 <br /><br /><br /><br /> 
 
 
