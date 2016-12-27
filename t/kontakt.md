@@ -10,7 +10,8 @@ published: true
 
 **SCENA** 
 
-Warszawa, Krakowskie Przedmieście 66<br/>Sala Wielka - Centralna Biblioteka Rolnicza  
+Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienia siedzibę.
+O nowym adresie poinformujemy przed końcem tego miesiąca 
 
 **Rezerwacja biletów** 
 
