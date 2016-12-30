@@ -23,8 +23,8 @@ published: true
 ## Szanowni Widzowie!
 
 ### Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienił siedzibę
-
-Nowy adres znajdziecie państwo w zakładce Kontakt
+Gramy dla was przy ul. Nowy Świat 63 <br />
+<i> Więcej informacji w zakładce kontakt</i> 
 <br /><br /><br /><br /> 
 
 
