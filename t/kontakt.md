@@ -10,10 +10,10 @@ published: true
 
 **SCENA** 
 
-### Szanowni Widzowie!<br/><br/>
-### Od 1. Stycznia 2017 Teatr Maskarada zmienia adres. <br/><br/>
-### Gramy dla was przy ul. Nowy Świat 63<br/><br/>
-### (Nowy Świat Muzyki)<br/><br/>
+<b> Szanowni Widzowie! <br /><br />
+ Od 1. Stycznia 2017 Teatr Maskarada zmienia adres. <br/><br/>
+ Gramy dla was przy ul. Nowy Świat 63<br/><br/>
+ (Nowy Świat Muzyki)<br/><br/></b>
 
 **Rezerwacja biletów** 
 
