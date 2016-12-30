@@ -10,19 +10,21 @@ published: true
 
 **SCENA** 
 
-Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienia siedzibę.
-O nowym adresie poinformujemy przed końcem tego miesiąca 
+Szanowni Widzowie!
+***Od 1. Stycznia 2017 Teatr Maskarada zmienia adres.***
+Gramy dla was przy ul. Nowy Świat 63<br/>
+(Nowy Świat Muzyki)
 
 **Rezerwacja biletów** 
 
-telefoniczna: 501 027 278 lub  www.ebilet.pl
+telefoniczna: 501 027 278  /  www.ebilet.pl i www.ewejsciowki.pl
 
 Kasa czynna godzinę przed spektaklem.  
 
 teatr.maskarada@gmail.com
 
 
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=krakowskie%20przedmiescie%2066%20maskarada&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU" allowfullscreen></iframe>
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Teatr+Maskarada+dla+dzieci&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU" allowfullscreen></iframe>
 
 
 
