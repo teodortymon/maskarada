@@ -22,9 +22,9 @@ published: true
 
 ## Szanowni Widzowie!
 
-### Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienia siedzibę.
+### Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienił siedzibę
 
-O nowym adresie poinformujemy przed końcem tego miesiąca
+Nowy adres znajdziecie państwo w zakładce Kontakt
 <br /><br /><br /><br /> 
 
 
