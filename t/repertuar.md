@@ -68,11 +68,9 @@ Gramy dla was przy ul. Nowy Świat 63 <br />
 
 8.01.2017 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
 
-9.01.2017 poniedziałek - godz. 11.00 - "Elfy i fabryka prezentów"
-
 15.01.2017 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
 
-16.01.2017 poniedziałek - godz.11.00 "Calineczka" 
+16.01.2017 poniedziałek - godz.11.00 "Elfy i fabryka prezentów"
 
 22.01.2017 niedziela - godz. 12.30 - "Chmurka i Bratek"
 
