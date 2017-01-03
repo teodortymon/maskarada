@@ -17,7 +17,8 @@ published: true
 
 **Rezerwacja biletów** 
 
-telefoniczna: 501 027 278  /  www.ebilet.pl i www.ewejsciowki.pl
+Rezerwacji biletów można dokonać telefonicznie pod numerem:  
+501 027 278 lub [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki](https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333)
 
 Kasa czynna godzinę przed spektaklem.  
 
