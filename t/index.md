@@ -55,15 +55,15 @@ Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji p
 <table border="0">
 <tr>
     <td><strong>Tekst</strong><br />Pola Wójcik<br /></td>
+    <td><strong>Scenografia</strong><br />Małgorzata Domańska<br /><br /></td>
     <td><strong>Muzyka</strong><br />Zuzanna Całka<br /><br /></td>
-    
 </tr>
 </table>
 <br />
 <strong>Występują</strong>
 <br /><br />
 Anna Bakalarska<br />
-Joanna Bangowska<br />
+Joanna Róg<br />
 Agnieszka Senderowska
 <br />Jan Falba<br />
 
