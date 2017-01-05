@@ -50,3 +50,22 @@ Gramy dla was przy ul. Nowy Świat 63 <br />
 29.01.2017 niedziela - godz. 12.30 - "Kuba i Buba czyli awantura do kwadratu"
 
 30.01.2017 poniedziałek - godz. 11.00 - "Kuba i Buba czyli awantura do kwadratu"
+
+
+## Luty 
+
+5.02.2017 niedziela - godz. 12.30 - "Calineczka" 
+
+6.02.2017 poniedziałek - godz. 11.00 - "Calineczka"
+
+12.02.2017 niedziela - godz. 12.30 - "Wesołe Koty"
+
+13.02.2017 poniedziałek - godz. 11.00 - "Wesołe Koty"
+
+19.02.2017 niedziela - godz. 12.30 - "Księżniczka na ziarnku grochu"
+
+
+
+
+
+
