@@ -51,6 +51,7 @@ Gramy dla was przy ul. Nowy Świat 63 <br />
 
 30.01.2017 poniedziałek - godz. 11.00 - "Kuba i Buba czyli awantura do kwadratu"
 
+<br /><br />
 
 ## Luty 
 
