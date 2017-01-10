@@ -63,7 +63,11 @@ Gramy dla was przy ul. Nowy Świat 63 <br />
 
 13.02.2017 poniedziałek - godz. 11.00 - "Wesołe Koty"
 
-19.02.2017 niedziela - godz. 12.30 - "Księżniczka na ziarnku grochu"
+19.02.2017 niedziela - godz. 12.30 - Urodziny Turli i Taja"
+
+26.02.2017 czwartek - godz. 12:30 "Księżniczka na ziarnku grochu"
+
+27.02.2017 piątek - godz. 11:00 "Księżniczka na ziarnku grochu"
 
 
 
