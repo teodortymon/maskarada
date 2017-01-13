@@ -37,7 +37,8 @@ Gramy dla was przy ul. Nowy Świat 63 <br />
 
 8.01.2017 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
 
-15.01.2017 niedziela - godz. 12.30 - "Elfy i fabryka prezentów"
+15.01.2017 niedziela - godz. 12.30 - "Elfy i fabryka prezentów" <a href="https://ewejsciowki.pl/embedded/rezerwacja/52266
+    ">Kup bilet</a>
 
 16.01.2017 poniedziałek - godz.11.00 "Elfy i fabryka prezentów"
 
