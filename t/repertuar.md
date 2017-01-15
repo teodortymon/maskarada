@@ -20,9 +20,9 @@ published: true
 
 
 ## Szanowni Widzowie!
-
-### Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienił siedzibę
-Gramy dla was przy ul. Nowy Świat 63 <br />
+<br /><br /> Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienił siedzibę
+<br /><br />
+Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 <i> Więcej informacji w zakładce kontakt</i> 
 <br /><br /><br /><br /> 
 
@@ -77,7 +77,7 @@ Gramy dla was przy ul. Nowy Świat 63 <br />
 		<th>23.01.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Chmurka i Bratek</th>
-		<th>Rezerwacje grupowe</th>
+		<th>Rezerwacje grupowe <i>zapraszamy</i></th>
 	</tr>
 	<tr>
 		<th>29.01.2017 niedziela</th>
@@ -109,7 +109,7 @@ Gramy dla was przy ul. Nowy Świat 63 <br />
 		<th>6.02.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Calineczka</th>
-		<th>Rezerwacje grupowe</th>
+		<th>Rezerwacje grupowe <i>zapraszamy</i></th>
 	</tr>
 	<tr>
 		<th>12.02.2017 niedziela</th>
@@ -122,7 +122,7 @@ Gramy dla was przy ul. Nowy Świat 63 <br />
 		<th>13.02.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
-		<th>Rezerwacje grupowe</th>
+		<th>Rezerwacje grupowe <i>zapraszamy</i></th>
 	</tr>
 	<tr>
 		<th>19.02.2017 niedziela</th>
