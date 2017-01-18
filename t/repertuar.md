@@ -131,6 +131,12 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/55437
     ">Kup bilet</a></th>
 	</tr>
+	<tr>
+		<th>20.02.2017 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe koty</th>
+		<th>Rezerwacje grupowe <i>zapraszamy</i></th>
+	</tr>
 </table>
 
 <style>
