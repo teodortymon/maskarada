@@ -10,11 +10,12 @@ published: true
 **Cena biletu - 35 zł**  
 
 
-Rezerwacji biletów można dokonać:
-- bezpośrednio ze strony Teatru w zakładace [Repertuar](http://www.maskarada.waw.pl/t/repertuar.html)
-- telefonicznie pod numerem 501 027 278
-- w kasie Teatru na godzinę przed spektaklem (płatność tylko gotówką)
-- na portalach [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki](https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333)
+<ul>Rezerwacji biletów można dokonać:
+  <li>- bezpośrednio ze strony Teatru w zakładace [Repertuar](http://www.maskarada.waw.pl/t/repertuar.html)</li>
+  <li>- telefonicznie pod numerem 501 027 278</li>
+  <li>- w kasie Teatru na godzinę przed spektaklem (płatność tylko gotówką)</li>
+  <li>- na portalach [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki](https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333)</li>
+</ul>
 
 
 **Szkoły i przedszkola/cena biletu grupowego - 25 zł**  
