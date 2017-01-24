@@ -25,7 +25,7 @@ Prosimy o kontakt tel. w celu rezerwacji i uzgodnienia terminu
 ## Informacje dodatkowe
 
 Miejsca na widowni są nienumerowane  
-Widownia ma 150 miejsc  
+Widownia ma 120 miejsc  
 
 Bilety można zwrócić lub przełożyć na inny termin  
 najpóźniej 3 dni przed datą przedstawienia  
