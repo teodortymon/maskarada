@@ -77,7 +77,7 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>23.01.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Chmurka i Bratek</th>
-		<th>Rezerwacje grupowe <i>zapraszamy</i></th>
+		<th>Rezerwacje grupowe <i>zapraszamy<br />501 027 278</i></th>
 	</tr>
 	<tr>
 		<th>29.01.2017 niedziela</th>
@@ -109,7 +109,7 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>6.02.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Calineczka</th>
-		<th>Rezerwacje grupowe <i>zapraszamy</i></th>
+		<th>Rezerwacje grupowe <i>zapraszamy<br />501 027 278</i></th>
 	</tr>
 	<tr>
 		<th>12.02.2017 niedziela</th>
@@ -122,7 +122,7 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>13.02.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
-		<th>Rezerwacje grupowe <i>zapraszamy</i></th>
+		<th>Rezerwacje grupowe <i>zapraszamy<br />501 027 278</i></th>
 	</tr>
 	<tr>
 		<th>19.02.2017 niedziela</th>
@@ -135,7 +135,7 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>20.02.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe koty</th>
-		<th>Rezerwacje grupowe <i>zapraszamy</i></th>
+		<th>Rezerwacje grupowe <i>zapraszamy<br />501 027 278</i></th>
 	</tr>
 </table>
 
