@@ -119,12 +119,7 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
     ">Kup bilet</a></th>
 	</tr>
 	<tr>
-		<th>13.02.2017 poniedziałek</th>
-		<th>11.00</th>
-		<th>Wesołe Koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
+	
 		<th>19.02.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Urodziny Turli i Taja</th>
