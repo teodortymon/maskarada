@@ -128,7 +128,7 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 	</tr>
 	<tr>
 		<th>20.02.2017 poniedziałek</th>
-		<th>11.00</th>
+		<th>10.50</th>
 		<th>Wesołe koty</th>
 		<th>Rezerwacje grupowe <i>501027278</i></th>
 	</tr>
