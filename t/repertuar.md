@@ -29,104 +29,16 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 
 
 
-## Styczeń
-<br />
-<table class="pure-table">
-	<thead>
-		<tr>
-			<th>Data</th>
-			<th>Godzina</th>
-			<th>Przedstawienie</th>
-			<th>Bilety</th>
-		</tr>
-	</thead>
-	<tr>
-		<th>8.01.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Elfy i fabryka prezentów</th>
-		<th>-</th>
-	</tr>
-	<tr>
-		<th>15.01.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Elfy i fabryka prezentów</th>
-		<th>-</th>
-	</tr>
-	<tr>
-		<th>16.01.2017 poniedziałek</th>
-		<th>11.00</th>
-		<th>Elfy i fabryka prezentów</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/52267
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>22.01.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Chmurka i Bratek</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/52268
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>22.01.2017 niedziela</th>
-		<th>16.00</th>
-		<th>Urodziny Turli i Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/52269
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>23.01.2017 poniedziałek</th>
-		<th>11.00</th>
-		<th>Chmurka i Bratek</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>29.01.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Kuba i Buba czyli awantura do kwadratu</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/52271
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>30.01.2017 poniedziałek</th>
-		<th>11.00</th>
-		<th>Kuba i Buba czyli awantura do kwadratu</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/52272
-    ">Kup bilet</a></th>
-	</tr>
-</table>
+## 
+	
+	
 <br /><br />
 
 ## Luty 
 <table class="pure-table">
 	<tr>
-		<th>5.02.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Calineczka</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/55433
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>6.02.2017 poniedziałek</th>
-		<th>11.00</th>
-		<th>Calineczka</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>12.02.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/55435
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-	
-		<th>19.02.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Urodziny Turli i Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/55437
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
+		
+		
 		<th>20.02.2017 poniedziałek</th>
 		<th>10.50</th>
 		<th>Wesołe koty</th>
@@ -195,6 +107,13 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>Urodziny Turli i Taja</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
+    <tr>
+    	<th>28.03.2017 wtorek</th>
+        <th>11.00</th>
+        <th>Urodziny Turli i Taja</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+        
+    	
 </table>
 
 <style>
