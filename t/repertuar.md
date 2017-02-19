@@ -29,8 +29,6 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 
 
 
-## 
-	
 	
 <br /><br />
 
