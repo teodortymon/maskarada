@@ -113,6 +113,42 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
         
     	
 </table>
+<br /><br />
+## Kwiecień
+<table class="pure-table">
+	<tr>
+		<th>2.04.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Kuba i buba, czyli awantura do kwadratu</th>
+		<th><i>Bilety dostępne już wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>3.04.2017 poniedziałek</th>
+		<th>11.00</th>
+		<th>Kuba i buba, czyli awantura do kwadratu</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>9.04.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety dostępne już wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>9.04.2017 niedziela</th>
+		<th>16.00</th>
+		<th>Urodziny Turli-Taja</th>
+		<th><i>Bilety dostępne już wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>10.04.2017 poniedziałek</th>
+		<th>10.00</th>
+		<th>Calineczka</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+</table>
+
+
 
 <style>
 .pure-table thead {
