@@ -68,6 +68,12 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
     ">Kup bilet</a></th>
 	</tr>
 	<tr>
+		<th>12.03.2017 niedziela</th>
+		<th>16.00</th>
+		<th>Chmurka i Bratek</th>
+		<th><i>Bilety online dostępne już wkrótce</i></th>
+	</tr>
+	<tr>
 		<th>13.03.2017 poniedziałek</th>
 		<th>10.00</th>
 		<th>Wesołe Koty</th>
@@ -122,7 +128,7 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>2.04.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Kuba i buba, czyli awantura do kwadratu</th>
-		<th><i>Bilety dostępne już wkrótce</i></th>
+		<th><i>Bilety online dostępne już wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>3.04.2017 poniedziałek</th>
@@ -134,13 +140,13 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>9.04.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety dostępne już wkrótce</i></th>
+		<th><i>Bilety online dostępne już wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>9.04.2017 niedziela</th>
 		<th>16.00</th>
 		<th>Urodziny Turli-Taja</th>
-		<th><i>Bilety dostępne już wkrótce</i></th>
+		<th><i>Bilety online dostępne już wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>10.04.2017 poniedziałek</th>
@@ -152,7 +158,7 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>23.04.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
-		<th><i>Bilety dostępne już wkrótce</i></th>
+		<th><i>Bilety online dostępne już wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>24.04.2017 poniedziałek</th>
