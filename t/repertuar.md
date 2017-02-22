@@ -109,12 +109,14 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
     	<th>28.03.2017 wtorek</th>
         <th>11.00</th>
         <th>Urodziny Turli i Taja</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-        
-    	
+	<th>Rezerwacje grupowe <i><br />501027278</i></th>
+     </tr>
+     	
 </table>
 <br /><br />
+
 ## Kwiecień
+
 <table class="pure-table">
 	<tr>
 		<th>2.04.2017 niedziela</th>
