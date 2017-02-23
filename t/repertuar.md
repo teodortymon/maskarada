@@ -166,6 +166,12 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>Wesołe Koty</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
+	<tr>
+		<th>30.04.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Co w trawie bzyczy</th>
+		<th><i>Bilety online dostępne już wkrótce</i></th>
+	</tr>
 </table>
 
 
