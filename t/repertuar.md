@@ -71,7 +71,8 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>12.03.2017 niedziela</th>
 		<th>16.00</th>
 		<th>Chmurka i Bratek</th>
-		<th><i>Bilety online dostępne już wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/61021
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>13.03.2017 poniedziałek</th>
