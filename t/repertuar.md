@@ -175,7 +175,8 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 		<th>30.04.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy</th>
-		<th><i>Bilety online dostępne już wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/61062
+    ">Kup bilet</a></th>
 	</tr>
 </table>
 
