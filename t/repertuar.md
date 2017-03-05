@@ -42,7 +42,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>6.03.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Calineczka</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+		<th>Rezerwacje grupowe <i><br />501 027 278</i></th>
 	</tr>
 	<tr>
 		<th>12.03.2017 niedziela</th>
