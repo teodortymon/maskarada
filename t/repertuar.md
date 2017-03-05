@@ -32,18 +32,6 @@ Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
 	
 <br /><br />
 
-## Luty 
-<table class="pure-table">
-	<tr>
-		
-		
-		<th>20.02.2017 poniedziałek</th>
-		<th>10.50</th>
-		<th>Wesołe koty</th>
-		<th>Rezerwacje grupowe <i>501027278</i></th>
-	</tr>
-</table>
-<br /><br />
 
 ## Marzec 
 <table class="pure-table">
