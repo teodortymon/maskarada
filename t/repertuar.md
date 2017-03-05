@@ -22,13 +22,9 @@ published: true
 ## Szanowni Widzowie!
 <br /><br /> Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienił siedzibę
 <br /><br />
-Gramy dla was przy <strong>ul. Nowy Świat 63</strong> <br />
+Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <br />
 <i> Więcej informacji w zakładce kontakt</i> 
 <br /><br /><br /><br /> 
-
-
-
-
 	
 <br /><br />
 
