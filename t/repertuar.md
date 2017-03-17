@@ -124,7 +124,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 	<tr>
 		<th>3.04.2017 poniedziałek</th>
-		<th>9.45</th>
+		<th>9.30</th>
 		<th>Kuba i buba, czyli awantura do kwadratu</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
@@ -161,6 +161,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
+		<th>20.04.2017 czwartek</th>
+		<th>11.00</th>
+		<th>Calineczka</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
 		<th>23.04.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
@@ -175,6 +181,24 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 	<tr>
 		<th>24.04.2017 poniedziałek</th>
+		<th>11.15</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>25.04.2017 wtorek</th>
+		<th>10.00</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>25.04.2017 wtorek</th>
+		<th>11.15</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>25.04.2017 wtorek</th>
 		<th>11.15</th>
 		<th>Wesołe Koty</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
