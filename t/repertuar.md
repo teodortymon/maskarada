@@ -190,7 +190,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>10.00</th>
 		<th>Wesołe Koty</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
+		</tr>
 	<tr>
 		<th>25.04.2017 wtorek</th>
 		<th>11.15</th>
