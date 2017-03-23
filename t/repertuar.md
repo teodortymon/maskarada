@@ -135,6 +135,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
+		<th>3.04.2017 poniedziałek</th>
+		<th>12.15</th>
+		<th>Kuba i buba, czyli awantura do kwadratu</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
 		<th>9.04.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
@@ -162,6 +168,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 	<tr>
 		<th>20.04.2017 czwartek</th>
+		<th>10.00</th>
+		<th>Calineczka</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>20.04.2017 czwartek</th>
 		<th>11.00</th>
 		<th>Calineczka</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
@@ -172,6 +184,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Calineczka</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/61027
     ">Kup bilet</a></th>
+	</tr>
+	<tr>
+		<th>23.04.2017 niedziela</th>
+		<th>16.00</th>
+		<th>Urodziny Turli-Taja</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>24.04.2017 poniedziałek</th>
