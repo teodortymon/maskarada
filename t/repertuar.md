@@ -224,6 +224,65 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 </table>
 
+## Maj
+
+<table class="pure-table">
+	<tr>
+		<th>7.05.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>8.05.2017 poniedziałek</th>
+		<th>10.00</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>14.05.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>14.05.2017 niedziela</th>
+		<th>16.00</th>
+		<th>Urodziny Turli-Taja</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>15.05.2017 poniedziałek</th>
+		<th>10.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>21.05.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Calineczka</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>22.05.2017 poniedziałek</th>
+		<th>10.00</th>
+		<th>Calineczka</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>28.05.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Kuba i buba, czyli awantura do kwadratu</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>29.05.2017 poniedziałek</th>
+		<th>10.00</th>
+		<th>Kuba i buba, czyli awantura do kwadratu</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+</table>
+
 
 
 <style>
