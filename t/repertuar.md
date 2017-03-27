@@ -223,6 +223,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
     ">Kup bilet</a></th>
 	</tr>
 </table>
+<br /><br />
 
 ## Maj
 
