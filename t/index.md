@@ -63,9 +63,8 @@ Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji p
 <strong>Występują</strong>
 <br /><br />
 Anna Bakalarska<br />
-Joanna Róg<br />
-Agnieszka Senderowska
-<br />Jan Falba<br />
+Joanna Róg/Joanna Pietrońska<br />
+Agnieszka Senderowska<br />
 
 <ul class="photos">
     <a id="single_image" rel="7" href="lay/img/turlitaj/large/1.jpg"><img src="lay/img/turlitaj/small/1.jpg"/></a>
@@ -198,7 +197,7 @@ Premiera: 30 marzec 2014 <br />
 <br /><br />
 <table border="0">
 <tr>
-	<td><strong>Występują</strong><br />Agnieszka Senderowska<br />Monika Głowienko / Anna Bakalarska<br />Jan Falba<br /><br /></td>
+	<td><strong>Występują</strong><br />Agnieszka Senderowska<br />Monika Głowienko / Anna Bakalarska<br />Adam Biernat/Jan Falba<br /><br /></td>
     <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
 </tr>
 <tr>
