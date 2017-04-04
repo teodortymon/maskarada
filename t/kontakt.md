@@ -11,7 +11,7 @@ published: true
 **SCENA** 
 
  Gramy dla was przy ul. Nowy Świat 63<br/><br/>
- (Nowy Świat Muzyki)<br/><br/></b>
+ (Nowy Świat Muzyki)<br/><br/><b/>
 
 **Rezerwacja biletów** 
 
