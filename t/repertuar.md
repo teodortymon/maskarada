@@ -133,6 +133,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
+		<th>25.04.2017 wtorek</th>
+		<th>12.15</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
 		<th>30.04.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy</th>
@@ -157,6 +163,14 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Wesołe Koty</th>
 		<th><i>Bilety online dostępne wkrótce</i></th>
 	</tr>
+	
+	<tr>
+		<th>8.05.2017 poniedziałek</th>
+		<th>11.15</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	
 	<tr>
 		<th>14.05.2017 niedziela</th>
 		<th>12.30</th>
@@ -195,7 +209,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 	<tr>
 		<th>29.05.2017 poniedziałek</th>
-		<th>10.00</th>
+		<th>9.45</th>
 		<th>Kuba i buba, czyli awantura do kwadratu</th>
 		<th><i>Bilety online dostępne wkrótce</i></th>
 	</tr>
