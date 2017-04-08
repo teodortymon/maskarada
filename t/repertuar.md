@@ -155,63 +155,68 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>7.05.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67574
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>8.05.2017 poniedziałek</th>
 		<th>10.00</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	
 	<tr>
 		<th>8.05.2017 poniedziałek</th>
 		<th>11.15</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	
 	<tr>
 		<th>14.05.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67579
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>14.05.2017 niedziela</th>
 		<th>16.00</th>
 		<th>Urodziny Turli-Taja</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67580
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>15.05.2017 poniedziałek</th>
 		<th>10.00</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>21.05.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67582
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>22.05.2017 poniedziałek</th>
 		<th>10.00</th>
 		<th>Calineczka</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>28.05.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Kuba i buba, czyli awantura do kwadratu</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67584
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>29.05.2017 poniedziałek</th>
 		<th>9.45</th>
 		<th>Kuba i buba, czyli awantura do kwadratu</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 </table>
 
