@@ -106,7 +106,8 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>23.04.2017 niedziela</th>
 		<th>16.00</th>
 		<th>Urodziny Turli-Taja</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/66637
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>24.04.2017 poniedziałek</th>
@@ -218,6 +219,56 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Kuba i buba, czyli awantura do kwadratu</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
+</table>
+
+<br /><br />
+
+## Czerwiec
+
+<table class="pure-table">
+	<tr>
+		<th>1.06.2017 czwartek</th>
+		<th>10.00</th>
+		<th>Chmurka i Bratek</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>1.06.2017 czwartek</th>
+		<th>11.15</th>
+		<th>Chmurka i Bratek</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>4.06.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Chmurka i Bratek</th>
+		<th><i>Bilety online dostępne już wkrótce</i>/th>
+	</tr>
+	<tr>
+		<th>5.06.2017 poniedziałek</th>
+		<th>10.00</th>
+		<th>Chmurka i Bratek</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>11.06.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th><i>Bilety online dostępne już wkrótce</i>/th>
+	</tr>
+	<tr>
+		<th>12.06.2017 poniedziałek</th>
+		<th>10.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>18.06.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Co w trawie bzyczy?</th>
+		<th><i>Bilety online dostępne już wkrótce</i>/th>
+	</tr>
+	
 </table>
 
 
