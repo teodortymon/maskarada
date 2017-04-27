@@ -194,6 +194,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
+		<th>15.05.2017 poniedziałek</th>
+		<th>11.15</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
 		<th>21.05.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
@@ -203,6 +209,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	<tr>
 		<th>22.05.2017 poniedziałek</th>
 		<th>10.00</th>
+		<th>Calineczka</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>22.05.2017 poniedziałek</th>
+		<th>11.15</th>
 		<th>Calineczka</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
@@ -242,7 +254,8 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>4.06.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Chmurka i Bratek</th>
-		<th><i>Bilety online dostępne już wkrótce</i>/th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67918
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>5.06.2017 poniedziałek</th>
@@ -254,7 +267,8 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>11.06.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th><i>Bilety online dostępne już wkrótce</i>/th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67919
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>12.06.2017 poniedziałek</th>
@@ -266,7 +280,8 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>18.06.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy?</th>
-		<th><i>Bilety online dostępne już wkrótce</i>/th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67921
+    ">Kup bilet</a></th>
 	</tr>
 	
 </table>
