@@ -13,7 +13,6 @@ published: true
 
 ## Repertuar  
 
-
 ## Szanowni Widzowie!
 <br /><br /> Uprzejmie informujemy, że od Nowego Roku nasz teatr zmienił siedzibę
 <br /><br />
@@ -22,8 +21,6 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 <br /><br /><br /><br /> 
 	
 <br /><br />
-
-
 
 ## Maj
 
