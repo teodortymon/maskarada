@@ -40,13 +40,6 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 	
 	<tr>
-		<th>8.05.2017 poniedziałek</th>
-		<th>11.15</th>
-		<th>Wesołe Koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	
-	<tr>
 		<th>14.05.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Księżniczka na ziarnku grochu</th>
