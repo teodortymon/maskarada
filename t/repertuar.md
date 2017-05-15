@@ -131,7 +131,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 	<tr>
 		<th>11.06.2017 niedziela</th>
-		<th>12.30</th>
+		<th>12.00</th>
 		<th>Księżniczka na ziarnku grochu</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67919
     ">Kup bilet</a></th>
