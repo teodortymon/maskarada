@@ -362,7 +362,7 @@ Premiera: 13 październik 2013
 
 <tr>
 	<td><strong>Król, Młody Książę</strong><br />Zbigniew Kozłowski/<br />Hubert Mrozowicz<br /><br /></td>
-	<td><strong>Choreografia</strong> Agnieszka Senderowska</td>
+	<td><strong>Choreografia</strong><br /> Agnieszka Senderowska</td>
 </tr>
 
 <tr>
