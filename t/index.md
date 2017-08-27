@@ -356,7 +356,7 @@ Premiera: 13 październik 2013
 </tr>
 
 <tr>
-	<td><strong>Królowa, Księżniczka Pirlipatka</strong><br />Agnieszka Senderowska/ <br />Anna Bakalarska/<br />Ewa Tucholska/<br /><br /></td>
+	<td><strong>Królowa, Księżniczka Pirlipatka</strong><br />Agnieszka Senderowska/ <br />Anna Bakalarska/<br />Ewa Tucholska<br /><br /></td>
 	<td><strong>Scenografia</strong> Małgorzata Domańska</td>
 </tr>
 
