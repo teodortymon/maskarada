@@ -12,7 +12,8 @@ published: true
 
  Gramy dla was przy ul. Nowy Świat 63<br/><br/>
  (Nowy Świat Muzyki)<br/><br/><b/>
- Organizujemy również dla firm. Polecamy nasze zimowe i mikołajkowe przedstawienia i animacje.
+ Organizujemy również spektakle dla firm. <br />
+ Polecamy nasze zimowe i mikołajkowe przedstawienia i animacje.
 
 **Rezerwacja biletów** 
 
