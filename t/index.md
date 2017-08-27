@@ -368,13 +368,15 @@ Premiera: 13 październik 2013
 <tr>
 	<td><strong>Narrator</strong><br />Andrzej Malec</td>
 	<td><strong>Opracowanie filmowe i muzyczne</strong><br />Jan Falba</td>
-
+</tr>
 </table>
 <br /><br />
+
 <strong>Muzyka Wolfganga Amadeusza Mozarta w wykonaniu:</strong>
 <br /><br />
 <br />
 <table border="0">
+
 <tr>
 	<td>Zuzanny Całki</td>
 	<td>Małgorzaty Wasiucionek</td>
