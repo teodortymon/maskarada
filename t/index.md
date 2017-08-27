@@ -2,6 +2,39 @@
 layout: t
 published: true
 ---
+<!--
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tuputup</ul></h2>
+<a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena "Szybkobiegacze i Brzydkie Kaczątko". 
+<br /> Dla dzieci od 0 do 5 lat. 
+<br /> Czas trwania: 30 minut i 15 minut zabawy
+<br /> Premiera 22.10.2017.
+<br /><br />
+<table border="0">
+<tr>
+    <td><strong>Tekst</strong><br />Pola Wójcik</td>
+    <td><strong>Występują</strong><br />Agnieszka Senderowska <br /> Justyna Gumienna<br />Anna Bakalarska</td>
+</tr>
+<tr>
+<!--     <td><strong>Muzyka</strong><br />Zuzanna Całka</td> -->
+    <td><strong>Inscenizacja</strong><br />Małgorzata Domańska</td>
+</tr>
+
+</table>
+<br />
+    
+<ul class="photos">
+    <a id="single_image" rel="8" href="lay/img/koty/large/1.jpg"><img src="lay/img/koty/small/1.jpg"/></a>
+    
+</ul>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+-->
+
 
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Wesołe Koty</ul></h2>
