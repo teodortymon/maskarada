@@ -16,7 +16,7 @@ Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie
     <td><strong>Występują</strong><br />Agnieszka Senderowska <br /> Justyna Gumienna<br />Anna Bakalarska</td>
 </tr>
 <tr>
-<!--     <td><strong>Muzyka</strong><br />Zuzanna Całka</td> -->
+     <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
     <td><strong>Inscenizacja</strong><br />Małgorzata Domańska</td>
 </tr>
 
@@ -345,7 +345,7 @@ Opowiedział  ją pierwszy Christian Andersen. Występują w niej Król i Królo
 <br /><br />
 Przedstawienie trwa 50 minut bez przerwy.
 <br />
-Przedstawienie dla dzieci w wieku od 4 do 11 lat
+Przedstawienie dla dzieci w wieku od 4 do 12 lat
 <br ><br />
 Premiera: 13 październik 2013
 <br /><br />
@@ -356,7 +356,7 @@ Premiera: 13 październik 2013
 </tr>
 
 <tr>
-	<td><strong>Królowa, Księżniczka Pirlipatka</strong><br />Agnieszka Senderowska/ <br />Monika Głowienko<br /><br /></td>
+	<td><strong>Królowa, Księżniczka Pirlipatka</strong><br />Agnieszka Senderowska/ <br />Anna Bakalarska/<br />Ewa Tucholska/<br /><br /></td>
 	<td><strong>Scenografia</strong> Małgorzata Domańska</td>
 </tr>
 
@@ -373,6 +373,7 @@ Premiera: 13 październik 2013
 <br /><br />
 <strong>Muzyka Wolfganga Amadeusza Mozarta w wykonaniu:</strong>
 <br /><br />
+<br />
 <table border="0">
 <tr>
 	<td>Zuzanny Całki</td>
