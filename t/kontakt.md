@@ -12,11 +12,14 @@ published: true
 
  Gramy dla was przy ul. Nowy Świat 63<br/><br/>
  (Nowy Świat Muzyki)<br/><br/><b/>
+ Organizujemy również dla firm. Polecamy nasze zimowe i mikołajkowe przedstawienia i animacje.
 
 **Rezerwacja biletów** 
 
 Rezerwacji biletów można dokonać telefonicznie pod numerem:  
 501 027 278 lub [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki](https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333)
+
+Bilety online dostępne do dwóch godzin przed rozpoczęciem spektaklu, później w kasie.
 
 Kasa czynna godzinę przed spektaklem.  
 
