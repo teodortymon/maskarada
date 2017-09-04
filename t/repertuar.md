@@ -28,13 +28,15 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>17.09.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Urodziny Turli-Taja</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/76905
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>24.09.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/76906
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>25.09.2017 poniedziałek</th>
