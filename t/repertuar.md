@@ -41,12 +41,11 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	<tr>
 		<th>25.09.2017 poniedziałek</th>
 		<th>11.00</th>
-		<th>Wesołe Koty</th>
+		<th>Księżniczka na ziarnku grochu</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 </table>
 
-<!-- 	
 ## Październik
 
 <table class="pure-table">
@@ -101,7 +100,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67921
     ">Kup bilet</a></th>
 	</tr>
-	<tr>
+<!-- 	<tr>
 		<th>29.10.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Urodziny Turli Taja</th>
@@ -121,11 +120,9 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Księżniczka na ziarnku grochu</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67921
     ">Kup bilet</a></th>
-	</tr>
+	</tr> -->
 	
 </table>
-
- -->
 
 
 
