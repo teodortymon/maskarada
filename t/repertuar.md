@@ -46,6 +46,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 </table>
 
+<br /><br />
 ## Październik
 
 <table class="pure-table">
