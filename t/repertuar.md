@@ -59,7 +59,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>2.10.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Calineczka</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>8.10.2017 niedziela</th>
@@ -70,15 +70,14 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	<tr>
 		<th>9.10.2017 poniedziałek</th>
 		<th>10.00</th>
-		<th>???</th>
+		<th>Księżniczka na ziarnku grochu</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>15.10.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Kuba i Buba</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67919
-    ">Kup bilet</a></th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>16.10.2017 poniedziałek</th>
@@ -90,15 +89,19 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>22.10.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Tuputup</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67921
-    ">Kup bilet</a></th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>22.10.2017 niedziela</th>
+		<th>16.00</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>23.10.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67921
-    ">Kup bilet</a></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 <!-- 	<tr>
 		<th>29.10.2017 niedziela</th>
