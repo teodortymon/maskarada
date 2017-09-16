@@ -18,6 +18,9 @@ published: true
 Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <br />
 <i> Więcej informacji w zakładce kontakt</i> 
 <br /><br /><br /><br /> 
+
+Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia". Zapisy trwają!
+<br /><br />
 	
 <br /><br />
 
@@ -66,7 +69,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>8.10.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+		<th><i>Bilety online dostępne wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>9.10.2017 poniedziałek</th>
