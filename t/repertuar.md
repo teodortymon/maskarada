@@ -57,7 +57,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>1.10.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/77776
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>2.10.2017 poniedziałek</th>
@@ -69,7 +70,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>8.10.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/77777
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>9.10.2017 poniedziałek</th>
@@ -81,7 +83,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>15.10.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Kuba i Buba</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/77778
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>16.10.2017 poniedziałek</th>
@@ -99,7 +102,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>22.10.2017 niedziela</th>
 		<th>16.00</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online dostępne wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/77779
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>23.10.2017 poniedziałek</th>
