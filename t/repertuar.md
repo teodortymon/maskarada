@@ -95,7 +95,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>22.10.2017 niedziela</th>
 		<th>12.30</th>
-		<th>Urodziny Turli Taja</th>
+		<th>Urodziny Turli- Taja</th>
 		<th><i>Bilety online dostępne wkrótce</i></th>
 	</tr>
 	<tr>
