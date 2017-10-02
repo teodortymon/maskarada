@@ -125,7 +125,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>6.11.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>12.11.2017 niedziela</th>
@@ -137,7 +137,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>13.11.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Chmurka i Bratek</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>19.11.2017 niedziela</th>
@@ -149,7 +149,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>20.11.2017 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>25.11.2017 sobota</th>
