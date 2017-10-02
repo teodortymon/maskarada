@@ -24,32 +24,6 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	
 <br /><br />
 
-## Wrzesień
-
-<table class="pure-table">
-	<tr>
-		<th>17.09.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Urodziny Turli-Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/76905
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>24.09.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/76906
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>25.09.2017 poniedziałek</th>
-		<th>11.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-</table>
-
-<br /><br />
 ## Październik
 
 <table class="pure-table">
@@ -134,6 +108,53 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
     ">Kup bilet</a></th>
 	</tr> -->
 	
+</table>
+
+## Listopad
+
+<table class="pure-table">
+	<tr>
+		<th>5.11.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Tupu-tup<br /><small><i><premiera</i></small></th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>6.11.2017 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe Koty/th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>12.11.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Chmurka i Bratek/th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>13.11.2017 poniedziałek</th>
+		<th>11.00</th>
+		<th>Chmurka i Bratek/th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>19.11.2017 niedziela</th>
+		<th>11.00</th>
+		<th>Wesołe Koty/th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>20.11.2017 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe Koty/th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>25.11.2017 sobota</th>
+		<th>11.30</th>
+		<th>Tupu-tup/th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
 </table>
 
 
