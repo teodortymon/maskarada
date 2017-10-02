@@ -159,6 +159,95 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 </table>
 
+## Grudzień
+
+<table class="pure-table">
+	<tr>
+		<th>1.12.2017 piątek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>3.12.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>4.12.2017 poniedziałek</th>
+		<th>9.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>4.12.2017 poniedziałek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>6.12.2017 środa</th>
+		<th>9.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>6.12.2017 środa</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>7.12.2017 czwartek</th>
+		<th>9.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>7.12.2017 czwartek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>9.12.2017 sobota</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>10.12.2017 niedziela</th>
+		<th>17.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>11.12.2017 poniedziałek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>12.12.2017 wtorek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>17.12.2017 niedziela</th>
+		<th>12.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><i>Bilety online wkrótce<i/></th>
+	</tr>
+	<tr>
+		<th>18.12.2017 poniedziałek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+</table>
+
 
 
 <style>
