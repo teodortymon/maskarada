@@ -122,37 +122,37 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>6.11.2017 poniedziałek</th>
 		<th>11.00</th>
-		<th>Wesołe Koty/th>
+		<th>Wesołe Koty</th>
 		<th><i>Bilety online wkrótce<i/></th>
 	</tr>
 	<tr>
 		<th>12.11.2017 niedziela</th>
 		<th>12.30</th>
-		<th>Chmurka i Bratek/th>
+		<th>Chmurka i Bratek</th>
 		<th><i>Bilety online wkrótce<i/></th>
 	</tr>
 	<tr>
 		<th>13.11.2017 poniedziałek</th>
 		<th>11.00</th>
-		<th>Chmurka i Bratek/th>
+		<th>Chmurka i Bratek</th>
 		<th><i>Bilety online wkrótce<i/></th>
 	</tr>
 	<tr>
 		<th>19.11.2017 niedziela</th>
 		<th>11.00</th>
-		<th>Wesołe Koty/th>
+		<th>Wesołe Koty</th>
 		<th><i>Bilety online wkrótce<i/></th>
 	</tr>
 	<tr>
 		<th>20.11.2017 poniedziałek</th>
 		<th>11.00</th>
-		<th>Wesołe Koty/th>
+		<th>Wesołe Koty</th>
 		<th><i>Bilety online wkrótce<i/></th>
 	</tr>
 	<tr>
 		<th>25.11.2017 sobota</th>
 		<th>11.30</th>
-		<th>Tupu-tup/th>
+		<th>Tupu-tup</th>
 		<th><i>Bilety online wkrótce<i/></th>
 	</tr>
 </table>
