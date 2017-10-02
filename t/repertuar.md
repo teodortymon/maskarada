@@ -118,7 +118,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>5.11.2017 niedziela</th>
 		<th>12.30</th>
-		<th>Tupu-tup<br /><small><i><premiera</i></small></th>
+		<th>Tupu-tup<br /><small><i>premiera</i></small></th>
 		<th><i>Bilety online wkrótce<i/></th>
 	</tr>
 	<tr>
