@@ -124,7 +124,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>6.11.2017 poniedziałek</th>
 		<th>11.00</th>
-		<th>Wesołe Koty</th>
+		<th>Calineczka</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
