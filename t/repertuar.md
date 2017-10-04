@@ -159,6 +159,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 </table>
 
+<br /><br />
+
 ## Grudzień
 
 <table class="pure-table">
