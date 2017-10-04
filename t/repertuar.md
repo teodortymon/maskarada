@@ -27,7 +27,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 ## Październik
 
 <table class="pure-table">
-<tr>
+	<tr>
 		<th>1.10.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
@@ -85,29 +85,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-<!-- 	<tr>
-		<th>29.10.2017 niedziela</th>
-		<th>12.30</th>
-		<th>Urodziny Turli Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67921
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>29.10.2017 niedziela</th>
-		<th>16.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67921
-    ">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>30.10.2017 poniedziałek</th>
-		<th>11.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/67921
-    ">Kup bilet</a></th>
-	</tr> -->
-	
+	</tr>	
 </table>
 
 <br /><br />
@@ -119,7 +97,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>5.11.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Tupu-tup<br /><small><i>premiera</i></small></th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>6.11.2017 poniedziałek</th>
@@ -131,7 +109,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>12.11.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Chmurka i Bratek</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>13.11.2017 poniedziałek</th>
@@ -143,7 +121,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>19.11.2017 niedziela</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>20.11.2017 poniedziałek</th>
@@ -174,7 +152,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>3.12.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>4.12.2017 poniedziałek</th>
@@ -216,13 +194,13 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>9.12.2017 sobota</th>
 		<th>11.00</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>10.12.2017 niedziela</th>
 		<th>17.00</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>11.12.2017 poniedziałek</th>
@@ -240,7 +218,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>17.12.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce<i/></th>
+		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>18.12.2017 poniedziałek</th>
