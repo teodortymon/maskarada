@@ -50,7 +50,7 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
 <table border="0">
 <tr>
     <td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td>
-    <td><strong>Występują</strong><br />Pamela Adamik <br /> Marek Grabiniok<br />Jan Falba</td>
+    <td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok<br />Jan Falba</td>
 </tr>
 <tr>
     <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
