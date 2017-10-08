@@ -15,7 +15,6 @@ Zajęcia teatralne prowadzone wg autorskiego programu Teatru Maskarada wprowadza
 <br />
 <br />Zajęcia w niedziele lub czwartki o godzinie 17:00.
 <br />Koszt zajęć pojedynczych: 35zł
-<br />Karnet 4 spotkań: 120zł
 <br /> Zapisy: 501 - 027 - 278.
 <br />Miejsce: Teatr Maskarada - Nowy Świat
 
