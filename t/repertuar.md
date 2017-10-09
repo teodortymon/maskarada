@@ -97,7 +97,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>5.11.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Tupu-tup<br /><small><i>premiera</i></small></th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/81541
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>6.11.2017 poniedziałek</th>
@@ -109,7 +110,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>12.11.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Chmurka i Bratek</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/81524
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>13.11.2017 poniedziałek</th>
@@ -119,9 +121,10 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 	<tr>
 		<th>19.11.2017 niedziela</th>
-		<th>11.00</th>
+		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/81525
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>20.11.2017 poniedziałek</th>
@@ -133,7 +136,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>25.11.2017 sobota</th>
 		<th>11.30</th>
 		<th>Tupu-tup</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/81542
+    ">Kup bilet</a></th>
 	</tr>
 </table>
 
