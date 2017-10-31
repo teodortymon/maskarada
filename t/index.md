@@ -38,7 +38,7 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
 
 <br />
 <br /> Czas trwania: 45minut.
-<br />Przedstawienie dla dzieci 2-8 lat.
+<br />Przedstawienie dla dzieci od 3 lat.
 <br />Premiera: 25 wrzesień 2016
 <br /><br />
 <table border="0">
