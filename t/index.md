@@ -17,6 +17,8 @@ Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie
 <tr>
      <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
     <td><strong>Inscenizacja</strong><br />Małgorzata Domańska</td>
+</tr>
+<tr>
 	<td><strong>Choreografia</strong><br />Agnieszka Senderowska</td>
 </tr>
 
