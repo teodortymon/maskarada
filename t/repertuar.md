@@ -221,7 +221,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 	<tr>
 		<th>10.12.2017 niedziela</th>
-		<th>17.00</th>
+		<th>11.30</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
