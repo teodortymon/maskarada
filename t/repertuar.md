@@ -164,6 +164,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 
 ## Grudzień
 
+Zapraszamy do kupna biletów na weekendowe spektakle przez serwis e-wejściówki ("Kup bilet")
+
 <table class="pure-table">
 	<tr>
 		<th>1.12.2017 piątek</th>
@@ -175,7 +177,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>3.12.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/85299
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>4.12.2017 poniedziałek</th>
@@ -217,13 +220,15 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>9.12.2017 sobota</th>
 		<th>11.00</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/85300
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>10.12.2017 niedziela</th>
 		<th>11.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/85301
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>11.12.2017 poniedziałek</th>
@@ -241,7 +246,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>17.12.2017 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/85302
+    ">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>18.12.2017 poniedziałek</th>
