@@ -224,6 +224,12 @@ Zapraszamy do kupna biletów na weekendowe spektakle przez serwis e-wejściówki
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
+		<th>8.12.2017 piątek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
 		<th>9.12.2017 sobota</th>
 		<th>11.00</th>
 		<th>Elfy i fabryka prezentów</th>
@@ -265,7 +271,7 @@ Zapraszamy do kupna biletów na weekendowe spektakle przez serwis e-wejściówki
 	<tr>
 		<th>30.12.2017 sobota</th>
 		<th>12.30</th>
-		<th>Elfy i fabryka prezentów</th>
+		<th>Wesołe koty</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/85986
     ">Kup bilet</a></th>
 	</tr>
