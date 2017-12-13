@@ -153,6 +153,53 @@ Zapraszamy do kupna biletów na weekendowe spektakle przez serwis e-wejściówki
 	</tr>
 </table>
 
+## Styczeń
+
+<table class="pure-table">
+	<tr>
+		<th>7.01.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><small><i>Bilety online wkrótce</i></small>/th>
+	</tr>
+	<tr>
+		<th>9.1.2018 wtorek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>14.01.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><small><i>Bilety online wkrótce</i></small>/th>
+	</tr>
+	<tr>
+		<th>21.01.2018 niedziela</th>
+		<th>12.30</th>
+		<th>small><i>Tytuł przedstawienia wkrótce</i></small>/th>
+		<th><small><i>Bilety online wkrótce</i></small>/th>
+	</tr>
+	<tr>
+		<th>22.01.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>28.01.2018 niedziela</th>
+		<th>12.00</th>
+		<th>Tupu tup</th>
+		<th><small><i>Bilety online wkrótce</i></small>/th>
+	</tr>
+	<tr>
+		<th>29.01.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+</table>
+
 
 
 <style>
