@@ -153,6 +153,8 @@ Zapraszamy do kupna biletów na weekendowe spektakle przez serwis e-wejściówki
 	</tr>
 </table>
 
+<br />
+
 ## Styczeń
 
 <table class="pure-table">
