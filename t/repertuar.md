@@ -196,7 +196,7 @@ Zapraszamy do kupna biletów na weekendowe spektakle przez serwis e-wejściówki
 	</tr>
 	<tr>
 		<th>28.01.2018 niedziela</th>
-		<th>12.00</th>
+		<th>12.30</th>
 		<th>Tupu tup</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
