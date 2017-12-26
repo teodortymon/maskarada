@@ -162,7 +162,7 @@ Zapraszamy do kupna biletów na weekendowe spektakle przez serwis e-wejściówki
 		<th>7.01.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/90435/">Kup bilet</a></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/90435">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>9.1.2018 wtorek</th>
@@ -174,7 +174,13 @@ Zapraszamy do kupna biletów na weekendowe spektakle przez serwis e-wejściówki
 		<th>14.01.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/90436/">Kup bilet</a></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/90436">Kup bilet</a></th>
+	</tr>
+	<tr>
+		<th>15.1.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>21.01.2018 niedziela</th>
