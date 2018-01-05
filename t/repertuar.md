@@ -78,6 +78,47 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 </table>
 
+## Luty
+
+<table class="pure-table">
+	<tr>
+		<th>4.02.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>5.02.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>11.02.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>12.02.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>18.02.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>19.02.2018 poniedziałek</th>
+		<th>9.45</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+</table>
+
 
 
 <style>
