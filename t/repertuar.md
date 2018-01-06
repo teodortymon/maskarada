@@ -54,8 +54,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 	<tr>
 		<th>21.01.2018 niedziela</th>
-		<th>12.30</th>
-		<th><i>Tytuł przedstawienia wkrótce</i></th>
+		<th>11.00</th>
+		<th><i>Wesołe Koty</i></th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
