@@ -56,7 +56,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>21.01.2018 niedziela</th>
 		<th>11.00</th>
 		<th><i>Wesołe Koty</i></th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/91323">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>22.01.2018 poniedziałek</th>
