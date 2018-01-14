@@ -29,15 +29,10 @@ Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie
     <a id="single_image" rel="9" href="lay/img/tuptup/large/1.jpg"><img src="lay/img/tuptup/small/1.jpg"/></a>
     <a id="single_image" rel="9" href="lay/img/tuptup/large/2.jpg"><img src="lay/img/tuptup/small/2.jpg"/></a>
     <a id="single_image" rel="9" href="lay/img/tuptup/large/3.jpg"><img src="lay/img/tuptup/small/3.jpg"/></a>
+    <br />
     <a id="single_image" rel="9" href="lay/img/tuptup/large/4.jpg"><img src="lay/img/tuptup/small/4.jpg"/></a>
     <a id="single_image" rel="9" href="lay/img/tuptup/large/5.jpg"><img src="lay/img/tuptup/small/5.jpg"/></a>
-    <a id="single_image" rel="9" href="lay/img/tuptup/large/6.jpg"><img src="lay/img/tuptup/small/6.jpg"/></a>
-    <a id="single_image" rel="9" href="lay/img/tuptup/large/7.jpg"><img src="lay/img/tuptup/small/7.jpg"/></a>
-    <a id="single_image" rel="9" href="lay/img/tuptup/large/8.jpg"><img src="lay/img/tuptup/small/8.jpg"/></a>
-    <a id="single_image" rel="9" href="lay/img/tuptup/large/9.jpg"><img src="lay/img/tuptup/small/9.jpg"/></a>
-    <a id="single_image" rel="9" href="lay/img/tuptup/large/10.jpg"><img src="lay/img/tuptup/small/10.jpg"/></a>
-    <a id="single_image" rel="9" href="lay/img/tuptup/large/11.jpg"><img src="lay/img/tuptup/small/11.jpg"/></a>
-    <a id="single_image" rel="9" href="lay/img/tuptup/large/12.jpg"><img src="lay/img/tuptup/small/12.jpg"/></a>
+    <a id="single_image" rel="9" href="lay/img/tuptup/large/6.jpg"><img src="lay/img/tuptup/small/6.jpg"/></a>§
 </ul>
    
 
