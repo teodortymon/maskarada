@@ -119,6 +119,59 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 </table>
 
+## Marzec
+
+<table class="pure-table">
+	<tr>
+		<th>4.03.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Calineczka</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>5.03.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Calineczka</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>11.03.2018 niedziela</th>
+		<th> - </th>
+		<th><i>Tytuł wkrótce</i></th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>12.03.2018 poniedziałek</th>
+		<th> - </th>
+		<th><i>Tytuł wkrótce</i></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>18.03.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Co w trawie bzyczy?</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>19.03.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Księniczka na ziarnku grochu</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>25.03.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>26.03.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+</table>
+
 
 
 <style>
