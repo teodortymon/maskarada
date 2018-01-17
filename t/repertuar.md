@@ -119,6 +119,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 </table>
 
+<br /><br />
+
 ## Marzec
 
 <table class="pure-table">
