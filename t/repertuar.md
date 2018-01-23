@@ -144,14 +144,14 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 	<tr>
 		<th>11.03.2018 niedziela</th>
-		<th> - </th>
-		<th><i>Tytuł wkrótce</i></th>
+		<th>12:30</th>
+		<th><i>Tup Tup</i></th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>12.03.2018 poniedziałek</th>
-		<th> - </th>
-		<th><i>Tytuł wkrótce</i></th>
+		<th>11:00</th>
+		<th><i>Tup Tup</i></th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
