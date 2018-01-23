@@ -107,9 +107,15 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 	<tr>
 		<th>18.02.2018 niedziela</th>
-		<th>12.30</th>
+		<th>11.30</th>
 		<th>Wesołe Koty</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/91326">Kup bilet</a></th>
+	</tr>
+	<tr>
+		<th>18.02.2018 niedziela</th>
+		<th>15.30</th>
+		<th>Urodziny Turli-Taja</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/92104">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>19.02.2018 poniedziałek</th>
