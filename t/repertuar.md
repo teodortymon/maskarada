@@ -78,7 +78,6 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 </table>
 
 <br /><br />
-<br /><br />
 
 ## Marzec
 
@@ -132,6 +131,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 </table>
+
+<br /><br />
 
 ## Kwiecień
 
