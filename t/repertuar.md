@@ -23,6 +23,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 <br /><br />
 	
 <br /><br />
+
 ## Luty
 
 <table class="pure-table">
@@ -77,6 +78,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 </table>
 
 <br /><br />
+<br /><br />
 
 ## Marzec
 
@@ -114,7 +116,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>19.03.2018 poniedziałek</th>
 		<th>11.00</th>
-		<th>Księniczka na ziarnku grochu</th>
+		<th>Księżniczka na ziarnku grochu</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
