@@ -23,61 +23,6 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 <br /><br />
 	
 <br /><br />
-
-
-## Styczeń
-
-<table class="pure-table">
-	<tr>
-		<th>7.01.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Elfy i fabryka prezentów</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/90435">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>9.1.2018 wtorek</th>
-		<th>11.00</th>
-		<th>Elfy i fabryka prezentów</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>14.01.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Elfy i fabryka prezentów</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/90436">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>15.1.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Elfy i fabryka prezentów</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>21.01.2018 niedziela</th>
-		<th>11.00</th>
-		<th><i>Wesołe Koty</i></th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/91323">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>22.01.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Wesołe koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>28.01.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Tupu tup</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/90872">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>29.01.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Wesołe koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-</table>
-
 ## Luty
 
 <table class="pure-table">
@@ -98,6 +43,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>12.30</th>
 		<th>Księżniczka na ziarnku grochu</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/91325">Kup bilet</a></th>
+	</tr>
+	<tr>
+		<th>11.02.2018 niedziela</th>
+		<th>14.45</th>
+		<th>Wielki Bal Karnawałowych Rycerzy i Księżniczek</th>
+		<th><i>Bilety w kasie <br />cena 39 zł od dziecka <br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>12.02.2018 poniedziałek</th>
@@ -180,6 +131,64 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 </table>
 
+## Kwiecień
+
+<table class="pure-table">
+	<tr>
+		<th>8.04.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>9.04.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>10.04.2018 wtorek</th>
+		<th>10.00</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>15.04.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>16.04.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>22.04.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Calineczka</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>22.04.2018 niedziela</th>
+		<th>16.00</th>
+		<th>Urodziny Turli-Taja</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>23.04.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Calineczka</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>29.04.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Co w trawie bzyczy?</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+</table>
 
 
 <style>
