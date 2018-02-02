@@ -49,7 +49,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>11.02.2018 niedziela</th>
 		<th>14.45</th>
 		<th>Wielki Bal Karnawałowych Rycerzy i Księżniczek</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96491">Kup bilet</a><br />cena 39 zł od dziecka/i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96491">Kup bilet</a><br /><i>cena 39 zł od dziecka</i></th>
 	</tr>
 	<tr>
 		<th>12.02.2018 poniedziałek</th>
