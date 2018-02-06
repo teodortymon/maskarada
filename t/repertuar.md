@@ -24,9 +24,9 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 
 ### Zapraszamy na Wielki Bal Karnawałowych Rycerzy i Księżniczek już 11.02.2018
 
-### Dzięki Wypożyczalni Kostiumów Maskarada dzieci bęgą mogły przebrać się za swoich ulubionych bohaterów
+## Dzięki Wypożyczalni Kostiumów Maskarada dzieci bęgą mogły przebrać się za swoich ulubionych bohaterów
 
-### i wziąć udział w karnawałowej zabawie prowadzonej przez naszych aktorów
+## i wziąć udział w karnawałowej zabawie prowadzonej przez naszych aktorów
 	
 <br /><br />
 
