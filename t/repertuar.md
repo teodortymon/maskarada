@@ -21,6 +21,8 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 
 Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia". Zapisy trwają!
 <br /><br />
+
+### Zapraszamy na 
 	
 <br /><br />
 
@@ -112,12 +114,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th><i>Tup Tup</i></th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
-	<tr>
+	<!-- <tr>
 		<th>18.03.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy?</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/92005">Kup bilet</a></th>	
-	</tr>
+	</tr> -->
 	<tr>
 		<th>19.03.2018 poniedziałek</th>
 		<th>11.00</th>
