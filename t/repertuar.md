@@ -31,7 +31,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 ### Dzięki Wypożyczalni Kostiumów Maskarada dzieci bęgą mogły przebrać się za swoich ulubionych bohaterów wziąć udział w karnawałowej zabawie prowadzonej przez naszych aktorów
 
 <ul class="photos">
-    <a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/tuptup/small/1.jpg"/></a>
+    <a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/bal_small.jpg"/></a>
 </ul>
 
 	
