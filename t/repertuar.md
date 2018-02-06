@@ -22,7 +22,9 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia". Zapisy trwają!
 <br /><br />
 
-### Zapraszamy na 
+### Zapraszamy na Wielki Bal Karnawałowych Rycerzy i Księżniczek już 11.02.2018
+### Dzięki Wypożyczalni Kostiumów Maskarada dzieci bęgą mogły przebrać się za swoich ulubionych bohaterów
+### i wziąć udział w karnawałowej zabawie prowadzonej przez naszych aktorów
 	
 <br /><br />
 
