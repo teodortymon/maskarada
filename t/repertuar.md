@@ -92,7 +92,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>4.03.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96737">Kup bilet</a></th>	
 	</tr>
 	<tr>
 		<th>5.03.2018 poniedziałek</th>
@@ -104,7 +104,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>11.03.2018 niedziela</th>
 		<th>12:30</th>
 		<th><i>Tup Tup</i></th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96738">Kup bilet</a></th>	
 	</tr>
 	<tr>
 		<th>12.03.2018 poniedziałek</th>
@@ -116,7 +116,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>18.03.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy?</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/92005">Kup bilet</a></th>	
 	</tr>
 	<tr>
 		<th>19.03.2018 poniedziałek</th>
@@ -128,7 +128,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>25.03.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96739">Kup bilet</a></th>		
 	</tr>
 	<tr>
 		<th>26.03.2018 poniedziałek</th>
@@ -147,7 +147,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>8.04.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96334">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>9.04.2018 poniedziałek</th>
@@ -165,7 +165,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>15.04.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Kuba i Buba czyli awantura do kwadratu</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96335">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>16.04.2018 poniedziałek</th>
@@ -177,13 +177,13 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>22.04.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96336">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>22.04.2018 niedziela</th>
 		<th>16.00</th>
 		<th>Urodziny Turli-Taja</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96337">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>23.04.2018 poniedziałek</th>
@@ -195,7 +195,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>29.04.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy?</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96338">Kup bilet</a></th>
 	</tr>
 </table>
 
