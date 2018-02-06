@@ -75,6 +75,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>Wesołe Koty</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
+	<tr>
+		<th>25.02.2018 poniedziałek</th>
+		<th>12.30</th>
+		<th>Urodziny Tup-Tupa</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
 </table>
 
 <br /><br />
