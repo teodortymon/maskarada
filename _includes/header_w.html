@@ -18,22 +18,33 @@
     //<![CDATA[
 		$(document).ready(function () {
 			$(".lista-kostiumow a").fancybox();
-			var isshow = localStorage.getItem('status');
+			var isshow = localStorage.getItem('bal');
 	    // var isshow = null;
 	    if (isshow== null) {
-	        localStorage.setItem('status', 1);
+	        localStorage.setItem('bal', 1);
 
 	        // Show popup here
-	        $.fancybox(
-	        		'<center><br /><br /><br /><h2>Rusza nasza nowa Szkoła Szycia</h2><br /><br /><p>Warsztaty szycia prowadzone przez kostiumologów i krawcowe w Kostiumerii Teatru Maskarada<br />Więcej informacji: <a href="http://www.maskarada.waw.pl/t/warsztaty.html"> Szkoła Szycia <br /><p><img src="../t/lay/img/szycie_big.jpg" alt="Szkoła szycia" /></p></a></p></center>',
-	        		{
-	                		'autoDimensions'	: false,
-	        			'width'         		: 700,
-	        			'height'        		: 900,
-	        			// 'transitionIn'		: 'none',
-	        			// 'transitionOut'		: 'none'
-	        		}
-	        	);
+	        // $.fancybox(
+	        // 		'<center><br /><br /><br /><h2>Rusza nasza nowa Szkoła Szycia</h2><br /><br /><p>Warsztaty szycia prowadzone przez kostiumologów i krawcowe w Kostiumerii Teatru Maskarada<br />Więcej informacji: <a href="http://www.maskarada.waw.pl/t/warsztaty.html"> Szkoła Szycia <br /><p><img src="../t/lay/img/szycie_big.jpg" alt="Szkoła szycia" /></p></a></p></center>',
+	        // 		{
+	        //         		'autoDimensions'	: false,
+	        // 			'width'         		: 700,
+	        // 			'height'        		: 900,
+	        // 			// 'transitionIn'		: 'none',
+	        // 			// 'transitionOut'		: 'none'
+	        // 		}
+	        // 	);
+
+			$.fancybox(
+				'<center><br /><br /><br /><h2>Wielki Bal Rycerzy i Księżniczek</h2><br /><br /><p>Teatr Maskarada, księgarnia Tarabuk i Nowy Świat Muzyki zapraszają na bal karnawałowy: Wielki Bal Rycerzy i Księżniczek. <br />Bal poprowadzi król Zbigniew Kozłowski a więc zabawa do utraty tchu gwarantowana. Na miejscu możliwość wypożyczenia kostiumy ze zbiorów Wypożyczalni Kostiumów Maskarada.Zachęcamy dzieci i dorosłych do przebrania w karnawałowe szaty.<br />Więcej informacji: <a href="http://www.maskarada.waw.pl/t/repertuar.html"> Wielki Bal <br /><p><img src="../t/lay/img/bal_big.jpg" alt="Wielki Bal" /></p></a></p></center>',
+				{
+												'autoDimensions'	: false,
+					'width'         		: 700,
+					'height'        		: 900,
+					// 'transitionIn'		: 'none',
+					// 'transitionOut'		: 'none'
+				}
+			);
 	    }
 		});
 
