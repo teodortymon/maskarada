@@ -76,10 +76,10 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
-		<th>25.02.2018 poniedziałek</th>
+		<th>25.02.2018 niedziela</th>
 		<th>12.30</th>
-		<th>Urodziny Tup-Tupa</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+		<th>Tupu-Tup</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96736">Kup bilet</a></th>	
 	</tr>
 </table>
 
