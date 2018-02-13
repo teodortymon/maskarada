@@ -22,7 +22,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia". Zapisy trwają!
 <br /><br />
 
-## Zapraszamy na 
+<!-- ## Zapraszamy na 
 
 ## Wielki Bal Karnawałowych Rycerzy i Księżniczek 
 
@@ -34,7 +34,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 <br />
 <ul class="photos">
     <a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/bal_small.jpg"/></a>
-</ul>
+</ul> -->
 
 	
 <br /><br />
