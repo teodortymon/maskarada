@@ -116,6 +116,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
+		<th>6.03.2018 wtorek</th>
+		<th>10.00</th>
+		<th>Calineczka</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
 		<th>11.03.2018 niedziela</th>
 		<th>12:30</th>
 		<th><i>Tup Tup</i></th>
@@ -125,6 +131,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>12.03.2018 poniedziałek</th>
 		<th>11:00</th>
 		<th><i>Tup Tup</i></th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>13.03.2018 wtorek</th>
+		<th>10:00</th>
+		<th><i>Księżniczka na ziarnku grochu</i></th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<!-- <tr>
