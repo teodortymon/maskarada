@@ -158,6 +158,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96739">Kup bilet</a></th>		
 	</tr>
 	<tr>
+		<th>25.03.2018 niedziela</th>
+		<th>16.00</th>
+		<th>Urodziny Turli-Taja</th>
+		<th><i>Bilety online wkrótce</i>/th>		
+	</tr>
+	<tr>
 		<th>26.03.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
