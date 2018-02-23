@@ -161,7 +161,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>25.03.2018 niedziela</th>
 		<th>16.00</th>
 		<th>Urodziny Turli-Taja</th>
-		<th><i>Bilety online wkrótce</i>/th>		
+		<th><i>Bilety online wkrótce</i></th>		
 	</tr>
 	<tr>
 		<th>26.03.2018 poniedziałek</th>
