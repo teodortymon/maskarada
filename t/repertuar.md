@@ -169,6 +169,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>Wesołe Koty</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
+	<tr>
+		<th>27.03.2018 wtorek</th>
+		<th>10.00</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
 </table>
 
 <br /><br />
