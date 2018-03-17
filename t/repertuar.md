@@ -147,8 +147,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	</tr>
 	<tr>
 		<th>15.04.2018 niedziela</th>
-		<th>16.30</th>
-		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th>16.00</th>
+		<th>Tupu tup</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/101893">Kup bilet</a></th>
 	</tr>
 	<tr>
