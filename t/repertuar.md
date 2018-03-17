@@ -39,67 +39,6 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	
 <br /><br />
 
-## Luty
-
-<table class="pure-table">
-	<tr>
-		<th>4.02.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/91324">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>5.02.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Wesołe Koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>11.02.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/91325">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>11.02.2018 niedziela</th>
-		<th>14.15</th>
-		<th>Wielki Bal Karnawałowych Rycerzy i Księżniczek</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96491">Kup bilet</a><br /><i>cena 39 zł od dziecka</i></th>
-	</tr>
-	<tr>
-		<th>12.02.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>18.02.2018 niedziela</th>
-		<th>11.30</th>
-		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/91326">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>18.02.2018 niedziela</th>
-		<th>15.30</th>
-		<th>Urodziny Turli-Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/92104">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>19.02.2018 poniedziałek</th>
-		<th>9.45</th>
-		<th>Wesołe Koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>25.02.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Tupu-Tup</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96736">Kup bilet</a></th>	
-	</tr>
-</table>
-
-<br /><br />
-
 ## Marzec
 
 <table class="pure-table">
@@ -207,6 +146,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96335">Kup bilet</a></th>
 	</tr>
 	<tr>
+		<th>15.04.2018 niedziela</th>
+		<th>16.30</th>
+		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/101893">Kup bilet</a></th>
+	</tr>
+	<tr>
 		<th>16.04.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Kuba i Buba czyli awantura do kwadratu</th>
@@ -235,6 +180,25 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>12.30</th>
 		<th>Co w trawie bzyczy?</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96338">Kup bilet</a></th>
+	</tr>
+</table>
+
+<br /><br />
+
+## Maj
+
+<table class="pure-table">
+	<tr>
+		<th>6.05.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Chmurka i Bratek</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/101911">Kup bilet</a></th>
+	</tr>
+	<tr>
+		<th>7.05.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Chmurka i Bratek</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 </table>
 
