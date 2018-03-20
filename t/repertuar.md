@@ -63,19 +63,19 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>11.03.2018 niedziela</th>
 		<th>12:30</th>
-		<th><i>Tup Tup</i></th>
+		<th>Tup Tup</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96738">Kup bilet</a></th>	
 	</tr>
 	<tr>
 		<th>12.03.2018 poniedziałek</th>
 		<th>11:00</th>
-		<th><i>Tup Tup</i></th>
+		<th>Tup Tup</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>13.03.2018 wtorek</th>
 		<th>10:00</th>
-		<th><i>Księżniczka na ziarnku grochu</i></th>
+		<th>Księżniczka na ziarnku grochu</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<!-- <tr>
@@ -155,6 +155,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>16.04.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
+		<th>17.04.2018 wtorek</th>
+		<th>10.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
