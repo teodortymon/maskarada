@@ -131,7 +131,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>13.05.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/102591">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>14.05.2018 poniedziałek</th>
@@ -143,7 +143,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>20.05.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/102592">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>21.05.2018 poniedziałek</th>
@@ -155,7 +155,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>27.05.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Kuba i Buba czyli awantura do kwadratu</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/102593">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>28.05.2018 poniedziałek</th>
