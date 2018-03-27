@@ -103,6 +103,12 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
+		<th>24.04.2018 wtorek</th>
+		<th>11.00</th>
+		<th>Wesołe Koty</th>
+		<th>Rezerwacje grupowe <i><br />501027278</i></th>
+	</tr>
+	<tr>
 		<th>29.04.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy?</th>
