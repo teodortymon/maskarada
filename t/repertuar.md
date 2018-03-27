@@ -39,85 +39,6 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	
 <br /><br />
 
-## Marzec
-
-<table class="pure-table">
-	<tr>
-		<th>4.03.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Calineczka</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96737">Kup bilet</a></th>	
-	</tr>
-	<tr>
-		<th>5.03.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Calineczka</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>6.03.2018 wtorek</th>
-		<th>10.00</th>
-		<th>Calineczka</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>11.03.2018 niedziela</th>
-		<th>12:30</th>
-		<th>Tup Tup</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96738">Kup bilet</a></th>	
-	</tr>
-	<tr>
-		<th>12.03.2018 poniedziałek</th>
-		<th>11:00</th>
-		<th>Tup Tup</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>13.03.2018 wtorek</th>
-		<th>10:00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<!-- <tr>
-		<th>18.03.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Co w trawie bzyczy?</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/92005">Kup bilet</a></th>	
-	</tr> -->
-	<tr>
-		<th>19.03.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>25.03.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/96739">Kup bilet</a></th>		
-	</tr>
-	<tr>
-		<th>25.03.2018 niedziela</th>
-		<th>16.00</th>
-		<th>Urodziny Turli-Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/97551">Kup bilet</a></th>	
-	</tr>
-	<tr>
-		<th>26.03.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Wesołe Koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>27.03.2018 wtorek</th>
-		<th>10.00</th>
-		<th>Wesołe Koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-</table>
-
-<br /><br />
-
 ## Kwiecień
 
 <table class="pure-table">
@@ -221,25 +142,25 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>20.05.2018 niedziela</th>
 		<th>12.30</th>
-		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th>Wesołe Koty</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>21.05.2018 poniedziałek</th>
 		<th>11.00</th>
-		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th>Wesołe Koty</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 	<tr>
 		<th>27.05.2018 niedziela</th>
 		<th>12.30</th>
-		<th>Wesołe koty</th>
+		<th>Kuba i Buba czyli awantura do kwadratu</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>28.05.2018 poniedziałek</th>
 		<th>11.00</th>
-		<th>Wesołe koty</th>
+		<th>Kuba i Buba czyli awantura do kwadratu</th>
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 </table>
