@@ -120,12 +120,13 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 
 ## Maj 
 
+
 <table class="pure-table">
 	<tr>
 		<th><s>6.05.2018 niedziela</s></th>
 		<th><s>12.30</s></th>
 		<th><s>Chmurka i Bratek</s></th>
-		<th><i>Spektakl odwołany</th>
+		<th><i>Spektakl odwołany</i></th>
 	</tr>
 	<tr>
 		<th>7.05.2018 poniedziałek</th>
@@ -170,10 +171,9 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>Rezerwacje grupowe <i><br />501027278</i></th>
 	</tr>
 </table>
-
 <br /><br />
 
-<h2>Czerwiec</h2>
+## Czerwiec
 
 <table class="pure-table">
 	<tr>
