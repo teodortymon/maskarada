@@ -118,7 +118,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 
 <br /><br />
 
-## Maj
+## Maj 
+
 
 <table class="pure-table">
 	<tr>
@@ -172,7 +173,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 </table>
 <br /><br />
 
-## Czerwiec
+## Czerwiec 
+
 
 <table class="pure-table">
 	<tr>
