@@ -179,7 +179,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>3.06.2018 niedziela</th>
 		<th>12.30</th>
-		<th>Chmurka i Bratek</th>
+		<th>Wesołe Koty</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/107624">Kup bilet</a></th>
 	</tr>
 	<tr>
@@ -191,7 +191,7 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>10.06.2018 niedziela</th>
 		<th>12.30</th>
-		<th>Urodziny Turoli-Taja</th>
+		<th>Urodziny Turli-Taja</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/107625">Kup bilet</a></th>
 	</tr>
 	<tr>
