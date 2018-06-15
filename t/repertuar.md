@@ -69,8 +69,8 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	<tr>
 		<th>17.06.2018 niedziela</th>
 		<th>12.30</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/107626">Kup bilet</a></th>
+		<th><strike>Księżniczka na ziarnku grochu</strike></th>
+		<th>Spektatkl odwołany</th>
 	</tr>
 	<tr>
 		<th>18.06.2018 poniedziałek</th>
