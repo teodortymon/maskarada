@@ -39,51 +39,53 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 	
 <br /><br />
 
-## Czerwiec
+## Wrzesień
 
 <table class="pure-table">
 	<tr>
-		<th>3.06.2018 niedziela</th>
+		<th>9.09.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Urodziny Turli-Taja</th>
+		<th>Rezerwacje online wkrótce</th>
+	</tr>
+	<tr>
+		<th>16.09.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Co w trawie bzyczy</th>
+		<th>Rezerwacje online wkrótce</th>
+	</tr>
+	<tr>
+		<th>23.09.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Rezerwacje online wkrótce</th>
+	</tr>
+	<tr>
+		<th>24.09.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Rezerwacje online wkrótce</th>
+	</tr>
+	<tr>
+		<th>30.09.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/107624">Kup bilet</a></th>
+		<th>Rezerwacje online wkrótce</th>
 	</tr>
-	<tr>
-		<th>4.06.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Wesołe koty</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
+	
+	
+<!-- 	<tr>
 		<th><strike>10.06.2018 niedziela</strike></th>
 		<th><strike>12.30</strike></th>
 		<th><strike>Urodziny Turli-Taja</strike></th>
 		<th>Spektatkl odwołany</th>
-	</tr>
-	<tr>
-		<th>11.06.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Calineczka</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
-		<th>17.06.2018 niedziela</th>
-		<th>12.30</th>
-		<th><strike>Księżniczka na ziarnku grochu</strike></th>
-		<th>Spektatkl odwołany</th>
-	</tr>
-	<tr>
-		<th>18.06.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th>Rezerwacje grupowe <i><br />501027278</i></th>
-	</tr>
-	<tr>
+	</tr> -->
+<!-- 	<tr>
 		<th>24.06.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/107628">Kup bilet</a></th>
-	</tr>
+	</tr> -->
 </table>
 <br /><br />
 
