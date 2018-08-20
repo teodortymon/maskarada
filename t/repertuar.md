@@ -46,31 +46,31 @@ Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia".
 		<th>9.09.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Urodziny Turli-Taja</th>
-		<th>Rezerwacje online wkrótce</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116484">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>16.09.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Co w trawie bzyczy</th>
-		<th>Rezerwacje online wkrótce</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116485">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>23.09.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th>Rezerwacje online wkrótce</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116486">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>24.09.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th>Rezerwacje online wkrótce</th>
+		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
 	</tr>
 	<tr>
 		<th>30.09.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th>Rezerwacje online wkrótce</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116487">Kup bilet</a></th>
 	</tr>
 	
 	
