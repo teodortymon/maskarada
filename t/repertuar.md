@@ -19,8 +19,6 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 <i> Więcej informacji w zakładce kontakt</i> 
 <br /><br /><br /><br /> 
 
-Serdecznie zapraszamy na warsztaty teatralno-taneczne oraz cykl "Sztuka Szycia". Zapisy trwają!
-<br /><br />
 
 <!-- ## Zapraszamy na 
 
