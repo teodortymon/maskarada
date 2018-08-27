@@ -5,7 +5,7 @@ published: true
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tupu tup</ul></h2>
 <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena "Szybkobiegacze" i "Brzydkie Kaczątko". 
-<br /> Dla dzieci od 1 do 6 lat. 
+<br /> Dla dzieci od 1,5 do 6 lat. 
 <br /> Czas trwania: 45 minut
 <br /> Premiera 5.11.2017.
 <br /><br />
@@ -47,11 +47,11 @@ Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Wesołe Koty</ul></h2>
 <a id="single_image" href="lay/img/koty_big.jpg"><img src="lay/img/koty_min.jpg" alt="Wesołe Koty" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 <i>wg Marii Konopnickiej</i><br /><br />
-Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. Filuś, Miluś i Kizia zaproszą młodych widzów do zabawy i na koci bal. Piękne wiersze M. Konopnickiej, barokowe kocie kostiumy, muzyka H. Wieniawskiego i piosenki Zuzanny Całki tworzą magiczny i interaktywny koci świat dla młodych widzów.
+Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. Filuś, Miluś i Kizia zaproszą młodych widzów do zabawy i na koci bal. Piękne wiersze M. Konopnickiej, barokowe kocie kostiumy, muzyka H. Wieniawskiego i piosenki Zuzanny Całki tworzą magiczny i interaktywny koci świat dla młodych widzów.
 
 <br />
 <br /> Czas trwania: 45minut.
-<br />Przedstawienie dla dzieci od 3 lat.
+<br />Przedstawienie dla dzieci od 3,5 lat.
 <br />Premiera: 25 wrzesień 2016
 <br /><br />
 <table border="0">
@@ -93,7 +93,7 @@ Poznajmy roztańczone, roźspiewane i psotne koty z wierszy Marii Konopnickiej. 
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Urodziny Turli i Taja</ul></h2>
 <a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
-<p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania 30 minut + 15 świętowania z aktorami.<br /> Premiera: maj 2016
+<p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania 45 minut.<br /> Premiera: maj 2016
 <br /><br />
 Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji portalu Czas Dzieci:</a>
 <br /> <i>Co wyróżnia spektakl? Brak sceny, czyli znika bariera między twórca a odbiorcą. Dzieci mogły wszędzie wejść, zajrzeć, wszystko dotykać, przekładać itp. A taka eksploracja otoczenia, szczególnie nowego, ciekawego, to dla maluszków niesamowity rozwój i przed wszystkim frajda. Dotychczas prawie wszystkie spektakle dla najmłodszych dzieci, na których byłam, odbywały się w ciszy. To znaczy, aktorzy, prawie wcale albo bardzo rzadko, odzywali się do publiczności. A tu od początku, dwie młode, bardzo utalentowane aktorki, mówią i śpiewają do dzieci. Zadają pytania, przynoszą rekwizyty do każdego dziecka, reagują na spontaniczne na ich prośby. Są prawdziwymi gospodarzami swojego przyjęcia urodzinowego!</i>
@@ -132,7 +132,7 @@ Agnieszka Senderowska<br />
 <h2 style="text-shadow: 2px 2px rgba(255, 42, 206, 0.58)"><ul class="photos">Kuba i Buba,<br />czyli awantura do kwadratu</ul></h2>
 <br /><strong>Na podstawie książek Grzegorza Kasdepke</strong><br /><br />
 <!--<a id="single_image" href="lay/img/kuba_big.jpg"><img src="lay/img/kuba_min.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>-->
-<p>Przedstawienie "Kuba i Buba, czyli awantura do kwadratu" powstało na podstawie cieszących się wielką popularnością książek Grzegorza Kasdepke. Kuba i Buba są niesfornymi bliźniakami, nie zawsze wiadomo, które jest które. W domu  trudno je opanować, a w szkole dokazują jeszcze bardziej. <br />Przedstawienie dla dzieci od 4 do 12 lat trwa 55 minut. <br /> Premiera: 7 grudzień 2014
+<p>Przedstawienie "Kuba i Buba, czyli awantura do kwadratu" powstało na podstawie cieszących się wielką popularnością książek Grzegorza Kasdepke. Kuba i Buba są niesfornymi bliźniakami, nie zawsze wiadomo, które jest które. W domu  trudno je opanować, a w szkole dokazują jeszcze bardziej. <br />Przedstawienie dla dzieci od 4,5 do 12 lat trwa 55 minut. <br /> Premiera: 7 grudzień 2014
 <br /><br />
 <td><strong>Reżyseria</strong><br />Ewa Tucholska<br /><br /></td>
 <table border="0">
@@ -241,7 +241,7 @@ Cena biletu dla dziecka 30zł, dorosły 20zł <br />
     Zapraszamy małych widzów do magicznego świata pełnego barw, światła i muzyki. Razem z Calineczką poznacie Ropuchę, Motyla, Myszkę, Kreta i Jaskółkę. Impresja teatralna na podstawie bajki Andersena wciąga widzów do zabawy, gdzie zaciera się granica między światem realnym, a fantastycznym.
 </p>
 Przedstawienie dla dzieci w wieku od 1,5 do 10 lat <br />
-Przedstawienie trwa 40 minut. <br /><br />
+Przedstawienie trwa 45 minut. <br /><br />
 Premiera: 30 marzec 2014 <br />
 <br /><br />
 <table border="0">
