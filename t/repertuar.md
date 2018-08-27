@@ -70,8 +70,96 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Wesołe Koty</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116487">Kup bilet</a></th>
 	</tr>
-	
-	
+	<tr>
+		<th>30.09.2018 niedziela</th>
+		<th>16.00</th>
+		<th>urodziny Turli-Taja</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+</table>
+<br /><br />
+
+## Październik
+
+<table class="pure-table">
+	<tr>
+		<th>1.10.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe Koty</th>
+		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+	</tr>
+	<tr>
+		<th>7.10.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Calineczka</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>8.10.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Calineczka</th>
+		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+	</tr>
+	<tr>
+		<th>15.10.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Wesołe Koty</th>
+		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+	</tr>
+	<tr>
+		<th>15.10.2018 wtorek</th>
+		<th>10.00</th>
+		<th>Wesołe Koty</th>
+		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+	</tr>
+	<tr>
+		<th>21.10.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Wesołe Koty</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>22.10.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Złota Rybka</th>
+		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+	</tr>
+	<tr>
+		<th>23.10.2018 wtorek</th>
+		<th>10.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+	</tr>
+	<tr>
+		<th>28.10.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Złota Rybka <i>Premiera</i></th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>28.10.2018 niedziela</th>
+		<th>16.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>29.10.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+	</tr>
+</table>
+<br /><br />
+
+<style>
+.pure-table thead {
+    background-color: rgba(143, 223, 255, 0.19) !important;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+</style>
+
 <!-- 	<tr>
 		<th><strike>10.06.2018 niedziela</strike></th>
 		<th><strike>12.30</strike></th>
@@ -84,14 +172,3 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>Calineczka</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/107628">Kup bilet</a></th>
 	</tr> -->
-</table>
-<br /><br />
-
-<style>
-.pure-table thead {
-    background-color: rgba(143, 223, 255, 0.19) !important;
-    color: #000;
-    text-align: left;
-    vertical-align: bottom;
-}
-</style>
