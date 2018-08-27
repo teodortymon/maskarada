@@ -289,7 +289,7 @@ Czy zdążą na czas?
 <br />
 Elfy poproszą dzieci o pomoc w pakowaniu i w zimowych zabawach.
 <br /><br />
-Przedstawienie trwa 30 minut + 30 minut zabawy z Elfami.
+Przedstawienie trwa 55 minut.
 <br />
 Przedstawienie dla dzieci w wieku od 2 do 99 lat
 <br /><br />
