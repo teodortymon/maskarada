@@ -5,24 +5,17 @@ published: true
 
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 
-
-
-
-
-
-
-## Repertuar  
+## Repertuar
 
 ## Szanowni Widzowie!
 
 Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <br />
-<i> Więcej informacji w zakładce kontakt</i> 
-<br /><br /><br /><br /> 
+<i> Więcej informacji w zakładce kontakt</i>
+<br /><br /><br /><br />
 
+<!-- ## Zapraszamy na
 
-<!-- ## Zapraszamy na 
-
-## Wielki Bal Karnawałowych Rycerzy i Księżniczek 
+## Wielki Bal Karnawałowych Rycerzy i Księżniczek
 
 ## już 11.02.2018
 
@@ -34,7 +27,6 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
     <a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/bal_small.jpg"/></a>
 </ul> -->
 
-	
 <br /><br />
 
 ## Wrzesień
@@ -62,7 +54,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>24.09.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>30.09.2018 niedziela</th>
@@ -86,7 +78,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>1.10.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
-		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>7.10.2018 niedziela</th>
@@ -98,19 +90,19 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>8.10.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Calineczka</th>
-		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>15.10.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Wesołe Koty</th>
-		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
-		<th>15.10.2018 wtorek</th>
+		<th>16.10.2018 wtorek</th>
 		<th>10.00</th>
 		<th>Wesołe Koty</th>
-		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>21.10.2018 niedziela</th>
@@ -122,13 +114,13 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>22.10.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Złota Rybka</th>
-		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>23.10.2018 wtorek</th>
 		<th>10.00</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>28.10.2018 niedziela</th>
@@ -146,7 +138,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>29.10.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th>Zapraszamy grupy zorganizawane do rezerwacji pod: 501 027 278</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 </table>
 <br /><br />
