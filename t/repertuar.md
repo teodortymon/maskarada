@@ -10,7 +10,7 @@ published: true
 ## Szanowni Widzowie!
 
 Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <br />
-<i> Więcej informacji w zakładce kontakt</i>
+<i> Zapraszamy do rezerwacji terminów na spektakle świąteczne i imprezy firmowe</i>
 <br /><br /><br /><br />
 
 <!-- ## Zapraszamy na
