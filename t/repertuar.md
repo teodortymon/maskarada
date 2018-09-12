@@ -66,7 +66,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>30.09.2018 niedziela</th>
 		<th>16.00</th>
 		<th>urodziny Turli-Taja</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/120733">Kup bilet</a></th>
 	</tr>
 </table>
 <br /><br />
@@ -84,7 +84,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>7.10.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Calineczka</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/120737">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>8.10.2018 poniedziałek</th>
@@ -108,7 +108,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>21.10.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Wesołe Koty</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/120744">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>22.10.2018 poniedziałek</th>
