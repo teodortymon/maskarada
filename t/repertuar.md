@@ -13,6 +13,10 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 <i> Zapraszamy do rezerwacji terminów na spektakle świąteczne i imprezy firmowe</i>
 <br /><br /><br /><br />
 
+<b>W grudniu zapraszamy szkoły i przedszkola do rezerwacji terminów na spektakl "Elfy i fabryka prezentów" i "Śnieżny show".</b>
+
+<br /><br /><br /><br />
+
 <!-- ## Zapraszamy na
 
 ## Wielki Bal Karnawałowych Rycerzy i Księżniczek
@@ -136,6 +140,66 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	</tr>
 	<tr>
 		<th>29.10.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
+	</tr>
+</table>
+<br /><br />
+
+## Listopad
+
+<table class="pure-table">
+	<tr>
+		<th>4.11.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Tupu-tup</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>5.11.2018 poniedziałek</th>
+		<th>10.00</th>
+		<th>Tupu-tup</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
+	</tr>
+	<tr>
+		<th>11.11.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Calineczka</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>12.11.2018 niedziela</th>
+		<th>11.00</th>
+		<th>Calineczka</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>18.11.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>19.11.2018 poniedziałek</th>
+		<th>11.00</th>
+		<th>Kuba i Buba</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
+	</tr>
+	<tr>
+		<th>20.11.2018 wtorek</th>
+		<th>11.00</th>
+		<th>Kuba i Buba</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
+	</tr>
+	<tr>
+		<th>25.11.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>26.11.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Księżniczka na ziarnku grochu</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
