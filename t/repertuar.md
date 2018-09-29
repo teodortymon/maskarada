@@ -130,13 +130,13 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th>28.10.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Złota Rybka <i>Premiera</i></th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/123748">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>28.10.2018 niedziela</th>
 		<th>16.00</th>
 		<th>Księżniczka na ziarnku grochu</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/123749">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>29.10.2018 poniedziałek</th>
