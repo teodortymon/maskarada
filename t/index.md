@@ -4,7 +4,7 @@ published: true
 ---
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Złota Rybka</ul></h2>
-<a id="single_image" href="lay/img/rybka_big.jpg"><img src="lay/img/rybka_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+<a id="single_image" href="lay/img/rybka_big.jpg"><img src="lay/img/rybka_min.jpg" alt="Złota Rybka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
 Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń. Będziemy łowić rybki, wypowiadać życzenia, poznamy mądrą Złotą Rybkę, a wokół nas będzie szumiące morze i śpiewające ptaki.
 
