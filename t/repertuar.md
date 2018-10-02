@@ -169,14 +169,20 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
-		<th>12.11.2018 niedziela</th>
+		<th>12.11.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Calineczka</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>18.11.2018 niedziela</th>
 		<th>12.30</th>
+		<th>Złota Rybka</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>18.11.2018 niedziela</th>
+		<th>16.00</th>
 		<th>Kuba i Buba czyli awantura do kwadratu</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>

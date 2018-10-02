@@ -2,6 +2,32 @@
 layout: t
 published: true
 ---
+
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Złota Rybka</ul></h2>
+<a id="single_image" href="lay/img/rybka_big.jpg"><img src="lay/img/rybka_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+
+Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń. Będziemy łowić rybki, wypowiadać życzenia, poznamy mądrą Złotą Rybkę, a wokół nas będzie szumiące morze i śpiewające ptaki.
+
+<br /> Dla dzieci od 1,5 do 6 lat.
+<br /> Czas trwania: 45 minut
+<br /> Premiera 28.10.2018.
+<br /><br />
+
+<table border="0">
+<tr>
+    <td><strong>Adaptacja i Muzyka</strong><br />Marek Grabiniok</td>
+    <td><strong>Występują</strong><br />Joanna Pietrońska <br /> Marek Grabiniok</td>
+    <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
+</tr>
+</table>
+<br />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tupu tup</ul></h2>
 <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena "Szybkobiegacze" i "Brzydkie Kaczątko". 
@@ -32,17 +58,14 @@ Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie
     <br />
     <a id="single_image" rel="9" href="lay/img/tuptup/large/4.jpg"><img src="lay/img/tuptup/small/4.jpg"/></a>
     <a id="single_image" rel="9" href="lay/img/tuptup/large/5.jpg"><img src="lay/img/tuptup/small/5.jpg"/></a>
-    <a id="single_image" rel="9" href="lay/img/tuptup/large/6.jpg"><img src="lay/img/tuptup/small/6.jpg"/></a>§
+    <a id="single_image" rel="9" href="lay/img/tuptup/large/6.jpg"><img src="lay/img/tuptup/small/6.jpg"/></a>
 </ul>
-   
 
 <br />
 <br />
 <br />
 <br />
 <br />
-
-
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Wesołe Koty</ul></h2>
 <a id="single_image" href="lay/img/koty_big.jpg"><img src="lay/img/koty_min.jpg" alt="Wesołe Koty" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
@@ -89,7 +112,6 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <br />
 <br />
 <br />
-
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Urodziny Turli i Taja</ul></h2>
 <a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
@@ -147,8 +169,7 @@ Agnieszka Senderowska<br />
 </tr>
 </table>
 <br />
-<strong>Występują</strong><br /><br />Buba - Ewa Tucholska<br /><br />Kuba - Adam Biernat<br /><br />Tata/Nauczyciel - Michał Maliszewski<br /><br />Woźny - Jan Falba<br /><br /> 
-
+<strong>Występują</strong><br /><br />Buba - Ewa Tucholska<br /><br />Kuba - Adam Biernat<br /><br />Tata/Nauczyciel - Michał Maliszewski<br /><br />Woźny - Jan Falba<br /><br />
 
 <ul class="photos">
     <a id="single_image" rel="6" href="lay/img/kuba_i_buba/large/1.jpg"><img src="lay/img/kuba_i_buba/small/1.jpg"/></a>
@@ -272,9 +293,6 @@ Premiera: 30 marzec 2014 <br />
 <br />
 </ul>
 
-
-
-
 <br /><br />
 <br />
 <br />
@@ -339,8 +357,8 @@ Premiera: 7 grudzień 2013
 <br />
 </ul>
 
-
 <br /><br /><br /><br />
+
 <h2 style="text-shadow: 2px 2px #ffe100">Księżniczka na ziarnku grochu</h2>
 <br />
 <a id="single_image" href="lay/img/plakat_big.jpg"><img src="lay/img/plakat_mini.png" alt="Księżniczka na ziarnku grochu" style="float:left;"/></a>
@@ -382,6 +400,7 @@ Premiera: 13 październik 2013
 <strong>Muzyka Wolfganga Amadeusza Mozarta w wykonaniu:</strong>
 <br /><br />
 <br />
+
 <table border="0">
 
 <tr>
@@ -442,10 +461,8 @@ Premiera: 13 październik 2013
 <a id="single_image" rel="1" href="lay/img/ks/large/18.jpg"><img src="lay/img/ks/small/18.jpg"/></a>
 </ul>
 
-
-
-
 <br /><br /><br /><br /><br /><br />
+
 <h2 style="text-shadow: 3px 3px  #47ff2d">Co w trawie bzyczy?</h2>
 <br />
 <p>
@@ -469,7 +486,6 @@ Przedstawienie dla dzieci w wieku od 1,5 roku do 5 lat.<br /><br />
 Premiera: 12 październik 2013<br /><br />
 <a id="single_image" href="lay/img/plakat_big2.jpg"><img src="lay/img/plakat_mini2.png" alt="Co w trawie bzyczy?"/></a>
 <br /><br />
-
 
 <ul class="photos">
 <a id="single_image" rel="2" href="lay/img/ps/large/1.jpg"><img src="lay/img/ps/small/1.jpg"/></a>
