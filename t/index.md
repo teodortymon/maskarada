@@ -3,12 +3,37 @@ layout: t
 published: true
 ---
 
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Sniezny show</ul></h2>
+<!-- <a id="single_image" href="lay/img/rybka_big.jpg"><img src="lay/img/rybka_min.jpg" alt="Złota Rybka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a> -->
+
+Śniezny show to spektakl pelen tańca i śpiewu wciągający widzów w zimową magię. Będziemy pomagać muzycznym Śniezynkom, brać udzial w poszukiwaniu Zapomnianego Śnieznego Skarbca i tworzyć wlasny Zimowy Musical. Otwórz się na zimową magię gdzie wsystko lśni, skrzy się i dźwięczy.
+
+<br /> Dla widzów od 1 roku do 99 lat.
+<br /> Czas trwania: 45 minut
+<br /> Premiera: grudzień.
+<br /><br />
+
+<table border="0">
+<tr>
+    <td><strong>Muzyka</strong><br />Zuzanna Calka</td>
+    <td><strong>Występują</strong><br />Anna Bakalarska <br /> Alicja Szkamruk / Agnieszka Senderowska </td>
+    <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
+</tr>
+</table>
+<br />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Złota Rybka</ul></h2>
 <a id="single_image" href="lay/img/rybka_big.jpg"><img src="lay/img/rybka_min.jpg" alt="Złota Rybka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
 Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń. Będziemy łowić rybki, wypowiadać życzenia, poznamy mądrą Złotą Rybkę, a wokół nas będzie szumiące morze i śpiewające ptaki.
 
-<br /> Dla dzieci od 1,5 do 6 lat.
+<br /> Dla dzieci od 1,5 do 8 lat.
 <br /> Czas trwania: 45 minut
 <br /> Premiera 28.10.2018.
 <br /><br />

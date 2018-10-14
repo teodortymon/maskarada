@@ -9,13 +9,17 @@ published: true
 
 ## Szanowni Widzowie!
 
-Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <br />
-<i> Zapraszamy do rezerwacji terminów na spektakle świąteczne i imprezy firmowe</i>
-<br /><br /><br /><br />
+Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 
-<b>W grudniu zapraszamy szkoły i przedszkola do rezerwacji terminów na spektakl "Elfy i fabryka prezentów" i "Śnieżny show".</b>
+<br />
+<br />
 
-<br /><br /><br /><br />
+<b>Zapraszamy do rezerwacji terminów na spektakle świąteczne i imprezy firmowe</b>
+<br />
+
+<b><i>W grudniu zapraszamy szkoły i przedszkola do rezerwacji terminów na nasze najbardziej popularne świąteczne przedstawienia "Elfy i fabryka prezentów" i "Śnieżny show".</i></b>
+
+<br /><br />
 
 <!-- ## Zapraszamy na
 
@@ -30,50 +34,6 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 <ul class="photos">
     <a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/bal_small.jpg"/></a>
 </ul> -->
-
-<br /><br />
-
-## Wrzesień
-
-<table class="pure-table">
-	<tr>
-		<th>9.09.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Urodziny Turli-Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116484">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>16.09.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Co w trawie bzyczy</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116485">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>23.09.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116486">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>24.09.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
-	</tr>
-	<tr>
-		<th>30.09.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/116487">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>30.09.2018 niedziela</th>
-		<th>16.00</th>
-		<th>urodziny Turli-Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/120733">Kup bilet</a></th>
-	</tr>
-</table>
-<br /><br />
 
 ## Październik
 
@@ -177,13 +137,13 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong> <
 	<tr>
 		<th>18.11.2018 niedziela</th>
 		<th>12.30</th>
-		<th>Złota Rybka</th>
+		<th>Kuba i Buba czyli awantura do kwadratu</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
 		<th>18.11.2018 niedziela</th>
 		<th>16.00</th>
-		<th>Kuba i Buba czyli awantura do kwadratu</th>
+		<th>Złota Rybka</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
