@@ -3,7 +3,7 @@ layout: t
 published: true
 ---
 
-<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Śniezny show</ul></h2>
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Śnieżny show</ul></h2>
 <!-- <a id="single_image" href="lay/img/rybka_big.jpg"><img src="lay/img/rybka_min.jpg" alt="Złota Rybka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a> -->
 
 Śnieżny show to spektakl pełen tańca i śpiewu wciągający widzów w zimową magię. Będziemy pomagać muzycznym Śnieżynkom, brać udział w poszukiwaniu Zapomnianego Śnieżnego Skarbca i tworzyć własny Zimowy Musical. Otwórz się na zimową magię gdzie wszystko lśni, skrzy się i dźwięczy.
