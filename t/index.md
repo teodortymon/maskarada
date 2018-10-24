@@ -1,6 +1,5 @@
 ---
 layout: t
-published: true
 ---
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Śnieżny show</ul></h2>

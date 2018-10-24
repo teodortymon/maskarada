@@ -1,6 +1,5 @@
 ---
 layout: t
-published: true
 ---
 
 ## Bilety

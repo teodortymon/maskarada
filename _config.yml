@@ -1,11 +1,21 @@
-# Site settings
+---
 title: Maskarada
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: teatr.maskarada@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Teatr i Wypożyczalnia Kostiumów Karnawałowych Maskarada zapewnią Twojemu dziecku nalepszą rozrywkę połączoną z edukacją teatralną. Przynosimy uśmiech już od 10 lat!
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.maskarada.waw.pl" # the base hostname & protocol for your site
-exclude: [vendor]
+description: 'Teatr i Wypożyczalnia Kostiumów Karnawałowych Maskarada zapewnią Twojemu
+  dziecku nalepszą rozrywkę połączoną z edukacją teatralną. Przynosimy uśmiech już
+  od 10 lat!
 
-# Build settings
+'
+baseurl: ''
+url: http://www.maskarada.waw.pl
+exclude:
+- vendor
 markdown: kramdown

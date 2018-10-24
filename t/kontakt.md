@@ -1,10 +1,6 @@
 ---
 layout: t
-published: true
 ---
-
-
-
 
 ## Kontakt
 
