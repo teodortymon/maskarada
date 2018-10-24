@@ -1,11 +1,6 @@
 ---
 layout: t
-published: true
 ---
-
-
-
-
 
 ## Warsztaty
 
