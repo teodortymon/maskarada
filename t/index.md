@@ -47,6 +47,16 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 </table>
 <br />
 
+<ul class="photos">
+    {% for i in (1..3) %}
+        <a id="single_image" rel="10" href="lay/img/rybka/large/{{ i }}.jpg"><img src="lay/img/rybka/small/{{ i }}.jpg"/></a>
+    {% endfor %}
+    <br />
+    {% for i in (4..7) %}
+        <a id="single_image" rel="10" href="lay/img/rybka/large/{{ i }}.jpg"><img src="lay/img/rybka/small/{{ i }}.jpg"/></a>
+    {% endfor %}
+</ul>
+
 <br />
 <br />
 <br />
