@@ -1,0 +1,18 @@
+---
+layout: w
+---
+
+<h2>Kostiumy - dziewczynki</h2>
+<a href="kostiumy.html" class="button2">Powrót</a>
+
+<br /><br />
+
+<ul class="lista-kostiumow">
+    {% for stroj in (1..119) %}
+        <li><a href="kostiumy/large/{{ stroj }}.jpg" rel="group">
+            <img src="kostiumy/thumb/{{ stroj }}.jpg" alt="" />
+            <!-- <?php echo $photo["name"];?> -->
+            </a>
+        </li>
+    {% endfor %}
+</ul>

@@ -2,39 +2,16 @@
 layout: w
 ---
 
-Chwilowo aktualizujemy bazę danych kostiumów.
+<h2>Kostiumy</h2>
 
-<!-- <?php
+<ul class="lista-grup">
+	{% for grupa in site.data.grupy_strojow %}
 
-error_reporting(E_ALL);
-ini_set('display_errors','On');
+		<li><a href="{{ grupa.url }}.html">
+			<img src="kostiumy/grupy/{{ grupa.url }}.jpg" alt="{{ grupa.nazwa }}" />
+			<p>{{ grupa.nazwa }}</p>
+			</a>
+		</li>
 
-function __autoload($class){
-	include "classes/$class.class.php";
-}
-
-
-include "config.php";
-$Page=new Page();
-
-$Page->setContent(new ContentKostiumy());
-
-$Page->display();
-
-
-?> -->
-
-<!--<a href="kostiumy.php" class="button2">Powrót</a>-->
-<!--<h2><?php echo $this->group["group"]; ?></h2>-->
-
-<!--<ul class="lista-kostiumow">-->
-<!--<?php foreach($this->photos as $photo): ?>-->
-
-<!--<li><a href="costumes/large/<?php echo $photo["id"];?>.jpg" rel="group">-->
-<!--	<img src="costumes/thumb/<?php echo $photo["id"];?>.jpg" alt="<?php echo $photo["name"];?>" />-->
-<!--	<?php echo $photo["name"];?>-->
-<!--	</a>-->
-<!--</li>-->
-
-<!--<?php endforeach; ?>-->
-<!--</ul>-->
+	{% endfor %}
+</ul>

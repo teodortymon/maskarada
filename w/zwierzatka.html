@@ -1,0 +1,16 @@
+---
+layout: w
+---
+
+<h2>Kostiumy - zwierzątka</h2>
+<a href="kostiumy.html" class="button2">Powrót</a>
+
+<ul class="lista-kostiumow">
+    {% for stroj in (224..259) %}
+        <li><a href="kostiumy/large/{{ stroj }}.jpg" rel="group">
+            <img src="kostiumy/thumb/{{ stroj }}.jpg" alt="" />
+            <!-- <?php echo $photo["name"];?> -->
+            </a>
+        </li>
+    {% endfor %}
+</ul>
