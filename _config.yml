@@ -19,6 +19,5 @@ url: http://www.maskarada.waw.pl
 exclude:
 - vendor
 markdown: kramdown
-
 cloudinary:
   cloud_name: maskarada
