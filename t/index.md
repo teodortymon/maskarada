@@ -125,20 +125,25 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 </tr>
 </table>
 <br />
-    
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FjIP1sC9Yxw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+<br /><br />    
 <ul class="photos">
-    <a id="single_image" rel="8" href="lay/img/koty/large/1.jpg"><img src="lay/img/koty/small/1.jpg"/></a>
-    <a id="single_image" rel="8" href="lay/img/koty/large/2.jpg"><img src="lay/img/koty/small/2.jpg"/></a>
-    <a id="single_image" rel="8" href="lay/img/koty/large/3.jpg"><img src="lay/img/koty/small/3.jpg"/></a>
-    <a id="single_image" rel="8" href="lay/img/koty/large/4.jpg"><img src="lay/img/koty/small/4.jpg"/></a>
+    <a id="single_image" rel="8" href="lay/img/koty/large/12.jpg"><img src="lay/img/koty/small/12.jpg"/></a>
+    <a id="single_image" rel="8" href="lay/img/koty/large/9.jpg"><img src="lay/img/koty/small/9.jpg"/></a>
+    <br />
     <a id="single_image" rel="8" href="lay/img/koty/large/5.jpg"><img src="lay/img/koty/small/5.jpg"/></a>
     <a id="single_image" rel="8" href="lay/img/koty/large/6.jpg"><img src="lay/img/koty/small/6.jpg"/></a>
-    <a id="single_image" rel="8" href="lay/img/koty/large/7.jpg"><img src="lay/img/koty/small/7.jpg"/></a>
-    <a id="single_image" rel="8" href="lay/img/koty/large/8.jpg"><img src="lay/img/koty/small/8.jpg"/></a>
-    <a id="single_image" rel="8" href="lay/img/koty/large/9.jpg"><img src="lay/img/koty/small/9.jpg"/></a>
+    <a id="single_image" rel="8" href="lay/img/koty/large/3.jpg"><img src="lay/img/koty/small/3.jpg"/></a>
+    <br />
+    <a id="single_image" rel="8" href="lay/img/koty/large/1.jpg"><img src="lay/img/koty/small/1.jpg"/></a>
     <a id="single_image" rel="8" href="lay/img/koty/large/10.jpg"><img src="lay/img/koty/small/10.jpg"/></a>
     <a id="single_image" rel="8" href="lay/img/koty/large/11.jpg"><img src="lay/img/koty/small/11.jpg"/></a>
-    <a id="single_image" rel="8" href="lay/img/koty/large/12.jpg"><img src="lay/img/koty/small/12.jpg"/></a>
+    <br />
+    <a id="single_image" rel="8" href="lay/img/koty/large/7.jpg"><img src="lay/img/koty/small/7.jpg"/></a>
+    <a id="single_image" rel="8" href="lay/img/koty/large/2.jpg"><img src="lay/img/koty/small/2.jpg"/></a>  
+    <a id="single_image" rel="8" href="lay/img/koty/large/3.jpg"><img src="lay/img/koty/small/3.jpg"/></a>
+
 </ul>
 
 <br />
@@ -169,11 +174,16 @@ Anna Bakalarska<br />
 Joanna Róg/Joanna Pietrońska<br />
 Agnieszka Senderowska<br />
 
+<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XyaKJ2pxhyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+<br /><br />
+
 <ul class="photos">
     <a id="single_image" rel="7" href="lay/img/turlitaj/large/1.jpg"><img src="lay/img/turlitaj/small/1.jpg"/></a>
     <a id="single_image" rel="7" href="lay/img/turlitaj/large/2.jpg"><img src="lay/img/turlitaj/small/2.jpg"/></a>
     <a id="single_image" rel="7" href="lay/img/turlitaj/large/3.jpg"><img src="lay/img/turlitaj/small/3.jpg"/></a>
-    <a id="single_image" rel="7" href="lay/img/turlitaj/large/4.jpg"><img src="lay/img/turlitaj/small/4.jpg"/></a>
+    <br />
+    <!-- <a id="single_image" rel="7" href="lay/img/turlitaj/large/4.jpg"><img src="lay/img/turlitaj/small/4.jpg"/></a> -->
     <a id="single_image" rel="7" href="lay/img/turlitaj/large/5.jpg"><img src="lay/img/turlitaj/small/5.jpg"/></a>
     <a id="single_image" rel="7" href="lay/img/turlitaj/large/6.jpg"><img src="lay/img/turlitaj/small/6.jpg"/></a>
     
@@ -310,6 +320,8 @@ Premiera: 30 marzec 2014 <br />
 </tr>
 </table>
 <center><strong>Tekst</strong><br />Jan Falba</center>
+<br /><br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aq-JZwyPaGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
 <ul class="photos">
 <a id="single_image" rel="4" href="lay/img/cal/large/1.JPG"><img src="lay/img/cal/small/1.JPG"/></a>

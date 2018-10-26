@@ -9,9 +9,15 @@ layout: w
 
 <ul class="lista-kostiumow">
     {% for stroj in (1..119) %}
-        <li><a href="kostiumy/large/{{ stroj }}.jpg" rel="group">
-            <img src="kostiumy/thumb/{{ stroj }}.jpg" alt="" />
-            <!-- <?php echo $photo["name"];?> -->
+
+        <li>
+
+            <!-- {% cloudinary kostiumy/dziewczynki/{{ stroj }}.jpg %}    -->
+
+
+            <a href="https://res.cloudinary.com/maskarada/image/upload/w_400,h_600/stroje/dziewczynki/{{ stroj }}.jpg" rel="group">
+            <img src="https://res.cloudinary.com/maskarada/image/upload/w_120,h_180/stroje/dziewczynki/{{ stroj }}.jpg" alt="" />
+            <!-- <?php echo $photo["name"];?>
             </a>
         </li>
     {% endfor %}
