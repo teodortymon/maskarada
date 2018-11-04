@@ -6,13 +6,24 @@ layout: w
 <a href="kostiumy.html" class="button2">Powrót</a>
 
 <br /><br />
-
 <ul class="lista-kostiumow">
+    {% for category in site.data.kostiumy.chlopcy %}
+        {% for stroj in (1..category.amount) %}
+            <li>
+                <a href="kostiumy/large/chlopcy/{{ category.rating }}/{{ stroj }}.jpg" rel="group">
+                    <img src="kostiumy/thumb/chlopcy/{{ category.rating }}/{{ stroj }}.jpg" alt="" />
+                </a>
+            </li>
+        {% endfor %}
+    {% endfor %}
+</ul>
+
+<!-- <ul class="lista-kostiumow">
     {% for stroj in (121..222) %}
         <li><a href="kostiumy/large/{{ stroj }}.jpg" rel="group">
             <img src="kostiumy/thumb/{{ stroj }}.jpg" alt="" />
-            <!-- <?php echo $photo["name"];?> -->
+            <?php echo $photo["name"];?>
             </a>
         </li>
     {% endfor %}
-</ul>
+</ul> -->

@@ -5,12 +5,15 @@ layout: w
 <h2>Kostiumy - zwierzątka</h2>
 <a href="kostiumy.html" class="button2">Powrót</a>
 
+<br /><br />
 <ul class="lista-kostiumow">
-    {% for stroj in (224..259) %}
-        <li><a href="kostiumy/large/{{ stroj }}.jpg" rel="group">
-            <img src="kostiumy/thumb/{{ stroj }}.jpg" alt="" />
-            <!-- <?php echo $photo["name"];?> -->
-            </a>
-        </li>
+    {% for category in site.data.kostiumy.zwierzatka %}
+        {% for stroj in (1..category.amount) %}
+            <li>
+                <a href="kostiumy/large/zwierzatka/{{ category.rating }}/{{ stroj }}.jpg" rel="group">
+                    <img src="kostiumy/thumb/zwierzatka/{{ category.rating }}/{{ stroj }}.jpg" alt="" />
+                </a>
+            </li>
+        {% endfor %}
     {% endfor %}
 </ul>
