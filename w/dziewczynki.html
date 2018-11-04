@@ -6,8 +6,19 @@ layout: w
 <a href="kostiumy.html" class="button2">Powrót</a>
 
 <br /><br />
-
 <ul class="lista-kostiumow">
+    {% for category in site.data.kostiumy.dziewczynki %}
+        {% for stroj in (1..category.amount) %}
+            <li>
+                <a href="kostiumy/large/dziewczynki/{{ category.rating }}/{{ stroj }}.jpg" rel="group">
+                    <img src="kostiumy/thumb/dziewczynki/{{ category.rating }}/{{ stroj }}.jpg" alt="" />
+                </a>
+            </li>
+        {% endfor %}
+    {% endfor %}
+</ul>
+
+<!-- <ul class="lista-kostiumow">
     {% for stroj in (1..119) %}
 
         <li>
@@ -17,4 +28,4 @@ layout: w
         </li>
         
     {% endfor %}
-</ul>
+</ul> -->

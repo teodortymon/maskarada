@@ -37,6 +37,8 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 <br /> Premiera 28.10.2018.
 <br /><br />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I6uIPXobj9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+
 <table border="0">
 <tr>
     <td><strong>Adaptacja i Muzyka</strong><br />Marek Grabiniok</td>
@@ -420,6 +422,10 @@ Przedstawienie dla dzieci w wieku od 4 do 12 lat
 <br ><br />
 Premiera: 13 październik 2013
 <br /><br />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fBmbJFhO638" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+<br /><br />
+
 <table border="0">
 <tr>
 	<td><h3>Występują<br /><br /></h3></td>
