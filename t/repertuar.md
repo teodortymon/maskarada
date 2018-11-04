@@ -34,78 +34,6 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
     <a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/bal_small.jpg"/></a>
 </ul> -->
 
-## Październik
-
-<table class="pure-table">
-	<tr>
-		<th>1.10.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Wesołe Koty</th>
-		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
-	</tr>
-	<tr>
-		<th>7.10.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Calineczka</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/120737">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>8.10.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Calineczka</th>
-		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
-	</tr>
-	<tr>
-		<th>15.10.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Wesołe Koty</th>
-		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
-	</tr>
-	<tr>
-		<th>16.10.2018 wtorek</th>
-		<th>10.00</th>
-		<th>Wesołe Koty</th>
-		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
-	</tr>
-	<tr>
-		<th>21.10.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Wesołe Koty</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/120744">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>22.10.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Złota Rybka</th>
-		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
-	</tr>
-	<tr>
-		<th>23.10.2018 wtorek</th>
-		<th>10.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
-	</tr>
-	<tr>
-		<th>28.10.2018 niedziela</th>
-		<th>12.30</th>
-		<th>Złota Rybka <i>Premiera</i></th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/123748">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>28.10.2018 niedziela</th>
-		<th>16.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/123749">Kup bilet</a></th>
-	</tr>
-	<tr>
-		<th>29.10.2018 poniedziałek</th>
-		<th>11.00</th>
-		<th>Księżniczka na ziarnku grochu</th>
-		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
-	</tr>
-</table>
-<br /><br />
-
 ## Listopad
 
 <table class="pure-table">
@@ -128,7 +56,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/125644">Kup bilet</a></th>
 	</tr>
 	<tr>
-		<th>12.11.2018 poniedziałek</th>
+		<th>13.11.2018 wtorek</th>
 		<th>11.00</th>
 		<th>Calineczka</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
@@ -158,6 +86,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
+		<th>21.11.2018 środa</th>
+		<th>10.00</th>
+		<th>Księżniczka na ziarnku grochu</th>
+		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
+	</tr>
+	<tr>
 		<th>25.11.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
@@ -184,6 +118,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 	<tr>
 		<th>2.12.2018 niedziela</th>
 		<th>12.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>2.12.2018 niedziela</th>
+		<th>15.00</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
@@ -224,6 +164,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 	<tr>
+		<th>9.12.2018 niedziela</th>
+		<th>16.00</th>
+		<th>Śnieżny show</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
 		<th>10.12.2018 poniedziałek</th>
 		<th>11.00</th>
 		<th>Elfy i fabryka prezentów</th>
@@ -236,8 +182,20 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
+		<th>15.12.2018 sobota</th>
+		<th>12.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
 		<th>16.12.2018 niedziela</th>
 		<th>12.30</th>
+		<th>Śnieżny show</th>
+		<th><i>Bilety online wkrótce</i></th>
+	</tr>
+	<tr>
+		<th>16.12.2018 niedziela</th>
+		<th>16.00</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th><i>Bilety online wkrótce</i></th>
 	</tr>
@@ -246,6 +204,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>11.00</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
+	</tr>
+	<tr>
+		<th>30.12.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th>Śnieżny show</th>
 	</tr>
 </table>
 <br /><br />
