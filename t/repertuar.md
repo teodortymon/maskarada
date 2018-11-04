@@ -208,8 +208,8 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 	<tr>
 		<th>30.12.2018 niedziela</th>
 		<th>12.30</th>
-		<th>Elfy i fabryka prezentów</th>
 		<th>Śnieżny show</th>
+		<th><i>Bilety online wkrótce</i></th>
 	</tr>
 </table>
 <br /><br />
