@@ -119,13 +119,13 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>2.12.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127675">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>2.12.2018 niedziela</th>
 		<th>15.00</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127676">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>3.12.2018 poniedziałek</th>
@@ -161,13 +161,13 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>9.12.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127677">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>9.12.2018 niedziela</th>
 		<th>16.00</th>
 		<th>Śnieżny show</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127678">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>10.12.2018 poniedziałek</th>
@@ -191,7 +191,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>16.12.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Śnieżny show</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127679">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>16.12.2018 niedziela</th>
@@ -209,7 +209,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>30.12.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Śnieżny show</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127680">Kup bilet</a></th>
 	</tr>
 </table>
 <br /><br />
