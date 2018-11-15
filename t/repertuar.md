@@ -99,9 +99,9 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 	</tr>
 	<tr>
 		<th>25.11.2018 niedziela</th>
-		<th>16.00</th>
-		<th>Urodziny Turli Taja</th>
-		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/125648">Kup bilet</a></th>
+		<th>15.00</th>
+		<th>Elfy i fabryka prezentów</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/128225">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>26.11.2018 poniedziałek</th>
@@ -161,7 +161,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>8.12.2018 sobota</th>
 		<th>12.30</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/128223">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>9.12.2018 niedziela</th>
@@ -203,7 +203,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>16.12.2018 niedziela</th>
 		<th>16.00</th>
 		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/128224">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>17.12.2018 poniedziałek</th>
