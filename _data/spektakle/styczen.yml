@@ -1,17 +1,16 @@
----
-- data: '07.01'
+- data: 07.01
   dzien: poniedziałek
   godzina: 11.15
   tytul: Elfy i fabryka prezentów
   link: "-"
 - data: 27.01
   dzien: niedziela
-  godzina: '16.00'
+  godzina: "16.00"
   tytul: Elfy i fabryka prezentów
   link: "-"
 - data: 27.01
   dzien: niedziela
-  godzina: '12.30'
+  godzina: "12.30"
   tytul: Śnieżny show
   link: "-"
 - data: 21.01
@@ -21,17 +20,17 @@
   link: "-"
 - data: 20.01
   dzien: niedziela
-  godzina: '16.00'
+  godzina: "16.00"
   tytul: Elfy i fabryka prezentów
   link: "-"
 - data: 20.01
   dzien: niedziela
-  godzina: '12.30'
+  godzina: "12.30"
   tytul: Snieżny show
   link: "-"
 - data: 15.01
   dzien: wtorek
-  godzina: '11.00'
+  godzina: "11.00"
   tytul: Śnieżny show
   link: "-"
 - data: 14.01
@@ -41,21 +40,21 @@
   link: "-"
 - data: 13.01
   dzien: niedziela
-  godzina: '16.00'
+  godzina: "16.00"
   tytul: Śnieżny show
   link: "-"
-- data: '06.01'
+- data: 06.01
   dzien: niedziela
-  godzina: '16.00'
+  godzina: "16.00"
   tytul: Śnieżny show
   link: "-"
-- data: '13.01 '
+- data: 13.01
   dzien: niedziela
-  godzina: '12.30'
+  godzina: "12.30"
   tytul: Elfy i fabryka prezentów
   link: "-"
-- data: '06.01'
+- data: 06.01
   dzien: niedziela
-  godzina: '12.30'
+  godzina: "12.30"
   tytul: Elfy i fabryka prezentów
   link: "-"
