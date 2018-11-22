@@ -1,4 +1,9 @@
 ---
+- data: 20.01
+  dzien: niedziela
+  godzina: '12.30'
+  tytul: Snieżny show
+  link: "-"
 - data: 15.01
   dzien: wtorek
   godzina: '11.00'
