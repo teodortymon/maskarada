@@ -129,7 +129,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 	</tr>
 	<tr>
 		<th>3.12.2018 poniedziałek</th>
-		<th>11.00</th>
+		<th>11:15</th>
 		<th>Śnieżny show</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
@@ -141,19 +141,19 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 	</tr>
 	<tr>
 		<th>5.12.2018 środa</th>
-		<th>11.00</th>
+		<th>11:15</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>6.12.2018 czwartek</th>
-		<th>11.00</th>
+		<th>11:15</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>7.12.2018 piątek</th>
-		<th>11.00</th>
+		<th>11:15</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
@@ -177,13 +177,13 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 	</tr>
 	<tr>
 		<th>10.12.2018 poniedziałek</th>
-		<th>11.00</th>
+		<th>11:15</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
 		<th>11.12.2018 wtorek</th>
-		<th>11.00</th>
+		<th>11:15</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
@@ -201,7 +201,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 	</tr>
 	<tr>
 		<th>17.12.2018 poniedziałek</th>
-		<th>11.00</th>
+		<th>11:15</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
@@ -213,7 +213,7 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 	</tr>
 	<tr>
 		<th>19.12.2018 środa</th>
-		<th>11.00</th>
+		<th>11:15</th>
 		<th>Śnieżny show</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
