@@ -1,5 +1,11 @@
-- data: "6.01.19"
-  dzien: "niedziela"
-  godzina: "12:30"
-  tytul: "Księżniczka na ziarnku grochu"
+---
+- data: 7.01.19
+  dzien: poniedziałek
+  godzina: '11:15'
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+- data: 6.01.19
+  dzien: niedziela
+  godzina: '12:30'
+  tytul: Księżniczka na ziarnku grochu
   link: "-"
