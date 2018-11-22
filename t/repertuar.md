@@ -229,8 +229,8 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 ## Styczeń
 
 <table class="pure-table">
-
-    {% for spektakl in site.data.spektakle.styczen %}
+	{% assign spektakle = site.data.spektakle.styczen | sort: 'data' %}
+    {% for spektakl in spektakle %}
     	<tr>
     		<th>{{ spektakl.data }} {{ spektakl.dzien }}</th>
     		<th>{{ spektakl.godzina }}</th>
