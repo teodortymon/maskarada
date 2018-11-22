@@ -4,11 +4,11 @@
   godzina: '16.00'
   tytul: Śnieżny show
   link: "-"
-- data: ''
-  dzien: ''
-  godzina: ''
-  tytul: ''
-  link: ''
+- data: '13.01 '
+  dzien: niedziela
+  godzina: '12.30'
+  tytul: Elfy i fabryka prezentów
+  link: "-"
 - data: '06.01'
   dzien: niedziela
   godzina: '12.30'
