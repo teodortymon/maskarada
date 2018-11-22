@@ -226,6 +226,31 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 </table>
 <br /><br />
 
+## Styczeń
+
+<table class="pure-table">
+
+    {% for spektakl in site.data.spektakle.styczen %}
+    	<tr>
+    		<th>{{ spektakl.data }} {{ spektakl.dzien }}</th>
+    		<th>{{ spektakl.godzina }}</th>
+    		<th>{{ spektakl.tytul }}</th>
+    		<th>
+    			{% if spektakl.dzien == 'sobota' or spektakl.dzien == 'niedziela' %}
+    				{% if spektakl.link == "-" %}
+    					<i>Bilety online wkrótce</i>
+    				{% else %}
+    					<a href="https://ewejsciowki.pl/embedded/rezerwacja/{{ spektakl.link }}">Kup bilet</a>
+    				{% endif %}
+    			{% else %}
+    				Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278
+    			{% endif %}
+    		</th>
+    	</tr>
+    {% endfor %}
+
+</table>
+
 <style>
 .pure-table thead {
     background-color: rgba(143, 223, 255, 0.19) !important;

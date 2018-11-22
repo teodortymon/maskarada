@@ -4,10 +4,10 @@ admin_path:
 webhook_url:
 sections:
   - type: document
-    path: _data/grudzien.yml
+    path: _data/spektakle/grudzien.yml
     label: Grudniowe spektakle
   - type: document
-    path: _data/styczen.yml
+    path: _data/spektakle/styczen.yml
     label: Styczniowe spektakle
 upload_dir: uploads
 public_path: "/uploads"
