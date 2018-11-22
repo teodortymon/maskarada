@@ -188,12 +188,6 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
 	</tr>
 	<tr>
-		<th>15.12.2018 sobota</th>
-		<th>12.30</th>
-		<th>Elfy i fabryka prezentów</th>
-		<th><i>Bilety online wkrótce</i></th>
-	</tr>
-	<tr>
 		<th>16.12.2018 niedziela</th>
 		<th>12.30</th>
 		<th>Śnieżny show</th>
@@ -210,6 +204,12 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>11.00</th>
 		<th>Elfy i fabryka prezentów</th>
 		<th>Zapraszamy grupy zorganizowane do rezerwacji tel. 501 027 278</th>
+	</tr>
+	<tr>
+		<th>23.12.2018 niedziela</th>
+		<th>12.30</th>
+		<th>Śnieżny show</th>
+		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/132009">Kup bilet</a></th>
 	</tr>
 	<tr>
 		<th>19.12.2018 środa</th>
