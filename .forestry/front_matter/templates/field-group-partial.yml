@@ -1,0 +1,8 @@
+---
+label: field group partial
+hide_body: false
+is_partial: true
+fields:
+- type: field_group_list
+  name: data
+  label: data
