@@ -1,7 +1,7 @@
 ---
 label: data
 hide_body: false
-is_partial: true
+is_partial: false
 fields:
 - type: field_group_list
   name: data
