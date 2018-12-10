@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: t
+  label: Teatr
+  create: all
+  match: "**/*"
 - type: document
   path: _data/spektakle/styczen.yml
   label: Styczniowe spektakle
