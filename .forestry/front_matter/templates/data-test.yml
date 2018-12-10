@@ -3,6 +3,12 @@ label: data test
 hide_body: false
 is_partial: false
 fields:
-- type: text
+- type: list
   name: data
   label: Spektakl
+  config:
+    use_select: true
+    source:
+      type: documents
+      section: styczniowe-spektakle-4c200865-d20d-4579-8dba-c3bf057d067b
+      file: _data/spektakle/styczen.yml
