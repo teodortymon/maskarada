@@ -1,66 +1,65 @@
----
-- data: 28.01
+- data: 2018-01-28T11:00
   dzien: poniedziałek
-  godzina: '11.00'
+  godzina: 11.00
   tytul: Elfy i fabryka prezentów
   link: "-"
-- data: 7.01
+- data: 2018-01-07T11:15
   dzien: poniedziałek
   godzina: 11.15
   tytul: Elfy i fabryka prezentów
   link: "-"
-- data: 27.01
+- data: 2018-01-27T16:00
   dzien: niedziela
-  godzina: '16.00'
+  godzina: 16.00
   tytul: Elfy i fabryka prezentów
   link: "-"
-- data: 27.01
+- data: 2018-01-27T12:30
   dzien: niedziela
-  godzina: '12.30'
+  godzina: 12.30
   tytul: Śnieżny show
   link: "-"
-- data: 21.01
+- data: 2018-01-21T11:15
   dzien: poniedziałek
   godzina: 11.15
   tytul: Elfy i fabryka prezentów
   link: "-"
-- data: 20.01
+- data: 2018-01-20T16:00
   dzien: niedziela
-  godzina: '16.00'
+  godzina: 16.00
   tytul: Elfy i fabryka prezentów
   link: "-"
-- data: 20.01
+- data: 2018-01-20T12:30
   dzien: niedziela
-  godzina: '12.30'
+  godzina: 12.30
   tytul: Snieżny show
   link: "-"
-- data: 15.01
+- data: 2018-01-15T11:00
   dzien: wtorek
-  godzina: '11.00'
+  godzina: 11.00
   tytul: Śnieżny show
   link: "-"
-- data: 14.01
+- data: 2018-01-14T09:45
   dzien: poniedziałek
   godzina: 9.45
   tytul: Śnieżny show
   link: "-"
-- data: 13.01
+- data: 2018-01-13T16:00
   dzien: niedziela
-  godzina: '16.00'
+  godzina: 16.00
   tytul: Śnieżny show
   link: "-"
-- data: 6.01
+- data: 2018-01-06T16:00
   dzien: niedziela
-  godzina: '16.00'
+  godzina: "1600"
   tytul: Śnieżny show
   link: "-"
-- data: 13.01
+- data: 2018-01-13T12:30
   dzien: niedziela
-  godzina: '12.30'
+  godzina: 12.30
   tytul: Elfy i fabryka prezentów
   link: "-"
-- data: 6.01
+- data: 2018-01-06T12:30
   dzien: niedziela
-  godzina: '12.30'
+  godzina: "1230"
   tytul: Elfy i fabryka prezentów
   link: "-"
