@@ -1,0 +1,16 @@
+---
+label: Repertuar - partial
+hide_body: false
+is_partial: true
+display_field: data
+fields:
+- type: text
+  name: tytul
+  label: Tytuł
+  config:
+    required: true
+- type: datetime
+  label: Data przedstawienia
+  name: data
+  config:
+    required: true
