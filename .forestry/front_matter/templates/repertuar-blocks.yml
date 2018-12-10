@@ -9,3 +9,5 @@ fields:
   label: Repertuar
   name: repertuar
   description: Repertuar przedstawien
+pages:
+- _data/spektakle/styczen-testsing.yml
