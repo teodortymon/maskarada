@@ -1,0 +1,8 @@
+---
+label: data test
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: data
+  label: Spektakl
