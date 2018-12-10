@@ -17,7 +17,6 @@ sections:
 - type: document
   path: _data/spektakle/styczen.yml
   label: Testowy repertuar - nie dotykac
-  match: "**/*"
 - type: heading
   label: Wypożyczalnia
 - type: directory
