@@ -8,31 +8,17 @@ layout: t
 
 ## Szanowni Widzowie!
 
-Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
+Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 
 <br />
 <br />
 
-<b>Zapraszamy do rezerwacji terminów na spektakle świąteczne i imprezy firmowe</b>
+**Zapraszamy do rezerwacji terminów na spektakle świąteczne i imprezy firmowe**
 <br />
 
 <b><i>W grudniu zapraszamy szkoły i przedszkola do rezerwacji terminów na nasze najbardziej popularne świąteczne przedstawienia "Elfy i fabryka prezentów" i "Śnieżny show".</i></b>
 
 <br /><br />
-
-<!-- ## Zapraszamy na
-
-## Wielki Bal Karnawałowych Rycerzy i Księżniczek
-
-## już 11.02.2018
-
-### Dzięki Wypożyczalni Kostiumów Maskarada dzieci bęgą mogły przebrać się za swoich ulubionych bohaterów wziąć udział w karnawałowej zabawie prowadzonej przez naszych aktorów
-
-<br />
-<br />
-<ul class="photos">
-    <a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/bal_small.jpg"/></a>
-</ul> -->
 
 ## Grudzień
 
@@ -194,3 +180,17 @@ Gramy dla was w Nowym Świecie Muzyki przy <strong>ul. Nowy Świat 63</strong>
 		<th>Calineczka</th>
 		<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/107628">Kup bilet</a></th>
 	</tr> -->
+
+<!-- ## Zapraszamy na
+
+## Wielki Bal Karnawałowych Rycerzy i Księżniczek
+
+## już 11.02.2018
+
+### Dzięki Wypożyczalni Kostiumów Maskarada dzieci bęgą mogły przebrać się za swoich ulubionych bohaterów wziąć udział w karnawałowej zabawie prowadzonej przez naszych aktorów
+
+<br />
+<br />
+<ul class="photos">
+    <a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/bal_small.jpg"/></a>
+</ul> -->
