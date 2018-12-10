@@ -1,30 +1,31 @@
+---
 new_page_extension: md
 auto_deploy: false
-admin_path: ""
-webhook_url:
+admin_path: ''
+webhook_url: 
 sections:
-  - type: heading
-    label: Teatr
-  - type: directory
-    path: t
-    label: Teatr
-    create: all
-    match: "**/*"
-  - type: document
-    path: _data/spektakle/styczen.yml
-    label: Styczniowe spektakle
-  - type: document
-    path: _data/spektakle/styczen-testing.yml
-    label: Testowy repertuar - nie dotykac
-  - type: heading
-    label: Wypożyczalnia
-  - type: directory
-    path: w
-    label: Wypożyczalnia
-    create: all
-    match: "**/*"
+- type: heading
+  label: Teatr
+- type: directory
+  path: t
+  label: Teatr
+  create: all
+  match: "**/*"
+- type: document
+  path: _data/spektakle/styczen.yml
+  label: Styczniowe spektakle
+- type: document
+  path: _data/spektakle/styczen-testing.yml
+  label: Testowy repertuar - nie dotykac
+- type: heading
+  label: Wypożyczalnia
+- type: directory
+  path: w
+  label: Wypożyczalnia
+  create: all
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
-front_matter_path: ""
+front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
