@@ -5,7 +5,7 @@ is_partial: false
 fields:
 - type: blocks
   template_types:
-  - repertuar-partial
+  - spektakl
   label: Repertuar
   name: repertuar
   description: Repertuar przedstawien
