@@ -27,7 +27,12 @@ fields:
         path: tytuly
       required: true
     label: Data spektaklu
-    default: NOWE PRZEDSTAWIENIE
+    default: Elfy i fabryka prezentów
+  - type: text
+    name: link
+    config:
+      required: true
+    label: Link do e-wejściówek
   config:
     labelField: data
 pages:
