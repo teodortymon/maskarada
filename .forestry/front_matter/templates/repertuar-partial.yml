@@ -1,16 +1,18 @@
 ---
-label: Repertuar - partial
+label: Spektakl
 hide_body: false
 is_partial: true
 display_field: data
 fields:
-- type: text
-  name: tytul
-  label: Tytuł
-  config:
-    required: true
 - type: datetime
   label: Data przedstawienia
   name: data
   config:
     required: true
+- type: select
+  config:
+    source:
+      type: documents
+      file: _data/spektakle/spektakle.yml
+  name: tytul_spektaklu
+  label: Tytuł spektaklu

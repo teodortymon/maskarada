@@ -10,7 +10,7 @@ fields:
   name: repertuar
   description: Repertuar przedstawien
 pages:
-- _data/spektakle/test3.yml
 - _data/spektakle/styczen-testing.yml
 - _data/spektakle/styczen-testing.yml
 - _data/spektakle/undefined-copy.md
+- _data/spektakle/test3.yml
