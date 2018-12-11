@@ -4,12 +4,7 @@ admin_path: ""
 webhook_url:
 sections:
   - type: heading
-    label: Teatr wszystkie pliki
-  - type: directory
-    path: t
     label: Teatr
-    create: all
-    match: "**/*"
   - type: document
     path: _data/spektakle/styczen.yml
     label: Styczniowe spektakle
@@ -34,14 +29,15 @@ sections:
 
   - type: heading
     label: Wypożyczalnia
-  - type: directory
-    path: w
-    label: Wypożyczalnia wszystkie pliki
-    create: all
-    match: "**/*"
   - type: document
     path: w/index.html
     label: Strona główna
+  - type: document
+    path: w/cennik.html
+    label: Cennik
+  - type: document
+    path: w/kontakt.html
+    label: Kontakt
 
   - type: heading
     label: Testowe
@@ -51,9 +47,12 @@ sections:
     create: all
     match: "**/*"
     new_doc_ext: yml
-  - type: document
-    path: _data/spektakle/styczen-testing.yml
-    label: Testowy repertuar - nie dotykac
+  - type: directory
+    path: /
+    label: Wszystkie pliki
+    create: all
+    match: "**/*"
+
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ""
