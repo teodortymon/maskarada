@@ -16,7 +16,7 @@ fields:
   default: Elfy i fabryka prezentów
 - type: datetime
   name: data
-  label: Data spektaklu
+  label: Data spektaklu2
   config:
     required: true
     display_utc: false
