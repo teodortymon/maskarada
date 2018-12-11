@@ -10,6 +10,13 @@ fields:
   name: repertuar
   description: Repertuar przedstawien
   fields:
+  - type: datetime
+    config:
+      required: true
+      time_format: HH:mm A ZZ
+      date_format: DD.MM
+    name: data
+    label: Data spektaklu
   - type: select
     config:
       source:
@@ -20,13 +27,7 @@ fields:
       required: true
     name: tytul
     label: Wybór spektaklu
-  - type: datetime
-    config:
-      required: true
-      time_format: HH:mm A ZZ
-      date_format: DD.MM
-    name: data
-    label: Data spektaklu
+    default: Elfy i fabryka prezentów
 pages:
 - _data/spektakle/styczen-testing.yml
 - _data/spektakle/styczen-testing.yml
