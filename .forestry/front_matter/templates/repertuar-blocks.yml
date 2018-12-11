@@ -28,6 +28,8 @@ fields:
     name: tytul
     label: Wybór spektaklu
     default: Elfy i fabryka prezentów
+  config:
+    labelField: tytul
 pages:
 - _data/spektakle/styczen-testing.yml
 - _data/spektakle/styczen-testing.yml
