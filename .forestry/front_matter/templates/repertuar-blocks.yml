@@ -14,22 +14,21 @@ fields:
     config:
       required: true
       time_format: HH:mm A ZZ
-      date_format: DD.MM
+      date_format: DD/MM
     name: data
     label: Data spektaklu
   - type: select
+    name: tytul
     config:
       source:
         type: documents
-        file: _data/spektakle/spektakle.yml
         section: bazy-danych
+        file: _data/spektakle/spektakle.yml
         path: tytuly
       required: true
-    name: tytul
-    label: Wybór spektaklu
-    default: Elfy i fabryka prezentów
+    label: Tytuł Spektaklu
   config:
-    labelField: tytul
+    labelField: ''
 pages:
 - _data/spektakle/styczen-testing.yml
 - _data/spektakle/styczen-testing.yml
