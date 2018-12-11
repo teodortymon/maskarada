@@ -6,9 +6,10 @@ display_field: data
 fields:
 - type: datetime
   label: Data przedstawienia
-  name: data
+  name: data_przedstawienia
   config:
     required: true
+    display_utc: false
 - type: select
   config:
     source:
