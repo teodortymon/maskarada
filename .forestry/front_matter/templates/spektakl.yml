@@ -22,3 +22,8 @@ fields:
     display_utc: false
     date_format: DD/MM
     time_format: HH:mm A ZZ
+- type: text
+  name: link
+  label: Link do e-wejściówek
+  config:
+    required: true
