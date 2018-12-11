@@ -28,6 +28,7 @@ sections:
   label: Bazy danych
   create: all
   match: "**/*"
+  new_doc_ext: ".yml"
 - type: document
   path: _data/spektakle/styczen-testing.yml
   label: Testowy repertuar - nie dotykac
