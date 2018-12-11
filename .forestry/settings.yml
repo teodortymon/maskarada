@@ -1,39 +1,61 @@
----
 new_page_extension: md
 auto_deploy: false
-admin_path: ''
-webhook_url: 
+admin_path: ""
+webhook_url:
 sections:
-- type: heading
-  label: Teatr
-- type: directory
-  path: t
-  label: Teatr
-  create: all
-  match: "**/*"
-- type: document
-  path: _data/spektakle/styczen.yml
-  label: Styczniowe spektakle
-- type: heading
-  label: Wypożyczalnia
-- type: directory
-  path: w
-  label: Wypożyczalnia
-  create: all
-  match: "**/*"
-- type: heading
-  label: Testowe
-- type: directory
-  path: _data
-  label: Bazy danych
-  create: all
-  match: "**/*"
-  new_doc_ext: yml
-- type: document
-  path: _data/spektakle/styczen-testing.yml
-  label: Testowy repertuar - nie dotykac
+  - type: heading
+    label: Teatr wszystkie pliki
+  - type: directory
+    path: t
+    label: Teatr
+    create: all
+    match: "**/*"
+  - type: document
+    path: _data/spektakle/styczen.yml
+    label: Styczniowe spektakle
+  - type: document
+    path: t/index.md
+    label: Strona główna
+  - type: document
+    path: t/repertuar.md
+    label: Repertuar
+  - type: document
+    path: t/bilety.md
+    label: Bilety
+  - type: document
+    path: t/onas.md
+    label: O nas
+  - type: document
+    path: t/warsztaty.md
+    label: Warsztaty
+  - type: document
+    path: t/kontakt.md
+    label: Kontakt
+
+  - type: heading
+    label: Wypożyczalnia
+  - type: directory
+    path: w
+    label: Wypożyczalnia wszystkie pliki
+    create: all
+    match: "**/*"
+  - type: document
+    path: w/index.html
+    label: Strona główna
+
+  - type: heading
+    label: Testowe
+  - type: directory
+    path: _data
+    label: Bazy danych
+    create: all
+    match: "**/*"
+    new_doc_ext: yml
+  - type: document
+    path: _data/spektakle/styczen-testing.yml
+    label: Testowy repertuar - nie dotykac
 upload_dir: uploads
 public_path: "/uploads"
-front_matter_path: ''
+front_matter_path: ""
 use_front_matter_path: false
 file_template: ":filename:"
