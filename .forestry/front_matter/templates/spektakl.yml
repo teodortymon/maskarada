@@ -19,6 +19,6 @@ fields:
   label: Data spektaklu
   config:
     required: true
-    display_utc: true
+    display_utc: false
     date_format: DD/MM
     time_format: HH:mm A ZZ
