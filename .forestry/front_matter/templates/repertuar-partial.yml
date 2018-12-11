@@ -2,7 +2,7 @@
 label: Spektakl
 hide_body: false
 is_partial: true
-display_field: data
+display_field: data_przedstawienia
 fields:
 - type: datetime
   label: Data przedstawienia
