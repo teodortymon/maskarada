@@ -2,10 +2,6 @@
 title: Styczniowy repertuar
 date: 2018-12-11 00:16:55 +0000
 repertuar:
-- tytul: Elfy i fabryka prezentów
-  data: 2018-01-08 11:00:00 +0100
-- tytul: Elfy i fabryka prezentów
-  data: 2019-01-08 11:00:00 +0100
 - data: 2018-01-06 12:30 +0000
   tytul: Elfy i fabryka prezentów
   link: "-"
@@ -18,6 +14,9 @@ repertuar:
   tytul: Elfy i fabryka prezentów
   link: "-"
   template: spektakl
+- tytul: Elfy i fabryka prezentów
+  data: 2018-01-08 11:00:00 +0100
+  link: "-"
 - data: 2018-01-13 12:30 +0000
   tytul: Elfy i fabryka prezentów
   link: "-"
