@@ -13,9 +13,12 @@ fields:
     required: true
   label: Spektakl
   name: tytul
-  default: tytuly
+  default: Elfy i fabryka prezentów
 - type: datetime
   name: data
   label: Data spektaklu
   config:
     required: true
+    display_utc: false
+    date_format: DD/MM
+    time_format: h:mm
