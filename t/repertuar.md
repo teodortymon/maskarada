@@ -1,7 +1,7 @@
 ---
 layout: t
-
 ---
+
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 
 ## Repertuar
@@ -137,11 +137,11 @@ Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 ## Styczeń
 
 <table class="pure-table pure-table-horizontal">
-{% assign spektakle = site.data.spektakle.styczen | sort: 'data' %}
+{% assign spektakle = site.data.spektakle.styczen.repertuar | sort: 'data' %}
 {% for spektakl in spektakle %}
 {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
 <tr>
-<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }}</th>
+<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni[dzien_tygodnia] }}</th>
 <th>{{ spektakl.data | date: "%R"  }}</th>
 <th style="width: 40%;">{{ spektakl.tytul }}</th>
 <th>
