@@ -6,10 +6,6 @@ repertuar:
   tytul: Elfy i fabryka prezentów
   link: "-"
   template: spektakl
-- data: 2018-01-07T11:15
-  tytul: Elfy i fabryka prezentów
-  link: "-"
-  template: spektakl
 - data: 2018-01-27T16:00
   tytul: Elfy i fabryka prezentów
   link: "-"
@@ -38,16 +34,20 @@ repertuar:
   tytul: Śnieżny show
   link: "-"
   template: spektakl
+- data: 2018-01-13T12:30
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  template: spektakl
 - data: 2018-01-13T16:00
   tytul: Śnieżny show
   link: "-"
   template: spektakl
-- data: 2018-01-06T16:00
-  tytul: Śnieżny show
+- data: 2018-01-07T11:15
+  tytul: Elfy i fabryka prezentów
   link: "-"
   template: spektakl
-- data: 2018-01-13T12:30
-  tytul: Elfy i fabryka prezentów
+- data: 2018-01-06T16:00
+  tytul: Śnieżny show
   link: "-"
   template: spektakl
 - data: 2018-01-06T12:30
