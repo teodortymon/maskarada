@@ -2,44 +2,8 @@
 title: Styczniowy repertuar
 date: 2018-12-11 00:16:55 +0000
 repertuar:
-- data: 2018-01-28 20:00:00 +0100
+- data: 2018-01-06 21:30:00 +0100
   tytul: Elfy i fabryka prezentów
-  link: "-"
-  template: spektakl
-- data: 2018-01-28 01:00:00 +0100
-  tytul: Elfy i fabryka prezentów
-  link: "-"
-  template: spektakl
-- data: 2018-01-27 21:30:00 +0100
-  tytul: Śnieżny show
-  link: "-"
-  template: spektakl
-- data: 2018-01-21 20:15:00 +0100
-  tytul: Elfy i fabryka prezentów
-  link: "-"
-  template: spektakl
-- data: 2018-01-21 01:00:00 +0100
-  tytul: Elfy i fabryka prezentów
-  link: "-"
-  template: spektakl
-- data: 2018-01-20 21:30:00 +0100
-  tytul: Elfy i fabryka prezentów
-  link: "-"
-  template: spektakl
-- data: 2018-01-15 20:00:00 +0100
-  tytul: Śnieżny show
-  link: "-"
-  template: spektakl
-- data: 2018-01-14 18:45:00 +0100
-  tytul: Śnieżny show
-  link: "-"
-  template: spektakl
-- data: 2018-01-13 21:30:00 +0100
-  tytul: Elfy i fabryka prezentów
-  link: "-"
-  template: spektakl
-- data: 2018-01-14 01:00:00 +0100
-  tytul: Śnieżny show
   link: "-"
   template: spektakl
 - data: 2018-01-07 20:15:00 +0100
@@ -50,7 +14,43 @@ repertuar:
   tytul: Śnieżny show
   link: "-"
   template: spektakl
-- data: 2018-01-06 21:30:00 +0100
+- data: 2018-01-13 21:30:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  template: spektakl
+- data: 2018-01-14 18:45:00 +0100
+  tytul: Śnieżny show
+  link: "-"
+  template: spektakl
+- data: 2018-01-14 01:00:00 +0100
+  tytul: Śnieżny show
+  link: "-"
+  template: spektakl
+- data: 2018-01-15 20:00:00 +0100
+  tytul: Śnieżny show
+  link: "-"
+  template: spektakl
+- data: 2018-01-20 21:30:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  template: spektakl
+- data: 2018-01-21 20:15:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  template: spektakl
+- data: 2018-01-21 01:00:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  template: spektakl
+- data: 2018-01-27 21:30:00 +0100
+  tytul: Śnieżny show
+  link: "-"
+  template: spektakl
+- data: 2018-01-28 20:00:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  template: spektakl
+- data: 2018-01-28 01:00:00 +0100
   tytul: Elfy i fabryka prezentów
   link: "-"
   template: spektakl
