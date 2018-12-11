@@ -9,10 +9,11 @@ fields:
     source:
       type: documents
       file: _data/spektakle/spektakle.yml
+      path: tytuly
     required: true
   label: Spektakl
   name: tytul
-  default: spektakle
+  default: tytuly
 - type: datetime
   name: data
   label: Data spektaklu
