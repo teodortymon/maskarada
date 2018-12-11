@@ -21,4 +21,4 @@ fields:
     required: true
     display_utc: false
     date_format: DD/MM
-    time_format: h:mm
+    time_format: HH:MM
