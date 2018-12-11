@@ -1,14 +1,33 @@
+---
 label: Repertuar blocks
 hide_body: false
 is_partial: false
 fields:
-  - type: field_group_list
-    template_types:
-      - spektakl
-    label: Repertuar
-    name: repertuar
-    description: Repertuar przedstawien
+- type: field_group_list
+  template_types:
+  - spektakl
+  label: Repertuar
+  name: repertuar
+  description: Repertuar przedstawien
+  fields:
+  - type: select
+    config:
+      source:
+        type: documents
+        file: _data/spektakle/spektakle.yml
+        section: bazy-danych
+        path: tytuly
+      required: true
+    name: tytul
+    label: Wybór spektaklu
+  - type: datetime
+    config:
+      required: true
+      time_format: HH:mm A ZZ
+      date_format: DD.MM
+    name: data
+    label: Data spektaklu
 pages:
-  - _data/spektakle/styczen-testing.yml
-  - _data/spektakle/styczen-testing.yml
-  - _data/spektakle/styczen.yml
+- _data/spektakle/styczen-testing.yml
+- _data/spektakle/styczen-testing.yml
+- _data/spektakle/styczen.yml
