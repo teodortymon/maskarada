@@ -2,18 +2,20 @@
 label: spektakl
 hide_body: false
 is_partial: true
+display_field: data
 fields:
 - type: select
   config:
     source:
       type: documents
       file: _data/spektakle/spektakle.yml
+      path: tytuly
     required: true
   label: Spektakl
-  name: wybor_spektaklu
-  default: Spektakle
+  name: tytul
+  default: tytuly
 - type: datetime
-  name: data_spektaklu
+  name: data
   label: Data spektaklu
   config:
     required: true
