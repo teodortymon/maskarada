@@ -28,7 +28,7 @@ fields:
       required: true
     label: Tytuł Spektaklu
   config:
-    labelField: ''
+    labelField: tytul
 pages:
 - _data/spektakle/styczen-testing.yml
 - _data/spektakle/styczen-testing.yml
