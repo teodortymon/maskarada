@@ -1,36 +1,34 @@
----
 label: Repertuar blocks
 hide_body: false
 is_partial: false
 fields:
-- type: field_group_list
-  template_types:
-  - spektakl
-  label: Repertuar
-  name: repertuar
-  description: Repertuar przedstawien
-  fields:
-  - type: datetime
+  - type: field_group_list
+    template_types:
+      - spektakl
+    label: Repertuar
+    name: repertuar
+    description: Repertuar przedstawien
+    fields:
+      - type: datetime
+        config:
+          required: true
+          time_format: HH:mm A ZZ
+          date_format: DD/MM
+        name: data
+        label: Data spektaklu
+      - type: select
+        name: tytul
+        config:
+          source:
+            type: documents
+            section: bazy-danych
+            file: _data/spektakle/spektakle.yml
+            path: tytuly
+          required: true
+        label: Data spektaklu
+        default: NOWE PRZEDSTAWIENIE
     config:
-      required: true
-      time_format: HH:mm A ZZ
-      date_format: DD/MM
-    name: data
-    label: Data spektaklu
-  - type: select
-    name: tytul
-    config:
-      source:
-        type: documents
-        section: bazy-danych
-        file: _data/spektakle/spektakle.yml
-        path: tytuly
-      required: true
-    label: Data spektaklu
-    default: Elfy i fabryka prezentów
-  config:
-    labelField: tytul
+      labelField: data
 pages:
-- _data/spektakle/styczen-testing.yml
-- _data/spektakle/styczen-testing.yml
-- _data/spektakle/styczen.yml
+  - _data/spektakle/styczen-testing.yml
+  - _data/spektakle/styczen.yml
