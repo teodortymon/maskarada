@@ -1,15 +1,14 @@
----
 label: Repertuar blocks
 hide_body: false
 is_partial: false
 fields:
-- type: blocks
-  template_types:
-  - spektakl
-  label: Repertuar
-  name: repertuar
-  description: Repertuar przedstawien
+  - type: field_group_list
+    template_types:
+      - spektakl
+    label: Repertuar
+    name: repertuar
+    description: Repertuar przedstawien
 pages:
-- _data/spektakle/styczen-testing.yml
-- _data/spektakle/styczen-testing.yml
-- _data/spektakle/styczen.yml
+  - _data/spektakle/styczen-testing.yml
+  - _data/spektakle/styczen-testing.yml
+  - _data/spektakle/styczen.yml
