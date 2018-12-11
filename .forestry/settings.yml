@@ -14,9 +14,6 @@ sections:
 - type: document
   path: _data/spektakle/styczen.yml
   label: Styczniowe spektakle
-- type: document
-  path: _data/spektakle/styczen-testing.yml
-  label: Testowy repertuar - nie dotykac
 - type: heading
   label: Wypożyczalnia
 - type: directory
@@ -24,6 +21,16 @@ sections:
   label: Wypożyczalnia
   create: all
   match: "**/*"
+- type: heading
+  label: Testowe
+- type: directory
+  path: _data
+  label: Bazy danych
+  create: all
+  match: "**/*"
+- type: document
+  path: _data/spektakle/styczen-testing.yml
+  label: Testowy repertuar - nie dotykac
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
