@@ -149,7 +149,7 @@ Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 {% if spektakl.link == "-" %}
 <i>Bilety online wkrótce</i>
 {% else %}
-<a href="https://ewejsciowki.pl/embedded/rezerwacja/{{ spektakl.link }}">Kup bilet</a>
+<a href="{{ spektakl.link }}">Kup bilet</a>
 {% endif %}
 {% else %}
 Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a>
