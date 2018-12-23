@@ -6,10 +6,6 @@ repertuar:
   tytul: Elfy i fabryka prezentów
   link: https://ewejsciowki.pl/embedded/rezerwacja/134868
   template: spektakl
-- data: 2018-01-06 16:00:00 +0000
-  tytul: Śnieżny show
-  link: "-"
-  template: spektakl
 - data: 2018-01-07 11:15:00 +0000
   tytul: Elfy i fabryka prezentów
   link: "-"
@@ -38,7 +34,7 @@ repertuar:
   link: "-"
   template: spektakl
 - data: 2018-01-21 11:15:00 +0000
-  tytul: Elfy i fabryka prezentów
+  tytul: Księżniczka na ziarnku grochu
   link: "-"
   template: spektakl
 - data: 2018-01-27 12:30:00 +0000
