@@ -15,7 +15,7 @@ layout: t
 <table border="0">
 <tr>
     <td><strong>Muzyka</strong><br />Zuzanna Calka</td>
-    <td><strong>Występują</strong><br />Anna Bakalarska <br /> Alicja Szkamruk / Pamela Adamik </td>
+    <td><strong>Występują</strong><br />Anna Bakalarska <br /> Pamela Adamik / Karolina Gwóźdź </td>
     <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
     <td><strong>Choreografia</strong><br />Anna Bakalarska</td>
 </tr>

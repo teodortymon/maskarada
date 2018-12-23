@@ -145,7 +145,7 @@ Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 <th>{{ spektakl.data | date: "%R"  }}</th>
 <th style="width: 40%;">{{ spektakl.tytul }}</th>
 <th>
-{% if dzien_tygodnia == 6 or dzien_tygodnia == 7 %}
+{% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
 {% if spektakl.link == "-" %}
 <i>Bilety online wkrótce</i>
 {% else %}
