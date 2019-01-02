@@ -10,15 +10,7 @@ repertuar:
   tytul: Śnieżny show
   link: "-"
   template: ''
-- data: 2019-02-18 11:00:00 +0100
-  tytul: Śnieżny show
-  link: "-"
-  template: ''
-- data: 2019-02-17 00:30:00 +0100
-  tytul: Śnieżny show
-  link: "-"
-  template: ''
-- data: 2019-02-11 23:00:00 +0100
+- data: 2019-02-11 11:00:00 +0100
   tytul: Złota rybka
   link: "-"
   template: ''
