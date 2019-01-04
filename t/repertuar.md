@@ -20,124 +20,36 @@ Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 
 <br /><br />
 
-## Grudzień
-
-<table class="pure-table pure-table-horizontal">
-<tr>
-<th>2.12.2018 niedziela</th>
-<th>12.30</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127675">Kup bilet</a></th>
-</tr>
-<tr>
-<th>2.12.2018 niedziela</th>
-<th>15.00</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127676">Kup bilet</a></th>
-</tr>
-<tr>
-<th>3.12.2018 poniedziałek</th>
-<th>11:15</th>
-<th style="width: 40%;">Śnieżny show</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>4.12.2018 wtorek</th>
-<th>09:45</th>
-<th style="width: 40%;">Śnieżny show</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>5.12.2018 środa</th>
-<th>11:15</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>6.12.2018 czwartek</th>
-<th>11:15</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>7.12.2018 piątek</th>
-<th>11:15</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>8.12.2018 sobota</th>
-<th>12.30</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/128223">Kup bilet</a></th>
-</tr>
-<tr>
-<th>9.12.2018 niedziela</th>
-<th>12.30</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127677">Kup bilet</a></th>
-</tr>
-<tr>
-<th>9.12.2018 niedziela</th>
-<th>15.00</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/128352">Kup bilet</a></th>
-</tr>
-<tr>
-<th>10.12.2018 poniedziałek</th>
-<th>11:15</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>11.12.2018 wtorek</th>
-<th>11:15</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>16.12.2018 niedziela</th>
-<th>12.30</th>
-<th style="width: 40%;">Śnieżny show</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127679">Kup bilet</a></th>
-</tr>
-<tr>
-<th>16.12.2018 niedziela</th>
-<th>16.00</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/128224">Kup bilet</a></th>
-</tr>
-<tr>
-<th>17.12.2018 poniedziałek</th>
-<th>11:15</th>
-<th style="width: 40%;">Elfy i fabryka prezentów</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>23.12.2018 niedziela</th>
-<th>12.30</th>
-<th style="width: 40%;">Śnieżny show</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/132009">Kup bilet</a></th>
-</tr>
-<tr>
-<th>19.12.2018 środa</th>
-<th>11:15</th>
-<th style="width: 40%;">Śnieżny show</th>
-<th>Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a></th>
-</tr>
-<tr>
-<th>30.12.2018 niedziela</th>
-<th>12.30</th>
-<th style="width: 40%;">Śnieżny show</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/127680">Kup bilet</a></th>
-</tr>
-</table>
-<br /><br />
-
 ## Styczeń
 
 <table class="pure-table pure-table-horizontal">
 {% assign spektakle = site.data.spektakle.styczen.repertuar | sort: 'data' %}
+{% for spektakl in spektakle %}
+{% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
+<tr>
+<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni[dzien_tygodnia] }}</th>
+<th>{{ spektakl.data | date: "%R"  }}</th>
+<th style="width: 40%;">{{ spektakl.tytul }}</th>
+<th>
+{% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
+{% if spektakl.link == "-" %}
+<i>Bilety online wkrótce</i>
+{% else %}
+<a href="{{ spektakl.link }}">Kup bilet</a>
+{% endif %}
+{% else %}
+Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a>
+{% endif %}
+</th>
+</tr>
+{% endfor %}
+</table>
+<br /><br />
+
+## Luty
+
+<table class="pure-table pure-table-horizontal">
+{% assign spektakle = site.data.spektakle.luty.repertuar | sort: 'data' %}
 {% for spektakl in spektakle %}
 {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
 <tr>
