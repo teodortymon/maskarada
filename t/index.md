@@ -12,6 +12,12 @@ layout: t
 <br /> Premiera: grudzień.
 <br /><br />
 
+<ul class="photos">
+    {% for i in (1..4) %}
+        <a id="single_image" rel="10" href="lay/img/sniezny_show/large/{{ i }}.jpg"><img src="lay/img/sniezny_show/small/{{ i }}.jpg"/></a>
+    {% endfor %}
+</ul>
+
 <table border="0">
 <tr>
     <td><strong>Muzyka</strong><br />Zuzanna Calka</td>
@@ -115,6 +121,10 @@ Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie
 Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. Filuś, Miluś i Kizia zaproszą młodych widzów do zabawy i na koci bal. Piękne wiersze M. Konopnickiej, barokowe kocie kostiumy, muzyka H. Wieniawskiego i piosenki Zuzanny Całki tworzą magiczny i interaktywny koci świat dla młodych widzów.
 
 <br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FjIP1sC9Yxw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+<br />
+
+<br />
 <br /> Czas trwania: 45minut.
 <br />Przedstawienie dla dzieci od 3,5 lat.
 <br />Premiera: 25 wrzesień 2016
@@ -132,10 +142,9 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
     <td><strong>Charakteryzacja</strong><br />MAKE UP STAR</td>
 </tr>
 </table>
-<br />
-<br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FjIP1sC9Yxw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
-<br /><br />    
+
+<br /><br />
+
 <ul class="photos">
     <a id="single_image" rel="8" href="lay/img/koty/large/12.jpg"><img src="lay/img/koty/small/12.jpg"/></a>
     <a id="single_image" rel="8" href="lay/img/koty/large/9.jpg"><img src="lay/img/koty/small/9.jpg"/></a>
@@ -164,6 +173,10 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Kuba i Buba" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 <p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania 45 minut.<br /> Premiera: maj 2016
 <br /><br />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XyaKJ2pxhyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+<br /><br />
+
 Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji portalu Czas Dzieci:</a>
 <br /> <i>Co wyróżnia spektakl? Brak sceny, czyli znika bariera między twórca a odbiorcą. Dzieci mogły wszędzie wejść, zajrzeć, wszystko dotykać, przekładać itp. A taka eksploracja otoczenia, szczególnie nowego, ciekawego, to dla maluszków niesamowity rozwój i przed wszystkim frajda. Dotychczas prawie wszystkie spektakle dla najmłodszych dzieci, na których byłam, odbywały się w ciszy. To znaczy, aktorzy, prawie wcale albo bardzo rzadko, odzywali się do publiczności. A tu od początku, dwie młode, bardzo utalentowane aktorki, mówią i śpiewają do dzieci. Zadają pytania, przynoszą rekwizyty do każdego dziecka, reagują na spontaniczne na ich prośby. Są prawdziwymi gospodarzami swojego przyjęcia urodzinowego!</i>
 <br />
@@ -182,8 +195,6 @@ Anna Bakalarska<br />
 Joanna Róg/Joanna Pietrońska<br />
 Agnieszka Senderowska<br />
 
-<br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XyaKJ2pxhyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
 
 <ul class="photos">
@@ -317,6 +328,8 @@ Przedstawienie dla dzieci w wieku od 1,5 do 10 lat <br />
 Przedstawienie trwa 45 minut. <br /><br />
 Premiera: 30 marzec 2014 <br />
 <br /><br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aq-JZwyPaGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+<br /><br />
 <table border="0">
 <tr>
 	<td><strong>Występują</strong><br />Agnieszka Senderowska<br />Monika Głowienko / Anna Bakalarska<br />Adam Biernat/Jan Falba<br /><br /></td>
@@ -329,8 +342,7 @@ Premiera: 30 marzec 2014 <br />
 </table>
 <center><strong>Tekst</strong><br />Jan Falba</center>
 <br /><br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aq-JZwyPaGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
-<br /><br />
+
 <ul class="photos">
 <a id="single_image" rel="4" href="lay/img/cal/large/1.JPG"><img src="lay/img/cal/small/1.JPG"/></a>
 <a id="single_image" rel="4" href="lay/img/cal/large/2.JPG"><img src="lay/img/cal/small/2.JPG"/></a>
@@ -366,7 +378,13 @@ Przedstawienie trwa 55 minut.
 Przedstawienie dla dzieci w wieku od 2 do 99 lat
 <br /><br />
 Premiera: 7 grudzień 2013
-<br /><br /><br /><br />
+
+<br /><br />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ovOwUmozCns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)" allowfullscreen></iframe>
+
+<br /><br />
+
 <table border="0">
 <tr>
     <td><strong>Tekst</strong><br />Pola Wójcik</td>
