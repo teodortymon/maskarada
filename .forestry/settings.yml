@@ -7,6 +7,9 @@ sections:
 - type: heading
   label: Teatr
 - type: document
+  path: _data/spektakle/marzec.yml
+  label: Marcowe spektakle
+- type: document
   path: _data/spektakle/luty.yml
   label: Lutowe spektakle
 - type: document
