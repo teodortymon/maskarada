@@ -20,32 +20,6 @@ Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 
 <br /><br />
 
-## Styczeń
-
-<table class="pure-table pure-table-horizontal">
-{% assign spektakle = site.data.spektakle.styczen.repertuar | sort: 'data' %}
-{% for spektakl in spektakle %}
-{% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
-<tr>
-<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni[dzien_tygodnia] }}</th>
-<th>{{ spektakl.data | date: "%R"  }}</th>
-<th style="width: 40%;">{{ spektakl.tytul }}</th>
-<th>
-{% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
-{% if spektakl.link == "-" %}
-<i>Bilety online wkrótce</i>
-{% else %}
-<a href="{{ spektakl.link }}">Kup bilet</a>
-{% endif %}
-{% else %}
-Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a>
-{% endif %}
-</th>
-</tr>
-{% endfor %}
-</table>
-<br /><br />
-
 ## Luty
 
 <table class="pure-table pure-table-horizontal">
@@ -76,6 +50,32 @@ Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 02
 
 <table class="pure-table pure-table-horizontal">
 {% assign spektakle = site.data.spektakle.marzec.repertuar | sort: 'data' %}
+{% for spektakl in spektakle %}
+{% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
+<tr>
+<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni[dzien_tygodnia] }}</th>
+<th>{{ spektakl.data | date: "%R"  }}</th>
+<th style="width: 40%;">{{ spektakl.tytul }}</th>
+<th>
+{% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
+{% if spektakl.link == "-" %}
+<i>Bilety online wkrótce</i>
+{% else %}
+<a href="{{ spektakl.link }}">Kup bilet</a>
+{% endif %}
+{% else %}
+Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a>
+{% endif %}
+</th>
+</tr>
+{% endfor %}
+</table>
+<br /><br />
+
+## Kwiecień
+
+<table class="pure-table pure-table-horizontal">
+{% assign spektakle = site.data.spektakle.kwiecien.repertuar | sort: 'data' %}
 {% for spektakl in spektakle %}
 {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
 <tr>
