@@ -1,7 +1,7 @@
 ---
 layout: t
----
 
+---
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 
 ## Repertuar
@@ -13,13 +13,6 @@ Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 <br />
 <br />
 
-**Zapraszamy do rezerwacji terminów na spektakle świąteczne i imprezy firmowe**
-<br />
-
-**_W grudniu zapraszamy szkoły i przedszkola do rezerwacji terminów na nasze najbardziej popularne świąteczne przedstawienia "Elfy i fabryka prezentów" i "Śnieżny show"._**
-
-<br /><br />
-
 ## Luty
 
 <table class="pure-table pure-table-horizontal">
@@ -27,7 +20,7 @@ Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 {% for spektakl in spektakle %}
 {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
 <tr>
-<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni[dzien_tygodnia] }}</th>
+<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }}</th>
 <th>{{ spektakl.data | date: "%R"  }}</th>
 <th style="width: 40%;">{{ spektakl.tytul }}</th>
 <th>
@@ -53,7 +46,7 @@ Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 02
 {% for spektakl in spektakle %}
 {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
 <tr>
-<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni[dzien_tygodnia] }}</th>
+<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }}</th>
 <th>{{ spektakl.data | date: "%R"  }}</th>
 <th style="width: 40%;">{{ spektakl.tytul }}</th>
 <th>
@@ -79,7 +72,7 @@ Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 02
 {% for spektakl in spektakle %}
 {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
 <tr>
-<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni[dzien_tygodnia] }}</th>
+<th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }}</th>
 <th>{{ spektakl.data | date: "%R"  }}</th>
 <th style="width: 40%;">{{ spektakl.tytul }}</th>
 <th>
