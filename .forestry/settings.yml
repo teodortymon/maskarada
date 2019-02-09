@@ -1,73 +1,73 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: ""
-webhook_url:
+admin_path: ''
+webhook_url: 
 sections:
-  - type: heading
-    label: Teatr
-  - type: document
-    path: _data/spektakle/kwiecien.yml
-    label: Kwietniowe spektakle
-  - type: document
-    path: _data/spektakle/marzec.yml
-    label: Marcowe spektakle
-  - type: document
-    path: _data/spektakle/luty.yml
-    label: Lutowe spektakle
-  - type: document
-    path: t/index.md
-    label: Strona główna
-  - type: document
-    path: t/repertuar.md
-    label: Repertuar
-  - type: document
-    path: t/bilety.md
-    label: Bilety
-  - type: document
-    path: t/onas.md
-    label: O nas
-  - type: document
-    path: t/warsztaty.md
-    label: Warsztaty
-  - type: document
-    path: t/kontakt.md
-    label: Kontakt
-  - type: heading
-    label: Wypożyczalnia
-  - type: document
-    path: w/index.html
-    label: Strona główna
-  - type: document
-    path: w/cennik.html
-    label: Cennik
-  - type: document
-    path: w/kontakt.html
-    label: Kontakt
-  - type: heading
-    label: Testowe
-  - type: directory
-    path: _data
-    label: Bazy danych
-    create: all
-    match: "**/*"
-    new_doc_ext: yml
-  - type: directory
-    path: ""
-    label: Wszystkie pliki
-    create: all
-    match: "**/*"
+- type: heading
+  label: Teatr
+- type: document
+  path: _data/spektakle/kwiecien.yml
+  label: Kwietniowe spektakle
+- type: document
+  path: _data/spektakle/marzec.yml
+  label: Marcowe spektakle
+- type: document
+  path: _data/spektakle/luty.yml
+  label: Lutowe spektakle
+- type: document
+  path: t/index.md
+  label: Strona główna
+- type: document
+  path: t/repertuar.md
+  label: Repertuar
+- type: document
+  path: t/bilety.md
+  label: Bilety
+- type: document
+  path: t/onas.md
+  label: O nas
+- type: document
+  path: t/warsztaty.md
+  label: Warsztaty
+- type: document
+  path: t/kontakt.md
+  label: Kontakt
+- type: heading
+  label: Wypożyczalnia
+- type: document
+  path: w/index.html
+  label: Strona główna
+- type: document
+  path: w/cennik.html
+  label: Cennik
+- type: document
+  path: w/kontakt.html
+  label: Kontakt
+- type: heading
+  label: Testowe
+- type: directory
+  path: _data
+  label: Bazy danych
+  create: all
+  match: "**/*"
+  new_doc_ext: yml
+- type: directory
+  path: ''
+  label: Wszystkie pliki
+  create: all
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
-front_matter_path: ""
+front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
   publish_command: bundle exec jekyll build -d _site
   preview_env:
-    - JEKYLL_ENV=staging
+  - JEKYLL_ENV=staging
   publish_env:
-    - JEKYLL_ENV=production
+  - JEKYLL_ENV=production
   preview_output_directory: _site
   output_directory: _site

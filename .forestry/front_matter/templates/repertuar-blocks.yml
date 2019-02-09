@@ -36,6 +36,4 @@ fields:
   config:
     labelField: data
 pages:
-- _data/spektakle/styczen-testing.yml
-- _data/spektakle/styczen-testing.yml
 - _data/spektakle/styczen.yml
