@@ -30,7 +30,7 @@ repertuar:
   tytul: Złota rybka
   link: "-"
   template: ''
-- data: 2019-02-10 14:00:00 +0000
+- data: 2019-02-10 15:00:00 +0100
   tytul: Złota rybka
   link: https://ewejsciowki.pl/embedded/rezerwacja/136591
   template: ''
@@ -42,7 +42,7 @@ repertuar:
   tytul: Śnieżny show
   link: "-"
   template: ''
-- data: 2019-02-03 11:30:00 +0000
+- data: 2019-02-03 12:30:00 +0100
   tytul: Śnieżny show
   link: https://ewejsciowki.pl/embedded/rezerwacja/136589
   template: ''
