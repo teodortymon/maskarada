@@ -36,4 +36,5 @@ fields:
   config:
     labelField: data
 pages:
+- _data/spektakle/kwiecien.yml
 - _data/spektakle/styczen.yml
