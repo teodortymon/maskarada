@@ -33,10 +33,16 @@ fields:
     config:
       required: true
     label: Link do e-wejściówek
+  - type: boolean
+    name: manual_price
+    label: Ręcznie wpisywanie ceny
   config:
     labelField: data
 pages:
 - _data/spektakle/kwiecien.yml
+- _data/spektakle/kwiecien.yml
+- _data/spektakle/luty.yml
+- _data/spektakle/marzec.yml
 - _data/spektakle/styczen.yml
 - _data/spektakle/marzec.yml
 - _data/spektakle/luty.yml
