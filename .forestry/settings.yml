@@ -45,10 +45,14 @@ sections:
   path: w/kontakt.html
   label: Kontakt
 - type: heading
-  label: Testowe
+  label: Edycja danych
+- type: document
+  path: _data/spektakle/spektakle.yml
+  label: Spektakle
+  match: "**/*"
 - type: directory
   path: _data
-  label: Bazy danych
+  label: Wszystkie bazy danych
   create: all
   match: "**/*"
   new_doc_ext: yml
