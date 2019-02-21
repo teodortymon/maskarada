@@ -26,16 +26,19 @@ fields:
         file: _data/spektakle/spektakle.yml
         path: tytuly
       required: true
-    label: Data spektaklu
+    label: Nazwa spektaklu
     default: Elfy i fabryka prezentów
   - type: text
     name: link
     config:
       required: true
-    label: Link do e-wejściówek
+    label: Link do e-wejściówek / opis
   - type: boolean
     name: manual_price
     label: Ręcznie wpisywanie ceny
+    description: Włącz na zielone jeśli zamiast linku do e-wejściówek / automatycznej
+      informacji o telefonie, chcesz by wyświetlać tekst wpisany powyżej (w polu link
+      / opis)
   config:
     labelField: data
 pages:
