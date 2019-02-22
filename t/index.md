@@ -123,7 +123,20 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 
 <br /> <br /> Czas trwania: 45minut. <br />Przedstawienie dla dzieci od 4 lat do 8 lat
 
- <br />Premiera: 25 wrzesień 2016 <br /><br /> <table border="0"> <tr> <td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td> <td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok<br />Jan Falba</td> </tr> <tr> <td><strong>Muzyka</strong><br />Zuzanna Całka</td> <td><strong>Scenografia</strong><br />Małgorzata Domańska</td> </tr> <tr> <td><strong>Charakteryzacja</strong><br />MAKE UP STAR</td> </tr> </table>
+ <br />Premiera: 25 wrzesień 2016 <br /><br /> 
+<table border="0">
+    <tr>
+        <td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td>
+        <td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok<br />Jan Falba</td>
+    </tr>
+    <tr>
+        <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
+        <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
+    </tr>
+    <tr>
+        <td><strong>Charakteryzacja</strong><br />MAKE UP STAR</td>
+    </tr>
+</table>
 
 <br /><br />
 
