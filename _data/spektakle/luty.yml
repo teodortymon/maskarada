@@ -6,8 +6,8 @@ repertuar:
   tytul: Warsztaty Chopinowskie
   link: wstęp bezpłatny
   manual_price: true
-- data: 2019-02-19 10:00:00 +0000
-  tytul: Elfy i fabryka prezentów
+- data: 2019-02-19 11:00:00 +0100
+  tytul: Śnieżny show
   link: "-"
   template: ''
 - data: 2019-02-26 11:00:00 +0100
