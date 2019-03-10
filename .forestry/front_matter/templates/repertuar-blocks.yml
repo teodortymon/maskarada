@@ -1,7 +1,6 @@
 ---
 label: Repertuar blocks
 hide_body: false
-is_partial: false
 fields:
 - type: field_group_list
   template_types:
@@ -42,12 +41,12 @@ fields:
   config:
     labelField: data
 pages:
-- _data/spektakle/luty.yml
-- _data/spektakle/marzec.yml
 - _data/spektakle/kwiecien.yml
 - _data/spektakle/luty.yml
 - _data/spektakle/marzec.yml
 - _data/spektakle/kwiecien.yml
+- _data/spektakle/luty.yml
+- _data/spektakle/marzec.yml
 - _data/spektakle/kwiecien.yml
 - _data/spektakle/marzec.yml
 - _data/spektakle/styczen.yml

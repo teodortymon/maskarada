@@ -1,7 +1,6 @@
 ---
 label: spektakl
 hide_body: false
-is_partial: true
 display_field: data
 fields:
 - type: select
