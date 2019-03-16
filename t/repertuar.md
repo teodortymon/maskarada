@@ -71,7 +71,7 @@ Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 02
 <br /><br />
 
 
-{% if site.data.spektakle.maj.repertuar %}
+{% if site.data.spektakle.maj.repertuar.size > 0 %}
 ## Maj
 
 <table class="pure-table pure-table-horizontal">
