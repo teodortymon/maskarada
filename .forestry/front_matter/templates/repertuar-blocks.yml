@@ -42,6 +42,7 @@ fields:
     labelField: data
 pages:
 - _data/spektakle/maj.yml
+- _data/spektakle/maj.yml
 - _data/spektakle/kwiecien.yml
 - _data/spektakle/marzec.yml
 - _data/spektakle/kwiecien.yml
