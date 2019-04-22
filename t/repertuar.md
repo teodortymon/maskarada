@@ -79,7 +79,7 @@ Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 02
 
 <br /><br />
 
-{% if site.data.spektakle.maj.repertuar.size > 0 %}
+{% if site.data.spektakle.czerwiec.repertuar.size > 0 %}
 
 ## Czerwiec
 
