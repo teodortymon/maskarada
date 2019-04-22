@@ -1,5 +1,8 @@
 ---
 title: Majowy repertuar
 date: 2019-04-06 22:30:55 +0000
-repertuar: []
+repertuar:
+- data: 2019-06-12 01:00:00 +0200
+  tytul: Elfy i fabryka prezentów
+  link: "-"
 published: false
