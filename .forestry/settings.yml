@@ -15,7 +15,6 @@ sections:
 - type: document
   path: _data/spektakle/czerwiec.yml
   label: Czerwcowe spektakle
-  match: "**/*"
 - type: document
   path: t/index.md
   label: Strona główna
