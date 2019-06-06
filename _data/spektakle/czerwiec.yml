@@ -2,6 +2,10 @@
 title: Majowy repertuar
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- tytul: Chmurka i Bratek
+  data: 2019-06-23 12:30:00 +0200
+  link: "-"
+  manual_price: false
 - data: 2019-06-17 11:00:00 +0200
   tytul: Księżniczka na ziarnku grochu
   link: "-"
