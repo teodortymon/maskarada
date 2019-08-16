@@ -41,4 +41,5 @@ fields:
   config:
     labelField: data
 pages:
+- _data/spektakle/pazdziernik.yml
 - _data/spektakle/listopad.yml
