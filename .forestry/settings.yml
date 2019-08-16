@@ -7,14 +7,17 @@ sections:
 - type: heading
   label: Teatr
 - type: document
-  path: _data/spektakle/maj.yml
-  label: Majowe spektakle
+  path: _data/spektakle/wrzesien.yml
+  label: Wrzesniowe spektakle
 - type: document
-  path: _data/spektakle/kwiecien.yml
-  label: Kwietniowe spektakle
+  path: _data/spektakle/pazdziernik.yml
+  label: Pazdziernikowe spektakle
 - type: document
-  path: _data/spektakle/czerwiec.yml
-  label: Czerwcowe spektakle
+  path: _data/spektakle/listopad.yml
+  label: Listopadowe spektakle
+- type: document
+  path: _data/spektakle/grudzien.yml
+  label: Grudniowe spektakle
 - type: document
   path: t/index.md
   label: Strona główna
