@@ -2,6 +2,10 @@
 title: Listopadowy repertuar
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- data: 2019-11-17 12:30:00 +0100
+  tytul: Kuba i Buba, czyli awantura do kwadratu
+  link: "-"
+  manual_price: false
 - data: 2019-11-10 12:30:00 +0100
   tytul: Tupu tup
   link: "-"
