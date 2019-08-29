@@ -2,6 +2,10 @@
 title: Pazdziernikowy repertuar
 date: '2018-12-11T00:16:55.000+00:00'
 repertuar:
+- data: 2019-10-21 11:00:00 +0200
+  tytul: Wesołe Koty
+  link: "-"
+  manual_price: false
 - data: 2019-10-20 12:30:00 +0200
   tytul: Wesołe Koty
   link: "-"
