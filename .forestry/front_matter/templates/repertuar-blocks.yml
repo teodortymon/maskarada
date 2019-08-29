@@ -41,6 +41,6 @@ fields:
   config:
     labelField: data
 pages:
-- _data/spektakle/wrzesien.yml
 - _data/spektakle/pazdziernik.yml
+- _data/spektakle/wrzesien.yml
 - _data/spektakle/listopad.yml

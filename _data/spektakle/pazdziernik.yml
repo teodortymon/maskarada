@@ -1,4 +1,8 @@
 ---
 title: Pazdziernikowy repertuar
 date: '2018-12-11T00:16:55.000+00:00'
-repertuar: []
+repertuar:
+- data: 2019-10-13 12:30:00 +0200
+  tytul: Złota Rybka
+  link: "-"
+  manual_price: false
