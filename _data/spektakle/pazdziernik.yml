@@ -4,7 +4,7 @@ date: '2018-12-11T00:16:55.000+00:00'
 repertuar:
 - data: 2019-10-27 16:00:00 +0100
   tytul: Urodziny Turli i Taja
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/166263
   manual_price: false
 - data: 2019-10-28 11:00:00 +0100
   tytul: Księżniczka na ziarnku grochu
@@ -12,7 +12,7 @@ repertuar:
   manual_price: false
 - data: 2019-10-27 12:30:00 +0100
   tytul: Księżniczka na ziarnku grochu
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/166262
   manual_price: false
 - data: 2019-10-22 11:00:00 +0200
   tytul: Tupu tup
@@ -24,7 +24,7 @@ repertuar:
   manual_price: false
 - data: 2019-10-20 12:30:00 +0200
   tytul: Wesołe Koty
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/166261
   manual_price: false
 - data: 2019-10-14 11:00:00 +0200
   tytul: Złota Rybka
@@ -32,5 +32,5 @@ repertuar:
   manual_price: false
 - data: 2019-10-13 12:30:00 +0200
   tytul: Złota Rybka
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/166259
   manual_price: false
