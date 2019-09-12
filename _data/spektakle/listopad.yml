@@ -16,7 +16,7 @@ repertuar:
   manual_price: false
 - data: 2019-11-24 12:30:00 +0100
   tytul: Elfy i fabryka prezentów
-  link: "="
+  link: "-"
   manual_price: false
 - data: 2019-11-18 11:00:00 +0100
   tytul: Tupu tup
