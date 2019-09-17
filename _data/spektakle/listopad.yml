@@ -2,43 +2,47 @@
 title: Listopadowy repertuar
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
-- data: 2019-11-27 11:00:00 +0100
-  tytul: Kuba i Buba, czyli awantura do kwadratu
-  link: "-"
-  manual_price: false
-- data: 2019-11-26 12:15:00 +0100
-  tytul: Kuba i Buba, czyli awantura do kwadratu
-  link: "-"
-  manual_price: false
-- data: 2019-11-26 11:00:00 +0100
-  tytul: Kuba i Buba, czyli awantura do kwadratu
-  link: "-"
-  manual_price: false
-- data: 2019-11-25 11:00:00 +0100
+- data: 2019-11-24 16:00:00 +0100
   tytul: Księżniczka na ziarnku grochu
   link: "-"
   manual_price: false
-- data: 2019-11-24 12:30:00 +0100
+- data: 2019-11-27T10:00:00.000+00:00
+  tytul: Kuba i Buba, czyli awantura do kwadratu
+  link: "-"
+  manual_price: false
+- data: 2019-11-26T11:15:00.000+00:00
+  tytul: Kuba i Buba, czyli awantura do kwadratu
+  link: "-"
+  manual_price: false
+- data: 2019-11-26T10:00:00.000+00:00
+  tytul: Kuba i Buba, czyli awantura do kwadratu
+  link: "-"
+  manual_price: false
+- data: 2019-11-25T10:00:00.000+00:00
+  tytul: Księżniczka na ziarnku grochu
+  link: "-"
+  manual_price: false
+- data: 2019-11-24T11:30:00.000+00:00
   tytul: Elfy i fabryka prezentów
   link: "-"
   manual_price: false
-- data: 2019-11-18 11:00:00 +0100
+- data: 2019-11-18T10:00:00.000+00:00
   tytul: Tupu tup
   link: "-"
   manual_price: false
-- data: 2019-11-17 12:30:00 +0100
+- data: 2019-11-17T11:30:00.000+00:00
   tytul: Tupu tup
   link: "-"
   manual_price: false
-- data: 2019-11-10 12:30:00 +0100
+- data: 2019-11-10T11:30:00.000+00:00
   tytul: Calineczka
   link: "-"
   manual_price: false
-- data: 2019-11-04 11:00:00 +0100
+- data: 2019-11-04T10:00:00.000+00:00
   tytul: Złota Rybka
   link: "-"
   manual_price: false
-- data: 2019-11-03 12:30:00 +0100
+- data: 2019-11-03T11:30:00.000+00:00
   tytul: Urodziny Turli i Taja
   link: "-"
   manual_price: false
