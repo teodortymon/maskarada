@@ -10,6 +10,8 @@ layout: t
 
 Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 
+Zapraszamy szkoły, przedszkola i firmy do rezerwacji grudniowych terminów  na nasze świątecznych bestsellery: _Elfy i fabryka prezentów_ oraz _Śnieżny show!_
+
 <br />
 <br />
 
