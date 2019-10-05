@@ -8,7 +8,7 @@ repertuar:
   manual_price: false
 - data: 2019-11-24 16:00:00 +0100
   tytul: Księżniczka na ziarnku grochu
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/168097
   manual_price: false
 - data: 2019-11-27 11:00:00 +0100
   tytul: Kuba i Buba, czyli awantura do kwadratu
@@ -28,7 +28,7 @@ repertuar:
   manual_price: false
 - data: 2019-11-24 12:30:00 +0100
   tytul: Elfy i fabryka prezentów
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/168095
   manual_price: false
 - data: 2019-11-18 11:00:00 +0100
   tytul: Tupu tup
@@ -36,11 +36,11 @@ repertuar:
   manual_price: false
 - data: 2019-11-17 12:30:00 +0100
   tytul: Tupu tup
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/168092
   manual_price: false
 - data: 2019-11-10 12:30:00 +0100
   tytul: Calineczka
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/168091
   manual_price: false
 - data: 2019-11-04 11:00:00 +0100
   tytul: Złota Rybka
@@ -48,5 +48,5 @@ repertuar:
   manual_price: false
 - data: 2019-11-03 12:30:00 +0100
   tytul: Urodziny Turli i Taja
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/168090
   manual_price: false
