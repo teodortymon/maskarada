@@ -1,4 +1,8 @@
 ---
 title: Grudniowy repertuar
 date: ''
-repertuar: []
+repertuar:
+- data: 2019-12-01 12:30:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  manual_price: false
