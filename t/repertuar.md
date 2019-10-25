@@ -62,7 +62,7 @@ Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 02
 
 {% if site.data.spektakle.grudzien.repertuar.size > 0 %}
 
-## Grudzien
+## Grudzień
 
 <table class="pure-table pure-table-horizontal">
 {% assign spektakle = site.data.spektakle.grudzien.repertuar | sort: 'data' %}
