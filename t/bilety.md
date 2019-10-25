@@ -21,14 +21,14 @@ Prosimy o kontakt tel. w celu rezerwacji i uzgodnienia terminu.
 W dniu spektaklu można zrezygnować z 10% zamówionych biletów.  
 
 
-<br / >
+<br />
 
 
 **Vouchery - bilety na prezent**
 
 Oferujemy kupno biletów na prezent w kasie teatru.
 
-<br / >
+<br />
 
 
 ## Informacje dodatkowe
