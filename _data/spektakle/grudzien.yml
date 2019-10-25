@@ -20,7 +20,7 @@ repertuar:
   manual_price: false
 - data: 2019-12-29 12:30:00 +0100
   tytul: Śnieżny show
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/170659
   manual_price: false
 - data: 2019-12-01 15:30:00 +0100
   tytul: Elfy i fabryka prezentów
@@ -28,7 +28,7 @@ repertuar:
   manual_price: false
 - data: 2019-12-01 12:30:00 +0100
   tytul: Elfy i fabryka prezentów
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/170655
   manual_price: false
 - data: 2019-12-06 11:00:00 +0100
   tytul: Elfy i fabryka prezentów
@@ -36,7 +36,7 @@ repertuar:
   manual_price: false
 - data: 2019-12-22 12:30:00 +0100
   tytul: Elfy i fabryka prezentów
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/170658
   manual_price: false
 - data: 2019-12-16 11:00:00 +0100
   tytul: Elfy i fabryka prezentów
@@ -48,7 +48,7 @@ repertuar:
   manual_price: false
 - data: 2019-12-15 12:30:00 +0100
   tytul: Elfy i fabryka prezentów
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/170657
   manual_price: false
 - data: 2019-12-11 11:00:00 +0100
   tytul: Elfy i fabryka prezentów
@@ -68,7 +68,7 @@ repertuar:
   manual_price: false
 - data: 2019-12-08 12:30:00 +0100
   tytul: Elfy i fabryka prezentów
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/170656
   manual_price: false
 - data: 2019-12-04 11:00:00 +0100
   tytul: Śnieżny show
