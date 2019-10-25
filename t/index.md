@@ -196,10 +196,7 @@ Agnieszka Senderowska<br />
 <a id="single_image" rel="7" href="lay/img/turlitaj/large/1.jpg"><img src="lay/img/turlitaj/small/1.jpg"/></a>
 <a id="single_image" rel="7" href="lay/img/turlitaj/large/2.jpg"><img src="lay/img/turlitaj/small/2.jpg"/></a>
 <a id="single_image" rel="7" href="lay/img/turlitaj/large/3.jpg"><img src="lay/img/turlitaj/small/3.jpg"/></a>
-<br />
-<!-- <a id="single_image" rel="7" href="lay/img/turlitaj/large/4.jpg"><img src="lay/img/turlitaj/small/4.jpg"/></a> -->
-<a id="single_image" rel="7" href="lay/img/turlitaj/large/5.jpg"><img src="lay/img/turlitaj/small/5.jpg"/></a>
-<a id="single_image" rel="7" href="lay/img/turlitaj/large/6.jpg"><img src="lay/img/turlitaj/small/6.jpg"/></a>
+<a id="single_image" rel="7" href="lay/img/turlitaj/large/4.jpg"><img src="lay/img/turlitaj/small/4.jpg"/></a>
 
 </ul>
 
