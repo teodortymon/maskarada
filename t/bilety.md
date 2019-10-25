@@ -18,11 +18,15 @@ layout: t
 
 Dla grup zorganizowanych gramy w dni powszednie  
 Prosimy o kontakt tel. w celu rezerwacji i uzgodnienia terminu.
-W dniu spektaklu można zrezygnować z 10% zamówionych biletów.
+W dniu spektaklu można zrezygnować z 10% zamówionych biletów.  
+  
+  
 
 **Vouchery - bilety na prezent**
 
-Oferujemy kupno biletów na prezent w kasie teatru.
+Oferujemy kupno biletów na prezent w kasie teatru.  
+  
+  
 
 ## Informacje dodatkowe
 
