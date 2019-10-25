@@ -12,7 +12,6 @@ layout: t
 * telefonicznie pod numerem 501 027 278
 * w kasie Teatru na godzinę przed spektaklem (płatność tylko gotówką)
 * na portalach [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki](https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333)
-
   _(dostępne na godzinę przed spektaklem, później bilety dostępne w kasie i telefonicznie)_
 
 **Szkoły i przedszkola/cena biletu grupowego - 29 zł**
