@@ -5,19 +5,24 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Teatr
+  label: Teatr - repertuary
 - type: document
-  path: _data/spektakle/wrzesien.yml
-  label: Wrzesniowe spektakle
-- type: document
-  path: _data/spektakle/pazdziernik.yml
-  label: Pazdziernikowe spektakle
+  path: _data/spektakle/spektakle.yml
+  label: Nazwy spektakli
 - type: document
   path: _data/spektakle/listopad.yml
-  label: Listopadowe spektakle
+  label: Listopad
 - type: document
   path: _data/spektakle/grudzien.yml
-  label: Grudniowe spektakle
+  label: Grudzien
+- type: document
+  path: _data/spektakle/styczen.yml
+  label: Styczen
+- type: document
+  path: _data/spektakle/luty.yml
+  label: Luty
+- type: heading
+  label: Teatr - strony
 - type: document
   path: t/index.md
   label: Strona główna
@@ -37,7 +42,7 @@ sections:
   path: t/kontakt.md
   label: Kontakt
 - type: heading
-  label: Wypożyczalnia
+  label: Wypożyczalnia - strony
 - type: document
   path: w/index.html
   label: Strona główna
@@ -48,10 +53,7 @@ sections:
   path: w/kontakt.html
   label: Kontakt
 - type: heading
-  label: Edycja danych
-- type: document
-  path: _data/spektakle/spektakle.yml
-  label: Spektakle
+  label: Bazy danych
 - type: directory
   path: _data
   label: Wszystkie bazy danych
