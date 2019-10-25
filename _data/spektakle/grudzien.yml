@@ -2,6 +2,10 @@
 title: Grudniowy repertuar
 date: ''
 repertuar:
+- data: 2019-12-06 12:15:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  manual_price: false
 - data: 2019-12-13 11:00:00 +0100
   tytul: Śnieżny show
   link: "-"
