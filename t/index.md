@@ -73,11 +73,11 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 
 Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena _"Szybkobiegacze"_ i _"Brzydkie Kaczątko"_.
 
-Dla dzieci od 1,5 do 6 lat. 
+Dla dzieci od 1,5 do 6 lat.
 
-Czas trwania: 45 minut 
+Czas trwania: 45 minut
 
-Premiera 5.11.2017 
+Premiera 5.11.2017
 
 <br /><br />
 
