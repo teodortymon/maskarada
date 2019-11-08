@@ -77,7 +77,7 @@ Dla dzieci od 1,5 do 6 lat.
 
 Czas trwania: 45 minut 
 
-Premiera 5.11.2017. 
+Premiera 5.11.2017 
 
 <br /><br />
 
