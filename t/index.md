@@ -68,12 +68,14 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 <br />
 <br />
 
-<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tupu tup, czyli Brzydkie Kaczątko</ul></h2> <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-rad_us: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>_
-Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena "Szybkobiegacze" i _Brzydkie Kaczątko".
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tupu tup, czyli Brzydkie Kaczątko</ul></h2> <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-rad_us: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+<i>wg baśni H. Ch. Andersena</i><br /><br />
+
+Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena _"Szybkobiegacze"_ i _"Brzydkie Kaczątko"_.
 <br /> Dla dzieci od 1,5 do 6 lat.
-_<_r /> Czas trwania: 45 minut
+<_r /> Czas trwania: 45 minut
 <br /> Premiera 5.11.2017.
-_<br /><br />
+<br /><br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d7V63BJ2-Wg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 
