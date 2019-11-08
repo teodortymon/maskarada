@@ -68,13 +68,12 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 <br />
 <br />
 
-<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tupu tup</ul></h2>
-<a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
-Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena "Szybkobiegacze" i "Brzydkie Kaczątko".
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tupu tup, czyli Brzydkie Kaczątko</ul></h2> <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-rad_us: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>_
+Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena "Szybkobiegacze" i _Brzydkie Kaczątko".
 <br /> Dla dzieci od 1,5 do 6 lat.
-<br /> Czas trwania: 45 minut
+_<_r /> Czas trwania: 45 minut
 <br /> Premiera 5.11.2017.
-<br /><br />
+_<br /><br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d7V63BJ2-Wg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 
@@ -123,19 +122,19 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 
 <br /> <br /> Czas trwania: 45minut. <br />Przedstawienie dla dzieci od 4 lat do 8 lat
 
- <br />Premiera: 25 wrzesień 2016 <br /><br /> 
+<br />Premiera: 25 wrzesień 2016 <br /><br />
 <table border="0">
-    <tr>
-        <td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td>
-        <td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok<br />Jan Falba</td>
-    </tr>
-    <tr>
-        <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
-        <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
-    </tr>
-    <tr>
-        <td><strong>Charakteryzacja</strong><br />MAKE UP STAR</td>
-    </tr>
+<tr>
+<td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td>
+<td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok<br />Jan Falba</td>
+</tr>
+<tr>
+<td><strong>Muzyka</strong><br />Zuzanna Całka</td>
+<td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
+</tr>
+<tr>
+<td><strong>Charakteryzacja</strong><br />MAKE UP STAR</td>
+</tr>
 </table>
 
 <br /><br />
