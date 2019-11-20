@@ -2,6 +2,10 @@
 title: Styczniowy repertuar
 date: ''
 repertuar:
+- data: 2020-01-12 12:30:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  manual_price: false
 - data: 2020-01-05 12:30:00 +0100
   tytul: Elfy i fabryka prezentów
   link: "-"
