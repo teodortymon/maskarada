@@ -85,6 +85,17 @@ Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 02
 
 <br /><br />
 
+{% if site.data.spektakle.grudzien.repertuar.size > 0 %}
+
+## Styczeń
+
+<table class="pure-table pure-table-horizontal"> {% assign spektakle = site.data.spektakle.styczen.repertuar | sort: 'data' %} {% for spektakl in spektakle %} {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %} <tr> <th>{{ spektakl.data | date: "%-d.%m" }}<br />{{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }}</th> <th>{{ spektakl.data | date: "%R"  }}</th> <th style="width: 40%;">{{ spektakl.tytul }}</th> <th> {% if spektakl.manual_price == true %} {{ spektakl.link }} {% else %} {% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %} {% if spektakl.link == "-" %} <i>Bilety online wkrótce</i> {% else %} <a href="{{ spektakl.link }}">Kup bilet</a> {% endif %} {% else %} Zapraszamy grupy zorganizowane do rezerwacji tel. <a href="tel:501027278">501 027 278</a> {% endif %} {% endif %}  
+</th> </tr> {% endfor %} </table>
+
+{% endif %}
+
+<br /><br />
+
 <style>
 .pure-table thead {
 background-color: rgba(143, 223, 255, 0.19) !important;
