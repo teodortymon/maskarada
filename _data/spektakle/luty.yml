@@ -1,4 +1,8 @@
 ---
 title: Lutowy repertuar
 date: ''
-repertuar: []
+repertuar:
+- data: 2020-02-02 12:30:00 +0100
+  tytul: Wesołe Koty
+  link: "-"
+  manual_price: false
