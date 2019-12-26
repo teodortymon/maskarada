@@ -2,6 +2,10 @@
 title: Lutowy repertuar
 date: ''
 repertuar:
+- data: 2020-02-23 00:30:00 +0100
+  tytul: Śnieżny show
+  link: "-"
+  manual_price: false
 - data: 2020-02-16 12:30:00 +0100
   tytul: Urodziny Turli i Taja
   link: "-"
