@@ -18,6 +18,10 @@ sections:
 - type: document
   path: _data/spektakle/luty.yml
   label: Luty
+- type: document
+  path: _data/spektakle/marzec.yml
+  label: Marzec
+  match: "**/*"
 - type: heading
   label: Teatr - strony
 - type: document
