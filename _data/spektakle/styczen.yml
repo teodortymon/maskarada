@@ -2,43 +2,43 @@
 title: Styczniowy repertuar
 date: ''
 repertuar:
-- data: 2020-01-26T15:00:00.000+00:00
+- data: 2020-01-26 17:00:00 +0100
   tytul: Calineczka
   link: https://ewejsciowki.pl/embedded/rezerwacja/175641
   manual_price: false
-- data: 2020-01-05T11:30:00.000+00:00
+- data: 2020-01-05 13:30:00 +0100
   tytul: Elfy i fabryka prezentów
   link: https://ewejsciowki.pl/embedded/rezerwacja/173367
   manual_price: false
-- data: 2020-01-12T11:30:00.000+00:00
+- data: 2020-01-12 13:30:00 +0100
   tytul: Śnieżny show
   link: https://ewejsciowki.pl/embedded/rezerwacja/173368
   manual_price: false
-- data: 2020-01-12T15:00:00.000+00:00
+- data: 2020-01-12 17:00:00 +0100
   tytul: Elfy i fabryka prezentów
   link: https://ewejsciowki.pl/embedded/rezerwacja/173369
   manual_price: false
-- data: 2020-01-13T10:00:00.000+00:00
+- data: 2020-01-13 12:00:00 +0100
   tytul: Elfy i fabryka prezentów
   link: "-"
   manual_price: false
-- data: 2020-01-14T08:45:00.000+00:00
+- data: 2020-01-14 10:45:00 +0100
   tytul: Elfy i fabryka prezentów
   link: "-"
   manual_price: false
-- data: 2020-01-19T11:00:00.000+00:00
+- data: 2020-01-19 13:00:00 +0100
   tytul: Śnieżny show
   link: https://ewejsciowki.pl/embedded/rezerwacja/173370
   manual_price: false
-- data: 2020-01-20T10:00:00.000+00:00
+- data: 2020-01-20 12:00:00 +0100
   tytul: Śnieżny show
   link: "-"
   manual_price: false
-- data: 2020-01-26T11:30:00.000+00:00
+- data: 2020-01-26 13:30:00 +0100
   tytul: Śnieżny show
   link: https://ewejsciowki.pl/embedded/rezerwacja/173371
   manual_price: false
-- data: 2020-01-27T10:00:00.000+00:00
+- data: 2020-01-27 12:00:00 +0100
   tytul: Calineczka
   link: "-"
   manual_price: false
