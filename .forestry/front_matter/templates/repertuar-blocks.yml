@@ -42,7 +42,6 @@ fields:
     labelField: data
 pages:
 - _data/spektakle/grudzien.yml
-- _data/spektakle/grudzien.yml
 - _data/spektakle/listopad.yml
 - _data/spektakle/listopad.yml
 - _data/spektakle/luty.yml
