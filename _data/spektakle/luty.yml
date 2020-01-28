@@ -4,7 +4,7 @@ date: ''
 repertuar:
 - data: 2020-02-23 13:30:00 +0100
   tytul: Chopinowski Bal Karnawałowy
-  link: 'Rezerwacje tel: <a href="tel:501027278">501 027 278</a>'
+  link: Rezerwacje tel. <a href="tel:501027278">501 027 278</a>
   manual_price: true
 - data: 2020-02-02 12:30:00 +0100
   tytul: Wesołe Koty
