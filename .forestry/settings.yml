@@ -10,12 +10,6 @@ sections:
   path: _data/spektakle/spektakle.yml
   label: Nazwy spektakli
 - type: document
-  path: _data/spektakle/grudzien.yml
-  label: Grudzien
-- type: document
-  path: _data/spektakle/styczen.yml
-  label: Styczen
-- type: document
   path: _data/spektakle/luty.yml
   label: Luty
 - type: document
