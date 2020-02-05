@@ -1,4 +1,56 @@
 ---
-title: Kwietniowy repertuar
+title: Marcowy repertuar
 date: ''
-repertuar: []
+repertuar:
+- data: 2000-03-01T12:30:00.000+00:00
+  tytul: Warsztaty Chopinowskie
+  link: Rezerwacje tel. <a href="tel:501027278">501 027 278</a>
+  manual_price: true
+- data: 2020-03-23T10:00:00.000+00:00
+  tytul: Calineczka
+  link: "-"
+  manual_price: false
+- data: 2020-03-22T11:30:00.000+00:00
+  tytul: Calineczka
+  link: "-"
+  manual_price: false
+- data: 2020-03-30T09:00:00.000+00:00
+  tytul: Chmurka i Bratek
+  link: "-"
+  manual_price: false
+- data: 2020-03-29T10:30:00.000+00:00
+  tytul: Chmurka i Bratek
+  link: "-"
+  manual_price: false
+- data: 2020-03-15T15:00:00.000+00:00
+  tytul: Urodziny Turli i Taja
+  link: "-"
+  manual_price: false
+- data: 2020-03-10T08:30:00.000+00:00
+  tytul: Złota Rybka
+  link: "-"
+  manual_price: false
+- data: 2020-03-09T10:00:00.000+00:00
+  tytul: Tupu tup, czyli Brzydkie Kaczątko
+  link: "-"
+  manual_price: false
+- data: 2020-03-08T11:30:00.000+00:00
+  tytul: Tupu tup, czyli Brzydkie Kaczątko
+  link: "-"
+  manual_price: false
+- data: 2020-03-02T10:00:00.000+00:00
+  tytul: Księżniczka na ziarnku grochu
+  link: "-"
+  manual_price: false
+- data: 2020-03-01T11:30:00.000+00:00
+  tytul: Księżniczka na ziarnku grochu
+  link: "-"
+  manual_price: false
+- data: 2020-03-16T10:00:00.000+00:00
+  tytul: Kuba i Buba, czyli awantura do kwadratu
+  link: "-"
+  manual_price: false
+- data: 2020-03-15T11:30:00.000+00:00
+  tytul: Kuba i Buba, czyli awantura do kwadratu
+  link: "-"
+  manual_price: false

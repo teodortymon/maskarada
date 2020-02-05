@@ -43,6 +43,7 @@ fields:
 pages:
 - _data/spektakle/czerwiec.yml
 - _data/spektakle/kwiecien.yml
+- _data/spektakle/kwiecien.yml
 - _data/spektakle/listopad.yml
 - _data/spektakle/listopad.yml
 - _data/spektakle/luty.yml
