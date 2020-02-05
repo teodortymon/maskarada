@@ -2,6 +2,10 @@
 title: Marcowy repertuar
 date: ''
 repertuar:
+- data: 2020-04-27 11:00:00 +0200
+  tytul: Złota Rybka
+  link: "-"
+  manual_price: false
 - data: 2020-04-26 12:30:00 +0200
   tytul: Złota Rybka
   link: "-"
