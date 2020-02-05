@@ -38,7 +38,7 @@ repertuar:
   tytul: Tupu tup, czyli Brzydkie Kaczątko
   link: "-"
   manual_price: false
-- data: 2020-03-02T10:00:00.000+00:00
+- data: 2020-03-02 11:00:00 +0100
   tytul: Księżniczka na ziarnku grochu
   link: "-"
   manual_price: false
