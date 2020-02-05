@@ -1,4 +1,8 @@
 ---
 title: Marcowy repertuar
 date: ''
-repertuar: []
+repertuar:
+- data: 2020-04-05 12:30:00 +0200
+  tytul: Księżniczka na ziarnku grochu
+  link: "-"
+  manual_price: false
