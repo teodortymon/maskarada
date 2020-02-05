@@ -15,6 +15,18 @@ sections:
 - type: document
   path: _data/spektakle/marzec.yml
   label: Marzec
+- type: document
+  path: _data/spektakle/kwiecien.yml
+  label: Kwiecien
+  match: "**/*"
+- type: document
+  path: _data/spektakle/maj.yml
+  label: Maj
+  match: "**/*"
+- type: document
+  path: _data/spektakle/czerwiec.yml
+  label: Czerwiec
+  match: "**/*"
 - type: heading
   label: Teatr - strony
 - type: document
