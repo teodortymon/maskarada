@@ -4,7 +4,7 @@ date: ''
 repertuar:
 - data: 2020-03-22 16:00:00 +0100
   tytul: Urodziny Turli i Taja
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/179225
   manual_price: false
 - data: 2020-03-01 13:30:00 +0100
   tytul: Warsztaty Chopinowskie
@@ -16,7 +16,7 @@ repertuar:
   manual_price: false
 - data: 2020-03-22 12:30:00 +0100
   tytul: Calineczka
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/179224
   manual_price: false
 - data: 2020-03-30 11:00:00 +0200
   tytul: Chmurka i Bratek
@@ -24,11 +24,11 @@ repertuar:
   manual_price: false
 - data: 2020-03-29 12:30:00 +0200
   tytul: Chmurka i Bratek
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/179226
   manual_price: false
 - data: 2020-03-15 16:00:00 +0100
   tytul: Urodziny Turli i Taja
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/179223
   manual_price: false
 - data: 2020-03-10 09:30:00 +0100
   tytul: Złota Rybka
@@ -40,7 +40,7 @@ repertuar:
   manual_price: false
 - data: 2020-03-08 12:30:00 +0100
   tytul: Tupu tup, czyli Brzydkie Kaczątko
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/179221
   manual_price: false
 - data: 2020-03-02 11:00:00 +0100
   tytul: Księżniczka na ziarnku grochu
@@ -48,7 +48,7 @@ repertuar:
   manual_price: false
 - data: 2020-03-01 12:30:00 +0100
   tytul: Księżniczka na ziarnku grochu
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/179220
   manual_price: false
 - data: 2020-03-16 11:00:00 +0100
   tytul: Kuba i Buba, czyli awantura do kwadratu
@@ -56,5 +56,5 @@ repertuar:
   manual_price: false
 - data: 2020-03-15 12:30:00 +0100
   tytul: Kuba i Buba, czyli awantura do kwadratu
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/179222
   manual_price: false
