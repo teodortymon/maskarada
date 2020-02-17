@@ -9,7 +9,7 @@ layout: t
 **Rezerwacji biletów można dokonać:**
 
 * bezpośrednio ze strony Teatru w zakładace [Repertuar](http://www.maskarada.waw.pl/t/repertuar.html)
-* telefonicznie pod numerem 501 027 278
+* telefonicznie pod numerem <a href="tel:501-027-278" onClick="fbq('track', 'CallFromTickets');"> 501 027 278</a>
 * w kasie Teatru na godzinę przed spektaklem (płatność tylko gotówką)
 * na portalach [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki](https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333)
   _(dostępne na godzinę przed spektaklem, później bilety dostępne w kasie i telefonicznie)_
