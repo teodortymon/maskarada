@@ -2,6 +2,10 @@
 title: Marcowy repertuar
 date: ''
 repertuar:
+- data: 2020-05-17 11:00:00 +0200
+  tytul: Złota Rybka
+  link: "-"
+  manual_price: false
 - data: 2020-05-12 11:00:00 +0200
   tytul: Kuba i Buba, czyli awantura do kwadratu
   link: "-"
