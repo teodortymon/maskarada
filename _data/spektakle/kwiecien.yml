@@ -20,7 +20,7 @@ repertuar:
   manual_price: false
 - data: 2020-04-26 12:30:00 +0200
   tytul: Złota Rybka
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/181951
   manual_price: false
 - data: 2020-04-20 11:00:00 +0200
   tytul: Tupu tup, czyli Brzydkie Kaczątko
