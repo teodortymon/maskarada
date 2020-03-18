@@ -8,7 +8,7 @@ repertuar:
   manual_price: false
 - data: 2020-05-17 12:30:00 +0200
   tytul: Złota Rybka
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/181988
   manual_price: false
 - data: 2020-05-12 11:00:00 +0200
   tytul: Kuba i Buba, czyli awantura do kwadratu
@@ -20,7 +20,7 @@ repertuar:
   manual_price: false
 - data: 2020-05-10 12:30:00 +0200
   tytul: Wesołe Koty
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/181987
   manual_price: false
 - data: 2020-05-05 11:00:00 +0200
   tytul: Calineczka
@@ -28,6 +28,6 @@ repertuar:
   manual_price: false
 - data: 2020-05-03 12:30:00 +0200
   tytul: Urodziny Turli i Taja
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/181986
   manual_price: false
 tytul: Elfy i fabryka prezentów
