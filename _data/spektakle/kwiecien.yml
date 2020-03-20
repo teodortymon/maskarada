@@ -6,10 +6,6 @@ repertuar:
   tytul: Calineczka
   link: "-"
   manual_price: false
-- data: 2020-04-07 11:00:00 +0200
-  tytul: Wesołe Koty
-  link: "-"
-  manual_price: false
 - data: 2020-04-27 11:00:00 +0200
   tytul: Złota Rybka
   link: "-"
