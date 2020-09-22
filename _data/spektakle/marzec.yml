@@ -2,59 +2,55 @@
 title: Marcowy repertuar
 date: ''
 repertuar:
-- data: 2020-03-22 16:00:00 +0100
-  tytul: Urodziny Turli i Taja
-  link: https://ewejsciowki.pl/embedded/rezerwacja/179225
-  manual_price: false
-- data: 2020-03-01 13:30:00 +0100
+- data: 2020-03-01T13:30:00.000+01:00
   tytul: Warsztaty Chopinowskie
   link: Rezerwacje tel. <a href="tel:501027278">501 027 278</a>
   manual_price: true
-- data: 2020-03-23 11:00:00 +0100
+- data: 2020-03-23T11:00:00.000+01:00
   tytul: Calineczka
   link: "-"
   manual_price: false
-- data: 2020-03-22 12:30:00 +0100
+- data: 2020-03-22T12:30:00.000+01:00
   tytul: Calineczka
   link: https://ewejsciowki.pl/embedded/rezerwacja/179224
   manual_price: false
-- data: 2020-03-30 11:00:00 +0200
+- data: 2020-03-30T11:00:00.000+02:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2020-03-29 12:30:00 +0200
+- data: 2020-03-29T12:30:00.000+02:00
   tytul: Chmurka i Bratek
   link: https://ewejsciowki.pl/embedded/rezerwacja/179226
   manual_price: false
-- data: 2020-03-15 16:00:00 +0100
+- data: 2020-03-15T16:00:00.000+01:00
   tytul: Urodziny Turli i Taja
   link: https://ewejsciowki.pl/embedded/rezerwacja/179223
   manual_price: false
-- data: 2020-03-10 09:30:00 +0100
+- data: 2020-03-10T09:30:00.000+01:00
   tytul: Złota Rybka
   link: "-"
   manual_price: false
-- data: 2020-03-09 11:00:00 +0100
+- data: 2020-03-09T11:00:00.000+01:00
   tytul: Tupu tup, czyli Brzydkie Kaczątko
   link: "-"
   manual_price: false
-- data: 2020-03-08 12:30:00 +0100
+- data: 2020-03-08T12:30:00.000+01:00
   tytul: Tupu tup, czyli Brzydkie Kaczątko
   link: https://ewejsciowki.pl/embedded/rezerwacja/179221
   manual_price: false
-- data: 2020-03-02 11:00:00 +0100
+- data: 2020-03-02T11:00:00.000+01:00
   tytul: Księżniczka na ziarnku grochu
   link: "-"
   manual_price: false
-- data: 2020-03-01 12:30:00 +0100
+- data: 2020-03-01T12:30:00.000+01:00
   tytul: Księżniczka na ziarnku grochu
   link: https://ewejsciowki.pl/embedded/rezerwacja/179220
   manual_price: false
-- data: 2020-03-16 11:00:00 +0100
+- data: 2020-03-16T11:00:00.000+01:00
   tytul: Kuba i Buba, czyli awantura do kwadratu
   link: "-"
   manual_price: false
-- data: 2020-03-15 12:30:00 +0100
+- data: 2020-03-15T12:30:00.000+01:00
   tytul: Kuba i Buba, czyli awantura do kwadratu
   link: https://ewejsciowki.pl/embedded/rezerwacja/179222
   manual_price: false
