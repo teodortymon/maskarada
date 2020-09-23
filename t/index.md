@@ -1,7 +1,30 @@
 ---
 layout: t
-
 ---
+
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Królowa Myszy</ul></h2>
+<a id="single_image" href="lay/img/krolowa_myszy_big.jpg"><img src="lay/img/krolowa_myszy_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+
+Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna bajka o czarach, królewnie i czekoladzie. Opowiedziana przez aktorów i marionetki do muzyki “Dziadka do orzechów” Czajkowskiego. Magiczny świat zamknięty w małej teatralnej scenie wzorowanej na XVIII wiecznym włoskim teatrze marionetkowym, ożywiony błyskotliwą grą aktorów przeniesie nas na dwór królewski, gdzie harcują myszy.
+
+<br /> Dla dzieci od 2 do 8 lat i całej rodziny. <br /> Czas trwania: 50 minut
+
+<table border="0">
+<tr>
+<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat </td>
+<td><strong>Muzyka</strong><br />Piotr Czajkowski</td>
+<td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td>
+<td><strong>Tekst</strong><br />Pola Wójcik</td>
+</tr>
+</table>
+<br />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Śnieżny show</ul></h2>
 <a id="single_image" href="lay/img/sniezny_show_big.jpg"><img src="lay/img/sniezny_show_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
@@ -129,6 +152,7 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <br /> <br /> Czas trwania: 45minut. <br />Przedstawienie dla dzieci od 4 lat do 8 lat
 
 <br />Premiera: 25 wrzesień 2016 <br /><br />
+
 <table border="0">
 <tr>
 <td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td>
