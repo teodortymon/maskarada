@@ -139,7 +139,7 @@ table {
 #footer {
   text-align: center;
   font-size: 11px;
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 
 #footer a img {
@@ -149,7 +149,7 @@ table {
 
 #end img {
   padding: 5px 100px 0 0;
-  height: 50px;
+  height: 70px;
   width: auto;
 }
 
