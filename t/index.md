@@ -12,12 +12,17 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <table border="0">
 <tr>
 <td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat </td>
-<td><strong>Muzyka</strong><br />Piotr Czajkowski</td>
+<td><strong>Muzyka</strong><br />Piotr Czajkowski<br />Krzysztof Jaszczak</td>
 <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td>
 <td><strong>Tekst</strong><br />Pola Wójcik</td>
 </tr>
 </table>
 <br />
+<ul class="photos">
+{% for i in (1..4) %}
+<a id="single_image" rel="10" href="lay/img/myszy/large/myszy{{ i }}.JPG"><img src="lay/img/myszy/small/myszy{{ i }}.JPG"/></a>
+{% endfor %}
+</ul>
 
 <br />
 <br />
@@ -156,7 +161,7 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <table border="0">
 <tr>
 <td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td>
-<td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok<br />Jan Falba</td>
+<td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok</td>
 </tr>
 <tr>
 <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
@@ -216,8 +221,7 @@ Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji p
 <strong>Występują</strong>
 <br /><br />
 Anna Bakalarska<br />
-Joanna Róg/Joanna Pietrońska<br />
-Agnieszka Senderowska<br />
+Joanna Pietrońska<br />
 
 <br /><br />
 
@@ -253,7 +257,7 @@ Agnieszka Senderowska<br />
 </tr>
 </table>
 <br />
-<strong>Występują</strong><br /><br />Buba - Ewa Tucholska<br /><br />Kuba - Adam Biernat<br /><br />Tata/Nauczyciel - Michał Maliszewski<br /><br />Woźny - Jan Falba<br /><br />
+<strong>Występują</strong><br /><br />Buba - Ewa Tucholska<br /><br />Kuba - Adam Biernat<br /><br />Tata/Nauczyciel - Michał Maliszewski<br /><br />Woźny - Przemko Janiszko<br /><br />
 
 <ul class="photos">
 <a id="single_image" rel="6" href="lay/img/kuba_i_buba/large/1.jpg"><img src="lay/img/kuba_i_buba/small/1.jpg"/></a>
@@ -353,7 +357,7 @@ Premiera: 30 marzec 2014 <br />
 <br /><br />
 <table border="0">
 <tr>
-<td><strong>Występują</strong><br />Agnieszka Senderowska<br />Monika Głowienko / Anna Bakalarska<br />Adam Biernat/Jan Falba<br /><br /></td>
+<td><strong>Występują</strong><br />Agnieszka Senderowska<br />Monika Głowienko / Anna Bakalarska<br />Adam Biernat<br /><br /></td>
 <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
 </tr>
 <tr>
