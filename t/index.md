@@ -20,7 +20,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <br />
 <ul class="photos">
 {% for i in (1..4) %}
-<a id="single_image" rel="10" href="lay/img/myszy/large/myszy{{ i }}.JPG"><img src="lay/img/myszy/small/myszy{{ i }}.JPG"/></a>
+<a id="single_image" rel="myszy" href="lay/img/myszy/large/myszy{{ i }}.JPG"><img src="lay/img/myszy/small/myszy{{ i }}.JPG"/></a>
 {% endfor %}
 </ul>
 
@@ -39,7 +39,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 <ul class="photos">
 {% for i in (1..4) %}
-<a id="single_image" rel="10" href="lay/img/sniezny_show/large/{{ i }}.jpg"><img src="lay/img/sniezny_show/small/{{ i }}.jpg"/></a>
+<a id="single_image" rel="sniezny" href="lay/img/sniezny_show/large/{{ i }}.jpg"><img src="lay/img/sniezny_show/small/{{ i }}.jpg"/></a>
 {% endfor %}
 </ul>
 
