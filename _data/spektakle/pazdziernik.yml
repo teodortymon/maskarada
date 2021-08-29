@@ -2,23 +2,23 @@
 title: Pazdziernikowy repertuar
 date: '2018-12-11T00:16:55.000+00:00'
 repertuar:
-- data: 2021-10-25 11:00:00 +0200
+- data: 2021-10-25T11:00:00.000+02:00
   tytul: Elfy i fabryka prezentów
   link: "-"
   manual_price: false
-- data: 2021-10-24 12:30:00 +0200
+- data: 2021-10-24T12:30:00.000+02:00
   tytul: Elfy i fabryka prezentów
   link: "-"
   manual_price: false
-- data: 2021-10-18 11:00:00 +0200
+- data: 2021-10-18T11:00:00.000+02:00
   tytul: Elfy i fabryka prezentów
   link: "-"
   manual_price: false
-- data: 2021-10-17 12:30:00 +0200
-  tytul: Elfy i fabryka prezentów
+- data: 2021-10-17T12:30:00.000+02:00
+  tytul: Królowa Myszy (premiera)
   link: "-"
   manual_price: false
-- data: 2021-10-10 12:30:00 +0200
+- data: 2021-10-10T12:30:00.000+02:00
   tytul: Wesołe Koty
   link: "-"
   manual_price: false
