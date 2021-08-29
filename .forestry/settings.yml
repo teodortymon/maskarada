@@ -10,20 +10,14 @@ sections:
   path: _data/spektakle/spektakle.yml
   label: Nazwy spektakli
 - type: document
-  path: _data/spektakle/luty.yml
-  label: Luty
+  path: _data/spektakle/wrzesien.yml
+  label: Wrzesien
 - type: document
-  path: _data/spektakle/marzec.yml
-  label: Marzec
+  path: _data/spektakle/pazdziernik.yml
+  label: Pazdziernik
 - type: document
-  path: _data/spektakle/kwiecien.yml
-  label: Kwiecien
-- type: document
-  path: _data/spektakle/maj.yml
-  label: Maj
-- type: document
-  path: _data/spektakle/czerwiec.yml
-  label: Czerwiec
+  path: _data/spektakle/listopad.yml
+  label: Listopad
 - type: heading
   label: Teatr - strony
 - type: document
