@@ -1,4 +1,8 @@
 ---
 title: Wrzesniowy repertuar
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar: []
+repertuar:
+- data: 2021-09-12 12:30:00 +0200
+  tytul: Co w trawie bzyczy?
+  link: "-"
+  manual_price: false
