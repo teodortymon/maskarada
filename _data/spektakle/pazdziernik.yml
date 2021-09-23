@@ -20,7 +20,7 @@ repertuar:
   manual_price: false
 - data: 2021-10-24T12:30:00.000+02:00
   tytul: Królowa Myszy
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/203459
   manual_price: false
 - data: 2021-10-18T11:00:00.000+02:00
   tytul: Królowa Myszy
@@ -28,9 +28,9 @@ repertuar:
   manual_price: false
 - data: 2021-10-17T12:30:00.000+02:00
   tytul: Królowa Myszy (premiera)
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/203458
   manual_price: false
 - data: 2021-10-10T12:30:00.000+02:00
   tytul: Złota Rybka
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/203456
   manual_price: false
