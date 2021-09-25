@@ -5,7 +5,7 @@ admin_path: ""
 webhook_url:
 sections:
   - type: heading
-    label: Teatr - repertuary
+    label: Teatr
   - type: directory
     label: Repertuary
     path: _data/spektakle/
@@ -14,17 +14,6 @@ sections:
   - type: document
     path: _data/spektakle/spektakle.yml
     label: Nazwy spektakli
-  - type: document
-    path: _data/spektakle/wrzesien.yml
-    label: Wrzesien
-  - type: document
-    path: _data/spektakle/pazdziernik.yml
-    label: Pazdziernik
-  - type: document
-    path: _data/spektakle/listopad.yml
-    label: Listopad
-  - type: heading
-    label: Teatr - strony
   - type: document
     path: t/index.md
     label: Strona główna
@@ -44,7 +33,7 @@ sections:
     path: t/kontakt.md
     label: Kontakt
   - type: heading
-    label: Wypożyczalnia - strony
+    label: Wypożyczalnia
   - type: document
     path: w/index.html
     label: Strona główna
