@@ -2,6 +2,10 @@
 title: Listopad
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- data: 2021-11-14 12:30:00 +0100
+  tytul: Magiczne Drzewko Wróżek
+  link: "-"
+  manual_price: false
 - data: 2021-11-09 11:00:00 +0100
   tytul: Wesołe Koty
   link: "-"
