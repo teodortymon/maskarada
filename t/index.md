@@ -5,7 +5,7 @@ layout: t
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Magiczne Drzewko Wróżek</ul></h2>
 <a id="single_image" href="lay/img/drzewko_big.jpg"><img src="lay/img/drzewko_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
-Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą pory roku, w magicznym drzewie domki swoje mają. Z matką naturą opiekują się zwierzątkami. I Ty spotkasz leśne zwierzątkie, małe robaczki, ptaszki i jerze. Wróżka z matką naturą magią otulą świat cały a mali widzowie zanurzą się w teatralną magię wyczarowaną na scenie - światłem, dźwiękiem, muzyką i sami wezmą udział w teatralnej zabawie. Spektatkl inspirowany Snem Nocy Letniej Williama Shakespeare'a i wierszami Leopolda Staffa.
+Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą pory roku, w magicznym drzewie domki swoje mają. Z Matką nNturą opiekują się zwierzątkami. I Ty spotkasz leśne zwierzątkie, małe robaczki, ptaszki i jerze. Wróżka z Matką Naturą magią otulą świat cały a mali widzowie zanurzą się w teatralną magię wyczarowaną na scenie - światłem, dźwiękiem, muzyką i sami wezmą udział w teatralnej zabawie. Spektakl inspirowany Snem Nocy Letniej Williama Shakespeare'a i wierszami Leopolda Staffa.
 
 <br /> Dla dzieci od 1 do 7 lat i całej rodziny. <br /> Czas trwania 55 minut
 <br /> Premiera 7 listopad 2021 <br />
