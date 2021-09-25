@@ -5,10 +5,10 @@ layout: t
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Magiczne Drzewko Wróżek</ul></h2>
 <a id="single_image" href="lay/img/drzewko_big.jpg"><img src="lay/img/drzewko_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
-Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą pory roku, w magicznym drzewie domki swoje mają. Z Matką nNturą opiekują się zwierzątkami. I Ty spotkasz leśne zwierzątkie, małe robaczki, ptaszki i jerze. Wróżka z Matką Naturą magią otulą świat cały a mali widzowie zanurzą się w teatralną magię wyczarowaną na scenie - światłem, dźwiękiem, muzyką i sami wezmą udział w teatralnej zabawie. Spektakl inspirowany Snem Nocy Letniej Williama Shakespeare'a i wierszami Leopolda Staffa.
+Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą pory roku, w magicznym drzewie domki swoje mają. Z Matką Naturą opiekują się zwierzątkami. I Ty spotkasz leśne zwierzątka, małe robaczki, ptaszki i jeże. Wróżka z Matką Naturą magią otulą świat cały a mali widzowie zanurzą się w teatralną magię wyczarowaną na scenie - światłem, dźwiękiem, muzyką i sami wezmą udział w teatralnej zabawie. Spektakl inspirowany Snem Nocy Letniej Williama Shakespeare'a i wierszami Leopolda Staffa.
 
 <br /> Dla dzieci od 1 do 7 lat i całej rodziny. <br /> Czas trwania 55 minut
-<br /> Premiera 7 listopad 2021 <br />
+<br /> Premiera 7.11.2021 <br />
 
 <table border="0">
 <tr>
@@ -37,7 +37,7 @@ Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą p
 
 Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna bajka o czarach, królewnie i czekoladzie. Opowiedziana przez aktorów i marionetki do muzyki “Dziadka do orzechów” Czajkowskiego. Magiczny świat zamknięty w małej teatralnej scenie wzorowanej na XVIII wiecznym włoskim teatrze marionetkowym, ożywiony błyskotliwą grą aktorów przeniesie nas na dwór królewski, gdzie harcują myszy.
 
-<br /> Dla dzieci od 2 do 8 lat i całej rodziny. <br /> Czas trwania: 50 minut
+<br /> Dla dzieci od 2 do 8 lat i całej rodziny. <br /> Czas trwania 50 minut <br /> Premiera 17.10.2021
 
 <table border="0">
 <tr>
