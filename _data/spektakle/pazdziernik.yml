@@ -1,36 +1,36 @@
 ---
-title: Pazdziernikowy repertuar
-date: '2018-12-11T00:16:55.000+00:00'
+title: Październik
+date: "2018-12-11T00:16:55.000+00:00"
 repertuar:
-- data: 2021-10-06 11:00:00 +0200
-  tytul: Wesołe Koty
-  link: "-"
-  manual_price: false
-- data: 2021-10-20 11:00:00 +0200
-  tytul: Złota Rybka
-  link: "-"
-  manual_price: false
-- data: 2021-10-19 11:00:00 +0200
-  tytul: Wesołe Koty
-  link: "-"
-  manual_price: false
-- data: 2021-10-25T11:00:00.000+02:00
-  tytul: Królowa Myszy
-  link: "-"
-  manual_price: false
-- data: 2021-10-24T12:30:00.000+02:00
-  tytul: Królowa Myszy
-  link: https://ewejsciowki.pl/embedded/rezerwacja/203459
-  manual_price: false
-- data: 2021-10-18T11:00:00.000+02:00
-  tytul: Królowa Myszy
-  link: "-"
-  manual_price: false
-- data: 2021-10-17T12:30:00.000+02:00
-  tytul: Królowa Myszy (premiera)
-  link: https://ewejsciowki.pl/embedded/rezerwacja/203458
-  manual_price: false
-- data: 2021-10-10T12:30:00.000+02:00
-  tytul: Złota Rybka
-  link: https://ewejsciowki.pl/embedded/rezerwacja/203456
-  manual_price: false
+  - data: 2021-10-06 11:00:00 +0200
+    tytul: Wesołe Koty
+    link: "-"
+    manual_price: false
+  - data: 2021-10-20 11:00:00 +0200
+    tytul: Złota Rybka
+    link: "-"
+    manual_price: false
+  - data: 2021-10-19 11:00:00 +0200
+    tytul: Wesołe Koty
+    link: "-"
+    manual_price: false
+  - data: 2021-10-25T11:00:00.000+02:00
+    tytul: Królowa Myszy
+    link: "-"
+    manual_price: false
+  - data: 2021-10-24T12:30:00.000+02:00
+    tytul: Królowa Myszy
+    link: https://ewejsciowki.pl/embedded/rezerwacja/203459
+    manual_price: false
+  - data: 2021-10-18T11:00:00.000+02:00
+    tytul: Królowa Myszy
+    link: "-"
+    manual_price: false
+  - data: 2021-10-17T12:30:00.000+02:00
+    tytul: Królowa Myszy (premiera)
+    link: https://ewejsciowki.pl/embedded/rezerwacja/203458
+    manual_price: false
+  - data: 2021-10-10T12:30:00.000+02:00
+    tytul: Złota Rybka
+    link: https://ewejsciowki.pl/embedded/rezerwacja/203456
+    manual_price: false
