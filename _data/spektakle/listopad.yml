@@ -1,8 +1,40 @@
 ---
 title: Listopad
-date: "2019-04-06T22:30:55.000+00:00"
+date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
-  - data: 2021-11-07 12:30:00 +0100
-    tytul: Elfy i fabryka prezentów
-    link: "-"
-    manual_price: false
+- data: 2021-11-28 12:30:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  manual_price: false
+- data: 2021-11-22 11:00:00 +0100
+  tytul: Królowa Myszy
+  link: "-"
+  manual_price: false
+- data: 2021-11-21 12:30:00 +0100
+  tytul: Królowa Myszy
+  link: "-"
+  manual_price: false
+- data: 2021-11-16 11:00:00 +0100
+  tytul: Złota Rybka
+  link: "-"
+  manual_price: false
+- data: 2021-11-15 11:00:00 +0100
+  tytul: Magiczne Drzewko Wróżek
+  link: "-"
+  manual_price: false
+- data: 2021-11-14 12:30:00 +0100
+  tytul: Magiczne Drzewko Wróżek
+  link: "-"
+  manual_price: false
+- data: 2021-11-09 11:00:00 +0100
+  tytul: Wesołe Koty
+  link: "-"
+  manual_price: false
+- data: 2021-11-08 11:00:00 +0100
+  tytul: Magiczne Drzewko Wróżek
+  link: "-"
+  manual_price: false
+- data: 2021-11-07T12:30:00.000+01:00
+  tytul: Magiczne Drzewko Wróżek-premiera
+  link: "-"
+  manual_price: false

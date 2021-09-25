@@ -2,55 +2,74 @@
 label: Repertuar blocks
 hide_body: false
 fields:
-  - type: field_group_list
-    template_types:
-      - spektakl
-    label: Repertuar
-    name: repertuar
-    description: Repertuar przedstawien
-    fields:
-      - type: datetime
-        config:
-          required: true
-          time_format: HH:mm A ZZ
-          date_format: DD/MM
-        name: data
-        label: Data spektaklu
-      - type: select
-        name: tytul
-        config:
-          source:
-            type: documents
-            section: bazy-danych
-            file: _data/spektakle/spektakle.yml
-            path: tytuly
-          required: true
-        label: Nazwa spektaklu
-        default: Elfy i fabryka prezentów
-      - type: text
-        name: link
-        config:
-          required: true
-        label: Link do e-wejściówek / opis
-      - type: boolean
-        name: manual_price
-        label: Ręcznie wpisywanie ceny
-        description:
-          Włącz na zielone jeśli zamiast linku do e-wejściówek / automatycznej
-          informacji o telefonie, chcesz by wyświetlać tekst wpisany powyżej (w polu link
-          / opis)
+- type: field_group_list
+  template_types:
+  - spektakl
+  label: Repertuar
+  name: repertuar
+  description: Repertuar przedstawien
+  fields:
+  - type: datetime
     config:
-      labelField: data
+      required: true
+      time_format: HH:mm A ZZ
+      date_format: DD/MM
+    name: data
+    label: Data spektaklu
+  - type: select
+    name: tytul
+    config:
+      source:
+        type: documents
+        section: bazy-danych
+        file: _data/spektakle/spektakle.yml
+        path: tytuly
+      required: true
+    label: Nazwa spektaklu
+    default: Elfy i fabryka prezentów
+  - type: text
+    name: link
+    config:
+      required: true
+    label: Link do e-wejściówek / opis
+  - type: boolean
+    name: manual_price
+    label: Ręcznie wpisywanie ceny
+    description: Włącz na zielone jeśli zamiast linku do e-wejściówek / automatycznej
+      informacji o telefonie, chcesz by wyświetlać tekst wpisany powyżej (w polu link
+      / opis)
+  config:
+    labelField: data
 pages:
-  - _data/spektakle/styczen.yml
-  - _data/spektakle/luty.yml
-  - _data/spektakle/marzec.yml
-  - _data/spektakle/kwiecien.yml
-  - _data/spektakle/maj.yml
-  - _data/spektakle/czerwiec.yml
-  - _data/spektakle/lipiec.yml
-  - _data/spektakle/sierpien.yml
-  - _data/spektakle/wrzesien.yml
-  - _data/spektakle/pazdziernik.yml
-  - _data/spektakle/listopad.yml
-  - _data/spektakle/grudzien.yml
+- _data/spektakle/czerwiec.yml
+- _data/spektakle/czerwiec.yml
+- _data/spektakle/czerwiec.yml
+- _data/spektakle/grudzien.yml
+- _data/spektakle/grudzien.yml
+- _data/spektakle/kwiecien.yml
+- _data/spektakle/kwiecien.yml
+- _data/spektakle/kwiecien.yml
+- _data/spektakle/lipiec.yml
+- _data/spektakle/lipiec.yml
+- _data/spektakle/listopad.yml
+- _data/spektakle/listopad.yml
+- _data/spektakle/listopad.yml
+- _data/spektakle/luty.yml
+- _data/spektakle/luty.yml
+- _data/spektakle/luty.yml
+- _data/spektakle/maj.yml
+- _data/spektakle/maj.yml
+- _data/spektakle/maj.yml
+- _data/spektakle/marzec.yml
+- _data/spektakle/marzec.yml
+- _data/spektakle/marzec.yml
+- _data/spektakle/pazdziernik.yml
+- _data/spektakle/pazdziernik.yml
+- _data/spektakle/pazdziernik.yml
+- _data/spektakle/sierpien.yml
+- _data/spektakle/sierpien.yml
+- _data/spektakle/styczen.yml
+- _data/spektakle/styczen.yml
+- _data/spektakle/wrzesien.yml
+- _data/spektakle/wrzesien.yml
+- _data/spektakle/wrzesien.yml
