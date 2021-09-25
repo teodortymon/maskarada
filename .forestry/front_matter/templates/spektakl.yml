@@ -3,26 +3,26 @@ label: spektakl
 hide_body: false
 display_field: data
 fields:
-  - type: select
-    config:
-      source:
-        type: documents
-        file: _data/spektakle.yml
-        path: tytuly
-      required: true
-    label: Spektakl
-    name: tytul
-    default: Elfy i fabryka prezentów
-  - type: datetime
-    name: data
-    label: Data spektaklu2
-    config:
-      required: true
-      display_utc: false
-      date_format: DD/MM
-      time_format: HH:mm A ZZ
-  - type: text
-    name: link
-    label: Link do e-wejściówek
-    config:
-      required: true
+- type: select
+  config:
+    source:
+      type: documents
+      file: _data/spektakle.yml
+      path: tytuly
+    required: true
+  label: Spektakl
+  name: tytul
+  default: Elfy i fabryka prezentów
+- type: datetime
+  name: data
+  label: Data spektaklu2
+  config:
+    required: true
+    display_utc: false
+    date_format: DD/MM
+    time_format: HH:mm A ZZ
+- type: text
+  name: link
+  label: Link do e-wejściówek
+  config:
+    required: true
