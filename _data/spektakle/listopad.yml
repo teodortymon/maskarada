@@ -40,7 +40,7 @@ repertuar:
   manual_price: false
 - data: 2021-11-21T12:30:00.000+01:00
   tytul: Królowa Myszy
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/205631
   manual_price: false
 - data: 2021-11-16T11:00:00.000+01:00
   tytul: Złota Rybka
