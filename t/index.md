@@ -9,7 +9,9 @@ Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą p
 
 <br /> Dla dzieci od 1 do 6 lat i całej rodziny. <br /> Czas trwania 55 minut <br /> Premiera 7.11.2021 <br />
 
-<table border="0"> <tr> <td><strong>Grają</strong><br />Joanna Pietrońska <br /> Patrycja Potyralska </td> <td><strong>Muzyka</strong><br />Krzysztof Gumienny</td><td><strong>Opracowanie muzyczne</strong><br />Przemko Janiszko</td> <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Tekst</strong><br />Pola Wójcik</td> <td><strong>Wiersze</strong><br />Leopold Staff i Williama Shakespeare'a ze Snu Nocy Letniej</td> </tr> </table> <br /> <ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="myszy" href="lay/img/drzewko/large/{{ i }}.jpg"><img src="lay/img/drzewko/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
+<table border="0"> <tr> <td><strong>Grają</strong><br />Joanna Pietrońska <br /> Patrycja Potyralska </td> <td><strong>Muzyka</strong><br />Krzysztof Gumienny</td> <td><strong>Opracowanie muzyczne</strong><br />Przemko Janiszko</td> <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Tekst</strong><br />Pola Wójcik</td> <td><strong>Wiersze</strong><br />Leopold Staff i Williama Shakespeare'a ze Snu Nocy Letniej</td> </tr> </table>
+
+<ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="myszy" href="lay/img/drzewko/large/{{ i }}.jpg"><img src="lay/img/drzewko/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
 <br />
 <br />
