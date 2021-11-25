@@ -20,7 +20,7 @@ repertuar:
   manual_price: false
 - data: 2021-12-05 12:30:00 +0100
   tytul: Śnieżny show
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/206815
   manual_price: false
 - data: 2021-12-06 09:30:00 +0100
   tytul: Elfy i fabryka prezentów
