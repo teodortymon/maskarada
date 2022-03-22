@@ -2,8 +2,6 @@
 layout: t
 ---
 
-## Warsztaty
-
 <h2><ul class="photos">Warsztaty teatralno-taneczne</ul></h2>
 
 Zajęcia teatralne prowadzone wg autorskiego programu Teatru Maskarada wprowadzają dzieci do magicznego świata teatru. Uczestnicy będą rozwijali swoją wyobraźnię i umiejętności poprzez działania twórcze z zakresu pantomimy, teatru słowa, cieni i lalek. Podróż poprzez emocje będzie niezapomnianym doświadczeniem i jednocześnie wspaniałą zabawą. Wspólnie będziemy tworzyć spektakl.
@@ -12,7 +10,6 @@ Zajęcia teatralne prowadzone wg autorskiego programu Teatru Maskarada wprowadza
 <br />Koszt zajęć pojedynczych: 35zł
 <br /> Zapisy: 501 - 027 - 278.
 <br />Miejsce: Teatr Maskarada - Nowy Świat
-
 
 <!--
 <h2><ul class="photos">Sztuka szycia</ul></h2>
@@ -35,5 +32,5 @@ Zapraszamy dzieci w wieku od 3 lat. Polecamy dla grup przedszkolnych i szkolnych
 
 <h2><ul class="photos">Teatr tańca dla dzieci</ul></h2>
 
-Zapraszamy na warsztaty taneczno-teatralne łączące elementy improwizacji teatralnej, działań w przestrzeni, zabawy ruchem i dźwiękiem oraz tańca współczesnego i jazzowego. Dzieci poznają magiczny świat teatru oraz nauczą się pracy głosem i ciałem. Każde zajęcia są zamkniętą formą warsztatową.  <br />Zapraszamy zarówno na pojedyncze spotkania jak i na cykl zajęć.  
+Zapraszamy na warsztaty taneczno-teatralne łączące elementy improwizacji teatralnej, działań w przestrzeni, zabawy ruchem i dźwiękiem oraz tańca współczesnego i jazzowego. Dzieci poznają magiczny świat teatru oraz nauczą się pracy głosem i ciałem. Każde zajęcia są zamkniętą formą warsztatową. <br />Zapraszamy zarówno na pojedyncze spotkania jak i na cykl zajęć.  
 Warsztaty kierujemy do dzieci w wieku 3-6 i 7-14 lat.
