@@ -9,9 +9,11 @@ Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą p
 
 <br /> Dla dzieci od 1 do 6 lat i całej rodziny. <br /> Czas trwania 55 minut <br /> Premiera 7.11.2021 <br />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/02LBv_25oyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+
 <table border="0"> <tr> <td><strong>Grają</strong><br />Joanna Pietrońska <br /> Patrycja Potyralska </td> <td><strong>Muzyka</strong><br />Krzysztof Gumienny</td> <td><strong>Opracowanie muzyczne</strong><br />Przemko Janiszko</td> <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Tekst</strong><br />Pola Wójcik</td> <td><strong>Wiersze</strong><br />Leopold Staff i Williama Shakespeare'a ze Snu Nocy Letniej</td> </tr> </table>
 
-<ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="myszy" href="lay/img/drzewko/large/{{ i }}.jpg"><img src="lay/img/drzewko/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
+<ul class="photos"> {% for i in (1..4) %} <a id="single_image" rel="drzewko" href="lay/img/drzewko/large/{{ i }}.jpg"><img src="lay/img/drzewko/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
 <br />
 <br />
@@ -26,6 +28,9 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 <br /> Dla dzieci od 2 do 8 lat i całej rodziny. <br /> Czas trwania 50 minut <br /> Premiera 17.10.2021
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q9LHmJW0_6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
+
 <table border="0">
 <tr>
 <td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat </td>
@@ -35,9 +40,11 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 </tr>
 </table>
 <br />
+
+
 <ul class="photos">
 {% for i in (1..4) %}
-<a id="single_image" rel="myszy" href="lay/img/myszy/large/myszy{{ i }}.JPG"><img src="lay/img/myszy/small/myszy{{ i }}.JPG"/></a>
+<a id="single_image" rel="myszy" href="lay/img/myszy/large/{{ i }}.JPG"><img src="lay/img/myszy/small/{{ i }}.JPG"/></a>
 {% endfor %}
 </ul>
 
