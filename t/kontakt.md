@@ -1,13 +1,16 @@
 ---
 layout: t
----
 
+---
 ## Kontakt
 
 **SCENA**
 
-Gramy dla was przy ul. Nowy Świat 63<br/><br/>
-(Nowy Świat Muzyki)<br/><br/><b/>
+Zapraszamy do nowego, pięknego miejsca<br/>  
+Pałac Staszica ul. Nowy Świat 72<br />  
+Sala pod Kopułą PAN, 3 piętro-schodami lub windą
+
+<br/><br/><b/>
 Organizujemy również spektakle dla firm. <br />
 Polecamy nasze zimowe i mikołajkowe przedstawienia i animacje.
 
@@ -34,7 +37,7 @@ Wpisz po przecinku nazwę ulicy, z której do nas wyruszasz :
 <input type="text" value="Warszawa," name="saddr">
 <input type="hidden" value="Warszawa, Dąbrowszczaków 2" name="daddr">
 <input type="submit" value=" Pokaż trasę ">
- </form>
+</form>
 
 <br />
--->
+\-->
