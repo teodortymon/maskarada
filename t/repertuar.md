@@ -1,26 +1,26 @@
 ---
 layout: t
----
 
+---
 <link crossorigin="anonymous" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" rel="stylesheet">
 
 ## Repertuar
 
 ## Szanowni Widzowie!
 
-Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
+Gramy dla was w Pałacu Staszica przy **ul. Nowy Świat 72**
 
 <br/>
 <br/>
 {% assign miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
 {% for miesiac in miesiace %}
 
-{% if site.data.spektakle[miesiac].repertuar.size > 0 %}
+{% if site.data.spektakle\[miesiac\].repertuar.size > 0 %}
 
-## {{site.data.spektakle[miesiac].title}}
+## {{site.data.spektakle\[miesiac\].title}}
 
 <table class="pure-table pure-table-horizontal">
-{% assign spektakle = site.data.spektakle[miesiac].repertuar | sort: 'data' %}
+{% assign spektakle = site.data.spektakle\[miesiac\].repertuar | sort: 'data' %}
 {% for spektakl in spektakle %}
 {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
 <tr>
@@ -33,9 +33,9 @@ Gramy dla was w Nowym Świecie Muzyki przy **ul. Nowy Świat 63**
 {% else %}
 {% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
 {% if spektakl.link == "-" %}
-    <i>Bilety online wkrótce</i>
+<i>Bilety online wkrótce</i>
 {% else %}
-    <a onclick="fbq('track', 'OpenBuy');" href="{{ spektakl.link }}">Kup bilet</a>
+<a onclick="fbq('track', 'OpenBuy');" href="{{ spektakl.link }}">Kup bilet</a>
 {% endif %}
 {% else %}
 Zapraszamy grupy zorganizowane do rezerwacji tel.
