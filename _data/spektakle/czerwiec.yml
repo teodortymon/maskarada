@@ -2,6 +2,14 @@
 title: Czerwiec
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- data: 2022-06-20 11:00:00 +0200
+  tytul: Królowa Myszy
+  link: "-"
+  manual_price: false
+- data: 2022-06-19 12:30:00 +0200
+  tytul: Królowa Myszy
+  link: "-"
+  manual_price: false
 - data: 2022-06-06 11:00:00 +0200
   tytul: Calineczka
   link: "-"
