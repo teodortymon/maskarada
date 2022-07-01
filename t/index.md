@@ -7,7 +7,7 @@ layout: t
 
 Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą pory roku, w magicznym drzewie domki swoje mają. Z Matką Naturą opiekują się zwierzątkami. I Ty spotkasz leśne zwierzątka, małe robaczki, ptaszki i jeże. Wróżka z Matką Naturą magią otulą świat cały a mali widzowie zanurzą się w teatralną magię wyczarowaną na scenie - światłem, dźwiękiem, muzyką i sami wezmą udział w teatralnej zabawie. Spektakl inspirowany Snem Nocy Letniej Williama Shakespeare'a i wierszami Leopolda Staffa.
 
-<br /> Dla dzieci od 1 do 6 lat i całej rodziny. <br /> Czas trwania 55 minut <br /> Premiera 7.11.2021 <br />
+<br /> Dla dzieci od 1 do 6 lat i całej rodziny. <br /> Czas trwania około 55 minut <br /> Premiera 7.11.2021 <br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/02LBv_25oyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 
@@ -26,8 +26,7 @@ Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą p
 
 Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna bajka o czarach, królewnie i czekoladzie. Opowiedziana przez aktorów i marionetki do muzyki “Dziadka do orzechów” Czajkowskiego. Magiczny świat zamknięty w małej teatralnej scenie wzorowanej na XVIII wiecznym włoskim teatrze marionetkowym, ożywiony błyskotliwą grą aktorów przeniesie nas na dwór królewski, gdzie harcują myszy.
 
-<br /> Dla dzieci od 2 do 8 lat i całej rodziny. <br /> Czas trwania 50 minut <br /> Premiera 17.10.2021
-
+<br /> Dla dzieci od 2 do 8 lat i całej rodziny. <br /> Czas trwania około 50 minut <br /> Premiera 17.10.2021
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9LHmJW0_6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 
@@ -40,7 +39,6 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 </tr>
 </table>
 <br />
-
 
 <ul class="photos">
 {% for i in (1..3) %}
@@ -59,7 +57,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 Śnieżny show to spektakl pełen tańca i śpiewu wciągający widzów w zimową magię. Będziemy pomagać muzycznym Śnieżynkom, brać udział w poszukiwaniu Zapomnianego Śnieżnego Skarbca i tworzyć własny Zimowy Musical. Otwórz się na zimową magię gdzie wszystko lśni, skrzy się i dźwięczy.
 
-<br /> Dla widzów od 1.5 roku do 99 lat. <br /> Czas trwania: 45 minut <br /> Premiera: grudzień. <br /><br />
+<br /> Dla widzów od 1.5 roku do 99 lat. <br /> Czas trwania około 45 minut <br /> Premiera: grudzień. <br /><br />
 
 <ul class="photos">
 {% for i in (1..4) %}
@@ -88,10 +86,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń. Będziemy łowić rybki, wypowiadać życzenia, poznamy mądrą Złotą Rybkę, a wokół nas będzie szumiące morze i śpiewające ptaki.
 
-<br /> Dla dzieci od 1,5 do 8 lat.
-<br /> Czas trwania: 45 minut
-<br /> Premiera 28.10.2018.
-<br /><br />
+<br /> Dla dzieci od 1,5 do 8 lat. <br /> Czas trwania około 45 minut <br /> Premiera 28.10.2018. <br /><br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I6uIPXobj9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 
@@ -127,7 +122,7 @@ Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie
 
 Dla dzieci od 1,5 do 6 lat.
 
-Czas trwania: 45 minut
+Czas trwania około 45 minut
 
 Premiera 5.11.2017
 
@@ -178,7 +173,7 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FjIP1sC9Yxw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br />
 
-<br /> <br /> Czas trwania: 45minut. <br />Przedstawienie dla dzieci od 4 lat do 8 lat
+<br /> <br /> Czas trwania około 45 minut. <br />Przedstawienie dla dzieci od 4 lat do 8 lat
 
 <br />Premiera: 25 wrzesień 2016 <br /><br />
 
@@ -222,10 +217,7 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <br />
 <br />
 
-<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Urodziny Turli i Taja</ul></h2>
-<a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Urodziny Turili i Taja" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
-<p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania 45 minut.<br /> Premiera: maj 2016
-<br /><br />
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Urodziny Turli i Taja</ul></h2> <a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Urodziny Turili i Taja" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a> <p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania około 45 minut.<br /> Premiera: maj 2016 <br /><br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XyaKJ2pxhyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
@@ -304,27 +296,8 @@ Joanna Pietrońska<br />
 A także objaśni nam różne zjawiska pogodowe i pokaże jak ważne jest czyste środowisko.
 Rezolutna Chmurka i bohaterski Bratek zapraszają na interaktywny muzyczny spektakl w
 chmurach. Przekonacie się, że przyjaźń może przezwyciężyć wszelkie kłopoty.
-Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania spektaklu - 45 minut.</p>
-<br />Premiera 26 październik 2014
-<br /><br />
-<table border="0">
-<tr>
-<td><strong>Tekst</strong><br />Pola Wójcik<br /></td>
-<td><strong>Występują</strong><br />Justyna Gumienna / Magdalena Pawelec<br />Michał Węgrzyński / Jerzy Dowgiałło<br /><br /></td>
-</tr>
-<tr>
-<td><strong>Konsultacja reżyserska</strong><br />Katarzyna Kawalec<br /></td>
-<td><strong>Multimedia</strong><br />Jan Falba<br /><br /></td>
-</tr>
-<tr>
-<td><strong>Muzyka</strong><br />Zuzanna Całka</td>
-<td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
-</tr>
-</table>
-<br />
-<ul class="photos">
-<a id="single_image" rel="5" href="lay/img/bratek/large/1.jpg"><img src="lay/img/bratek/small/1.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/2.jpg"><img src="lay/img/bratek/small/2.jpg"/></a>
+
+ Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania około 45 minut.</p> <br />Premiera 26 październik 2014 <br /><br /> <table border="0"> <tr> <td><strong>Tekst</strong><br />Pola Wójcik<br /></td> <td><strong>Występują</strong><br />Justyna Gumienna / Magdalena Pawelec<br />Michał Węgrzyński / Jerzy Dowgiałło<br /><br /></td> </tr> <tr> <td><strong>Konsultacja reżyserska</strong><br />Katarzyna Kawalec<br /></td> <td><strong>Multimedia</strong><br />Jan Falba<br /><br /></td> </tr> <tr> <td><strong>Muzyka</strong><br />Zuzanna Całka</td> <td><strong>Scenografia</strong><br />Małgorzata Domańska</td> </tr> </table> <br /> <ul class="photos"> <a id="single_image" rel="5" href="lay/img/bratek/large/1.jpg"><img src="lay/img/bratek/small/1.jpg"/></a> <a id="single_image" rel="5" _ref="lay/img/bratek/large/2.jpg"><img src="lay/img/bratek/small/2.jpg"/></a>
 <a id="single_image" rel="5" href="lay/img/bratek/large/3.jpg"><img src="lay/img/bratek/small/3.jpg"/></a>
 <a id="single_image" rel="5" href="lay/img/bratek/large/4.jpg"><img src="lay/img/bratek/small/4.jpg"/></a>
 <a id="single_image" rel="5" href="lay/img/bratek/large/5.jpg"><img src="lay/img/bratek/small/5.jpg"/></a>
@@ -337,7 +310,7 @@ Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania spektaklu - 45 minut.</p>
 <br />
 <br />
 <br />
-<br />
+_<br />
 
 <h2 style="text-shadow: 2px 2px rgb(208, 176, 33)"><ul class="photos">Jaś, Małgosia i piernikowa kraina</ul></h2>
 <br />
@@ -346,7 +319,7 @@ Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania spektaklu - 45 minut.</p>
 Zapraszamy dzieci na warsztaty teatralno plastyczne. Wysłuchamy inscenizowanej bajki "Jaś i Małgosia" w scenerii starej piekarni. Zbudujemy domki z "piernika", wykonamy maski i kostiumy. Mali widzowie zamienią się w motylki, żabki, koniki i ptaszki. Pomogą Małgosi i Jasiowi w ich wędrówce przez las i wezmą udział w etiudach scenicznych. A gdy znajdą się już w piernikowej krainie, ozdobią serca dla mam.
 <br />Warsztaty pomogą zrozumieć dzieciom jak ważny jest dźwięk, kostium i dekoracja w teatrze. Dzieci same zbudują dekorację, będą mogły wcielić się w role zwierzątek i wziąć udział w krótkich etiudach. Rodziców zapraszamy do pomocy w tworzeniu dekoracji i kostiumów.<br /><br />
 Warsztaty dla dzieci w wieku od 2 lat <br />
-Czas trwania - ok. półtorej godziny <br />
+Czas trwania około półtorej godziny <br />
 Cena biletu dla dziecka 30zł, dorosły 20zł <br />
 <br /><br />
 <table border="0">
