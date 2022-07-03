@@ -1,12 +1,4 @@
 ---
 title: Maj
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar:
-- data: 2022-05-09T09:45:00.000+02:00
-  tytul: Królowa Myszy
-  link: "-"
-  manual_price: false
-- data: 2022-05-08T12:30:00.000+02:00
-  tytul: Królowa Myszy
-  link: https://ewejsciowki.pl/embedded/rezerwacja/217753
-  manual_price: false
+repertuar: []
