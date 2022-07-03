@@ -453,21 +453,10 @@ Premiera: 7 grudzień 2013
 
 <br /><br /><br /><br />
 
-<h2 style="text-shadow: 2px 2px #ffe100">Księżniczka na ziarnku grochu</h2>
-<br />
-<a id="single_image" href="lay/img/plakat_big.jpg"><img src="lay/img/plakat_mini.png" alt="Księżniczka na ziarnku grochu" style="float:left;"/></a>
-<p>
-Czy pamiętacie bajkę o księżniczce, której prawdziwość zostaje poddana próbie za pomocą podłożonego - pod sterty miękkich poduszek i kołder - ziarnka grochu?
-Opowiedział  ją pierwszy Christian Andersen. Występują w niej Król i Królowa. Jest w niej też Młody Książę, który szuka prawdziwej Księżniczki i… miłości też najprawdziwszej.
-W spektaklu zobaczymy wszystkie postacie o których mowa, w pięknych kostiumach przypominających dwór francuski. Będziemy odtwarzać historię konkursu piękności, w którym wygra Pirlipatka i będzie tańczyć wyrafinowanego menueta, a nawet rapować…
-Zapraszamy wszystkie dzieci, które lubią bajki  opowiedziane pięknymi obrazami i chcą poznać  historię Pirlipatki i Księcia.
-<br /><br />
-Przedstawienie trwa 50 minut bez przerwy.
-<br />
-Przedstawienie dla dzieci w wieku od 4 do 12 lat
+<h2 style="text-shadow: 2px 2px #ffe100">Księżniczka na ziarnku grochu</h2> <br /> <a id="single_image" href="lay/img/plakat_big.jpg"><img src="lay/img/plakat_mini.png" alt="Księżniczka na ziarnku grochu" style="float:left;"/></a> <p> Czy pamiętacie bajkę o księżniczce, której prawdziwość zostaje poddana próbie za pomocą podłożonego - pod sterty miękkich poduszek i kołder - ziarnka grochu? Opowiedział  ją pierwszy Christian Andersen. Występują w niej Król i Królowa. Jest w niej też Młody Książę, który szuka prawdziwej Księżniczki i… miłości też najprawdziwszej. W spektaklu zobaczymy wszystkie postacie o których mowa, w pięknych kostiumach przypominających dwór francuski. Będziemy odtwarzać historię konkursu piękności, w którym wygra Pirlipatka i będzie tańczyć wyrafinowanego menueta, a nawet rapować… Zapraszamy wszystkie dzieci, które lubią bajki  opowiedziane pięknymi obrazami i chcą poznać  historię Pirlipatki i Księcia. <br /><br /> P_zedstawienie trwa około 50 minut bez przerwy. <br /> Przedstawienie_ rekomendowane dla dzieci w w_eku od 4 do 12 lat
 <br ><br />
 Premiera: 13 październik 2013
-<br /><br />
+_<br /><br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fBmbJFhO638" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
@@ -574,16 +563,7 @@ Zapraszamy maluchy na kameralny spektakl, w którym spotkają pszczółki, ślim
 
 </tr>
 
-<tr>
-<td>Ewa Tucholska<br />Zbigniew Kozłowski</td>
-<td>Małgorzata Domańska<br />Ewa Tucholska<br />Tomasz Piątkowski</td>
-</tr>
-</table>
-<br /><strong>Muzyka</strong><br />Krzysztof Jaszczak <br /><br />
-Przedstawienie trwa 30 minut oraz 15 minut zabawy z aktorami. <br />
-Przedstawienie dla dzieci w wieku od 1,5 roku do 5 lat.<br /><br />
-Premiera: 12 październik 2013<br /><br />
-<a id="single_image" href="lay/img/plakat_big2.jpg"><img src="lay/img/plakat_mini2.png" alt="Co w trawie bzyczy?"/></a>
+<tr> <td>Ewa Tucholska<br />Zbigniew Kozłowski</td> <td>Małgorzata Domańska<br />Ewa Tucholska<br />Tomasz Piątkowski</td> </tr> </table> <br /><strong>Muzyka</strong><br />Krzysztof Jaszczak <br /><br /> Przedstawienie trwa około 30 minut oraz 15 minut zabawy z aktorami. <br /> Przedstawienie rekomendowane dla dzieci w wieku od 1,5 roku do 5 lat.<br /><br /> Premiera: 12 październik 2013<br /><br /> <a id="single_image" href="lay/img/plakat_big2.jpg"><img _rc="lay/img/plakat_mini2.png" alt="Co w trawie bzyczy?"/></a>_
 <br /><br />
 
 <ul class="photos">
