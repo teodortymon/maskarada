@@ -31,7 +31,7 @@ Oferujemy kupno biletów na prezent w kasie teatru.
 ### Informacje dodatkowe
 
 Miejsca na widowni są nienumerowane  
-Widownia ma 120 miejsc
+Widownia ma 90 miejsc
 
 Bilety można zwrócić lub przełożyć na inny termin  
 najpóźniej 3 dni przed datą przedstawienia

@@ -1,13 +1,14 @@
 ---
 layout: t
-
 ---
+
 ## Kontakt
 
 **SCENA**
 
 Zapraszamy do nowego, pięknego miejsca<br/>  
-Pałac Staszica ul. Nowy Świat 72<br />  
+Pałac Staszica ul. Nowy Świat 72<br />
+Wejście od strony placu przy Pomniku Mikołaja Kopernika<br />  
 Sala pod Kopułą PAN, 3 piętro-schodami lub windą
 
 <br/><br/><b/>
@@ -19,7 +20,7 @@ Polecamy nasze zimowe i mikołajkowe przedstawienia i animacje.
 Rezerwacji biletów można dokonać telefonicznie pod numerem:  
 <a href="tel:501-027-278" onClick="fbq('track', 'CallFromContact');"> 501 027 278</a> lub [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki](https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333)
 
-Bilety online dostępne do dwóch godzin przed rozpoczęciem spektaklu, później w kasie.
+Bilety online dostępne do dwóch godzin przed rozpoczęciem spektaklu, później w kasie (płatność gotówką).
 
 Kasa czynna godzinę przed spektaklem.
 

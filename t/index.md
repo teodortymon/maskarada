@@ -1,17 +1,17 @@
 ---
 layout: t
-
 ---
+
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Magiczne Drzewko Wróżek</ul></h2>
 <a id="single_image" href="lay/img/drzewko_big.jpg"><img src="lay/img/drzewko_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
 Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą pory roku, w magicznym drzewie domki swoje mają. Z Matką Naturą opiekują się zwierzątkami. I Ty spotkasz leśne zwierzątka, małe robaczki, ptaszki i jeże. Wróżka z Matką Naturą magią otulą świat cały a mali widzowie zanurzą się w teatralną magię wyczarowaną na scenie - światłem, dźwiękiem, muzyką i sami wezmą udział w teatralnej zabawie. Spektakl inspirowany Snem Nocy Letniej Williama Shakespeare'a i wierszami Leopolda Staffa.
 
-<br /> Dla dzieci od 1 do 6 lat i całej rodziny. <br /> Czas trwania około 55 minut <br /> Premiera 7.11.2021 <br />
+<br /> Dla dzieci od 1 do 6 lat i całej rodziny. <br /> Czas trwania spektaklu i animacji około 55 minut <br /> Premiera 7.11.2021 <br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/02LBv_25oyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 
-<table border="0"> <tr> <td><strong>Grają</strong><br />Joanna Pietrońska <br /> Patrycja Potyralska </td> <td><strong>Muzyka</strong><br />Krzysztof Gumienny</td> <td><strong>Opracowanie muzyczne</strong><br />Przemko Janiszko</td> <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Tekst</strong><br />Pola Wójcik</td> <td><strong>Wiersze</strong><br />Leopold Staff i Williama Shakespeare'a ze Snu Nocy Letniej</td> </tr> </table>
+<table border="0"> <tr> <td><strong>Grają</strong><br />Joanna Pietrońska, <br /> Patrycja Potyralska,  <br /> Przemko Janiszko </td> <td><strong>Muzyka</strong><br />Krzysztof Gumienny</td> <td><strong>Opracowanie muzyczne</strong><br />Przemko Janiszko</td> <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Tekst</strong><br />Pola Wójcik</td> <td><strong>Wiersze</strong><br />Leopolda Staffa i Williama Shakespeare'a ze Snu Nocy Letniej</td> </tr> </table>
 
 <ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="drzewko" href="lay/img/drzewko/large/{{ i }}.jpg"><img src="lay/img/drzewko/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
@@ -32,7 +32,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 <table border="0">
 <tr>
-<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat </td>
+<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat <br /> Przemko Janiszko </td>
 <td><strong>Muzyka</strong><br />Piotr Czajkowski<br />Krzysztof Jaszczak</td>
 <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td>
 <td><strong>Tekst</strong><br />Pola Wójcik</td>
@@ -68,9 +68,9 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <table border="0">
 <tr>
 <td><strong>Muzyka</strong><br />Zuzanna Calka</td>
-<td><strong>Występują</strong><br />Anna Bakalarska <br /> Pamela Adamik / Karolina Gwóźdź </td>
+<td><strong>Występują</strong><br />Katarzyna Mazur <br /> Pamela Adamik / Karolina Gwóźdź </td>
 <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
-<td><strong>Choreografia</strong><br />Anna Bakalarska</td>
+<td><strong>Choreografia</strong><br />Katarzyna Mazur</td>
 </tr>
 </table>
 <br />
@@ -180,7 +180,7 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <table border="0">
 <tr>
 <td><strong>Teksty piosenek</strong><br />Pola Wójcik <br /> Jan Falba<br /></td>
-<td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok</td>
+<td><strong>Występują</strong><br />Pamela Adamik/Joanna Pietrońska <br /> Marek Grabiniok/Przemko Janiszko</td>
 </tr>
 <tr>
 <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
@@ -217,7 +217,12 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <br />
 <br />
 
-<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Urodziny Turli i Taja</ul></h2> <a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg"><img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Urodziny Turili i Taja" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a> <p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania około 45 minut.<br /> Premiera: maj 2016 <br /><br />
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Urodziny Turli i Taja</ul></h2>
+
+<a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg">
+<!-- <img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Urodziny Turili i Taja" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a> -->
+
+ <p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania około 45 minut.<br /> Premiera: maj 2016 <br /><br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XyaKJ2pxhyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
@@ -236,8 +241,9 @@ Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji p
 <br />
 <strong>Występują</strong>
 <br /><br />
-Anna Bakalarska<br />
+Katarzyna Mazur<br />
 Joanna Pietrońska<br />
+Przemko Janiszko<br />
 
 <br /><br />
 
@@ -297,7 +303,7 @@ A także objaśni nam różne zjawiska pogodowe i pokaże jak ważne jest czyste
 Rezolutna Chmurka i bohaterski Bratek zapraszają na interaktywny muzyczny spektakl w
 chmurach. Przekonacie się, że przyjaźń może przezwyciężyć wszelkie kłopoty.
 
- Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania około 45 minut.</p> <br />Premiera 26 październik 2014 <br /><br /> <table border="0"> <tr> <td><strong>Tekst</strong><br />Pola Wójcik<br /></td> <td><strong>Występują</strong><br />Justyna Gumienna / Magdalena Pawelec<br />Michał Węgrzyński / Jerzy Dowgiałło<br /><br /></td> </tr> <tr> <td><strong>Konsultacja reżyserska</strong><br />Katarzyna Kawalec<br /></td> <td><strong>Multimedia</strong><br />Jan Falba<br /><br /></td> </tr> <tr> <td><strong>Muzyka</strong><br />Zuzanna Całka</td> <td><strong>Scenografia</strong><br />Małgorzata Domańska</td> </tr> </table> <br /> <ul class="photos"> <a id="single_image" rel="5" href="lay/img/bratek/large/1.jpg"><img src="lay/img/bratek/small/1.jpg"/></a> <a id="single_image" rel="5" _ref="lay/img/bratek/large/2.jpg"><img src="lay/img/bratek/small/2.jpg"/></a>
+Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania około 45 minut.</p> <br />Premiera 26 październik 2014 <br /><br /> <table border="0"> <tr> <td><strong>Tekst</strong><br />Pola Wójcik<br /></td> <td><strong>Występują</strong><br />Justyna Gumienna / Magdalena Pawelec<br />Michał Węgrzyński / Jerzy Dowgiałło<br /><br /></td> </tr> <tr> <td><strong>Konsultacja reżyserska</strong><br />Katarzyna Kawalec<br /></td> <td><strong>Multimedia</strong><br />Jan Falba<br /><br /></td> </tr> <tr> <td><strong>Muzyka</strong><br />Zuzanna Całka</td> <td><strong>Scenografia</strong><br />Małgorzata Domańska</td> </tr> </table> <br /> <ul class="photos"> <a id="single_image" rel="5" href="lay/img/bratek/large/1.jpg"><img src="lay/img/bratek/small/1.jpg"/></a> <a id="single_image" rel="5" ref="lay/img/bratek/large/2.jpg"><img src="lay/img/bratek/small/2.jpg"/></a>
 <a id="single_image" rel="5" href="lay/img/bratek/large/3.jpg"><img src="lay/img/bratek/small/3.jpg"/></a>
 <a id="single_image" rel="5" href="lay/img/bratek/large/4.jpg"><img src="lay/img/bratek/small/4.jpg"/></a>
 <a id="single_image" rel="5" href="lay/img/bratek/large/5.jpg"><img src="lay/img/bratek/small/5.jpg"/></a>
@@ -306,15 +312,16 @@ chmurach. Przekonacie się, że przyjaźń może przezwyciężyć wszelkie kłop
 <a id="single_image" rel="5" href="lay/img/bratek/large/11.jpg"><img src="lay/img/bratek/small/11.jpg"/></a>
 <a id="single_image" rel="5" href="lay/img/bratek/large/12.jpg"><img src="lay/img/bratek/small/12.jpg"/></a>
 <a id="single_image" rel="5" href="lay/img/bratek/large/13.jpg"><img src="lay/img/bratek/small/13.jpg"/></a>
+
 </ul>
 <br />
 <br />
 <br />
-_<br />
+<br />
 
 <h2 style="text-shadow: 2px 2px rgb(208, 176, 33)"><ul class="photos">Jaś, Małgosia i piernikowa kraina</ul></h2>
 <br />
-<a id="single_image" href="lay/img/piernik_big.jpg"><img src="lay/img/piernik_min.jpg" alt="Calineczka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+<a id="single_image" href="lay/img/piernik_big.jpg"><img src="lay/img/piernik_min.jpg" alt="jas_malgosia" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 <p>
 Zapraszamy dzieci na warsztaty teatralno plastyczne. Wysłuchamy inscenizowanej bajki "Jaś i Małgosia" w scenerii starej piekarni. Zbudujemy domki z "piernika", wykonamy maski i kostiumy. Mali widzowie zamienią się w motylki, żabki, koniki i ptaszki. Pomogą Małgosi i Jasiowi w ich wędrówce przez las i wezmą udział w etiudach scenicznych. A gdy znajdą się już w piernikowej krainie, ozdobią serca dla mam.
 <br />Warsztaty pomogą zrozumieć dzieciom jak ważny jest dźwięk, kostium i dekoracja w teatrze. Dzieci same zbudują dekorację, będą mogły wcielić się w role zwierzątek i wziąć udział w krótkich etiudach. Rodziców zapraszamy do pomocy w tworzeniu dekoracji i kostiumów.<br /><br />
@@ -347,14 +354,14 @@ Cena biletu dla dziecka 30zł, dorosły 20zł <br />
 Zapraszamy małych widzów do magicznego świata pełnego barw, światła i muzyki. Razem z Calineczką poznacie Ropuchę, Motyla, Myszkę, Kreta i Jaskółkę. Impresja teatralna na podstawie bajki Andersena wciąga widzów do zabawy, gdzie zaciera się granica między światem realnym, a fantastycznym.
 </p>
 Przedstawienie dla dzieci w wieku od 1,5 do 10 lat <br />
-Przedstawienie trwa 45 minut. <br /><br />
+Przedstawienie trwa około 45 minut. <br /><br />
 Premiera: 30 marzec 2014 <br />
 <br /><br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aq-JZwyPaGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
 <table border="0">
 <tr>
-<td><strong>Występują</strong><br />Agnieszka Senderowska<br />Monika Głowienko / Anna Bakalarska<br />Adam Biernat<br /><br /></td>
+<td><strong>Występują</strong><br />Katarzyna Mazur/Joanna Pietrońska<br />Adam Biernat<br /><br /></td>
 <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
 </tr>
 <tr>
@@ -395,7 +402,7 @@ Czy zdążą na czas?
 <br />
 Elfy poproszą dzieci o pomoc w pakowaniu i w zimowych zabawach.
 <br /><br />
-Przedstawienie trwa 55 minut.
+Przedstawienie trwa około 55 minut.
 <br />
 Przedstawienie dla dzieci w wieku od 2 do 99 lat
 <br /><br />
@@ -413,7 +420,7 @@ Premiera: 7 grudzień 2013
 <td><strong>Reżyseria</strong><br />Ewa Tucholska i Tomasz Piątkowski</td>
 </tr>
 <tr>
-<td><strong>Elfy</strong><br />Ewa Tucholska<br />Adam Biernat/<br />Zbigniew Kozłowski/<br />Tomasz Piątkowski<br /><br /></td>
+<td><strong>Elfy</strong><br />Ewa Tucholska<br />Adam Biernat<br />Zbigniew Kozłowski<br />Joanna Pietrońska<br /></td>
 <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
 </tr>
 <tr>
@@ -453,10 +460,10 @@ Premiera: 7 grudzień 2013
 
 <br /><br /><br /><br />
 
-<h2 style="text-shadow: 2px 2px #ffe100">Księżniczka na ziarnku grochu</h2> <br /> <a id="single_image" href="lay/img/plakat_big.jpg"><img src="lay/img/plakat_mini.png" alt="Księżniczka na ziarnku grochu" style="float:left;"/></a> <p> Czy pamiętacie bajkę o księżniczce, której prawdziwość zostaje poddana próbie za pomocą podłożonego - pod sterty miękkich poduszek i kołder - ziarnka grochu? Opowiedział  ją pierwszy Christian Andersen. Występują w niej Król i Królowa. Jest w niej też Młody Książę, który szuka prawdziwej Księżniczki i… miłości też najprawdziwszej. W spektaklu zobaczymy wszystkie postacie o których mowa, w pięknych kostiumach przypominających dwór francuski. Będziemy odtwarzać historię konkursu piękności, w którym wygra Pirlipatka i będzie tańczyć wyrafinowanego menueta, a nawet rapować… Zapraszamy wszystkie dzieci, które lubią bajki  opowiedziane pięknymi obrazami i chcą poznać  historię Pirlipatki i Księcia. <br /><br /> P_zedstawienie trwa około 50 minut bez przerwy. <br /> Przedstawienie_ rekomendowane dla dzieci w w_eku od 4 do 12 lat
+<h2 style="text-shadow: 2px 2px #ffe100">Księżniczka na ziarnku grochu</h2> <br /> <a id="single_image" href="lay/img/plakat_big.jpg"><img src="lay/img/plakat_mini.png" alt="Księżniczka na ziarnku grochu" style="float:left;"/></a> <p> Czy pamiętacie bajkę o księżniczce, której prawdziwość zostaje poddana próbie za pomocą podłożonego - pod sterty miękkich poduszek i kołder - ziarnka grochu? Opowiedział  ją pierwszy Christian Andersen. Występują w niej Król i Królowa. Jest w niej też Młody Książę, który szuka prawdziwej Księżniczki i… miłości też najprawdziwszej. W spektaklu zobaczymy wszystkie postacie o których mowa, w pięknych kostiumach przypominających dwór francuski. Będziemy odtwarzać historię konkursu piękności, w którym wygra Pirlipatka i będzie tańczyć wyrafinowanego menueta, a nawet rapować… Zapraszamy wszystkie dzieci, które lubią bajki  opowiedziane pięknymi obrazami i chcą poznać  historię Pirlipatki i Księcia. <br /><br /> Przedstawienie trwa około 50 minut bez przerwy. <br /> Przedstawienie rekomendowane dla dzieci w wieku od 4 do 12 lat
 <br ><br />
 Premiera: 13 październik 2013
-_<br /><br />
+<br /><br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fBmbJFhO638" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
@@ -468,7 +475,7 @@ _<br /><br />
 </tr>
 
 <tr>
-<td><strong>Królowa, Księżniczka Pirlipatka</strong><br />Agnieszka Senderowska/ <br />Anna Bakalarska/<br />Ewa Tucholska<br /><br /></td>
+<td><strong>Królowa, Księżniczka Pirlipatka</strong><br />Patrycja Potyralska<br />Ewa Tucholska<br /><br /></td>
 <td><strong>Scenografia</strong> Małgorzata Domańska</td>
 </tr>
 
@@ -478,7 +485,7 @@ _<br /><br />
 </tr>
 
 <tr>
-<td><strong>Narrator</strong><br />Andrzej Malec</td>
+<td><strong>Narrator</strong><br />Andrzej Malec<br />Przemko Janiszko</td>
 <td><strong>Opracowanie filmowe i muzyczne</strong><br />Jan Falba</td>
 </tr>
 </table>
@@ -563,7 +570,10 @@ Zapraszamy maluchy na kameralny spektakl, w którym spotkają pszczółki, ślim
 
 </tr>
 
-<tr> <td>Ewa Tucholska<br />Zbigniew Kozłowski</td> <td>Małgorzata Domańska<br />Ewa Tucholska<br />Tomasz Piątkowski</td> </tr> </table> <br /><strong>Muzyka</strong><br />Krzysztof Jaszczak <br /><br /> Przedstawienie trwa około 30 minut oraz 15 minut zabawy z aktorami. <br /> Przedstawienie rekomendowane dla dzieci w wieku od 1,5 roku do 5 lat.<br /><br /> Premiera: 12 październik 2013<br /><br /> <a id="single_image" href="lay/img/plakat_big2.jpg"><img _rc="lay/img/plakat_mini2.png" alt="Co w trawie bzyczy?"/></a>_
+<tr> <td>Ewa Tucholska<br />Zbigniew Kozłowski</td> <td>Małgorzata Domańska<br />Ewa Tucholska<br />Tomasz Piątkowski</td> </tr> </table> <br /><strong>Muzyka</strong><br />Krzysztof Jaszczak <br /><br /> Przedstawienie trwa około 30 minut oraz 15 minut zabawy z aktorami. <br /> Przedstawienie rekomendowane dla dzieci w wieku od 1,5 roku do 5 lat.<br /><br /> Premiera: 12 październik 2013<br /><br />
+
+<a id="single_image" href="lay/img/plakat_big2.jpg"><img src="lay/img/plakat_mini2.png" alt="Co w trawie bzyczy?"/></a>
+
 <br /><br />
 
 <ul class="photos">
