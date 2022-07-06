@@ -2,6 +2,8 @@
 layout: t
 ---
 
+<i>Zapraszamy po przerwie letniej od września</i><br /><br />
+
 ## Kontakt
 
 **SCENA**
