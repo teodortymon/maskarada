@@ -1,20 +1,4 @@
 ---
 title: Czerwiec
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar:
-- data: 2022-06-04 14:30:00 +0200
-  tytul: Calineczka
-  link: https://ewejsciowki.pl/embedded/rezerwacja/221827
-  manual_price: false
-- data: 2022-06-26 12:30:00 +0200
-  tytul: Magiczne Drzewko Wróżek
-  link: https://ewejsciowki.pl/embedded/rezerwacja/217758
-  manual_price: false
-- data: 2022-06-06 11:00:00 +0200
-  tytul: Calineczka
-  link: "-"
-  manual_price: false
-- data: 2022-06-04 12:30:00 +0200
-  tytul: Calineczka
-  link: https://ewejsciowki.pl/embedded/rezerwacja/217756
-  manual_price: false
+repertuar: []
