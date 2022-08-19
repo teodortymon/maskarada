@@ -2,8 +2,6 @@
 layout: t
 ---
 
-<i>Zapraszamy po przerwie letniej od września</i><br /><br />
-
 ## Kontakt
 
 **SCENA**
@@ -17,16 +15,9 @@ Sala pod Kopułą PAN, 3 piętro-schodami lub windą
 Organizujemy również spektakle dla firm. <br />
 Polecamy nasze zimowe i mikołajkowe przedstawienia i animacje.
 
-**Rezerwacja biletów**
-
-Rezerwacji biletów można dokonać telefonicznie pod numerem:  
-<a href="tel:501-027-278" onClick="fbq('track', 'CallFromContact');"> 501 027 278</a> lub [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki](https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333)
-
-Bilety online dostępne do dwóch godzin przed rozpoczęciem spektaklu, później w kasie (płatność gotówką).
-
-Kasa czynna godzinę przed spektaklem.
-
-teatr.maskarada@gmail.com
+Kasa czynna godzinę przed spektaklem. <br />
+<a href="tel:501-027-278" onClick="fbq('track', 'CallFromContact');"> 501 027 278</a> <br />
+teatr.maskarada@gmail.com <br />
 
 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Teatr+Maskarada+dla+dzieci&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU" allowfullscreen></iframe>
 
