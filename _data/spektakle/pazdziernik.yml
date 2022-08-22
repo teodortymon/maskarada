@@ -36,7 +36,7 @@ repertuar:
   manual_price: false
 - data: 2022-10-09T12:30:00.000+02:00
   tytul: Wesołe Koty
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/226931
   manual_price: false
 - data: 2022-10-03T11:00:00.000+02:00
   tytul: Magiczne Drzewko Wróżek
