@@ -70,7 +70,6 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <td><strong>Muzyka</strong><br />Zuzanna Calka</td>
 <td><strong>Występują</strong><br />Katarzyna Mazur <br /> Pamela Adamik / Karolina Gwóźdź </td>
 <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
-<td><strong>Choreografia</strong><br />Katarzyna Mazur</td>
 </tr>
 </table>
 <br />
@@ -327,7 +326,7 @@ Zapraszamy dzieci na warsztaty teatralno plastyczne. Wysłuchamy inscenizowanej 
 <br />Warsztaty pomogą zrozumieć dzieciom jak ważny jest dźwięk, kostium i dekoracja w teatrze. Dzieci same zbudują dekorację, będą mogły wcielić się w role zwierzątek i wziąć udział w krótkich etiudach. Rodziców zapraszamy do pomocy w tworzeniu dekoracji i kostiumów.<br /><br />
 Warsztaty dla dzieci w wieku od 2 lat <br />
 Czas trwania około półtorej godziny <br />
-Cena biletu dla dziecka 30zł, dorosły 20zł <br />
+Cena biletu dla dziecka 39zł, dorosły 25zł <br />
 <br /><br />
 <table border="0">
 <tr>
@@ -420,7 +419,7 @@ Premiera: 7 grudzień 2013
 <td><strong>Reżyseria</strong><br />Ewa Tucholska i Tomasz Piątkowski</td>
 </tr>
 <tr>
-<td><strong>Elfy</strong><br />Ewa Tucholska<br />Adam Biernat<br />Zbigniew Kozłowski<br />Joanna Pietrońska<br /></td>
+<td><strong>Elfy</strong><br />Ewa Tucholska<br />Adam Biernat<br />Zbigniew Kozłowski<br />Joanna Pietrońska<br />Przemko Janiszko<br /></td>
 <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
 </tr>
 <tr>
