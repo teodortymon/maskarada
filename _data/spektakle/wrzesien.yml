@@ -1,12 +1,4 @@
 ---
 title: Wrzesień
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar:
-- data: 2022-09-25T12:30:00.000+02:00
-  tytul: Calineczka
-  link: https://ewejsciowki.pl/embedded/rezerwacja/226928
-  manual_price: false
-- data: 2022-09-18T12:30:00.000+02:00
-  tytul: Królowa Myszy
-  link: https://ewejsciowki.pl/embedded/rezerwacja/226927
-  manual_price: false
+repertuar: []
