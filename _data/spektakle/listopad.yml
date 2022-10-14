@@ -44,7 +44,7 @@ repertuar:
   manual_price: false
 - data: 2022-11-20 12:00:00 +0100
   tytul: Królowa Myszy
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/230769
   manual_price: false
 - data: 2022-11-14 11:00:00 +0100
   tytul: Księżniczka na ziarnku grochu
