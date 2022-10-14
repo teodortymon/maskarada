@@ -28,7 +28,7 @@ repertuar:
   manual_price: false
 - data: 2022-11-20 14:00:00 +0100
   tytul: Królowa Myszy
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/230771
   manual_price: false
 - data: 2022-11-22 09:40:00 +0100
   tytul: Wesołe Koty
