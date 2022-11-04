@@ -2,18 +2,6 @@
 title: Październik
 date: '2018-12-11T00:16:55.000+00:00'
 repertuar:
-- data: 2022-10-17T11:00:00.000+02:00
-  tytul: Królowa Myszy
-  link: "-"
-  manual_price: false
-- data: 2022-10-16T16:00:00.000+02:00
-  tytul: Urodziny Turli i Taja
-  link: https://ewejsciowki.pl/embedded/rezerwacja/226934
-  manual_price: false
-- data: 2022-10-16T12:30:00.000+02:00
-  tytul: Królowa Myszy
-  link: https://ewejsciowki.pl/embedded/rezerwacja/226933
-  manual_price: false
 - data: 2022-10-10T11:00:00.000+02:00
   tytul: Wesołe Koty
   link: "-"
