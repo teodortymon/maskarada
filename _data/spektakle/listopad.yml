@@ -2,75 +2,79 @@
 title: Listopad
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
-- data: 2022-11-26 14:30:00 +0100
+- data: 2022-11-14 09:40:00 +0100
+  tytul: Księżniczka na ziarnku grochu
+  link: "-"
+  manual_price: false
+- data: 2022-11-26T14:30:00.000+01:00
   tytul: Calineczka
   link: https://ewejsciowki.pl/embedded/rezerwacja/230773
   manual_price: false
-- data: 2022-11-26 12:30:00 +0100
+- data: 2022-11-26T12:30:00.000+01:00
   tytul: Calineczka
   link: https://ewejsciowki.pl/embedded/rezerwacja/230772
   manual_price: false
-- data: 2022-11-13 14:00:00 +0100
+- data: 2022-11-13T14:00:00.000+01:00
   tytul: Księżniczka na ziarnku grochu
   link: https://ewejsciowki.pl/embedded/rezerwacja/230762
   manual_price: false
-- data: 2022-11-27 14:00:00 +0100
+- data: 2022-11-27T14:00:00.000+01:00
   tytul: Elfy i fabryka prezentów
   link: https://ewejsciowki.pl/embedded/rezerwacja/230777
   manual_price: false
-- data: 2022-11-19 15:30:00 +0100
+- data: 2022-11-19T15:30:00.000+01:00
   tytul: Urodziny Turli i Taja
   link: https://ewejsciowki.pl/embedded/rezerwacja/230768
   manual_price: false
-- data: 2022-11-19 12:00:00 +0100
+- data: 2022-11-19T12:00:00.000+01:00
   tytul: Wesołe Koty
   link: https://ewejsciowki.pl/embedded/rezerwacja/230767
   manual_price: false
-- data: 2022-11-20 14:00:00 +0100
+- data: 2022-11-20T14:00:00.000+01:00
   tytul: Królowa Myszy
   link: https://ewejsciowki.pl/embedded/rezerwacja/230771
   manual_price: false
-- data: 2022-11-22 09:40:00 +0100
+- data: 2022-11-22T09:40:00.000+01:00
   tytul: Wesołe Koty
   link: "-"
   manual_price: false
-- data: 2022-11-22 11:00:00 +0100
+- data: 2022-11-22T11:00:00.000+01:00
   tytul: Wesołe Koty
   link: "-"
   manual_price: false
-- data: 2022-11-21 11:00:00 +0100
+- data: 2022-11-21T11:00:00.000+01:00
   tytul: Królowa Myszy
   link: "-"
   manual_price: false
-- data: 2022-11-20 12:00:00 +0100
+- data: 2022-11-20T12:00:00.000+01:00
   tytul: Królowa Myszy
   link: https://ewejsciowki.pl/embedded/rezerwacja/230769
   manual_price: false
-- data: 2022-11-14 11:00:00 +0100
+- data: 2022-11-14T11:00:00.000+01:00
   tytul: Księżniczka na ziarnku grochu
   link: "-"
   manual_price: false
-- data: 2022-11-13 12:00:00 +0100
+- data: 2022-11-13T12:00:00.000+01:00
   tytul: Księżniczka na ziarnku grochu
   link: https://ewejsciowki.pl/embedded/rezerwacja/230761
   manual_price: false
-- data: 2022-11-06 14:30:00 +0100
+- data: 2022-11-06T14:30:00.000+01:00
   tytul: Magiczne Drzewko Wróżek
   link: https://ewejsciowki.pl/embedded/rezerwacja/230760
   manual_price: false
-- data: 2022-11-07 11:00:00 +0100
+- data: 2022-11-07T11:00:00.000+01:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2022-11-06 12:30:00 +0100
+- data: 2022-11-06T12:30:00.000+01:00
   tytul: Magiczne Drzewko Wróżek
   link: https://ewejsciowki.pl/embedded/rezerwacja/230759
   manual_price: false
-- data: 2022-11-27 12:00:00 +0100
+- data: 2022-11-27T12:00:00.000+01:00
   tytul: Elfy i fabryka prezentów
   link: https://ewejsciowki.pl/embedded/rezerwacja/230776
   manual_price: false
-- data: 2022-11-28 11:00:00 +0100
+- data: 2022-11-28T11:00:00.000+01:00
   tytul: Elfy i fabryka prezentów
   link: "-"
   manual_price: false
