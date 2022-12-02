@@ -1,7 +1,7 @@
 ---
 layout: t
-
 ---
+
 <link crossorigin="anonymous" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" rel="stylesheet">
 
 ## Repertuar
@@ -12,7 +12,7 @@ Gramy dla was w Pałacu Staszica przy **ul. Nowy Świat 72**
 
 <br/>
 <br/>
-{% assign miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+{% assign miesiace = "grudzien,styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad" | split: ',' %}
 {% for miesiac in miesiace %}
 
 {% if site.data.spektakle\[miesiac\].repertuar.size > 0 %}
