@@ -2,6 +2,10 @@
 title: Styczeń
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- data: 2023-01-09 09:30:00 +0100
+  tytul: Elfy i fabryka prezentów
+  link: "-"
+  manual_price: false
 - data: 2023-01-28 14:30:00 +0100
   tytul: Wesołe Koty
   link: "-"
