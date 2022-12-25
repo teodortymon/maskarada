@@ -24,7 +24,7 @@ repertuar:
   manual_price: false
 - data: 2023-01-28 12:30:00 +0100
   tytul: Wesołe Koty
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/236580
   manual_price: false
 - data: 2023-01-22T14:30:00.000+01:00
   tytul: Elfy i fabryka prezentów
