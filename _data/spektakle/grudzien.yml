@@ -1,12 +1,4 @@
 ---
 title: Grudzień
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar:
-- data: 2022-12-03T14:30:00.000+01:00
-  tytul: Elfy i fabryka prezentów
-  link: https://ewejsciowki.pl/embedded/rezerwacja/232994
-  manual_price: false
-- data: 2022-12-03T12:30:00.000+01:00
-  tytul: Elfy i fabryka prezentów
-  link: https://ewejsciowki.pl/embedded/rezerwacja/232993
-  manual_price: false
+repertuar: []
