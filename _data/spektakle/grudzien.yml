@@ -2,22 +2,6 @@
 title: Grudzień
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
-- data: 2022-12-18T14:00:00.000+01:00
-  tytul: Elfy i fabryka prezentów
-  link: https://ewejsciowki.pl/embedded/rezerwacja/232878
-  manual_price: false
-- data: 2022-12-18T12:00:00.000+01:00
-  tytul: Elfy i fabryka prezentów
-  link: https://ewejsciowki.pl/embedded/rezerwacja/232877
-  manual_price: false
-- data: 2022-12-17T16:00:00.000+01:00
-  tytul: Elfy i fabryka prezentów
-  link: https://ewejsciowki.pl/embedded/rezerwacja/232875
-  manual_price: false
-- data: 2022-12-17T11:30:00.000+01:00
-  tytul: Śnieżny show
-  link: https://ewejsciowki.pl/embedded/rezerwacja/232887
-  manual_price: false
 - data: 2022-12-13T09:30:00.000+01:00
   tytul: Elfy i fabryka prezentów
   link: "-"
