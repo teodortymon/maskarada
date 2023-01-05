@@ -2,6 +2,10 @@
 title: Luty
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- data: 2023-02-12 14:30:00 +0100
+  tytul: Śnieżny show
+  link: "-"
+  manual_price: false
 - data: 2023-02-01 12:30:00 +0100
   tytul: Śnieżny show
   link: "-"
