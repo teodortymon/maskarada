@@ -2,83 +2,83 @@
 title: Marzec
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
-- data: 2023-03-20 11:00:00 +0100
+- data: 2023-03-20T11:00:00.000+01:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2023-03-27 11:00:00 +0200
+- data: 2023-03-27T11:00:00.000+02:00
   tytul: Królowa Myszy
   link: "-"
   manual_price: false
-- data: 2023-03-27 09:30:00 +0200
+- data: 2023-03-27T09:30:00.000+02:00
   tytul: Królowa Myszy
   link: "-"
   manual_price: false
-- data: 2023-03-26 14:00:00 +0200
+- data: 2023-03-26T14:00:00.000+02:00
   tytul: Królowa Myszy
   link: "-"
   manual_price: false
-- data: 2023-03-26 12:00:00 +0200
+- data: 2023-03-26T12:00:00.000+02:00
   tytul: Królowa Myszy
   link: "-"
   manual_price: false
-- data: 2023-03-20 09:30:00 +0100
+- data: 2023-03-20T09:30:00.000+01:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2023-03-19 14:30:00 +0100
+- data: 2023-03-19T14:30:00.000+01:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2023-03-19 12:30:00 +0100
+- data: 2023-03-19T12:30:00.000+01:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2023-03-18 12:00:00 +0100
+- data: 2023-03-18T12:00:00.000+01:00
   tytul: Urodziny Turli i Taja
   link: "-"
   manual_price: false
-- data: 2023-03-13 09:30:00 +0100
+- data: 2023-03-13T09:30:00.000+01:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2023-03-13 11:00:00 +0100
+- data: 2023-03-13T11:00:00.000+01:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2023-03-12 14:30:00 +0100
+- data: 2023-03-12T14:30:00.000+01:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2023-03-12 12:30:00 +0100
+- data: 2023-03-12T12:30:00.000+01:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2023-03-07 09:30:00 +0100
+- data: 2023-03-07T09:30:00.000+01:00
   tytul: Wesołe Koty
   link: "-"
   manual_price: false
-- data: 2023-03-07 11:00:00 +0100
+- data: 2023-03-07T11:00:00.000+01:00
   tytul: Wesołe Koty
   link: "-"
   manual_price: false
-- data: 2023-03-06 11:00:00 +0100
+- data: 2023-03-06T11:00:00.000+01:00
   tytul: Calineczka
   link: "-"
   manual_price: false
-- data: 2023-03-06 09:30:00 +0100
+- data: 2023-03-06T09:30:00.000+01:00
   tytul: Calineczka
   link: "-"
   manual_price: false
-- data: 2023-03-05 14:30:00 +0100
+- data: 2023-03-05T14:30:00.000+01:00
   tytul: Calineczka
   link: "-"
   manual_price: false
-- data: 2023-03-05 12:30:00 +0100
+- data: 2023-03-05T12:30:00.000+01:00
   tytul: Calineczka
   link: "-"
   manual_price: false
 - tytul: Królowa Myszy
-  data: 2023-03-04 12:00:00 +0100
-  link: "-"
+  data: 2023-03-04T12:00:00.000+01:00
+  link: https://ewejsciowki.pl/embedded/rezerwacja/239862
   manual_price: false
