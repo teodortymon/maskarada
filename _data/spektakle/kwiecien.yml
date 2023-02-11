@@ -2,6 +2,10 @@
 title: Kwiecień
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- data: 2023-04-02 14:00:00 +0200
+  tytul: Księżniczka na ziarnku grochu
+  link: "-"
+  manual_price: false
 - data: 2023-04-02 12:00:00 +0200
   tytul: Księżniczka na ziarnku grochu
   link: "-"
