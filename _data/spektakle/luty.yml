@@ -1,20 +1,4 @@
 ---
 title: Luty
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar:
-- data: 2023-02-06T09:30:00.000+01:00
-  tytul: Księżniczka na ziarnku grochu
-  link: "-"
-  manual_price: false
-- data: 2023-02-05T14:00:00.000+01:00
-  tytul: Księżniczka na ziarnku grochu
-  link: https://ewejsciowki.pl/embedded/rezerwacja/237915
-  manual_price: false
-- data: 2023-02-04T14:30:00.000+01:00
-  tytul: Magiczne Drzewko Wróżek
-  link: https://ewejsciowki.pl/embedded/rezerwacja/237030
-  manual_price: false
-- data: 2023-02-04T12:30:00.000+01:00
-  tytul: Magiczne Drzewko Wróżek
-  link: https://ewejsciowki.pl/embedded/rezerwacja/237029
-  manual_price: false
+repertuar: []
