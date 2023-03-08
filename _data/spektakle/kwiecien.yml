@@ -2,59 +2,59 @@
 title: Kwiecień
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
-- data: 2023-04-30 14:00:00 +0200
+- data: 2023-04-30T14:00:00.000+02:00
   tytul: Królowa Myszy
   link: "-"
   manual_price: false
-- data: 2023-04-30 12:00:00 +0200
+- data: 2023-04-30T12:00:00.000+02:00
   tytul: Królowa Myszy
   link: "-"
   manual_price: false
-- data: 2023-04-23 14:30:00 +0200
+- data: 2023-04-23T14:30:00.000+02:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2023-04-24 11:00:00 +0200
+- data: 2023-04-24T11:00:00.000+02:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2023-04-24 09:30:00 +0200
+- data: 2023-04-24T09:30:00.000+02:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2023-04-23 12:30:00 +0200
+- data: 2023-04-23T12:30:00.000+02:00
   tytul: Magiczne Drzewko Wróżek
   link: "-"
   manual_price: false
-- data: 2023-04-17 11:00:00 +0200
+- data: 2023-04-17T11:00:00.000+02:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2023-04-17 09:30:00 +0200
+- data: 2023-04-17T09:30:00.000+02:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2023-04-16 14:30:00 +0200
+- data: 2023-04-16T14:30:00.000+02:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2023-04-16 12:30:00 +0200
+- data: 2023-04-16T12:30:00.000+02:00
   tytul: Chmurka i Bratek
   link: "-"
   manual_price: false
-- data: 2023-04-03 09:30:00 +0200
+- data: 2023-04-03T09:30:00.000+02:00
   tytul: Księżniczka na ziarnku grochu
   link: "-"
   manual_price: false
-- data: 2023-04-03 11:00:00 +0200
+- data: 2023-04-03T11:00:00.000+02:00
   tytul: Księżniczka na ziarnku grochu
   link: "-"
   manual_price: false
-- data: 2023-04-02 14:00:00 +0200
+- data: 2023-04-02T14:00:00.000+02:00
   tytul: Księżniczka na ziarnku grochu
   link: "-"
   manual_price: false
-- data: 2023-04-02 12:00:00 +0200
+- data: 2023-04-02T12:00:00.000+02:00
   tytul: Księżniczka na ziarnku grochu
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/241991
   manual_price: false
