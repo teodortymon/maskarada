@@ -8,7 +8,7 @@ repertuar:
   manual_price: false
 - data: 2023-04-30T12:00:00.000+02:00
   tytul: Królowa Myszy
-  link: "-"
+  link: https://ewejsciowki.pl/embedded/rezerwacja/242000
   manual_price: false
 - data: 2023-04-23T14:30:00.000+02:00
   tytul: Magiczne Drzewko Wróżek
