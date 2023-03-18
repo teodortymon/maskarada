@@ -1,7 +1,7 @@
 ---
 layout: t
----
 
+---
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Magiczne Drzewko Wróżek</ul></h2>
 <a id="single_image" href="lay/img/drzewko_big.jpg"><img src="lay/img/drzewko_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
@@ -55,9 +55,9 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Śnieżny show</ul></h2>
 <a id="single_image" href="lay/img/sniezny_show_big.jpg"><img src="lay/img/sniezny_show_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
-Śnieżny show to spektakl pełen tańca i śpiewu wciągający widzów w zimową magię. Będziemy pomagać muzycznym Śnieżynkom, brać udział w poszukiwaniu Zapomnianego Śnieżnego Skarbca i tworzyć własny Zimowy Musical. Otwórz się na zimową magię gdzie wszystko lśni, skrzy się i dźwięczy.
+Śnieżny show to pierwszy śnieżny musical dla najmłodszych. Spektakl pełen tańca i śpiewu wciągający widzów w zimową magię. Będziemy pomagać muzycznym Śnieżynkom, brać udział w poszukiwaniu Zapomnianego Śnieżnego Skarbca i tworzyć własny Zimowy Musical. Otwórz się na zimową magię gdzie wszystko lśni, skrzy się i dźwięczy.
 
-<br /> Dla widzów od 1.5 roku do 99 lat. <br /> Czas trwania około 45 minut <br /> Premiera: grudzień. <br /><br />
+<br /> Dla widzów od 1.5 roku do 99 lat. <br /> Czas trwania około 55 minut <br /> Premiera: grudzień. <br /><br />
 
 <ul class="photos">
 {% for i in (1..4) %}
@@ -68,7 +68,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <table border="0">
 <tr>
 <td><strong>Muzyka</strong><br />Zuzanna Calka</td>
-<td><strong>Występują</strong><br />Katarzyna Mazur <br /> Pamela Adamik / Karolina Gwóźdź </td>
+<td><strong>Występują</strong><br />Katarzyna Mazur / Gosia Gradkowska <br /> Pamela Adamik / Karolina Gwóźdź </td>
 <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
 </tr>
 </table>
