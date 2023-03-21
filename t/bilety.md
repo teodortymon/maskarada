@@ -13,7 +13,7 @@ layout: t
 - bezpośrednio ze strony Teatru w zakładace [Repertuar](http://www.maskarada.waw.pl/t/repertuar.html)
 - telefonicznie pod numerem <a href="tel:501-027-278" onClick="fbq('track', 'CallFromTickets');"> 501 027 278</a>
 - w kasie Teatru na godzinę przed spektaklem (płatność tylko gotówką)
-- na portalach [ebilet](https://www.ebilet.pl/szukaj.php?t=o&oid=1233) / [ewejściówki (kicket)](https://kicket.com/warszawa/oferty/teatr-maskarada,333) <br /> _(na godzinę przed spektaklem, później w kasie i telefonicznie)_
+- na portalach [ebilet](https://www.ebilet.pl/miejsce/teatr-maskarada) / [ewejściówki (kicket)](https://kicket.com/warszawa/oferty/teatr-maskarada,333) <br /> _(na godzinę przed spektaklem, później w kasie i telefonicznie)_
 
 **Szkoły i przedszkola/cena biletu grupowego - 38 zł**
 
