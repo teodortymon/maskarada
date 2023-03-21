@@ -72,7 +72,7 @@ vertical-align: bottom;
 <th>24.06.2018 niedziela</th>
 <th>12.30</th>
 <th>Calineczka</th>
-<th><a href="https://ewejsciowki.pl/embedded/rezerwacja/107628">Kup bilet</a></th>
+<th><a href="https://kicket.com/embedded/rezerwacja/107628">Kup bilet</a></th>
 </tr> -->
 
 <!-- ## Zapraszamy na
