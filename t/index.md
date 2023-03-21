@@ -1,7 +1,32 @@
 ---
 layout: t
-
 ---
+
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tajemnice Teatru - nowa premiera</ul></h2>
+<a id="single_image" href="lay/img/tajemnice_big.jpg"><img src="lay/img/tajemnice_min.jpg" alt="Tajemnice Teatru" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+
+Tajemnice Teatru czyli historia ksieżniczki i reżysera. <br />Spektakl - warsztaty teatralne. Czy wiecie jak powstaje spektakl?
+<br /> <br />
+Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokazemy czym zajmuje sie dramaturg, scenograf...
+<br /><br />
+Zobaczycie co wyniknie ze spotkania księżniczki i reżysera.
+
+<br /> Dla dzieci od 3 do - lat i całej rodziny. <br /> Czas trwania spektaklu i animacji około 50 minut <br /> Premiera 22.04.2023 <br />
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/02LBv_25oyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe> -->
+
+<table border="0"> <tr> 
+<td><strong>Grają</strong><br />Gosia Gradkowska<br /> Zbigniew Kozłowski<br /> Przemko Janiszko </td><td><strong>Muzyka</strong><br />Paweł Paluch</td><td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Reżyseria</strong><br />Zbigniew Kozłowski</td> </tr>
+</table>
+
+<!-- <ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="tajemnice" href="lay/img/tajemnice/large/{{ i }}.jpg"><img src="lay/img/tajemnice/small/{{ i }}.jpg"/></a> {% endfor %} </ul> -->
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Magiczne Drzewko Wróżek</ul></h2>
 <a id="single_image" href="lay/img/drzewko_big.jpg"><img src="lay/img/drzewko_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
