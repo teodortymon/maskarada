@@ -1,7 +1,32 @@
 ---
 layout: t
-
 ---
+
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tajemnice Teatru - nowa premiera</ul></h2>
+<a id="single_image" href="lay/img/p/tajemnice_teatru_big.png"><img src="lay/img/p/tajemnice_teatru_min.png" alt="Tajemnice Teatru" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+
+Tajemnice Teatru czyli historia księżniczki i reżysera. <br />Spektakl - warsztaty teatralne. Czy wiecie jak powstaje spektakl?
+<br /> <br />
+Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokazemy czym zajmuje sie dramaturg, scenograf...
+<br /><br />
+Zobaczycie co wyniknie ze spotkania księżniczki i reżysera.
+
+<br /> Dla dzieci od 3 do - lat i całej rodziny. <br /> Czas trwania spektaklu i animacji około 50 minut <br /> Premiera 22.04.2023 <br />
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/02LBv_25oyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe> -->
+
+<table border="0"> <tr> 
+<td><strong>Grają</strong><br />Gosia Gradkowska<br /> Zbigniew Kozłowski<br /> Przemko Janiszko </td><td><strong>Muzyka</strong><br />Paweł Paluch</td><td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Reżyseria</strong><br />Zbigniew Kozłowski</td> </tr>
+</table>
+
+<!-- <ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="tajemnice" href="lay/img/tajemnice/large/{{ i }}.jpg"><img src="lay/img/tajemnice/small/{{ i }}.jpg"/></a> {% endfor %} </ul> -->
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Magiczne Drzewko Wróżek</ul></h2>
 <a id="single_image" href="lay/img/drzewko_big.jpg"><img src="lay/img/drzewko_min.jpg" alt="Śnieżny show" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
@@ -304,17 +329,8 @@ chmurach. Przekonacie się, że przyjaźń może przezwyciężyć wszelkie kłop
 
 Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania około 45 minut.</p> <br />Premiera 26 październik 2014 <br /><br /> <table border="0"> <tr> <td><strong>Tekst</strong><br />Pola Wójcik<br /></td> <td><strong>Występują</strong><br />Karolina Węgrzyńska<br />Michał Węgrzyński<br /><br /></td> </tr> <tr> <td><strong>Konsultacja reżyserska</strong><br />Katarzyna Kawalec<br /></td> <td><strong>Multimedia</strong><br />Jan Falba<br /><br /></td> </tr> <tr> <td><strong>Muzyka</strong><br />Zuzanna Całka</td> <td><strong>Scenografia</strong><br />Małgorzata Domańska</td> </tr> </table>
 
-<br /> <ul class="photos"> <a id="single_image" rel="5" href="lay/img/bratek/large/1.jpg"><img src="lay/img/bratek/small/1.jpg"/></a> <a id="single_image" rel="5" ref="lay/img/bratek/large/2.jpg"><img src="lay/img/bratek/small/2.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/3.jpg"><img src="lay/img/bratek/small/3.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/4.jpg"><img src="lay/img/bratek/small/4.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/5.jpg"><img src="lay/img/bratek/small/5.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/6.jpg"><img src="lay/img/bratek/small/6.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/7.jpg"><img src="lay/img/bratek/small/7.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/11.jpg"><img src="lay/img/bratek/small/11.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/12.jpg"><img src="lay/img/bratek/small/12.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/13.jpg"><img src="lay/img/bratek/small/13.jpg"/></a>
+<ul class="photos"> {% for i in (1..9) %} <a id="single_image" rel="bratek" href="lay/img/bratek/large/{{ i }}.jpg"><img src="lay/img/bratek/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
-</ul>
 <br />
 <br />
 <br />
