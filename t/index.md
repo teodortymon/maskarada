@@ -329,17 +329,8 @@ chmurach. Przekonacie się, że przyjaźń może przezwyciężyć wszelkie kłop
 
 Spektakl dla dzieci od 1.5 roku do 6 lat. Czas trwania około 45 minut.</p> <br />Premiera 26 październik 2014 <br /><br /> <table border="0"> <tr> <td><strong>Tekst</strong><br />Pola Wójcik<br /></td> <td><strong>Występują</strong><br />Karolina Węgrzyńska<br />Michał Węgrzyński<br /><br /></td> </tr> <tr> <td><strong>Konsultacja reżyserska</strong><br />Katarzyna Kawalec<br /></td> <td><strong>Multimedia</strong><br />Jan Falba<br /><br /></td> </tr> <tr> <td><strong>Muzyka</strong><br />Zuzanna Całka</td> <td><strong>Scenografia</strong><br />Małgorzata Domańska</td> </tr> </table>
 
-<br /> <ul class="photos"> <a id="single_image" rel="5" href="lay/img/bratek/large/1.jpg"><img src="lay/img/bratek/small/1.jpg"/></a> <a id="single_image" rel="5" ref="lay/img/bratek/large/2.jpg"><img src="lay/img/bratek/small/2.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/3.jpg"><img src="lay/img/bratek/small/3.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/4.jpg"><img src="lay/img/bratek/small/4.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/5.jpg"><img src="lay/img/bratek/small/5.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/6.jpg"><img src="lay/img/bratek/small/6.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/7.jpg"><img src="lay/img/bratek/small/7.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/11.jpg"><img src="lay/img/bratek/small/11.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/12.jpg"><img src="lay/img/bratek/small/12.jpg"/></a>
-<a id="single_image" rel="5" href="lay/img/bratek/large/13.jpg"><img src="lay/img/bratek/small/13.jpg"/></a>
+<ul class="photos"> {% for i in (1..9) %} <a id="single_image" rel="bratek" href="lay/img/bratek/large/{{ i }}.jpg"><img src="lay/img/bratek/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
-</ul>
 <br />
 <br />
 <br />
