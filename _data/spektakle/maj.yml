@@ -2,6 +2,10 @@
 title: Maj
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- data: 2023-05-21 12:30:00 +0200
+  tytul: Złota Rybka
+  link: "-"
+  manual_price: false
 - data: 2023-05-16 14:30:00 +0200
   tytul: Chmurka i Bratek
   link: "-"
