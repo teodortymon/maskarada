@@ -1,7 +1,7 @@
 ---
 layout: t
----
 
+---
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tajemnice Teatru - nowa premiera</ul></h2>
 <a id="single_image" href="lay/img/p/tajemnice_teatru_big.png"><img src="lay/img/p/tajemnice_teatru_min.png" alt="Tajemnice Teatru" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
@@ -11,11 +11,11 @@ Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokazemy czym z
 <br /><br />
 Zobaczycie co wyniknie ze spotkania księżniczki i reżysera.
 
-<br /> Dla dzieci od 3 do - lat i całej rodziny. <br /> Czas trwania spektaklu i animacji około 50 minut <br /> Premiera 22.04.2023 <br />
+<br /> Dla dzieci od 3 do 10 lat i całej rodziny. <br /> Czas trwania spektaklu i animacji około 50 minut <br /> Premiera 22.04.2023 <br />
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/02LBv_25oyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe> -->
 
-<table border="0"> <tr> 
+<table border="0"> <tr>
 <td><strong>Grają</strong><br />Gosia Gradkowska<br /> Zbigniew Kozłowski<br /> Przemko Janiszko </td><td><strong>Muzyka</strong><br />Paweł Paluch</td><td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Reżyseria</strong><br />Zbigniew Kozłowski</td> </tr>
 </table>
 
@@ -246,7 +246,7 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <a id="single_image" href="lay/img/turlitaj/large/turlitaj.jpg">
 <!-- <img src="lay/img/turlitaj/small/turlitaj.jpg" alt="Urodziny Turili i Taja" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a> -->
 
- <p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania około 45 minut.<br /> Premiera: maj 2016 <br /><br />
+<p>W krainie Turli Taja dzisiaj wielki dzień - Pierwsze Urodziny! <br />Poznamy Turli i Taja, dowiemy się co lubią robić najbardziej, będziemy się z nimi turlać, bawić i krążyć w labiryncie. Powitamy ich gości i przygotujemy wspólnie przyjęcie urodzinowe z wielkim tortem. Swiętujcie z nami urodziny Turli-Taja! <br />Przedstawienie dla dzieci od 0 do 5 lat.<br />Czas trwania około 45 minut.<br /> Premiera: maj 2016 <br /><br />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XyaKJ2pxhyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
