@@ -2,6 +2,10 @@
 title: Czerwiec
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
+- data: 2023-06-11 12:30:00 +0200
+  tytul: Magiczne Drzewko Wróżek
+  link: "-"
+  manual_price: false
 - data: 2023-06-05 09:30:00 +0200
   tytul: Calineczka
   link: "-"
