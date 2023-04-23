@@ -26,10 +26,6 @@ repertuar:
   tytul: Złota Rybka
   link: "-"
   manual_price: false
-- data: 2023-05-28 14:30:00 +0200
-  tytul: Złota Rybka
-  link: https://ewejsciowki.pl/embedded/rezerwacja/244918
-  manual_price: false
 - data: 2023-05-29 09:30:00 +0200
   tytul: Złota Rybka
   link: "-"
@@ -49,10 +45,6 @@ repertuar:
 - data: 2023-05-08 11:00:00 +0200
   tytul: Królowa Myszy
   link: "-"
-  manual_price: false
-- data: 2023-05-07 14:00:00 +0200
-  tytul: Królowa Myszy
-  link: https://ewejsciowki.pl/embedded/rezerwacja/244914
   manual_price: false
 - data: 2023-05-07 12:00:00 +0200
   tytul: Królowa Myszy
