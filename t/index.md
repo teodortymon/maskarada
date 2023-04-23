@@ -1,7 +1,7 @@
 ---
 layout: t
-
 ---
+
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tajemnice Teatru - nowa premiera</ul></h2>
 <a id="single_image" href="lay/img/p/tajemnice_teatru_big.png"><img src="lay/img/p/tajemnice_teatru_min.png" alt="Tajemnice Teatru" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
@@ -19,7 +19,7 @@ Zobaczycie co wyniknie ze spotkania księżniczki i reżysera.
 <td><strong>Grają</strong><br />Gosia Gradkowska<br /> Zbigniew Kozłowski<br /> Przemko Janiszko </td><td><strong>Muzyka</strong><br />Paweł Paluch</td><td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Reżyseria</strong><br />Zbigniew Kozłowski</td> </tr>
 </table>
 
-<!-- <ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="tajemnice" href="lay/img/tajemnice/large/{{ i }}.jpg"><img src="lay/img/tajemnice/small/{{ i }}.jpg"/></a> {% endfor %} </ul> -->
+<ul class="photos"> {% for i in (1..5) %} <a id="single_image" rel="tajemnice" href="lay/img/tajemnice/large/{{ i }}.jpg"><img src="lay/img/tajemnice/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
 <br />
 <br />
