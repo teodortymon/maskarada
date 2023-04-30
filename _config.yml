@@ -11,9 +11,7 @@ collections:
 email: teatr.maskarada@gmail.com
 description: 'Teatr i Wypożyczalnia Kostiumów Karnawałowych Maskarada zapewnią Twojemu
   dziecku nalepszą rozrywkę połączoną z edukacją teatralną. Przynosimy uśmiech już
-  od 10 lat!
-
-'
+  od 10 lat!'
 baseurl: ''
 url: http://www.maskarada.waw.pl
 exclude:
@@ -21,3 +19,5 @@ exclude:
 markdown: kramdown
 cloudinary:
   cloud_name: maskarada
+exclude:
+    - node_modules

@@ -29,3 +29,5 @@ gh-pages/
 pkg/
 test/dest
 tmp/*
+
+node_modules
