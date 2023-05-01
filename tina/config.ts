@@ -8,8 +8,9 @@ const branch = "migrate-to-tina";
 
 export default defineConfig({
   branch,
-  clientId: "c898065d-61b1-4734-a55c-60f0cdc1604d", // Get this from tina.io
-  token: "8d9499fa533ae5a71a322a52c8a35240c7d33577", // Get this from tina.io
+  clientId:
+    process.env.TINA_PUBLIC_CLIENT_ID || "c898065d-61b1-4734-a55c-60f0cdc1604d",
+  token: process.env.TINA_TOKEN || "8d9499fa533ae5a71a322a52c8a35240c7d33577",
   client: { skip: true },
   build: {
     outputFolder: "admin",

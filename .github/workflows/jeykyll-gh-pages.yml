@@ -23,6 +23,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+  TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
 jobs:
   # Build job
   build:
@@ -32,6 +35,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      - run: yarn install
+      - run: yarn build
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
