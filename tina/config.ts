@@ -4,13 +4,13 @@ import { spektaklFields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
 // const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
-const branch = "migrate-to-tina";
+const branch = "master";
 
 export default defineConfig({
   branch,
   clientId:
-    process.env.TINA_PUBLIC_CLIENT_ID || "c898065d-61b1-4734-a55c-60f0cdc1604d",
-  token: process.env.TINA_TOKEN || "8d9499fa533ae5a71a322a52c8a35240c7d33577",
+    process.env.TINA_PUBLIC_CLIENT_ID,
+  token: process.env.TINA_TOKEN,
   client: { skip: true },
   build: {
     outputFolder: "admin",
