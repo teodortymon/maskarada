@@ -5,7 +5,7 @@ layout: t
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tajemnice Teatru - nowa premiera</ul></h2>
 <a id="single_image" href="lay/img/p/tajemnice_teatru_big.png"><img src="lay/img/p/tajemnice_teatru_min.png" alt="Tajemnice Teatru" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
-Tajemnice Teatru czyli historia księżniczki i reżysera.  <br />Spektakl - warsztaty teatralne. Czy wiecie jak powstaje spektakl? <br /> <br />
+Tajemnice Teatru czyli historia księżniczki i reżysera. <br />Spektakl - warsztaty teatralne. Czy wiecie jak powstaje spektakl? <br /> <br />
 Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokazemy czym zajmuje sie dramaturg, scenograf... <br /><br />
 Zobaczycie co wyniknie ze spotkania księżniczki i reżysera.
 
