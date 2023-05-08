@@ -1,36 +1,35 @@
----
 title: Czerwiec
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
-- data: 2023-06-19 11:00:00 +0200
-  tytul: Tajemnice Teatru
-  link: "-"
-  manual_price: false
-- data: 2023-06-18 12:30:00 +0200
-  tytul: Tajemnice Teatru
-  link: https://ewejsciowki.pl/embedded/rezerwacja/246006
-  manual_price: false
-- data: 2023-06-12 11:00:00 +0200
-  tytul: Magiczne Drzewko Wróżek
-  link: "-"
-  manual_price: false
-- data: 2023-06-12 09:30:00 +0200
-  tytul: Magiczne Drzewko Wróżek
-  link: "-"
-  manual_price: false
-- data: 2023-06-11 12:30:00 +0200
-  tytul: Magiczne Drzewko Wróżek
-  link: https://ewejsciowki.pl/embedded/rezerwacja/246005
-  manual_price: false
-- data: 2023-06-05 09:30:00 +0200
-  tytul: Calineczka
-  link: "-"
-  manual_price: false
-- data: 2023-06-05 11:00:00 +0200
-  tytul: Calineczka
-  link: "-"
-  manual_price: false
-- data: 2023-06-04 12:30:00 +0200
-  tytul: Calineczka
-  link: https://ewejsciowki.pl/embedded/rezerwacja/246004
-  manual_price: false
+  - tytul: Tajemnice Teatru
+    data: 2023-06-19T11:00:00.000Z
+    link: '-'
+    manual_price: false
+  - tytul: Tajemnice Teatru
+    data: 2023-06-18T12:30:00.000Z
+    link: 'https://ewejsciowki.pl/embedded/rezerwacja/246006'
+    manual_price: false
+  - tytul: Magiczne Drzewko Wróżek
+    data: 2023-06-12T11:00:00.000Z
+    link: '-'
+    manual_price: false
+  - tytul: Magiczne Drzewko Wróżek
+    data: 2023-06-12T09:30:00.000Z
+    link: '-'
+    manual_price: false
+  - tytul: Magiczne Drzewko Wróżek
+    data: 2023-06-11T12:30:00.000Z
+    link: 'https://ewejsciowki.pl/embedded/rezerwacja/246005'
+    manual_price: false
+  - tytul: Calineczka
+    data: 2023-06-05T11:00:00.000Z
+    link: '-'
+    manual_price: false
+  - tytul: Calineczka
+    data: 2023-06-05T09:30:00.000Z
+    link: '-'
+    manual_price: false
+  - tytul: Calineczka
+    data: 2023-06-04T12:30:00.000Z
+    link: 'https://ewejsciowki.pl/embedded/rezerwacja/246004'
+    manual_price: false
