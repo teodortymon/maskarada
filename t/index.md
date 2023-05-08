@@ -5,10 +5,8 @@ layout: t
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tajemnice Teatru - nowa premiera</ul></h2>
 <a id="single_image" href="lay/img/p/tajemnice_teatru_big.png"><img src="lay/img/p/tajemnice_teatru_min.png" alt="Tajemnice Teatru" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
-Tajemnice Teatru czyli historia księżniczki i reżysera. <br />Spektakl - warsztaty teatralne. Czy wiecie jak powstaje spektakl?
-<br /> <br />
-Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokazemy czym zajmuje sie dramaturg, scenograf...
-<br /><br />
+Tajemnice Teatru czyli historia księżniczki i reżysera.  <br />Spektakl - warsztaty teatralne. Czy wiecie jak powstaje spektakl? <br /> <br />
+Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokazemy czym zajmuje sie dramaturg, scenograf... <br /><br />
 Zobaczycie co wyniknie ze spotkania księżniczki i reżysera.
 
 <br /> Dla dzieci od 3 do 10 lat i całej rodziny. <br /> Czas trwania spektaklu i animacji około 50 minut <br /> Premiera 22.04.2023 <br />
@@ -142,7 +140,7 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tupu tup, czyli Brzydkie Kaczątko</ul></h2> <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-rad_us: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 <i>wg baśni H. Ch. Andersena</i><br /><br />
 
-Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena _"Szybkobiegacze"_ i _"Brzydkie Kaczątko"_.
+Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena *"Szybkobiegacze"* i *"Brzydkie Kaczątko"*.
 
 Dla dzieci od 1,5 do 6 lat.
 
@@ -251,9 +249,7 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XyaKJ2pxhyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
 <br /><br />
 
-Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji portalu Czas Dzieci:</a>
-<br /> <i>Co wyróżnia spektakl? Brak sceny, czyli znika bariera między twórca a odbiorcą. Dzieci mogły wszędzie wejść, zajrzeć, wszystko dotykać, przekładać itp. A taka eksploracja otoczenia, szczególnie nowego, ciekawego, to dla maluszków niesamowity rozwój i przed wszystkim frajda. Dotychczas prawie wszystkie spektakle dla najmłodszych dzieci, na których byłam, odbywały się w ciszy. To znaczy, aktorzy, prawie wcale albo bardzo rzadko, odzywali się do publiczności. A tu od początku, dwie młode, bardzo utalentowane aktorki, mówią i śpiewają do dzieci. Zadają pytania, przynoszą rekwizyty do każdego dziecka, reagują na spontaniczne na ich prośby. Są prawdziwymi gospodarzami swojego przyjęcia urodzinowego!</i>
-<br />
+Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji portalu Czas Dzieci:</a> <br /> <i>Co wyróżnia spektakl? Brak sceny, czyli znika bariera między twórca a odbiorcą. Dzieci mogły wszędzie wejść, zajrzeć, wszystko dotykać, przekładać itp. A taka eksploracja otoczenia, szczególnie nowego, ciekawego, to dla maluszków niesamowity rozwój i przed wszystkim frajda. Dotychczas prawie wszystkie spektakle dla najmłodszych dzieci, na których byłam, odbywały się w ciszy. To znaczy, aktorzy, prawie wcale albo bardzo rzadko, odzywali się do publiczności. A tu od początku, dwie młode, bardzo utalentowane aktorki, mówią i śpiewają do dzieci. Zadają pytania, przynoszą rekwizyty do każdego dziecka, reagują na spontaniczne na ich prośby. Są prawdziwymi gospodarzami swojego przyjęcia urodzinowego!</i> <br />
 
 <table border="0">
 <tr>
@@ -404,9 +400,7 @@ Premiera: 30 marzec 2014 <br />
 <br />
 </ul>
 
-<br /><br />
-<br />
-<br />
+<br /><br /> <br /> <br />
 
 <h2 style="text-shadow: 2px 2px rgba(255, 68, 68, 0.72)">Elfy i fabryka prezentów</h2>
 <br />
@@ -507,9 +501,7 @@ Premiera: 13 październik 2013
 </table>
 <br /><br />
 
-<strong>Muzyka Wolfganga Amadeusza Mozarta w wykonaniu:</strong>
-<br /><br />
-<br />
+<strong>Muzyka Wolfganga Amadeusza Mozarta w wykonaniu:</strong> <br /><br /> <br />
 
 <table border="0">
 
@@ -582,7 +574,9 @@ Zapraszamy maluchy na kameralny spektakl, w którym spotkają pszczółki, ślim
 <tr>
 <td><strong>Występują</strong></td>
 
-    <td><strong>Realizacja<br /><br /></strong></td>
+```
+<td><strong>Realizacja<br /><br /></strong></td>
+```
 
 </tr>
 
