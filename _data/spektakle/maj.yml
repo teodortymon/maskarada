@@ -1,31 +1,27 @@
 title: Maj
 date: '2019-04-06T22:30:55.000+00:00'
 repertuar:
-  - tytul: Tajemnice Teatru
-    data: '2023-05-30T09:30:00.000Z'
-    link: '-'
-    manual_price: false
   - tytul: Wesołe Koty
-    data: '2023-05-22T11:00:00.000Z'
+    data: 2023-05-22T11:00:00.000Z
     link: '-'
     manual_price: false
   - tytul: Złota Rybka
-    data: '2023-05-29T11:00:00.000Z'
+    data: 2023-05-29T11:00:00.000Z
     link: '-'
     manual_price: false
   - tytul: Złota Rybka
-    data: '2023-05-29T09:30:00.000Z'
+    data: 2023-05-29T09:30:00.000Z
     link: '-'
     manual_price: false
   - tytul: Złota Rybka
-    data: '2023-05-28T12:30:00.000Z'
+    data: 2023-05-28T12:30:00.000Z
     link: 'https://ewejsciowki.pl/embedded/rezerwacja/244917'
     manual_price: false
   - tytul: Wesołe Koty
-    data: '2023-05-22T09:30:00.000Z'
+    data: 2023-05-22T09:30:00.000Z
     link: '-'
     manual_price: false
   - tytul: Wesołe Koty
-    data: '2023-05-21T12:30:00.000Z'
+    data: 2023-05-21T12:30:00.000Z
     link: 'https://ewejsciowki.pl/embedded/rezerwacja/244915'
     manual_price: false
