@@ -6,8 +6,8 @@ layout: t
 <a id="single_image" href="lay/img/p/tajemnice_teatru_big.png"><img src="lay/img/p/tajemnice_teatru_min.png" alt="Tajemnice Teatru" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
 Tajemnice Teatru czyli historia księżniczki i reżysera. <br />Spektakl - warsztaty teatralne. Czy wiecie jak powstaje spektakl? <br /> <br />
-Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokazemy czym zajmuje sie dramaturg, scenograf... <br /><br />
-Zobaczycie co wyniknie ze spotkania księżniczki i reżysera.
+Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokażemy czym zajmuje się dramaturg, scenograf... <br /><br />
+Zobaczycie co wyniknie ze spotkania księżniczki i reżysera. Zaprosimy was do wspólnego tworzenia spektaklu a na koniec nauka charakteryzacji z Księżniczką.
 
 <br /> Dla dzieci od 3 do 10 lat i całej rodziny. <br /> Czas trwania spektaklu i animacji około 50 minut <br /> Premiera 22.04.2023 <br />
 
@@ -55,7 +55,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 <table border="0">
 <tr>
-<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat <br /> Przemko Janiszko </td>
+<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat <br /> Przemko Janiszko <br /> Zbigniew Kozłowski </td>
 <td><strong>Muzyka</strong><br />Piotr Czajkowski<br />Krzysztof Jaszczak</td>
 <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td>
 <td><strong>Tekst</strong><br />Pola Wójcik</td>
@@ -374,7 +374,7 @@ Premiera: 30 marzec 2014 <br />
 <br /><br />
 <table border="0">
 <tr>
-<td><strong>Występują</strong><br />Katarzyna Mazur/Joanna Pietrońska<br />Adam Biernat<br /><br /></td>
+<td><strong>Występują</strong><br />Katarzyna Mazur/Joanna Pietrońska<br />Adam Biernat / Andrzej Krucz<br /><br /></td>
 <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
 </tr>
 <tr>
