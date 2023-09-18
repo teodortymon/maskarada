@@ -12,7 +12,7 @@ const spektakle = [
   "Elfy i fabryka prezentów",
   "Śnieżny show",
   "Złota Rybka",
-  "Tupu tup, czyli Brzydkie Kaczątko",
+  "Brzydkie Kaczątko",
   "Wesołe Koty",
   "Urodziny Turli i Taja",
   "Kuba i Buba, czyli awantura do kwadratu",
@@ -25,6 +25,10 @@ const spektakle = [
   "Warsztaty Chopinowskie",
   "Królowa Myszy",
   "Królowa Myszy (premiera)",
+  "Mała syrenka (premiera)",
+  "Mała syrenka (premiera)",
+  "Warsztaty teatralne",
+  "Warsztaty kaligraficzne"
 ];
 
 export function repertuar_blocksFields() {

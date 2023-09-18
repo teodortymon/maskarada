@@ -9,6 +9,14 @@ Tajemnice Teatru czyli historia księżniczki i reżysera. <br />Spektakl - wars
 Zdradzimy Wam to w warsztatowym przedstawieniu Tajemnice Teatru. Pokażemy czym zajmuje się dramaturg, scenograf... <br /><br />
 Zobaczycie co wyniknie ze spotkania księżniczki i reżysera. Zaprosimy was do wspólnego tworzenia spektaklu a na koniec nauka charakteryzacji z Księżniczką.
 
+Tajemnice Teatru to klasyczne przedstawienie teatralne, ale też rodzaj warsztatów dla dzieci.
+Oglądamy historię księżniczki, która bardzo chce zagrać na scenie, ale najpierw musi zdobyć wiedzę, jak działa teatr.
+Pomaga jej w tym Autor sztuki, który przeistacza się w kolejnych scenach w Reżysera, Scenografa, Kostiumologa, Charakteryzatora a na koniec Pana od niesamowitych efektów dźwiękowych.
+
+W tej roli brawurowy Zbigniew Kozłowski, który świetnie nawiązuje kontakt z dziećmi, pokazuje im kulisy teatru, zaprasza je na scenę i poddaje różnym aktorskim próbom.
+Grająca Księżniczkę Gosia Gradkowska pomaga mu w tym dziele, sama uczy się fachu, pięknie tańczy i śpiewa.
+Dzieci wychodzą ze spektaklu z wiedzą "jak się robi teatr", dorosłych bawi dowcip i przymrużenie oka, z jakim opowiadamy o naszej pracy.
+
 <br /> Dla dzieci od 3 do 10 lat i całej rodziny. <br /> Czas trwania spektaklu i animacji około 50 minut <br /> Premiera 22.04.2023 <br />
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/02LBv_25oyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe> -->
@@ -55,7 +63,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 <table border="0">
 <tr>
-<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat <br /> Przemko Janiszko <br /> Zbigniew Kozłowski </td>
+<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat / Zbigniew Kozłowski <br /> Przemko Janiszko </td>
 <td><strong>Muzyka</strong><br />Piotr Czajkowski<br />Krzysztof Jaszczak</td>
 <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td>
 <td><strong>Tekst</strong><br />Pola Wójcik</td>
@@ -80,7 +88,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 Śnieżny show to pierwszy śnieżny musical dla najmłodszych. Spektakl pełen tańca i śpiewu wciągający widzów w zimową magię. Będziemy pomagać muzycznym Śnieżynkom, brać udział w poszukiwaniu Zapomnianego Śnieżnego Skarbca i tworzyć własny Zimowy Musical. Otwórz się na zimową magię gdzie wszystko lśni, skrzy się i dźwięczy.
 
-<br /> Dla widzów od 1.5 roku do 99 lat. <br /> Czas trwania około 55 minut <br /> Premiera: grudzień. <br /><br />
+<br /> Dla widzów od 1.5 roku do 99 lat. <br /> Czas trwania około 55 minut <br /> Premiera: grudzień 2020 <br /><br />
 
 <ul class="photos">
 {% for i in (1..4) %}
@@ -137,7 +145,7 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 <br />
 <br />
 
-<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tupu tup, czyli Brzydkie Kaczątko</ul></h2> <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-rad_us: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Brzydkie Kaczątko czyli tupu tup</ul></h2> <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-rad_us: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 <i>wg baśni H. Ch. Andersena</i><br /><br />
 
 Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena *"Szybkobiegacze"* i *"Brzydkie Kaczątko"*.
@@ -374,7 +382,7 @@ Premiera: 30 marzec 2014 <br />
 <br /><br />
 <table border="0">
 <tr>
-<td><strong>Występują</strong><br />Katarzyna Mazur/Joanna Pietrońska<br />Adam Biernat / Andrzej Krucz<br /><br /></td>
+<td><strong>Występują</strong><br />Katarzyna Mazur i Joanna Pietrońska<br />Adam Biernat / Andrzej Krucz<br /><br /></td>
 <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
 </tr>
 <tr>
