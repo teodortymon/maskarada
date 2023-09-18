@@ -17,7 +17,7 @@ layout: t
 
 ### Grupy zorganizowane
 
-- Dla grup zorganizowanych gramy w dni powszednie
+- Dla grup zorganizowanych gramy w dni powszrednie
 - Prosimy o kontakt tel. w celu rezerwacji i uzgodnienia terminu.
 - W dniu spektaklu można zrezygnować z 10% zamówionych biletów.
 
