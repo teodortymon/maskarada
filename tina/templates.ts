@@ -26,7 +26,7 @@ const spektakle = [
   "Królowa Myszy",
   "Królowa Myszy (premiera)",
   "Mała syrenka (premiera)",
-  "Mała syrenka (premiera)",
+  "Mała syrenka",
   "Warsztaty teatralne",
   "Warsztaty kaligraficzne"
 ];
