@@ -4,7 +4,7 @@ repertuar:
   - tytul: Warsztaty teatralne
     data: 2023-10-08T16:00:00.000Z
     link: Zapisy tel. 501 027 278
-    manual_price: true
+    manual_price: false
   - tytul: Calineczka
     data: 2023-10-24T11:00:00.000Z
     link: '-'
