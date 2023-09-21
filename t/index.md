@@ -25,7 +25,7 @@ Dzieci wychodzą ze spektaklu z wiedzą "jak się robi teatr", dorosłych bawi d
 <td><strong>Grają</strong><br />Gosia Gradkowska<br /> Zbigniew Kozłowski<br /> Przemko Janiszko </td><td><strong>Muzyka</strong><br />Paweł Paluch</td><td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Reżyseria</strong><br />Zbigniew Kozłowski</td> </tr>
 </table>
 
-<ul class="photos"> {% for i in (1..5) %} <a id="single_image" rel="tajemnice" href="lay/img/tajemnice/large/{{ i }}.jpg"><img src="lay/img/tajemnice/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
+<ul class="photos"> {% for i in (1..9) %} <a id="single_image" rel="tajemnice" href="lay/img/tajemnice/large/{{ i }}.jpg"><img src="lay/img/tajemnice/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
 <br />
 <br />
@@ -44,7 +44,7 @@ Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą p
 
 <table border="0"> <tr> <td><strong>Grają</strong><br />Joanna Pietrońska, <br /> Patrycja Potyralska,  <br /> Przemko Janiszko </td> <td><strong>Muzyka</strong><br />Krzysztof Gumienny</td> <td><strong>Opracowanie muzyczne</strong><br />Przemko Janiszko</td> <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td> <td><strong>Tekst</strong><br />Pola Wójcik</td> <td><strong>Wiersze</strong><br />Leopolda Staffa i Williama Shakespeare'a ze Snu Nocy Letniej</td> </tr> </table>
 
-<ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="drzewko" href="lay/img/drzewko/large/{{ i }}.jpg"><img src="lay/img/drzewko/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
+<ul class="photos"> {% for i in (1..6) %} <a id="single_image" rel="drzewko" href="lay/img/drzewko/large/{{ i }}.jpg"><img src="lay/img/drzewko/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
 <br />
 <br />
@@ -91,7 +91,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <br /> Dla widzów od 1.5 roku do 99 lat. <br /> Czas trwania około 55 minut <br /> Premiera: grudzień 2020 <br /><br />
 
 <ul class="photos">
-{% for i in (1..4) %}
+{% for i in (1..6) %}
 <a id="single_image" rel="sniezny" href="lay/img/sniezny_show/large/{{ i }}.jpg"><img src="lay/img/sniezny_show/small/{{ i }}.jpg"/></a>
 {% endfor %}
 </ul>
@@ -239,6 +239,11 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <a id="single_image" rel="8" href="lay/img/koty/large/2.jpg"><img src="lay/img/koty/small/2.jpg"/></a>  
 <a id="single_image" rel="8" href="lay/img/koty/large/3.jpg"><img src="lay/img/koty/small/3.jpg"/></a>
 
+<a id="single_image" rel="8" href="lay/img/koty/large/13.jpg"><img src="lay/img/koty/small/13.jpg"/></a>
+<a id="single_image" rel="8" href="lay/img/koty/large/14.jpg"><img src="lay/img/koty/small/14.jpg"/></a>
+<a id="single_image" rel="8" href="lay/img/koty/large/15.jpg"><img src="lay/img/koty/small/15.jpg"/></a>
+
+
 </ul>
 
 <br />
@@ -276,11 +281,9 @@ Przemko Janiszko<br />
 <br /><br />
 
 <ul class="photos">
-<a id="single_image" rel="7" href="lay/img/turlitaj/large/1.jpg"><img src="lay/img/turlitaj/small/1.jpg"/></a>
-<a id="single_image" rel="7" href="lay/img/turlitaj/large/2.jpg"><img src="lay/img/turlitaj/small/2.jpg"/></a>
-<a id="single_image" rel="7" href="lay/img/turlitaj/large/3.jpg"><img src="lay/img/turlitaj/small/3.jpg"/></a>
-<a id="single_image" rel="7" href="lay/img/turlitaj/large/4.jpg"><img src="lay/img/turlitaj/small/4.jpg"/></a>
-
+{% for i in (1..6) %}
+<a id="single_image" rel="turli" href="lay/img/turlitaj/large/{{ i }}.jpg"><img src="lay/img/turlitaj/small/{{ i }}.jpg"/></a>
+{% endfor %}
 </ul>
 
 <br />
@@ -405,6 +408,7 @@ Premiera: 30 marzec 2014 <br />
 <a id="single_image" rel="4" href="lay/img/cal/large/7.JPG"><img src="lay/img/cal/small/7.JPG"/></a>
 <a id="single_image" rel="4" href="lay/img/cal/large/9.JPG"><img src="lay/img/cal/small/9.JPG"/></a>
 <a id="single_image" rel="4" href="lay/img/cal/large/8.JPG"><img src="lay/img/cal/small/8.JPG"/></a>
+<a id="single_image" rel="4" href="lay/img/cal/large/10.JPG"><img src="lay/img/cal/small/10.JPG"/></a>
 <br />
 </ul>
 
@@ -582,10 +586,7 @@ Zapraszamy maluchy na kameralny spektakl, w którym spotkają pszczółki, ślim
 <tr>
 <td><strong>Występują</strong></td>
 
-```
 <td><strong>Realizacja<br /><br /></strong></td>
-```
-
 </tr>
 
 <tr> <td>Ewa Tucholska<br />Zbigniew Kozłowski</td> <td>Małgorzata Domańska<br />Ewa Tucholska<br />Tomasz Piątkowski</td> </tr> </table> <br /><strong>Muzyka</strong><br />Krzysztof Jaszczak <br /><br /> Przedstawienie trwa około 30 minut oraz 15 minut zabawy z aktorami. <br /> Przedstawienie rekomendowane dla dzieci w wieku od 1,5 roku do 5 lat.<br /><br /> Premiera: 12 październik 2013<br /><br />
