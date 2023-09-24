@@ -2,7 +2,49 @@
 layout: t
 ---
 
-<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tajemnice Teatru - nowa premiera</ul></h2>
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Mała Syrenka - nowa premiera</ul></h2>
+<a id="single_image" href="lay/img/p/syrenka_big.png"><img src="lay/img/p/syrenka_min.png" alt="Syrenka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+
+Marzenia, Głębiny, Piękne Sny - Spełnienie na Scenie!
+
+Marzenia to coś, co bije głęboko w naszych sercach, tak jak głębiny oceanu. Przyjdź i pozwól Małej Syrence spełnić swoje marzenie o zobaczeniu lądu, poznaniu ludzi i miłości do księcia. W jej podróży pomoże jej tajemnicza Meduza Ulla, a my będziemy obserwować, jak rozwija się ta niezwykła historia. Dołącz do nas, aby pomóc Syrence w jej podróży przez głębokie odmęty oceanu. Razem odkryjemy fascynującą kolekcję muszli, spotkamy kolorowe ryby, zaśpiewamy z Syrenką i zanurzymy się w magiczną krainę morskich przygód.
+
+To spektakl dla widzów od 2 do 99 lat. Czas trwania wynosi około 50 minut. Premiera już w listopadzie 2023 roku!
+
+Dołącz do nas na tej niezapomnianej podróży pod wodą i razem z Małą Syrenką odkryjmy świat marzeń!
+<table border="0">
+        <tr>
+            <td>
+                <strong>Grają</strong><br />
+                Gosia Gradkowska <br />
+                Joanna Pietrońska <br />
+                Ireneusz Wojaczek <br />
+                Przemko Janiszko <br />
+            </td>
+            <td>
+                <strong>Muzyka</strong><br />
+                Rafał Gajewski
+            </td>
+            <td>
+                <strong>Inscenizacja</strong><br />
+                Małgorzata Domańska
+            </td>
+        </tr>
+        <tr class="centered-row">
+            <td colspan="4">
+                <strong>Tekst</strong><br />
+                Pola Wójcik na podstawie J.Ch. Andersena
+            </td>
+        </tr>
+    </table>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Tajemnice Teatru</ul></h2>
 <a id="single_image" href="lay/img/p/tajemnice_teatru_big.png"><img src="lay/img/p/tajemnice_teatru_min.png" alt="Tajemnice Teatru" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
 Tajemnice Teatru czyli historia księżniczki i reżysera. <br />Spektakl - warsztaty teatralne. Czy wiecie jak powstaje spektakl? <br /> <br />
