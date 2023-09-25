@@ -3,7 +3,7 @@ layout: t
 ---
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Mała Syrenka - nowa premiera</ul></h2>
-<a id="single_image" href="lay/img/p/syrenka_big.png"><img src="lay/img/p/syrenka_min.png" alt="Syrenka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
+<a id="single_image" href="lay/img/p/syrenka_big.jpg"><img src="lay/img/p/syrenka_min.jpg" alt="Syrenka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
 Marzenia, Głębiny, Piękne Sny - Spełnienie na Scenie!
 
