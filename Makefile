@@ -1,12 +1,15 @@
 
 # Sane defaults
-SHELL := /bin/bash
+SHELL := /opt/homebrew/bin/fish
 .ONESHELL:
 .SHELLFLAGS := -eu -o pipefail -c
 .DELETE_ON_ERROR:
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
-# ---------------------- Sylvi commands ---------------------------
+
+dev: # Run
+	chruby ruby-3.1.3
+	bundle exec jekyll serve --livereload
 
 resize: # Create structure and resize pictures
 	cd $(args)
