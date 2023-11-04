@@ -28,7 +28,7 @@ const spektakle = [
   "Mała syrenka (premiera)",
   "Mała syrenka",
   "Warsztaty teatralne",
-  "Warsztaty kaligraficzne"
+  "Warsztaty kaligraficzne",
 ];
 
 export function repertuar_blocksFields() {

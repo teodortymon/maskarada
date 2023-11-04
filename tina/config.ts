@@ -8,8 +8,7 @@ const branch = "master";
 
 export default defineConfig({
   branch,
-  clientId:
-    process.env.TINA_PUBLIC_CLIENT_ID,
+  clientId: process.env.TINA_PUBLIC_CLIENT_ID,
   token: process.env.TINA_TOKEN,
   client: { skip: true },
   build: {
@@ -33,13 +32,13 @@ export default defineConfig({
           include: "*",
         },
         fields: [
-          // {
-          //   type: "rich-text",
-          //   name: "body",
-          //   label: "Body of Document",
-          //   description: "This is the markdown body",
-          //   isBody: true,
-          // },
+          {
+            type: "string",
+            name: "title",
+            label: "miesiac",
+            description: "Miesiac",
+            isBody: true,
+          },
           ...repertuar_blocksFields(),
         ],
       },
