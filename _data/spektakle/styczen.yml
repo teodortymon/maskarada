@@ -1,4 +1,6 @@
-title: Styczeń
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar: []
-_template: repertuar_blocks
+title: Styczeń
+repertuar:
+  - tytul: Elfy i fabryka prezentów
+    data: 2024-01-07T12:00:00.000Z
+    link: '-'
