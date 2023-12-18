@@ -9,9 +9,10 @@ Marzenia, Głębiny, Piękne Sny - Spełnienie na Scenie!
 
 Marzenia to coś, co bije głęboko w naszych sercach, tak jak głębiny oceanu. Przyjdź i pozwól Małej Syrence spełnić swoje marzenie o zobaczeniu lądu, poznaniu ludzi i miłości do księcia. W jej podróży pomoże jej tajemnicza Meduza Ulla, a my będziemy obserwować, jak rozwija się ta niezwykła historia. Dołącz do nas, aby pomóc Syrence w jej podróży przez głębokie odmęty oceanu. Razem odkryjemy fascynującą kolekcję muszli, spotkamy kolorowe ryby, zaśpiewamy z Syrenką i zanurzymy się w magiczną krainę morskich przygód.
 
-To spektakl dla widzów od 2 do 99 lat. Czas trwania wynosi około 50 minut. Premiera już w listopadzie 2023 roku!
+To spektakl dla widzów od 2,5 do 99 lat. Czas trwania wynosi około 55 minut. Premiera 6.11.2023.
 
 Dołącz do nas na tej niezapomnianej podróży pod wodą i razem z Małą Syrenką odkryjmy świat marzeń!
+
 <table border="0">
         <tr>
             <td>
@@ -105,7 +106,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 
 <table border="0">
 <tr>
-<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat / Zbigniew Kozłowski <br /> Przemko Janiszko </td>
+<td><strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat / Andrzej Krucz <br /> Przemko Janiszko </td>
 <td><strong>Muzyka</strong><br />Piotr Czajkowski<br />Krzysztof Jaszczak</td>
 <td><strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska</td>
 <td><strong>Tekst</strong><br />Pola Wójcik</td>
@@ -143,6 +144,7 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <td><strong>Muzyka</strong><br />Zuzanna Calka</td>
 <td><strong>Występują</strong><br />Katarzyna Mazur / Gosia Gradkowska <br /> Pamela Adamik / Karolina Gwóźdź </td>
 <td><strong>Scenografia</strong><br />Małgorzata Domańska</td>
+<td><strong>Tekst</strong><br />Pola Wójcik</td>
 </tr>
 </table>
 <br />
@@ -190,7 +192,7 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Brzydkie Kaczątko czyli tupu tup</ul></h2> <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-rad_us: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 <i>wg baśni H. Ch. Andersena</i><br /><br />
 
-Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena *"Szybkobiegacze"* i *"Brzydkie Kaczątko"*.
+Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena _"Szybkobiegacze"_ i _"Brzydkie Kaczątko"_.
 
 Dla dzieci od 1,5 do 6 lat.
 
@@ -284,7 +286,6 @@ Poznajmy roztańczone, rozśpiewane i psotne koty z wierszy Marii Konopnickiej. 
 <a id="single_image" rel="8" href="lay/img/koty/large/13.jpg"><img src="lay/img/koty/small/13.jpg"/></a>
 <a id="single_image" rel="8" href="lay/img/koty/large/14.jpg"><img src="lay/img/koty/small/14.jpg"/></a>
 <a id="single_image" rel="8" href="lay/img/koty/large/15.jpg"><img src="lay/img/koty/small/15.jpg"/></a>
-
 
 </ul>
 
@@ -468,7 +469,7 @@ Elfy poproszą dzieci o pomoc w pakowaniu i w zimowych zabawach.
 <br /><br />
 Przedstawienie trwa około 55 minut.
 <br />
-Przedstawienie dla dzieci w wieku od 2 do 99 lat
+Przedstawienie dla dzieci w wieku od 2,5 do 99 lat
 <br /><br />
 Premiera: 7 grudzień 2013
 
