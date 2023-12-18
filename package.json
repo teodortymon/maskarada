@@ -20,8 +20,9 @@
   },
   "homepage": "https://github.com/teodortymon/maskarada#readme",
   "dependencies": {
-    "@tinacms/cli": "^1.5.39",
-    "tinacms": "^1.5.28",
-    "use-deep-compare": "1.1.0"
+    "@tinacms/cli": "1.5.9",
+    "tinacms": "1.5.2",
+    "use-deep-compare": "1.1.0",
+    "uvu": "0.5.0"
   }
 }
