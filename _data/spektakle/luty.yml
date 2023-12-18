@@ -1,4 +1,6 @@
-title: Luty
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar: []
-_template: repertuar_blocks
+title: Luty
+repertuar:
+  - tytul: Śnieżny show
+    data: 2024-02-04T12:00:00.000Z
+    link: '-'
