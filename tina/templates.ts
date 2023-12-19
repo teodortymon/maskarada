@@ -24,9 +24,7 @@ const spektakle = [
   "Co w trawie bzyczy?",
   "Warsztaty Chopinowskie",
   "Królowa Myszy",
-  "Królowa Myszy (premiera)",
-  "Mała syrenka (premiera)",
-  "Mała syrenka",
+  "Mała Syrenka",
   "Warsztaty teatralne",
   "Warsztaty kaligraficzne",
 ];
