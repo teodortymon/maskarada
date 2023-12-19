@@ -1,8 +1,9 @@
 
 # Sane defaults
 SHELL := /opt/homebrew/bin/fish
+# SHELL := /bin/bash
 .ONESHELL:
-.SHELLFLAGS := -eu -o pipefail -c
+# .SHELLFLAGS := -eu -o pipefail -c
 .DELETE_ON_ERROR:
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
@@ -17,13 +18,13 @@ dev-tina: # Run jekyll with tina
 
 resize: # Create structure and resize pictures
 	cd $(args)
-	mkdir small
-	mkdir large
-	cp *.JPG small/
-	cp *.JPG large/
-	mogrify -resize 180x180 small/*.JPG
-	mogrify -resize 600x600 large/*.JPG
-	rm -rf *.JPG
+	mkdir -p small
+	mkdir -p large
+	cp *.jpg small/
+	cp *.jpg large/
+	mogrify -resize 180x180 small/*.jpg
+	mogrify -resize 600x600 large/*.jpg
+	rm -rf *.jpg
 	cd ..
 	cp -r $(args) t/lay/img/
 

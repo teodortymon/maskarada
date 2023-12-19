@@ -37,7 +37,9 @@ Dołącz do nas na tej niezapomnianej podróży pod wodą i razem z Małą Syren
                 Pola Wójcik na podstawie J.Ch. Andersena
             </td>
         </tr>
-    </table>
+</table>
+<br />
+<ul class="photos"> {% for i in (1..7) %} <a id="single_image" rel="syrenka" href="lay/img/syrenka/large/{{ i }}.JPG"><img src="lay/img/syrenka/small/{{ i }}.JPG"/></a> {% endfor %} </ul>
 
 <br />
 <br />
