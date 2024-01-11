@@ -1,4 +1,6 @@
-title: Marzec
 date: '2019-04-06T22:30:55.000+00:00'
-repertuar: []
-_template: repertuar_blocks
+title: Marzec
+repertuar:
+  - tytul: Magiczne Drzewko Wróżek
+    data: 2024-03-03T12:00:00.000Z
+    link: '-'
