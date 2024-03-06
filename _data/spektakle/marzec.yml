@@ -1,42 +1,39 @@
-date: "2019-04-06T22:30:55.000+00:00"
+date: '2019-04-06T22:30:55.000+00:00'
 title: Marzec
 repertuar:
   - tytul: Królowa Myszy
     data: 2024-03-25T11:00:00.000Z
-    link: "-"
-  - tytul: Mała Syrenka
-    data: 2024-03-11T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Magiczne Drzewko Wróżek
     data: 2024-03-04T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Wesołe Koty
     data: 2024-03-02T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/267992"
+    link: 'https://kicket.com/embedded/rezerwacja/267992'
   - tytul: Calineczka
     data: 2024-03-18T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Królowa Myszy
     data: 2024-03-25T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Królowa Myszy
     data: 2024-03-24T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/267996"
+    link: 'https://kicket.com/embedded/rezerwacja/267996'
   - tytul: Calineczka
     data: 2024-03-18T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Calineczka
     data: 2024-03-17T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/267995"
+    link: 'https://kicket.com/embedded/rezerwacja/267995'
   - tytul: Mała Syrenka
     data: 2024-03-11T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Mała Syrenka
     data: 2024-03-10T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/267994"
+    link: 'https://kicket.com/embedded/rezerwacja/267994'
   - tytul: Magiczne Drzewko Wróżek
     data: 2024-03-04T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Magiczne Drzewko Wróżek
     data: 2024-03-03T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/267993"
+    link: 'https://kicket.com/embedded/rezerwacja/267993'
