@@ -25,8 +25,6 @@ resize: # Create structure and resize pictures
 	mogrify -resize 180x180 small/*.jpg
 	mogrify -resize 600x600 large/*.jpg
 	rm -rf *.jpg
-	cd ..
-	cp -r $(args) t/lay/img/
 
 # -----------------------------------------------------------
 # CAUTION: If you have a file with the same name as make
