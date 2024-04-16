@@ -117,10 +117,11 @@ Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna ba
 <br />
 
 <ul class="photos">
-    
+
 {% for i in (1..5) %}
 <a id="single_image" rel="myszy" href="lay/img/myszy/large/{{ i }}.JPG"><img src="lay/img/myszy/small/{{ i }}.JPG"/></a>
 {% endfor %}
+
 </ul>
 
 <br />
@@ -215,6 +216,7 @@ Premiera 5.11.2017
 <td><strong>Występują</strong><br />
 Katarzyna Mazur<br />
 Karolina Węgrzyńska<br />
+</td>
 </tr>
 <tr>
 <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
