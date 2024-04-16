@@ -18,8 +18,8 @@ Dołącz do nas na tej niezapomnianej podróży pod wodą i razem z Małą Syren
             <td>
                 <strong>Grają</strong><br />
                 Gosia Gradkowska <br />
-                Joanna Pietrońska <br />
-                Ireneusz Wojaczek <br />
+                Joanna Pietrońska / Katarzyna Mazur <br />
+                Ireneusz Wojaczek / Dominik Rybiałek <br />
                 Przemko Janiszko <br />
             </td>
             <td>
@@ -198,7 +198,7 @@ Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie
 
 Dla dzieci od 1,5 do 6 lat.
 
-Czas trwania około 45 minut
+Czas trwania około 50 minut
 
 Premiera 5.11.2017
 
@@ -211,7 +211,9 @@ Premiera 5.11.2017
 <table border="0">
 <tr>
 <td><strong>Tekst</strong><br />Pola Wójcik</td>
-<td><strong>Występują</strong><br />Agnieszka Senderowska <br /> Justyna Gumienna<br />Anna Bakalarska</td>
+<td><strong>Występują</strong><br />
+Katarzyna Mazur<br />
+Karolina Węgrzyńska<br />
 </tr>
 <tr>
 <td><strong>Muzyka</strong><br />Zuzanna Całka</td>
