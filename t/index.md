@@ -230,13 +230,9 @@ Karolina Węgrzyńska<br />
 <br />
 
 <ul class="photos">
-<a id="single_image" rel="9" href="lay/img/tuptup/large/1.jpg"><img src="lay/img/tuptup/small/1.jpg"/></a>
-<a id="single_image" rel="9" href="lay/img/tuptup/large/2.jpg"><img src="lay/img/tuptup/small/2.jpg"/></a>
-<a id="single_image" rel="9" href="lay/img/tuptup/large/3.jpg"><img src="lay/img/tuptup/small/3.jpg"/></a>
-<br />
-<a id="single_image" rel="9" href="lay/img/tuptup/large/4.jpg"><img src="lay/img/tuptup/small/4.jpg"/></a>
-<a id="single_image" rel="9" href="lay/img/tuptup/large/5.jpg"><img src="lay/img/tuptup/small/5.jpg"/></a>
-<a id="single_image" rel="9" href="lay/img/tuptup/large/6.jpg"><img src="lay/img/tuptup/small/6.jpg"/></a>
+{% for i in (1..9) %}
+<a id="single_image" rel="turli" href="lay/img/tuptup/large/{{ i }}.jpg"><img src="lay/img/tuptup/small/{{ i }}.jpg"/></a>
+{% endfor %}
 </ul>
 
 <br />
