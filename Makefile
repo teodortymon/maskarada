@@ -22,8 +22,11 @@ resize: # Create structure and resize pictures
 	mkdir -p large
 	cp *.jpg small/
 	cp *.jpg large/
+	chmod 777 *
 	mogrify -resize 180x180 small/*.jpg
+	chmod 777 small/*
 	mogrify -resize 600x600 large/*.jpg
+	chmod 777 large/*
 	rm -rf *.jpg
 
 # -----------------------------------------------------------
