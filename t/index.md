@@ -39,7 +39,7 @@ Dołącz do nas na tej niezapomnianej podróży pod wodą i razem z Małą Syren
         </tr>
 </table>
 <br />
-<ul class="photos"> {% for i in (1..8) %} <a id="single_image" rel="syrenka" href="lay/img/syrenka/large/{{ i }}.jpg"><img src="lay/img/syrenka/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
+<ul class="photos"> {% for i in (1..10) %} <a id="single_image" rel="syrenka" href="lay/img/syrenka/large/{{ i }}.jpg"><img src="lay/img/syrenka/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
 
 <br />
 <br />
