@@ -459,7 +459,11 @@ Premiera: 30 marzec 2014 <br />
 <a id="single_image" rel="4" href="lay/img/cal/large/9.JPG"><img src="lay/img/cal/small/9.JPG"/></a>
 <a id="single_image" rel="4" href="lay/img/cal/large/8.JPG"><img src="lay/img/cal/small/8.JPG"/></a>
 <a id="single_image" rel="4" href="lay/img/cal/large/10.JPG"><img src="lay/img/cal/small/10.JPG"/></a>
+<a id="single_image" rel="4" href="lay/img/cal/large/1.JPG"><img src="lay/img/cal/small/11.JPG"/></a>
+<a id="single_image" rel="4" href="lay/img/cal/large/12.JPG"><img src="lay/img/cal/small/12.JPG"/></a>
+<a id="single_image" rel="4" href="lay/img/cal/large/13.JPG"><img src="lay/img/cal/small/13.JPG"/></a>
 <br />
+
 </ul>
 
 <br /><br /> <br /> <br />
