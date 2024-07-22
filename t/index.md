@@ -196,13 +196,16 @@ Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnyc
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Brzydkie Kaczątko czyli tupu tup</ul></h2> <a id="single_image" href="lay/img/tup_big.jpg"><img src="lay/img/tup_min.jpg" alt="Tuputup" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-rad_us: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 <i>wg baśni H. Ch. Andersena</i><br /><br />
 
-Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko? Będziemy biegać po piasku i po śladach. Dowiemy się czy wszyscy polubili kaczątko i co z niego wyrosło. Zapraszamy na sensoryczny spektakl na podstawie baśni H. Ch. Andersena _"Szybkobiegacze"_ i _"Brzydkie Kaczątko"_.
+Kto najszybszy? Kto wygra wyścigi? Zając, gąsienica, jaskółka, czy brzydkie kaczątko?
+Poznamy kaczątko o pięknym głosie i dowiemy się, czy znajdzie przyjaciół i nowy dom.
+Dowiemy się, czy wszyscy polubili kaczątko i co z niego wyrosło. Będziemy biegać po piasku i po śladach i bawić się na podwórku kaczuszek.
+Zapraszamy najmłodszych na muzyczny, sensoryczny spektakl na podstawie baśni H. Ch. Andersena _"Szybkobiegacze"_ i _"Brzydkie Kaczątko"_.
 
 Dla dzieci od 1,5 do 6 lat.
 
 Czas trwania około 50 minut
 
-Premiera 5.11.2017
+Premiera 5.11.2017 / 26.05.2024
 
 <br /><br />
 
@@ -216,6 +219,7 @@ Premiera 5.11.2017
 <td><strong>Występują</strong><br />
 Katarzyna Mazur<br />
 Karolina Węgrzyńska<br />
+Przemko Janiszko<br />
 </td>
 </tr>
 <tr>
