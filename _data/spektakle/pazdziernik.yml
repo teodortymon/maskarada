@@ -1,38 +1,41 @@
 title: Październik
 repertuar:
   - tytul: Calineczka
+    data: 2024-10-29T09:30:00.000Z
+    link: '-'
+  - tytul: Calineczka
     data: 2024-10-29T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Królowa Myszy
     data: 2024-10-28T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Królowa Myszy
     data: 2024-10-28T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Królowa Myszy
     data: 2024-10-27T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/282222"
+    link: 'https://kicket.com/embedded/rezerwacja/282222'
   - tytul: Calineczka
     data: 2024-10-26T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/282220"
+    link: 'https://kicket.com/embedded/rezerwacja/282220'
   - tytul: Mała Syrenka
     data: 2024-10-21T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Mała Syrenka
     data: 2024-10-21T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Mała Syrenka
     data: 2024-10-20T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/282219"
+    link: 'https://kicket.com/embedded/rezerwacja/282219'
   - tytul: Brzydkie Kaczątko
     data: 2024-10-13T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/282218"
+    link: 'https://kicket.com/embedded/rezerwacja/282218'
   - tytul: Magiczne Drzewko Wróżek
     data: 2024-10-07T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Magiczne Drzewko Wróżek
     data: 2024-10-07T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Magiczne Drzewko Wróżek
     data: 2024-10-06T12:00:00.000Z
-    link: "https://kicket.com/embedded/rezerwacja/282217"
+    link: 'https://kicket.com/embedded/rezerwacja/282217'
