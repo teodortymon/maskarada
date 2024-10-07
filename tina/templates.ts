@@ -10,6 +10,7 @@ const spektakle = [
   "Jesienne warsztaty teatralno-taneczne",
   "Zimowe warsztaty teatralno-taneczne",
   "Elfy i fabryka prezentów",
+  "Elfy i magia świąt",
   "Śnieżny show",
   "Złota Rybka",
   "Brzydkie Kaczątko",
