@@ -15,7 +15,7 @@ layout: t
 - w kasie Teatru na godzinę przed spektaklem (płatność tylko gotówką)
 - na portalach [ebilet](https://www.ebilet.pl/miejsce/teatr-maskarada) / [kicket (dawne ewejściówki)](https://kicket.com/warszawa/oferty/teatr-maskarada,333) <br /> _(na godzinę przed spektaklem, później w kasie i telefonicznie)_
 
-**Szkoły i przedszkola/cena biletu grupowego - 45 zł**
+**Szkoły i przedszkola/cena biletu grupowego - 49 zł**
 
 Dla grup zorganizowanych gramy w dni powszednie  
 Prosimy o kontakt tel. w celu rezerwacji i uzgodnienia terminu.

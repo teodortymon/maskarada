@@ -19,7 +19,7 @@ Dołącz do nas na tej niezapomnianej podróży pod wodą i razem z Małą Syren
                 <strong>Grają</strong><br />
                 Gosia Gradkowska <br />
                 Joanna Pietrońska / Katarzyna Mazur <br />
-                Ireneusz Wojaczek / Dominik Rybiałek <br />
+                Ireneusz Wojaczek / Dominik Rybiałek / Mateusz Łapka <br />
                 Przemko Janiszko <br />
             </td>
             <td>
