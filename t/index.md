@@ -5,11 +5,17 @@ layout: t
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Elfy i magia świąt<i> - nowa premiera</i></ul></h2>
 <a id="single_image" href="lay/img/elfy2_big.png"><img src="lay/img/elfy2_min.png" alt="Elfy" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
 
-W fabryce elfów duże zmiany. Elf racjonalizator chce wszystko odmienić.
+W fabryce elfów duże zmiany.
+
+Elf racjonalizator chce wszystko odmienić.
 Stawia na nowe sposoby dostarczania prezentów, wprowadza światłowody i nowoczesne metody pracy. Niestety postanawia też wyeliminować świętego Mikołaja i tu miarka się przebiera.
+
+
 Jego plany zaczynają upadać, jest poważna groźba, że prezenty nie trafią do dzieci.
 Wtedy stary doświadczony elf przejmuje ster i wraca do dobrych, sprawdzonych przez lata metod.
 Znowu zaczyna działać magia, świat i święta zostają uratowane, również dzięki pomocy widzów.
+
+
 Spektakl familijny dla widzów od 3,5 do 99 lat. Czas trwania wynosi około 50 minut.
 <table border="0">
         <tr>
