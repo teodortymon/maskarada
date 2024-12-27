@@ -26,12 +26,14 @@ Spektakl familijny dla widzów od 3,5 do 99 lat. Czas trwania wynosi około 50 m
             </td>
         </tr>
 </table>
+<br />
+<ul class="photos"> {% for i in (1..3) %} <a id="single_image" rel="elfy2" href="lay/img/elfy2/large/{{ i }}.jpg"><img src="lay/img/elfy2/small/{{ i }}.jpg"/></a> {% endfor %} </ul>
+
 
 <br />
 <br />
 <br />
-<br />
-<br />
+
 
 <h2 style="text-shadow: 2px 2px rgb(255, 66, 201)"><ul class="photos">Mała Syrenka</ul></h2>
 <a id="single_image" href="lay/img/p/syrenka_big.jpg"><img src="lay/img/p/syrenka_min.jpg" alt="Syrenka" style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"/></a>
