@@ -6,13 +6,13 @@ repertuar:
     link: '-'
   - tytul: Królowa Myszy
     data: 2025-04-12T12:00:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/301499'
   - tytul: Księżniczka na ziarnku grochu
     data: 2025-04-28T11:00:00.000Z
     link: '-'
   - tytul: Księżniczka na ziarnku grochu
     data: 2025-04-27T12:30:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/301501'
   - tytul: Magiczne Drzewko Wróżek
     data: 2025-04-14T11:00:00.000Z
     link: '-'
@@ -21,7 +21,7 @@ repertuar:
     link: '-'
   - tytul: Magiczne Drzewko Wróżek
     data: 2025-04-13T12:00:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/301500'
   - tytul: Mała Syrenka
     data: 2025-04-07T11:00:00.000Z
     link: '-'
@@ -30,4 +30,4 @@ repertuar:
     link: '-'
   - tytul: Mała Syrenka
     data: 2025-04-06T12:30:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/301497'
