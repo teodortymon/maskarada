@@ -8,10 +8,10 @@ repertuar:
     link: '-'
   - tytul: Księżniczka na ziarnku grochu
     data: 2025-10-26T12:30:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/319143'
   - tytul: Magiczne Drzewko Wróżek
     data: 2025-10-25T12:30:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/319142'
   - tytul: Wesołe Koty
     data: 2025-10-21T11:00:00.000Z
     link: '-'
@@ -26,13 +26,13 @@ repertuar:
     link: '-'
   - tytul: Mała Syrenka
     data: 2025-10-19T12:30:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/319141'
   - tytul: Calineczka
     data: 2025-10-18T12:30:00.000Z
     link: '-'
   - tytul: Wesołe Koty
     data: 2025-10-12T14:30:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/319140'
   - tytul: Złota Rybka
     data: 2025-10-06T11:00:00.000Z
     link: '-'
@@ -41,4 +41,4 @@ repertuar:
     link: '-'
   - tytul: Złota Rybka
     data: 2025-10-05T14:30:00.000Z
-    link: '-'
+    link: 'https://kicket.com/embedded/rezerwacja/319138'
