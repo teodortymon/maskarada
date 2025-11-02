@@ -4,7 +4,7 @@ layout: t
 
 ## Bilety
 
-### Cena biletu - 55 zł
+### Cena biletu - 60 zł
 
 <br /><i> Zarówno dziecko jak i dorosły musi posiadać bilet </i>
 
