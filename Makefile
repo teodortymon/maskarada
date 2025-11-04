@@ -29,20 +29,23 @@ resize: # Create structure and resize pictures
 	chmod 777 *
 	mogrify -resize 180x180 small/*.jpg
 	mogrify -resize 180x180 small/*.JPG
-	
+
 	chmod 777 small/*
 	mogrify -resize 600x600 large/*.jpg
 	mogrify -resize 600x600 large/*.JPG
-	
+
 	chmod 777 large/*
 	rm -rf *.jpg
+
+update-links: # Update ticket links in spektakle YAML from HTML export (usage: make update-links month=grudzien)
+	python3 scripts/update_spektakle_links.py $(month)
 
 # -----------------------------------------------------------
 # CAUTION: If you have a file with the same name as make
 # command, you need to add it to .PHONY below, otherwise it
 # won't work. E.g. `make run` wouldn't work if you have
 # `run` file in pwd.
-.PHONY: help
+.PHONY: help update-links
 
 # -----------------------------------------------------------
 # -----       (Makefile helpers and decoration)      --------

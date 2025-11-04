@@ -31,3 +31,6 @@ test/dest
 tmp/*
 
 node_modules
+
+# Spektakle HTML exports (temporary processing files)
+_data/spektakle/*_raw.html
