@@ -9,7 +9,10 @@ MAKEFLAGS += --no-builtin-rules
 
 dev: # Run
 	chruby ruby-3.1.3
-	bundle exec jekyll serve --livereload
+	bundle exec jekyll serve --livereload --host 0.0.0.0
+
+dev-tina: # Run jekyll with tina
+	npx tinacms dev -c "bundle exec jekyll serve --livereload --host localhost"
 
 resize: # Create structure and resize pictures
 	cd $(args)

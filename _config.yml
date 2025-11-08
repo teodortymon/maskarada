@@ -2,6 +2,8 @@
 title: Maskarada
 timezone: UTC
 collections:
+  s2:
+    output: true
   posts:
     title: Posts
     output: true
@@ -9,15 +11,15 @@ collections:
     title: Uploads
     output: true
 email: teatr.maskarada@gmail.com
-description: 'Teatr i Wypożyczalnia Kostiumów Karnawałowych Maskarada zapewnią Twojemu
+description:
+  "Teatr i Wypożyczalnia Kostiumów Karnawałowych Maskarada zapewnią Twojemu
   dziecku nalepszą rozrywkę połączoną z edukacją teatralną. Przynosimy uśmiech już
-  od 10 lat!
-
-'
-baseurl: ''
+  od 10 lat!"
+baseurl: ""
 url: http://www.maskarada.waw.pl
 exclude:
-- vendor
+  - vendor
+  - node_modules
 markdown: kramdown
 cloudinary:
   cloud_name: maskarada

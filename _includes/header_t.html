@@ -1,88 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-		<meta name="Content-Language" content="pl" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="Content-Language" content="pl" />
 
-		<meta name="Description" content="Magiczne przedstawienia teatralne dla dzieci." />
+    <meta name="Description" content="Magiczne przedstawienia teatralne dla dzieci." />
 
-		<title>MASKARADA Teatr dla dzieci</title>
+    <title>MASKARADA Teatr dla dzieci</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
-		<link rel="stylesheet" href="lay/style.css" type="text/css" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<!-- TODO: Move to the bottom of <body> -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		
-		<link rel="preconnect" href="https://fonts.googleapis.com"> 
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">	
-	
-</head>
+    <!-- Bootstrap: TODO: Move to the bottom of <body> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 
-		<!-- EWEJSCIOWKI -->
-		<!-- TODO: Move to the ticket buying page -->
-		<!-- <script src="https://ewejsciowki.pl/embedded_static/embedded.js"></script> -->
-		
-		<!-- Facebook Pixel Code -->
-		<!-- <script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-		n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t,s)}(window, document,'script',
-		'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '1308079555992915');
-		fbq('track', 'PageView');
-		</script>
-		<noscript><img height="0" width="0" style="display:none!important"
-		src="https://www.facebook.com/tr?id=1308079555992915&ev=PageView&noscript=1"
-		/></noscript> -->
-		<!-- End Facebook Pixel Code -->
+    <!-- EWEJSCIOWKI -->
+    <script src="https://kicket.com/embedded_static/embedded.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
 
-<body style="background-color: #FBE9E8; color: #E07B78">
+      <!-- Boostrap scss styles -->
+    <link rel="stylesheet" href="../css/styles.css" />
 
+      <!-- Custom css overrides -->
+    <link
+      rel="stylesheet"
+      href="lay/style.css"
+      type="text/css" />
+  </head>
 
-<!-- <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> -->
-<div class="container">
-	<nav class="navbar justify-content-around text-dark">
+  <!-- EWEJSCIOWKI -->
+  <!-- TODO: Move to the ticket buying page -->
+  <!-- <script src="https://ewejsciowki.pl/embedded_static/embedded.js"></script> -->
 
-		<a class="nav-link" href="repertuar.html">Kalendarz</a>
-		<a class="nav-link" href="spektakle.html">Spektakle</a>
-		<a class="nav-link" href="warsztaty.html">Warsztaty</a>
-		
-		<a class="nav-link" href="index.html">
-			<img src="lay/img/fairy.svg" class="img-fluid" width="100" height="100" alt="...">
-		</a>
-		<a class="nav-link" href="bilety.html">Bilety</a>
-		<a class="nav-link" href="onas.html">Historia</a>
-		<a class="nav-link" href="kontakt.html">Kontakt</a>
+  <!-- Facebook Pixel Code -->
+  <!-- <script>    !function(f,b,e,v,n,t,s)    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?    n.callMethod.apply(n,arguments):n.queue.push(arguments)};    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';    n.queue=[];t=b.createElement(e);t.async=!0;    t.src=v;s=b.getElementsByTagName(e)[0];    s.parentNode.insertBefore(t,s)}(window, document,'script',    'https://connect.facebook.net/en_US/fbevents.js');    fbq('init', '1308079555992915');    fbq('track', 'PageView');    </script>    <noscript><img height="0" width="0" style="display:none!important"    src="https://www.facebook.com/tr?id=1308079555992915&ev=PageView&noscript=1"    /></noscript> -->
+  <!-- End Facebook Pixel Code -->
 
+  <!-- <div id="fb-root"></div>    <script>(function(d, s, id) {    var js, fjs = d.getElementsByTagName(s)[0];    if (d.getElementById(id)) return;    js = d.createElement(s); js.id = id;    js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";    fjs.parentNode.insertBefore(js, fjs);    }(document, 'script', 'facebook-jssdk'));</script> -->
+  <nav class="navbar text-dark">
+    <div class="container">
+      {% assign url = page.url | downcase | split: '/' %}
+      {% assign ur = url[2] | split: '.' %}
+      {% assign u = ur[0] %}
+      <a class="nav-link {% if u == 'repertuar' %}active{% endif %}" href="repertuar.html">Kalendarz</a>
+      <a class="nav-link {% if u == 'spektakle' %}active{% endif %}" href="spektakle.html">Spektakle</a>
+      <a class="nav-link {% if u == 'warsztaty' %}active{% endif %}" href="warsztaty.html">Warsztaty</a>
+
+      <a class="nav-link {% if u == 'index' %}active{% endif %}" href="index.html">
+        <img
+          src="lay/img/fairy.svg"
+          class="img-fluid"
+          width="100"
+          height="100"
+          alt="..." />
+      </a>
+      <a class="nav-link {% if u == 'bilety' %}active{% endif %}" href="bilety.html">Bilety</a>
+      <a class="nav-link {% if u == 'onas' %}active{% endif %}" href="onas.html">Historia</a>
+      <a class="nav-link {% if u == 'kontakt' %}active{% endif %}" href="kontakt.html">Kontakt</a>
+    </div>
   </nav>
-</div>
 
-<main class="container">
-<!-- <div id="header" class="container" >
-	<h1><a href="index.html">Teatr Maskarada</a></h1>
-	<ul id="dropdownMenu">
-		<li><a href="index.html">Spektakle</a></li>
-		<li><a href="repertuar.html">Repertuar</a></li>
-        <li><a href="warsztaty.html">Warsztaty</a></li>
-		<li><a href="onas.html">O nas</a></li>
-        <li><a href="bilety.html">Bilety</a></li>
-		<li><a href="kontakt.html">Kontakt</a></li>
-        
-	</ul>
-</div> -->
+  <!-- <main class="container"> -->
 
-<!-- <div id="main" class="container"> -->
+  <!-- <div id="header" class="container" >    <h1><a href="index.html">Teatr Maskarada</a></h1>    <ul id="dropdownMenu">    <li><a href="index.html">Spektakle</a></li>    <li><a href="repertuar.html">Repertuar</a></li>    <li><a href="warsztaty.html">Warsztaty</a></li>    <li><a href="onas.html">O nas</a></li>    <li><a href="bilety.html">Bilety</a></li>    <li><a href="kontakt.html">Kontakt</a></li>        </ul>    </div> -->
+
+  <!-- <div id="main" class="container"> -->
+
+  <hr/>
+</html>

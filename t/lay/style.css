@@ -1,7 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-} */
 @font-face {
   font-family: YoungSerif;
   src: url("YoungSerif-Regular.otf") format("opentype");
@@ -9,14 +5,13 @@
 
 body {
   font-family: "Montserrat", sans-serif !important;
-  background-color: #fbe9e8;
-  color: #e07b78;
-  /* background: url(img/bg.gif);
-  font: normal 20px Calibri, Helvetica, sans-serif;
-  color: #0020a0;
-  line-height: 100%;
-  background: url(img/bg.jpg) repeat-y center -50px #99ceef;
-  */
+  /* background-color: #fbe9e8; */
+  /* color: #e07b78; */
+  /* background: url(img/bg.gif); */
+  /* font: normal 20px Calibri, Helvetica, sans-serif; */
+  /* color: #0020a0; */
+  /* line-height: 100%; */
+  /* background: url(img/bg.jpg) repeat-y center -50px #99ceef; */
 }
 h1,
 h2,
@@ -27,20 +22,27 @@ h6 {
   font-family: YoungSerif, sans-serif;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
-}
-a:link {
-  color: #e07b78;
-}
-
 a.nav-link {
   font-family: YoungSerif, sans-serif;
   font-size: xx-large;
   color: #e07b78;
 }
 
-table {
+a.nav-link.active {
+  text-decoration: wavy underline;
+  color: #bb6468;
+}
+
+/* p {
+  font-family: "Montserrat", sans-serif;
+}
+a:link {
+  color: #e07b78;
+}
+
+*/
+
+/* table {
   font-family: Montserrat, sans-serif;
   color: #e07b78 !important;
-}
+} */
