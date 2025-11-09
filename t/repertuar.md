@@ -1,6 +1,113 @@
 ---
 layout: t
 ---
+<style>
+  .card-body {
+    padding: 1.5rem 2rem;
+  }
+  .table {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .table td {
+    vertical-align: middle;
+  }
+  .table td:first-child {
+    width: 25%;
+  }
+  .table td:nth-child(2) {
+    width: 35%;
+  }
+  .table td:last-child {
+    width: 40%;
+  }
+
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    /* Compact radio buttons for mobile */
+    .btn-group {
+      display: flex;
+      gap: 4px;
+      width: 100%;
+    }
+
+    .btn-group .btn {
+      font-size: 0.7rem;
+      padding: 0.4rem 0.3rem;
+      white-space: normal;
+      word-wrap: break-word;
+      flex: 1;
+      min-width: 0;
+      line-height: 1.2;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+      position: relative;
+    }
+
+    /* Remove iOS blue background/highlight */
+    .btn-group .btn:focus,
+    .btn-group .btn:active,
+    .btn-group .btn:focus-visible {
+      outline: none;
+      box-shadow: none;
+    }
+
+    /* White text for checked/active buttons */
+    .btn-check:checked + .btn-outline-primary,
+    .btn-outline-primary:active,
+    .btn-outline-primary.active {
+      color: #fff !important;
+      background-color: #0d6efd !important;
+      border-color: #0d6efd !important;
+    }
+
+    /* Hide the actual radio input */
+    .btn-check {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+      pointer-events: none;
+    }
+
+    /* Stack table rows vertically on mobile */
+    .table {
+      width: 100%;
+    }
+
+    .table tbody tr {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #dee2e6;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+    }
+
+    .table td {
+      display: block;
+      width: 100% !important;
+      border: none;
+      padding: 0.25rem 0.5rem;
+      text-align: left !important;
+    }
+
+    .table td:first-child {
+      font-weight: bold;
+      border-bottom: 1px solid #dee2e6;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .table td:last-child {
+      margin-top: 0.5rem;
+    }
+
+    /* Make buttons full width on mobile */
+    .table td .btn {
+      width: 100%;
+      display: block;
+    }
+  }
+</style>
 <div class="container">
   <nav class="navbar">
     <div class="container-fluid">
@@ -55,14 +162,23 @@ layout: t
           <h4>{{ site.data.spektakle\[miesiac\].title }}</h4>
           <div class="table-responsive">
 
-            <table class="table table-borderles table-sm">
+            <table class="table table-borderles table-sm" style="margin: 0 auto;">
               {% assign spektakle = site.data.spektakle\[miesiac\].repertuar | sort: 'data' %}
+              {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
               {% for spektakl in spektakle %}
-                {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
-                <tr>
-                  <th>{{ spektakl.data | date: "%-d.%m" }}<br>{{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }} {{ spektakl.data | date: "%R" }}</th>
-                  <th>{{ spektakl.tytul }}</th>
-                  <th>
+                {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
+                {% comment %} Only show future events {% endcomment %}
+                {% if event_timestamp >= now_timestamp %}
+                  {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
+                  {% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
+                    {% assign event_type = "weekend" %}
+                  {% else %}
+                    {% assign event_type = "weekday" %}
+                  {% endif %}
+                  <tr data-event-type="{{ event_type }}">
+                  <td style="white-space: nowrap;">{{ spektakl.data | date: "%-d.%m" }} {{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }} {{ spektakl.data | date: "%R" }}</td>
+                  <td>{{ spektakl.tytul }}</td>
+                  <td style="text-align: center;">
                     {% if spektakl.manual_price == true %}
                       {{ spektakl.link }}
                     {% else %}
@@ -81,8 +197,9 @@ layout: t
                         <a href="tel:501-027-278" onclick="fbq('track', 'CallFromEventList');">501 027 278</a>
                       {% endif %}
                     {% endif %}
-                  </th>
+                  </td>
                 </tr>
+                {% endif %}
               {% endfor %}
             </table>
           </div>
@@ -95,6 +212,55 @@ layout: t
   <br/><br/>
 
 </div>
+
+<script>
+  // Filter logic for calendar events
+  document.addEventListener('DOMContentLoaded', function() {
+    const btnAll = document.getElementById('btnradio1');
+    const btnFamilies = document.getElementById('btnradio2');
+    const btnSchools = document.getElementById('btnradio3');
+
+    function filterEvents(filterType) {
+      const allRows = document.querySelectorAll('tr[data-event-type]');
+
+      allRows.forEach(function(row) {
+        const eventType = row.getAttribute('data-event-type');
+
+        if (filterType === 'all') {
+          row.style.display = '';
+        } else if (filterType === 'families') {
+          // Show only weekend events
+          row.style.display = (eventType === 'weekend') ? '' : 'none';
+        } else if (filterType === 'schools') {
+          // Show only weekday events (with "Zapraszamy grupy zorganizowane...")
+          row.style.display = (eventType === 'weekday') ? '' : 'none';
+        }
+      });
+    }
+
+    // Add event listeners to radio buttons
+    btnAll.addEventListener('change', function() {
+      if (this.checked) {
+        filterEvents('all');
+      }
+    });
+
+    btnFamilies.addEventListener('change', function() {
+      if (this.checked) {
+        filterEvents('families');
+      }
+    });
+
+    btnSchools.addEventListener('change', function() {
+      if (this.checked) {
+        filterEvents('schools');
+      }
+    });
+
+    // Initialize with "All" filter (default)
+    filterEvents('all');
+  });
+</script>
 
 <!-- <tr>  <th><strike>10.06.2018 niedziela</strike></th>  <th><strike>12.30</strike></th>  <th><strike>Urodziny Turli-Taja</strike></th>  <th>Spektatkl odwołany</th>  </tr> -->
 <!-- <tr>  <th>24.06.2018 niedziela</th>  <th>12.30</th>  <th>Calineczka</th>  <th><a href="https://kicket.com/embedded/rezerwacja/107628">Kup bilet</a></th>  </tr> -->

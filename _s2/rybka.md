@@ -1,6 +1,6 @@
 ---
 title: Złota Rybka
-link: https://www.youtube.com/embed/I6uIPXobj9s
+link: https://www.youtube.com/embed/I6uIPXobj9s?showinfo=0
 headline: Spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń.
 age: Dla dzieci od 1,5 do 8 lat.
 time: około 45 minut
@@ -14,7 +14,7 @@ id2: rybka
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/I6uIPXobj9s"
+    src="https://www.youtube.com/embed/I6uIPXobj9s?showinfo=0"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen

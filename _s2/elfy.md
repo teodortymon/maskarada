@@ -1,6 +1,6 @@
 ---
 title: Elfy i fabryka prezentów
-link: https://www.youtube.com/embed/ovOwUmozCns
+link: https://www.youtube.com/embed/ovOwUmozCns?showinfo=0
 headline: "W magicznej fabryce prezentów na biegunie praca kwitnie, gdy Mikołaj odpoczywa przed nadchodzącą podróżą, a dwie Elfy gorączkowo przygotowują niezliczone prezenty, zapewniając niezapomniane chwile radości – choć oczywiście nie obędzie się bez pewnych przygód!"
 age: Dla dzieci od 2 do 99 lat
 time: około 55 minut.
@@ -30,7 +30,7 @@ id2: elfy
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/ovOwUmozCns"
+    src="https://www.youtube.com/embed/ovOwUmozCns?showinfo=0"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"

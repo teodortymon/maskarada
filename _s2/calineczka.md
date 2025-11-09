@@ -1,6 +1,6 @@
 ---
 title: Calineczka
-link: https://www.youtube.com/embed/aq-JZwyPaGQ
+link: https://www.youtube.com/embed/aq-JZwyPaGQ?showinfo=0
 headline: Zapraszamy małych widzów do magicznego świata pełnego barw, światła i muzyki. Razem z Calineczką poznacie Ropuchę, Motyla, Myszkę, Kreta i Jaskółkę. Impresja teatralna na podstawie bajki Andersena wciąga widzów do zabawy, gdzie zaciera się granica między światem realnym, a fantastycznym.
 age: Dla dzieci od 1,5 roku do 10 lat
 time: około 45 minut.
@@ -25,7 +25,7 @@ id2: calineczka
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/aq-JZwyPaGQ"
+    src="https://www.youtube.com/embed/aq-JZwyPaGQ?showinfo=0"
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen

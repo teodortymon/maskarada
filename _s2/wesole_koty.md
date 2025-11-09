@@ -1,6 +1,6 @@
 ---
 title: Wesołe Koty
-link: https://www.youtube.com/embed/FjIP1sC9Yxw
+link: https://www.youtube.com/embed/FjIP1sC9Yxw?showinfo=0
 headline: Piękne wiersze M. Konopnickiej, barokowe kocie kostiumy, muzyka H. Wieniawskiego i piosenki Zuzanny Całki.
 age: Dla dzieci od 4 lat do 8 lat
 time: około 45 minut.

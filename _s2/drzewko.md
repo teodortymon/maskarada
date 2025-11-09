@@ -1,6 +1,6 @@
 ---
 title: Magiczne Drzewko Wróżek
-link: https://www.youtube.com/embed/02LBv_25oyM
+link: https://www.youtube.com/embed/02LBv_25oyM?showinfo=0
 headline: Posłuchajcie - lecą wróżki, kto ich nie zna, poznać musi. Wróżki niosą pory roku, w magicznym drzewie domki swoje mają. 
 age: Dla dzieci od 1 do 6 lat i całej rodziny.
 time: około 55 minut

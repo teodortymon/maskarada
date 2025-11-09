@@ -1,6 +1,6 @@
 ---
 title: Królowa Myszy
-link: https://www.youtube.com/embed/Q9LHmJW0_6g
+link: https://www.youtube.com/embed/Q9LHmJW0_6g?showinfo=0
 headline: Klasyczna bajka o czarach, królewnie i czekoladzie.
 age: Dla dzieci od 2 do 8 lat i całej rodziny.
 time: około 50 minut
@@ -14,7 +14,7 @@ id2: myszy
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/Q9LHmJW0_6g"
+    src="https://www.youtube.com/embed/Q9LHmJW0_6g?showinfo=0"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen

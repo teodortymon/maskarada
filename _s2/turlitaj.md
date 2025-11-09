@@ -1,6 +1,6 @@
 ---
 title: Urodziny Turli i Taja
-link: https://www.youtube.com/embed/XyaKJ2pxhyA
+link: https://www.youtube.com/embed/XyaKJ2pxhyA?showinfo=0
 headline: Fragment <a href="http://czasdzieci.pl/okiem-rodzica/id,7320ebe.html">recenzji portalu Czas Dzieci:</a> <br />Co wyróżnia spektakl? Brak sceny, czyli znika bariera między twórca a odbiorcą. Dzieci mogły wszędzie wejść, zajrzeć, wszystko dotykać, przekładać itp. A taka eksploracja otoczenia, szczególnie nowego, ciekawego, to dla maluszków niesamowity rozwój i przed wszystkim frajda.
 age: Dla dzieci od 0 do 5 lat.
 time: około 45 minut.

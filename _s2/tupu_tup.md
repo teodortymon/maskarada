@@ -1,6 +1,6 @@
 ---
 title: Brzydkie Kaczątko czyli tupu tup
-link: https://www.youtube.com/embed/d7V63BJ2-Wg
+link: https://www.youtube.com/embed/d7V63BJ2-Wg?showinfo=0
 headline: Sensoryczny spektakl na podstawie baśni H. Ch. Andersena <i>Szybkobiegacze</i> i <i>Brzydkie Kaczątko</i>/
 age: Dla dzieci od 1,5 do 6 lat.
 time: około 45 minut

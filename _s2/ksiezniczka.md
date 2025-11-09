@@ -1,6 +1,6 @@
 ---
 title: Księżniczka na ziarnku grochu
-link: https://www.youtube.com/embed/fBmbJFhO638
+link: https://www.youtube.com/embed/fBmbJFhO638?showinfo=0
 headline: Zanurz się w magicznym świecie klasycznej opowieści Hansa Christiana Andersena, gdzie piękne kostiumy, dwór francuski, i emocjonujący konkurs piękności zapewnią emocji najmłodszym.
 age: Dla dzieci od 4 do 12 lat
 time: około 50 minut.
@@ -22,7 +22,7 @@ id2: ksiezniczka
     <iframe
       width="560"
       height="315"
-      src="https://www.youtube.com/embed/fBmbJFhO638"
+      src="https://www.youtube.com/embed/fBmbJFhO638?showinfo=0"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
