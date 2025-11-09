@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Logo Design Mockups - Comparison Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #fbe9e8 0%, #f5f5f5 100%);
+        }
+
+        h1 {
+            color: #e07b78;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .design-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .design-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .design-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(224, 123, 120, 0.3);
+        }
+
+        .design-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #e07b78;
+        }
+
+        .design-card-content {
+            padding: 20px;
+        }
+
+        .design-card h3 {
+            color: #e07b78;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .design-card p {
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .design-card .btn {
+            display: inline-block;
+            background: #e07b78;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .design-card .btn:hover {
+            background: #bb6468;
+        }
+
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #e07b78;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background: #fbe9e8;
+        }
+
+        .rating {
+            color: #FFD700;
+            font-size: 1.2rem;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .design-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎭 Teatr Maskarada - Logo Design Mockups</h1>
+    <p class="subtitle">Four different approaches to incorporating logo2.png</p>
+
+    <div class="intro">
+        <h2>Welcome!</h2>
+        <p>I've created four design mockups showing different ways to incorporate the colorful Maskarada logo into your theatre website. Each design has its own strengths and is suited for different goals.</p>
+        <p><strong>Instructions:</strong> Click on each design card below or use the direct links to open the mockups in your browser. Each mockup includes detailed pros/cons to help you decide.</p>
+    </div>
+
+    <div class="design-grid">
+        <div class="design-card" onclick="window.open('design-mockup-1-header-banner.html', '_blank')">
+            <div style="background: linear-gradient(to bottom, #1a1a1a, #2d2d2d); height: 200px; display: flex; align-items: center; justify-content: center;">
+                <div style="width: 80%; max-width: 250px;">
+                    <div style="background: repeating-linear-gradient(90deg, #8B0000 0px, #8B0000 10px, #600 10px, #600 20px); height: 20px;"></div>
+                    <div style="background: linear-gradient(to bottom, #e0777f, #d06b73); padding: 15px; text-align: center; color: white; font-weight: bold; font-size: 0.9rem;">MASKARADA</div>
+                </div>
+            </div>
+            <div class="design-card-content">
+                <h3>Option 1: Full-Width Banner</h3>
+                <p><strong>Impact:</strong> ⭐⭐⭐⭐⭐</p>
+                <p><strong>Space Efficiency:</strong> ⭐⭐⭐</p>
+                <p>Bold, theatrical entrance that immediately establishes your brand identity.</p>
+                <a href="design-mockup-1-header-banner.html" target="_blank" class="btn">View Mockup</a>
+            </div>
+        </div>
+
+        <div class="design-card" onclick="window.open('design-mockup-2-nav-center.html', '_blank')">
+            <div style="background: white; height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;">
+                <div style="font-size: 0.7rem; color: #e07b78;">Kalendarz • Spektakle • Warsztaty</div>
+                <div style="width: 60%; height: 60px; background: linear-gradient(to bottom, #1a1a1a, #2d2d2d); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; font-weight: bold;">LOGO</div>
+                <div style="font-size: 0.7rem; color: #e07b78;">Bilety • Historia • Kontakt</div>
+            </div>
+            <div class="design-card-content">
+                <h3>Option 2: Center Navigation</h3>
+                <p><strong>Impact:</strong> ⭐⭐⭐⭐⭐</p>
+                <p><strong>Space Efficiency:</strong> ⭐⭐</p>
+                <p>Logo becomes the centerpiece surrounded by navigation, creating a symmetrical, modern design.</p>
+                <a href="design-mockup-2-nav-center.html" target="_blank" class="btn">View Mockup</a>
+            </div>
+        </div>
+
+        <div class="design-card" onclick="window.open('design-mockup-3-hero-section.html', '_blank')">
+            <div style="background: linear-gradient(135deg, #1a1a1a, #3d2d2d, #1a1a1a); height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <div style="width: 70%; max-width: 200px; background: linear-gradient(to bottom, #e0777f, #d06b73); padding: 10px; text-align: center; color: white; font-weight: bold; border-radius: 5px;">MASKARADA</div>
+                <div style="color: #e07b78; font-size: 0.7rem; margin-top: 10px;">Magiczne przedstawienia ✨</div>
+            </div>
+            <div class="design-card-content">
+                <h3>Option 3: Hero Section</h3>
+                <p><strong>Impact:</strong> ⭐⭐⭐⭐⭐</p>
+                <p><strong>Space Efficiency:</strong> ⭐⭐⭐⭐</p>
+                <p>Stunning homepage entrance with animation. Navigation stays sticky and clean on all pages.</p>
+                <a href="design-mockup-3-hero-section.html" target="_blank" class="btn">View Mockup</a>
+            </div>
+        </div>
+
+        <div class="design-card" onclick="window.open('design-mockup-4-compact-banner.html', '_blank')">
+            <div style="background: white; height: 200px; display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(to right, #1a1a1a, #2d2d2d, #1a1a1a); padding: 8px; display: flex; align-items: center; justify-content: center; border-bottom: 2px solid #e07b78;">
+                    <div style="background: linear-gradient(to bottom, #e0777f, #d06b73); padding: 6px 20px; color: white; font-size: 0.7rem; font-weight: bold; border-radius: 3px;">MASKARADA</div>
+                </div>
+                <div style="padding: 15px; flex-grow: 1; display: flex; align-items: center; justify-content: center;">
+                    <div style="font-size: 0.65rem; color: #e07b78; text-align: center;">Kalendarz • Spektakle • Warsztaty<br/>Bilety • Historia • Kontakt</div>
+                </div>
+            </div>
+            <div class="design-card-content">
+                <h3>Option 4: Compact Sticky</h3>
+                <p><strong>Impact:</strong> ⭐⭐⭐</p>
+                <p><strong>Space Efficiency:</strong> ⭐⭐⭐⭐⭐</p>
+                <p>Always visible as you scroll. Perfect balance of branding and space efficiency.</p>
+                <a href="design-mockup-4-compact-banner.html" target="_blank" class="btn">View Mockup</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="comparison-table">
+        <h2 style="color: #e07b78; margin-top: 0;">Quick Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Option 1: Full Banner</th>
+                    <th>Option 2: Center Nav</th>
+                    <th>Option 3: Hero</th>
+                    <th>Option 4: Compact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Visual Impact</strong></td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>Space Efficiency</strong></td>
+                    <td>⭐⭐⭐</td>
+                    <td>⭐⭐</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>Mobile Friendly</strong></td>
+                    <td>⭐⭐⭐</td>
+                    <td>⭐⭐</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td><strong>Always Visible</strong></td>
+                    <td>❌ (scroll away)</td>
+                    <td>❌ (scroll away)</td>
+                    <td>✅ (sticky nav)</td>
+                    <td>✅ (sticky header)</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Bold branding</td>
+                    <td>Artistic focus</td>
+                    <td>Homepage impact</td>
+                    <td>Usability</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer-note">
+        <h3 style="color: #e07b78;">My Recommendation</h3>
+        <p><strong>Option 3 (Hero Section)</strong> offers the best balance:</p>
+        <ul style="text-align: left; display: inline-block;">
+            <li>Creates maximum impact on the homepage where it matters most</li>
+            <li>Keeps other pages clean and content-focused</li>
+            <li>Sticky navigation ensures accessibility</li>
+            <li>Works beautifully on mobile devices</li>
+            <li>Includes space for your tagline/subtitle</li>
+        </ul>
+        <p style="margin-top: 20px;"><strong>Runner-up: Option 4 (Compact Sticky)</strong> if you want the logo visible on every page throughout the browsing experience.</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; color: #999; font-size: 0.9rem;">
+        <p>Once you've chosen your preferred design, I can implement it into your actual website files.</p>
+    </div>
+</body>
+</html>

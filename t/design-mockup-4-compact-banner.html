@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Design Option 4: Compact Top Banner - MASKARADA</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="lay/style.css" type="text/css" />
+
+    <style>
+        /* Compact logo banner */
+        .logo-compact-banner {
+            background: linear-gradient(to right, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 2px solid #e07b78;
+        }
+
+        .logo-compact-banner img {
+            max-width: 400px;
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Navigation below - remains same */
+        nav.navbar {
+            padding: 12px 0;
+            background: white;
+        }
+
+        /* Sticky header option */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .mockup-label {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #e07b78;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            z-index: 1001;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        /* Alternate: Side-by-side layout for wider screens */
+        @media (min-width: 992px) {
+            .header-wrapper-horizontal {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(to right, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+                border-bottom: 2px solid #e07b78;
+            }
+
+            .header-wrapper-horizontal .logo-side {
+                padding: 10px 30px;
+                flex-shrink: 0;
+            }
+
+            .header-wrapper-horizontal .logo-side img {
+                max-width: 300px;
+                height: auto;
+            }
+
+            .header-wrapper-horizontal nav.navbar {
+                background: transparent !important;
+                flex-grow: 1;
+                margin: 0;
+                padding: 10px 30px;
+            }
+
+            .header-wrapper-horizontal nav.navbar a.nav-link {
+                color: #e07b78 !important;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            }
+
+            .header-wrapper-horizontal nav.navbar a.nav-link.active {
+                color: #fff !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mockup-label">DESIGN OPTION 4</div>
+
+    <!-- Version 4A: Compact banner on top -->
+    <div class="sticky-header">
+        <div class="logo-compact-banner">
+            <a href="index.html">
+                <img src="lay/img/logo2.png" alt="Teatr Maskarada" />
+            </a>
+        </div>
+
+        <!-- Navigation Below -->
+        <nav class="navbar text-dark">
+            <div class="container">
+                <a class="nav-link" href="repertuar.html">Kalendarz</a>
+                <a class="nav-link" href="spektakle.html">Spektakle</a>
+                <a class="nav-link" href="warsztaty.html">Warsztaty</a>
+                <a class="nav-link active" href="index.html">
+                    <img src="lay/img/fairy.svg" class="img-fluid" width="40" height="40" alt="..." />
+                </a>
+                <a class="nav-link" href="bilety.html">Bilety</a>
+                <a class="nav-link" href="onas.html">Historia</a>
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+    </div>
+
+    <hr/>
+
+    <div class="container">
+        <div class="alert alert-info mt-4" role="alert">
+            <h4 class="alert-heading">Design Option 4: Compact Top Banner (Sticky)</h4>
+            <p><strong>Pros:</strong></p>
+            <ul>
+                <li>Logo is always visible as users scroll (sticky header)</li>
+                <li>Compact size saves vertical space</li>
+                <li>Maintains brand presence throughout browsing</li>
+                <li>Clean, professional layout</li>
+                <li>Works well on all screen sizes</li>
+                <li>Navigation remains easily accessible</li>
+            </ul>
+            <p><strong>Cons:</strong></p>
+            <ul>
+                <li>Logo is smaller than other options</li>
+                <li>Less dramatic visual impact</li>
+                <li>Sticky header reduces viewport height</li>
+            </ul>
+            <p class="mb-0"><strong>Best for:</strong> Maintaining brand visibility while maximizing content space and ensuring navigation is always available</p>
+        </div>
+
+        <h2>W tym tygodniu ✨</h2>
+        <p>This design keeps the logo compact but always visible. As you scroll down this page, the header stays at the top, making navigation and brand identity constantly present. This is great for user experience on longer pages.</p>
+
+        <!-- Demo content to show sticky behavior -->
+        <div class="mt-4">
+            <h3>Scroll down to see the sticky header effect</h3>
+            <div style="height: 1500px; background: linear-gradient(to bottom, white, #fbe9e8); padding: 40px; border-radius: 10px;">
+                <p>Keep scrolling... The header with the logo stays at the top!</p>
+                <p style="margin-top: 200px;">The Maskarada logo remains visible as you browse through shows, tickets, and information.</p>
+                <p style="margin-top: 200px;">This creates a consistent brand experience throughout the entire website.</p>
+                <p style="margin-top: 200px;">While being space-efficient and not overwhelming the content.</p>
+                <p style="margin-top: 400px;">Almost there...</p>
+                <p style="margin-top: 200px;"><strong>Perfect for sites with lots of content!</strong> The navigation and logo are never more than a glance away.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5"/>
+
+    <!-- Version 4B: Horizontal layout for desktop (bonus alternative) -->
+    <div class="container my-5">
+        <div class="alert alert-warning" role="alert">
+            <h5>Bonus Variation: Horizontal Layout (Desktop)</h5>
+            <p>On wider screens, the logo could sit side-by-side with navigation:</p>
+        </div>
+    </div>
+
+    <div class="header-wrapper-horizontal" style="margin: 0 -8px;">
+        <div class="logo-side">
+            <a href="index.html">
+                <img src="lay/img/logo2.png" alt="Teatr Maskarada" />
+            </a>
+        </div>
+        <nav class="navbar text-dark">
+            <div class="container">
+                <a class="nav-link" href="repertuar.html">Kalendarz</a>
+                <a class="nav-link" href="spektakle.html">Spektakle</a>
+                <a class="nav-link" href="warsztaty.html">Warsztaty</a>
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="bilety.html">Bilety</a>
+                <a class="nav-link" href="onas.html">Historia</a>
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-4">
+        <p class="text-muted"><em>This horizontal variation shows how the logo and navigation can work together on wider screens, making efficient use of space.</em></p>
+    </div>
+</body>
+</html>

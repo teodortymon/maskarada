@@ -1,0 +1,88 @@
+{% comment %}
+{% for i in (1..2) %}
+Desktop style
+<div class="card my-2">
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <div class="ratio ratio-16x9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I6uIPXobj9s"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col">
+                <h2>
+                    Zlota rybka</h2>
+                <div class="list-group list-group-flush">
+                    {% for i in (1..3) %}
+                    <a href="https://kicket.com/embedded/rezerwacja/255646" class="list-group-item" aria-current="true">
+                        14 czerwca 12:30
+                        <button type="button" href="https://kicket.com/embedded/rezerwacja/255646"
+                            class="btn btn-primary">Kup bilet</button>
+                    </a>
+                    {% endfor %}
+                </div>
+                <div class="row">
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                            Szczegoly spektaklu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endfor %}
+
+{% endcomment %}{% comment %}
+{% for i in (1..3) %}
+<div class="row">
+    <div class="col">14 czerwca 12:30</div>
+    <div class="col">
+        <button type="button" href="#" class="btn btn-primary">Kup bilet</button>
+    </div>
+</div>
+{% endfor %}
+{% endcomment %}
+{% comment %}
+
+<h2 style="text-shadow: 2px 2px rgb(255, 66, 201)">
+    <ul class="photos">Królowa Myszy</ul>
+</h2>
+<a id="single_image" href="lay/img/krolowa_myszy_big.jpg"><img src="lay/img/krolowa_myszy_min.jpg" alt="Śnieżny show"
+        style="float:left; height:220px margin: 10px; border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)" /></a>
+
+Jeśli kochacie baśnie, to Królowa Myszy jest spektaklem dla Was. Klasyczna bajka o czarach, królewnie i czekoladzie.
+Opowiedziana przez aktorów i marionetki do muzyki “Dziadka do orzechów” Czajkowskiego. Magiczny świat zamknięty w małej
+teatralnej scenie wzorowanej na XVIII wiecznym włoskim teatrze marionetkowym, ożywiony błyskotliwą grą aktorów
+przeniesie nas na dwór królewski, gdzie harcują myszy.
+
+<br /> Dla dzieci od 2 do 8 lat i całej rodziny. <br /> Czas trwania: 50 minut
+
+<table border="0">
+    <tr>
+        <td>
+            <strong>Grają</strong><br />Ewa Tucholska <br /> Adam Biernat
+        </td>
+        <td>
+            <strong>Muzyka</strong><br />Piotr Czajkowski<br />Krzysztof Jaszczak
+        </td>
+        <td>
+            <strong>Scenografia i inscenizacja</strong><br />Małgorzata Domańska
+        </td>
+        <td>
+            <strong>Tekst</strong><br />Pola Wójcik
+        </td>
+    </tr>
+</table>
+<br />
+<ul class="photos">
+    {% for i in (1..4) %}
+    <a id="single_image" rel="myszy" href="lay/img/myszy/large/myszy{{ i }}.JPG"><img
+            src="lay/img/myszy/small/myszy{{ i }}.JPG" /></a>
+    {% endfor %}
+</ul>
+
+{% endcomment %}

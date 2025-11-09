@@ -131,10 +131,11 @@ layout: t
   </div>
   <hr>
   <div class="card my-2">
-    <iframe
-      height="650"
-      src="https://www.google.com/maps/embed/v1/place?q=Teatr+Maskarada+dla+dzieci&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU"
-      allowfullscreen></iframe>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/place?q=Teatr+Maskarada+dla+dzieci&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU"
+        allowfullscreen></iframe>
+    </div>
     <div class="card-body text-center">
       <p>Gramy dla was przy ul. Nowy Świat 63  
         (Nowy Świat Muzyki)</p>

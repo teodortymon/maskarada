@@ -29,3 +29,19 @@ gh-pages/
 pkg/
 test/dest
 tmp/*
+
+# IDE
+.vscode
+.idea
+
+# Playwright MCP
+.playwright-mcp
+
+# Node
+node_modules/
+package-lock.json
+
+# Generated CSS (compiled from scss/)
+css/styles.css
+css/styles.css.map
+/tina/__generated__/

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Design Option 2: Large Center Navigation Logo - MASKARADA</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="lay/style.css" type="text/css" />
+
+    <style>
+        /* Vertical navigation with logo in center */
+        nav.navbar {
+            padding: 20px 0;
+            background: white;
+        }
+
+        .navbar .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links-top,
+        .nav-links-bottom {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .logo-center {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #1a1a1a 0%, #2d2d2d 100%);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .mockup-label {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #e07b78;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="mockup-label">DESIGN OPTION 2</div>
+
+    <!-- Navigation with Logo in Center -->
+    <nav class="navbar text-dark">
+        <div class="container">
+            <!-- Top row of links -->
+            <div class="nav-links-top">
+                <a class="nav-link" href="repertuar.html">Kalendarz</a>
+                <a class="nav-link" href="spektakle.html">Spektakle</a>
+                <a class="nav-link" href="warsztaty.html">Warsztaty</a>
+            </div>
+
+            <!-- Logo in center -->
+            <a href="index.html">
+                <img src="lay/img/logo2.png" class="logo-center" alt="Teatr Maskarada" />
+            </a>
+
+            <!-- Bottom row of links -->
+            <div class="nav-links-bottom">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="bilety.html">Bilety</a>
+                <a class="nav-link" href="onas.html">Historia</a>
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <hr/>
+
+    <div class="container">
+        <div class="alert alert-info mt-4" role="alert">
+            <h4 class="alert-heading">Design Option 2: Large Center Navigation Logo</h4>
+            <p><strong>Pros:</strong></p>
+            <ul>
+                <li>Logo is the centerpiece of the navigation</li>
+                <li>Balanced layout with navigation items surrounding the logo</li>
+                <li>Creates a focal point that's impossible to miss</li>
+                <li>Modern, symmetrical design approach</li>
+                <li>The rounded corners and shadow give it a premium feel</li>
+            </ul>
+            <p><strong>Cons:</strong></p>
+            <ul>
+                <li>Takes up significant vertical space</li>
+                <li>Navigation items are split above and below</li>
+                <li>May be overwhelming on smaller screens</li>
+            </ul>
+            <p class="mb-0"><strong>Best for:</strong> Making the logo the absolute star of the page while maintaining navigation visibility</p>
+        </div>
+
+        <h2>W tym tygodniu ✨</h2>
+        <p>This design puts the logo front and center, surrounded by navigation links. It creates a strong visual hierarchy where the Maskarada brand is unmistakable. The theatrical curtain and colorful lights become the identity of your theatre.</p>
+    </div>
+</body>
+</html>

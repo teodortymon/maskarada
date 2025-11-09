@@ -23,7 +23,17 @@ layout: t
                 allowfullscreen></iframe>
             </div>
           {% else %}
-            LOL
+            <div class="ratio ratio-16x9">
+              <div class="video-placeholder d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                  <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 12L9 8V16L15 12Z" fill="currentColor" opacity="0.3"/>
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+                  </svg>
+                  <p class="mt-3 mb-0" style="font-size: 0.875rem; opacity: 0.6;">Wideo wkrótce</p>
+                </div>
+              </div>
+            </div>
           {% endif %}
           <div class="card-body">
             <div>
