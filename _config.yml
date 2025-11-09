@@ -20,6 +20,7 @@ url: http://www.maskarada.waw.pl
 exclude:
   - vendor
   - node_modules
+  - worktree*
 markdown: kramdown
 cloudinary:
   cloud_name: maskarada

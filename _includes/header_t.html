@@ -45,23 +45,91 @@
   <!-- End Facebook Pixel Code -->
 
   <!-- <div id="fb-root"></div>    <script>(function(d, s, id) {    var js, fjs = d.getElementsByTagName(s)[0];    if (d.getElementById(id)) return;    js = d.createElement(s); js.id = id;    js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";    fjs.parentNode.insertBefore(js, fjs);    }(document, 'script', 'facebook-jssdk'));</script> -->
+  <style>
+    .logo-header {
+      text-align: center;
+      padding: 30px 20px 20px;
+      position: relative;
+      background: linear-gradient(135deg, #1a1a1a 0%, #3d2d2d 50%, #1a1a1a 100%);
+    }
+
+    .logo-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(224, 123, 120, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 50%, rgba(187, 100, 104, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .logo-header img {
+      max-width: 600px;
+      width: 90%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      animation: neonGlow 1.5s ease-out, pulse 3s ease-in-out infinite 1.5s;
+      filter: drop-shadow(0 0 20px rgba(224, 123, 120, 0.8))
+              drop-shadow(0 0 40px rgba(224, 123, 120, 0.4));
+    }
+
+    @keyframes neonGlow {
+      from {
+        opacity: 0;
+        filter: drop-shadow(0 0 50px rgba(224, 123, 120, 1))
+                drop-shadow(0 0 80px rgba(224, 123, 120, 0.8));
+      }
+      to {
+        opacity: 1;
+        filter: drop-shadow(0 0 20px rgba(224, 123, 120, 0.8))
+                drop-shadow(0 0 40px rgba(224, 123, 120, 0.4));
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        filter: drop-shadow(0 0 20px rgba(224, 123, 120, 0.8))
+                drop-shadow(0 0 40px rgba(224, 123, 120, 0.4));
+      }
+      50% {
+        filter: drop-shadow(0 0 30px rgba(224, 123, 120, 0.9))
+                drop-shadow(0 0 60px rgba(224, 123, 120, 0.6));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo-header img {
+        max-width: 90%;
+      }
+    }
+  </style>
+  <div class="logo-header">
+    <img src="lay/img/logo2.png" alt="MASKARADA">
+  </div>
   <nav class="navbar text-dark">
     <div class="container">
       {% assign url = page.url | downcase | split: '/' %}
       {% assign ur = url[2] | split: '.' %}
       {% assign u = ur[0] %}
+      <a class="nav-link {% if page.url == '/t/' %}active{% endif %}" href="index.html">
+        <!--        <img-->
+        <!--          src="lay/img/fairy.svg"-->
+        <!--          class="img-fluid"-->
+        <!--          width="100"-->
+        <!--          height="100"-->
+        <!--          alt="..." />-->
+        Dzisiaj
+      </a>
+
+
       <a class="nav-link {% if u == 'repertuar' %}active{% endif %}" href="repertuar.html">Kalendarz</a>
       <a class="nav-link {% if u == 'spektakle' %}active{% endif %}" href="spektakle.html">Spektakle</a>
       <a class="nav-link {% if u == 'warsztaty' %}active{% endif %}" href="warsztaty.html">Warsztaty</a>
 
-      <a class="nav-link {% if u == 'index' %}active{% endif %}" href="index.html">
-        <img
-          src="lay/img/fairy.svg"
-          class="img-fluid"
-          width="100"
-          height="100"
-          alt="..." />
-      </a>
+
       <a class="nav-link {% if u == 'bilety' %}active{% endif %}" href="bilety.html">Bilety</a>
       <a class="nav-link {% if u == 'onas' %}active{% endif %}" href="onas.html">Historia</a>
       <a class="nav-link {% if u == 'kontakt' %}active{% endif %}" href="kontakt.html">Kontakt</a>

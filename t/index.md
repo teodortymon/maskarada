@@ -26,7 +26,6 @@ layout: t
           autocomplete="off"
           checked>
         <label class="btn btn-outline-primary" for="btnradio2">Dla rodzin 👨‍👩‍👧</label>
-
         <input
           type="radio"
           class="btn-check"
@@ -36,7 +35,6 @@ layout: t
         <label class="btn btn-outline-primary" for="btnradio3">Dla szkol i przedszkoli 🏫</label>
       </div>
     </div>
-
   </nav>
   <hr>
 
