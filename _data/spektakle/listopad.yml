@@ -1,57 +1,47 @@
----
-title: Listopadowy repertuar
-date: '2019-04-06T22:30:55.000+00:00'
+title: Listopad
 repertuar:
-- tytul: Jesienne warsztaty teatralno-taneczne
-  data: 2019-11-17 15:00:00 +0100
-  link: <a href="https://ewejsciowki.pl/embedded/rezerwacja/170988">Kup bilet <br
-    /> <small>Bilet dla dziecka 39zł <br />rodziców zapraszamy bezpłatnie</small></a>
-  manual_price: true
-- data: 2019-11-27 12:15:00 +0100
-  tytul: Kuba i Buba, czyli awantura do kwadratu
-  link: "-"
-  manual_price: false
-- data: 2019-11-24 16:00:00 +0100
-  tytul: Księżniczka na ziarnku grochu
-  link: https://ewejsciowki.pl/embedded/rezerwacja/168097
-  manual_price: false
-- data: 2019-11-27 11:00:00 +0100
-  tytul: Kuba i Buba, czyli awantura do kwadratu
-  link: "-"
-  manual_price: false
-- data: 2019-11-26 12:15:00 +0100
-  tytul: Kuba i Buba, czyli awantura do kwadratu
-  link: "-"
-  manual_price: false
-- data: 2019-11-26 11:00:00 +0100
-  tytul: Kuba i Buba, czyli awantura do kwadratu
-  link: "-"
-  manual_price: false
-- data: 2019-11-25 11:00:00 +0100
-  tytul: Księżniczka na ziarnku grochu
-  link: "-"
-  manual_price: false
-- data: 2019-11-24 12:30:00 +0100
-  tytul: Elfy i fabryka prezentów
-  link: https://ewejsciowki.pl/embedded/rezerwacja/168095
-  manual_price: false
-- data: 2019-11-18 11:00:00 +0100
-  tytul: Tupu tup, czyli Brzydkie Kaczątko
-  link: "-"
-  manual_price: false
-- data: 2019-11-17 12:30:00 +0100
-  tytul: Tupu tup, czyli Brzydkie Kaczątko
-  link: https://ewejsciowki.pl/embedded/rezerwacja/168092
-  manual_price: false
-- data: 2019-11-10 12:30:00 +0100
-  tytul: Calineczka
-  link: https://ewejsciowki.pl/embedded/rezerwacja/168091
-  manual_price: false
-- data: 2019-11-04 11:00:00 +0100
-  tytul: Złota Rybka
-  link: "-"
-  manual_price: false
-- data: 2019-11-03 12:30:00 +0100
-  tytul: Urodziny Turli i Taja
-  link: https://ewejsciowki.pl/embedded/rezerwacja/168090
-  manual_price: false
+  - tytul: Wesołe Koty
+    data: 2025-11-25T11:00:00.000Z
+    link: '-'
+  - tytul: Calineczka
+    data: 2025-11-28T09:30:00.000Z
+    link: '-'
+  - tytul: Calineczka
+    data: 2025-11-28T11:00:00.000Z
+    link: '-'
+  - tytul: Elfy i fabryka prezentów
+    data: 2025-11-30T12:00:00.000Z
+    link: 'https://kicket.com/embedded/rezerwacja/322006'
+  - tytul: Calineczka
+    data: 2025-11-29T12:00:00.000Z
+    link: 'https://kicket.com/embedded/rezerwacja/322005'
+  - tytul: Wesołe Koty
+    data: 2025-11-25T09:30:00.000Z
+    link: '-'
+  - tytul: Magiczne Drzewko Wróżek
+    data: 2025-11-24T11:00:00.000Z
+    link: '-'
+  - tytul: Magiczne Drzewko Wróżek
+    data: 2025-11-24T09:30:00.000Z
+    link: '-'
+  - tytul: Magiczne Drzewko Wróżek
+    data: 2025-11-23T12:30:00.000Z
+    link: 'https://kicket.com/embedded/rezerwacja/322004'
+  - tytul: Brzydkie Kaczątko
+    data: 2025-11-22T12:00:00.000Z
+    link: 'https://kicket.com/embedded/rezerwacja/322003'
+  - tytul: Mała Syrenka
+    data: 2025-11-17T11:00:00.000Z
+    link: '-'
+  - tytul: Mała Syrenka
+    data: 2025-11-17T09:30:00.000Z
+    link: '-'
+  - tytul: Mała Syrenka
+    data: 2025-11-16T12:00:00.000Z
+    link: 'https://kicket.com/embedded/rezerwacja/322002'
+  - tytul: Tajemnice Teatru
+    data: 2025-11-15T12:30:00.000Z
+    link: 'https://kicket.com/embedded/rezerwacja/322001'
+  - tytul: Królowa Myszy
+    data: 2025-11-09T12:30:00.000Z
+    link: 'https://kicket.com/embedded/rezerwacja/322000'

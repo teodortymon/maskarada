@@ -3,6 +3,12 @@
   src: url("YoungSerif-Regular.otf") format("opentype");
 }
 
+/* Match the dark header background for iOS top edge */
+html {
+  overflow-x: hidden;
+  background-color: #1a1a1a;
+}
+
 body {
   font-family: "Montserrat", sans-serif !important;
   overflow-x: hidden;
@@ -13,11 +19,6 @@ body {
     radial-gradient(circle at 80% 80%, rgba(154, 98, 101, 0.03) 0%, transparent 50%);
   background-attachment: fixed;
   min-height: 100vh;
-}
-
-/* Prevent horizontal scrolling */
-html {
-  overflow-x: hidden;
 }
 
 /* Container max-widths */
@@ -44,15 +45,58 @@ h6 {
   font-family: YoungSerif, sans-serif;
 }
 
+/*OR HERE?*/
 a.nav-link {
   font-family: YoungSerif, sans-serif;
   font-size: xx-large;
   color: #e07b78;
+    padding: 0.2rem 0.3rem;
 }
 
 a.nav-link.active {
-  text-decoration: wavy underline;
+  text-decoration: underline;
+    /*-webkit-text-decoration-style: dotted;*/
   color: #bb6468;
+}
+
+/* Navigation improvements */
+.navbar {
+    padding: 1rem 0;
+    background-color: rgba(251, 233, 232, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+/*OR THIS?*/
+/* Responsive navigation */
+@media (max-width: 767px) {
+    a.nav-link {
+        font-size: x-large;
+        /*padding: 0.25rem 0.5rem;*/
+    }
+
+    .navbar .container {
+        gap: 0.25rem;
+    }
+}
+
+/* Compact navigation on very small screens */
+@media (max-width: 480px) {
+    .navbar .container {
+        gap: 0.15rem;
+    }
+
+    a.nav-link {
+        padding: 0.2rem 0.3rem;
+    }
 }
 
 /* p {
@@ -265,44 +309,7 @@ h4 {
 
 /* ==================== PHASE 3: RESPONSIVE & UX ==================== */
 
-/* Navigation improvements */
-.navbar {
-  padding: 1rem 0;
-  background-color: rgba(251, 233, 232, 0.95);
-  backdrop-filter: blur(10px);
-}
 
-.navbar .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Responsive navigation */
-@media (max-width: 767px) {
-  a.nav-link {
-    font-size: x-large;
-    padding: 0.25rem 0.5rem;
-  }
-
-  .navbar .container {
-    gap: 0.25rem;
-  }
-
-  /* Stack navigation on very small screens */
-  @media (max-width: 480px) {
-    .navbar .container {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    a.nav-link {
-      font-size: large;
-    }
-  }
-}
 
 /* Responsive padding adjustments */
 @media (max-width: 767px) {
@@ -344,6 +351,10 @@ h4 {
   border: none;
 }
 
+.table>:not(caption)>*>* {
+    background-color: inherit !important;
+}
+
 @media (max-width: 767px) {
   .table td {
     padding: 0.75rem;
@@ -371,10 +382,11 @@ input:focus {
     min-width: 44px;
   }
 
+  /*  HERE?*/
   a.nav-link {
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
+    /*min-height: 44px;*/
+    /*display: inline-flex;*/
+    /*align-items: center;*/
   }
 }
 

@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="Content-Language" content="pl" />
+    <meta name="theme-color" content="#1a1a1a" />
 
     <meta name="Description" content="Magiczne przedstawienia teatralne dla dzieci." />
 
@@ -32,7 +33,7 @@
       <!-- Custom css overrides -->
     <link
       rel="stylesheet"
-      href="lay/style.css"
+      href={{"lay/style.css" | bust_file_cache }}
       type="text/css" />
   </head>
 
@@ -71,7 +72,7 @@
       height: auto;
       position: relative;
       z-index: 1;
-      animation: neonGlow 1.5s ease-out, pulse 3s ease-in-out infinite 1.5s;
+      animation: neonGlow 1.5s ease-out;
       filter: drop-shadow(0 0 20px rgba(224, 123, 120, 0.8))
               drop-shadow(0 0 40px rgba(224, 123, 120, 0.4));
     }

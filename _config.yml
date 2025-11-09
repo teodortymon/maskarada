@@ -24,3 +24,5 @@ exclude:
 markdown: kramdown
 cloudinary:
   cloud_name: maskarada
+plugins:
+  - jekyll-cache-bust

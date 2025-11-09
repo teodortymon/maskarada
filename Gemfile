@@ -4,6 +4,7 @@ source "https://rubygems.org"
 group :jekyll_plugins do
   gem 'jekyll-cloudinary'
   gem "github-pages"
+  gem 'jekyll-cache-bust'
 end
 
 gem "webrick", "~> 1.8"

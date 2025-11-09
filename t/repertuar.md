@@ -40,7 +40,11 @@ layout: t
     Gramy dla was w Pałacu Staszica przy
     <i>ul. Nowy Świat 72</i>
   </p>
-  {% assign miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+  {% assign current_month_num = 'now' | date: "%-m" | minus: 1 %}
+  {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+  {% assign miesiace_rest = all_miesiace | slice: current_month_num, 12 %}
+  {% assign miesiace_start = all_miesiace | slice: 0, current_month_num %}
+  {% assign miesiace = miesiace_rest | concat: miesiace_start %}
   {% for miesiac in miesiace %}
 
     {% if site.data.spektakle\[miesiac\].repertuar.size > 0 %}
@@ -91,15 +95,6 @@ layout: t
   <br/><br/>
 
 </div>
-
-<style>
-  .pure-table thead {
-    background-color: rgba(143, 223, 255, 0.19) !important;
-    color: #000;
-    text-align: left;
-    vertical-align: bottom;
-  }
-</style>
 
 <!-- <tr>  <th><strike>10.06.2018 niedziela</strike></th>  <th><strike>12.30</strike></th>  <th><strike>Urodziny Turli-Taja</strike></th>  <th>Spektatkl odwołany</th>  </tr> -->
 <!-- <tr>  <th>24.06.2018 niedziela</th>  <th>12.30</th>  <th>Calineczka</th>  <th><a href="https://kicket.com/embedded/rezerwacja/107628">Kup bilet</a></th>  </tr> -->

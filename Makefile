@@ -9,7 +9,7 @@ MAKEFLAGS += --no-builtin-rules
 
 dev: # Run
 	chruby ruby-3.1.3
-	bundle exec jekyll serve --livereload --host 0.0.0.0
+	bundle exec jekyll serve --livereload --incremental
 
 dev-tina: # Run jekyll with tina
 	npx tinacms dev -c "bundle exec jekyll serve --livereload --host localhost"
