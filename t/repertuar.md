@@ -13,7 +13,10 @@ Gramy dla was w Pałacu Staszica przy **ul. Nowy Świat 72**
 <br/>
 <br/>
 {% assign miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
-{% for miesiac in miesiace %}
+{% assign current_month_index = site.time | date: "%-m" | minus: 1 %}
+{% for i in (0..11) %}
+{% assign month_index = i | plus: current_month_index | modulo: 12 %}
+{% assign miesiac = miesiace[month_index] %}
 
 {% if site.data.spektakle\[miesiac\].repertuar.size > 0 %}
 
