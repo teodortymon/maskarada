@@ -1,9 +1,89 @@
 </div></div>
-<center><a href="/t/index.html"><img src="lay/img/mini_t.png" style="" alt="MASKARADA Teatr dla dzieci Warszawa" /></a></center>
+
+<!-- Bottom Banner - Link to Theatre -->
+<style>
+  .bottom-banner-theatre {
+    background: linear-gradient(135deg, rgba(224, 123, 120, 0.95) 0%, rgba(187, 100, 104, 0.95) 100%);
+    padding: 20px;
+    margin: 40px 0 0 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .bottom-banner-theatre:hover {
+    padding: 25px 20px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .bottom-banner-theatre-logo {
+    width: 60px;
+    height: 60px;
+    background: url('../lay/img/teatr.png') no-repeat center;
+    background-size: contain;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.3));
+  }
+
+  .bottom-banner-theatre-text {
+    color: white;
+    font-family: Calibri, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .bottom-banner-theatre-arrow {
+    color: white;
+    font-size: 28px;
+    animation: bounceRightTheatre 1s ease-in-out infinite;
+  }
+
+  @keyframes bounceRightTheatre {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(8px); }
+  }
+
+  @media (max-width: 768px) {
+    .bottom-banner-theatre {
+      gap: 12px;
+      padding: 15px;
+      max-width: 100%;
+    }
+
+    .bottom-banner-theatre-text {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .bottom-banner-theatre-logo {
+      width: 50px;
+      height: 50px;
+    }
+  }
+</style>
+
+<div class="bottom-banner-theatre" onclick="window.location.href='../t/index.html'">
+  <div class="bottom-banner-theatre-logo"></div>
+  <div class="bottom-banner-theatre-text">Do Teatru MaskaradaCan </div>
+  <div class="bottom-banner-theatre-arrow">→</div>
+</div>
+
 <div id="footer" class="container">
-	Wszelkie prawa zastrzeżone &copy;
+	Wszelkie prawa zastrzeżone &copy;≥≥≥≥≥å
 	Maskarada 2012  | Wypożyczalnia kostiumów dla dzieci Warszawa
 </div>
-	
+
 </body>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
 </html>

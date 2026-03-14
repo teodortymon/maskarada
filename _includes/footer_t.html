@@ -1,43 +1,88 @@
-<!-- </div></div>
-<center>
-<div class="fb-page" data-href="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
-</center>
+  <!-- Bottom Banner - Link to Costume Rental -->
+  <style>
+    .bottom-banner {
+      background: linear-gradient(135deg, rgba(0, 148, 187, 0.95) 0%, rgba(0, 81, 229, 0.95) 100%);
+      padding: 20px;
+      margin: 40px 0 0 0;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s;
+      border-radius: 12px 12px 0 0;
+    }
 
-<br /><br /> -->
+    .bottom-banner:hover {
+      padding: 25px 20px;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+    }
 
+    .bottom-banner-logo {
+      width: 60px;
+      height: 60px;
+      background: url('../lay/img/wyp.png') no-repeat center;
+      background-size: contain;
+      filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.3));
+    }
 
+    .bottom-banner-text {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
 
+    .bottom-banner-arrow {
+      color: white;
+      font-size: 28px;
+      animation: bounceRight 1s ease-in-out infinite;
+    }
 
-<!-- <div id="footer" class="container">
-	<h3>Zobacz również:</h3>
-	<a href="/w/index.html"><img src="lay/img/mini_w.png"/></a>
-    <br />
-    Wszelkie prawa zastrzeżone &copy;
-	Maskarada 2012
-</div> -->
+    @keyframes bounceRight {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(8px); }
+    }
 
+    @media (max-width: 768px) {
+      .bottom-banner {
+        gap: 12px;
+        padding: 15px;
+        max-width: 100%;
+      }
 
-<!-- <div id="end" style="
-background-image: repeating-linear-gradient(-45deg,rgba(255,255,255,.3), rgba(255,255,255,.3) 40px, transparent 40px, transparent 80px)"
->
-<h3 style="padding: 20px 0 0 50px">Nasi partnerzy:</h3>
+      .bottom-banner-text {
+        font-size: 16px;
+        text-align: center;
+      }
 
-<a target="_blank" href="https://www.gov.pl/web/kultura/fundusz-wsparcia-kultury/"><img src="lay/img/p/fwk.jpg">
-	<a target="_blank" href="http://www.cbr.edu.pl/"><img src="lay/img/p/cbr.jpg">
-<a target="_blank" href="http://www.gogaga.pl"><img src="lay/img/p/gaga.png">
-<a target="_blank" href="http://www.radiobajka.pl"><img src="lay/img/p/radiobajka.png">
-<a target="_blank" href="http://www.qlturka.pl"><img src="lay/img/p/qlturka.png">
-<a target="_blank" href="http://www.dzieckowwarszawie.pl"><img src="lay/img/p/dziecko_w_warszawie.jpeg">
-<a target="_blank" href="https://ewejsciowki.pl"><img src="lay/img/p/ewejsciowki.jpg">
-	
-	
+      .bottom-banner-logo {
+        width: 50px;
+        height: 50px;
+      }
 
+      .bottom-banner-arrow {
+        font-size: 24px;
+      }
+    }
+  </style>
 
-
-</div>	 -->
-
+  <div class="bottom-banner" onclick="window.location.href='../w/index.html'">
+    <div class="bottom-banner-logo"></div>
+    <div class="bottom-banner-text">Sprawdź naszą Wypożyczalnię Kostiumów</div>
+    <div class="bottom-banner-arrow">→</div>
+  </div>
 </div>
 </body>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
 
 
 
