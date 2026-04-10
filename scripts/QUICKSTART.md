@@ -5,7 +5,7 @@ A simple guide for updating ticket booking links in your show schedules.
 ## TL;DR
 
 ```bash
-# 1. Save HTML from Kicket as _data/spektakle/MONTH_raw.html
+# 1. Save HTML from Biletomat as _data/spektakle/MONTH_raw.html
 # 2. Run:
 make update-links month=MONTH_NAME
 # 3. Review and commit:
@@ -16,9 +16,9 @@ git commit -m "Update ticket links for MONTH_NAME"
 
 ## Step-by-Step
 
-### 1. Export HTML from Kicket
+### 1. Export HTML from Biletomat
 
-1. Log into Kicket event management system
+1. Log into Biletomat event management system
 2. Go to Events → List
 3. Make sure you can see the events for your month
 4. Save the page (Cmd+S on Mac, Ctrl+S on Windows)
@@ -53,7 +53,7 @@ git diff _data/spektakle/grudzien.yml
 ```
 
 Review that the changes look correct:
-- Links should be in format: `https://kicket.com/embedded/rezerwacja/XXXXX`
+- Links should be in format: `https://biletomat.pl/embedded/rezerwacja/XXXXX`
 - Each show should have the right event ID
 
 ### 5. Commit the Changes
@@ -83,17 +83,17 @@ Make sure you:
 
 The HTML file might be:
 1. Empty or corrupted
-2. From a different system (not Kicket)
-3. In a different format (Kicket might have updated their interface)
+2. From a different system (not Biletomat)
+3. In a different format (Biletomat might have updated their interface)
 
-Try re-exporting the HTML from Kicket.
+Try re-exporting the HTML from Biletomat.
 
 ### All shows show "No match found"
 
 Check that:
-1. Show titles in YAML exactly match titles in Kicket (case-sensitive)
+1. Show titles in YAML exactly match titles in Biletomat (case-sensitive)
 2. Dates and times match exactly
-3. Events have been created in Kicket system
+3. Events have been created in Biletomat system
 
 ### Script updates wrong events
 
@@ -102,7 +102,7 @@ Review the changes carefully with `git diff`. If something is wrong:
 1. Don't commit the changes
 2. Restore the original file: `git checkout -- _data/spektakle/month.yml`
 3. Check that your HTML export is from the right month
-4. Verify the event details in Kicket
+4. Verify the event details in Biletomat
 
 ## Examples
 

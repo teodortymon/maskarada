@@ -9,7 +9,7 @@
 **File:** `scripts/update_spektakle_links.py`
 
 A Python script that:
-- Extracts event data from Kicket HTML exports
+- Extracts event data from Biletomat HTML exports
 - Matches events with YAML entries by title and date
 - Updates YAML files with ticket booking URLs
 - Handles edge cases (mismatches, missing data, etc.)
@@ -118,7 +118,7 @@ M Makefile            - Added update-links command
 
 When you need to update links for a new month:
 
-1. Export HTML from Kicket and save as `_data/spektakle/MONTH_raw.html`
+1. Export HTML from Biletomat and save as `_data/spektakle/MONTH_raw.html`
 2. Run: `make update-links month=MONTH`
 3. Review: `git diff _data/spektakle/MONTH.yml`
 4. Commit if satisfied
@@ -140,12 +140,12 @@ See `scripts/QUICKSTART.md` for detailed instructions.
    - Converts ISO 8601 dates to DD.MM.YYYY HH:MM for matching
 
 3. **URL Construction:**
-   - Format: `https://kicket.com/embedded/rezerwacja/{EVENT_ID}`
+   - Format: `https://biletomat.pl/embedded/rezerwacja/{EVENT_ID}`
 
 ### Data Flow
 
 ```
-Kicket System → HTML Export → Python Script → Updated YAML → Git Commit → Website
+Biletomat System → HTML Export → Python Script → Updated YAML → Git Commit → Website
 ```
 
 ### Files Involved
@@ -165,7 +165,7 @@ scripts/
 
 ## Maintenance
 
-### When Kicket Updates Their Interface
+### When Biletomat Updates Their Interface
 
 If the HTML structure changes, update the regex patterns in `extract_events_from_html()`:
 
@@ -179,7 +179,7 @@ date_pattern = r'class="ng-binding">(\d{2}\.\d{2}\.\d{4} \d{2}:\d{2}) \(Warszawa
 Update the link construction in `update_yaml_with_links()`:
 
 ```python
-new_link = f'https://kicket.com/embedded/rezerwacja/{event_id}'
+new_link = f'https://biletomat.pl/embedded/rezerwacja/{event_id}'
 ```
 
 ## Success Metrics
@@ -198,7 +198,7 @@ new_link = f'https://kicket.com/embedded/rezerwacja/{event_id}'
 
 - [ ] Batch processing for multiple months
 - [ ] Validation mode to check for broken links
-- [ ] API integration (if Kicket provides one)
+- [ ] API integration (if Biletomat provides one)
 - [ ] Automatic HTML fetching
 - [ ] Email notifications for processing results
 

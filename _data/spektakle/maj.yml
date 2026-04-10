@@ -3,7 +3,7 @@ title: Maj
 repertuar:
   - tytul: Mała Syrenka
     data: 2026-05-31T12:00:00.000Z
-    link: '-'
+    link: 'https://biletomat.pl/embedded/rezerwacja/341685'
   - tytul: Królowa Myszy
     data: 2026-05-18T11:00:00.000Z
     link: '-'
@@ -12,7 +12,7 @@ repertuar:
     link: '-'
   - tytul: Królowa Myszy
     data: 2026-05-17T12:00:00.000Z
-    link: '-'
+    link: 'https://biletomat.pl/embedded/rezerwacja/341684'
   - tytul: Złota Rybka
     data: 2026-05-11T11:00:00.000Z
     link: '-'
@@ -21,4 +21,4 @@ repertuar:
     link: '-'
   - tytul: Złota Rybka
     data: 2026-05-10T12:00:00.000Z
-    link: '-'
+    link: 'https://biletomat.pl/embedded/rezerwacja/341683'

@@ -40,8 +40,8 @@ resize: # Create structure and resize pictures
 resize-logo: # Resize a logo image to web-appropriate size (usage: make resize-logo args=path/to/logo.png)
 	mogrify -resize 600x600 $(args)
 
-update-links: # Update ticket links in spektakle YAML from HTML export (usage: make update-links month=grudzien)
-	python3 scripts/update_spektakle_links.py $(month)
+update-links: # Update ticket links in spektakle YAML from new_events_raw.html export
+	python3 scripts/update_spektakle_links.py
 
 # -----------------------------------------------------------
 # CAUTION: If you have a file with the same name as make

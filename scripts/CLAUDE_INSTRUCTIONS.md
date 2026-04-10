@@ -6,25 +6,25 @@ This document contains instructions for Claude (or human developers) when updati
 
 ### Context
 
-The Maskarada website stores show schedules in YAML files at `_data/spektakle/<month>.yml`. When new shows are created in Kicket's event management system, we need to update the YAML files with ticket booking links.
+The Maskarada website stores show schedules in YAML files at `_data/spektakle/<month>.yml`. When new shows are created in Biletomat's event management system, we need to update the YAML files with ticket booking links.
 
 ### Process Overview
 
-1. **Export HTML from Kicket**
-   - Navigate to Kicket event management
-   - View events list for the desired month
-   - Save the page HTML as `_data/spektakle/<month>_raw.html`
+1. **Export HTML from Biletomat**
+   - Navigate to Biletomat event management
+   - View events list (can include multiple months)
+   - Save the page HTML as `_data/spektakle/new_events_raw.html`
 
 2. **Run the update script**
    ```bash
-   make update-links month=<month_name>
+   make update-links
    ```
 
 3. **Review and commit changes**
    ```bash
-   git diff _data/spektakle/<month>.yml
-   git add _data/spektakle/<month>.yml
-   git commit -m "Update ticket links for <month> shows"
+   git diff _data/spektakle/
+   git add _data/spektakle/
+   git commit -m "Update ticket links"
    ```
 
 ## Script Details
@@ -49,13 +49,13 @@ The Maskarada website stores show schedules in YAML files at `_data/spektakle/<m
    - Exact date/time match (after converting ISO to DD.MM.YYYY HH:MM)
 
 4. **Updates YAML** with:
-   - New links: `https://kicket.com/embedded/rezerwacja/{EVENT_ID}`
+   - New links: `https://biletomat.pl/embedded/rezerwacja/{EVENT_ID}`
    - Fixes mismatched links
    - Preserves formatting
 
 ### Expected HTML Structure
 
-The script expects Kicket's Angular-based HTML with this pattern:
+The script expects Biletomat's Angular-based HTML with this pattern:
 
 ```html
 <a href="#/events/324387/update">Show Title</a>
@@ -80,14 +80,14 @@ After update:
 ```yaml
   - tytul: Show Title
     data: 2025-12-14T13:30:00.000Z
-    link: 'https://kicket.com/embedded/rezerwacja/324387'
+    link: 'https://biletomat.pl/embedded/rezerwacja/324387'
 ```
 
 ## Modifying the Script
 
 ### Adding support for different HTML formats
 
-If Kicket changes their HTML structure, update these regex patterns in `extract_events_from_html()`:
+If Biletomat changes their HTML structure, update these regex patterns in `extract_events_from_html()`:
 
 ```python
 event_pattern = r'href="#/events/(\d+)/update">([^<]+)</a>'
@@ -100,10 +100,10 @@ If the YAML date format changes, update `convert_yaml_date_to_html_format()`.
 
 ### Adding support for different URL formats
 
-If Kicket changes their booking URL structure, update the URL construction:
+If Biletomat changes their booking URL structure, update the URL construction:
 
 ```python
-new_link = f'https://kicket.com/embedded/rezerwacja/{event_id}'
+new_link = f'https://biletomat.pl/embedded/rezerwacja/{event_id}'
 ```
 
 ## Common Issues and Solutions
@@ -116,7 +116,7 @@ new_link = f'https://kicket.com/embedded/rezerwacja/{event_id}'
 ```
 
 **Possible causes:**
-1. Event not yet created in Kicket
+1. Event not yet created in Biletomat
 2. Title mismatch between YAML and HTML
 3. Date/time mismatch
 
@@ -130,8 +130,8 @@ new_link = f'https://kicket.com/embedded/rezerwacja/{event_id}'
 **Symptoms:**
 ```
 ⚠ Fixing mismatch: Show Title @ Date
-  Old: https://kicket.com/embedded/rezerwacja/324387
-  New: https://kicket.com/embedded/rezerwacja/324385
+  Old: https://biletomat.pl/embedded/rezerwacja/324387
+  New: https://biletomat.pl/embedded/rezerwacja/324385
 ```
 
 **Solution:**
@@ -147,7 +147,7 @@ Found 0 events in HTML
 
 **Solution:**
 - Verify HTML file is not empty
-- Check if Kicket changed their HTML structure
+- Check if Biletomat changed their HTML structure
 - Update regex patterns if needed
 
 ## Testing
@@ -180,8 +180,8 @@ Potential improvements:
 
 1. **Validation mode:** Check for broken links or invalid IDs
 2. **Batch processing:** Update multiple months at once
-3. **API integration:** Direct integration with Kicket API (if available)
-4. **Automatic HTML fetching:** Auto-download from Kicket
+3. **API integration:** Direct integration with Biletomat API (if available)
+4. **Automatic HTML fetching:** Auto-download from Biletomat
 5. **Error recovery:** Handle partial updates gracefully
 6. **Link verification:** Test that generated URLs are accessible
 

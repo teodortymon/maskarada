@@ -4,11 +4,11 @@ This directory contains automation scripts for managing the Maskarada website.
 
 ## update_spektakle_links.py
 
-Updates spektakle (shows) YAML files with ticket booking links extracted from Kicket HTML exports.
+Updates spektakle (shows) YAML files with ticket booking links extracted from Biletomat HTML exports.
 
 ### Purpose
 
-When you export event data from Kicket's event management system, this script:
+When you export event data from Biletomat's event management system, this script:
 1. Extracts event IDs, titles, and dates from the HTML export
 2. Matches them with entries in your YAML repertoire files
 3. Updates the YAML files with the correct ticket booking URLs
@@ -16,7 +16,7 @@ When you export event data from Kicket's event management system, this script:
 ### Prerequisites
 
 - Python 3.x (no external dependencies required)
-- HTML export from Kicket saved as `_data/spektakle/<month_name>_raw.html`
+- HTML export from Biletomat saved as `_data/spektakle/<month_name>_raw.html`
 - Existing YAML file at `_data/spektakle/<month_name>.yml`
 
 ### Usage
@@ -35,8 +35,8 @@ make update-links month=grudzien
 
 ### Example Workflow
 
-1. **Export HTML from Kicket:**
-   - Log into Kicket event management system
+1. **Export HTML from Biletomat:**
+   - Log into Biletomat event management system
    - Navigate to your events list
    - Export/save the page HTML
    - Save as `_data/spektakle/<month_name>_raw.html` (e.g., `grudzien_raw.html`)
@@ -72,7 +72,7 @@ The script:
 
 4. **Updates Links:** Constructs URLs in format:
    ```
-   https://kicket.com/embedded/rezerwacja/{EVENT_ID}
+   https://biletomat.pl/embedded/rezerwacja/{EVENT_ID}
    ```
 
 5. **Handles Edge Cases:**
@@ -97,7 +97,7 @@ The script provides detailed output:
 - Only processes events that exist in both HTML and YAML
 - Entries without HTML data remain unchanged (with `link: '-'`)
 - Requires exact match of both title and date/time
-- Assumes HTML follows Kicket's standard Angular format
+- Assumes HTML follows Biletomat's standard Angular format
 
 ### Troubleshooting
 
