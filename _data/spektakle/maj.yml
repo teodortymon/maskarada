@@ -1,33 +1,30 @@
-date: "2019-04-06T22:30:55.000+00:00"
+date: '2019-04-06T22:30:55.000+00:00'
 title: Maj
 repertuar:
   - tytul: Calineczka
     data: 2026-05-24T12:00:00.000Z
-    link: "https://biletomat.pl/embedded/rezerwacja/342967"
+    link: 'https://biletomat.pl/embedded/rezerwacja/342967'
   - tytul: Calineczka
     data: 2026-05-25T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Calineczka
     data: 2026-05-25T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Mała Syrenka
     data: 2026-05-31T12:00:00.000Z
-    link: "https://biletomat.pl/embedded/rezerwacja/341685"
+    link: 'https://biletomat.pl/embedded/rezerwacja/341685'
   - tytul: Królowa Myszy
     data: 2026-05-18T11:00:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Królowa Myszy
     data: 2026-05-18T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Królowa Myszy
     data: 2026-05-17T12:00:00.000Z
-    link: "https://biletomat.pl/embedded/rezerwacja/341684"
+    link: 'https://biletomat.pl/embedded/rezerwacja/341684'
   - tytul: Złota Rybka
     data: 2026-05-11T11:00:00.000Z
-    link: "-"
-  - tytul: Złota Rybka
-    data: 2026-05-11T09:30:00.000Z
-    link: "-"
+    link: '-'
   - tytul: Złota Rybka
     data: 2026-05-10T12:00:00.000Z
-    link: "https://biletomat.pl/embedded/rezerwacja/341683"
+    link: 'https://biletomat.pl/embedded/rezerwacja/341683'
