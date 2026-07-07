@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="Content-Language" content="pl" />
-    <meta name="theme-color" content="#1a1a1a" />
+    <meta name="theme-color" content="#ffffff" />
 
     <meta name="Description" content="Magiczne przedstawienia teatralne dla dzieci." />
 
     <title>MASKARADA Teatr dla dzieci</title>
+    <link rel="icon" type="image/png" href="lay/img/logo2.png" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
     <!-- Bootstrap: TODO: Move to the bottom of <body> -->
@@ -36,6 +37,7 @@
       href={{"lay/style.css" | bust_file_cache }}
       type="text/css" />
   </head>
+  <body>
 
   <!-- EWEJSCIOWKI -->
   <!-- TODO: Move to the ticket buying page -->
@@ -47,101 +49,119 @@
 
   <!-- <div id="fb-root"></div>    <script>(function(d, s, id) {    var js, fjs = d.getElementsByTagName(s)[0];    if (d.getElementById(id)) return;    js = d.createElement(s); js.id = id;    js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";    fjs.parentNode.insertBefore(js, fjs);    }(document, 'script', 'facebook-jssdk'));</script> -->
   <style>
-    .logo-header {
-      text-align: center;
-      padding: 30px 20px 20px;
-      position: relative;
-      background: linear-gradient(135deg, #1a1a1a 0%, #3d2d2d 50%, #1a1a1a 100%);
-    }
-
-    .logo-header::before {
-      content: '';
-      position: absolute;
+    .site-header {
+      position: sticky;
       top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(circle at 30% 50%, rgba(224, 123, 120, 0.1) 0%, transparent 50%),
-                  radial-gradient(circle at 70% 50%, rgba(187, 100, 104, 0.1) 0%, transparent 50%);
-      pointer-events: none;
+      z-index: 1030;
     }
 
-    .logo-header img {
-      max-width: 600px;
-      width: 90%;
-      height: auto;
-      position: relative;
-      z-index: 1;
-      animation: neonGlow 1.5s ease-out;
-      filter: drop-shadow(0 0 20px rgba(224, 123, 120, 0.8))
-              drop-shadow(0 0 40px rgba(224, 123, 120, 0.4));
+    .site-header .bar {
+      background: #ffffff;
+      box-shadow: 0 3px 0 rgba(74, 125, 165, 0.3);
     }
 
-    @keyframes neonGlow {
-      from {
-        opacity: 0;
-        filter: drop-shadow(0 0 50px rgba(224, 123, 120, 1))
-                drop-shadow(0 0 80px rgba(224, 123, 120, 0.8));
-      }
-      to {
-        opacity: 1;
-        filter: drop-shadow(0 0 20px rgba(224, 123, 120, 0.8))
-                drop-shadow(0 0 40px rgba(224, 123, 120, 0.4));
-      }
+    .site-header .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.25rem 1.5rem;
+      padding-top: 0.55rem;
+      padding-bottom: 0.65rem;
     }
 
-    @keyframes pulse {
-      0%, 100% {
-        filter: drop-shadow(0 0 20px rgba(224, 123, 120, 0.8))
-                drop-shadow(0 0 40px rgba(224, 123, 120, 0.4));
-      }
-      50% {
-        filter: drop-shadow(0 0 30px rgba(224, 123, 120, 0.9))
-                drop-shadow(0 0 60px rgba(224, 123, 120, 0.6));
-      }
+    .brand {
+      display: flex;
+      align-items: center;
+      line-height: 1;
     }
 
-    @media (max-width: 768px) {
-      .logo-header img {
-        max-width: 90%;
+    .brand img {
+      height: 66px;
+      width: auto;
+      display: block;
+    }
+
+    .site-header .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.1rem 0.25rem;
+    }
+
+    .site-header a.nav-link {
+      font-family: YoungSerif, serif;
+      font-size: 1.08rem;
+      color: #4a708e;
+      padding: 0.2rem 0.45rem;
+    }
+
+    .site-header a.nav-link:hover {
+      color: #e0736f;
+    }
+
+    .site-header a.nav-link.active {
+      color: #e0736f;
+      text-decoration: underline;
+      text-underline-offset: 0.32em;
+      text-decoration-thickness: 2px;
+    }
+
+    /* Paper bunting garland hanging from the header */
+    .bunting {
+      height: 15px;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="56" height="15"><path d="M2 0 H26 L14 13 Z" fill="%23e0736f"/><path d="M30 0 H54 L42 13 Z" fill="%23f2c94c"/></svg>');
+      background-repeat: repeat-x;
+      background-size: 56px 15px;
+    }
+
+    @media (max-width: 767px) {
+      .site-header .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0.6rem;
+        padding-bottom: 0.55rem;
+      }
+
+      .brand img {
+        height: 52px;
+      }
+
+      .site-header .site-nav {
+        justify-content: center;
+      }
+
+      .site-header a.nav-link {
+        font-size: 0.98rem;
+        padding: 0.15rem 0.35rem;
       }
     }
   </style>
-  <div class="logo-header">
-    <img src="lay/img/logo2.png" alt="MASKARADA">
-  </div>
-  <nav class="navbar text-dark">
-    <div class="container">
-      {% assign url = page.url | downcase | split: '/' %}
-      {% assign ur = url[2] | split: '.' %}
-      {% assign u = ur[0] %}
-      <a class="nav-link {% if page.url == '/t/' %}active{% endif %}" href="index.html">
-        <!--        <img-->
-        <!--          src="lay/img/fairy.svg"-->
-        <!--          class="img-fluid"-->
-        <!--          width="100"-->
-        <!--          height="100"-->
-        <!--          alt="..." />-->
-        Teraz
-      </a>
-
-
-      <a class="nav-link {% if u == 'repertuar' %}active{% endif %}" href="repertuar.html">Kalendarz</a>
-      <a class="nav-link {% if u == 'spektakle' %}active{% endif %}" href="spektakle.html">Spektakle</a>
-      <a class="nav-link {% if u == 'warsztaty' %}active{% endif %}" href="warsztaty.html">Warsztaty</a>
-
-
-      <a class="nav-link {% if u == 'bilety' %}active{% endif %}" href="bilety.html">Bilety</a>
-      <a class="nav-link {% if u == 'onas' %}active{% endif %}" href="onas.html">Historia</a>
-      <a class="nav-link {% if u == 'kontakt' %}active{% endif %}" href="kontakt.html">Kontakt</a>
+  {% assign url = page.url | downcase | split: '/' %}
+  {% assign ur = url[2] | split: '.' %}
+  {% assign u = ur[0] %}
+  <header class="site-header">
+    <div class="bar">
+      <div class="container">
+        <a class="brand" href="index.html">
+          <img src="lay/img/logo2.png" alt="Teatr Maskarada" />
+        </a>
+        <nav class="site-nav">
+          <a class="nav-link {% if page.url == '/t/' %}active{% endif %}" href="index.html">Teraz</a>
+          <a class="nav-link {% if u == 'repertuar' %}active{% endif %}" href="repertuar.html">Kalendarz</a>
+          <a class="nav-link {% if u == 'spektakle' %}active{% endif %}" href="spektakle.html">Spektakle</a>
+          <a class="nav-link {% if u == 'warsztaty' %}active{% endif %}" href="warsztaty.html">Warsztaty</a>
+          <a class="nav-link {% if u == 'bilety' %}active{% endif %}" href="bilety.html">Bilety</a>
+          <a class="nav-link {% if u == 'onas' %}active{% endif %}" href="onas.html">Historia</a>
+          <a class="nav-link {% if u == 'kontakt' %}active{% endif %}" href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
     </div>
-  </nav>
+    <div class="bunting"></div>
+  </header>
 
   <!-- <main class="container"> -->
 
   <!-- <div id="header" class="container" >    <h1><a href="index.html">Teatr Maskarada</a></h1>    <ul id="dropdownMenu">    <li><a href="index.html">Spektakle</a></li>    <li><a href="repertuar.html">Repertuar</a></li>    <li><a href="warsztaty.html">Warsztaty</a></li>    <li><a href="onas.html">O nas</a></li>    <li><a href="bilety.html">Bilety</a></li>    <li><a href="kontakt.html">Kontakt</a></li>        </ul>    </div> -->
 
   <!-- <div id="main" class="container"> -->
-
-  <hr/>
-</html>
