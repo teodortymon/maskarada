@@ -22,6 +22,30 @@ layout: t
     width: 40%;
   }
 
+  /* Whole play title as a themed (rose) clickable button */
+  .play-title-btn {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-secondary);
+    padding: 0.15rem 0.4rem;
+    margin-left: -0.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: normal;
+    border-radius: 0.4rem;
+    transition: background-color 0.15s ease;
+  }
+  .play-title-btn:hover {
+    background-color: rgba(224, 123, 120, 0.12);
+    color: var(--bs-primary);
+  }
+  .play-title-more {
+    font-size: 0.8em;
+    font-weight: 500;
+    opacity: 0.75;
+    white-space: nowrap;
+    margin-left: 0.25rem;
+  }
+
   /* Mobile responsive styles */
   @media (max-width: 768px) {
     /* Compact radio buttons for mobile */
@@ -163,15 +187,34 @@ layout: t
         {% for spektakl in spektakle %}
           {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
           {% if event_timestamp >= now_timestamp %}
-            {% assign dzien_tygodnia = spektakl.data | date: "%w" %}
+            {% assign dzien_tygodnia = spektakl.data | date: "%w" | plus: 0 %}
             {% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
               {% assign event_type = "weekend" %}
             {% else %}
               {% assign event_type = "weekday" %}
             {% endif %}
+            {% comment %} Match this event to its play (_s2) by title so the title
+               can open the same details modal used on the Spektakle page. {% endcomment %}
+            {% assign matched_play = nil %}
+            {% for play in site.s2 %}
+              {% if play.title == spektakl.tytul %}
+                {% assign matched_play = play %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
             <tr data-event-type="{{ event_type }}">
-              <td style="white-space: nowrap;">{{ spektakl.data | date: "%-d.%m" }} {{ site.data.dni_tygodnia.dni[dzien_tygodnia] }} {{ spektakl.data | date: "%R" }}</td>
-              <td>{{ spektakl.tytul }}</td>
+              <td style="white-space: nowrap;">{{ site.data.dni_tygodnia.dni[dzien_tygodnia] | capitalize }} {{ spektakl.data | date: "%-d.%m" }} - {{ spektakl.data | date: "%R" }}</td>
+              <td>
+                {% if matched_play %}
+                  <button
+                    type="button"
+                    class="btn play-title-btn text-start"
+                    data-bs-toggle="modal"
+                    data-bs-target="#{{ matched_play.id2 }}">{{ spektakl.tytul }} <span class="play-title-more" aria-hidden="true">więcej →</span></button>
+                {% else %}
+                  {{ spektakl.tytul }}
+                {% endif %}
+              </td>
               <td style="text-align: center;">
                 {% if spektakl.manual_price == true %}
                   {{ spektakl.link }}
@@ -294,6 +337,12 @@ layout: t
     filterEvents('all');
   });
 </script>
+
+{% comment %} Play details modals — same include as the Spektakle page, so a
+   Kalendarz play title opens the identical popup. {% endcomment %}
+{% for s in site.s2 %}
+  {% include spektakl_modal.html s=s %}
+{% endfor %}
 
 <!-- <tr>  <th><strike>10.06.2018 niedziela</strike></th>  <th><strike>12.30</strike></th>  <th><strike>Urodziny Turli-Taja</strike></th>  <th>Spektatkl odwołany</th>  </tr> -->
 <!-- <tr>  <th>24.06.2018 niedziela</th>  <th>12.30</th>  <th>Calineczka</th>  <th><a href="https://kicket.com/embedded/rezerwacja/107628">Kup bilet</a></th>  </tr> -->
