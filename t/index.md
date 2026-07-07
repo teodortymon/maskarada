@@ -305,23 +305,21 @@ layout: t
     <div class="row">
       <div class="col-sm">
         <div class="card my-2">
-          <div class="card-header">Warsztaty teatralne</div>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-5">
-                <p>Warsztaty</p>
-                <p>Wiek: 12 lat</p>
-                <p>Czas trwania: 2 godziny</p>
-              </div>
-            </div>
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span>Piknik Archiwalny</span>
+            <span class="badge text-bg-primary">19 czerwca 2026</span>
           </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card my-2">
-          <div class="card-header">Nowa premiera</div>
           <div class="card-body">
-            <p>Rybka rybka rybka</p>
+            <p>Na
+              <a href="https://archiwum.pan.pl/index.php?option=com_content&view=article&id=767:juz-za-miesiac-xvi-warszawski-piknik-archiwalny&catid=9&Itemid=145" target="_blank" rel="noopener">Pikniku Archiwalnym</a>
+              na naszej scenie w Pałacu Staszicu wystawiliśmy nową sztukę razem o Linie Bögli, szwajcarskiej guwernantce, która podróżowała po świecie w XIX wieku.</p>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary my-1"
+              data-bs-toggle="modal"
+              data-bs-target="#lina_bogli">
+              Zobacz spektakl 🍥
+            </button>
           </div>
         </div>
       </div>
