@@ -54,13 +54,13 @@ body::after {
 
 /* Ensure rows don't cause overflow */
 .row {
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -18px;
+  margin-right: -18px;
 }
 
 .row > * {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 h1,
@@ -171,6 +171,51 @@ a.nav-link.active {
   overflow: hidden;
   transform: rotate(-0.35deg);
   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* More breathing room between stacked cards. Bootstrap's .my-2 spacing utility
+   is generated with !important, so these overrides must be !important to win. */
+.card.my-2 {
+  margin-top: 0.9rem !important;
+  margin-bottom: 0.9rem !important;
+}
+
+/* Text pages (Bilety, Historia, Warsztaty …) stack section cards directly in
+   the container — give those sections extra breathing room between them */
+.container > .card.my-2 {
+  margin-top: 1.85rem !important;
+  margin-bottom: 1.85rem !important;
+}
+
+/* Headings that introduce a section on those pages need space above too */
+.container > h2 {
+  margin-top: 2.25rem;
+}
+
+.container > h2:first-child {
+  margin-top: 0;
+}
+
+/* Pages with tall section cards (Historia) need a larger gap so the spacing
+   reads proportionally to the card height */
+.container--roomy > .card.my-2 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.container--roomy > .card.my-2:first-child {
+  margin-top: 0 !important;
+}
+
+/* Calendar (Kalendarz) is a dense list of month cards — keep them tight and
+   don't inherit the roomier text-page spacing */
+.container--tight > .card.my-2 {
+  margin-top: 0.6rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.container--tight > hr {
+  margin: 1rem 0;
 }
 
 .row > [class*="col"]:nth-child(even) .card {

@@ -132,7 +132,7 @@ layout: t
     }
   }
 </style>
-<div class="container">
+<div class="container container--tight">
   <nav class="navbar">
     <div class="container-fluid">
       <h2>Kalendarz ✨</h2>
@@ -167,12 +167,6 @@ layout: t
     </div>
   </nav>
   <hr>
-  <div class="card my-2">
-    <div class="card-body">
-      Gramy dla was w Pałacu Staszica przy
-      <i>ul. Nowy Świat 72</i>
-    </div>
-  </div>
   {% assign current_month_num = 'now' | date: "%-m" | minus: 1 %}
   {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
   {% assign miesiace_rest = all_miesiace | slice: current_month_num, 12 %}

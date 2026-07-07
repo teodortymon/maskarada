@@ -84,6 +84,8 @@ layout: t
   <nav class="navbar">
     <div class="container-fluid">
       <h2>W tym tygodniu ✨</h2>
+      <!-- TEMPORARILY DISABLED: audience filter (Wszystkie / Dla rodzin / Dla szkół…).
+           Uncomment to restore. The filter JS below is null-safe when this is absent.
       <div
         class="btn-group"
         role="group"
@@ -111,6 +113,8 @@ layout: t
           autocomplete="off">
         <label class="btn btn-outline-primary" for="btnradio3">Dla szkół, przedszkoli i firm 🏫</label>
       </div>
+      -->
+
     </div>
   </nav>
   <hr>
@@ -411,20 +415,20 @@ layout: t
       }
     }
 
-    // Add event listeners to radio buttons
-    btnAll.addEventListener('change', function() {
+    // Add event listeners to radio buttons (null-safe: the filter UI may be disabled)
+    btnAll?.addEventListener('change', function() {
       if (this.checked) {
         filterEvents('all');
       }
     });
 
-    btnFamilies.addEventListener('change', function() {
+    btnFamilies?.addEventListener('change', function() {
       if (this.checked) {
         filterEvents('families');
       }
     });
 
-    btnSchools.addEventListener('change', function() {
+    btnSchools?.addEventListener('change', function() {
       if (this.checked) {
         filterEvents('schools');
       }

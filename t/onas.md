@@ -1,7 +1,7 @@
 ---
 layout: t
 ---
-<div class="container">
+<div class="container container--roomy">
 
   <div class="card my-2">
     <div class="card-header">Teatr Maskarada - najlepszy dziecięcy teatr, którego celem jest edukacja oraz zabawa teatralna z dziećmi</div>
