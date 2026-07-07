@@ -1,0 +1,27 @@
+{% comment %}
+  Responsive thumbnail grid for a play's photo gallery.
+  Params:
+    include.gallery — the play's `gallery` front-matter object
+      .folder  (required) e.g. "lay/img/syrenka" (has large/ + small/)
+      .ext     (optional) file extension without dot, default "jpg"
+      .count   sequential 1..count, OR
+      .images  explicit list of filename stems (for zero-padded / irregular sets)
+    include.id    — gallery group id (the play's id2)
+    include.title — alt text
+{% endcomment %}
+{% assign g = include.gallery %}
+{% if g and g.folder %}
+  {% assign ext = g.ext | default: "jpg" %}
+  {% if g.images %}
+    {% assign items = g.images %}
+  {% else %}
+    {% assign items = (1..g.count) %}
+  {% endif %}
+  <div class="gallery-grid">
+    {% for i in items %}
+      <a class="gallery-item" data-gallery="{{ include.id }}" href="{{ g.folder }}/large/{{ i }}.{{ ext }}">
+        <img loading="lazy" src="{{ g.folder }}/small/{{ i }}.{{ ext }}" alt="{{ include.title }}">
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

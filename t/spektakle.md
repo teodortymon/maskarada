@@ -58,11 +58,11 @@ layout: t
       {% if s %}
       <div class="col-sm-4">
         <div class="card my-2">
-          {% if s.link %}
+          {% if s.video %}
             <div class="ratio ratio-16x9">
               <iframe
                 class="embed-responsive-item"
-                src="{{s.link}}?color=white&playsinline=1&rel=0"
+                src="{{ s.video }}?color=white&playsinline=1&rel=0"
                 allowfullscreen></iframe>
             </div>
           {% else %}
@@ -80,9 +80,10 @@ layout: t
           {% endif %}
           <div class="card-body">
             <div>
+              <h5 class="card-title">{{ s.title }}{% if s.new_premiere %} <span class="badge text-bg-primary">nowa premiera</span>{% endif %}</h5>
               <p>{{ s.headline }}</p>
               <p>Wiek: {{ s.age }}</p>
-              <p>Czas trwania: {{ s.time }}</p>
+              <p>Czas trwania: {{ s.duration }}</p>
               <div class="container">
                 <div class="row">
                   <button
@@ -159,32 +160,5 @@ layout: t
 
 
 {% for s in site.s2 %}
-  <div
-    class="modal fade modal-xl"
-    id="{{ s.id2 }}"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">{{ s.title }}</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          {{ s.content }}
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% include spektakl_modal.html s=s %}
 {% endfor %}

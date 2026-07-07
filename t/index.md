@@ -212,11 +212,11 @@ layout: t
             {% endif %}
           {% endfor %}
 
-          {% if play_video.link and play_video.link != "" %}
+          {% if play_video.video and play_video.video != "" %}
             <div class="ratio ratio-16x9">
               <iframe
                 class="embed-responsive-item"
-                src="{{ play_video.link }}?color=white&playsinline=1&rel=0"
+                src="{{ play_video.video }}?color=white&playsinline=1&rel=0"
                 allowfullscreen></iframe>
             </div>
           {% else %}
@@ -284,6 +284,12 @@ layout: t
         </div>
       </div>
     {% endfor %}
+
+    <div class="col-12">
+      <p id="filter-empty" class="text-center my-4" style="display: none;">
+        <i>Brak spektakli w wybranej kategorii w tym tygodniu. Wybierz <b>Wszystkie 💫</b> lub zajrzyj do <a href="repertuar.html">Kalendarza</a>.</i>
+      </p>
+    </div>
 
     <div class="container">
       <nav class="navbar">
@@ -353,34 +359,7 @@ layout: t
 
 {% comment %} Modals for play details {% endcomment %}
 {% for s in site.s2 %}
-  <div
-    class="modal fade modal-xl"
-    id="{{ s.id2 }}"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">{{ s.title }}</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          {{ s.content }}
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% include spektakl_modal.html s=s %}
 {% endfor %}
 
 <script>
@@ -422,6 +401,15 @@ layout: t
           card.style.display = (cardType === 'weekday' || cardType === 'both') ? '' : 'none';
         }
       });
+
+      // Graceful fallback: show a message when the filter hides every card
+      const anyCardVisible = Array.prototype.some.call(allCards, function(c) {
+        return c.style.display !== 'none';
+      });
+      const emptyMsg = document.getElementById('filter-empty');
+      if (emptyMsg) {
+        emptyMsg.style.display = (allCards.length > 0 && !anyCardVisible) ? '' : 'none';
+      }
     }
 
     // Add event listeners to radio buttons

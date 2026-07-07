@@ -1,0 +1,79 @@
+{% comment %} Large diagonal "test version" band across the content, dismissible, shown on every page. {% endcomment %}
+<div class="test-banner-wrap" aria-hidden="true">
+  <div class="test-banner" role="note" aria-label="Wersja testowa strony">
+    <span>WERSJA TESTOWA &nbsp;·&nbsp; WERSJA TESTOWA &nbsp;·&nbsp; WERSJA TESTOWA</span>
+  </div>
+</div>
+<button type="button" class="test-banner-close" aria-label="Ukryj baner wersji testowej" title="Ukryj baner">&times;</button>
+<style>
+  /* Full-viewport clip so the oversized band never triggers page scrollbars */
+  .test-banner-wrap {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 3000;
+  }
+  .test-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220vw;
+    transform: translate(-50%, -50%) rotate(-28deg);
+    background: rgba(255, 212, 0, 0.82);
+    color: #1a1a1a;
+    text-align: center;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.75rem, 7vw, 5rem);
+    letter-spacing: 0.15em;
+    line-height: 1.15;
+    padding: 0.6em 0;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.28);
+    white-space: nowrap;
+    user-select: none;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.35);
+  }
+  .test-banner-close {
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid rgba(255, 212, 0, 0.9);
+    border-radius: 50%;
+    background: rgba(26, 26, 26, 0.85);
+    color: #fff;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 3001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+  .test-banner-close:hover {
+    background: #000;
+  }
+</style>
+<script>
+  (function () {
+    var KEY = 'wersjaTestowaDismissed';
+    var wrap = document.querySelector('.test-banner-wrap');
+    var btn = document.querySelector('.test-banner-close');
+    if (!wrap || !btn) return;
+    function hide() {
+      wrap.style.display = 'none';
+      btn.style.display = 'none';
+    }
+    var dismissed = false;
+    try { dismissed = localStorage.getItem(KEY) === '1'; } catch (e) {}
+    if (dismissed) { hide(); return; }
+    btn.addEventListener('click', function () {
+      hide();
+      try { localStorage.setItem(KEY, '1'); } catch (e) {}
+    });
+  })();
+</script>

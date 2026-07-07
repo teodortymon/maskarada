@@ -1,50 +1,26 @@
 ---
-title: Złota Rybka
-link: https://www.youtube.com/embed/I6uIPXobj9s?showinfo=0
-headline: Spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń.
-age: Dla dzieci od 1,5 do 8 lat.
-time: około 45 minut
+title: "Złota Rybka"
 id2: rybka
+headline: "Spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń, wg Aleksandra Puszkina."
+age: "od 1,5 do 8 lat"
+duration: "około 45 minut"
+premiere: "28.10.2018"
+poster: lay/img/rybka_big.jpg
+poster_thumb: lay/img/rybka_min.jpg
+video: https://www.youtube.com/embed/I6uIPXobj9s
+credits:
+  - role: Adaptacja i Muzyka
+    people:
+      - Marek Grabiniok
+  - role: Występują
+    people:
+      - Joanna Pietrońska
+      - Marek Grabiniok
+  - role: Scenografia
+    people:
+      - Małgorzata Domańska
+gallery:
+  folder: lay/img/rybka
+  count: 7
 ---
-<div>
-  Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń. Będziemy łowić rybki, wypowiadać życzenia, poznamy mądrą Złotą Rybkę, a wokół nas będzie szumiące morze i śpiewające ptaki.
-
-  <br/> Dla dzieci od 1,5 do 8 lat. <br/> Czas trwania około 45 minut <br/> Premiera 28.10.2018. <br/><br/>
-
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/I6uIPXobj9s?showinfo=0"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    style="border-style:solid; border-width: 5px; border-radius: 10px; border-color:rgba(87, 171, 255, 0.74)"></iframe>
-
-  <table border="0">
-    <tr>
-      <td>
-        <strong>Adaptacja i Muzyka</strong><br/>Marek Grabiniok</td>
-      <td>
-        <strong>Występują</strong><br/>Joanna Pietrońska <br/> Marek Grabiniok</td>
-      <td>
-        <strong>Scenografia</strong><br/>Małgorzata Domańska</td>
-    </tr>
-  </table>
-  <br/>
-
-  <ul class="photos">
-    {% for i in (1..3) %}
-      <a
-        id="single_image"
-        rel="10"
-        href="lay/img/rybka/large/{{ i }}.jpg"><img src="lay/img/rybka/small/{{ i }}.jpg" /></a>
-    {% endfor %}
-    <br/>
-    {% for i in (4..7) %}
-      <a
-        id="single_image"
-        rel="10"
-        href="lay/img/rybka/large/{{ i }}.jpg"><img src="lay/img/rybka/small/{{ i }}.jpg" /></a>
-    {% endfor %}
-  </ul>
-</div>
+Złota Rybka wg Aleksandra Puszkina to spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych życzeń. Będziemy łowić rybki, wypowiadać życzenia, poznamy mądrą Złotą Rybkę, a wokół nas będzie szumiące morze i śpiewające ptaki.

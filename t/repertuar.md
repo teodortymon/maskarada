@@ -152,62 +152,75 @@ layout: t
   {% assign miesiace_rest = all_miesiace | slice: current_month_num, 12 %}
   {% assign miesiace_start = all_miesiace | slice: 0, current_month_num %}
   {% assign miesiace = miesiace_rest | concat: miesiace_start %}
+  {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
+  {% assign shown_months = 0 %}
   {% for miesiac in miesiace %}
-
-    {% if site.data.spektakle\[miesiac\].repertuar.size > 0 %}
-
-      <div class="card my-2 ">
-
-        <div class="card-body">
-          <h4>{{ site.data.spektakle\[miesiac\].title }}</h4>
-          <div class="table-responsive">
-
-            <table class="table table-borderles table-sm" style="margin: 0 auto;">
-              {% assign spektakle = site.data.spektakle\[miesiac\].repertuar | sort: 'data' %}
-              {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
-              {% for spektakl in spektakle %}
-                {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
-                {% comment %} Only show future events {% endcomment %}
-                {% if event_timestamp >= now_timestamp %}
-                  {% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
-                  {% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
-                    {% assign event_type = "weekend" %}
-                  {% else %}
-                    {% assign event_type = "weekday" %}
-                  {% endif %}
-                  <tr data-event-type="{{ event_type }}">
-                  <td style="white-space: nowrap;">{{ spektakl.data | date: "%-d.%m" }} {{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }} {{ spektakl.data | date: "%R" }}</td>
-                  <td>{{ spektakl.tytul }}</td>
-                  <td style="text-align: center;">
-                    {% if spektakl.manual_price == true %}
-                      {{ spektakl.link }}
+    {% assign month_data = site.data.spektakle[miesiac] %}
+    {% if month_data.repertuar.size > 0 %}
+      {% assign spektakle = month_data.repertuar | sort: 'data' %}
+      {% comment %} Build the future-event rows first so we can skip months with none {% endcomment %}
+      {% capture month_rows %}
+        {% for spektakl in spektakle %}
+          {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
+          {% if event_timestamp >= now_timestamp %}
+            {% assign dzien_tygodnia = spektakl.data | date: "%w" %}
+            {% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
+              {% assign event_type = "weekend" %}
+            {% else %}
+              {% assign event_type = "weekday" %}
+            {% endif %}
+            <tr data-event-type="{{ event_type }}">
+              <td style="white-space: nowrap;">{{ spektakl.data | date: "%-d.%m" }} {{ site.data.dni_tygodnia.dni[dzien_tygodnia] }} {{ spektakl.data | date: "%R" }}</td>
+              <td>{{ spektakl.tytul }}</td>
+              <td style="text-align: center;">
+                {% if spektakl.manual_price == true %}
+                  {{ spektakl.link }}
+                {% else %}
+                  {% if event_type == "weekend" %}
+                    {% if spektakl.link == "-" %}
+                      <i>Bilety online wkrótce</i>
                     {% else %}
-                      {% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
-                        {% if spektakl.link == "-" %}
-                          <i>Bilety online wkrótce</i>
-                        {% else %}
-                          <button
-                            type="button"
-                            href="{{ spektakl.link }}"
-                            onclick="fbq('track', 'OpenBuy');"
-                            class="btn btn-sm btn-outline-primary">Kup bilet 🎫</button>
-                        {% endif %}
-                      {% else %}
-                        Zapraszamy grupy zorganizowane do rezerwacji tel.
-                        <a href="tel:501-027-278" onclick="fbq('track', 'CallFromEventList');">501 027 278</a>
-                      {% endif %}
+                      <button
+                        type="button"
+                        href="{{ spektakl.link }}"
+                        onclick="fbq('track', 'OpenBuy');"
+                        class="btn btn-sm btn-outline-primary">Kup bilet 🎫</button>
                     {% endif %}
-                  </td>
-                </tr>
+                  {% else %}
+                    Zapraszamy grupy zorganizowane do rezerwacji tel.
+                    <a href="tel:501-027-278" onclick="fbq('track', 'CallFromEventList');">501 027 278</a>
+                  {% endif %}
                 {% endif %}
-              {% endfor %}
-            </table>
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      {% endcapture %}
+
+      {% comment %} Only render the month card when it actually has upcoming events {% endcomment %}
+      {% if month_rows contains "<tr" %}
+        {% assign shown_months = shown_months | plus: 1 %}
+        <div class="card my-2 ">
+          <div class="card-body">
+            <h4>{{ month_data.title }}</h4>
+            <div class="table-responsive">
+              <table class="table table-borderles table-sm" style="margin: 0 auto;">
+                {{ month_rows }}
+              </table>
+            </div>
           </div>
         </div>
-      </div>
+      {% endif %}
     {% endif %}
-
   {% endfor %}
+
+  {% if shown_months == 0 %}
+    <p class="text-center my-4"><i>Aktualnie nie mamy zaplanowanych spektakli. Zajrzyj wkrótce!</i></p>
+  {% endif %}
+
+  <p id="filter-empty" class="text-center my-4" style="display: none;">
+    <i>Brak spektakli w wybranej kategorii. Wybierz <b>Wszystkie 💫</b>, aby zobaczyć pełny repertuar.</i>
+  </p>
 
   <br/><br/>
 
@@ -236,6 +249,26 @@ layout: t
           row.style.display = (eventType === 'weekday') ? '' : 'none';
         }
       });
+
+      // Hide month cards that have no visible rows after filtering
+      document.querySelectorAll('.card').forEach(function(card) {
+        const rows = card.querySelectorAll('tr[data-event-type]');
+        if (rows.length) {
+          const anyVisible = Array.prototype.some.call(rows, function(r) {
+            return r.style.display !== 'none';
+          });
+          card.style.display = anyVisible ? '' : 'none';
+        }
+      });
+
+      // Graceful fallback: show a message when the filter hides everything
+      const anyRowVisible = Array.prototype.some.call(allRows, function(r) {
+        return r.style.display !== 'none';
+      });
+      const emptyMsg = document.getElementById('filter-empty');
+      if (emptyMsg) {
+        emptyMsg.style.display = (allRows.length > 0 && !anyRowVisible) ? '' : 'none';
+      }
     }
 
     // Add event listeners to radio buttons
