@@ -1,0 +1,23 @@
+# Mise task runner — the source of truth for build/run/serve commands.
+# See CLAUDE.md: every serving/build command goes through `mise run <task>`,
+# and any new working command must be added back here as a task.
+
+[tasks.dev]
+description = "Serve the Jekyll site with livereload on 0.0.0.0 (no CMS)"
+run = "bundle exec jekyll serve --livereload --host 0.0.0.0"
+
+[tasks.dev-tina]
+description = "Serve Jekyll behind the TinaCMS dev server (content editing UI)"
+run = "npx tinacms dev -c 'bundle exec jekyll serve --livereload --host localhost'"
+
+[tasks.build]
+description = "Build the static site into _site/"
+run = "bundle exec jekyll build"
+
+[tasks.update-links]
+description = "Update ticket links in spektakle YAML from new_events_raw.html export"
+run = "python3 scripts/update_spektakle_links.py"
+
+[tasks.resize-logo]
+description = "Resize a logo image to web size (usage: mise run resize-logo -- path/to/logo.png)"
+run = "mogrify -resize 600x600"

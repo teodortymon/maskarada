@@ -49,3 +49,10 @@ css/styles.css.map
 
 /worktree*/
 
+# Spektakle HTML exports (temporary processing files)
+_data/spektakle/*_raw.html
+
+# Claude Code — keep shared skills tracked, ignore transient state (worktrees, local settings)
+.claude/*
+!.claude/skills
+.claude/settings.local.json
