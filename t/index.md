@@ -109,7 +109,7 @@ layout: t
           name="btnradio"
           id="btnradio3"
           autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio3">Dla szkol i przedszkoli 🏫</label>
+        <label class="btn btn-outline-primary" for="btnradio3">Dla firm, szkół i przedszkoli 🏫</label>
       </div>
     </div>
   </nav>
@@ -260,7 +260,9 @@ layout: t
                       {% assign event_type = "weekday" %}
                     {% endif %}
                     <li class="list-group-item" data-event-type="{{ event_type }}">
-                      {{ event.data | date: "%-d %B %R" }}
+                      {% assign month_num = event.data | date: "%-m" | minus: 1 %}
+                      {% assign polish_months = "stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia" | split: ',' %}
+                      {{ event.data | date: "%-d" }} {{ polish_months[month_num] }} {{ event.data | date: "%R" }}
                       {% if event_type == "weekend" %}
                         {% if event.link and event.link != "-" %}
                           <button

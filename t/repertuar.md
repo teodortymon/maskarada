@@ -138,7 +138,7 @@ layout: t
           name="btnradio"
           id="btnradio3"
           autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio3">Dla szkol i przedszkoli 🏫</label>
+        <label class="btn btn-outline-primary" for="btnradio3">Dla firm, szkół i przedszkoli 🏫</label>
       </div>
     </div>
   </nav>

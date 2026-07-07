@@ -1,4 +1,31 @@
 title: Lipiec
 date: "2019-04-06T22:30:55.000+00:00"
-repertuar: []
+repertuar:
+  - tytul: Brzydkie Kaczątko czyli tupu tup
+    data: 2026-07-08T09:30:00.000Z
+    link: "-"
+  - tytul: Wesołe Koty
+    data: 2026-07-09T10:00:00.000Z
+    link: "-"
+  - tytul: Księżniczka na ziarnku grochu
+    data: 2026-07-10T11:00:00.000Z
+    link: "-"
+  - tytul: Brzydkie Kaczątko czyli tupu tup
+    data: 2026-07-11T10:30:00.000Z
+    link: "https://kicket.com/embedded/rezerwacja/500011"
+  - tytul: Księżniczka na ziarnku grochu
+    data: 2026-07-11T12:30:00.000Z
+    link: "https://kicket.com/embedded/rezerwacja/500012"
+  - tytul: Wesołe Koty
+    data: 2026-07-12T12:30:00.000Z
+    link: "https://kicket.com/embedded/rezerwacja/500013"
+  - tytul: Wesołe Koty
+    data: 2026-07-19T12:30:00.000Z
+    link: "https://kicket.com/embedded/rezerwacja/500019"
+  - tytul: Księżniczka na ziarnku grochu
+    data: 2026-07-25T12:30:00.000Z
+    link: "https://kicket.com/embedded/rezerwacja/500025"
+  - tytul: Brzydkie Kaczątko czyli tupu tup
+    data: 2026-07-26T12:30:00.000Z
+    link: "https://kicket.com/embedded/rezerwacja/500026"
 _template: repertuar_blocks
