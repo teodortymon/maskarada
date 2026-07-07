@@ -21,3 +21,6 @@ run = "python3 scripts/update_spektakle_links.py"
 [tasks.resize-logo]
 description = "Resize a logo image to web size (usage: mise run resize-logo -- path/to/logo.png)"
 run = "mogrify -resize 600x600"
+
+[tools]
+ruby = "3.3.11"
