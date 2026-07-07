@@ -37,8 +37,8 @@ layout: t
     .btn-outline-primary:active,
     .btn-outline-primary.active {
       color: #fff !important;
-      background-color: #0d6efd !important;
-      border-color: #0d6efd !important;
+      background-color: #e0736f !important;
+      border-color: #e0736f !important;
     }
 
     /* Hide the actual radio input */
@@ -109,7 +109,7 @@ layout: t
           name="btnradio"
           id="btnradio3"
           autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio3">Dla firm, szkół i przedszkoli 🏫</label>
+        <label class="btn btn-outline-primary" for="btnradio3">Dla szkół, przedszkoli i firm 🏫</label>
       </div>
     </div>
   </nav>

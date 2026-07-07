@@ -81,8 +81,8 @@ layout: t
     .btn-outline-primary:active,
     .btn-outline-primary.active {
       color: #fff !important;
-      background-color: #0d6efd !important;
-      border-color: #0d6efd !important;
+      background-color: #e0736f !important;
+      border-color: #e0736f !important;
     }
 
     /* Hide the actual radio input */
@@ -162,15 +162,17 @@ layout: t
           name="btnradio"
           id="btnradio3"
           autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio3">Dla firm, szkół i przedszkoli 🏫</label>
+        <label class="btn btn-outline-primary" for="btnradio3">Dla szkół, przedszkoli i firm 🏫</label>
       </div>
     </div>
   </nav>
   <hr>
-  <p>
-    Gramy dla was w Pałacu Staszica przy
-    <i>ul. Nowy Świat 72</i>
-  </p>
+  <div class="card my-2">
+    <div class="card-body">
+      Gramy dla was w Pałacu Staszica przy
+      <i>ul. Nowy Świat 72</i>
+    </div>
+  </div>
   {% assign current_month_num = 'now' | date: "%-m" | minus: 1 %}
   {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
   {% assign miesiace_rest = all_miesiace | slice: current_month_num, 12 %}
