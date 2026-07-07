@@ -100,10 +100,17 @@ a.nav-link.active {
   color: #e0736f;
 }
 
-/* In-page navbar band sits directly on the sky */
+/* In-page navbar band sits directly on the sky. The padding gives each section
+   heading breathing room — extra above (to separate it from the previous
+   section's cards) and a bit below (before its own content starts). */
 .navbar {
-  padding: 1rem 0;
+  padding: 1.5rem 0 1rem;
   background: transparent;
+}
+
+/* Heading's own bottom margin is redundant with the navbar padding */
+.navbar h2 {
+  margin-bottom: 0;
 }
 
 .navbar .container {
@@ -327,7 +334,7 @@ hr {
   height: 0;
   border-top: 2px dashed rgba(74, 125, 165, 0.3);
   background: none;
-  margin: 2rem 0;
+  margin: 0.4rem 0;
 }
 
 /* Spacing system */

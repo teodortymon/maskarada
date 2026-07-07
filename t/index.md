@@ -117,7 +117,6 @@ layout: t
 
     </div>
   </nav>
-  <hr>
 
   {% comment %}
   Get THIS WEEK's events only (Monday through Sunday)
@@ -301,7 +300,6 @@ layout: t
         </div>
       </nav>
     </div>
-    <hr>
     <div class="row">
       <div class="col-sm">
         <div class="card my-2">
@@ -334,7 +332,6 @@ layout: t
       </div>
     </nav>
   </div>
-  <hr>
   <div class="card my-2">
     <div class="map-container">
       <iframe

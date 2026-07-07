@@ -166,7 +166,6 @@ layout: t
       </div>
     </div>
   </nav>
-  <hr>
   {% assign current_month_num = 'now' | date: "%-m" | minus: 1 %}
   {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
   {% assign miesiace_rest = all_miesiace | slice: current_month_num, 12 %}
