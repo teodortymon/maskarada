@@ -36,6 +36,12 @@
       rel="stylesheet"
       href={{"lay/style.css" | bust_file_cache }}
       type="text/css" />
+
+      <!-- Lazy-loading YouTube facade (vendored lite-youtube-embed) -->
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="stylesheet" href="js/lite-youtube/lite-yt-embed.css" />
+    <script defer src="js/lite-youtube/lite-yt-embed.js"></script>
   </head>
   <body>
 

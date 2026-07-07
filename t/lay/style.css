@@ -578,3 +578,13 @@ a:hover {
 .border-primary {
   border-color: #e0736f !important;
 }
+
+/* ==================== LITE-YOUTUBE FACADE ==================== */
+/* Bootstrap's own `.ratio > *` rule already absolute-fills the facade to 16:9;
+   we intentionally don't restyle sizing here so the component also falls back to
+   its own built-in 16:9 (::after) if the .ratio utility isn't present. */
+/* Play button slightly below-right of centre (chosen variant), not dead-centre. */
+lite-youtube > .lyt-playbtn {
+  background-position: 68% 68%;
+  background-size: 54px 38px;
+}

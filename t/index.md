@@ -214,10 +214,7 @@ layout: t
 
           {% if play_video.video and play_video.video != "" %}
             <div class="ratio ratio-16x9">
-              <iframe
-                class="embed-responsive-item"
-                src="{{ play_video.video }}?color=white&playsinline=1&rel=0"
-                allowfullscreen></iframe>
+              {% include lite_video.html video=play_video.video title=tytul params="color=white&playsinline=1&rel=0" %}
             </div>
           {% else %}
             <div class="ratio ratio-16x9">

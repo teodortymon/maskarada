@@ -33,7 +33,7 @@
 
         {% if s.video %}
           <div class="ratio ratio-16x9 my-4 spektakl-video">
-            <iframe src="{{ s.video }}" title="{{ s.title }}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {% include lite_video.html video=s.video title=s.title %}
           </div>
         {% endif %}
 

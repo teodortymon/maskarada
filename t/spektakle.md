@@ -60,10 +60,7 @@ layout: t
         <div class="card my-2">
           {% if s.video %}
             <div class="ratio ratio-16x9">
-              <iframe
-                class="embed-responsive-item"
-                src="{{ s.video }}?color=white&playsinline=1&rel=0"
-                allowfullscreen></iframe>
+              {% include lite_video.html video=s.video title=s.title params="color=white&playsinline=1&rel=0" %}
             </div>
           {% else %}
             <div class="ratio ratio-16x9">

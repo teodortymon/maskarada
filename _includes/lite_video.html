@@ -1,0 +1,14 @@
+{% comment %}
+  Lazy-loading YouTube facade via lite-youtube-embed (vendored in t/js/lite-youtube).
+  Loads only a thumbnail until the user clicks, then swaps in the real player —
+  keeps pages fast when many videos are on screen (card grid, hidden modals).
+
+  Params:
+    video  - full YouTube embed URL from _s2 (https://www.youtube.com/embed/VIDEOID) (required)
+    title  - accessible play title for the play label (optional)
+    params - extra iframe query params, e.g. "color=white&playsinline=1&rel=0" (optional)
+
+  The video id is the last path segment after /embed/, with any ?query stripped.
+{% endcomment %}
+{% assign vid = include.video | split: '/embed/' | last | split: '?' | first %}
+<lite-youtube videoid="{{ vid }}" playlabel="Odtwórz: {{ include.title }}"{% if include.params %} params="{{ include.params }}"{% endif %}></lite-youtube>
