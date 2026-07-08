@@ -1,3 +1,7 @@
+# Claude Code working dirs (worktrees hold full repo copies — thousands of
+# stray .md files that would otherwise be scanned/rendered as templates)
+.claude
+
 # Docs / project files (not site content)
 PLAN.md
 CLAUDE.md
