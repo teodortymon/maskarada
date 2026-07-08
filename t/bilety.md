@@ -27,9 +27,11 @@ layout: t
       - W kasie Teatru na godzinę przed spektaklem (płatność tylko gotówką)
       <br/>
       - Na portalach
-      <a href="https://www.ebilet.pl/miejsce/teatr-maskarada">ebilet</a>
-      /
-      <a href="https://biletomat.pl/warszawa/oferty/teatr-maskarada,333">biletomat</a>
+<a href="https://biletomat.pl/warszawa/oferty/teatr-maskarada,333">biletomat</a>
+/
+<a href="https://www.ebilet.pl/miejsce/teatr-maskarada">ebilet</a>
+/ 
+<a href="https://biletyna.pl/tag/teatr-maskarada">biletyna</a>
       <br/>
       <i>dostępne na godzinę przed spektaklem, później bilety dostępne w kasie i telefonicznie</i>
     </div>

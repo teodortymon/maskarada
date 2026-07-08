@@ -340,17 +340,15 @@ layout: t
         allowfullscreen></iframe>
     </div>
     <div class="card-body text-center">
-      <p>Gramy dla was przy ul. Nowy Świat 63  
-        (Nowy Świat Muzyki)</p>
-      <p>Kasa czynna godzinę przed spektaklem.  
-        teatr.maskarada@gmail.com</p>
+      <p>Gramy dla was przy ul. Nowy Świat 72<br /> Wejście od strony placu przy Pomniku Mikołaja Kopernika </p>
+      <p>Kasa czynna godzinę przed spektaklem</p>
       <p>Rezerwacji biletów można dokonać telefonicznie pod numerem:
         <a href="tel:501-027-278">
           501 027 278</a>
         lub
-        <a href="https://www.ebilet.pl/szukaj.php?t=o&oid=1233">ebilet</a>
-        /
-        <a href="https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333">ewejściówki</a>
+<a href="https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333">biletomat</a> /        
+<a href="https://www.ebilet.pl/szukaj.php?t=o&oid=1233">ebilet</a> /
+<a href="https://biletyna.pl/tag/teatr-maskarada">biletyna</a>
       </p>
     </div>
   </div>
