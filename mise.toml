@@ -2,17 +2,34 @@
 # See CLAUDE.md: every serving/build command goes through `mise run <task>`,
 # and any new working command must be added back here as a task.
 
-[tasks.dev]
-description = "Serve the Jekyll site with livereload on 0.0.0.0 (no CMS)"
-run = "bundle exec jekyll serve --livereload --host 0.0.0.0"
+[tools]
+# Node 20 (>= 20.19) satisfies Eleventy's deps and TinaCMS's better-sqlite3.
+node = "20"
 
-[tasks.dev-tina]
-description = "Serve Jekyll behind the TinaCMS dev server (content editing UI)"
-run = "npx tinacms dev -c 'bundle exec jekyll serve --livereload --host localhost'"
+[env]
+# Loads gitignored env (e.g. CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID for
+# wrangler) if a .env is present; wrangler otherwise falls back to OAuth login.
+_.file = ".env"
+
+[tasks.css]
+description = "Compile Bootstrap SCSS (scss/) into css/styles.css"
+run = "npm run css"
 
 [tasks.build]
-description = "Build the static site into _site/"
-run = "bundle exec jekyll build"
+description = "Build the static site into _site/ (SCSS + Eleventy)"
+run = "npm run build"
+
+[tasks.dev]
+description = "Serve with live reload: Eleventy dev server + SCSS watch (no CMS)"
+run = "npm run dev"
+
+[tasks.dev-tina]
+description = "Serve Eleventy behind the TinaCMS dev server (content editing UI)"
+run = "npx tinacms dev -c 'npx @11ty/eleventy --serve'"
+
+[tasks.cf-pages-deploy]
+description = "Deploy the built _site/ to the Cloudflare Pages beta (build first)"
+run = "npx --yes wrangler pages deploy _site --project-name=maskarada-new-design"
 
 [tasks.update-links]
 description = "Update ticket links in spektakle YAML from new_events_raw.html export"
@@ -21,6 +38,3 @@ run = "python3 scripts/update_spektakle_links.py"
 [tasks.resize-logo]
 description = "Resize a logo image to web size (usage: mise run resize-logo -- path/to/logo.png)"
 run = "mogrify -resize 600x600"
-
-[tools]
-ruby = "3.3.11"

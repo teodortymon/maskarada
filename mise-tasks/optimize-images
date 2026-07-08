@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+#MISE description="Recompress heavy image galleries IN PLACE: w/kostiumy {thumb,large} JPEGs -> quality 70; t/lay/img/*_big posters -> max 600px, JPEG quality 75. Rewrites ~1000 binaries under stable filenames — review `git status` and commit afterwards."
+#
+# Uses macOS `sips` only (no extra deps). Filenames never change, so all
+# existing references keep working. Prints total size before/after.
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+# --- collect targets -------------------------------------------------------
+gallery_files=()
+while IFS= read -r -d '' f; do gallery_files+=("$f"); done < <(
+  find w/kostiumy/thumb w/kostiumy/large -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -print0 2>/dev/null
+)
+
+poster_files=()
+while IFS= read -r -d '' f; do poster_files+=("$f"); done < <(
+  find t/lay/img -maxdepth 1 -type f \( -name '*_big.jpg' -o -name '*_big.png' \) -print0 2>/dev/null
+)
+
+total_bytes() {
+  if [ "$#" -eq 0 ]; then echo 0; return; fi
+  stat -f%z "$@" | awk '{s+=$1} END{printf "%d", s}'
+}
+
+human() { awk -v b="$1" 'BEGIN{printf "%.1f MB", b/1048576}'; }
+
+before=$(total_bytes "${gallery_files[@]+"${gallery_files[@]}"}" "${poster_files[@]+"${poster_files[@]}"}")
+echo "Targets: ${#gallery_files[@]} kostiumy gallery JPEGs, ${#poster_files[@]} *_big posters"
+echo "Total size before: $(human "$before")"
+
+# --- kostiumy galleries: re-encode JPEG at quality 70 ----------------------
+for f in ${gallery_files[@]+"${gallery_files[@]}"}; do
+  sips -s format jpeg -s formatOptions 70 "$f" --out "$f" >/dev/null
+done
+
+# --- posters: cap at 600px on the long edge; JPEGs also get quality 75 -----
+for f in ${poster_files[@]+"${poster_files[@]}"}; do
+  case "$f" in
+    *.jpg) sips -Z 600 -s format jpeg -s formatOptions 75 "$f" --out "$f" >/dev/null ;;
+    *.png) sips -Z 600 "$f" --out "$f" >/dev/null ;;
+  esac
+done
+
+after=$(total_bytes "${gallery_files[@]+"${gallery_files[@]}"}" "${poster_files[@]+"${poster_files[@]}"}")
+echo "Total size after:  $(human "$after")"
+echo "Saved:             $(human "$((before - after))")"
