@@ -54,6 +54,10 @@ run = "npx tinacms dev -c 'npx @11ty/eleventy --serve'"
 description = "Deploy the built _site/ to the Cloudflare Pages beta (build first)"
 run = "npx --yes wrangler pages deploy _site --project-name=maskarada-new-design"
 
+[tasks.preview]
+description = "Serve the built _site/ locally with Cloudflare Pages emulation (applies _headers/CSP — unlike `dev`; build first)"
+run = "npx --yes wrangler pages dev _site --port 8788 --compatibility-date=2026-05-03"
+
 [tasks.update-links]
 description = "Update ticket links in spektakle YAML from new_events_raw.html export"
 run = "python3 scripts/update_spektakle_links.py"

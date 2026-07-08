@@ -1,17 +1,22 @@
 # Cloudflare Pages headers (passthrough-copied into _site/ by eleventy.config.js).
 #
 # CSP allowlist is built from the origins the templates actually load:
-#   script:  kicket.com (header_t ticket widget), www.youtube.com (lite-yt-embed
-#            loads iframe_api when js-api is enabled); inline scripts exist
-#            throughout, hence 'unsafe-inline'.
+#   script:  cdn.jsdelivr.net (Bootstrap bundle in header_t — powers the play
+#            "Szczegóły spektaklu" modals — and Masonry on t/spektakle),
+#            kicket.com (header_t ticket widget), www.youtube.com (lite-yt-embed
+#            loads iframe_api when js-api is enabled), connect.facebook.net
+#            (Facebook JS SDK for the footer_t page-feed widget); inline scripts
+#            exist throughout, hence 'unsafe-inline'.
 #   style:   fonts.googleapis.com (Montserrat, header_t); inline styles exist.
 #   font:    fonts.gstatic.com (served by the Google Fonts CSS).
 #   img:     i.ytimg.com (lite-youtube poster thumbnails),
 #            res.cloudinary.com (w/dziewczynki gallery), data: URIs.
 #   frame:   www.youtube-nocookie.com (lite-yt-embed player iframe),
 #            www.youtube.com (iframe_api players), www.google.com (maps embeds
-#            on t/index, t/kontakt, w/kontakt), kicket.com (ticket widget).
-#   connect: kicket.com (widget XHR).
+#            on t/index, t/kontakt, w/kontakt), kicket.com (ticket widget),
+#            www.facebook.com (Facebook page-plugin iframe in footer_t).
+#   connect: kicket.com (widget XHR), connect.facebook.net + www.facebook.com
+#            (Facebook SDK network calls).
 #   form:    maps.google.com ("wyznacz trasę" directions form on t/kontakt).
 
 /*
@@ -20,7 +25,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://kicket.com https://www.youtube.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://res.cloudinary.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com https://www.google.com https://kicket.com; connect-src 'self' https://kicket.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self' https://maps.google.com http://maps.google.com
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://kicket.com https://www.youtube.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://res.cloudinary.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com https://www.google.com https://kicket.com https://www.facebook.com; connect-src 'self' https://kicket.com https://connect.facebook.net https://www.facebook.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self' https://maps.google.com http://maps.google.com
 
 # Caching.
 # Only t-section's lay/style.css reference goes through bust_file_cache
