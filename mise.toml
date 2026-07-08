@@ -11,28 +11,43 @@ node = "20"
 # wrangler) if a .env is present; wrangler otherwise falls back to OAuth login.
 _.file = ".env"
 
+[tasks.deps]
+description = "Install npm dependencies (auto-runs before dev/build; skipped when node_modules is already up to date)"
+run = "npm install"
+# Change detection: mise skips this task unless package.json / package-lock.json
+# are newer than npm's install marker. Keeps node_modules in sync with
+# package.json so a newly-added dep (e.g. onchange) can't go missing.
+sources = ["package.json", "package-lock.json"]
+outputs = ["node_modules/.package-lock.json"]
+
 [tasks.css]
 description = "Compile Bootstrap SCSS (scss/) into css/styles.css"
+depends = ["deps"]
 run = "npm run css"
 
 [tasks.build]
 description = "Build the static site into _site/ (SCSS + Eleventy)"
+depends = ["deps"]
 run = "npm run build"
 
 [tasks.dev]
 description = "Serve with live reload: Eleventy dev server + SCSS watch + HTML/Liquid format-on-save (no CMS)"
+depends = ["deps"]
 run = "npm run dev"
 
 [tasks.format]
 description = "Reformat HTML/Liquid templates (_layouts, _includes, index.html) with Prettier"
+depends = ["deps"]
 run = "npm run format"
 
 [tasks.format-check]
 description = "Check HTML/Liquid template formatting without writing (CI-friendly)"
+depends = ["deps"]
 run = "npm run format:check"
 
 [tasks.dev-tina]
 description = "Serve Eleventy behind the TinaCMS dev server (content editing UI)"
+depends = ["deps"]
 run = "npx tinacms dev -c 'npx @11ty/eleventy --serve'"
 
 [tasks.cf-pages-deploy]
