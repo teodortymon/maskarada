@@ -39,7 +39,6 @@ tmp/*
 
 # Node
 node_modules/
-package-lock.json
 
 # Env / secrets (TinaCMS + Cloudflare tokens) and wrangler state
 .env
