@@ -1,0 +1,10 @@
+# Docs / project files (not site content)
+PLAN.md
+CLAUDE.md
+README.md
+scripts
+script
+
+# Assets copied verbatim via passthrough (don't process as templates)
+admin
+google958f145c78b1087b.html

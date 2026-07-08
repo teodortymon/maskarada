@@ -9,7 +9,7 @@
     include.id    — gallery group id (the play's id2)
     include.title — alt text
 {% endcomment %}
-{% assign g = include.gallery %}
+{% assign g = gallery %}
 {% if g and g.folder %}
   {% assign ext = g.ext | default: "jpg" %}
   {% if g.images %}
@@ -19,8 +19,8 @@
   {% endif %}
   <div class="gallery-grid">
     {% for i in items %}
-      <a class="gallery-item" data-gallery="{{ include.id }}" href="{{ g.folder }}/large/{{ i }}.{{ ext }}">
-        <img loading="lazy" src="{{ g.folder }}/small/{{ i }}.{{ ext }}" alt="{{ include.title }}">
+      <a class="gallery-item" data-gallery="{{ id }}" href="{{ g.folder }}/large/{{ i }}.{{ ext }}">
+        <img loading="lazy" src="{{ g.folder }}/small/{{ i }}.{{ ext }}" alt="{{ title }}">
       </a>
     {% endfor %}
   </div>

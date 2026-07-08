@@ -1,25 +1,29 @@
 # Maskarada — project instructions
 
-Jekyll site (with TinaCMS for content editing) for Teatr Maskarada. The active
-redesign lives on the `v2` branch.
+Eleventy (11ty) static site (with TinaCMS for content editing) for Teatr
+Maskarada. The active redesign lives on the `v2` branch. Styling is Bootstrap 5
+compiled from `scss/` into `css/styles.css` via the npm `sass` build; Eleventy
+renders the Liquid templates (`_layouts/`, `_includes/`, `_s2/` plays,
+`_data/`). The v2 beta deploys to Cloudflare Pages. (Migrated off Jekyll — see
+`eleventy.config.js` for the collection, YAML/CSV data, and custom-filter setup.)
 
 ## Serving & commands go through mise
 
 `mise.toml` is the single source of truth for every build / run / serve command.
 
-- **Always serve and build via mise.** Never run raw `bundle exec jekyll ...`,
-  `npx tinacms ...`, or `make <target>` directly — use the mise task instead:
-  - `mise run dev` — Jekyll with livereload (no CMS)
-  - `mise run dev-tina` — Jekyll behind the TinaCMS editing UI
-  - `mise run build` — build the static site into `_site/`
+- **Always serve and build via mise.** Never run raw `npx @11ty/eleventy ...`,
+  `npm run ...`, `npx tinacms ...`, or `make <target>` directly — use the mise
+  task instead:
+  - `mise run dev` — Eleventy dev server + SCSS watch, live reload (no CMS)
+  - `mise run dev-tina` — Eleventy behind the TinaCMS editing UI
+  - `mise run build` — compile SCSS + build the static site into `_site/`
+  - `mise run cf-pages-deploy` — deploy the built `_site/` to the Cloudflare beta
   - Run `mise tasks` to see the full, current list.
 - **New commands feed back into mise.** Whenever you discover or start relying on
   a working command that isn't a task yet, ADD it to `mise.toml` (or a file task
   under `mise-tasks/` if it has multiple lines / logic) with a `description`, then
   run it via `mise run <task>`. The task list is our persistent memory — never let
-  a useful command live only in shell history or in the legacy `Makefile`.
-- The old `Makefile` is legacy. Port any target you still need into a mise task
-  rather than invoking `make`.
+  a useful command live only in shell history.
 
 ## Feature work: branch + worktree per change
 

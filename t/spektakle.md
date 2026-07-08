@@ -5,24 +5,45 @@ layout: t
   src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
   integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
   crossorigin="anonymous"
-  async></script>
+  defer></script>
+<script>
+  // Masonry's declarative init can run before the stylesheet applies, measuring
+  // full-width columns and stacking every card at left: 0. Re-measure once
+  // everything (CSS, fonts) is in.
+  (function () {
+    function relayout() {
+      var grid = document.querySelector("[data-masonry]");
+      if (!grid || !window.Masonry) return;
+      var m = window.Masonry.data(grid);
+      if (m) m.layout();
+      else new window.Masonry(grid, { percentPosition: true, itemSelector: ".col-sm-4" });
+    }
+    window.addEventListener("load", relayout);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(relayout);
+  })();
+</script>
 
 
 <div class="container">
 
-  <div class="row" data-masonry='{"percentPosition": true }'>
+  {% comment %}
+    itemSelector matters: markdown rendering injects empty full-width <p>
+    elements between the columns, and without it Masonry measures the first
+    <p> as the column width — collapsing the grid to a single column.
+  {% endcomment %}
+  <div class="row" data-masonry='{"percentPosition": true, "itemSelector": ".col-sm-4" }'>
     {% comment %} Find earliest event date for each play to sort them {% endcomment %}
     {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
     {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
     {% assign play_dates = "" | split: "" %}
 
     {% comment %} Build array of "timestamp|title" for sorting {% endcomment %}
-    {% for s in site.s2 %}
+    {% for s in collections.s2 %}
       {% assign earliest_timestamp = 9999999999 %}
 
       {% for miesiac in all_miesiace %}
-        {% if site.data.spektakle[miesiac].repertuar %}
-          {% for event in site.data.spektakle[miesiac].repertuar %}
+        {% if spektakle[miesiac].repertuar %}
+          {% for event in spektakle[miesiac].repertuar %}
             {% assign event_timestamp = event.data | date: "%s" | plus: 0 %}
             {% if event.tytul == s.title and event_timestamp >= now_timestamp %}
               {% if event_timestamp < earliest_timestamp %}
@@ -48,7 +69,7 @@ layout: t
 
       {% comment %} Find the play object with this title {% endcomment %}
       {% assign s = nil %}
-      {% for play in site.s2 %}
+      {% for play in collections.s2 %}
         {% if play.title == play_title %}
           {% assign s = play %}
           {% break %}
@@ -60,7 +81,7 @@ layout: t
         <div class="card my-2">
           {% if s.video %}
             <div class="ratio ratio-16x9">
-              {% include lite_video.html video=s.video title=s.title params="color=white&playsinline=1&rel=0" %}
+              {% render "lite_video.html", video: s.video, title: s.title, params: "color=white&playsinline=1&rel=0" %}
             </div>
           {% else %}
             <div class="ratio ratio-16x9">
@@ -100,8 +121,8 @@ layout: t
               {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
 
               {% for miesiac in all_miesiace %}
-                {% if site.data.spektakle[miesiac].repertuar %}
-                  {% for event in site.data.spektakle[miesiac].repertuar %}
+                {% if spektakle[miesiac].repertuar %}
+                  {% for event in spektakle[miesiac].repertuar %}
                     {% assign event_timestamp = event.data | date: "%s" | plus: 0 %}
                     {% if event.tytul == s.title and event_timestamp >= now_timestamp %}
                       {% assign play_events = play_events | push: event %}
@@ -131,16 +152,17 @@ layout: t
                       {{ event.data | date: "%-d" }} {{ polish_month }} {{ event.data | date: "%R" }}
                       {% if event_type == "weekend" %}
                         {% if event.link and event.link != "-" %}
-                          <button
-                            type="button"
-                            onclick="window.open('{{ event.link }}', '_blank'); fbq('track', 'OpenBuy');"
-                            class="btn btn-sm btn-outline-primary">Kup bilet 🎫</button>
+                          <a
+                            href="{{ event.link }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-sm btn-outline-primary">Kup bilet 🎫</a>
                         {% else %}
                           <i>Bilety online wkrótce</i>
                         {% endif %}
                       {% else %}
                         Zapraszamy grupy zorganizowane do rezerwacji tel.
-                        <a href="tel:501-027-278" onclick="fbq('track', 'CallFromEventList');">501 027 278</a>
+                        <a href="tel:501-027-278">501 027 278</a>
                       {% endif %}
                     </li>
                   {% endfor %}
@@ -156,6 +178,6 @@ layout: t
 </div>
 
 
-{% for s in site.s2 %}
-  {% include spektakl_modal.html s=s %}
+{% for s in collections.s2 %}
+  {% render "spektakl_modal.html", s: s %}
 {% endfor %}

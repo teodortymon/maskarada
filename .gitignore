@@ -41,6 +41,11 @@ tmp/*
 node_modules/
 package-lock.json
 
+# Env / secrets (TinaCMS + Cloudflare tokens) and wrangler state
+.env
+.env.local
+.wrangler/
+
 # Generated CSS (compiled from scss/)
 css/styles.css
 css/styles.css.map

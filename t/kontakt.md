@@ -18,7 +18,7 @@ layout: t
 
       <br/><br/>
       Kasa czynna godzinę przed spektaklem. <br/>
-      <a href="tel:501-027-278" onClick="fbq('track', 'CallFromContact');">
+      <a href="tel:501-027-278">
         501 027 278</a>
       <br/>
       teatr.maskarada@gmail.com
@@ -31,6 +31,7 @@ layout: t
         frameborder="0"
         style="border:0"
         src="https://www.google.com/maps/embed/v1/place?q=Teatr+Maskarada+dla+dzieci&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU"
+        loading="lazy"
         allowfullscreen></iframe>
     </div>
   </div>

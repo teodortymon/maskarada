@@ -7,27 +7,29 @@ layout: t
   <div class="card my-2">
     <div class="card-header">Cena biletu</div>
     <div class="card-body">
-      - Klienci indywidualni - 39 zł
+      - Cena biletu - 65 zł
       <br/>
-      - Klienci biznesowi (szkoły i przedszkola/cena biletu grupowego) - 29 zł
+      <i>Zarówno dziecko jak i dorosły musi posiadać bilet</i>
+      <br/>
+      - Szkoły i przedszkola / cena biletu grupowego - 55 zł
     </div>
   </div>
 
   <div class="card my-2">
     <div class="card-header">Rezerwacji biletów można dokonać:</div>
     <div class="card-body">
-      - Bezpośrednio ze strony Teatru w zakładace <a href="http://www.maskarada.waw.pl/t/repertuar.html">Repertuar</a>
+      - Bezpośrednio ze strony Teatru w zakładce <a href="http://www.maskarada.waw.pl/t/repertuar.html">Repertuar</a>
       <br/>
       - Telefonicznie pod numerem
-      <a href="tel:501-027-278" onClick="fbq('track', 'CallFromTickets');">
+      <a href="tel:501-027-278">
         501 027 278</a>
       <br/>
       - W kasie Teatru na godzinę przed spektaklem (płatność tylko gotówką)
       <br/>
       - Na portalach
-      <a href="https://www.ebilet.pl/szukaj.php?t=o&oid=1233">ebilet</a>
+      <a href="https://www.ebilet.pl/miejsce/teatr-maskarada">ebilet</a>
       /
-      <a href="https://ewejsciowki.pl/warszawa/oferty/teatr-maskarada,333">ewejściówki</a>
+      <a href="https://biletomat.pl/warszawa/oferty/teatr-maskarada,333">biletomat</a>
       <br/>
       <i>dostępne na godzinę przed spektaklem, później bilety dostępne w kasie i telefonicznie</i>
     </div>
@@ -41,6 +43,8 @@ layout: t
       - Prosimy o kontakt tel. w celu rezerwacji i uzgodnienia terminu.
       <br/>
       - W dniu spektaklu można zrezygnować z 10% zamówionych biletów.
+      <br/>
+      - Jeden opiekun na dziesięć dzieci bezpłatnie.
     </div>
   </div>
 
@@ -56,9 +60,9 @@ layout: t
     <div class="card-body">
       - Miejsca na widowni są nienumerowane.
       <br/>
-      - Widownia ma 120 miejsc.
+      - Widownia ma 90 miejsc.
       <br/>
-      - Bilety można zwrócić lub przełożyć na inny termin najpóźniej 3 dni przed datą przedstawienia.
+      - Bilety zakupione na portalach Biletomat i eBilet można zwrócić lub przełożyć na inny termin tylko na stronach portali.
       <br/>
       - W przypadku odwołania spektaklu z powodu choroby aktora teatr zwraca pieniądze lub oferuje bilety na inny termin.
       <br/>

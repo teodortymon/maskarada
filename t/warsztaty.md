@@ -2,6 +2,21 @@
 layout: t
 ---
 <div class="container">
+
+  <h2>
+    Warsztaty kaligraficzne
+  </h2>
+
+  <div class="card my-2">
+    <div class="card-body">
+      Warsztaty kaligraficzne dla dzieci, młodzieży i dorosłych. Grupy szkolne zapraszamy na kaligraficzne spotkania ze stalówką. Zapoznamy Was z uncjałą, rondą i pismami gotyckimi. Rozbudzimy w Was miłość do pięknego pisma i kaligrafii. Zajęcia dostosowane są do poziomu kursantów. Zapraszamy na warsztaty osoby, które nie miały styczności z kaligrafią, a także osoby bardziej doświadczone.
+      <br/>
+      <br/>Zajęcia w niedziele albo poniedziałki o godzinie 16:00.
+      <br/>Koszt zajęć pojedynczych: 60zł, szkoły 40zł
+      <br/> Zapisy: 501 - 027 - 278.
+    </div>
+  </div>
+
   <h2>
     Warsztaty teatralno-taneczne
   </h2>
@@ -10,10 +25,9 @@ layout: t
     <div class="card-body">
       Zajęcia teatralne prowadzone wg autorskiego programu Teatru Maskarada wprowadzają dzieci do magicznego świata teatru. Uczestnicy będą rozwijali swoją wyobraźnię i umiejętności poprzez działania twórcze z zakresu pantomimy, teatru słowa, cieni i lalek. Podróż poprzez emocje będzie niezapomnianym doświadczeniem i jednocześnie wspaniałą zabawą. Wspólnie będziemy tworzyć spektakl.
       <br/>
-      <br/>Zajęcia w niedziele lub czwartki o godzinie 17:00.
-      <br/>Koszt zajęć pojedynczych: 35zł
+      <br/>Zajęcia w niedziele albo poniedziałki o godzinie 16:00.
+      <br/>Koszt zajęć pojedynczych: 50zł
       <br/> Zapisy: 501 - 027 - 278.
-      <br/>Miejsce: Teatr Maskarada - Nowy Świat
     </div>
   </div>
 
@@ -30,14 +44,5 @@ layout: t
     </div>
   </div>
 
-  <h2>
-    Teatr tańca dla dzieci
-  </h2>
-
-  <div class="card my-2">
-    <div class="card-body">
-      Zapraszamy na warsztaty taneczno-teatralne łączące elementy improwizacji teatralnej, działań w przestrzeni, zabawy ruchem i dźwiękiem oraz tańca współczesnego i jazzowego. Dzieci poznają magiczny świat teatru oraz nauczą się pracy głosem i ciałem. Każde zajęcia są zamkniętą formą warsztatową. <br/>Zapraszamy zarówno na pojedyncze spotkania jak i na cykl zajęć.
-      Warsztaty kierujemy do dzieci w wieku 3-6 i 7-14 lat.
-    </div>
-  </div>
+  <!-- <h2><ul class="photos">Teatr tańca dla dzieci</ul></h2>    Zapraszamy na warsztaty taneczno-teatralne łączące elementy improwizacji teatralnej, działań w przestrzeni, zabawy ruchem i dźwiękiem oraz tańca współczesnego i jazzowego. Dzieci poznają magiczny świat teatru oraz nauczą się pracy głosem i ciałem. Każde zajęcia są zamkniętą formą warsztatową. <br />Zapraszamy zarówno na pojedyncze spotkania jak i na cykl zajęć.    Warsztaty kierujemy do dzieci w wieku 3-6 i 7-14 lat. -->
 </div>

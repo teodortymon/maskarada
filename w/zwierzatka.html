@@ -7,11 +7,11 @@ layout: w
 
 <br /><br />
 <ul class="lista-kostiumow">
-    {% for category in site.data.kostiumy.zwierzatka %}
+    {% for category in kostiumy.zwierzatka %}
         {% for stroj in (1..category.amount) %}
             <li>
                 <a href="kostiumy/large/zwierzatka/{{ category.rating }}/{{ stroj }}.jpg" rel="group">
-                    <img src="kostiumy/thumb/zwierzatka/{{ category.rating }}/{{ stroj }}.jpg" alt="" />
+                    <img src="kostiumy/thumb/zwierzatka/{{ category.rating }}/{{ stroj }}.jpg" alt="" loading="lazy" decoding="async" />
                 </a>
             </li>
         {% endfor %}
