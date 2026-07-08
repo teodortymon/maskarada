@@ -10,5 +10,5 @@
 
   The video id is the last path segment after /embed/, with any ?query stripped.
 {% endcomment %}
-{% assign vid = include.video | split: '/embed/' | last | split: '?' | first %}
-<lite-youtube videoid="{{ vid }}" playlabel="Odtwórz: {{ include.title }}"{% if include.params %} params="{{ include.params }}"{% endif %}></lite-youtube>
+{% assign vid = video | split: '/embed/' | last | split: '?' | first %}
+<lite-youtube videoid="{{ vid }}" playlabel="Odtwórz: {{ title }}"{% if params %} params="{{ params }}"{% endif %}></lite-youtube>

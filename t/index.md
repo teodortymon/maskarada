@@ -156,8 +156,8 @@ layout: t
   {% assign this_week_events = "" | split: "" %}
   {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
 
-  {% if site.data.spektakle[current_month].repertuar %}
-    {% assign sorted_events = site.data.spektakle[current_month].repertuar | sort: 'data' %}
+  {% if spektakle[current_month].repertuar %}
+    {% assign sorted_events = spektakle[current_month].repertuar | sort: 'data' %}
     {% for spektakl in sorted_events %}
       {% assign event_day = spektakl.data | date: "%-d" | plus: 0 %}
       {% assign event_month = spektakl.data | date: "%-m" | plus: 0 %}
@@ -208,7 +208,7 @@ layout: t
         <div class="card my-2">
           {% comment %} Video section - look up video from s2 collection {% endcomment %}
           {% assign play_video = nil %}
-          {% for s in site.s2 %}
+          {% for s in collections.s2 %}
             {% if s.title contains tytul or tytul contains s.title %}
               {% assign play_video = s %}
               {% break %}
@@ -217,7 +217,7 @@ layout: t
 
           {% if play_video.video and play_video.video != "" %}
             <div class="ratio ratio-16x9">
-              {% include lite_video.html video=play_video.video title=tytul params="color=white&playsinline=1&rel=0" %}
+              {% render "lite_video.html", video: play_video.video, title: tytul, params: "color=white&playsinline=1&rel=0" %}
             </div>
           {% else %}
             <div class="ratio ratio-16x9">
@@ -265,17 +265,17 @@ layout: t
                       {{ event.data | date: "%-d" }} {{ polish_months[month_num] }} {{ event.data | date: "%R" }}
                       {% if event_type == "weekend" %}
                         {% if event.link and event.link != "-" %}
-                          <button
-                            type="button"
+                          <a
                             href="{{ event.link }}"
-                            onclick="fbq('track', 'OpenBuy');"
-                            class="btn btn-sm btn-outline-primary">Kup bilet 🎫</button>
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-sm btn-outline-primary">Kup bilet 🎫</a>
                         {% else %}
                           <i>Bilety online wkrótce</i>
                         {% endif %}
                       {% else %}
                         Zapraszamy grupy zorganizowane do rezerwacji tel.
-                        <a href="tel:501-027-278" onclick="fbq('track', 'CallFromEventList');">501 027 278</a>
+                        <a href="tel:501-027-278">501 027 278</a>
                       {% endif %}
                     </li>
                   {% endfor %}
@@ -309,7 +309,7 @@ layout: t
           </div>
           <div class="card-body">
             <p>Na
-              <a href="https://archiwum.pan.pl/index.php?option=com_content&view=article&id=767:juz-za-miesiac-xvi-warszawski-piknik-archiwalny&catid=9&Itemid=145" target="_blank" rel="noopener">Pikniku Archiwalnym</a>
+              <a href="https://archiwum.pan.pl/index.php?option=com_content&view=article&id=767:juz-za-miesiac-xvi-warszawski-piknik-archiwalny&catid=9&Itemid=145" target="_blank" rel="noopener noreferrer">Pikniku Archiwalnym</a>
               na naszej scenie w Pałacu Staszicu wystawiliśmy nową sztukę razem o Linie Bögli, szwajcarskiej guwernantce, która podróżowała po świecie w XIX wieku.</p>
             <button
               type="button"
@@ -336,6 +336,7 @@ layout: t
     <div class="map-container">
       <iframe
         src="https://www.google.com/maps/embed/v1/place?q=Teatr+Maskarada+dla+dzieci&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU"
+        loading="lazy"
         allowfullscreen></iframe>
     </div>
     <div class="card-body text-center">
@@ -344,7 +345,7 @@ layout: t
       <p>Kasa czynna godzinę przed spektaklem.  
         teatr.maskarada@gmail.com</p>
       <p>Rezerwacji biletów można dokonać telefonicznie pod numerem:
-        <a href="tel:501-027-278" onClick="fbq('track', 'CallFromContact');">
+        <a href="tel:501-027-278">
           501 027 278</a>
         lub
         <a href="https://www.ebilet.pl/szukaj.php?t=o&oid=1233">ebilet</a>
@@ -356,8 +357,8 @@ layout: t
 </div>
 
 {% comment %} Modals for play details {% endcomment %}
-{% for s in site.s2 %}
-  {% include spektakl_modal.html s=s %}
+{% for s in collections.s2 %}
+  {% render "spektakl_modal.html", s: s %}
 {% endfor %}
 
 <script>

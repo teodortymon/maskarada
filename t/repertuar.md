@@ -174,12 +174,12 @@ layout: t
   {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
   {% assign shown_months = 0 %}
   {% for miesiac in miesiace %}
-    {% assign month_data = site.data.spektakle[miesiac] %}
+    {% assign month_data = spektakle[miesiac] %}
     {% if month_data.repertuar.size > 0 %}
-      {% assign spektakle = month_data.repertuar | sort: 'data' %}
+      {% assign month_events = month_data.repertuar | sort: 'data' %}
       {% comment %} Build the future-event rows first so we can skip months with none {% endcomment %}
       {% capture month_rows %}
-        {% for spektakl in spektakle %}
+        {% for spektakl in month_events %}
           {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
           {% if event_timestamp >= now_timestamp %}
             {% assign dzien_tygodnia = spektakl.data | date: "%w" | plus: 0 %}
@@ -191,14 +191,14 @@ layout: t
             {% comment %} Match this event to its play (_s2) by title so the title
                can open the same details modal used on the Spektakle page. {% endcomment %}
             {% assign matched_play = nil %}
-            {% for play in site.s2 %}
+            {% for play in collections.s2 %}
               {% if play.title == spektakl.tytul %}
                 {% assign matched_play = play %}
                 {% break %}
               {% endif %}
             {% endfor %}
             <tr data-event-type="{{ event_type }}">
-              <td style="white-space: nowrap;">{{ site.data.dni_tygodnia.dni[dzien_tygodnia] | capitalize }} {{ spektakl.data | date: "%-d.%m" }} - {{ spektakl.data | date: "%R" }}</td>
+              <td style="white-space: nowrap;">{{ dni_tygodnia.dni[dzien_tygodnia] | capitalize }} {{ spektakl.data | date: "%-d.%m" }} - {{ spektakl.data | date: "%R" }}</td>
               <td>
                 {% if matched_play %}
                   <button
@@ -218,15 +218,15 @@ layout: t
                     {% if spektakl.link == "-" %}
                       <i>Bilety online wkrótce</i>
                     {% else %}
-                      <button
-                        type="button"
+                      <a
                         href="{{ spektakl.link }}"
-                        onclick="fbq('track', 'OpenBuy');"
-                        class="btn btn-sm btn-outline-primary">Kup bilet 🎫</button>
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-sm btn-outline-primary">Kup bilet 🎫</a>
                     {% endif %}
                   {% else %}
                     Zapraszamy grupy zorganizowane do rezerwacji tel.
-                    <a href="tel:501-027-278" onclick="fbq('track', 'CallFromEventList');">501 027 278</a>
+                    <a href="tel:501-027-278">501 027 278</a>
                   {% endif %}
                 {% endif %}
               </td>
@@ -335,8 +335,8 @@ layout: t
 
 {% comment %} Play details modals — same include as the Spektakle page, so a
    Kalendarz play title opens the identical popup. {% endcomment %}
-{% for s in site.s2 %}
-  {% include spektakl_modal.html s=s %}
+{% for s in collections.s2 %}
+  {% render "spektakl_modal.html", s: s %}
 {% endfor %}
 
 <!-- <tr>  <th><strike>10.06.2018 niedziela</strike></th>  <th><strike>12.30</strike></th>  <th><strike>Urodziny Turli-Taja</strike></th>  <th>Spektatkl odwołany</th>  </tr> -->
