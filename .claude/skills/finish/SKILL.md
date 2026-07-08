@@ -9,11 +9,59 @@ Wraps up work done on a `v2-<type>/<name>` branch (created per the CLAUDE.md
 worktree workflow): merge it into `v2`, push `v2`, then delete the branch and
 remove its worktree.
 
+## Pick a mode
+
+Run `git branch --show-current` and branch on the result:
+
+- **On a feature branch** (`v2-(feature|chore|infra)/...`) → the full merge-up
+  flow: everything under **"Feature-branch mode"** below.
+- **On `v2` itself** → the lightweight **"Direct-on-`v2` mode"** below: commit any
+  pending changes (with permission) and push. There's no branch to merge or
+  worktree to remove.
+- **Anything else** (`master`, a detached HEAD, an unrelated branch) → STOP and
+  tell the user `/finish` only runs from a `v2-*` feature branch or from `v2`.
+
+---
+
+## Direct-on-`v2` mode
+
+Use this when work was committed (or is still pending) directly on `v2` rather
+than in a feature worktree.
+
+1. **Locate the `v2` worktree.** You're likely already in it; set
+   `V2_WT="$(git rev-parse --show-toplevel)"`.
+2. **Handle pending changes.** Run `git -C "$V2_WT" status --porcelain`.
+   - If there are uncommitted changes, show the user what changed
+     (`git -C "$V2_WT" status` + a quick `git -C "$V2_WT" diff --stat`) and **ask
+     permission before committing** (never commit unprompted, per the user's
+     global rule). Once they approve, stage and commit with a message that
+     describes the change:
+     ```
+     git -C "$V2_WT" add -A
+     git -C "$V2_WT" commit -m "<concise description of the change>"
+     ```
+     Do not add any `Co-authored-by` trailer (per the user's global rule).
+   - If the tree is already clean but `v2` is ahead of `origin/v2`
+     (`git -C "$V2_WT" status -sb` shows `ahead`), skip straight to the push.
+   - If it's clean and not ahead, there's nothing to do — report and stop.
+3. **Push `v2`:**
+   ```
+   git -C "$V2_WT" push origin v2
+   ```
+   (Skip/report, don't hard-fail, if there's no `origin` or no network.)
+4. **Finish up.** Report what was committed (if anything) and that `v2` was
+   pushed, then notify:
+   `terminal-notifier -title "Claude Code" -message "/finish: committed + pushed v2"`
+
+---
+
+## Feature-branch mode
+
 ## Preconditions — check before doing anything
 
-1. **Current branch is a feature branch.** Run `git branch --show-current`. It
-   MUST match `v2-(feature|chore|infra)/...`. If it's `v2`, `master`, or anything
-   else, STOP and tell the user `/finish` only runs from a feature branch.
+1. **Current branch is a feature branch.** Confirm `git branch --show-current`
+   matches `v2-(feature|chore|infra)/...` (the mode check above already routed you
+   here).
 2. **Working tree is clean.** Run `git status --porcelain`. If there are
    uncommitted changes, STOP and ask the user whether to commit them first (do NOT
    commit without permission per the user's global rule). Only proceed once clean.
