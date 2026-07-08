@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/teodortymon/maskarada#readme",
   "dependencies": {
-    "@tinacms/cli": "1.5.31",
+    "@tinacms/cli": "2.4.3",
     "tinacms": "1.5.22"
   },
   "resolutions": {
