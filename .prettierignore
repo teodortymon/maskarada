@@ -1,0 +1,28 @@
+# Build output & deps
+_site/
+node_modules/
+css/
+
+# Legacy site sections (old markup, partly invalid HTML — not formatted)
+t/
+w/
+lay/
+admin/
+NEW/
+
+# Split-pair partials: header_* opens elements that footer_* closes, so
+# neither half parses as balanced HTML — Prettier's liquid parser rejects them
+_includes/header_*.html
+_includes/footer_*.html
+
+# Rendered inside markdown pages (t/*.md): markdown-it only accepts a custom
+# element like <lite-youtube> as raw HTML when the whole tag is on ONE line.
+# Prettier splitting it across lines makes markdown escape it into text.
+_includes/lite_video.html
+
+# Markdown content is hand-tuned (embedded HTML grids break if reflowed)
+*.md
+
+# Generated / third-party
+tina/__generated__/
+google958f145c78b1087b.html
