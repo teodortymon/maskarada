@@ -9,6 +9,11 @@ Wraps up work done on a `v2-<type>/<name>` branch (created per the CLAUDE.md
 worktree workflow): merge it into `v2`, push `v2`, then delete the branch and
 remove its worktree.
 
+> **Committing is authorized by invoking `/finish`.** The user has standing
+> approval: whenever they run `/finish`, commit any pending changes, merge up into
+> `v2`, and push — without stopping to ask for commit permission. Still show what
+> changed and use a descriptive message; never add a `Co-authored-by` trailer.
+
 ## Pick a mode
 
 Run `git branch --show-current` and branch on the result:
@@ -32,10 +37,9 @@ than in a feature worktree.
    `V2_WT="$(git rev-parse --show-toplevel)"`.
 2. **Handle pending changes.** Run `git -C "$V2_WT" status --porcelain`.
    - If there are uncommitted changes, show the user what changed
-     (`git -C "$V2_WT" status` + a quick `git -C "$V2_WT" diff --stat`) and **ask
-     permission before committing** (never commit unprompted, per the user's
-     global rule). Once they approve, stage and commit with a message that
-     describes the change:
+     (`git -C "$V2_WT" status` + a quick `git -C "$V2_WT" diff --stat`), then stage
+     and commit them with a message that describes the change (committing is
+     pre-authorized by the `/finish` invocation — see the note at the top):
      ```
      git -C "$V2_WT" add -A
      git -C "$V2_WT" commit -m "<concise description of the change>"
@@ -62,9 +66,15 @@ than in a feature worktree.
 1. **Current branch is a feature branch.** Confirm `git branch --show-current`
    matches `v2-(feature|chore|infra)/...` (the mode check above already routed you
    here).
-2. **Working tree is clean.** Run `git status --porcelain`. If there are
-   uncommitted changes, STOP and ask the user whether to commit them first (do NOT
-   commit without permission per the user's global rule). Only proceed once clean.
+2. **Working tree.** Run `git status --porcelain`. If there are uncommitted
+   changes, show what changed (`git status` + `git diff --stat`), then stage and
+   commit them on the feature branch with a descriptive message before proceeding
+   (committing is pre-authorized by the `/finish` invocation — see the note at the
+   top; no `Co-authored-by` trailer):
+   ```
+   git add -A
+   git commit -m "<concise description of the change>"
+   ```
 3. **Capture identifiers up front:**
    - `FEATURE` = the current branch name.
    - `FEATURE_WT` = this worktree's path (`git rev-parse --show-toplevel`).
