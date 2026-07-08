@@ -11,7 +11,7 @@
 {% endcomment %}
 {% assign g = gallery %}
 {% if g and g.folder %}
-  {% assign ext = g.ext | default: "jpg" %}
+  {% assign ext = g.ext | default: 'jpg' %}
   {% if g.images %}
     {% assign items = g.images %}
   {% else %}

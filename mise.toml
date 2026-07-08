@@ -20,8 +20,16 @@ description = "Build the static site into _site/ (SCSS + Eleventy)"
 run = "npm run build"
 
 [tasks.dev]
-description = "Serve with live reload: Eleventy dev server + SCSS watch (no CMS)"
+description = "Serve with live reload: Eleventy dev server + SCSS watch + HTML/Liquid format-on-save (no CMS)"
 run = "npm run dev"
+
+[tasks.format]
+description = "Reformat HTML/Liquid templates (_layouts, _includes, index.html) with Prettier"
+run = "npm run format"
+
+[tasks.format-check]
+description = "Check HTML/Liquid template formatting without writing (CI-friendly)"
+run = "npm run format:check"
 
 [tasks.dev-tina]
 description = "Serve Eleventy behind the TinaCMS dev server (content editing UI)"

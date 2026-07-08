@@ -9,7 +9,9 @@
       <div class="modal-header">
         <h5 class="modal-title" id="{{ s.id2 }}Label">
           {{ s.title }}
-          {% if s.new_premiere %}<span class="badge text-bg-primary ms-2">nowa premiera</span>{% endif %}
+          {% if s.new_premiere -%}
+            <span class="badge text-bg-primary ms-2">nowa premiera</span>
+          {%- endif %}
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
       </div>
@@ -17,14 +19,26 @@
         <div class="row g-4">
           {% if s.poster %}
             <div class="col-md-4">
-              <img src="{{ s.poster }}" class="img-fluid rounded shadow-sm spektakl-poster" alt="{{ s.title }}" loading="lazy" decoding="async">
+              <img
+                src="{{ s.poster }}"
+                class="img-fluid rounded shadow-sm spektakl-poster"
+                alt="{{ s.title }}"
+                loading="lazy"
+                decoding="async"
+              >
             </div>
           {% endif %}
           <div class="{% if s.poster %}col-md-8{% else %}col-12{% endif %}">
             <p class="spektakl-meta">
-              {% if s.age %}<span>👶 {{ s.age }}</span>{% endif %}
-              {% if s.duration %}<span>⏱️ {{ s.duration }}</span>{% endif %}
-              {% if s.premiere %}<span>🎬 Premiera: {{ s.premiere }}</span>{% endif %}
+              {% if s.age -%}
+                <span>👶 {{ s.age }}</span>
+              {%- endif %}
+              {% if s.duration -%}
+                <span>⏱️ {{ s.duration }}</span>
+              {%- endif %}
+              {% if s.premiere -%}
+                <span>🎬 Premiera: {{ s.premiere }}</span>
+              {%- endif %}
             </p>
             <div class="spektakl-desc">{{ s.content }}</div>
           </div>
@@ -32,7 +46,7 @@
 
         {% if s.video %}
           <div class="ratio ratio-16x9 my-4 spektakl-video">
-            {% render "lite_video.html", video: s.video, title: s.title %}
+            {% render 'lite_video.html', video: s.video, title: s.title %}
           </div>
         {% endif %}
 
@@ -42,7 +56,9 @@
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="credit-role">{{ c.role }}</div>
                 <ul class="credit-people list-unstyled mb-0">
-                  {% for p in c.people %}<li>{{ p }}</li>{% endfor %}
+                  {% for p in c.people %}
+                    <li>{{ p }}</li>
+                  {% endfor %}
                 </ul>
               </div>
             {% endfor %}
@@ -51,7 +67,7 @@
 
         {% if s.gallery %}
           <h6 class="mt-4 mb-2 gallery-title">Galeria</h6>
-          {% render "gallery.html", gallery: s.gallery, id: s.id2, title: s.title %}
+          {% render 'gallery.html', gallery: s.gallery, id: s.id2, title: s.title %}
         {% endif %}
       </div>
     </div>

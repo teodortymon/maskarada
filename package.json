@@ -12,7 +12,10 @@
     "build": "npm run css-prod && eleventy",
     "build:11ty": "eleventy",
     "serve": "eleventy --serve",
-    "dev": "npm run css && npm-run-all --parallel watch serve",
+    "dev": "npm run css && npm-run-all --parallel watch watch:fmt serve",
+    "format": "prettier --write \"_layouts/**/*.html\" \"_includes/*.html\" index.html",
+    "format:check": "prettier --check \"_layouts/**/*.html\" \"_includes/*.html\" index.html",
+    "watch:fmt": "onchange \"_layouts/**/*.html\" \"_includes/*.html\" index.html -- prettier --write {{changed}}",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
     "css-compile-prod": "sass --style compressed --no-source-map --no-error-css --load-path=node_modules scss/:css/",
     "css-lint": "stylelint scss/",
@@ -37,8 +40,11 @@
     "sass": "^1.64.1"
   },
   "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.10.3",
     "@tinacms/cli": "^2.5.3",
     "nodemon": "^3.0.1",
+    "onchange": "^7.1.0",
+    "prettier": "^3.9.4",
     "sirv-cli": "^2.0.2",
     "stylelint": "^15.10.2",
     "stylelint-config-twbs-bootstrap": "^11.0.1",

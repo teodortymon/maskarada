@@ -4,7 +4,9 @@
     <span>WERSJA TESTOWA &nbsp;·&nbsp; WERSJA TESTOWA &nbsp;·&nbsp; WERSJA TESTOWA</span>
   </div>
 </div>
-<button type="button" class="test-banner-close" aria-label="Ukryj baner wersji testowej" title="Ukryj baner">&times;</button>
+<button type="button" class="test-banner-close" aria-label="Ukryj baner wersji testowej" title="Ukryj baner">
+  &times;
+</button>
 <style>
   /* Full-viewport clip so the oversized band never triggers page scrollbars */
   .test-banner-wrap {
@@ -23,7 +25,7 @@
     background: rgba(255, 212, 0, 0.82);
     color: #1a1a1a;
     text-align: center;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: clamp(1.75rem, 7vw, 5rem);
     letter-spacing: 0.15em;
@@ -69,11 +71,18 @@
       btn.style.display = 'none';
     }
     var dismissed = false;
-    try { dismissed = localStorage.getItem(KEY) === '1'; } catch (e) {}
-    if (dismissed) { hide(); return; }
+    try {
+      dismissed = localStorage.getItem(KEY) === '1';
+    } catch (e) {}
+    if (dismissed) {
+      hide();
+      return;
+    }
     btn.addEventListener('click', function () {
       hide();
-      try { localStorage.setItem(KEY, '1'); } catch (e) {}
+      try {
+        localStorage.setItem(KEY, '1');
+      } catch (e) {}
     });
   })();
 </script>
