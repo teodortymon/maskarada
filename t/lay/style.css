@@ -426,6 +426,14 @@ h4 {
   max-width: none;
 }
 
+/* Same markdown quirk leaves stray empty <p> siblings inside the .ratio. Since
+   `.ratio > *` makes every child an absolutely-positioned, full-size layer, a
+   trailing empty <p> paints on top of the facade and swallows the play click,
+   so the video looks unclickable. Drop them (mirrors `.row > p:empty` below). */
+.ratio > p:empty {
+  display: none;
+}
+
 /* Markdown rendering leaves empty <p> elements between grid columns; they are
    invisible but take margin and confuse layout (e.g. Masonry item metrics). */
 .row > p:empty {
