@@ -40,6 +40,12 @@ tmp/*
 # Node
 node_modules/
 
+# Python virtualenvs (local experiment cruft — Eleventy honors .gitignore,
+# so leaving these untracked keeps stray HTML out of the build)
+.venv/
+venv/
+__pycache__/
+
 # Env / secrets (TinaCMS + Cloudflare tokens) and wrangler state
 .env
 .env.local
