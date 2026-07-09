@@ -10,7 +10,11 @@
    paper #fffdf7 · shadow rgba(74,125,165,.3)                    */
 
 html {
+  /* `hidden` creates a scroll container and silently disables position:sticky
+     descendants; `clip` clips the same overflow without that side effect.
+     Older browsers ignore `clip` and keep the `hidden` fallback. */
   overflow-x: hidden;
+  overflow-x: clip;
   background-color: #cfe6f4;
   scroll-behavior: smooth;
 }
@@ -18,6 +22,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif !important;
   overflow-x: hidden;
+  overflow-x: clip;
   color: #47617a;
   min-height: 100vh;
   background: transparent;
