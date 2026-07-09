@@ -1,0 +1,38 @@
+{% comment %}
+  16x9 card media for a play: the YouTube facade when the play has a video,
+  otherwise the first photo from its gallery, otherwise the "Wideo wkrótce"
+  placeholder.
+  Params:
+    video   - YouTube embed URL from _s2 front matter (optional)
+    gallery - the play's `gallery` front-matter object (optional; same shape
+              as gallery.html: .folder required, .ext / .count / .images)
+    title   - play title, used for the play label / alt text
+    params  - extra iframe query params passed through to lite_video.html
+{% endcomment %}
+<div class="ratio ratio-16x9">
+  {% if video and video != "" %}
+    {% render "lite_video.html", video: video, title: title, params: params %}
+  {% elsif gallery and gallery.folder %}
+    {% assign ext = gallery.ext | default: 'jpg' %}
+    {% if gallery.images %}
+      {% assign first = gallery.images | first %}
+    {% else %}
+      {% assign first = 1 %}
+    {% endif %}
+    <img
+      class="play-media-img"
+      loading="lazy"
+      src="{{ gallery.folder }}/large/{{ first }}.{{ ext }}"
+      alt="{{ title }} — zdjęcie ze spektaklu">
+  {% else %}
+    <div class="video-placeholder d-flex align-items-center justify-content-center">
+      <div class="text-center">
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 12L9 8V16L15 12Z" fill="currentColor" opacity="0.3"/>
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+        </svg>
+        <p class="mt-3 mb-0" style="font-size: 0.875rem; opacity: 0.6;">Wideo wkrótce</p>
+      </div>
+    </div>
+  {% endif %}
+</div>
