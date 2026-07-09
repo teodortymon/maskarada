@@ -27,6 +27,12 @@
   object-fit: cover;
 }
 
+// First gallery photo shown in the card's 16x9 slot when a play has no video;
+// .ratio stretches it to 100%, cover keeps the 3:2 source from distorting.
+.play-media-img {
+  object-fit: cover;
+}
+
 .spektakl-video {
   border: 4px solid var(--bs-primary);
   border-radius: 0.6rem;
