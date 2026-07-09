@@ -79,7 +79,7 @@ layout: t
       {% if s %}
       <div class="col-sm-4">
         <div class="card my-2">
-          {% render "play_media.html", video: s.video, gallery: s.gallery, title: s.title, params: "color=white&playsinline=1&rel=0" %}
+          {% render "play_media.html", video: s.video, gallery: s.gallery, poster: s.poster, title: s.title, params: "color=white&playsinline=1&rel=0" %}
           <div class="card-body">
             <div>
               <h5 class="card-title">{{ s.title }}{% if s.new_premiere %} <span class="badge text-bg-primary">nowa premiera</span>{% endif %}</h5>
