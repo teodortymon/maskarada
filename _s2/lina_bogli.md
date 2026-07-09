@@ -6,8 +6,8 @@ headline: "Lina Bögli, szwajcarska guwernantka, autorka tysięcy stron dziennik
 age: "dla młodzieży i widzów dorosłych"
 duration: "50 minut"
 premiere: "Kwiecień 2026"
-poster:
-poster_thumb:
+poster: lay/img/lina_big.jpg
+poster_thumb: lay/img/lina_min.jpg
 video:
 credits:
   - role: Wykonanie

@@ -1,17 +1,18 @@
 {% comment %}
   16x9 card media for a play: the YouTube facade when the play has a video,
-  otherwise the first photo from its gallery, otherwise the "Wideo wkrótce"
-  placeholder.
+  otherwise the first photo from its gallery, otherwise its poster, otherwise
+  the "Wideo wkrótce" placeholder.
   Params:
     video   - YouTube embed URL from _s2 front matter (optional)
     gallery - the play's `gallery` front-matter object (optional; same shape
               as gallery.html: .folder required, .ext / .count / .images)
+    poster  - the play's `poster` front-matter path (optional)
     title   - play title, used for the play label / alt text
     params  - extra iframe query params passed through to lite_video.html
 {% endcomment %}
 <div class="ratio ratio-16x9">
-  {% if video and video != "" %}
-    {% render "lite_video.html", video: video, title: title, params: params %}
+  {% if video and video != '' %}
+    {% render 'lite_video.html', video: video, title: title, params: params %}
   {% elsif gallery and gallery.folder %}
     {% assign ext = gallery.ext | default: 'jpg' %}
     {% if gallery.images %}
@@ -23,7 +24,15 @@
       class="play-media-img"
       loading="lazy"
       src="{{ gallery.folder }}/large/{{ first }}.{{ ext }}"
-      alt="{{ title }} — zdjęcie ze spektaklu">
+      alt="{{ title }} — zdjęcie ze spektaklu"
+    >
+  {% elsif poster and poster != '' %}
+    <img
+      class="play-media-img play-media-poster"
+      loading="lazy"
+      src="{{ poster }}"
+      alt="{{ title }} — plakat spektaklu"
+    >
   {% else %}
     <div class="video-placeholder d-flex align-items-center justify-content-center">
       <div class="text-center">

@@ -27,10 +27,20 @@
   object-fit: cover;
 }
 
-// First gallery photo shown in the card's 16x9 slot when a play has no video;
-// .ratio stretches it to 100%, cover keeps the 3:2 source from distorting.
+// Gallery photo or poster shown in the card's 16x9 slot when a play has no
+// video. Markdown wraps the <img> in a <p>, so Bootstrap's `.ratio > *` sizes
+// the paragraph, not the image — fill the wrapper explicitly and let cover
+// crop the source to the slot.
 .play-media-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+// Portrait posters shown in the 16x9 slot: anchor the crop to the top, where
+// the marquee logo and the play title live, instead of the center.
+.play-media-poster {
+  object-position: top;
 }
 
 .spektakl-video {

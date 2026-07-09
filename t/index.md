@@ -215,7 +215,7 @@ layout: t
             {% endif %}
           {% endfor %}
 
-          {% render "play_media.html", video: play_video.video, gallery: play_video.gallery, title: tytul, params: "color=white&playsinline=1&rel=0" %}
+          {% render "play_media.html", video: play_video.video, gallery: play_video.gallery, poster: play_video.poster, title: tytul, params: "color=white&playsinline=1&rel=0" %}
           <div class="card-body">
             <div class="row">
               <div class="col-5">
