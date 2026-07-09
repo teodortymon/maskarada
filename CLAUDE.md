@@ -43,6 +43,25 @@ commit feature work directly onto `v2`.
 3. Do the work there, committing to the feature branch.
 4. When done, run **`/finish`** (see below) to merge it up into `v2`.
 
+## Design experiments: clickable prototypes
+
+When asked to experiment with design (redesigns, variants, "show me a few
+approaches"), don't just describe options or show static screenshots — build
+**clickable prototypes** that can be flipped through live:
+
+- Implement the variants on real pages (or a lab page) and add a small floating
+  variant switcher so each option is one tap away: a fixed panel of buttons that
+  toggles data attributes on `<html>` (variant CSS keys off them), persists the
+  choice in localStorage, and reads URL params for shareable links. Keep the
+  switcher JS in a static file under `t/js/` — inline multi-line `<script>` gets
+  mangled by markdown on `.md` pages. (Reference implementation: branch
+  `v2-feature/play-card-redesign` history, `_includes/variant_switcher.html`.)
+- Serve them from the worktree's `mise run dev` server and expose it with
+  `ngrok http <port>` so the prototypes can be tested on a phone as well as
+  desktop.
+- Once a variant is chosen, hard-code the winner and remove the switcher and
+  any lab pages before merging.
+
 ## Finishing work: `/finish`
 
 The `/finish` local skill wraps up a feature branch: it merges the current

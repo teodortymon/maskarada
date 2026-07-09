@@ -78,83 +78,25 @@ layout: t
 
       {% if s %}
       <div class="col-sm-4">
-        <div class="card my-2">
-          {% render "play_media.html", video: s.video, gallery: s.gallery, title: s.title, params: "color=white&playsinline=1&rel=0" %}
-          <div class="card-body">
-            <div>
-              <h5 class="card-title">{{ s.title }}{% if s.new_premiere %} <span class="badge text-bg-primary">nowa premiera</span>{% endif %}</h5>
-              <p>{{ s.headline }}</p>
-              <p>Wiek: {{ s.age }}</p>
-              <p>Czas trwania: {{ s.duration }}</p>
-              <div class="container">
-                <div class="row">
-                  <button
-                    type="button"
-                    class="btn btn-sm btn-outline-primary my-1"
-                    data-bs-toggle="modal"
-                    data-bs-target="#{{ s.id2 }}">
-                    Szczegóły spektaklu 🍥
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="text-center align-items-center">
-              {% comment %} Find all events for this play from all months {% endcomment %}
-              {% assign play_events = "" | split: "" %}
-              {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
-              {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
+        {% comment %} Find all upcoming events for this play from all months {% endcomment %}
+        {% assign play_events = "" | split: "" %}
+        {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+        {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
 
-              {% for miesiac in all_miesiace %}
-                {% if spektakle[miesiac].repertuar %}
-                  {% for event in spektakle[miesiac].repertuar %}
-                    {% assign event_timestamp = event.data | date: "%s" | plus: 0 %}
-                    {% if event.tytul == s.title and event_timestamp >= now_timestamp %}
-                      {% assign play_events = play_events | push: event %}
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}
-              {% endfor %}
-
-              {% assign sorted_play_events = play_events | sort: 'data' %}
-
-              {% if sorted_play_events.size > 0 %}
-                <ul class="list-group list-group-flush">
-                  {% for event in sorted_play_events %}
-                    {% assign dzien_tygodnia = event.data | date: "%w" %}
-                    {% if dzien_tygodnia == '0' or dzien_tygodnia == '6' %}
-                      {% assign event_type = "weekend" %}
-                    {% else %}
-                      {% assign event_type = "weekday" %}
-                    {% endif %}
-
-                    {% comment %} Convert month to Polish {% endcomment %}
-                    {% assign month_num = event.data | date: "%-m" | minus: 1 %}
-                    {% assign polish_months = "stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia" | split: ',' %}
-                    {% assign polish_month = polish_months[month_num] %}
-
-                    <li class="list-group-item">
-                      {{ event.data | date: "%-d" }} {{ polish_month }} {{ event.data | date: "%R" }}
-                      {% if event_type == "weekend" %}
-                        {% if event.link and event.link != "-" %}
-                          <a
-                            href="{{ event.link }}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="btn btn-sm btn-outline-primary">Kup bilet 🎫</a>
-                        {% else %}
-                          <i>Bilety online wkrótce</i>
-                        {% endif %}
-                      {% else %}
-                        Zapraszamy grupy zorganizowane do rezerwacji tel.
-                        <a href="tel:501-027-278">501 027 278</a>
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
+        {% for miesiac in all_miesiace %}
+          {% if spektakle[miesiac].repertuar %}
+            {% for event in spektakle[miesiac].repertuar %}
+              {% assign event_timestamp = event.data | date: "%s" | plus: 0 %}
+              {% if event.tytul == s.title and event_timestamp >= now_timestamp %}
+                {% assign play_events = play_events | push: event %}
               {% endif %}
-            </div>
-          </div>
-        </div>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+
+        {% assign sorted_play_events = play_events | sort: 'data' %}
+
+        {% render "play_card.html", title: s.title, s: s, events: sorted_play_events, show_meta: true, params: "color=white&playsinline=1&rel=0" %}
       </div>
       {% endif %}
     {% endfor %}

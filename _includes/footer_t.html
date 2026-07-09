@@ -71,14 +71,31 @@
   </style>
 
   <!-- Facebook - najnowsze posty -->
+  <style>
+    /* Let the FB plugin adapt to the full card width. Facebook caps the
+       plugin at 500px, so the card hugs that limit and centers on desktop
+       instead of stretching across the page with empty wings. */
+    .fb-card {
+      max-width: 534px; /* 500px plugin + card-body padding + border */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .fb-card .fb-page,
+    .fb-card .fb-page span {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  </style>
   <div class="container">
     <nav class="navbar">
       <div class="container-fluid">
         <h2>Znajdź nas na Facebooku</h2>
       </div>
     </nav>
-    <div class="row">
-      <div class="col-12 d-flex justify-content-center my-2">
+    <div class="card my-2 fb-card">
+      <div class="card-body">
         <div class="fb-page"
              data-href="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267"
              data-tabs="timeline"

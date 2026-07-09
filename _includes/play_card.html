@@ -1,0 +1,71 @@
+{% comment %}
+  Play card shared by Teraz (index) and Spektakle. Media on top, then title,
+  optional meta, headline, "Szczegóły spektaklu →" modal link, and one
+  mini-ticket per showtime (design aligned with the Kalendarz ksf-stub).
+  Params:
+    title     - play title (always required; used even when s is nil)
+    s         - the play object from collections.s2, or nil when unmatched
+                (no media/details/headline in that case)
+    events    - array of repertuar events ({data, link, manual_price}) to list;
+                may be empty
+    show_meta - true to show the age / duration line (Spektakle)
+    params    - extra iframe params passed through to play_media/lite_video
+{% endcomment %}
+<div class="card my-2 pcard">
+  {% render 'play_media.html', video: s.video, gallery: s.gallery, title: title, params: params %}
+  <div class="card-body">
+    <h3 class="pc-title">
+      {{ title -}}
+      {%- if s.new_premiere %}
+        <span class="badge text-bg-primary">nowa premiera</span>
+      {%- endif %}
+    </h3>
+    {% if show_meta and s %}
+      <p class="pc-meta">{{ s.age }} · {{ s.duration }}</p>
+    {% endif %}
+    {% if s.headline %}
+      <p class="pc-headline">{{ s.headline }}</p>
+    {% endif %}
+    {% if s %}
+      <button type="button" class="pc-details" data-bs-toggle="modal" data-bs-target="#{{ s.id2 }}">
+        Szczegóły spektaklu →
+      </button>
+    {% endif %}
+    {% assign pc_months = 'stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia'
+      | split: ','
+    %}
+    {% assign pc_days = 'Niedziela,Poniedziałek,Wtorek,Środa,Czwartek,Piątek,Sobota' | split: ',' %}
+    {% for event in events %}
+      {% assign pc_dw = event.data | date: '%w' | plus: 0 %}
+      {% if pc_dw == 0 or pc_dw == 6 %}
+        {% assign event_type = 'weekend' %}
+      {% else %}
+        {% assign event_type = 'weekday' %}
+      {% endif %}
+      {% assign pc_mi = event.data | date: '%-m' | minus: 1 %}
+      <article class="pc-ticket" data-event-type="{{ event_type }}">
+        <div class="pc-block">
+          <span class="pc-time">{{ event.data | date: '%R' }}</span>
+        </div>
+        <div class="pc-tbody">
+          <span class="pc-when">
+            {{- pc_days[pc_dw] }}, {{ event.data | date: '%-d' }}
+            {{ pc_months[pc_mi] -}}
+          </span>
+          {% if event.manual_price == true %}
+            <span class="pc-soon">{{ event.link }}</span>
+          {% elsif event_type == 'weekend' %}
+            {% if event.link and event.link != '-' %}
+              <a href="{{ event.link }}" target="_blank" rel="noopener noreferrer" class="pc-buy">Kup bilet 🎫</a>
+            {% else %}
+              <span class="pc-soon">Bilety online wkrótce</span>
+            {% endif %}
+          {% else %}
+            <span class="pc-groups-note">Rezerwacja dla grup zorganizowanych:</span>
+            <a href="tel:501-027-278" class="pc-tel">Zadzwoń 501 027 278 ☎</a>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>

@@ -205,69 +205,16 @@ layout: t
       {% endif %}
 
       <div class="col-sm" data-event-card="{{ card_type }}">
-        <div class="card my-2">
-          {% comment %} Video section - look up video from s2 collection {% endcomment %}
-          {% assign play_video = nil %}
-          {% for s in collections.s2 %}
-            {% if s.title contains tytul or tytul contains s.title %}
-              {% assign play_video = s %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
+        {% comment %} Look up the play in the s2 collection {% endcomment %}
+        {% assign play_video = nil %}
+        {% for s in collections.s2 %}
+          {% if s.title contains tytul or tytul contains s.title %}
+            {% assign play_video = s %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
 
-          {% render "play_media.html", video: play_video.video, gallery: play_video.gallery, title: tytul, params: "color=white&playsinline=1&rel=0" %}
-          <div class="card-body">
-            <div class="row">
-              <div class="col-5">
-                <h5>{{ tytul }}</h5>
-                {% if play_video %}
-                <div class="container">
-                  <div class="row">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-primary my-1"
-                      data-bs-toggle="modal"
-                      data-bs-target="#{{ play_video.id2 }}">
-                      Szczegóły spektaklu 🍥
-                    </button>
-                  </div>
-                </div>
-                {% endif %}
-              </div>
-              <div class="col text-center align-items-center">
-                <ul class="list-group list-group-flush">
-                  {% for event in play_events %}
-                    {% assign dzien_tygodnia = event.data | date: "%w" %}
-                    {% if dzien_tygodnia == '0' or dzien_tygodnia == '6' %}
-                      {% assign event_type = "weekend" %}
-                    {% else %}
-                      {% assign event_type = "weekday" %}
-                    {% endif %}
-                    <li class="list-group-item" data-event-type="{{ event_type }}">
-                      {% assign month_num = event.data | date: "%-m" | minus: 1 %}
-                      {% assign polish_months = "stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia" | split: ',' %}
-                      {{ event.data | date: "%-d" }} {{ polish_months[month_num] }} {{ event.data | date: "%R" }}
-                      {% if event_type == "weekend" %}
-                        {% if event.link and event.link != "-" %}
-                          <a
-                            href="{{ event.link }}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="btn btn-sm btn-outline-primary">Kup bilet 🎫</a>
-                        {% else %}
-                          <i>Bilety online wkrótce</i>
-                        {% endif %}
-                      {% else %}
-                        Zapraszamy grupy zorganizowane do rezerwacji tel.
-                        <a href="tel:501-027-278">501 027 278</a>
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% render "play_card.html", title: tytul, s: play_video, events: play_events, show_meta: false, params: "color=white&playsinline=1&rel=0" %}
       </div>
     {% endfor %}
 
@@ -297,10 +244,10 @@ layout: t
               na naszej scenie w Pałacu Staszicu wystawiliśmy nową sztukę razem o Linie Bögli, szwajcarskiej guwernantce, która podróżowała po świecie w XIX wieku.</p>
             <button
               type="button"
-              class="btn btn-sm btn-outline-primary my-1"
+              class="pc-details"
               data-bs-toggle="modal"
               data-bs-target="#lina_bogli">
-              Zobacz spektakl 🍥
+              Szczegóły spektaklu →
             </button>
           </div>
         </div>

@@ -192,11 +192,22 @@ a.nav-link.active {
   margin-bottom: 0.9rem !important;
 }
 
+/* Uniform gap between the header and the first element on EVERY page — the
+   per-page first-child margins below are zeroed so this is the single source
+   of that offset (layout t wraps page content in <main class="page-main">). */
+.page-main {
+  padding-top: 1.5rem;
+}
+
 /* Text pages (Bilety, Historia, Warsztaty …) stack section cards directly in
    the container — give those sections extra breathing room between them */
 .container > .card.my-2 {
   margin-top: 1.85rem !important;
   margin-bottom: 1.85rem !important;
+}
+
+.container > .card.my-2:first-child {
+  margin-top: 0 !important;
 }
 
 /* Headings that introduce a section on those pages need space above too */

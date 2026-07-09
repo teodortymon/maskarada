@@ -1,0 +1,229 @@
+// Play card (Teraz + Spektakle): title, headline, details link and mini-ticket
+// showtimes. The ticket anatomy (stub, perforation, block tints, action pills)
+// mirrors the Kalendarz tickets in t/repertuar.md (ksf-*) so the two read as
+// one design system.
+
+.pcard {
+  .card-body {
+    padding: 0.9rem 1rem 0.85rem;
+  }
+
+  .pc-title {
+    font-family: YoungSerif, Georgia, serif;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    margin: 0;
+    color: #380200;
+  }
+
+  .pc-meta {
+    font-size: 0.82rem;
+    color: #8a6f6d;
+    margin: 0.1rem 0 0.2rem;
+  }
+
+  .pc-headline {
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: #5d4442;
+    margin: 0.25rem 0 0.3rem;
+  }
+}
+
+// Quiet text affordance for the play-details modal — same shape as the
+// Kalendarz "więcej →". Standalone class so content cards can reuse it.
+.pc-details {
+  display: inline-block;
+  border: 0;
+  background: none;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #e07b78;
+  cursor: pointer;
+  margin-bottom: 0.6rem;
+
+  &:hover {
+    color: #9a6265;
+  }
+}
+
+// Mini-ticket: one showtime. Time block behind a perforation, date + action
+// in the body. Same measurements as .ksf-stub in the Kalendarz.
+.pc-ticket {
+  --timew: 4.6rem;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  background: #fffdfc;
+  border: 1px solid rgba(56, 2, 0, 0.09);
+  border-radius: 0.75rem;
+  margin-bottom: 0.55rem;
+  box-shadow: 0 1px 3px rgba(56, 2, 0, 0.05);
+  overflow: hidden;
+
+  // punched notches; background matches the card body they sit on
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--timew) - 7px);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #faf3f3;
+    border: 1px solid rgba(56, 2, 0, 0.09);
+    z-index: 2;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    bottom: -8px;
+  }
+
+  .pc-block {
+    width: var(--timew);
+    flex: 0 0 var(--timew);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem 0.25rem;
+    border-right: 2px dashed rgba(56, 2, 0, 0.18);
+    background: rgba(224, 123, 120, 0.1);
+  }
+
+  &[data-event-type="weekday"] .pc-block {
+    background: rgba(91, 115, 149, 0.09);
+  }
+
+  .pc-time {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.08rem;
+    color: #380200;
+    font-variant-numeric: tabular-nums;
+  }
+
+  // The ticket is a size container: its body lays out by the TICKET's own
+  // width, not the viewport — a card can be narrow on a wide desktop grid.
+  container-type: inline-size;
+
+  // Body grid. Base (and old-browser fallback) is the stacked narrow layout:
+  // date row, optional caption row, action pill right-aligned on its own row.
+  .pc-tbody {
+    flex: 1;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    gap: 0.15rem 0.8rem;
+    padding: 0.5rem 0.85rem;
+
+    // Markdown pages wrap the pill/caption in bare <p> elements which would
+    // otherwise become anonymous grid items (the repo's markdown-<p> gotcha).
+    // display:contents dissolves them so the real children hit the grid.
+    > p {
+      display: contents;
+    }
+  }
+
+  .pc-when {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #380200;
+  }
+
+  .pc-groups-note {
+    font-size: 0.72rem;
+    line-height: 1.35;
+    color: rgba(154, 98, 101, 0.9);
+  }
+
+  .pc-buy,
+  .pc-tel,
+  .pc-soon {
+    justify-self: end;
+  }
+
+  .pc-soon {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #9a6265;
+  }
+}
+
+// Wide tickets (the pill and the text can share a row): 2-col grid, action
+// column spans both rows and centers vertically, so the date never floats to
+// the top and the group caption tucks directly under it.
+@container (min-width: 431px) {
+  .pc-tbody {
+    grid-template-columns: minmax(0, 1fr) auto;
+    row-gap: 0.05rem;
+  }
+
+  .pc-when,
+  .pc-groups-note {
+    grid-column: 1;
+  }
+
+  .pc-buy,
+  .pc-tel,
+  .pc-soon {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+}
+
+// Action pills — same skin as .ksf-buy / .ksf-tel in the Kalendarz.
+// inline-flex + line-height 1 centers the label against the emoji's taller
+// glyph box; the emoji trails the text in both pills ("Kup bilet 🎫",
+// "Zadzwoń … ☎") so they balance the same way.
+.pc-buy,
+.pc-tel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.pc-buy {
+  background: #e07b78;
+  color: #fff;
+
+  &:hover {
+    background: #9a6265;
+    color: #fff;
+  }
+}
+
+.pc-tel {
+  background: rgba(91, 115, 149, 0.13);
+  color: #33517e;
+
+  &:hover {
+    background: rgba(91, 115, 149, 0.25);
+    color: #33517e;
+  }
+}
+
+@media (max-width: 700px) {
+  .pc-ticket {
+    --timew: 4rem;
+
+    .pc-tbody {
+      padding: 0.5rem 0.7rem;
+    }
+  }
+}
+

@@ -68,6 +68,18 @@
       position: sticky;
       top: 0;
       z-index: 1030;
+      transition: transform 0.25s ease;
+    }
+
+    /* Auto-hide on scroll down (class toggled by the script below) */
+    .site-header.hdr-hide {
+      transform: translateY(-105%);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .site-header {
+        transition: none;
+      }
     }
 
     .site-header .bar {
@@ -136,6 +148,9 @@
         align-items: center;
         padding-top: 0.6rem;
         padding-bottom: 0.55rem;
+        /* let the nav run edge to edge */
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
       }
 
       .brand img {
@@ -144,11 +159,15 @@
 
       .site-header .site-nav {
         justify-content: center;
+        width: 100%;
+        gap: 0;
       }
 
       .site-header a.nav-link {
-        font-size: 1.08rem;
-        padding: 0.18rem 0.4rem;
+        /* 20% bigger than the old 1.08rem on typical phones (1.3rem), easing
+           down just enough on the narrowest screens to keep the nav at 2 rows */
+        font-size: clamp(1.1rem, 5.2vw, 1.3rem);
+        padding: 0.18rem 0.26rem;
       }
     }
   </style>
@@ -174,6 +193,36 @@
     </div>
     <div class="bunting"></div>
   </header>
+  <script>
+    // Auto-hiding site header: hide on scroll down, reveal on scroll up.
+    // Also maintains --hdr-h (visible header height) for sticky elements
+    // below the header (e.g. the Kalendarz filter bar).
+    (function () {
+      var hdr = document.querySelector(".site-header");
+      if (!hdr) return;
+      var hdrHidden = false;
+      function setHdrVar() {
+        var h = hdrHidden ? 0 : hdr.getBoundingClientRect().height;
+        document.documentElement.style.setProperty("--hdr-h", h + "px");
+      }
+      setHdrVar();
+      var lastY = window.scrollY || 0;
+      window.addEventListener("scroll", function () {
+        var y = window.scrollY || 0;
+        if (y > lastY + 6 && y > 180 && !hdrHidden) {
+          hdrHidden = true;
+          hdr.classList.add("hdr-hide");
+          setHdrVar();
+        } else if ((y < lastY - 6 || y < 120) && hdrHidden) {
+          hdrHidden = false;
+          hdr.classList.remove("hdr-hide");
+          setHdrVar();
+        }
+        lastY = y;
+      }, { passive: true });
+      window.addEventListener("resize", setHdrVar, { passive: true });
+    })();
+  </script>
 
   <!-- <main class="container"> -->
 

@@ -5,9 +5,7 @@ templateEngineOverride: liquid
 <style>
   /* ===== Kalendarz — ticket-stub schedule ===== */
   html { scroll-behavior: smooth; }
-  .site-header { transition: transform 0.25s ease; }
-  .site-header.ksf-hide { transform: translateY(-105%); }
-  .ksf-head { text-align: center; margin: 1rem 0 0.75rem; }
+  .ksf-head { text-align: center; margin: 0 0 0.75rem; }
   .ksf-head h2 { font-family: YoungSerif, serif; color: #380200; margin: 0; }
   .ksf-sub { font-size: 0.8rem; color: #9a6265; margin: 0.3rem 0 0; }
   .num { font-family: Montserrat, sans-serif; font-weight: 600; font-size: 0.94em; }
@@ -21,8 +19,9 @@ templateEngineOverride: liquid
     border: 1px solid rgba(56, 2, 0, 0.08);
     border-radius: 0.75rem;
     padding: 0.35rem 0.6rem;
-    max-width: 46rem;
-    margin: 0 auto 1.25rem;
+    /* full container width — aligned with the Kalendarz title; only the
+       day sections below (.ksf-month-block) stay in the narrow column */
+    margin: 0 0 1.25rem;
   }
   /* Narrower reading column on desktop — buttons sit closer to titles */
   .ksf-month-block { max-width: 46rem; margin: 0 auto; }
@@ -205,12 +204,15 @@ templateEngineOverride: liquid
   }
   .ksf-groups-note { font-size: 0.78rem; color: #9a6265; text-align: right; }
   .ksf-buy {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    line-height: 1;
     background: #e07b78;
     color: #fff;
     font-weight: 600;
     font-size: 0.85rem;
-    padding: 0.4rem 0.9rem;
+    padding: 0.45rem 0.9rem;
     border-radius: 999px;
     text-decoration: none;
     white-space: nowrap;
@@ -242,7 +244,6 @@ templateEngineOverride: liquid
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .site-header { transition: none; }
   }
 </style>
 <div class="container container--tight">
@@ -376,7 +377,7 @@ templateEngineOverride: liquid
                       {% endif %}
                     {% else %}
                       <span class="ksf-groups-note">Zapraszamy grupy zorganizowane do rezerwacji tel.</span>
-                      <a href="tel:501-027-278" class="ksf-tel">☎ Zadzwoń 501 027 278</a>
+                      <a href="tel:501-027-278" class="ksf-tel">Zadzwoń 501 027 278 ☎</a>
                     {% endif %}
                   </span>
                 </div>
@@ -431,32 +432,7 @@ templateEngineOverride: liquid
       r.el.addEventListener('change', function () { if (this.checked) applyFilter(r.type); });
     });
     applyFilter('all');
-
-    // Auto-hiding site header: hide on scroll down, reveal on scroll up.
-    var hdr = document.querySelector('.site-header');
-    var hdrHidden = false;
-    function setHdrVar() {
-      var h = (!hdr || hdrHidden) ? 0 : hdr.getBoundingClientRect().height;
-      document.documentElement.style.setProperty('--hdr-h', h + 'px');
-    }
-    setHdrVar();
-    var lastY = window.scrollY || 0;
-    window.addEventListener('scroll', function () {
-      var y = window.scrollY || 0;
-      if (hdr) {
-        if (y > lastY + 6 && y > 180 && !hdrHidden) {
-          hdrHidden = true;
-          hdr.classList.add('ksf-hide');
-          setHdrVar();
-        } else if ((y < lastY - 6 || y < 120) && hdrHidden) {
-          hdrHidden = false;
-          hdr.classList.remove('ksf-hide');
-          setHdrVar();
-        }
-      }
-      lastY = y;
-    }, { passive: true });
-    window.addEventListener('resize', setHdrVar, { passive: true });
+    // Header auto-hide + --hdr-h upkeep moved to _includes/header_t.html (site-wide).
   });
 </script>
 
