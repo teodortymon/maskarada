@@ -232,23 +232,28 @@ layout: t
       </nav>
     </div>
     <div class="row">
-      <div class="col-sm">
+      <div class="col-sm-6">
         <div class="card my-2">
-          <div class="card-header d-flex justify-content-between align-items-center">
-            <span>Piknik Archiwalny</span>
-            <span class="badge text-bg-primary">19 czerwca 2026</span>
+          <div class="card-header">
+            <span>Piknik Archiwalny — 19 czerwca 2026</span>
           </div>
           <div class="card-body">
             <p>Na
               <a href="https://archiwum.pan.pl/index.php?option=com_content&view=article&id=767:juz-za-miesiac-xvi-warszawski-piknik-archiwalny&catid=9&Itemid=145" target="_blank" rel="noopener noreferrer">Pikniku Archiwalnym</a>
-              na naszej scenie w Pałacu Staszicu wystawiliśmy nową sztukę razem o Linie Bögli, szwajcarskiej guwernantce, która podróżowała po świecie w XIX wieku.</p>
-            <button
-              type="button"
-              class="pc-details"
-              data-bs-toggle="modal"
-              data-bs-target="#lina_bogli">
-              Szczegóły spektaklu →
-            </button>
+              na naszej scenie w Pałacu Staszicu wystawiliśmy
+              <a href="#lina_bogli" data-bs-toggle="modal" data-bs-target="#lina_bogli">nową sztukę o Linie Bögli</a>, szwajcarskiej guwernantce, która podróżowała po świecie w XIX wieku.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card my-2">
+          <div class="card-header">
+            <span>Noc Muzeów w Pałacu Staszica — 16 maja 2026</span>
+          </div>
+          <div class="card-body">
+            <p>Teatr i Archiwum zaprasza w sobotę o godz. 20:30 na spektakl
+              <a href="#tajemnice_teatru" data-bs-toggle="modal" data-bs-target="#tajemnice_teatru">Tajemnice Teatru</a>
+              w Sali Staszica. Zdradzimy, jak powstaje spektakl, i poprosimy o pomoc najmłodszych przy tworzeniu nowego przedstawienia.</p>
           </div>
         </div>
       </div>
