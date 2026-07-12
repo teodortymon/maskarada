@@ -116,14 +116,19 @@ worktree) already has running:
    the page, and confirm the change looks right. Watch the dev server output and
    the browser console for build or runtime errors.
 4. **Leave the server running** while you iterate; live reload will pick up edits.
-   Stop the background server when the work is done or before running `/finish`.
+   **Keep it running when you hand back to the user** — they'll usually want to
+   test the change in the browser themselves, so don't stop the server just
+   because your own verification is done. Only stop it if the user asks, or right
+   before running `/finish`. Tell them the URL/port it's on so they can open it.
+   If the worktree's `mise.toml` isn't trusted yet (`mise` errors with "Config
+   files … are not trusted"), run `mise trust` in `$WT` once, then start dev.
 
 ## Finish up
 
 Tell the user: the branch + worktree that were created, which env files were
-copied, and the dev URL/port the server came up on. Remind them the change lives
-in `$WT` and that `/finish` will merge `v2-<type>/<name>` back into `v2` when
-they're done.
+copied, and the dev URL/port the server came up on — and that the server is
+**still running** for them to test. Remind them the change lives in `$WT` and
+that `/finish` will merge `v2-<type>/<name>` back into `v2` when they're done.
 
 Then notify:
 `terminal-notifier -title "Claude Code" -message "/start: v2-<type>/<name> worktree ready, dev on :<port>"`
