@@ -54,6 +54,9 @@ __pycache__/
 # Generated CSS (compiled from scss/)
 css/styles.css
 css/styles.css.map
+
+# Dev-server PID (written by `mise run dev`, read by `mise run dev-stop`)
+.dev-server.pid
 /tina/__generated__/
 
 
