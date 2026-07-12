@@ -35,6 +35,11 @@ description = "Serve with live reload: Eleventy dev server + SCSS watch + HTML/L
 depends = ["deps"]
 run = "npm run dev"
 
+[tasks.dev-pinned]
+description = "Like dev but on a pinned port (default 8790; override: PORT=8791 mise run dev-pinned) — avoids 808x port races when several worktree sessions serve at once"
+depends = ["deps"]
+run = 'npm run css && npx npm-run-all --parallel watch "serve -- --port=${PORT:-8790}"'
+
 [tasks.format]
 description = "Reformat HTML/Liquid templates (_layouts, _includes, index.html) with Prettier"
 depends = ["deps"]

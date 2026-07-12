@@ -71,9 +71,11 @@
       transition: transform 0.25s ease;
     }
 
-    /* Auto-hide on scroll down (class toggled by the script below) */
+    /* Auto-hide on scroll down (class toggled by the script below).
+       The extra 64px covers the logo sign hanging below the header
+       (plus its drop shadow), so nothing stays peeking out. */
     .site-header.hdr-hide {
-      transform: translateY(-105%);
+      transform: translateY(calc(-100% - 64px));
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -140,6 +142,34 @@
       background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="56" height="15"><path d="M2 0 H26 L14 13 Z" fill="%23e0736f"/><path d="M30 0 H54 L42 13 Z" fill="%23f2c94c"/></svg>');
       background-repeat: repeat-x;
       background-size: 56px 15px;
+    }
+
+    /* Desktop: the logo is a bigger sign hanging over the bunting garland,
+       swaying gently; the bar itself keeps its compact height. */
+    @media (min-width: 768px) {
+      .brand {
+        position: relative;
+        z-index: 2;
+      }
+
+      .brand img {
+        height: 108px;
+        margin-bottom: -42px;
+        filter: drop-shadow(0 4px 3px rgba(74, 125, 165, 0.3));
+        transform-origin: 50% 0;
+        animation: logo-sway 5s ease-in-out infinite;
+      }
+    }
+
+    @keyframes logo-sway {
+      0%, 100% { transform: rotate(-1.6deg); }
+      50% { transform: rotate(1.6deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .brand img {
+        animation: none;
+      }
     }
 
     @media (max-width: 767px) {
