@@ -70,12 +70,13 @@
     }
   </style>
 
-  <!-- Facebook - najnowsze posty -->
+  <!-- Znajdź nas w sieci: Instagram + Facebook -->
   <style>
     /* Let the FB plugin adapt to the full card width. Facebook caps the
        plugin at 500px, so the card hugs that limit and centers on desktop
        instead of stretching across the page with empty wings. */
-    .fb-card {
+    .fb-card,
+    .ig-card {
       max-width: 534px; /* 500px plugin + card-body padding + border */
       margin-left: auto;
       margin-right: auto;
@@ -87,28 +88,151 @@
       justify-content: center;
       width: 100%;
     }
+
+    /* Instagram profile card — a cream card matching the Facebook one, laid out
+       like an IG profile header. No feed widget (Meta retired the profile
+       plugin) and no third-party scripts; the Instagram flavour is limited to
+       the gradient avatar ring + follow button so it sits in the site palette. */
+    .ig-card .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 16px;
+      padding: 32px 28px;
+      color: #380200;
+    }
+
+    .ig-avatar-ring {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      padding: 5px;
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    .ig-avatar-ring img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #faf3f3;
+      background: #faf3f3;
+      display: block;
+    }
+
+    .ig-username {
+      font-family: YoungSerif, serif;
+      font-size: 1.5rem;
+      margin: 0;
+      color: #380200;
+    }
+
+    .ig-username a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .ig-username a:hover,
+    .ig-username a:focus {
+      color: #f3015e;
+      text-decoration: underline;
+    }
+
+    .ig-stats {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .ig-stat {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .ig-stat .num {
+      font-family: YoungSerif, serif;
+      font-size: 1.3rem;
+      color: #380200;
+    }
+
+    .ig-stat .lbl {
+      font-size: 0.82rem;
+      color: #9a6265;
+    }
+
+    .ig-follow-btn {
+      display: inline-block;
+      margin-top: 4px;
+      background: linear-gradient(45deg, #f09433 0%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      color: #fff;
+      font-family: YoungSerif, serif;
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 11px 30px;
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(220, 39, 67, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .ig-follow-btn:hover,
+    .ig-follow-btn:focus {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(220, 39, 67, 0.45);
+    }
+
   </style>
   <div class="container">
     <nav class="navbar">
-      <div class="container-fluid">
-        <h2>Znajdź nas na Facebooku</h2>
+      <div class="container-fluid justify-content-center">
+        <h2>Znajdź nas na Instagramie i Facebooku</h2>
       </div>
     </nav>
-    <div class="card my-2 fb-card">
-      <div class="card-body">
-        <div class="fb-page"
-             data-href="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267"
-             data-tabs="timeline"
-             data-width="500"
-             data-height="600"
-             data-small-header="false"
-             data-adapt-container-width="true"
-             data-hide-cover="false"
-             data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267"
-                      class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267">Teatr Maskarada</a>
-          </blockquote>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-6">
+        <div class="card my-2 ig-card">
+          <div class="card-body">
+            <div class="ig-avatar-ring">
+              <img src="lay/img/ig-avatar.png"
+                   alt="Zdjęcie profilowe Teatru Maskarada na Instagramie"
+                   width="132" height="132"
+                   onerror="this.onerror=null;this.src='lay/img/logo2.png'">
+            </div>
+            <p class="ig-username"><a href="https://www.instagram.com/teatr.maskarada/" target="_blank" rel="noopener">teatr.maskarada</a></p>
+            <div class="ig-stats">
+              <div class="ig-stat"><span class="num">287</span><span class="lbl">postów</span></div>
+              <div class="ig-stat"><span class="num">141</span><span class="lbl">obserwujących</span></div>
+              <div class="ig-stat"><span class="num">4</span><span class="lbl">obserwowani</span></div>
+            </div>
+            <a class="ig-follow-btn"
+               href="https://www.instagram.com/teatr.maskarada/"
+               target="_blank"
+               rel="noopener">Obserwuj na Instagramie</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card my-2 fb-card">
+          <div class="card-body">
+            <div class="fb-page"
+                 data-href="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267"
+                 data-tabs="timeline"
+                 data-width="500"
+                 data-height="600"
+                 data-small-header="false"
+                 data-adapt-container-width="true"
+                 data-hide-cover="false"
+                 data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267"
+                          class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267">Teatr Maskarada</a>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </div>
