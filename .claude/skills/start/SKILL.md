@@ -122,6 +122,11 @@ worktree) already has running:
    before running `/finish`. Tell them the URL/port it's on so they can open it.
    If the worktree's `mise.toml` isn't trusted yet (`mise` errors with "Config
    files … are not trusted"), run `mise trust` in `$WT` once, then start dev.
+   - **When you do stop it, stop only THIS worktree's server:** run `mise run
+     dev-stop` from inside `$WT` (or `TaskStop` on the background task id you
+     started it with). **Never** use a broad `pkill -f eleventy`/`sass`/`mise run
+     dev` — that kills every worktree's dev server, not just this one. `/finish`
+     Step 0 does exactly this before removing the worktree.
 
 ## Finish up
 

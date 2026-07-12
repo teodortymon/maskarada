@@ -30,10 +30,9 @@ description = "Build the static site into _site/ (SCSS + Eleventy)"
 depends = ["deps"]
 run = "npm run build"
 
-[tasks.dev]
-description = "Serve with live reload: Eleventy dev server + SCSS watch + HTML/Liquid format-on-save (no CMS)"
-depends = ["deps"]
-run = "npm run dev"
+# `dev` and `dev-stop` are file tasks under `mise-tasks/` (multi-line logic):
+# `dev` records a worktree-local .dev-server.pid so `dev-stop` can stop only THIS
+# worktree's server instead of every worktree's via a broad `pkill`.
 
 [tasks.format]
 description = "Reformat HTML/Liquid templates (_layouts, _includes, index.html) with Prettier"

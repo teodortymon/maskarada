@@ -31,7 +31,8 @@ Run `git branch --show-current` and branch on the result:
 ## Direct-on-`v2` mode
 
 Use this when work was committed (or is still pending) directly on `v2` rather
-than in a feature worktree.
+than in a feature worktree. (No dev server to stop here — the `v2` worktree isn't
+being removed; if you want to stop a server you started, `mise run dev-stop`.)
 
 1. **Locate the `v2` worktree.** You're likely already in it; set
    `V2_WT="$(git rev-parse --show-toplevel)"`.
@@ -60,6 +61,28 @@ than in a feature worktree.
 ---
 
 ## Feature-branch mode
+
+## Step 0 — stop this worktree's dev server first
+
+**Removing the worktree doesn't stop its dev server.** `mise run dev` is a running
+process (Eleventy + SCSS watch + format-on-save); deleting the worktree directory
+in step 4 leaves it orphaned and still **holding its port**, so the next `/start`
+bumps to 8081, 8082, … and stale servers pile up. Stop it *before* the merge:
+
+```
+mise run dev-stop
+```
+
+Run it from inside this worktree (`$FEATURE_WT`). `dev-stop` is scoped to this
+worktree via its local `.dev-server.pid`, so it stops **only** this worktree's
+server and leaves dev servers in other worktrees running. If no server is
+running here it's a safe no-op.
+
+- **Never** stop it with `pkill -f eleventy`, `pkill -f sass`, `pkill -f "mise run
+  dev"`, or any name-pattern `pkill`/`killall` — those match **every** worktree's
+  processes and will kill unrelated dev servers the user has running elsewhere.
+- If you started the server in this session, `TaskStop <task-id>` on that
+  background task is equally scoped and also fine.
 
 ## Preconditions — check before doing anything
 

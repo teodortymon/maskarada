@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#MISE description="Serve with live reload: Eleventy dev server + SCSS watch + HTML/Liquid format-on-save (no CMS). Writes .dev-server.pid so `mise run dev-stop` can stop only THIS worktree's server."
+#MISE depends=["deps"]
+#
+# The PID file lets `mise run dev-stop` (or `/finish`) kill ONLY this worktree's
+# server instead of a broad `pkill -f eleventy`, which would take down every
+# worktree's dev server. $$ is this task shell's PID; `npm run dev` and all its
+# descendants (npm-run-all -> eleventy/nodemon/onchange) inherit its process
+# group, so that one PID identifies the whole tree.
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+echo $$ > .dev-server.pid
+trap 'rm -f .dev-server.pid' EXIT INT TERM
+
+npm run dev

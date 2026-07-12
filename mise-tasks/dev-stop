@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#MISE description="Stop the `mise run dev` server for THIS worktree only (reads .dev-server.pid, kills its process group). Never touches other worktrees' dev servers."
+#MISE alias="dev-kill"
+#
+# Scoped by the worktree-local .dev-server.pid that `mise run dev` writes: a PID
+# file inside this worktree can only ever point at this worktree's server, so
+# other worktrees' servers are provably untouched. Killing the whole process
+# GROUP takes down eleventy + sass/nodemon + onchange together.
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+pidfile=.dev-server.pid
+if [[ ! -f $pidfile ]]; then
+  echo "No .dev-server.pid here — no dev server to stop for this worktree."
+  exit 0
+fi
+
+pid=$(cat "$pidfile")
+pgid=$(ps -o pgid= -p "$pid" 2>/dev/null | tr -d ' ' || true)
+
+if [[ -n ${pgid:-} ]]; then
+  kill -TERM "-$pgid" 2>/dev/null || true
+  echo "Stopped dev server (pid $pid / pgid $pgid) in $(pwd)."
+else
+  echo "Recorded pid $pid is not running; cleaning up stale pidfile."
+fi
+
+rm -f "$pidfile"
