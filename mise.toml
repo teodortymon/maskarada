@@ -34,6 +34,11 @@ run = "npm run build"
 # `dev` records a worktree-local .dev-server.pid so `dev-stop` can stop only THIS
 # worktree's server instead of every worktree's via a broad `pkill`.
 
+[tasks.dev-pinned]
+description = "Like dev but on a pinned port (default 8790; override: PORT=8791 mise run dev-pinned) — avoids 808x port races when several worktree sessions serve at once"
+depends = ["deps"]
+run = 'npm run css && npx npm-run-all --parallel watch "serve -- --port=${PORT:-8790}"'
+
 [tasks.format]
 description = "Reformat HTML/Liquid templates (_layouts, _includes, index.html) with Prettier"
 depends = ["deps"]
