@@ -125,6 +125,10 @@ templateEngineOverride: liquid
     height: 1px;
     background: rgba(56, 2, 0, 0.16);
   }
+  /* #41: date heading reads "19 lipca — sobota" (day + genitive month + weekday) */
+  .ksf-day-title .num { font-family: Montserrat, sans-serif; font-variant-numeric: tabular-nums; }
+  .ksf-day-title .ksf-day-sep { color: rgba(56, 2, 0, 0.38); margin: 0 0.08em; }
+  .ksf-day-title .ksf-day-dow { color: rgba(56, 2, 0, 0.6); }
 
   /* Ticket stub — perforated time block */
   .ksf-stub {
@@ -252,6 +256,7 @@ templateEngineOverride: liquid
   </div>
   {% assign current_month_num = 'now' | date: "%-m" | minus: 1 %}
   {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+  {% assign mon_gen = "stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia" | split: ',' %}
   {% assign miesiace_rest = all_miesiace | slice: current_month_num, 12 %}
   {% assign miesiace_start = all_miesiace | slice: 0, current_month_num %}
   {% assign miesiace = miesiace_rest | concat: miesiace_start %}
@@ -334,6 +339,7 @@ templateEngineOverride: liquid
             {% if event_timestamp >= now_timestamp %}
               {% assign day_key = spektakl.data | date: "%Y%m%d" %}
               {% assign dw = spektakl.data | date: "%w" | plus: 0 %}
+              {% assign mi = spektakl.data | date: "%-m" | minus: 1 %}
               {% if dw == 0 or dw == 6 %}
                 {% assign event_type = "weekend" %}
               {% else %}
@@ -345,7 +351,7 @@ templateEngineOverride: liquid
                 {% endif %}
                 {% assign prev_day = day_key %}
                 <section class="ksf-day-sec" id="d{{ day_key }}" data-event-type="{{ event_type }}">
-                  <h3 class="ksf-day-title"><span class="num">{{ spektakl.data | date: "%-d" }}</span> {{ month_data.title }} {{ dni_tygodnia.dni[dw] | capitalize }}</h3>
+                  <h3 class="ksf-day-title"><span class="num">{{ spektakl.data | date: "%-d" }}</span> {{ mon_gen[mi] }} <span class="ksf-day-sep">—</span> <span class="ksf-day-dow">{{ dni_tygodnia.dni[dw] }}</span></h3>
               {% endif %}
               {% assign matched_play = nil %}
               {% for play in collections.s2 %}
