@@ -279,6 +279,10 @@ templateEngineOverride: liquid
       {% if month_data.repertuar.size > 0 %}
         {% assign month_events = month_data.repertuar | sort: 'data' %}
         {% capture group_chips %}
+          {%- comment -%} When today has no show, anchor the "Dziś" chip as the first day AFTER the current month's label (not floating before the month). {%- endcomment -%}
+          {%- if miesiac == all_miesiace[current_month_num] and has_today == false -%}
+            <span class="ksf-rail-day is-today ksf-rail-today" title="Dzisiaj"><span class="ksf-rail-dow">Dziś</span><span class="ksf-rail-num">{{ 'now' | date: "%-d" }}</span></span>
+          {%- endif -%}
           {% assign prev_day = "" %}
           {% for spektakl in month_events %}
             {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
@@ -318,9 +322,6 @@ templateEngineOverride: liquid
         <label for="ksfradio3">Dla grup</label>
       </div>
       <div class="ksf-rail">
-        {%- unless has_today -%}
-          <span class="ksf-rail-day is-today ksf-rail-today" title="Dzisiaj"><span class="ksf-rail-dow">Dziś</span><span class="ksf-rail-num">{{ 'now' | date: "%-d" }}</span></span>
-        {%- endunless -%}
         {{ rail }}
       </div>
     </div>
