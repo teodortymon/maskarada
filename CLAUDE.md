@@ -68,3 +68,25 @@ The `/finish` local skill wraps up a feature branch: it merges the current
 `v2-<type>/<name>` branch up into `v2`, pushes `v2`, then deletes the feature
 branch and removes its worktree. Run it from inside the feature worktree once the
 work is committed and reviewed.
+
+## Clearing the backlog: `/backlog`
+
+The `/backlog` local skill works the **open GitHub issue backlog** end to end:
+it fetches every open issue and, per issue not already in flight, creates a
+`v2-<type>/<slug>-<N>` worktree off `v2` (the `/start` mechanics), makes the
+change, and opens a **draft PR into `v2`** — you review the PR queue and `/finish`
+the ones you accept. It never auto-merges, and it's idempotent (skips issues that
+already have a matching branch or open PR).
+
+Two modes:
+
+- **Interactive** (`/backlog`, or `/backlog 41,44` for specific issues) — opens
+  an IntelliJ window and a dev server per issue so you can inspect each change
+  live.
+- **Cron / unattended** (`/backlog --cron`) — headless: no IntelliJ, no dev
+  servers; build-check, push, open the draft PR, remove the worktree.
+
+For scheduling, point cron / launchd (or `/schedule`, `/loop`) at the
+**`backlog-cron`** mise task, which runs the skill headless. The `gh`/`git`/`mise`
+commands it needs are allowlisted in `.claude/settings.json` so unattended runs
+don't stall on permission prompts.
