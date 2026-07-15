@@ -243,9 +243,10 @@ layout: t
   </div>
 </div>
 
-{% comment %} Modals for play details {% endcomment %}
+{% comment %} Modals for play details — each lists the play's upcoming showtimes. {% endcomment %}
 {% for s in collections.s2 %}
-  {% render "spektakl_modal.html", s: s %}
+  {% assign modal_events = upcoming_events | where: "tytul", s.title %}
+  {% render "spektakl_modal.html", s: s, events: modal_events %}
 {% endfor %}
 
 <script>

@@ -104,6 +104,21 @@ layout: t
 </div>
 
 
+{% comment %} Each modal lists the same upcoming showtimes as the play card. {% endcomment %}
+{% assign modal_all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+{% assign modal_now = 'now' | date: "%s" | plus: 0 %}
 {% for s in collections.s2 %}
-  {% render "spektakl_modal.html", s: s %}
+  {% assign modal_events = "" | split: "" %}
+  {% for miesiac in modal_all_miesiace %}
+    {% if spektakle[miesiac].repertuar %}
+      {% for event in spektakle[miesiac].repertuar %}
+        {% assign ets = event.data | date: "%s" | plus: 0 %}
+        {% if event.tytul == s.title and ets >= modal_now %}
+          {% assign modal_events = modal_events | push: event %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% assign modal_events = modal_events | sort: 'data' %}
+  {% render "spektakl_modal.html", s: s, events: modal_events %}
 {% endfor %}
