@@ -78,6 +78,18 @@
 .pc-ticket {
   --timew: 4.6rem;
   position: relative;
+
+  // A buyable showtime: the "Kup bilet" link carries .stretched-link, so the
+  // whole stub is one click target for buying. Signal it and lift on hover.
+  &:has(.pc-buy.stretched-link) {
+    cursor: pointer;
+
+    &:hover {
+      border-color: rgba(224, 123, 120, 0.6);
+      box-shadow: 0 2px 8px rgba(56, 2, 0, 0.1);
+    }
+  }
+
   display: flex;
   align-items: stretch;
   background: #fffdfc;

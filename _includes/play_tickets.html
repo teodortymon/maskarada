@@ -29,7 +29,9 @@
         <span class="pc-soon">{{ event.link }}</span>
       {% elsif event_type == 'weekend' %}
         {% if event.link and event.link != '-' %}
-          <a href="{{ event.link }}" target="_blank" rel="noopener noreferrer" class="pc-buy">Kup bilet 🎫</a>
+          <a href="{{ event.link }}" target="_blank" rel="noopener noreferrer" class="pc-buy stretched-link"
+            >Kup bilet 🎫</a
+          >
         {% else %}
           <span class="pc-soon">Bilety online wkrótce</span>
         {% endif %}
