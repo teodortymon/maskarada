@@ -83,7 +83,7 @@ layout: t
 <div class="container">
   <nav class="navbar">
     <div class="container-fluid">
-      <h2>W tym tygodniu ✨</h2>
+      <h2>Najbliższe spektakle ✨</h2>
       <!-- TEMPORARILY DISABLED: audience filter (Wszystkie / Dla rodzin / Dla szkół…).
            Uncomment to restore. The filter JS below is null-safe when this is absent.
       <div
@@ -119,93 +119,43 @@ layout: t
   </nav>
 
   {% comment %}
-  Get THIS WEEK's events only (Monday through Sunday)
+    Najbliższe spektakle: the next ~3 distinct plays across ALL months
+    (not just this week), ordered by their soonest upcoming showtime.
   {% endcomment %}
-  {% assign current_month_num = 'now' | date: "%-m" | minus: 1 %}
   {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
-  {% assign current_month = all_miesiace[current_month_num] %}
-
-  {% comment %} Calculate this week's Monday and next Monday {% endcomment %}
-  {% assign today_day = 'now' | date: "%-d" | plus: 0 %}
-  {% assign today_month = 'now' | date: "%-m" | plus: 0 %}
-  {% assign today_year = 'now' | date: "%Y" | plus: 0 %}
-  {% assign today_dow = 'now' | date: "%w" | plus: 0 %}
-  {% assign current_hour = 'now' | date: "%-H" | plus: 0 %}
-
-  {% comment %} If it's after 17:00, shift to next day for week calculation {% endcomment %}
-  {% if current_hour >= 17 %}
-    {% assign today_day = today_day | plus: 1 %}
-    {% assign today_dow = today_dow | plus: 1 %}
-    {% if today_dow > 7 %}
-      {% assign today_dow = 1 %}
-    {% endif %}
-  {% endif %}
-
-  {% comment %} Convert Sunday=0 to Sunday=7 for easier math {% endcomment %}
-  {% if today_dow == 0 %}
-    {% assign today_dow = 7 %}
-  {% endif %}
-
-  {% comment %} Calculate days since Monday (0=Monday, 6=Sunday) {% endcomment %}
-  {% assign days_since_monday = today_dow | minus: 1 %}
-  {% assign monday_day = today_day | minus: days_since_monday %}
-  {% assign days_until_next_monday = 7 | minus: days_since_monday %}
-  {% assign next_monday_day = today_day | plus: days_until_next_monday %}
-
-  {% comment %} Get all events from current month, filter for this week {% endcomment %}
-  {% assign this_week_events = "" | split: "" %}
   {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
 
-  {% if spektakle[current_month].repertuar %}
-    {% assign sorted_events = spektakle[current_month].repertuar | sort: 'data' %}
-    {% for spektakl in sorted_events %}
-      {% assign event_day = spektakl.data | date: "%-d" | plus: 0 %}
-      {% assign event_month = spektakl.data | date: "%-m" | plus: 0 %}
-      {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
-
-      {% comment %} Check if event is in this week (same month, between Monday and next Monday) and in the future {% endcomment %}
-      {% if event_month == today_month and event_timestamp >= now_timestamp %}
-        {% if event_day >= monday_day and event_day < next_monday_day %}
-          {% assign this_week_events = this_week_events | push: spektakl %}
+  {% comment %} Collect every upcoming event across all months, then sort by date {% endcomment %}
+  {% assign upcoming_events = "" | split: "" %}
+  {% for miesiac in all_miesiace %}
+    {% if spektakle[miesiac].repertuar %}
+      {% for event in spektakle[miesiac].repertuar %}
+        {% assign event_timestamp = event.data | date: "%s" | plus: 0 %}
+        {% if event_timestamp >= now_timestamp %}
+          {% assign upcoming_events = upcoming_events | push: event %}
         {% endif %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% assign upcoming_events = upcoming_events | sort: 'data' %}
 
-  {% comment %} Group events by title {% endcomment %}
-  {% assign unique_titles = "" | split: "" %}
-  {% for event in this_week_events %}
-    {% unless unique_titles contains event.tytul %}
-      {% assign unique_titles = unique_titles | push: event.tytul %}
+  {% comment %} Pick the next 3 distinct play titles, in chronological order {% endcomment %}
+  {% assign next_titles = "" | split: "" %}
+  {% for event in upcoming_events %}
+    {% unless next_titles contains event.tytul %}
+      {% if next_titles.size < 3 %}
+        {% assign next_titles = next_titles | push: event.tytul %}
+      {% endif %}
     {% endunless %}
   {% endfor %}
 
-  <div class="row">
-    {% for tytul in unique_titles %}
-      {% comment %} Determine if this show has weekend or weekday events {% endcomment %}
-      {% assign play_events = this_week_events | where: "tytul", tytul | sort: 'data' %}
-      {% assign has_weekend = false %}
-      {% assign has_weekday = false %}
-      {% for event in play_events %}
-        {% assign dzien_tygodnia = event.data | date: "%w" %}
-        {% if dzien_tygodnia == '0' or dzien_tygodnia == '6' %}
-          {% assign has_weekend = true %}
-        {% else %}
-          {% assign has_weekday = true %}
-        {% endif %}
-      {% endfor %}
+  <div class="row justify-content-center">
+    {% for tytul in next_titles %}
+      <div class="col-12 col-md-6 col-lg-4">
+        {% comment %} This play's next few upcoming showtimes (already sorted) {% endcomment %}
+        {% assign play_events = upcoming_events | where: "tytul", tytul | slice: 0, 3 %}
 
-      {% comment %} Set event type for card {% endcomment %}
-      {% if has_weekend and has_weekday %}
-        {% assign card_type = "both" %}
-      {% elsif has_weekend %}
-        {% assign card_type = "weekend" %}
-      {% else %}
-        {% assign card_type = "weekday" %}
-      {% endif %}
-
-      <div class="col-sm" data-event-card="{{ card_type }}">
-        {% comment %} Look up the play in the s2 collection {% endcomment %}
+        {% comment %} Look up the play in the s2 collection for media/details {% endcomment %}
         {% assign play_video = nil %}
         {% for s in collections.s2 %}
           {% if s.title contains tytul or tytul contains s.title %}
@@ -217,14 +167,19 @@ layout: t
         {% render "play_card.html", title: tytul, s: play_video, events: play_events, show_meta: false, params: "color=white&playsinline=1&rel=0" %}
       </div>
     {% endfor %}
+  </div>
 
-    <div class="col-12">
-      <p id="filter-empty" class="text-center my-4" style="display: none;">
-        <i>Brak spektakli w wybranej kategorii w tym tygodniu. Wybierz <b>Wszystkie 💫</b> lub zajrzyj do <a href="repertuar.html">Kalendarza</a>.</i>
-      </p>
-    </div>
+  {% if next_titles.size == 0 %}
+    <p class="text-center my-4">
+      <i>Brak zaplanowanych spektakli. Zajrzyj do <a href="repertuar.html">Kalendarza</a>.</i>
+    </p>
+  {% endif %}
 
-    <div class="container">
+  <div class="text-center my-4">
+    <a href="repertuar.html" class="repertuar-cta">Cały repertuar →</a>
+  </div>
+
+  <div class="container">
       <nav class="navbar">
         <div class="container-fluid">
           <h2>Co nowego 🎉</h2>
@@ -258,8 +213,6 @@ layout: t
         </div>
       </div>
     </div>
-
-  </div>
 
   <div class="container">
     <nav class="navbar">
