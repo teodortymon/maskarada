@@ -41,15 +41,14 @@
               {%- endif %}
             </p>
             <div class="spektakl-desc">{{ s.content }}</div>
+            {% if events.size > 0 %}
+              <div class="spektakl-terminy mt-3">
+                <h6 class="mb-2 gallery-title">Najbliższe terminy</h6>
+                {% render 'play_tickets.html', events: events %}
+              </div>
+            {% endif %}
           </div>
         </div>
-
-        {% if events.size > 0 %}
-          <div class="spektakl-terminy mt-4">
-            <h6 class="mb-2 gallery-title">Najbliższe terminy</h6>
-            {% render 'play_tickets.html', events: events %}
-          </div>
-        {% endif %}
 
         {% if s.video %}
           <div class="ratio ratio-16x9 my-4 spektakl-video">
