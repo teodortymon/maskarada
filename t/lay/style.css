@@ -105,6 +105,27 @@ a.nav-link.active {
   color: #e0736f;
 }
 
+/* "Cały repertuar" call-to-action (homepage, under Najbliższe spektakle):
+   an outline pill in the site serif + coral that fills on hover. */
+.repertuar-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: YoungSerif, serif;
+  font-size: 1.15rem;
+  padding: 0.6rem 1.7rem;
+  border: 2px solid #e07b78;
+  border-radius: 999px;
+  color: #e07b78;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.repertuar-cta:hover {
+  background: #e07b78;
+  color: #fff;
+}
+
 /* In-page navbar band sits directly on the sky. The padding gives each section
    heading breathing room — extra above (to separate it from the previous
    section's cards) and a bit below (before its own content starts). */
