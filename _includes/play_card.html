@@ -27,7 +27,18 @@
       <p class="pc-headline">{{ s.headline }}</p>
     {% endif %}
     {% if s %}
-      <button type="button" class="pc-details" data-bs-toggle="modal" data-bs-target="#{{ s.id2 }}">
+      {% comment %}
+        .stretched-link turns the whole card into one click target for the
+        details modal. The media facade and the mini-tickets below opt back out
+        via z-index (see _play-card.scss) so the video and "Kup bilet" links
+        keep their own clicks.
+      {% endcomment %}
+      <button
+        type="button"
+        class="pc-details stretched-link"
+        data-bs-toggle="modal"
+        data-bs-target="#{{ s.id2 }}"
+      >
         Szczegóły spektaklu →
       </button>
     {% endif %}
