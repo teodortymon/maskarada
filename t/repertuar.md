@@ -257,7 +257,6 @@ templateEngineOverride: liquid
   {% assign miesiace = miesiace_rest | concat: miesiace_start %}
   {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
   {% assign wd_short = "Nd,Pn,Wt,Śr,Czw,Pt,Sob" | split: ',' %}
-  {% assign mon_gen = "stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia" | split: ',' %}
   {% assign today_key = 'now' | date: "%Y%m%d" %}
   {% comment %} Does today still have upcoming shows? (only the current month can) {% endcomment %}
   {% assign has_today = false %}
@@ -335,7 +334,6 @@ templateEngineOverride: liquid
             {% if event_timestamp >= now_timestamp %}
               {% assign day_key = spektakl.data | date: "%Y%m%d" %}
               {% assign dw = spektakl.data | date: "%w" | plus: 0 %}
-              {% assign mi = spektakl.data | date: "%-m" | minus: 1 %}
               {% if dw == 0 or dw == 6 %}
                 {% assign event_type = "weekend" %}
               {% else %}
@@ -347,7 +345,7 @@ templateEngineOverride: liquid
                 {% endif %}
                 {% assign prev_day = day_key %}
                 <section class="ksf-day-sec" id="d{{ day_key }}" data-event-type="{{ event_type }}">
-                  <h3 class="ksf-day-title">{{ dni_tygodnia.dni[dw] | capitalize }} <span class="num">{{ spektakl.data | date: "%-d" }}</span> {{ mon_gen[mi] }}</h3>
+                  <h3 class="ksf-day-title"><span class="num">{{ spektakl.data | date: "%-d" }}</span> {{ month_data.title }} {{ dni_tygodnia.dni[dw] | capitalize }}</h3>
               {% endif %}
               {% assign matched_play = nil %}
               {% for play in collections.s2 %}
