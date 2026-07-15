@@ -7,6 +7,25 @@ renders the Liquid templates (`_layouts/`, `_includes/`, `_s2/` plays,
 `_data/`). The v2 beta deploys to Cloudflare Pages. (Migrated off Jekyll — see
 `eleventy.config.js` for the collection, YAML/CSV data, and custom-filter setup.)
 
+## Every wrap-up message ends with URL + CHANGES
+
+Whenever you finish a piece of work and hand back to the user, end that message
+with these two labelled lines:
+
+```
+URL: http://localhost:<port>/<path>
+CHANGES: <one- or two-line summary of what changed>
+```
+
+- **URL** — the running dev-server address where the change can be seen (read the
+  real port from the server's own startup log; it auto-increments from 8080). If
+  several pages changed, link the most relevant one. If no server is running or
+  the change has no visible page (pure infra/tooling/docs), write `URL: n/a`.
+- **CHANGES** — a terse plain-language summary of what you actually changed
+  (files/behaviour), not a restatement of the request.
+
+This applies to every completion hand-off, including after `/finish`.
+
 ## Serving & commands go through mise
 
 `mise.toml` is the single source of truth for every build / run / serve command.
