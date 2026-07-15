@@ -4,6 +4,31 @@
 // one design system.
 
 .pcard {
+  // The whole card is one click target: .pc-details carries Bootstrap's
+  // .stretched-link, whose ::after (z-index 1) covers the card and fires the
+  // details modal. Only cards that actually have that link (s present) get the
+  // clickable affordance, so a bare card never lies about being tappable.
+  &:has(.stretched-link) {
+    cursor: pointer;
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+
+    &:hover,
+    &:focus-within {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(56, 2, 0, 0.12);
+    }
+  }
+
+  // Interactive regions opt back out of the stretched-link overlay: the media
+  // facade (YouTube play button) and each mini-ticket (Kup bilet / Zadzwoń)
+  // sit above it so their own clicks win; the rest of the card opens the modal.
+  .ratio,
+  .pc-ticket {
+    z-index: 2;
+  }
+
   .card-body {
     padding: 0.9rem 1rem 0.85rem;
   }
@@ -53,6 +78,18 @@
 .pc-ticket {
   --timew: 4.6rem;
   position: relative;
+
+  // A buyable showtime: the "Kup bilet" link carries .stretched-link, so the
+  // whole stub is one click target for buying. Signal it and lift on hover.
+  &:has(.pc-buy.stretched-link) {
+    cursor: pointer;
+
+    &:hover {
+      border-color: rgba(224, 123, 120, 0.6);
+      box-shadow: 0 2px 8px rgba(56, 2, 0, 0.1);
+    }
+  }
+
   display: flex;
   align-items: stretch;
   background: #fffdfc;
