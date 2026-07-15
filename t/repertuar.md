@@ -67,7 +67,8 @@ templateEngineOverride: liquid
   .ksf-rail-day {
     flex: 0 0 auto;
     display: inline-flex;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     border-radius: 0.5rem;
     background: #fffdfc;
@@ -80,9 +81,7 @@ templateEngineOverride: liquid
   .ksf-rail-dow {
     display: flex;
     align-items: center;
-    padding: 0.2rem 0.32rem;
-    background: rgba(56, 2, 0, 0.055);
-    border-right: 1.5px dashed rgba(56, 2, 0, 0.22);
+    padding: 0.14rem 0.4rem 0;
     font-size: 0.55rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -92,21 +91,17 @@ templateEngineOverride: liquid
   .ksf-rail-num {
     display: flex;
     align-items: center;
-    padding: 0.2rem 0.45rem;
+    padding: 0 0.4rem 0.16rem;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: #380200;
   }
-  /* today: dark flap so the rail reads as "starting from today" */
-  .ksf-rail-day.is-today { border-color: #380200; }
-  .ksf-rail-day.is-today .ksf-rail-dow {
-    background: #380200;
-    color: #fff;
-    border-right-color: rgba(255, 255, 255, 0.45);
-  }
+  /* #44: the today chip uses the SAME colour as every other chip — only its
+     "Dziś" label marks it, no dark flap. */
+  .ksf-rail-day.is-today { border-color: rgba(56, 2, 0, 0.12); }
   .ksf-rail-today { cursor: default; }
-  .ksf-rail-today:hover { border-color: #380200; box-shadow: none; }
+  .ksf-rail-today:hover { border-color: rgba(56, 2, 0, 0.12); box-shadow: none; }
 
   /* Day sections */
   .ksf-day-sec { scroll-margin-top: calc(var(--hdr-h, 100px) + 1.5rem); margin-bottom: 1.5rem; }
@@ -283,6 +278,10 @@ templateEngineOverride: liquid
       {% if month_data.repertuar.size > 0 %}
         {% assign month_events = month_data.repertuar | sort: 'data' %}
         {% capture group_chips %}
+          {%- comment -%} When today has no show, anchor the "Dziś" chip as the first day AFTER the current month's label (not floating before the month). {%- endcomment -%}
+          {%- if miesiac == all_miesiace[current_month_num] and has_today == false -%}
+            <span class="ksf-rail-day is-today ksf-rail-today" title="Dzisiaj"><span class="ksf-rail-dow">Dziś</span><span class="ksf-rail-num">{{ 'now' | date: "%-d" }}</span></span>
+          {%- endif -%}
           {% assign prev_day = "" %}
           {% for spektakl in month_events %}
             {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
@@ -322,9 +321,6 @@ templateEngineOverride: liquid
         <label for="ksfradio3">Dla grup</label>
       </div>
       <div class="ksf-rail">
-        {%- unless has_today -%}
-          <span class="ksf-rail-day is-today ksf-rail-today" title="Dzisiaj"><span class="ksf-rail-dow">Dziś</span><span class="ksf-rail-num">{{ 'now' | date: "%-d" }}</span></span>
-        {%- endunless -%}
         {{ rail }}
       </div>
     </div>
