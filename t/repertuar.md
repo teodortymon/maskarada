@@ -202,21 +202,27 @@ templateEngineOverride: liquid
     justify-content: flex-end;
   }
   .ksf-groups-note { font-size: 0.78rem; color: #9a6265; text-align: right; }
+  /* #49 — flat "pill" buy button, matching the "Cały repertuar" CTA:
+     transparent fill, coral outline + label, fills coral on hover. Kept in
+     sync with .pc-buy; alternate looks flip via html[data-btnvariant]
+     (see scss/_buy-button.scss). */
   .ksf-buy {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
     line-height: 1;
-    background: #e07b78;
-    color: #fff;
+    background: transparent;
+    color: #e07b78;
+    border: 2px solid #e07b78;
     font-weight: 600;
     font-size: 0.85rem;
-    padding: 0.45rem 0.9rem;
+    padding: calc(0.45rem - 2px) calc(0.9rem - 2px);
     border-radius: 999px;
     text-decoration: none;
     white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease;
   }
-  .ksf-buy:hover { background: #9a6265; color: #fff; }
+  .ksf-buy:hover { background: #e07b78; color: #fff; }
   .ksf-soon { font-size: 0.8rem; font-style: italic; color: #9a6265; }
   .ksf-tel {
     display: inline-block;

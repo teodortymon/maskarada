@@ -1,0 +1,58 @@
+<!-- Buy-ticket button variant switcher — issue #49 (temporary review aid).
+     Flip the flat-pill "Kup bilet" looks live. Remove this include (and its
+     line in _layouts/t.html), t/js/variant-switcher.js and scss/_buy-button.scss
+     once a winner is picked. -->
+<style>
+  #btn-variant-switcher {
+    position: fixed;
+    left: 12px;
+    bottom: 12px;
+    z-index: 1080;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    background: rgba(255, 253, 252, 0.96);
+    border: 1px solid rgba(56, 2, 0, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(56, 2, 0, 0.18);
+    font-family: Montserrat, sans-serif;
+    max-width: 46vw;
+  }
+  #btn-variant-switcher .bvs-title {
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #9a6265;
+    margin: 0 2px 2px;
+  }
+  #btn-variant-switcher button {
+    appearance: none;
+    border: 1px solid rgba(56, 2, 0, 0.14);
+    background: #fff;
+    color: #380200;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+  }
+  #btn-variant-switcher button:hover {
+    border-color: #e07b78;
+  }
+  #btn-variant-switcher button.is-active {
+    background: #e07b78;
+    color: #fff;
+    border-color: #e07b78;
+  }
+</style>
+<aside id="btn-variant-switcher" aria-label="Wariant przycisku Kup bilet">
+  <span class="bvs-title">Kup bilet — wariant</span>
+  <button type="button" data-variant="outline">Outline (flat)</button>
+  <button type="button" data-variant="soft">Soft tint</button>
+  <button type="button" data-variant="serif">Serif outline</button>
+  <button type="button" data-variant="filled">Original (filled)</button>
+</aside>
+<script src="js/variant-switcher.js" defer></script>
