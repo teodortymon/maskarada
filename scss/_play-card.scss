@@ -19,6 +19,19 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 18px rgba(56, 2, 0, 0.12);
     }
+
+    // #49 multi-date hover fix — when the pointer/focus is on a specific
+    // buyable stub, that stub lifts on its OWN (see .pc-ticket below), so the
+    // whole card must stay flat. Otherwise, on a play with several dates,
+    // hovering one stub also lifted the entire card and every sibling stub
+    // shifted with it — you couldn't tell which date you were about to buy.
+    // (With a single date the two lifts coincided, which is why it only looked
+    // right there.) This :has() override wins because it is more specific.
+    &:has(.pc-ticket:hover),
+    &:has(.pc-ticket:focus-within) {
+      transform: none;
+      box-shadow: 0 1px 3px rgba(56, 2, 0, 0.05);
+    }
   }
 
   // Interactive regions opt back out of the stretched-link overlay: the media
@@ -81,12 +94,24 @@
 
   // A buyable showtime: the "Kup bilet" link carries .stretched-link, so the
   // whole stub is one click target for buying. Signal it and lift on hover.
+  // #49 — the stub lifts on its own (the card is held flat, see .pcard) and
+  // rises above its siblings (z-index) so its shadow never bleeds under the
+  // next stacked stub. Each dated stub therefore highlights independently, the
+  // same clean way whether the play has one date or several.
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+
   &:has(.pc-buy.stretched-link) {
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       border-color: rgba(224, 123, 120, 0.6);
-      box-shadow: 0 2px 8px rgba(56, 2, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(56, 2, 0, 0.14);
+      transform: translateY(-2px);
+      z-index: 3;
     }
   }
 
@@ -167,10 +192,19 @@
     }
   }
 
+  // #49 — the date is ENFORCED as two lines ("Niedziela," / "28 września") so
+  // every ticket shows the same shape regardless of width: the day name breaks
+  // after its comma, and the day-of-month + month never split across lines.
   .pc-when {
     font-size: 0.92rem;
     font-weight: 600;
     color: #380200;
+
+    .pc-dow,
+    .pc-date {
+      display: block;
+      white-space: nowrap;
+    }
   }
 
   .pc-groups-note {
@@ -254,13 +288,22 @@
   }
 }
 
+// #49 — the phone pill mirrors .pc-buy as a flat outline pill, but in the
+// site's blue so "call" stays visually distinct from the coral "buy": blue
+// outline + label, fills blue on hover. Same radius + -2px padding trim so the
+// two pills are exactly the same height.
 .pc-tel {
-  background: rgba(91, 115, 149, 0.13);
+  background: transparent;
   color: #33517e;
+  border: 2px solid #5b7395;
+  padding: calc(0.45rem - 2px) calc(0.9rem - 2px);
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
 
   &:hover {
-    background: rgba(91, 115, 149, 0.25);
-    color: #33517e;
+    background: #5b7395;
+    color: #fff;
   }
 }
 

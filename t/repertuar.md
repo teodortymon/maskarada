@@ -224,18 +224,23 @@ templateEngineOverride: liquid
   }
   .ksf-buy:hover { background: #e07b78; color: #fff; }
   .ksf-soon { font-size: 0.8rem; font-style: italic; color: #9a6265; }
+  /* #49 — flat outline pill in blue, mirroring .ksf-buy (coral). Border/label
+     in the site blue, fills blue on hover; padding trimmed 2px to match the
+     bordered .ksf-buy height. */
   .ksf-tel {
     display: inline-block;
     font-size: 0.85rem;
     font-weight: 600;
     color: #33517e;
-    background: rgba(91, 115, 149, 0.13);
+    background: transparent;
+    border: 2px solid #5b7395;
     border-radius: 999px;
-    padding: 0.4rem 0.9rem;
+    padding: calc(0.4rem - 2px) calc(0.9rem - 2px);
     text-decoration: none;
     white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease;
   }
-  .ksf-tel:hover { background: rgba(91, 115, 149, 0.25); color: #33517e; }
+  .ksf-tel:hover { background: #5b7395; color: #fff; }
 
   @media (max-width: 700px) {
     .ksf-bar { flex-wrap: wrap; gap: 0.2rem; padding: 0.35rem 0.5rem 0.45rem; }

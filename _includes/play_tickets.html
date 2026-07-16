@@ -22,8 +22,11 @@
     </div>
     <div class="pc-tbody">
       <span class="pc-when">
-        {{- pc_days[pc_dw] }}, {{ event.data | date: '%-d' }}
-        {{ pc_months[pc_mi] -}}
+        <span class="pc-dow">{{ pc_days[pc_dw] }},</span>
+        <span class="pc-date">
+          {{- event.data | date: '%-d' }}
+          {{ pc_months[pc_mi] -}}
+        </span>
       </span>
       {% if event.manual_price == true %}
         <span class="pc-soon">{{ event.link }}</span>

@@ -9,8 +9,8 @@
   "use strict";
 
   var KEY = "btnLayout";
-  var DEFAULT = "split";
-  var VARIANTS = ["split", "left", "center", "stacked"];
+  var DEFAULT = "left";
+  var VARIANTS = ["left", "left-under", "left-fill", "split"];
 
   function normalize(v) {
     return VARIANTS.indexOf(v) !== -1 ? v : null;
