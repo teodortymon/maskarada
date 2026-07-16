@@ -185,12 +185,6 @@
     justify-self: end;
   }
 
-  // #49 — the buy pill is centered within the ticket-buying stub (the flat
-  // pill reads as its own centered call-to-action, not a right-hung tag).
-  .pc-buy {
-    justify-self: center;
-  }
-
   .pc-soon {
     font-size: 0.8rem;
     font-style: italic;
@@ -240,11 +234,11 @@
   line-height: 1;
 }
 
-// #49 — flat "pill" buy button, matching the "Cały repertuar" CTA
-// (.repertuar-cta): transparent fill, coral outline + label, fills coral on
-// hover. Alternate looks live in _buy-button.scss (flip via the switcher).
-// The -1px padding trim keeps the pill the same height as .pc-tel despite the
-// 2px border.
+// #49 — flat "pill" buy button (the chosen look), matching the "Cały repertuar"
+// CTA (.repertuar-cta): transparent fill, coral outline + label, fills coral on
+// hover. The action's on-row placement is set per layout in _buy-layout.scss
+// (flip via the switcher). The -1px padding trim keeps the pill the same height
+// as .pc-tel despite the 2px border.
 .pc-buy {
   background: transparent;
   color: #e07b78;

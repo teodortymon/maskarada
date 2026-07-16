@@ -1,7 +1,10 @@
-<!-- Buy-ticket button variant switcher — issue #49 (temporary review aid).
-     Flip the flat-pill "Kup bilet" looks live. Remove this include (and its
-     line in _layouts/t.html), t/js/variant-switcher.js and scss/_buy-button.scss
-     once a winner is picked. -->
+<!--
+  Buy-ticket action LAYOUT switcher — issue #49 (temporary review aid).
+  Colour is decided (flat coral outline); this flips the ARRANGEMENT of the
+  date row vs. the action pill (Kup bilet / Zadzwoń / wkrótce). Remove this
+  include (and its line in _layouts/t.html), t/js/variant-switcher.js and
+  scss/_buy-layout.scss once a layout is picked.
+-->
 <style>
   #btn-variant-switcher {
     position: fixed;
@@ -48,11 +51,11 @@
     border-color: #e07b78;
   }
 </style>
-<aside id="btn-variant-switcher" aria-label="Wariant przycisku Kup bilet">
-  <span class="bvs-title">Kup bilet — wariant</span>
-  <button type="button" data-variant="outline">Outline (flat)</button>
-  <button type="button" data-variant="soft">Soft tint</button>
-  <button type="button" data-variant="serif">Serif outline</button>
-  <button type="button" data-variant="filled">Original (filled)</button>
+<aside id="btn-variant-switcher" aria-label="Układ przycisku Kup bilet">
+  <span class="bvs-title">Kup bilet — układ</span>
+  <button type="button" data-variant="split">Split (data ↔ przycisk)</button>
+  <button type="button" data-variant="left">Lewo (razem)</button>
+  <button type="button" data-variant="center">Środek</button>
+  <button type="button" data-variant="stacked">Current (stacked)</button>
 </aside>
 <script src="js/variant-switcher.js" defer></script>

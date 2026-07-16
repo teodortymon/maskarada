@@ -1,0 +1,134 @@
+// #49 — buy-ticket action LAYOUT variants (colour is decided: flat coral
+// outline). Flip the ARRANGEMENT of the play-card mini-ticket action live via
+// the floating switcher (_includes/variant_switcher.html), which sets
+// html[data-btnlayout]. Every rule targets the play-card ticket body
+// (.pc-tbody) and its children: the date (.pc-when), the group caption
+// (.pc-groups-note) and whichever action fills the cell — the buy pill
+// (.pc-buy), the phone pill (.pc-tel, "Zadzwoń …") or the placeholder
+// (.pc-soon, "Bilety online wkrótce" / manual price). All three action states
+// are placed identically so weekend, weekday ("Zadzwoń") and "wkrótce" tickets
+// line up the same way.
+//
+// Explicit grid-row/column placement makes the DOM order (date → note → pill)
+// irrelevant: date + pill always land on row 1, the caption on row 2 under the
+// date. Specificity html[data-btnlayout="…"] .pc-tbody .child = (0,3,0/1)
+// outranks the base .pc-ticket rules (0,2,0) and the @container overrides
+// (0,1,0), so the chosen layout wins at every container width.
+//
+// The Kalendarz pill (.ksf-* in t/repertuar.md) already sits flush-right on the
+// title's row (flex space-between), so it is left as-is — only the play-card
+// mini-tickets get these layout variants.
+//
+// TO SHIP A WINNER: fold the chosen variant into the base .pc-tbody rules in
+// _play-card.scss, then delete this partial + its @import and the switcher.
+
+// split (default) — date left, action pill flush RIGHT on the same row at every
+// width; any caption tucks under the date.
+html[data-btnlayout="split"] .pc-tbody {
+  grid-template-columns: minmax(0, 1fr) auto;
+  row-gap: 0.05rem;
+
+  .pc-when {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .pc-groups-note {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .pc-buy,
+  .pc-tel,
+  .pc-soon {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    justify-self: end;
+    align-self: center;
+  }
+}
+
+// left — date + action pill CLUSTERED at the left on one row ("12 marca
+// [Kup bilet]"); caption spans the row beneath.
+html[data-btnlayout="left"] .pc-tbody {
+  grid-template-columns: auto auto;
+  justify-content: start;
+  row-gap: 0.1rem;
+  column-gap: 0.6rem;
+
+  .pc-when {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .pc-buy,
+  .pc-tel,
+  .pc-soon {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+  }
+
+  .pc-groups-note {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    justify-self: start;
+  }
+}
+
+// center — date + action pill centered together as one group on a single row;
+// caption centered beneath.
+html[data-btnlayout="center"] .pc-tbody {
+  grid-template-columns: auto auto;
+  justify-content: center;
+  row-gap: 0.1rem;
+  column-gap: 0.6rem;
+
+  .pc-when {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .pc-buy,
+  .pc-tel,
+  .pc-soon {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+  }
+
+  .pc-groups-note {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+// stacked — the ORIGINAL behaviour, kept only for before/after: single column,
+// caption under the date, action pill centered on its OWN row beneath. This is
+// the "in-between" look the redesign moves away from.
+html[data-btnlayout="stacked"] .pc-tbody {
+  grid-template-columns: minmax(0, 1fr);
+
+  .pc-when,
+  .pc-groups-note {
+    grid-column: 1;
+  }
+
+  .pc-buy {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: center;
+  }
+
+  .pc-tel,
+  .pc-soon {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: end;
+  }
+}

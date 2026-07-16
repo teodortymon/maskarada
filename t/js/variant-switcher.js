@@ -1,23 +1,23 @@
-// Buy-ticket button variant switcher — issue #49 (temporary review aid).
+// Buy-ticket action LAYOUT switcher — issue #49 (temporary review aid).
 //
-// Sets html[data-btnvariant] so the flat-pill CSS variants (scss/_buy-button.scss
-// + the .pc-buy / .ksf-buy base rules) can be flipped live. Precedence:
-//   URL ?btn=<variant>  >  localStorage  >  default ("outline").
+// Colour is decided (flat coral outline); this sets html[data-btnlayout] so the
+// layout variants (scss/_buy-layout.scss) can be flipped live. Precedence:
+//   URL ?btn=<layout>  >  localStorage  >  default ("split").
 // A ?btn= param also gives shareable links. Remove this file, the
-// variant_switcher include and the _buy-button partial once a winner is chosen.
+// variant_switcher include and the _buy-layout partial once a layout is chosen.
 (function () {
   "use strict";
 
-  var KEY = "btnVariant";
-  var DEFAULT = "outline";
-  var VARIANTS = ["outline", "soft", "serif", "filled"];
+  var KEY = "btnLayout";
+  var DEFAULT = "split";
+  var VARIANTS = ["split", "left", "center", "stacked"];
 
   function normalize(v) {
     return VARIANTS.indexOf(v) !== -1 ? v : null;
   }
 
   function apply(v) {
-    document.documentElement.setAttribute("data-btnvariant", v);
+    document.documentElement.setAttribute("data-btnlayout", v);
     var panel = document.getElementById("btn-variant-switcher");
     if (!panel) return;
     var btns = panel.querySelectorAll("[data-variant]");
