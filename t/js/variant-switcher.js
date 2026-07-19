@@ -9,15 +9,33 @@
   "use strict";
 
   var KEY = "btnLayout";
-  var DEFAULT = "left";
-  var VARIANTS = ["left", "left-under", "left-fill", "split"];
+  var DEFAULT = "split";
+  var VARIANTS = ["left", "left-under", "left-fill", "split", "split-wrap", "split-narrow"];
 
   function normalize(v) {
     return VARIANTS.indexOf(v) !== -1 ? v : null;
   }
 
+  // Switching layout changes the mini-ticket heights, which desyncs the Masonry
+  // grid on t/spektakle (its cards are absolutely positioned from a stale height
+  // measured before this toggle ran) — the next card then overlaps the bottom
+  // rows of a taller multi-date card and swallows their click-to-buy. Re-run the
+  // page's Masonry layout after the reflow so every row stays clickable. (The
+  // shipped site keeps its own load/fonts.ready relayout; this only covers the
+  // live height changes this temporary switcher introduces.)
+  function relayoutMasonry() {
+    if (!window.Masonry) return;
+    var grid = document.querySelector("[data-masonry]");
+    if (!grid) return;
+    var m = window.Masonry.data(grid);
+    if (m) m.layout();
+  }
+
   function apply(v) {
     document.documentElement.setAttribute("data-btnlayout", v);
+    window.requestAnimationFrame(function () {
+      window.requestAnimationFrame(relayoutMasonry);
+    });
     var panel = document.getElementById("btn-variant-switcher");
     if (!panel) return;
     var btns = panel.querySelectorAll("[data-variant]");

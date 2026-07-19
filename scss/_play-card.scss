@@ -34,11 +34,16 @@
     }
   }
 
-  // Interactive regions opt back out of the stretched-link overlay: the media
-  // facade (YouTube play button) and each mini-ticket (Kup bilet / Zadzwoń)
-  // sit above it so their own clicks win; the rest of the card opens the modal.
+  // Interactive regions opt back out of the card's stretched-link (modal)
+  // overlay. #49 — only regions that carry their OWN click target are raised:
+  //   * the media facade (YouTube play button), and
+  //   * a BUYABLE ticket row (it has .pc-buy.stretched-link, so raising the
+  //     whole row makes every part of it — time block, date, empty space — buy).
+  // Non-buyable rows (weekday "Zadzwoń", "wkrótce") are deliberately NOT raised,
+  // so their body falls through to the card→modal click; only the phone pill
+  // inside them is raised (see .pc-tel) so it can still dial.
   .ratio,
-  .pc-ticket {
+  .pc-ticket:has(.pc-buy.stretched-link) {
     z-index: 2;
   }
 
@@ -136,6 +141,9 @@
     background: #faf3f3;
     border: 1px solid rgba(56, 2, 0, 0.09);
     z-index: 2;
+    // #49 — purely decorative: they render above the buy overlay (z-index 1),
+    // so without this they punched two dead spots into the click-to-buy area.
+    pointer-events: none;
   }
 
   &::before {
@@ -246,7 +254,27 @@
     grid-column: 2;
     grid-row: 1 / span 2;
   }
+}
 
+// #49 Change 1 — on tickets wide enough to hold it (the 3-col desktop grid gives
+// ~400px tickets), the split family collapses the date back to ONE line
+// ("Niedziela, 28 września"), filling the row instead of hugging the left as two
+// lines with a gap. The two-line base (day name / date) is kept for mobile, the
+// fallback and every left-* variant. 400px is the point where the widest weekend
+// date + buy pill fit on one line without overflow; scoped to [^="split"] so it
+// matches split / split-wrap / split-narrow but never left-*.
+@container (min-width: 400px) {
+  html[data-btnlayout^="split"] .pc-when {
+    .pc-dow,
+    .pc-date {
+      display: inline;
+      white-space: nowrap;
+    }
+    // spans collapse the source whitespace, so restore the gap after the comma.
+    .pc-dow {
+      margin-right: 0.28rem;
+    }
+  }
 }
 
 // Action pills — same skin as .ksf-buy / .ksf-tel in the Kalendarz.
@@ -297,6 +325,11 @@
   color: #33517e;
   border: 2px solid #5b7395;
   padding: calc(0.45rem - 2px) calc(0.9rem - 2px);
+  // #49 — the phone pill is the ONE interactive control in a non-raised
+  // (weekday) row, so raise just the pill above the card modal overlay: the
+  // pill dials, the rest of the row opens the details modal.
+  position: relative;
+  z-index: 2;
   transition:
     background 0.15s ease,
     color 0.15s ease;

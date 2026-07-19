@@ -29,6 +29,15 @@
     color: #9a6265;
     margin: 0 2px 2px;
   }
+  #btn-variant-switcher .bvs-sub {
+    font-size: 0.58rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #9a6265;
+    margin: 6px 2px 2px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(56, 2, 0, 0.12);
+  }
   #btn-variant-switcher button {
     appearance: none;
     border: 1px solid rgba(56, 2, 0, 0.14);
@@ -56,6 +65,9 @@
   <button type="button" data-variant="left">Lewo (obok/pod)</button>
   <button type="button" data-variant="left-under">Lewo — pod spodem</button>
   <button type="button" data-variant="left-fill">Lewo — pełna szerokość</button>
-  <button type="button" data-variant="split">Split</button>
+  <span class="bvs-sub">Split — grupy</span>
+  <button type="button" data-variant="split">Split (pod spodem)</button>
+  <button type="button" data-variant="split-wrap">Split — zawijanie</button>
+  <button type="button" data-variant="split-narrow">Split — wąski przycisk</button>
 </aside>
 <script src="js/variant-switcher.js" defer></script>

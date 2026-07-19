@@ -117,10 +117,18 @@ html[data-btnlayout="left-fill"] .pc-tbody {
   }
 }
 
-// ── split (reference) ────────────────────────────────────────────────────────
-// Date left, action pill flush RIGHT on the same row at every width; group-note
-// tucks under the date. Kept as a contrast to the left family.
-html[data-btnlayout="split"] .pc-tbody {
+// ── split family (date-left / action-right) ─────────────────────────────────
+// Three takes on the SAME split idea, differing only in how the weekday
+// group-reservation case (note + long "Zadzwoń …" pill) avoids the overflow.
+//
+// Root cause of the spill: the long non-wrapping .pc-tel pill (~12–13rem) in the
+// `auto` right column crushed the 1fr date/note column, so .pc-groups-note broke
+// mid-word / overflowed. The BUYABLE and "wkrótce" rows never spill (short
+// action), so the shared rule keeps them identical across all three; only the
+// weekday `:has(.pc-groups-note)` case is re-arranged per variant.
+
+// Shared across split / split-wrap / split-narrow: date left, action flush right.
+html[data-btnlayout^="split"] .pc-tbody {
   grid-template-columns: minmax(0, 1fr) auto;
   row-gap: 0.05rem;
 
@@ -140,4 +148,60 @@ html[data-btnlayout="split"] .pc-tbody {
     justify-self: end;
     align-self: center;
   }
+}
+
+// split (default, "stack") — weekday note + pill drop onto their own full-width
+// rows beneath the date (note line, then pill left-aligned). No collision.
+html[data-btnlayout="split"] .pc-tbody:has(.pc-groups-note) {
+  grid-template-columns: minmax(0, 1fr);
+
+  .pc-when {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .pc-groups-note {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+  }
+  .pc-tel {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+  }
+}
+
+// split-wrap — note + pill stay on the right but in a wrapping flex block (the
+// self-healing Kalendarz .ksf-action pattern): the pill drops below the note
+// when the row gets tight instead of overflowing.
+html[data-btnlayout="split-wrap"] .pc-tbody:has(.pc-groups-note) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0.7rem;
+
+  .pc-when {
+    flex: 0 0 auto;
+  }
+  .pc-groups-note {
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: right;
+  }
+  .pc-tel {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+}
+
+// split-narrow — pill beside the date but allowed to wrap into a compact
+// two-line pill ("Zadzwoń / 501 027 278 ☎"), so it stays narrow and the
+// date/note column keeps its room. Gated to this key so the pill stays
+// single-line everywhere else.
+html[data-btnlayout="split-narrow"] .pc-tbody:has(.pc-groups-note) .pc-tel {
+  white-space: normal;
+  max-width: 8.5rem;
+  text-align: center;
+  line-height: 1.2;
+  padding: calc(0.35rem - 2px) calc(0.7rem - 2px);
 }
