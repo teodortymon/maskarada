@@ -181,15 +181,16 @@
   // width, not the viewport — a card can be narrow on a wide desktop grid.
   container-type: inline-size;
 
-  // Body grid. Base (and old-browser fallback) is the stacked narrow layout:
-  // date row, optional caption row, action pill right-aligned on its own row.
+  // Body layout — #49 "split / zawijanie". Buyable and "wkrótce" rows are a 2-col
+  // grid at every width: date left, action pill flush right on the same row. The
+  // weekday group-reservation row overrides to a wrapping flex (further down).
   .pc-tbody {
     flex: 1;
     min-width: 0;
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
-    gap: 0.15rem 0.8rem;
+    gap: 0.05rem 0.8rem;
     padding: 0.5rem 0.85rem;
 
     // Markdown pages wrap the pill/caption in bare <p> elements which would
@@ -200,10 +201,12 @@
     }
   }
 
-  // #49 — the date is ENFORCED as two lines ("Niedziela," / "28 września") so
-  // every ticket shows the same shape regardless of width: the day name breaks
-  // after its comma, and the day-of-month + month never split across lines.
+  // The date is two lines on narrow tickets ("Niedziela," / "28 września") and
+  // collapses to one line once the ticket is wide enough (container query below),
+  // so it fills the row on the desktop grid instead of hugging the left.
   .pc-when {
+    grid-column: 1;
+    grid-row: 1;
     font-size: 0.92rem;
     font-weight: 600;
     color: #380200;
@@ -216,6 +219,8 @@
   }
 
   .pc-groups-note {
+    grid-column: 1;
+    grid-row: 2;
     font-size: 0.72rem;
     line-height: 1.35;
     color: rgba(154, 98, 101, 0.9);
@@ -224,7 +229,10 @@
   .pc-buy,
   .pc-tel,
   .pc-soon {
+    grid-column: 2;
+    grid-row: 1 / span 2;
     justify-self: end;
+    align-self: center;
   }
 
   .pc-soon {
@@ -232,39 +240,40 @@
     font-style: italic;
     color: #9a6265;
   }
+
+  // Weekday group-reservation rows (date + "Rezerwacja …" note + the long
+  // "Zadzwoń …" pill) don't fit the 2-col grid — the non-wrapping pill would
+  // crush the date column. Lay them out as a wrapping flex row instead: the note
+  // takes the middle and the pill drops below it when the ticket is tight.
+  .pc-tbody:has(.pc-groups-note) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.2rem 0.7rem;
+
+    .pc-when {
+      flex: 0 0 auto;
+    }
+    .pc-groups-note {
+      flex: 1 1 auto;
+      min-width: 0;
+      text-align: right;
+    }
+    .pc-tel {
+      flex: 0 0 auto;
+      margin-left: auto;
+    }
+  }
 }
 
-// Wide tickets (the pill and the text can share a row): 2-col grid, action
-// column spans both rows and centers vertically, so the date never floats to
-// the top and the group caption tucks directly under it.
-@container (min-width: 431px) {
-  .pc-tbody {
-    grid-template-columns: minmax(0, 1fr) auto;
-    row-gap: 0.05rem;
-  }
-
-  .pc-when,
-  .pc-groups-note {
-    grid-column: 1;
-  }
-
-  .pc-buy,
-  .pc-tel,
-  .pc-soon {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-  }
-}
-
-// #49 Change 1 — on tickets wide enough to hold it (the 3-col desktop grid gives
-// ~400px tickets), the split family collapses the date back to ONE line
-// ("Niedziela, 28 września"), filling the row instead of hugging the left as two
-// lines with a gap. The two-line base (day name / date) is kept for mobile, the
-// fallback and every left-* variant. 400px is the point where the widest weekend
-// date + buy pill fit on one line without overflow; scoped to [^="split"] so it
-// matches split / split-wrap / split-narrow but never left-*.
+// On tickets wide enough to hold it (the 3-col desktop grid gives ~400px
+// tickets) the date collapses to one line ("Niedziela, 28 września"); narrower
+// tickets and mobile keep the two-line stack. 400px is where the widest weekend
+// date + buy pill still fit on one line without overflow.
 @container (min-width: 400px) {
-  html[data-btnlayout^="split"] .pc-when {
+  // .pc-ticket-scoped so this matches the specificity of the two-line base rule
+  // (.pc-ticket .pc-when .pc-dow) and wins on source order.
+  .pc-ticket .pc-when {
     .pc-dow,
     .pc-date {
       display: inline;
@@ -296,11 +305,10 @@
   line-height: 1;
 }
 
-// #49 — flat "pill" buy button (the chosen look), matching the "Cały repertuar"
-// CTA (.repertuar-cta): transparent fill, coral outline + label, fills coral on
-// hover. The action's on-row placement is set per layout in _buy-layout.scss
-// (flip via the switcher). The -1px padding trim keeps the pill the same height
-// as .pc-tel despite the 2px border.
+// #49 — flat "pill" buy button, matching the "Cały repertuar" CTA
+// (.repertuar-cta): transparent fill, coral outline + label, fills coral on
+// hover. The on-row placement is set by the .pc-tbody grid above. The -2px
+// padding trim keeps the pill the same height as .pc-tel despite the 2px border.
 .pc-buy {
   background: transparent;
   color: #e07b78;
