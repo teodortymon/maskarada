@@ -137,6 +137,19 @@ templateEngineOverride: liquid
     margin-bottom: 0.55rem;
     box-shadow: 0 1px 3px rgba(56, 2, 0, 0.05);
     overflow: hidden;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  /* #50 — a buyable stub is one full-row click-to-buy target, same as the play
+     cards (#49): .ksf-buy carries Bootstrap's .stretched-link, whose ::after
+     (z-index 1) overlays the whole stub. Signal it and lift on hover/focus;
+     the z-index keeps the lifted shadow above the next stacked stub. */
+  .ksf-stub:has(.ksf-buy.stretched-link) { cursor: pointer; }
+  .ksf-stub:has(.ksf-buy.stretched-link):hover,
+  .ksf-stub:has(.ksf-buy.stretched-link):focus-within {
+    border-color: rgba(224, 123, 120, 0.6);
+    box-shadow: 0 4px 12px rgba(56, 2, 0, 0.14);
+    transform: translateY(-2px);
+    z-index: 3;
   }
   .ksf-stub::before,
   .ksf-stub::after {
@@ -149,6 +162,9 @@ templateEngineOverride: liquid
     background: #f3ecf2;
     border: 1px solid rgba(56, 2, 0, 0.09);
     z-index: 2;
+    /* #50 — purely decorative; they render above the buy overlay (z-index 1),
+       so without this they punch two dead spots into the click-to-buy area. */
+    pointer-events: none;
   }
   .ksf-stub::before { top: -8px; }
   .ksf-stub::after { bottom: -8px; }
@@ -192,6 +208,12 @@ templateEngineOverride: liquid
     cursor: pointer;
   }
   .ksf-title-btn:hover { color: #e07b78; }
+  /* #50 — the title button is the ONE control inside a buyable stub that keeps
+     its own click (details modal), so raise just it above the buy overlay —
+     same move as the phone pill inside the play-card weekday rows (#49). Only
+     the real <button> is raised; the unmatched-play <span> stays under the
+     overlay so its dead title area still buys. */
+  button.ksf-title-btn { position: relative; z-index: 2; }
   .ksf-title-more { font-size: 0.78em; font-weight: 500; color: #e07b78; white-space: nowrap; }
   .ksf-action {
     margin-left: auto;
@@ -384,7 +406,7 @@ templateEngineOverride: liquid
                       {% if spektakl.link == "-" %}
                         <span class="ksf-soon">Bilety online wkrótce</span>
                       {% else %}
-                        <a href="{{ spektakl.link }}" target="_blank" rel="noopener noreferrer" class="ksf-buy">Kup bilet 🎫</a>
+                        <a href="{{ spektakl.link }}" target="_blank" rel="noopener noreferrer" class="ksf-buy stretched-link">Kup bilet 🎫</a>
                       {% endif %}
                     {% else %}
                       <span class="ksf-groups-note">Zapraszamy grupy zorganizowane do rezerwacji tel.</span>
