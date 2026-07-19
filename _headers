@@ -1,8 +1,8 @@
 # Cloudflare Pages headers (passthrough-copied into _site/ by eleventy.config.js).
 #
 # CSP allowlist is built from the origins the templates actually load:
-#   script:  cdn.jsdelivr.net (Bootstrap bundle in header_t — powers the play
-#            "Szczegóły spektaklu" modals — and Masonry on t/spektakle),
+#   script:  cdn.jsdelivr.net (Masonry on t/spektakle; the Bootstrap bundle
+#            moved to a self-hosted modal-only file, t/js/bootstrap-modal.min.js),
 #            kicket.com (header_t ticket widget), www.youtube.com (lite-yt-embed
 #            loads iframe_api when js-api is enabled), connect.facebook.net
 #            (Facebook JS SDK for the footer_t page-feed widget); inline scripts
