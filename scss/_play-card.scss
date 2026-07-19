@@ -19,13 +19,31 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 18px rgba(56, 2, 0, 0.12);
     }
+
+    // #49 multi-date hover fix — when the pointer/focus is on a specific
+    // buyable stub, that stub lifts on its OWN (see .pc-ticket below), so the
+    // whole card must stay flat. Otherwise, on a play with several dates,
+    // hovering one stub also lifted the entire card and every sibling stub
+    // shifted with it — you couldn't tell which date you were about to buy.
+    // (With a single date the two lifts coincided, which is why it only looked
+    // right there.) This :has() override wins because it is more specific.
+    &:has(.pc-ticket:hover),
+    &:has(.pc-ticket:focus-within) {
+      transform: none;
+      box-shadow: 0 1px 3px rgba(56, 2, 0, 0.05);
+    }
   }
 
-  // Interactive regions opt back out of the stretched-link overlay: the media
-  // facade (YouTube play button) and each mini-ticket (Kup bilet / Zadzwoń)
-  // sit above it so their own clicks win; the rest of the card opens the modal.
+  // Interactive regions opt back out of the card's stretched-link (modal)
+  // overlay. #49 — only regions that carry their OWN click target are raised:
+  //   * the media facade (YouTube play button), and
+  //   * a BUYABLE ticket row (it has .pc-buy.stretched-link, so raising the
+  //     whole row makes every part of it — time block, date, empty space — buy).
+  // Non-buyable rows (weekday "Zadzwoń", "wkrótce") are deliberately NOT raised,
+  // so their body falls through to the card→modal click; only the phone pill
+  // inside them is raised (see .pc-tel) so it can still dial.
   .ratio,
-  .pc-ticket {
+  .pc-ticket:has(.pc-buy.stretched-link) {
     z-index: 2;
   }
 
@@ -81,12 +99,24 @@
 
   // A buyable showtime: the "Kup bilet" link carries .stretched-link, so the
   // whole stub is one click target for buying. Signal it and lift on hover.
+  // #49 — the stub lifts on its own (the card is held flat, see .pcard) and
+  // rises above its siblings (z-index) so its shadow never bleeds under the
+  // next stacked stub. Each dated stub therefore highlights independently, the
+  // same clean way whether the play has one date or several.
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+
   &:has(.pc-buy.stretched-link) {
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       border-color: rgba(224, 123, 120, 0.6);
-      box-shadow: 0 2px 8px rgba(56, 2, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(56, 2, 0, 0.14);
+      transform: translateY(-2px);
+      z-index: 3;
     }
   }
 
@@ -111,6 +141,9 @@
     background: #faf3f3;
     border: 1px solid rgba(56, 2, 0, 0.09);
     z-index: 2;
+    // #49 — purely decorative: they render above the buy overlay (z-index 1),
+    // so without this they punched two dead spots into the click-to-buy area.
+    pointer-events: none;
   }
 
   &::before {
@@ -148,15 +181,16 @@
   // width, not the viewport — a card can be narrow on a wide desktop grid.
   container-type: inline-size;
 
-  // Body grid. Base (and old-browser fallback) is the stacked narrow layout:
-  // date row, optional caption row, action pill right-aligned on its own row.
+  // Body layout — #49 "split / zawijanie". Buyable and "wkrótce" rows are a 2-col
+  // grid at every width: date left, action pill flush right on the same row. The
+  // weekday group-reservation row overrides to a wrapping flex (further down).
   .pc-tbody {
     flex: 1;
     min-width: 0;
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
-    gap: 0.15rem 0.8rem;
+    gap: 0.05rem 0.8rem;
     padding: 0.5rem 0.85rem;
 
     // Markdown pages wrap the pill/caption in bare <p> elements which would
@@ -167,13 +201,26 @@
     }
   }
 
+  // The date is two lines on narrow tickets ("Niedziela," / "28 września") and
+  // collapses to one line once the ticket is wide enough (container query below),
+  // so it fills the row on the desktop grid instead of hugging the left.
   .pc-when {
+    grid-column: 1;
+    grid-row: 1;
     font-size: 0.92rem;
     font-weight: 600;
     color: #380200;
+
+    .pc-dow,
+    .pc-date {
+      display: block;
+      white-space: nowrap;
+    }
   }
 
   .pc-groups-note {
+    grid-column: 1;
+    grid-row: 2;
     font-size: 0.72rem;
     line-height: 1.35;
     color: rgba(154, 98, 101, 0.9);
@@ -182,7 +229,10 @@
   .pc-buy,
   .pc-tel,
   .pc-soon {
+    grid-column: 2;
+    grid-row: 1 / span 2;
     justify-self: end;
+    align-self: center;
   }
 
   .pc-soon {
@@ -190,29 +240,50 @@
     font-style: italic;
     color: #9a6265;
   }
+
+  // Weekday group-reservation rows (date + "Rezerwacja …" note + the long
+  // "Zadzwoń …" pill) don't fit the 2-col grid — the non-wrapping pill would
+  // crush the date column. Lay them out as a wrapping flex row instead: the note
+  // takes the middle and the pill drops below it when the ticket is tight.
+  .pc-tbody:has(.pc-groups-note) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.2rem 0.7rem;
+
+    .pc-when {
+      flex: 0 0 auto;
+    }
+    .pc-groups-note {
+      flex: 1 1 auto;
+      min-width: 0;
+      text-align: right;
+    }
+    .pc-tel {
+      flex: 0 0 auto;
+      margin-left: auto;
+    }
+  }
 }
 
-// Wide tickets (the pill and the text can share a row): 2-col grid, action
-// column spans both rows and centers vertically, so the date never floats to
-// the top and the group caption tucks directly under it.
-@container (min-width: 431px) {
-  .pc-tbody {
-    grid-template-columns: minmax(0, 1fr) auto;
-    row-gap: 0.05rem;
+// On tickets wide enough to hold it (the 3-col desktop grid gives ~400px
+// tickets) the date collapses to one line ("Niedziela, 28 września"); narrower
+// tickets and mobile keep the two-line stack. 400px is where the widest weekend
+// date + buy pill still fit on one line without overflow.
+@container (min-width: 400px) {
+  // .pc-ticket-scoped so this matches the specificity of the two-line base rule
+  // (.pc-ticket .pc-when .pc-dow) and wins on source order.
+  .pc-ticket .pc-when {
+    .pc-dow,
+    .pc-date {
+      display: inline;
+      white-space: nowrap;
+    }
+    // spans collapse the source whitespace, so restore the gap after the comma.
+    .pc-dow {
+      margin-right: 0.28rem;
+    }
   }
-
-  .pc-when,
-  .pc-groups-note {
-    grid-column: 1;
-  }
-
-  .pc-buy,
-  .pc-tel,
-  .pc-soon {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-  }
-
 }
 
 // Action pills — same skin as .ksf-buy / .ksf-tel in the Kalendarz.
@@ -234,23 +305,46 @@
   line-height: 1;
 }
 
+// #49 — flat "pill" buy button, matching the "Cały repertuar" CTA
+// (.repertuar-cta): transparent fill, coral outline + label, fills coral on
+// hover. The on-row placement is set by the .pc-tbody grid above. The -2px
+// padding trim keeps the pill the same height as .pc-tel despite the 2px border.
 .pc-buy {
-  background: #e07b78;
-  color: #fff;
+  background: transparent;
+  color: #e07b78;
+  border: 2px solid #e07b78;
+  padding: calc(0.45rem - 2px) calc(0.9rem - 2px);
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
 
   &:hover {
-    background: #9a6265;
+    background: #e07b78;
     color: #fff;
   }
 }
 
+// #49 — the phone pill mirrors .pc-buy as a flat outline pill, but in the
+// site's blue so "call" stays visually distinct from the coral "buy": blue
+// outline + label, fills blue on hover. Same radius + -2px padding trim so the
+// two pills are exactly the same height.
 .pc-tel {
-  background: rgba(91, 115, 149, 0.13);
+  background: transparent;
   color: #33517e;
+  border: 2px solid #5b7395;
+  padding: calc(0.45rem - 2px) calc(0.9rem - 2px);
+  // #49 — the phone pill is the ONE interactive control in a non-raised
+  // (weekday) row, so raise just the pill above the card modal overlay: the
+  // pill dials, the rest of the row opens the details modal.
+  position: relative;
+  z-index: 2;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
 
   &:hover {
-    background: rgba(91, 115, 149, 0.25);
-    color: #33517e;
+    background: #5b7395;
+    color: #fff;
   }
 }
 
