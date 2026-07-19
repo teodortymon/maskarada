@@ -149,9 +149,42 @@ templateEngineOverride: liquid
     background: #f3ecf2;
     border: 1px solid rgba(56, 2, 0, 0.09);
     z-index: 2;
+    /* #50 — purely decorative: they render above the row's stretched-link
+       overlay (z-index 1), so without this they'd punch two dead spots into
+       the full-row click target (same fix as the play-card tickets, #49). */
+    pointer-events: none;
   }
   .ksf-stub::before { top: -8px; }
   .ksf-stub::after { bottom: -8px; }
+  /* #50 — full-row click targets, mirroring the play-card mini-tickets (#49):
+     the row's primary action carries Bootstrap's .stretched-link (buyable rows
+     → "Kup bilet", other rows with a known play → the details modal), so the
+     whole stub — time block, title, empty space — is one tap target. Secondary
+     controls opt back out of the overlay via z-index (below). The stub lifts
+     on hover the same way a buyable play-card ticket does. */
+  .ksf-stub {
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .ksf-stub:has(.stretched-link) { cursor: pointer; }
+  .ksf-stub:has(.stretched-link):hover,
+  .ksf-stub:has(.stretched-link):focus-within {
+    border-color: rgba(56, 2, 0, 0.25);
+    box-shadow: 0 4px 12px rgba(56, 2, 0, 0.14);
+    transform: translateY(-2px);
+    z-index: 3;
+  }
+  /* Buyable rows highlight in the buy coral, like .pc-ticket. */
+  .ksf-stub:has(.ksf-buy.stretched-link):hover,
+  .ksf-stub:has(.ksf-buy.stretched-link):focus-within {
+    border-color: rgba(224, 123, 120, 0.6);
+  }
+  /* Secondary controls stay clickable above the row overlay: the title button
+     in buyable rows (it opens the modal while the row buys) and the phone /
+     manual-price links in modal rows. Never raise the stretched link itself —
+     position:relative would re-anchor its ::after to the element instead of
+     the stub. */
+  button.ksf-title-btn:not(.stretched-link) { position: relative; z-index: 2; }
+  .ksf-action a:not(.stretched-link) { position: relative; z-index: 2; }
   .ksf-block {
     width: var(--datew);
     flex: 0 0 var(--datew);
@@ -367,13 +400,24 @@ templateEngineOverride: liquid
                   {% break %}
                 {% endif %}
               {% endfor %}
+              {% comment %}
+                #50 — full-row click targets (same behaviour as the play-card
+                mini-tickets, #49): a buyable row stretches its "Kup bilet" link
+                over the whole stub; otherwise the title button (details modal)
+                stretches instead, with the phone / manual links raised above
+                the overlay so they keep their own clicks.
+              {% endcomment %}
+              {% assign stub_buy = false %}
+              {% if spektakl.manual_price != true and event_type == "weekend" and spektakl.link and spektakl.link != "-" %}
+                {% assign stub_buy = true %}
+              {% endif %}
               <article class="ksf-stub" data-event-type="{{ event_type }}">
                 <div class="ksf-block">
                   <span class="ksf-time-big">{{ spektakl.data | date: "%R" }}</span>
                 </div>
                 <div class="ksf-body">
                   {% if matched_play %}
-                    <button type="button" class="ksf-title-btn" data-bs-toggle="modal" data-bs-target="#{{ matched_play.id2 }}">{{ spektakl.tytul }} <span class="ksf-title-more" aria-hidden="true">więcej →</span></button>
+                    <button type="button" class="ksf-title-btn{% unless stub_buy %} stretched-link{% endunless %}" data-bs-toggle="modal" data-bs-target="#{{ matched_play.id2 }}">{{ spektakl.tytul }} <span class="ksf-title-more" aria-hidden="true">więcej →</span></button>
                   {% else %}
                     <span class="ksf-title-btn" style="cursor:default">{{ spektakl.tytul }}</span>
                   {% endif %}
@@ -381,10 +425,10 @@ templateEngineOverride: liquid
                     {% if spektakl.manual_price == true %}
                       {{ spektakl.link }}
                     {% elsif event_type == "weekend" %}
-                      {% if spektakl.link == "-" %}
-                        <span class="ksf-soon">Bilety online wkrótce</span>
+                      {% if stub_buy %}
+                        <a href="{{ spektakl.link }}" target="_blank" rel="noopener noreferrer" class="ksf-buy stretched-link">Kup bilet 🎫</a>
                       {% else %}
-                        <a href="{{ spektakl.link }}" target="_blank" rel="noopener noreferrer" class="ksf-buy">Kup bilet 🎫</a>
+                        <span class="ksf-soon">Bilety online wkrótce</span>
                       {% endif %}
                     {% else %}
                       <span class="ksf-groups-note">Zapraszamy grupy zorganizowane do rezerwacji tel.</span>
