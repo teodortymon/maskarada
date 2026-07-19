@@ -110,9 +110,9 @@
   --timew: 4.6rem;
   position: relative;
 
-  // Every row is its own hover + click target. Buyable rows: the "Kup bilet"
-  // link carries .stretched-link, so the whole stub is one click target for
-  // buying. Non-buyable rows (in the card context) carry an invisible
+  // Every row is its own hover + click target. Rows with a CTA stretch that
+  // CTA's link over the whole row (.pc-buy buys, .pc-tel dials); rows without
+  // one ("wkrótce", manual-price — card context only) carry an invisible
   // .pc-row-details button that opens the play's modal. #49 — a row lifts on
   // its own (the card is held flat, see .pcard) and rises above its siblings
   // (z-index) so its shadow never bleeds under the next stacked stub. Each
@@ -124,6 +124,7 @@
     transform 0.15s ease;
 
   &:has(.pc-buy.stretched-link),
+  &:has(.pc-tel.stretched-link),
   &:has(.pc-row-details) {
     cursor: pointer;
 
@@ -135,10 +136,16 @@
     }
   }
 
-  // Buy rows signal "buy" with the coral edge; modal rows keep a neutral one.
+  // The lifted edge echoes the row's action: coral = buy, blue = call,
+  // neutral = open the details modal.
   &:has(.pc-buy.stretched-link):hover,
   &:has(.pc-buy.stretched-link):focus-within {
     border-color: rgba(224, 123, 120, 0.6);
+  }
+
+  &:has(.pc-tel.stretched-link):hover,
+  &:has(.pc-tel.stretched-link):focus-within {
+    border-color: rgba(91, 115, 149, 0.6);
   }
 
   &:has(.pc-row-details):hover {
@@ -372,10 +379,10 @@
   color: #33517e;
   border: 2px solid #5b7395;
   padding: calc(0.45rem - 2px) calc(0.9rem - 2px);
-  // #49 — raise the pill above the row's .pc-row-details overlay (z-index 1):
-  // the pill dials, the rest of the row opens the details modal.
-  position: relative;
-  z-index: 2;
+  // The pill carries .stretched-link, so the whole call row is one dial
+  // target (mirroring how .pc-buy stretches over its row). It must stay
+  // position:static: a positioned pill would trap the stretched ::after
+  // inside the pill instead of letting it cover the .pc-ticket row.
   transition:
     background 0.15s ease,
     color 0.15s ease;

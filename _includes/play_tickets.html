@@ -4,8 +4,10 @@
   Params: events   - array of repertuar events ({data, link, manual_price, tytul}),
                      already filtered to upcoming and sorted by date. May be empty.
           modal_id - (optional) id of the play's details modal. When given,
-                     NON-buyable rows get an invisible full-row button that opens
-                     that modal, so every row has its own hover + click target.
+                     rows WITHOUT a CTA of their own ("wkrótce", manual-price)
+                     get an invisible full-row button that opens that modal, so
+                     every row has its own hover + click target. Buy and call
+                     rows instead stretch their own link over the whole row.
                      The modal itself renders these tickets without modal_id, so
                      its rows never try to re-open the modal they live in.
 {% endcomment %}
@@ -23,9 +25,13 @@
         {% assign event_type = 'weekday' %}
       {% endif %}
       {% assign pc_mi = event.data | date: '%-m' | minus: 1 %}
-      {% assign buyable = false %}
-      {% if event.manual_price != true and event_type == 'weekend' and event.link and event.link != '-' %}
-        {% assign buyable = true %}
+      {% assign row_cta = 'none' %}
+      {% if event.manual_price != true %}
+        {% if event_type == 'weekday' %}
+          {% assign row_cta = 'tel' %}
+        {% elsif event.link and event.link != '-' %}
+          {% assign row_cta = 'buy' %}
+        {% endif %}
       {% endif %}
       <article class="pc-ticket" data-event-type="{{ event_type }}">
         <div class="pc-block">
@@ -41,18 +47,18 @@
           </span>
           {% if event.manual_price == true %}
             <span class="pc-soon">{{ event.link }}</span>
-          {% elsif buyable %}
+          {% elsif row_cta == 'buy' %}
             <a href="{{ event.link }}" target="_blank" rel="noopener noreferrer" class="pc-buy stretched-link"
               >Kup bilet 🎫</a
             >
-          {% elsif event_type == 'weekend' %}
-            <span class="pc-soon">Bilety online wkrótce</span>
-          {% else %}
+          {% elsif row_cta == 'tel' %}
             <span class="pc-groups-note">Rezerwacja dla grup zorganizowanych:</span>
-            <a href="tel:501-027-278" class="pc-tel">Zadzwoń 501 027 278 ☎</a>
+            <a href="tel:501-027-278" class="pc-tel stretched-link">Zadzwoń 501 027 278 ☎</a>
+          {% else %}
+            <span class="pc-soon">Bilety online wkrótce</span>
           {% endif %}
         </div>
-        {% if modal_id and buyable == false %}
+        {% if modal_id and row_cta == 'none' %}
           <button
             type="button"
             class="pc-row-details"
