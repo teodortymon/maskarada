@@ -125,7 +125,10 @@ templateEngineOverride: liquid
   .ksf-day-title .ksf-day-sep { color: rgba(56, 2, 0, 0.38); margin: 0 0.08em; }
   .ksf-day-title .ksf-day-dow { color: rgba(56, 2, 0, 0.6); }
 
-  /* Ticket stub — perforated time block */
+  /* Ticket stub — perforated time block. Row mechanics mirror the play-card
+     mini-tickets (scss/_play-card.scss): the row's CTA link stretches over the
+     whole stub, the stub lifts on hover, and the lifted edge echoes the action
+     — coral = buy, blue = call, neutral = open the play's modal. */
   .ksf-stub {
     --datew: 4.6rem;
     position: relative;
@@ -137,7 +140,20 @@ templateEngineOverride: liquid
     margin-bottom: 0.55rem;
     box-shadow: 0 1px 3px rgba(56, 2, 0, 0.05);
     overflow: hidden;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
   }
+  .ksf-stub:has(.stretched-link) { cursor: pointer; }
+  .ksf-stub:has(.stretched-link):hover,
+  .ksf-stub:has(.stretched-link):focus-within {
+    box-shadow: 0 4px 12px rgba(56, 2, 0, 0.14);
+    transform: translateY(-2px);
+    z-index: 3;
+  }
+  .ksf-stub:has(.ksf-buy.stretched-link):hover,
+  .ksf-stub:has(.ksf-buy.stretched-link):focus-within { border-color: rgba(224, 123, 120, 0.6); }
+  .ksf-stub:has(.ksf-tel.stretched-link):hover,
+  .ksf-stub:has(.ksf-tel.stretched-link):focus-within { border-color: rgba(91, 115, 149, 0.6); }
+  .ksf-stub:has(.ksf-title-btn.stretched-link):hover { border-color: rgba(56, 2, 0, 0.2); }
   .ksf-stub::before,
   .ksf-stub::after {
     content: "";
@@ -149,6 +165,9 @@ templateEngineOverride: liquid
     background: #f3ecf2;
     border: 1px solid rgba(56, 2, 0, 0.09);
     z-index: 2;
+    /* decorative: they sit above the stretched row overlay, so without this
+       they'd punch two dead spots into the row's click area */
+    pointer-events: none;
   }
   .ksf-stub::before { top: -8px; }
   .ksf-stub::after { bottom: -8px; }
@@ -190,6 +209,14 @@ templateEngineOverride: liquid
     color: #380200;
     text-align: left;
     cursor: pointer;
+  }
+  /* Keep the title's own modal click above a buy/tel row overlay (z-index 1).
+     Only when it is NOT itself the row's stretched-link: positioning the
+     stretched title would trap its ::after inside the label instead of
+     letting it cover the stub. */
+  .ksf-title-btn:not(.stretched-link) {
+    position: relative;
+    z-index: 2;
   }
   .ksf-title-btn:hover { color: #e07b78; }
   .ksf-title-more { font-size: 0.78em; font-weight: 500; color: #e07b78; white-space: nowrap; }
@@ -367,28 +394,38 @@ templateEngineOverride: liquid
                   {% break %}
                 {% endif %}
               {% endfor %}
+              {% comment %} Row CTA mirrors _includes/play_tickets.html: the CTA link
+                 stretches over the whole stub (buy/dial), CTA-less stubs stretch the
+                 title button instead so the whole row opens the play's modal. The
+                 title button stays raised (z-index) above a buy/tel overlay. {% endcomment %}
+              {% assign row_cta = "none" %}
+              {% if spektakl.manual_price != true %}
+                {% if event_type == "weekday" %}
+                  {% assign row_cta = "tel" %}
+                {% elsif spektakl.link and spektakl.link != "-" %}
+                  {% assign row_cta = "buy" %}
+                {% endif %}
+              {% endif %}
               <article class="ksf-stub" data-event-type="{{ event_type }}">
                 <div class="ksf-block">
                   <span class="ksf-time-big">{{ spektakl.data | date: "%R" }}</span>
                 </div>
                 <div class="ksf-body">
                   {% if matched_play %}
-                    <button type="button" class="ksf-title-btn" data-bs-toggle="modal" data-bs-target="#{{ matched_play.id2 }}">{{ spektakl.tytul }} <span class="ksf-title-more" aria-hidden="true">więcej →</span></button>
+                    <button type="button" class="ksf-title-btn{% if row_cta == 'none' %} stretched-link{% endif %}" data-bs-toggle="modal" data-bs-target="#{{ matched_play.id2 }}">{{ spektakl.tytul }} <span class="ksf-title-more" aria-hidden="true">więcej →</span></button>
                   {% else %}
                     <span class="ksf-title-btn" style="cursor:default">{{ spektakl.tytul }}</span>
                   {% endif %}
                   <span class="ksf-action">
                     {% if spektakl.manual_price == true %}
                       {{ spektakl.link }}
-                    {% elsif event_type == "weekend" %}
-                      {% if spektakl.link == "-" %}
-                        <span class="ksf-soon">Bilety online wkrótce</span>
-                      {% else %}
-                        <a href="{{ spektakl.link }}" target="_blank" rel="noopener noreferrer" class="ksf-buy">Kup bilet 🎫</a>
-                      {% endif %}
-                    {% else %}
+                    {% elsif row_cta == "buy" %}
+                      <a href="{{ spektakl.link }}" target="_blank" rel="noopener noreferrer" class="ksf-buy stretched-link">Kup bilet 🎫</a>
+                    {% elsif row_cta == "tel" %}
                       <span class="ksf-groups-note">Zapraszamy grupy zorganizowane do rezerwacji tel.</span>
-                      <a href="tel:501-027-278" class="ksf-tel">Zadzwoń 501 027 278 ☎</a>
+                      <a href="tel:501-027-278" class="ksf-tel stretched-link">Zadzwoń 501 027 278 ☎</a>
+                    {% else %}
+                      <span class="ksf-soon">Bilety online wkrótce</span>
                     {% endif %}
                   </span>
                 </div>
@@ -447,6 +484,21 @@ templateEngineOverride: liquid
   });
 </script>
 
+{% comment %} Each modal lists the play's upcoming showtimes — same as Teraz/Spektakle. {% endcomment %}
+{% assign modal_all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+{% assign modal_now = 'now' | date: "%s" | plus: 0 %}
 {% for s in collections.s2 %}
-  {% render "spektakl_modal.html", s: s %}
+  {% assign modal_events = "" | split: "" %}
+  {% for miesiac in modal_all_miesiace %}
+    {% if spektakle[miesiac].repertuar %}
+      {% for event in spektakle[miesiac].repertuar %}
+        {% assign ets = event.data | date: "%s" | plus: 0 %}
+        {% if event.tytul == s.title and ets >= modal_now %}
+          {% assign modal_events = modal_events | push: event %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% assign modal_events = modal_events | sort: 'data' %}
+  {% render "spektakl_modal.html", s: s, events: modal_events %}
 {% endfor %}
