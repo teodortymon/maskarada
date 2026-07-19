@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+#MISE description="Lighthouse performance audit of the built _site/ (builds, serves on :8931, audits key pages into .lighthouse/)"
+# Usage: mise run perf-audit  [-- extra lighthouse flags]
+# Reports (HTML + JSON) land in .lighthouse/ (gitignored scratch output).
+set -euo pipefail
+
+cd "$MISE_PROJECT_ROOT"
+
+PORT=8931
+OUT=.lighthouse
+PAGES=("t/" "t/spektakle.html" "t/repertuar.html")
+
+mise run build
+mkdir -p "$OUT"
+
+npx --yes http-server _site -p "$PORT" --silent &
+SERVER_PID=$!
+trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+sleep 1
+
+for page in "${PAGES[@]}"; do
+  slug=$(echo "$page" | sed 's![/.]!-!g; s!-*$!!; s!^-*!!')
+  [ -n "$slug" ] || slug=home
+  echo "== Auditing /$page =="
+  npx --yes lighthouse "http://127.0.0.1:$PORT/$page" \
+    --only-categories=performance,accessibility,best-practices,seo \
+    --chrome-flags="--headless=new" \
+    --output=html --output=json \
+    --output-path="$OUT/$slug" \
+    --quiet "$@" || echo "lighthouse failed for /$page (continuing)"
+done
+
+echo
+echo "Scores:"
+for f in "$OUT"/*.json; do
+  node -e "
+    const r = require('./$f');
+    const s = Object.entries(r.categories).map(([k, v]) => k + ' ' + Math.round(v.score * 100)).join('  ');
+    console.log((r.finalDisplayedUrl || r.requestedUrl) + '  ->  ' + s);
+  "
+done
+echo "Full reports in $OUT/"

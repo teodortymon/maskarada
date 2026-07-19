@@ -9,7 +9,7 @@
     <meta name="Description" content="Magiczne przedstawienia teatralne dla dzieci." />
 
     <title>MASKARADA Teatr dla dzieci</title>
-    <link rel="icon" type="image/png" href="lay/img/logo2.png" />
+    <link rel="icon" type="image/png" href="lay/img/favicon-96.png" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
     <!-- Bootstrap: TODO: Move to the bottom of <body> -->
@@ -27,7 +27,17 @@
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
+    <!-- Async font CSS: media="print" defers it off the critical path; onload
+         flips it live. display=swap means text renders in the fallback font
+         meanwhile, so nothing blocks first paint on slow networks. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
+    </noscript>
 
       <!-- Boostrap scss styles -->
     <link rel="stylesheet" href="../css/styles.css" />
@@ -54,15 +64,37 @@
   <!-- <script>    !function(f,b,e,v,n,t,s)    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?    n.callMethod.apply(n,arguments):n.queue.push(arguments)};    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';    n.queue=[];t=b.createElement(e);t.async=!0;    t.src=v;s=b.getElementsByTagName(e)[0];    s.parentNode.insertBefore(t,s)}(window, document,'script',    'https://connect.facebook.net/en_US/fbevents.js');    fbq('init', '1308079555992915');    fbq('track', 'PageView');    </script>    <noscript><img height="0" width="0" style="display:none!important"    src="https://www.facebook.com/tr?id=1308079555992915&ev=PageView&noscript=1"    /></noscript> -->
   <!-- End Facebook Pixel Code -->
 
-  <!-- Facebook JS SDK (loads the Page Plugin feed in footer_t.html) -->
+  <!-- Facebook JS SDK (loads the Page Plugin feed in footer_t.html).
+       Loaded lazily: the SDK + the plugin's feed pull ~2-3 MB (photos, videos),
+       so we only fetch it when the footer widget scrolls near the viewport
+       instead of on every page load. -->
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v19.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>(function () {
+    var loaded = false;
+    function loadFbSdk() {
+      if (loaded || document.getElementById("facebook-jssdk")) return;
+      loaded = true;
+      var js = document.createElement("script");
+      js.id = "facebook-jssdk";
+      js.async = true;
+      js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v19.0";
+      document.head.appendChild(js);
+    }
+    function init() {
+      var target = document.querySelector(".fb-page");
+      if (!target) return; // no FB widget on this page — never load the SDK
+      if (!("IntersectionObserver" in window)) { loadFbSdk(); return; }
+      var io = new IntersectionObserver(function (entries) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) { io.disconnect(); loadFbSdk(); return; }
+        }
+      }, { rootMargin: "600px 0px" });
+      io.observe(target);
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else { init(); }
+  })();</script>
   <style>
     .site-header {
       position: sticky;
@@ -240,7 +272,10 @@
     <div class="bar">
       <div class="container">
         <a class="brand" href="index.html">
-          <img src="lay/img/logo2.png" alt="Teatr Maskarada" />
+          <picture>
+            <source srcset="lay/img/logo2.webp" type="image/webp" />
+            <img src="lay/img/logo2.png" alt="Teatr Maskarada" width="794" height="184" fetchpriority="high" />
+          </picture>
         </a>
         <nav class="site-nav">
           <a class="nav-link {% if u == 'index' or page.url == '/t/' %}active{% endif %}" href="index.html">Teraz</a>

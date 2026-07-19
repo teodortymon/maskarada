@@ -69,3 +69,6 @@ _data/spektakle/*_raw.html
 .claude/*
 !.claude/skills
 .claude/settings.local.json
+
+# Lighthouse audit reports (mise run perf-audit)
+.lighthouse/
