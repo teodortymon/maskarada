@@ -137,7 +137,8 @@ base branch `v2`; and the mode. Its contract:
   ```
   Use `Refs #N`, **not** `Closes #N` — GitHub only auto-closes issues from PRs
   merged into the **default** branch (`master`), and these target `v2`, so
-  `Closes` wouldn't fire anyway. The issue is closed by hand later.
+  `Closes` wouldn't fire anyway. `/finish` closes the issue when the accepted PR's
+  branch is merged into `v2` (it derives `N` from the `-<N>` branch suffix).
 - Return: issue #, branch, PR URL, and status
   (`opened` / `build-failed-draft` / `errored`).
 
@@ -197,6 +198,6 @@ so the `acceptEdits` cron run doesn't stall on permission prompts.
   breakage, not visual regressions — that's exactly why the output is a **draft**
   PR for human review.
 - **Issues don't auto-close on merge** (PRs target `v2`, not the default
-  `master`); close them by hand.
+  `master`); `/finish` closes the issue when you merge the accepted PR's branch.
 - **Cost scales with issue count** — each issue is a full subagent. Use the
   numeric filter (`/backlog 41,44`) to bound a run.

@@ -81,6 +81,22 @@ approaches"), don't just describe options or show static screenshots — build
 - Once a variant is chosen, hard-code the winner and remove the switcher and
   any lab pages before merging.
 
+## Interactive PRs: always expose a mobile test tunnel
+
+Whenever you open (or update) a PR **while I'm working interactively with you**,
+always also attempt to expose the running dev server over `ngrok` so I can test
+the change on my phone, and give me the public URL in the hand-off:
+
+- Read the real port from the dev server's own startup log (it auto-increments
+  from 8080). If no dev server is running yet, start one with `mise run dev`
+  first.
+- Start the tunnel with `ngrok http <port>` (background it). ngrok free allows
+  only one session, so if a tunnel is already up, restart it fresh rather than
+  launching a second. Report the `https://…ngrok…` URL alongside the localhost
+  URL in the wrap-up.
+- This is an interactive-only courtesy: **skip it entirely in cron / unattended
+  runs** (e.g. `/backlog --cron`) — no ngrok there.
+
 ## Finishing work: `/finish`
 
 The `/finish` local skill wraps up a feature branch: it merges the current

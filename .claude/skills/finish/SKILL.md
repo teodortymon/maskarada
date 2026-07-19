@@ -110,8 +110,13 @@ You cannot merge into `v2` or remove this worktree while standing inside it, so
 drive the merge from the `v2` worktree using `git -C "$V2_WT" ...`.
 
 1. **Make sure `v2` is ready:**
-   - `git -C "$V2_WT" status --porcelain` must be clean. If not, STOP and report
-     — the user needs to deal with the `v2` worktree's dirty state.
+   - `git -C "$V2_WT" status --porcelain` should be clean. If it's dirty with an
+     **unrelated pending edit** (something left uncommitted that isn't part of this
+     feature and you haven't been asked to commit — e.g. a `CLAUDE.md` tweak),
+     don't hard-stop and don't commit it: stash just those paths
+     (`git -C "$V2_WT" stash push -- <paths>`), run the merge, then
+     `git -C "$V2_WT" stash pop` afterward to restore it uncommitted. STOP and
+     report only if the dirty state can't be safely set aside.
    - `git -C "$V2_WT" pull --ff-only origin v2` to get the latest (skip/report if
      there is no `origin` or no network, don't hard-fail).
 2. **Merge the feature branch into `v2`:**
@@ -125,27 +130,37 @@ drive the merge from the `v2` worktree using `git -C "$V2_WT" ...`.
    ```
    git -C "$V2_WT" push origin v2
    ```
-4. **Remove the feature worktree** (run from `$V2_WT`, not from inside it):
+4. **Always close the linked issue.** These PRs target `v2`, not the default
+   branch, so GitHub never auto-closes the issue on merge — so close it here every
+   time. Derive the issue number `N` from the branch's trailing `-<N>` (the
+   `/start` + `/backlog` naming convention; the PR body's `Refs #N` is a fallback).
+   If the branch has no numeric suffix there's no issue to close — skip. Otherwise:
+   ```
+   gh issue close <N> --comment "Shipped on v2 via merge <merge-sha> (branch $FEATURE)."
+   ```
+   Skip/report (don't hard-fail) if there's no network or it's already closed.
+5. **Remove the feature worktree** (run from `$V2_WT`, not from inside it):
    ```
    git -C "$V2_WT" worktree remove "$FEATURE_WT"
    ```
    If it refuses due to leftover state, report it rather than using `--force`
    without asking.
-5. **Delete the feature branch:**
+6. **Delete the feature branch:**
    ```
    git -C "$V2_WT" branch -d "$FEATURE"
    ```
    Use `-d` (safe delete). If git complains it's not fully merged, that means the
    merge didn't land — investigate, don't `-D`.
-6. **Delete the remote feature branch** if one was pushed:
+7. **Delete the remote feature branch** if one was pushed:
    `git -C "$V2_WT" push origin --delete "$FEATURE"` (skip silently if it never
    existed on the remote).
 
 ## Finish up
 
-Report a short summary: what was merged, that `v2` was pushed, and that the branch
-+ worktree were removed. Since the current worktree no longer exists, remind the
-user to `cd "$V2_WT"` (or open a fresh worktree) to continue.
+Report a short summary: what was merged, that `v2` was pushed, which issue was
+closed, and that the branch + worktree were removed. Since the current worktree no
+longer exists, remind the user to `cd "$V2_WT"` (or open a fresh worktree) to
+continue.
 
 Then notify:
 `terminal-notifier -title "Claude Code" -message "/finish: <FEATURE> merged into v2 and cleaned up"`
