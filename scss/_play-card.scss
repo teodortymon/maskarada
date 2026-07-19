@@ -20,31 +20,44 @@
       box-shadow: 0 6px 18px rgba(56, 2, 0, 0.12);
     }
 
-    // #49 multi-date hover fix — when the pointer/focus is on a specific
-    // buyable stub, that stub lifts on its OWN (see .pc-ticket below), so the
-    // whole card must stay flat. Otherwise, on a play with several dates,
-    // hovering one stub also lifted the entire card and every sibling stub
-    // shifted with it — you couldn't tell which date you were about to buy.
-    // (With a single date the two lifts coincided, which is why it only looked
-    // right there.) This :has() override wins because it is more specific.
-    &:has(.pc-ticket:hover),
-    &:has(.pc-ticket:focus-within) {
+    // #49 multi-date hover fix — when the pointer/focus is anywhere in the
+    // ticket LIST (.pc-tickets wraps all stubs, including the gaps between
+    // them), a buyable stub lifts on its OWN (see .pc-ticket below) and the
+    // whole card stays flat. Keying this off the wrapper rather than the
+    // individual stub matters on multi-date cards: with per-stub :hover the
+    // card's big modal shadow snapped back on in every inter-stub gap, so
+    // sweeping down the list made the card strobe lifted/flat between each
+    // row. This :has() override wins because it is more specific.
+    &:has(.pc-tickets:hover),
+    &:has(.pc-tickets:focus-within) {
       transform: none;
       box-shadow: 0 1px 3px rgba(56, 2, 0, 0.05);
     }
   }
 
   // Interactive regions opt back out of the card's stretched-link (modal)
-  // overlay. #49 — only regions that carry their OWN click target are raised:
-  //   * the media facade (YouTube play button), and
-  //   * a BUYABLE ticket row (it has .pc-buy.stretched-link, so raising the
-  //     whole row makes every part of it — time block, date, empty space — buy).
-  // Non-buyable rows (weekday "Zadzwoń", "wkrótce") are deliberately NOT raised,
-  // so their body falls through to the card→modal click; only the phone pill
-  // inside them is raised (see .pc-tel) so it can still dial.
+  // overlay. #49 — the media facade (YouTube play button) and the WHOLE ticket
+  // list. Raising the list as one block (not stub by stub) means the gaps
+  // between stubs no longer poke through to the card→modal overlay: :hover is
+  // resolved from the hit element's DOM chain, so a per-stub raise left every
+  // inter-stub gap re-triggering the card lift — sweeping down a multi-date
+  // list made the card strobe. Inside the raised list every row carries its
+  // own click target (.pc-buy on buyable rows, .pc-row-details on the rest),
+  // and the gaps are calm dead space.
   .ratio,
-  .pc-ticket:has(.pc-buy.stretched-link) {
+  .pc-tickets {
     z-index: 2;
+  }
+
+  .pc-tickets {
+    position: relative;
+
+    // Markdown pages leave stray <p> wrappers/siblings around the <article>
+    // rows (the repo's markdown-<p> gotcha) — dissolve them so they add no
+    // phantom spacing between rows.
+    > p {
+      display: contents;
+    }
   }
 
   .card-body {
@@ -97,27 +110,46 @@
   --timew: 4.6rem;
   position: relative;
 
-  // A buyable showtime: the "Kup bilet" link carries .stretched-link, so the
-  // whole stub is one click target for buying. Signal it and lift on hover.
-  // #49 — the stub lifts on its own (the card is held flat, see .pcard) and
-  // rises above its siblings (z-index) so its shadow never bleeds under the
-  // next stacked stub. Each dated stub therefore highlights independently, the
-  // same clean way whether the play has one date or several.
+  // Every row is its own hover + click target. Rows with a CTA stretch that
+  // CTA's link over the whole row (.pc-buy buys, .pc-tel dials); rows without
+  // one ("wkrótce", manual-price — card context only) carry an invisible
+  // .pc-row-details button that opens the play's modal. #49 — a row lifts on
+  // its own (the card is held flat, see .pcard) and rises above its siblings
+  // (z-index) so its shadow never bleeds under the next stacked stub. Each
+  // dated row therefore highlights independently, the same clean way whether
+  // the play has one date or several.
   transition:
     border-color 0.15s ease,
     box-shadow 0.15s ease,
     transform 0.15s ease;
 
-  &:has(.pc-buy.stretched-link) {
+  &:has(.pc-buy.stretched-link),
+  &:has(.pc-tel.stretched-link),
+  &:has(.pc-row-details) {
     cursor: pointer;
 
     &:hover,
     &:focus-within {
-      border-color: rgba(224, 123, 120, 0.6);
       box-shadow: 0 4px 12px rgba(56, 2, 0, 0.14);
       transform: translateY(-2px);
       z-index: 3;
     }
+  }
+
+  // The lifted edge echoes the row's action: coral = buy, blue = call,
+  // neutral = open the details modal.
+  &:has(.pc-buy.stretched-link):hover,
+  &:has(.pc-buy.stretched-link):focus-within {
+    border-color: rgba(224, 123, 120, 0.6);
+  }
+
+  &:has(.pc-tel.stretched-link):hover,
+  &:has(.pc-tel.stretched-link):focus-within {
+    border-color: rgba(91, 115, 149, 0.6);
+  }
+
+  &:has(.pc-row-details):hover {
+    border-color: rgba(56, 2, 0, 0.2);
   }
 
   display: flex;
@@ -241,6 +273,20 @@
     color: #9a6265;
   }
 
+  // Invisible full-row click target on non-buyable rows (card context only):
+  // opens the play's details modal. Kept out of the tab order (tabindex=-1 in
+  // the markup) — keyboard users reach the modal via the visible
+  // "Szczegóły spektaklu →" button instead.
+  .pc-row-details {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border: 0;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
   // Weekday group-reservation rows (date + "Rezerwacja …" note + the long
   // "Zadzwoń …" pill) don't fit the 2-col grid — the non-wrapping pill would
   // crush the date column. Lay them out as a wrapping flex row instead: the note
@@ -333,11 +379,10 @@
   color: #33517e;
   border: 2px solid #5b7395;
   padding: calc(0.45rem - 2px) calc(0.9rem - 2px);
-  // #49 — the phone pill is the ONE interactive control in a non-raised
-  // (weekday) row, so raise just the pill above the card modal overlay: the
-  // pill dials, the rest of the row opens the details modal.
-  position: relative;
-  z-index: 2;
+  // The pill carries .stretched-link, so the whole call row is one dial
+  // target (mirroring how .pc-buy stretches over its row). It must stay
+  // position:static: a positioned pill would trap the stretched ::after
+  // inside the pill instead of letting it cover the .pc-ticket row.
   transition:
     background 0.15s ease,
     color 0.15s ease;
