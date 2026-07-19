@@ -1,47 +1,68 @@
 {% comment %}
   Showtime mini-tickets for a play, shared by the play card (play_card.html) and
   the details modal (spektakl_modal.html) so both list the same tickets.
-  Param: events - array of repertuar events ({data, link, manual_price, tytul}),
-                  already filtered to upcoming and sorted by date. May be empty.
+  Params: events   - array of repertuar events ({data, link, manual_price, tytul}),
+                     already filtered to upcoming and sorted by date. May be empty.
+          modal_id - (optional) id of the play's details modal. When given,
+                     NON-buyable rows get an invisible full-row button that opens
+                     that modal, so every row has its own hover + click target.
+                     The modal itself renders these tickets without modal_id, so
+                     its rows never try to re-open the modal they live in.
 {% endcomment %}
 {% assign pc_months = 'stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia'
   | split: ','
 %}
 {% assign pc_days = 'Niedziela,Poniedziałek,Wtorek,Środa,Czwartek,Piątek,Sobota' | split: ',' %}
-{% for event in events %}
-  {% assign pc_dw = event.data | date: '%w' | plus: 0 %}
-  {% if pc_dw == 0 or pc_dw == 6 %}
-    {% assign event_type = 'weekend' %}
-  {% else %}
-    {% assign event_type = 'weekday' %}
-  {% endif %}
-  {% assign pc_mi = event.data | date: '%-m' | minus: 1 %}
-  <article class="pc-ticket" data-event-type="{{ event_type }}">
-    <div class="pc-block">
-      <span class="pc-time">{{ event.data | date: '%R' }}</span>
-    </div>
-    <div class="pc-tbody">
-      <span class="pc-when">
-        <span class="pc-dow">{{ pc_days[pc_dw] }},</span>
-        <span class="pc-date">
-          {{- event.data | date: '%-d' }}
-          {{ pc_months[pc_mi] -}}
-        </span>
-      </span>
-      {% if event.manual_price == true %}
-        <span class="pc-soon">{{ event.link }}</span>
-      {% elsif event_type == 'weekend' %}
-        {% if event.link and event.link != '-' %}
-          <a href="{{ event.link }}" target="_blank" rel="noopener noreferrer" class="pc-buy stretched-link"
-            >Kup bilet 🎫</a
-          >
-        {% else %}
-          <span class="pc-soon">Bilety online wkrótce</span>
-        {% endif %}
+{% if events.size > 0 %}
+  <div class="pc-tickets">
+    {% for event in events %}
+      {% assign pc_dw = event.data | date: '%w' | plus: 0 %}
+      {% if pc_dw == 0 or pc_dw == 6 %}
+        {% assign event_type = 'weekend' %}
       {% else %}
-        <span class="pc-groups-note">Rezerwacja dla grup zorganizowanych:</span>
-        <a href="tel:501-027-278" class="pc-tel">Zadzwoń 501 027 278 ☎</a>
+        {% assign event_type = 'weekday' %}
       {% endif %}
-    </div>
-  </article>
-{% endfor %}
+      {% assign pc_mi = event.data | date: '%-m' | minus: 1 %}
+      {% assign buyable = false %}
+      {% if event.manual_price != true and event_type == 'weekend' and event.link and event.link != '-' %}
+        {% assign buyable = true %}
+      {% endif %}
+      <article class="pc-ticket" data-event-type="{{ event_type }}">
+        <div class="pc-block">
+          <span class="pc-time">{{ event.data | date: '%R' }}</span>
+        </div>
+        <div class="pc-tbody">
+          <span class="pc-when">
+            <span class="pc-dow">{{ pc_days[pc_dw] }},</span>
+            <span class="pc-date">
+              {{- event.data | date: '%-d' }}
+              {{ pc_months[pc_mi] -}}
+            </span>
+          </span>
+          {% if event.manual_price == true %}
+            <span class="pc-soon">{{ event.link }}</span>
+          {% elsif buyable %}
+            <a href="{{ event.link }}" target="_blank" rel="noopener noreferrer" class="pc-buy stretched-link"
+              >Kup bilet 🎫</a
+            >
+          {% elsif event_type == 'weekend' %}
+            <span class="pc-soon">Bilety online wkrótce</span>
+          {% else %}
+            <span class="pc-groups-note">Rezerwacja dla grup zorganizowanych:</span>
+            <a href="tel:501-027-278" class="pc-tel">Zadzwoń 501 027 278 ☎</a>
+          {% endif %}
+        </div>
+        {% if modal_id and buyable == false %}
+          <button
+            type="button"
+            class="pc-row-details"
+            data-bs-toggle="modal"
+            data-bs-target="#{{ modal_id }}"
+            tabindex="-1"
+            aria-hidden="true"
+          ></button>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+{% endif %}
