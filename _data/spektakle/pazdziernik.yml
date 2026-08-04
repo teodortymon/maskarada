@@ -1,5 +1,6 @@
 title: Październik
 repertuar:
+  - {}
   - tytul: Złota Rybka
     data: 2026-10-26T11:00:00.000Z
     link: '-'
@@ -17,12 +18,6 @@ repertuar:
     link: '-'
   - tytul: Calineczka
     data: 2026-10-12T09:30:00.000Z
-    link: '-'
-  - tytul: Królowa Myszy
-    data: 2026-10-19T11:00:00.000Z
-    link: '-'
-  - tytul: Królowa Myszy
-    data: 2026-10-19T09:30:00.000Z
     link: '-'
   - tytul: Królowa Myszy
     data: 2026-10-18T12:00:00.000Z
