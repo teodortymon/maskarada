@@ -8,6 +8,9 @@ BILETOMAT_ORGANIZER_ID = "333"
 # Tasks (migrated from Makefile). The Makefile is kept until these are verified.
 # ---------------------------------------------------------------------------
 
+[tools]
+uv = "latest"
+
 [tasks.dev]
 description = "Run Jekyll dev server with livereload"
 shell = "fish -lc"
@@ -23,10 +26,8 @@ run = "mogrify -resize 600x600"
 
 [tasks.fetch-events]
 description = "Log into Biletomat and capture the organizer's events list as JSON (uses BILETOMAT_USER/PASS)"
-run = [
-  "uv run --with playwright python -m playwright install chromium",
-  "uv run scripts/fetch_biletomat_events.py",
-]
+depends = ["install-browser"]
+run = "uv run scripts/fetch_biletomat_events.py"
 
 [tasks.update-links]
 description = "Fetch latest Biletomat events, then update ticket links in spektakle YAML"

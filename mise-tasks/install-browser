@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#MISE description="Install Playwright Chromium (with system deps on Linux/CI)"
+set -euo pipefail
+
+# Playwright browser binaries are version-locked to the playwright package and
+# can only be installed via its own CLI (no version manager can own them).
+# --with-deps also installs the OS libraries, but is Linux-only — guard it so
+# local macOS runs don't break.
+if [ "$(uname)" = "Linux" ]; then
+  uv run --with playwright python -m playwright install --with-deps chromium
+else
+  uv run --with playwright python -m playwright install chromium
+fi

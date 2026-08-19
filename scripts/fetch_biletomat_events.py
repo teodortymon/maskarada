@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["playwright>=1.40"]
+# dependencies = ["playwright>=1.40", "tzdata"]
 # ///
 """
 Log into eventadmin.biletomat.pl and capture the organizer's events list,
