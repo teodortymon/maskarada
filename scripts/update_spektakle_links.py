@@ -13,12 +13,14 @@ The script expects:
     - YAML files: _data/spektakle/<month>.yml
 """
 
+import json
 import re
 from datetime import datetime
 from pathlib import Path
 
 DATA_DIR = Path('_data/spektakle')
-HTML_FILE = DATA_DIR / 'new_events_raw.html'
+EVENTS_FILE = DATA_DIR / 'new_events.json'
+HTML_FILE = DATA_DIR / 'new_events_raw.html'  # legacy fallback (old Biletomat UI)
 
 # YAML files to skip (not month repertoire files)
 SKIP_FILES = {'spektakle.yml'}
@@ -128,7 +130,7 @@ def update_yaml_with_links(yaml_path, html_events):
                                 mismatch_fixed_count += 1
                         else:
                             if current_link == '-':
-                                messages.append(f"  ? {title} @ {html_date} — no match in HTML")
+                                messages.append(f"  ? {title} @ {html_date} — no match in Biletomat")
                                 not_found_count += 1
 
         i += 1
@@ -139,18 +141,32 @@ def update_yaml_with_links(yaml_path, html_events):
     return updated_count, mismatch_fixed_count, not_found_count, messages
 
 
+def load_events():
+    """Load events from new_events.json (produced by fetch_biletomat_events.py),
+    falling back to the legacy HTML export if the JSON is not present."""
+    if EVENTS_FILE.exists():
+        print(f"Reading {EVENTS_FILE}...")
+        events = json.loads(EVENTS_FILE.read_text(encoding='utf-8'))
+        if not events:
+            print("No events in JSON. Run `mise run fetch-events` to refresh it.")
+            exit(1)
+        return events
+
+    if HTML_FILE.exists():
+        print(f"Reading {HTML_FILE} (legacy)...")
+        events = extract_events_from_html(HTML_FILE)
+        if not events:
+            print("No events found in HTML. Check if the file format changed.")
+            exit(1)
+        return events
+
+    print(f"Error: no events source found ({EVENTS_FILE} or {HTML_FILE}).")
+    print("Run `mise run fetch-events` to log into Biletomat and fetch them.")
+    exit(1)
+
+
 def main():
-    if not HTML_FILE.exists():
-        print(f"Error: HTML file not found: {HTML_FILE}")
-        print("Export events from Biletomat and save as _data/spektakle/new_events_raw.html")
-        exit(1)
-
-    print(f"Reading {HTML_FILE}...")
-    html_events = extract_events_from_html(HTML_FILE)
-
-    if not html_events:
-        print("No events found in HTML. Check if the file format changed.")
-        exit(1)
+    html_events = load_events()
 
     print(f"Found {len(html_events)} events in HTML:\n")
     for event in html_events:

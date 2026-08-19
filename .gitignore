@@ -34,3 +34,9 @@ node_modules
 
 # Spektakle HTML exports (temporary processing files)
 _data/spektakle/*_raw.html
+# Biletomat events fetch (transient / debug)
+_data/spektakle/new_events.json
+_data/spektakle/.biletomat_debug/
+.venv/
+# Local secrets (mise injects age-encrypted values from mise.toml instead)
+.env
