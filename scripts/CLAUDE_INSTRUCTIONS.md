@@ -2,30 +2,38 @@
 
 This document contains instructions for Claude (or human developers) when updating spektakle links or performing similar tasks.
 
-## Task: Update Ticket Links from HTML Export
+## Task: Update Ticket Links from Biletomat
 
 ### Context
 
 The Maskarada website stores show schedules in YAML files at `_data/spektakle/<month>.yml`. When new shows are created in Biletomat's event management system, we need to update the YAML files with ticket booking links.
 
+Login and event export are **automated** — no more hand-saving HTML. The old
+manual flow (saving `new_events_raw.html` from the Angular UI) is kept only as a
+legacy fallback in `update_spektakle_links.py`.
+
 ### Process Overview
 
-1. **Export HTML from Biletomat**
-   - Navigate to Biletomat event management
-   - View events list (can include multiple months)
-   - Save the page HTML as `_data/spektakle/new_events_raw.html`
+```bash
+mise run update-links      # fetch (headless login + JSON API) + update, chained
+git diff _data/spektakle/  # review
+git add _data/spektakle/ && git commit -m "Update ticket links"
+```
 
-2. **Run the update script**
-   ```bash
-   make update-links
-   ```
+Two scripts, wired as mise tasks (`fetch-events` → `update-links`):
 
-3. **Review and commit changes**
-   ```bash
-   git diff _data/spektakle/
-   git add _data/spektakle/
-   git commit -m "Update ticket links"
-   ```
+1. **`fetch_biletomat_events.py`** — Playwright logs into
+   `eventadmin.biletomat.pl` with `BILETOMAT_USER`/`BILETOMAT_PASS` (injected by
+   mise from the age-encrypted `[env]` block), captures the SPA's own
+   authenticated request to `api.biletomat.pl/repertoire/events`, pages through
+   it, and writes normalized `_data/spektakle/new_events.json`
+   (`[{id, title, date}]`, date as `DD.MM.YYYY HH:MM` Warsaw wall-clock).
+2. **`update_spektakle_links.py`** — reads `new_events.json` and fills `link:`
+   for every matching show across all month YAML files.
+
+If Biletomat changes their API, re-run with `--recon` to dump responses to
+`_data/spektakle/.biletomat_debug/` and re-confirm the endpoint/fields in
+`fetch_biletomat_events.py` (`EVENTS_API_MARK`, `normalize_events()`).
 
 ## Script Details
 

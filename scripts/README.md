@@ -2,73 +2,54 @@
 
 This directory contains automation scripts for managing the Maskarada website.
 
-## update_spektakle_links.py
+## Updating ticket links (automated)
 
-Updates spektakle (shows) YAML files with ticket booking links extracted from Biletomat HTML exports.
+Two scripts, wired as mise tasks, keep the ticket booking links in the show
+YAMLs up to date. Login and event export are automated — you don't save any HTML.
 
-### Purpose
+```bash
+mise run update-links      # fetch (headless login + JSON API) + update, in one go
+```
 
-When you export event data from Biletomat's event management system, this script:
-1. Extracts event IDs, titles, and dates from the HTML export
-2. Matches them with entries in your YAML repertoire files
-3. Updates the YAML files with the correct ticket booking URLs
+- **`fetch_biletomat_events.py`** — logs into `eventadmin.biletomat.pl` (Event
+  Admin PLG) headlessly with Playwright using `BILETOMAT_USER` / `BILETOMAT_PASS`
+  (injected by mise from the age-encrypted `[env]` block in `mise.toml`), reads
+  the organizer's events from the JSON API (`api.biletomat.pl/repertoire/events`),
+  and writes normalized `_data/spektakle/new_events.json`.
+- **`update_spektakle_links.py`** — reads `new_events.json` and fills the `link:`
+  field of every matching show across all `_data/spektakle/*.yml` files.
 
 ### Prerequisites
 
-- Python 3.x (no external dependencies required)
-- HTML export from Biletomat saved as `_data/spektakle/<month_name>_raw.html`
-- Existing YAML file at `_data/spektakle/<month_name>.yml`
+- [mise](https://mise.jdx.dev/) and [uv](https://docs.astral.sh/uv/) installed.
+- Credentials set once (age-encrypted, safe to commit as ciphertext):
+  ```bash
+  mise set --age-encrypt --prompt BILETOMAT_USER
+  mise set --age-encrypt --prompt BILETOMAT_PASS
+  ```
+- First run downloads Playwright's Chromium (~95 MB) automatically.
 
-### Usage
-
-#### From command line:
-
-```bash
-python3 scripts/update_spektakle_links.py <month_name>
-```
-
-#### From Makefile:
+### Individual commands
 
 ```bash
-make update-links month=grudzien
+mise run fetch-events                                   # only refresh new_events.json
+python3 scripts/update_spektakle_links.py               # only apply it to the YAMLs
+mise exec -- uv run scripts/fetch_biletomat_events.py --recon    # debug: dump API responses
+mise exec -- uv run scripts/fetch_biletomat_events.py --headed   # debug: watch the browser
 ```
-
-### Example Workflow
-
-1. **Export HTML from Biletomat:**
-   - Log into Biletomat event management system
-   - Navigate to your events list
-   - Export/save the page HTML
-   - Save as `_data/spektakle/<month_name>_raw.html` (e.g., `grudzien_raw.html`)
-
-2. **Run the script:**
-   ```bash
-   make update-links month=grudzien
-   ```
-
-3. **Review changes:**
-   ```bash
-   git diff _data/spektakle/grudzien.yml
-   ```
-
-4. **Commit if satisfied:**
-   ```bash
-   git add _data/spektakle/grudzien.yml
-   git commit -m "Update ticket links for December shows"
-   ```
 
 ### How It Works
 
-The script:
+1. **Fetch:** `fetch_biletomat_events.py` intercepts the SPA's own authenticated
+   request to `api.biletomat.pl/repertoire/events`, replays it page-by-page
+   (so all events are captured, not just the first page), and normalizes each to
+   `{id, title, date}` — date as `DD.MM.YYYY HH:MM` in Warsaw wall-clock time.
 
-1. **Parses HTML:** Extracts event data using regex patterns:
-   - Event ID from URLs like `#/events/324387/update`
-   - Show title from link text
-   - Date/time in format `DD.MM.YYYY HH:MM (Warszawa)`
-
-2. **Reads YAML:** Processes your existing spektakle YAML file
+2. **Reads YAML:** `update_spektakle_links.py` processes every month YAML file.
 
 3. **Matches Entries:** Compares by exact title and date/time match
+   (Warsaw wall-clock). If `new_events.json` is missing it falls back to the
+   legacy `new_events_raw.html` parser (old Biletomat Angular UI).
 
 4. **Updates Links:** Constructs URLs in format:
    ```

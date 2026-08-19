@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#MISE description="Create small/ + large/ variants and resize JPGs in a folder (usage: mise run resize -- path/to/folder)"
+set -euo pipefail
+
+dir="${1:?usage: mise run resize -- path/to/folder}"
+cd "$dir"
+
+mkdir -p small large
+cp -f -- *.jpg small/ 2>/dev/null || true
+cp -f -- *.jpg large/ 2>/dev/null || true
+cp -f -- *.JPG small/ 2>/dev/null || true
+cp -f -- *.JPG large/ 2>/dev/null || true
+
+chmod 777 -- * 2>/dev/null || true
+mogrify -resize 180x180 small/*.jpg 2>/dev/null || true
+mogrify -resize 180x180 small/*.JPG 2>/dev/null || true
+chmod 777 -- small/* 2>/dev/null || true
+
+mogrify -resize 600x600 large/*.jpg 2>/dev/null || true
+mogrify -resize 600x600 large/*.JPG 2>/dev/null || true
+chmod 777 -- large/* 2>/dev/null || true
+
+rm -f -- *.jpg *.JPG 2>/dev/null || true
