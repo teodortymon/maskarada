@@ -9,7 +9,7 @@
     "startCommand": "npm start"
   },
   "scripts": {
-    "build": "npm run css-prod && eleventy",
+    "build": "npm run css-prod && npm run js-modal && eleventy && npm run css-purge",
     "build:11ty": "eleventy",
     "serve": "eleventy --serve",
     "dev": "npm run css && npm-run-all --parallel watch watch:fmt serve",
@@ -23,6 +23,8 @@
     "css-prefix-prod": "postcss --replace css/styles.css --use autoprefixer --no-map",
     "css": "npm-run-all css-compile css-prefix",
     "css-prod": "rm -f css/styles.css.map && npm-run-all css-compile-prod css-prefix-prod",
+    "css-purge": "purgecss --config purgecss.config.js",
+    "js-modal": "esbuild script/bootstrap-modal.entry.js --bundle --minify --format=iife --outfile=t/js/bootstrap-modal.min.js",
     "server": "sirv --dev --no-clear --port 3000",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e scss -x \"npm run css\"",
@@ -42,6 +44,8 @@
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.10.3",
     "@tinacms/cli": "^2.5.3",
+    "esbuild": "^0.24.0",
+    "purgecss": "^6.0.0",
     "nodemon": "^3.0.1",
     "onchange": "^7.1.0",
     "prettier": "^3.9.4",

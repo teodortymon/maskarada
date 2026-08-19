@@ -26,9 +26,19 @@ depends = ["deps"]
 run = "npm run css"
 
 [tasks.build]
-description = "Build the static site into _site/ (SCSS + Eleventy)"
+description = "Build the static site into _site/ (SCSS + modal-only Bootstrap JS + Eleventy, then PurgeCSS trims _site/css/styles.css to used selectors)"
 depends = ["deps"]
 run = "npm run build"
+
+[tasks.js-modal]
+description = "Rebuild t/js/bootstrap-modal.min.js (esbuild bundle of Bootstrap's Modal plugin only; committed artifact, also refreshed by build)"
+depends = ["deps"]
+run = "npm run js-modal"
+
+[tasks.css-purge]
+description = "Run PurgeCSS over the built _site/css/styles.css (prod-only trim; config + JS-toggled-class safelist in purgecss.config.js). Needs a prior build."
+depends = ["deps"]
+run = "npm run css-purge"
 
 # `dev` and `dev-stop` are file tasks under `mise-tasks/` (multi-line logic):
 # `dev` records a worktree-local .dev-server.pid so `dev-stop` can stop only THIS

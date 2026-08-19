@@ -3,9 +3,15 @@
 // half vs `@import "bootstrap/scss/bootstrap"`.
 //
 // Module list derived from a class audit of _layouts/_includes/t/w:
-//   card, btn/btn-group/btn-check, nav/navbar, ratio (helpers), list-group,
-//   badge, table, modal (+transitions, close), placeholder, grid/containers,
-//   utilities. Re-add a module here if you introduce a new component.
+//   card, btn/btn-group/btn-check, nav/navbar, ratio (helpers), badge,
+//   modal (+transitions, close), grid/containers, utilities. Re-add a module
+//   here if you introduce a new component. (tables / list-group / placeholders
+//   were dropped 2026-07 — no matching markup anywhere; see issue #53.)
+//
+// NOTE: the production build additionally runs PurgeCSS over the compiled CSS
+// (see purgecss.config.js) — only selectors present in the built _site/ HTML
+// (plus a safelist of JS-toggled classes) ship to production. The dev build
+// stays un-purged.
 
 @font-face {
   font-family: YoungSerif;
@@ -30,7 +36,6 @@ $theme-colors: (
 //   Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
 //   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $body-bg: #fbe9e8;
-$list-group-bg: #faf3f3;
 $card-bg: #faf3f3;
 
 // Required core
@@ -47,7 +52,6 @@ $card-bg: #faf3f3;
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-@import "bootstrap/scss/tables";
 
 // Components in use
 @import "bootstrap/scss/forms/form-check"; // .btn-check toggle buttons
@@ -58,10 +62,8 @@ $card-bg: #faf3f3;
 @import "bootstrap/scss/navbar"; // Requires nav
 @import "bootstrap/scss/card";
 @import "bootstrap/scss/badge";
-@import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
 @import "bootstrap/scss/modal"; // Requires transitions
-@import "bootstrap/scss/placeholders";
 
 // Helpers (.ratio, .visually-hidden, …) and utility classes
 @import "bootstrap/scss/helpers";
