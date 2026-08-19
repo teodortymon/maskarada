@@ -1,12 +1,21 @@
 [env]
-BILETOMAT_USER = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2SVVBczhGa0xXaTdMQVJlRlJTN3VNQnFWeEdQYldhR0laNHV4QTdvM0J3CnJzbCt6ZDlML1ltZzhKanhDQkFlSTI1Ynd0bEdqajJhNDNXN2F0SU5qMG8KLT4gc3NoLXJzYSBWNXR3cXcKZmplQVI2K005RnVIUTF0NFp0S011ZjNvYnBFNllFdEhnbk1kRTJIOHNmdmFhNTlLbFFPZ1poNWptc0M5ZElPaQorUXBZbnMvMmdoMFVYYk5HdzNVazFiRk9LbkNJa09ERnRNaVpIaEpvZE1XWXplVjRsU3E0Z2pPZlRzN1Y1b2RoCnVyUlhxbVN2OGlSUFVDWWJyN0x5WS91QkF0clBoZlFGV3VjUm5UQUFpVTEyZW9GeFUvTi9jYjI4bG8zWjkrc3UKVXp1TlprNXFsS2paLzhvZUZPcDVhVHcxdnpNZmkwWVIxQ3ZFSkJEeW9GbUc4V2NrQjhwVnczbTFVa2trbXQwMgplK05YNDNvcUcvZDRUajN1alZGSDJmT29LUmFaY0lWYmo5UUZaOE1Id1UyUEEzT000QlA2TklUMkp3R0NjZmN0CkhHUEtYLytpV25SUGJSeWtkOWE5OHFEcTFYRnRiMWYrTy9XQ1JnMWlXWVZwYlNDM0tKOExudkZ4REFYdENkU0wKN3NTdlVaTzUwZzROU0dzbVlCdzhQNDBoWThoZVVDSEJteW90bzU2UTgyVG1wQ0lhL01rQjRua0RuMmxRSk8xbwppdUd2R0lCVlZyc0JKb21IclYwYW1Sa3BydjUrWkwrSkFySGRzR2IyWDJCM2M3bmdSdjYvRGNBendmc21BeXluCmlDT3RvaHkxWTZGQVFGQ3ptSEhiem1CaWJjMU9zbFNhamRIZldBS1hGbmRVM1BPU29ZRGtBdUgxcDV5ekRJMU8KaDVIdUJWRW9BaWo1ekQ4cjdSQlF5OU0xQnBpTW1EV2FrQ0NUaS9ONlpobEJ4MFFUN3V6Zm9pU2lndFdZb2JSaAozRnUzeG01YjErVUNqenhEQnhDR21tN3g5bU80WnNMYnBnUzZLWTFaNFZJCi0+ID5PZERGLWdyZWFzZSBeYGFEICRbWHJDIEAgW3BbU2QKOTluKzBldGxWMG9tWExIZU1VV1czVWxHCi0tLSB3TXFQanppbG9DT2RYYjdkTk1tNnk1TTRZY1pxb1lCcG1SNUtKcGlnVFVvChmUVTY0lzffIq0nGYLuEOFMGc2Mb32NKBwmvGHCnGlAtzlIrLrHWkKVBeh+BiteADNOgZKj" }
-BILETOMAT_PASS = { age = { value = "KLUv/QBYhRsAikCsDTgwTTugQ4zpw8APcTCA8fcwRH1GGgkyWLjCQiezf7gkkCGBRSA+yZCw1EhgQQIN5+r56WG9gGVxBMgAxgDGAPu0enjqvqE6whBMb4wMbXa+3UUlJwxmujju5YiMttHdMBE5WsTxK1/JOzY1hpNRD91lmnTg2zpJlSIhcNtmSum+1X9ELxXl7R5/8yFq+1TQ1U+dhkRU7kpw9dFx0+P9TqWKVs8XFV1XTCyaSUaxrTlHSTBCd6g1Vf6Jg4at3NLz8f/hOCTdmZ934AOcmsdPgRUWdpBI8r7akOwbC2aZg8/i5mqVBrF2krp9fXJxVHFBFBVJFBOLBuKfOL8Z2Ldlv/j5xH4Xb9wG+ZWynepJsifX39hymilJSWZz1ip5dP33jEifJOG9Z5zMFvVwXaRgumvAaCdZMs0jfcyRlrTFaM029jLD4hpWv5VBOrMe/iUGXmU/Ikv7z5gRvO1mendQrel9Dc236WfmnZ168VixUDej7KrxMFrKrmNGmK31VV64+0uNt98x3OO6kAdTqlZ51pxx0aoh5QzLXTYQrigluc4+n5El6BJ6O+Ry34sJcQ+M9lCceHllu+vhQgpbyeAnlLBQPOnoajiWst8RWL8BnDPZWJxx4OrVVJHrptWyxt53KfP5pSwrHK+4s1U42034yj27tAGSzUaBJ9Xz154FSen43zKYfV/3c6Q30/eznNDh45FYxjhcO+6sOtCM7Qje+1gs7bfDEXmaR8Pi4ioEtXXlKqspXl6m53gn6dabqif8u14RrDmn/k7/XSOY5cn2YzZwjGKY7fqQ08atJlztuvCHPmfOJxMmfSoW/njmjMU8Uwx9w7bjdf4qc4mBQrmlKj3+lP2UBPvrJrVKE2qqfXuWiAnTIixogHwAAGklJjgAweFCBg9+RGAdIGFghIUGFBZoHQpA2IBVwBBCQB+geTwwiw5RGSxPcWyvCH/BHKcIhhRqlMqPMmH/mFEXnVcbtWKxWDQP2WxLM4MbzoN8r4/B2OP8TDJ6lNY8fKFMVYPVG/z+6WnLnvxE0zvfczI2nV9UxDgjoChpKVvVW1QTAX8UPOgVCcLJQ6AIJSga7NwB1QFkVLx6++bxIuNQTCyazYJAr9v+9eNQ7wwfJw+Lpm2zlWhzRTo2EaNwq+Nlkwi1mv6CTtZZSSUHtNEBAA", format = "zstd" } }
+# CI decrypt recipient (public key of the dedicated CI age key — not secret).
+# The private half is stored as the GitHub Actions secret MISE_AGE_KEY; CI uses it
+# to decrypt the two BILETOMAT_* values below. On password rotation, re-encrypt with:
+#   mise set --age-encrypt --prompt --age-key-file ~/.config/mise/age.txt \
+#     --age-recipient age1qhrx4ejxhrl9vek05qw3lp47vt4c7e8mcg9w4z8a56wed5ygcptspuwjf BILETOMAT_USER
+# CI recipient: age1qhrx4ejxhrl9vek05qw3lp47vt4c7e8mcg9w4z8a56wed5ygcptspuwjf
+BILETOMAT_USER = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpcU5OVGh4T1ZUWkI5MUs3cXEvUDdVeUxhZXVUR28xRXpMeEQvdXZPWjBNCklwdTQ0alRlS3RZdFh2ekJ3R3hWUjNnN0tlVlhsU3lFM3VJaFhrZ1htZDgKLT4gWDI1NTE5IHVJVUlrZnl0UmhoNUoyT0JUMHB5SDRIeUVLR1lXaE1wSDFITDFSU1lKbWMKaEhySVgxNXRUc1kzUVF1QzlkanFxdGRGY00wMU9hdGdISjUrSTEycWZUdwotPiBXJk8yVEduVS1ncmVhc2UgaVNCZCB2SzIuCk1KeC9zZWR3Q2ZWMlVPQlhNdTlkaE1vZzdUU3VCSmJTVW1SZG54Y0xoZkt1cFlud2R3eEx0Zk9vVjMyZU9NcEwKZXhnQzNlNkRSa1JrdFh2QmxQYnFZYi9sejlDajJMUllXUQotLS0gVlF1ekdYRk96RU1BUk51QS9GTWcyZzZHWllQTlZ2Y2tqYnQ3a0dkL3RKWQoU7BZGgb7s23mx0eikEK5ao0uP61e7rrlGDdPAHbPxviDBvVMyBwDaS2hfTVcMlQQCTYXvgA" }
+BILETOMAT_PASS = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBOa3JNSFlKSVlMd0ZpTk9LVi9PZU1wVm00aTlSZDl4T0NlSVR4NUt5KzM4CkZtM0JOMURkL2t2eHNBb0VyRjFNQXVoQU1qdDJJT3FJWlptL3VLNHNTd2MKLT4gWDI1NTE5IHZQVEpoQ0xSU1Vua0YvOHdiSHloblNtT2l6ZUYzUnVNMHJ6dUlSTDl0Z0UKdlJZVDhSZUpySjkzMUlmSHdiZGVaRDBwZ25iZnp2eFNVUmpTOUw3ZTY1TQotPiAnTC1ncmVhc2UKRGNMd3QyRVRvR3MwR3IrZHlJUHE4YVZxaVE5TysyZW1nZU5XZWdaVnIreGVmSXk5bDQzOUlEeGloOW9zbjRSOApIS0tqWDFibGtGWnIvSm0vWm1kTzlnZVc4ZnNsSDEycWJ4dWFmVzRFVnJ5RTNHRnZ6cmp1UU1VSHBKQmlWZmlkCkdnCi0tLSBUUUVQaEVRVytsSFFROG15cVBMSVBQa2pNeTloSUlsWUhSMFAxc2pORHY0Cn+PHx8sDXluJR9j4YGwDbe7vOqZHNaETi6EA1ucsmuhZcRPP3erK0w" }
 # Organizer whose events are fetched from Biletomat (see tasks.fetch-events).
 BILETOMAT_ORGANIZER_ID = "333"
 
 # ---------------------------------------------------------------------------
 # Tasks (migrated from Makefile). The Makefile is kept until these are verified.
 # ---------------------------------------------------------------------------
+
+[tools]
+uv = "latest"
 
 [tasks.dev]
 description = "Run Jekyll dev server with livereload"
@@ -23,10 +32,8 @@ run = "mogrify -resize 600x600"
 
 [tasks.fetch-events]
 description = "Log into Biletomat and capture the organizer's events list as JSON (uses BILETOMAT_USER/PASS)"
-run = [
-  "uv run --with playwright python -m playwright install chromium",
-  "uv run scripts/fetch_biletomat_events.py",
-]
+depends = ["install-browser"]
+run = "uv run scripts/fetch_biletomat_events.py"
 
 [tasks.update-links]
 description = "Fetch latest Biletomat events, then update ticket links in spektakle YAML"
