@@ -3,6 +3,7 @@
 .claude
 
 # Docs / project files (not site content)
+docs
 PLAN.md
 CLAUDE.md
 README.md

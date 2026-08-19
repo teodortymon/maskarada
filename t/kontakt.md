@@ -28,6 +28,7 @@ layout: t
   <div class="card my-2">
     <div class="map-container">
       <iframe
+        title="Mapa dojazdu do Teatru Maskarada"
         frameborder="0"
         style="border:0"
         src="https://www.google.com/maps/embed/v1/place?q=Teatr+Maskarada+dla+dzieci&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU"

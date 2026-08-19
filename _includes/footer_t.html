@@ -197,10 +197,14 @@
         <div class="card my-2 ig-card">
           <div class="card-body">
             <div class="ig-avatar-ring">
-              <img src="lay/img/ig-avatar.png"
-                   alt="Zdjęcie profilowe Teatru Maskarada na Instagramie"
-                   width="132" height="132"
-                   onerror="this.onerror=null;this.src='lay/img/logo2.png'">
+              <picture>
+                <source srcset="lay/img/ig-avatar-264.webp" type="image/webp">
+                <img src="lay/img/ig-avatar.png"
+                     alt="Zdjęcie profilowe Teatru Maskarada na Instagramie"
+                     width="132" height="132"
+                     loading="lazy" decoding="async"
+                     onerror="this.onerror=null;this.src='lay/img/logo2.png'">
+              </picture>
             </div>
             <p class="ig-username"><a href="https://www.instagram.com/teatr.maskarada/" target="_blank" rel="noopener">teatr.maskarada</a></p>
             <div class="ig-stats">
