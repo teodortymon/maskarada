@@ -90,25 +90,26 @@
     }
 
     /* Instagram profile card — a cream card matching the Facebook one, laid out
-       like an IG profile header. No feed widget (Meta retired the profile
-       plugin) and no third-party scripts; the Instagram flavour is limited to
-       the gradient avatar ring + follow button so it sits in the site palette. */
+       as a slim single-row banner: gradient avatar ring + handle on the left,
+       follow button pushed to the right. No feed widget (Meta retired the
+       profile plugin) and no third-party scripts, so it sits in the site
+       palette while staying compact. */
     .ig-card .card-body {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      gap: 16px;
-      padding: 32px 28px;
+      text-align: left;
+      gap: 14px;
+      padding: 14px 20px;
       color: #380200;
     }
 
     .ig-avatar-ring {
-      width: 132px;
-      height: 132px;
+      flex: none;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
-      padding: 5px;
+      padding: 4px;
       background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
     }
@@ -118,14 +119,23 @@
       height: 100%;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #faf3f3;
+      border: 3px solid #faf3f3;
       background: #faf3f3;
       display: block;
     }
 
+    /* Handle + button share a row and fill the space between avatar and edge. */
+    .ig-info {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      align-items: center;
+      gap: 14px;
+    }
+
     .ig-username {
       font-family: YoungSerif, serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin: 0;
       color: #380200;
     }
@@ -141,39 +151,17 @@
       text-decoration: underline;
     }
 
-    .ig-stats {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .ig-stat {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.15;
-    }
-
-    .ig-stat .num {
-      font-family: YoungSerif, serif;
-      font-size: 1.3rem;
-      color: #380200;
-    }
-
-    .ig-stat .lbl {
-      font-size: 0.82rem;
-      color: #9a6265;
-    }
-
     .ig-follow-btn {
       display: inline-block;
-      margin-top: 4px;
+      margin-left: auto;
       background: linear-gradient(45deg, #f09433 0%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
       color: #fff;
       font-family: YoungSerif, serif;
-      font-size: 1rem;
+      font-size: 0.92rem;
       text-decoration: none;
-      padding: 11px 30px;
+      padding: 8px 20px;
       border-radius: 999px;
+      white-space: nowrap;
       box-shadow: 0 4px 14px rgba(220, 39, 67, 0.35);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
@@ -185,6 +173,20 @@
       box-shadow: 0 6px 20px rgba(220, 39, 67, 0.45);
     }
 
+    /* On very narrow phones the strip wraps and re-centers instead of
+       squeezing the handle against the button. */
+    @media (max-width: 400px) {
+      .ig-card .card-body,
+      .ig-info {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+      .ig-follow-btn {
+        margin-left: 0;
+      }
+    }
+
   </style>
   <div class="container">
     <nav class="navbar">
@@ -192,8 +194,8 @@
         <h2>Znajdź nas na Instagramie i Facebooku</h2>
       </div>
     </nav>
-    <div class="row g-4 align-items-start">
-      <div class="col-lg-6">
+    <div class="row g-4 justify-content-center">
+      <div class="col-12">
         <div class="card my-2 ig-card">
           <div class="card-body">
             <div class="ig-avatar-ring">
@@ -206,20 +208,17 @@
                      onerror="this.onerror=null;this.src='lay/img/logo2.png'">
               </picture>
             </div>
-            <p class="ig-username"><a href="https://www.instagram.com/teatr.maskarada/" target="_blank" rel="noopener">teatr.maskarada</a></p>
-            <div class="ig-stats">
-              <div class="ig-stat"><span class="num">287</span><span class="lbl">postów</span></div>
-              <div class="ig-stat"><span class="num">141</span><span class="lbl">obserwujących</span></div>
-              <div class="ig-stat"><span class="num">4</span><span class="lbl">obserwowani</span></div>
+            <div class="ig-info">
+              <p class="ig-username"><a href="https://www.instagram.com/teatr.maskarada/" target="_blank" rel="noopener">teatr.maskarada</a></p>
+              <a class="ig-follow-btn"
+                 href="https://www.instagram.com/teatr.maskarada/"
+                 target="_blank"
+                 rel="noopener">Obserwuj</a>
             </div>
-            <a class="ig-follow-btn"
-               href="https://www.instagram.com/teatr.maskarada/"
-               target="_blank"
-               rel="noopener">Obserwuj na Instagramie</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-12">
         <div class="card my-2 fb-card">
           <div class="card-body">
             <div class="fb-page"
