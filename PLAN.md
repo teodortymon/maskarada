@@ -25,7 +25,6 @@ t/
 ├── repertuar.md          # Calendar
 ├── kontakt.md            # Contact
 ├── bilety.md             # Tickets
-├── onas.md              # History/About
 ├── warsztaty.md         # Workshops
 └── lay/
     ├── style.css        # Custom overrides
