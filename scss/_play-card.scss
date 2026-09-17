@@ -64,12 +64,34 @@
     padding: 0.9rem 1rem 0.85rem;
   }
 
+  // Understated title: the body sans (Montserrat, medium) with a short wavy
+  // coral accent underneath — quieter than the old YoungSerif display face,
+  // with one playful on-brand touch. (Montserrat loads only ≤500, so 500 is
+  // the heaviest real weight — see header_t.html.)
   .pc-title {
-    font-family: YoungSerif, Georgia, serif;
-    font-size: 1.2rem;
-    line-height: 1.25;
+    font-family: Montserrat, system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
     margin: 0;
     color: #380200;
+    padding-bottom: 0.5rem;
+    position: relative;
+
+    // Short coral wave (SVG, exact coral #e07b78): one full period per 16px,
+    // amplitude ~3px, drawn as a 2.4rem accent bar at the bottom-left.
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0.05rem;
+      width: 2.4rem;
+      height: 6px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='6' viewBox='0 0 16 6'%3E%3Cpath d='M0 4 Q4 1 8 4 T16 4' fill='none' stroke='%23e07b78' stroke-width='1.6'/%3E%3C/svg%3E")
+        repeat-x;
+      background-size: auto 6px;
+    }
   }
 
   .pc-meta {
