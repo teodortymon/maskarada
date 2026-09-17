@@ -3,13 +3,6 @@ layout: t
 ---
 <div class="container">
 
-  <div class="card my-2">
-    <div class="card-header">Teatr Maskarada - najlepszy dziecięcy teatr, którego celem jest edukacja oraz zabawa teatralna z dziećmi</div>
-    <div class="card-body">
-      Teatr Maskarada powstał w 2013 roku. Twórcą teatru jest scenograf Małgorzata Domańska (realizacje w teatrach dramatycznych i lalkowych), stąd wielką uwagę przykładamy do strony wizualnej przedstawień. Równie ważne jak scenografia jest dla nas słowo i muzyka. Komponują dla nas doświadczeni kompozytorzy Zuzanna Całka oraz Krzysztof Jaszczak, a choreografię przygotowuje aktorka i choreografka Agnieszka Senderowska. Na naszej scenie występują aktorzy wielu scen warszawskich. W repertuarze prezentujemy przedstawienia dla dzieci szkolnych, przedszkolnych, najmłodszych i "najnajów". Każdy spektakl pokazywany jest w specjalnie zaaranżowanej przestrzeni pozwalającej na bliski kontakt widzów z aktorami oraz interaktywne działania. Uzupełnieniem spektakli są warsztaty teatralne, plastyczne i taneczne przybliżające dzieciom magię teatru.
-    </div>
-  </div>
-
   <h2>SCENA</h2>
 
   <div class="card my-2">
@@ -41,6 +34,13 @@ layout: t
         src="https://www.google.com/maps/embed/v1/place?q=Teatr+Maskarada+dla+dzieci&key=AIzaSyAj10GiD4y7BTXuxJbZHsQrkio4VBCvoXU"
         loading="lazy"
         allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="card my-2">
+    <div class="card-header">Teatr Maskarada - najlepszy dziecięcy teatr, którego celem jest edukacja oraz zabawa teatralna z dziećmi</div>
+    <div class="card-body">
+      Teatr Maskarada powstał w 2013 roku. Twórcą teatru jest scenograf Małgorzata Domańska (realizacje w teatrach dramatycznych i lalkowych), stąd wielką uwagę przykładamy do strony wizualnej przedstawień. Równie ważne jak scenografia jest dla nas słowo i muzyka. Komponują dla nas doświadczeni kompozytorzy Zuzanna Całka oraz Krzysztof Jaszczak, a choreografię przygotowuje aktorka i choreografka Agnieszka Senderowska. Na naszej scenie występują aktorzy wielu scen warszawskich. W repertuarze prezentujemy przedstawienia dla dzieci szkolnych, przedszkolnych, najmłodszych i "najnajów". Każdy spektakl pokazywany jest w specjalnie zaaranżowanej przestrzeni pozwalającej na bliski kontakt widzów z aktorami oraz interaktywne działania. Uzupełnieniem spektakli są warsztaty teatralne, plastyczne i taneczne przybliżające dzieciom magię teatru.
     </div>
   </div>
 
