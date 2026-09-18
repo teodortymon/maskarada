@@ -1,0 +1,27 @@
+---
+pagination:
+  data: grupy_strojow
+  size: 1
+  alias: grupa
+layout: w
+permalink: "w/{{ grupa.url }}.html"
+eleventyComputed:
+  title: "Kostiumy - {{ grupa.nazwa }} | Wypożyczalnia Maskarada"
+  cat: "{{ grupa.url }}"
+---
+
+<div class="container">
+  <div class="w-gallery-head">
+    <h2>Kostiumy - {{ grupa.nazwa }}</h2>
+    <a href="kostiumy.html" class="btn btn-outline-primary btn-sm w-back">← Powrót</a>
+  </div>
+
+  {% assign lista = kostiumy[grupa.url] %}
+  <div class="w-gallery">
+    {% for category in lista %}{% assign n = category.amount | plus: 0 %}{% for stroj in (1..n) %}
+    <a class="gallery-item" data-gallery="{{ grupa.url }}" href="kostiumy/large/{{ grupa.url }}/{{ category.rating }}/{{ stroj }}.jpg">
+      <img loading="lazy" decoding="async" width="120" height="180" src="kostiumy/thumb/{{ grupa.url }}/{{ category.rating }}/{{ stroj }}.jpg" alt="{{ grupa.nazwa }} – kostium {{ category.rating }}/{{ stroj }}">
+    </a>
+    {% endfor %}{% endfor %}
+  </div>
+</div>

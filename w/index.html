@@ -1,35 +1,41 @@
 ---
 layout: w
-
+title: MASKARADA Wypożyczalnia kostiumów dla dzieci
 ---
-<script type="text/javascript">
-//    $(document).ready(function(){
-//        if ($.cookie('hello')) {
-//            // don't fire the modal
-//            //if cookie is not set
-//        }else{
-//        $.fancybox({
-//        href : 'lay/img/logo.png'
-//            });
-//        // set the cookie so the modal doesn't open again
-//        $.cookie('hello', 'foo', { expires: 1 });
-//        }
-//    });
-</script>
 
+<div class="container">
+  <section class="w-hero">
+    <span class="w-hero__deco" aria-hidden="true"></span>
+    <span class="w-confetti" aria-hidden="true"></span>
+    <span class="w-confetti" aria-hidden="true"></span>
+    <span class="w-confetti" aria-hidden="true"></span>
+    <span class="w-confetti" aria-hidden="true"></span>
+    <span class="w-confetti" aria-hidden="true"></span>
+    <span class="w-confetti" aria-hidden="true"></span>
+    <span class="w-confetti" aria-hidden="true"></span>
+    <span class="w-confetti" aria-hidden="true"></span>
+    <div class="w-hero__body card">
+      <div class="card-body">
+        <h2>Witaj w Maskaradzie</h2>
+        <h3>Najsympatyczniejszej wypożyczalni kostiumów w Warszawie!</h3>
+        <h4>Oferujemy <strong>ponad 800</strong> strojów dla dzieci, młodzieży i dorosłych w rozmiarach od 80&nbsp;cm wzwyż.</h4>
+        <p>Możesz zostać wróżką, księżniczką, czarownicą lub rycerzem, kowbojem, piratem, albo jednym ze 100 zwierzątek. Wybór należy do Ciebie!</p>
+        <p>Szybka obsługa, zero formalności.</p>
+        <h4>Zapraszamy na <a href="kontakt.html">Zacisze (ul. Ewy 5)</a>.</h4>
+        <a class="btn btn-primary w-cta" href="kostiumy.html">Zobacz przykładowe kostiumy →</a>
+      </div>
+    </div>
+  </section>
 
-<h2>Witaj w Maskaradzie</h2>
-<br />
-<h3>Najsympatyczniejszej wypożyczalni kostiumów w Warszawie!</h3>
-<br />
-<img src="lay/img/blok_home.png"class="blok" />
-<br />
-<h4>Oferujemy <strong>ponad 800</strong> strojów dla dzieci, młodzieży i dorosłych<br />
-w rozmiarach od 80cm wzwyż</h4><br />
+  <ul class="w-facts">
+    <li>ponad 800 strojów</li>
+    <li>od 80 cm wzwyż</li>
+    <li>zero formalności</li>
+    <li>Zacisze, ul. Ewy 5</li>
+  </ul>
 
-<p>Możesz zostać wróżką, księżniczką, czarownicą lub rycerzem, kowbojem, piratem, albo jednym ze 100 zwierzątek. Wybór należy do Ciebie!</p>
-<p>Szybka obsługa, zero formalności</p>
-
-<h4><strong>Zapraszamy na <a style="text-decoration: none;" href="kontakt.html">Zacisze (ul. Ewy 5)</a> <br>
-
-<p><a href="kostiumy.html" class="button">Zobacz <br /> przykładowe kostiumy</a></p>
+  <h2>Kostiumy</h2>
+  <div class="w-cats">
+    {% for grupa in grupy_strojow %}{% include 'w_cat_card.html' %}{% endfor %}
+  </div>
+</div>
