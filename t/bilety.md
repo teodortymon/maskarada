@@ -7,11 +7,11 @@ layout: t
   <div class="card my-2">
     <div class="card-header">Cena biletu</div>
     <div class="card-body">
-      - Cena biletu - 65 zł
+      - Bilet pojedynczy - 65 zł
       <br/>
       <i>Zarówno dziecko jak i dorosły musi posiadać bilet</i>
       <br/>
-      - Szkoły i przedszkola / cena biletu grupowego - 55 zł
+      - Szkoły i przedszkola / cena biletu grupowego - 60 zł
     </div>
   </div>
 
