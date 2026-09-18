@@ -1,48 +1,411 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" >
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="Description" content="Magiczne przedstawienia teatralne dla dzieci." />
-	<meta name="Content-Language" content="pl" />
-	<title>MASKARADA Teatr dla dzieci</title>
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.1.css" type="text/css" />
-	<link rel="stylesheet" href="lay/style.css" type="text/css" />
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="Content-Language" content="pl" />
+    <meta name="theme-color" content="#ffffff" />
 
-	<!--<base href="BASE_HREF"/>-->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
-    <!-- BILETOMAT -->
-	<!-- <script src="https://biletomat.pl/embedded_static/embedded.js"></script> -->
-	<script src="https://biletomat.pl/embeddables/embedded-manager.js"></script>
+    <meta name="Description" content="Magiczne przedstawienia teatralne dla dzieci." />
 
+    <title>MASKARADA Teatr dla dzieci</title>
+    <link rel="icon" type="image/png" href="lay/img/favicon-96.png" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
+    <!-- Bootstrap JS, modal-only local bundle (the site's only Bootstrap
+         plugin). Built from script/bootstrap-modal.entry.js via `npm run
+         js-modal` (esbuild); replaces the full CDN bootstrap.bundle.min.js
+         (~24 KB gz → ~7 KB gz, and one third-party origin fewer). -->
+    <script defer src="js/bootstrap-modal.min.js"></script>
 
-</head>
-<body >
+    <!-- Biletomat embedded manager: intercepts clicks on ticket links pointing at
+         biletomat.pl/embedded/… (also kicket.com / ewejsciowki.pl) and opens the
+         booking form in an in-page popup overlay instead of a new tab. Without it
+         the "Kup bilet" links just fall through to their target="_blank" href.
+         (kicket's own embedded.js only bound kicket.com links, so biletomat links
+         were never intercepted — this is the manager master shipped.) -->
+    <script defer src="https://biletomat.pl/embeddables/embedded-manager.js"></script>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <!-- Async font CSS: media="print" defers it off the critical path; onload
+         flips it live. display=swap means text renders in the fallback font
+         meanwhile, so nothing blocks first paint on slow networks. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
+    </noscript>
 
-<div id="page">
+      <!-- Boostrap scss styles -->
+    <link rel="stylesheet" href="../css/styles.css" />
 
-<div id="header" class="container" >
-	<h1><a href="index.html">Teatr Maskarada</a></h1>
-	<ul id="dropdownMenu">
-		<li><a href="index.html">Spektakle</a></li>
-		<li><a href="repertuar.html">Repertuar</a></li>
-        <li><a href="warsztaty.html">Warsztaty</a></li>
-		<li><a href="onas.html">O nas</a></li>
-        <li><a href="bilety.html">Bilety</a></li>
-		<li><a href="kontakt.html">Kontakt</a></li>
-        
-	</ul>
-</div>
+      <!-- Custom css overrides -->
+    <link
+      rel="stylesheet"
+      href={{"lay/style.css" | bust_file_cache }}
+      type="text/css" />
 
-<div id="main" class="container">
+      <!-- Lazy-loading YouTube facade (vendored lite-youtube-embed) -->
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="stylesheet" href="js/lite-youtube/lite-yt-embed.css" />
+    <script defer src="js/lite-youtube/lite-yt-embed.js"></script>
+  </head>
+  <body>
+
+  <!-- EWEJSCIOWKI -->
+  <!-- TODO: Move to the ticket buying page -->
+  <!-- <script src="https://ewejsciowki.pl/embedded_static/embedded.js"></script> -->
+
+  <!-- Facebook Pixel Code -->
+  <!-- <script>    !function(f,b,e,v,n,t,s)    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?    n.callMethod.apply(n,arguments):n.queue.push(arguments)};    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';    n.queue=[];t=b.createElement(e);t.async=!0;    t.src=v;s=b.getElementsByTagName(e)[0];    s.parentNode.insertBefore(t,s)}(window, document,'script',    'https://connect.facebook.net/en_US/fbevents.js');    fbq('init', '1308079555992915');    fbq('track', 'PageView');    </script>    <noscript><img height="0" width="0" style="display:none!important"    src="https://www.facebook.com/tr?id=1308079555992915&ev=PageView&noscript=1"    /></noscript> -->
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Facebook JS SDK (loads the Page Plugin feed in footer_t.html).
+       Loaded lazily: the SDK + the plugin's feed pull ~2-3 MB (photos, videos),
+       so we only fetch it when the footer widget scrolls near the viewport
+       instead of on every page load. -->
+  <div id="fb-root"></div>
+  <script>(function () {
+    var loaded = false;
+    function loadFbSdk() {
+      if (loaded || document.getElementById("facebook-jssdk")) return;
+      loaded = true;
+      var js = document.createElement("script");
+      js.id = "facebook-jssdk";
+      js.async = true;
+      js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v19.0";
+      document.head.appendChild(js);
+    }
+    function init() {
+      var target = document.querySelector(".fb-page");
+      if (!target) return; // no FB widget on this page — never load the SDK
+      if (!("IntersectionObserver" in window)) { loadFbSdk(); return; }
+      var io = new IntersectionObserver(function (entries) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) { io.disconnect(); loadFbSdk(); return; }
+        }
+      }, { rootMargin: "600px 0px" });
+      io.observe(target);
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else { init(); }
+  })();</script>
+  <style>
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      transition: transform 0.25s ease;
+    }
+
+    /* Auto-hide on scroll down (class toggled by the script below).
+       The extra 64px covers the logo sign hanging below the header
+       (plus its drop shadow), so nothing stays peeking out. */
+    .site-header.hdr-hide {
+      transform: translateY(calc(-100% - 84px));
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .site-header {
+        transition: none;
+      }
+    }
+
+    .site-header .bar {
+      background: #ffffff;
+      box-shadow: 0 3px 0 rgba(74, 125, 165, 0.3);
+    }
+
+    .site-header .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.25rem 0.5rem;
+      padding-top: 0.55rem;
+      padding-bottom: 0.65rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      line-height: 1;
+    }
+
+    .brand img {
+      height: 66px;
+      width: auto;
+      display: block;
+    }
+
+    .site-header .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.1rem 0.2rem;
+    }
+
+    .site-header a.nav-link {
+      font-family: YoungSerif, serif;
+      font-size: 1.2rem;
+      color: #4a708e;
+      padding: 0.25rem 0.32rem;
+    }
+
+    .site-header a.nav-link:hover {
+      color: #e0736f;
+    }
+
+    .site-header a.nav-link.active {
+      color: #e0736f;
+      text-decoration: underline;
+      text-underline-offset: 0.32em;
+      text-decoration-thickness: 2px;
+    }
+
+    /* Social icons — desktop only, same colour/hover as the nav links */
+    .site-header .nav-social {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.1rem;
+      margin-left: 0.35rem;
+      align-self: center;
+    }
+
+    .site-header a.social-link {
+      display: inline-flex;
+      align-items: center;
+      color: #4a708e;
+      padding: 0.25rem 0.4rem;
+    }
+
+    .site-header a.social-link:hover {
+      color: #e0736f;
+    }
+
+    .site-header a.social-link svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      fill: currentColor;
+      display: block;
+    }
+
+    /* Paper bunting garland hanging from the header */
+    .bunting {
+      height: 15px;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="56" height="15"><path d="M2 0 H26 L14 13 Z" fill="%23e0736f"/><path d="M30 0 H54 L42 13 Z" fill="%23f2c94c"/></svg>');
+      background-repeat: repeat-x;
+      background-size: 56px 15px;
+    }
+
+    /* Desktop: the logo is a bigger sign hanging over the bunting garland,
+       swaying gently; the bar itself keeps its compact height. */
+    @media (min-width: 768px) {
+      .brand {
+        position: relative;
+        z-index: 2;
+      }
+
+      .brand img {
+        height: 128px;
+        margin-top: -6px;
+        margin-bottom: -40px;
+        filter: drop-shadow(0 4px 3px rgba(74, 125, 165, 0.3));
+        transform-origin: 50% 0;
+        animation: logo-sway 5s ease-in-out infinite;
+      }
+    }
+
+    @keyframes logo-sway {
+      0%, 100% { transform: rotate(-1.6deg); }
+      50% { transform: rotate(1.6deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .brand img {
+        animation: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .site-header .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0.6rem;
+        padding-bottom: 0.55rem;
+        /* let the nav run edge to edge */
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+      }
+
+      .brand img {
+        height: 80px;
+      }
+
+      .site-header .site-nav {
+        justify-content: center;
+        width: 100%;
+        gap: 0;
+      }
+
+      .site-header a.nav-link {
+        /* 20% bigger than the old 1.08rem on typical phones (1.3rem), easing
+           down just enough on the narrowest screens to keep the nav at 2 rows */
+        font-size: clamp(1.1rem, 5.2vw, 1.3rem);
+        padding: 0.18rem 0.26rem;
+      }
+
+      /* Social icons would clutter the phone nav — desktop only */
+      .site-header .nav-social {
+        display: none;
+      }
+    }
+
+    /* ============================================================
+       Switch → Wypożyczalnia strojów (costume rental): a nav-link-style
+       link with a hanger icon and a trailing arrow, sitting after the
+       social icons. The logo + nav were tightened above so it fits on one
+       row (incl. the FB/IG icons) at normal desktop widths.
+       ============================================================ */
+
+    /* Keep brand + nav on one row on desktop; the nav fills the width to the
+       right of the (now slimmer) logo, so the whole row — links, social icons
+       and the switch — stays on one line instead of dropping under the logo. */
+    @media (min-width: 768px) {
+      /* Full-width bar with slim side padding: logo hugs the left, the whole
+         nav uses the width instead of Bootstrap's centred ~1140/1320 track. */
+      .site-header .container {
+        flex-wrap: nowrap;
+        max-width: 1640px;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+      }
+      /* Links + social icons sit centred, while the switch is pushed out to the
+         right edge: matching auto-margins before the first link and before the
+         switch split the free space equally on both sides of the centre group. */
+      .site-header .site-nav { flex: 1 1 auto; }
+      .site-header .site-nav > .nav-link:first-child { margin-left: auto; }
+      .site-header .site-nav > .sp-switch { margin-left: auto; }
+    }
+
+    .site-header .sp-switch {
+      display: inline-flex;
+      align-items: center;
+      align-self: center;
+      gap: 0.32rem;
+      text-decoration: none;
+      font-family: YoungSerif, serif;
+      font-size: 1.2rem;
+      color: #4a708e;
+      padding: 0.25rem 0.34rem;
+      margin-left: 0;
+      white-space: nowrap;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .site-header .sp-switch .sp-ico { width: 1.05em; height: 1.05em; flex: 0 0 auto; }
+    .site-header .sp-switch .sp-chevron { font-size: 0.9em; }
+    .site-header .sp-switch:hover {
+      color: #e0736f;
+      text-decoration: underline;
+      text-underline-offset: 0.32em;
+      text-decoration-thickness: 2px;
+    }
+
+    /* Phones: social icons are hidden; the switch flows as one more centred
+       nav item on its own wrapped row. */
+    @media (max-width: 767px) {
+      .site-header .sp-switch { font-size: clamp(1.1rem, 5.2vw, 1.3rem); margin-left: 0; }
+    }
+  </style>
+  {% assign url = page.url | downcase | split: '/' %}
+  {% assign ur = url[2] | split: '.' %}
+  {% assign u = ur[0] %}
+  <header class="site-header">
+    <div class="bar">
+      <div class="container">
+        <a class="brand" href="index.html">
+          <picture>
+            <source srcset="lay/img/logo2.webp" type="image/webp" />
+            <img src="lay/img/logo2.png" alt="Teatr Maskarada" width="976" height="400" fetchpriority="high" />
+          </picture>
+        </a>
+        <nav class="site-nav">
+          <a class="nav-link {% if u == 'index' or page.url == '/t/' %}active{% endif %}" href="index.html">Teraz</a>
+          <a class="nav-link {% if u == 'repertuar' %}active{% endif %}" href="repertuar.html">Kalendarz</a>
+          <a class="nav-link {% if u == 'spektakle' %}active{% endif %}" href="spektakle.html">Spektakle</a>
+          <a class="nav-link {% if u == 'warsztaty' %}active{% endif %}" href="warsztaty.html">Warsztaty</a>
+          <a class="nav-link {% if u == 'bilety' %}active{% endif %}" href="bilety.html">Bilety</a>
+          <a class="nav-link {% if u == 'kontakt' %}active{% endif %}" href="kontakt.html">Kontakt</a>
+          <span class="nav-social">
+            <a class="social-link" href="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267" target="_blank" rel="noopener" aria-label="Facebook Teatru Maskarada">
+              <svg viewBox="0 0 16 16" role="img" aria-hidden="true">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/teatr.maskarada/" target="_blank" rel="noopener" aria-label="Instagram Teatru Maskarada">
+              <svg viewBox="0 0 16 16" role="img" aria-hidden="true">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+          </span>
+          <!-- Switch → Wypożyczalnia strojów (costume rental). Placed AFTER the
+               social icons so if the nav ever overflows, this wraps — the FB/IG
+               icons never get bumped. -->
+          <a class="sp-switch" href="../w/index.html">
+            <svg class="sp-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 6.6a1.9 1.9 0 1 1 2 1.9c-1.1 0-2 .9-2 2v.7" />
+              <path d="M12 11.3 3.7 16.7c-1 .66-.53 2.05.68 2.05h15.24c1.2 0 1.68-1.39.68-2.05L12 11.3Z" />
+            </svg>
+            <span>Do wypożyczalni strojów</span>
+            <span class="sp-chevron" aria-hidden="true">→</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="bunting"></div>
+  </header>
+  <script>
+    // Auto-hiding site header: hide on scroll down, reveal on scroll up.
+    // Also maintains --hdr-h (visible header height) for sticky elements
+    // below the header (e.g. the Kalendarz filter bar).
+    (function () {
+      var hdr = document.querySelector(".site-header");
+      if (!hdr) return;
+      var hdrHidden = false;
+      function setHdrVar() {
+        var h = hdrHidden ? 0 : hdr.getBoundingClientRect().height;
+        document.documentElement.style.setProperty("--hdr-h", h + "px");
+      }
+      setHdrVar();
+      var lastY = window.scrollY || 0;
+      window.addEventListener("scroll", function () {
+        var y = window.scrollY || 0;
+        if (y > lastY + 6 && y > 180 && !hdrHidden) {
+          hdrHidden = true;
+          hdr.classList.add("hdr-hide");
+          setHdrVar();
+        } else if ((y < lastY - 6 || y < 120) && hdrHidden) {
+          hdrHidden = false;
+          hdr.classList.remove("hdr-hide");
+          setHdrVar();
+        }
+        lastY = y;
+      }, { passive: true });
+      window.addEventListener("resize", setHdrVar, { passive: true });
+    })();
+  </script>
+
+  <!-- <main class="container"> -->
+
+  <!-- <div id="header" class="container" >    <h1><a href="index.html">Teatr Maskarada</a></h1>    <ul id="dropdownMenu">    <li><a href="index.html">Spektakle</a></li>    <li><a href="repertuar.html">Repertuar</a></li>    <li><a href="warsztaty.html">Warsztaty</a></li>    <li><a href="onas.html">O nas</a></li>    <li><a href="bilety.html">Bilety</a></li>    <li><a href="kontakt.html">Kontakt</a></li>        </ul>    </div> -->
+
+  <!-- <div id="main" class="container"> -->

@@ -1,0 +1,55 @@
+# Production deploy — SKELETON, INTENTIONALLY DISABLED.
+#
+# The v2 beta is deployed to Cloudflare Pages manually (`mise run cf-pages-deploy`).
+# This workflow is the production pipeline to enable *after* v2 is merged into
+# `master`. It only runs on manual dispatch today.
+#
+# TO ENABLE (at v2 -> master merge time):
+#   1. Uncomment the `push:` trigger below.
+#   2. Confirm the deploy step (Cloudflare Pages project / production branch) and
+#      add the repo secrets it needs (CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID).
+name: Deploy to production
+
+on:
+  # push:
+  #   branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (SCSS + Eleventy)
+        run: npm run build
+
+      # --- TODO: wire up the real production deploy when enabling this workflow ---
+      # Cloudflare Pages (matches the beta mechanism):
+      # - name: Deploy to Cloudflare Pages
+      #   uses: cloudflare/wrangler-action@v3
+      #   with:
+      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      #     command: pages deploy _site --project-name=maskarada-new-design --branch=main
+      - name: Deploy placeholder
+        run: |
+          echo "Production deploy is not enabled yet."
+          echo "Built site is in ./_site — wire up the Cloudflare Pages (or GitHub Pages) step above."

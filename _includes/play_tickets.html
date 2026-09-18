@@ -1,0 +1,106 @@
+{% comment %}
+  Showtime mini-tickets for a play, shared by the play card (play_card.html) and
+  the details modal (spektakl_modal.html) so both list the same tickets.
+  Params: events   - array of repertuar events ({data, link, manual_price, tytul}),
+                     already filtered to upcoming and sorted by date. May be empty.
+          modal_id - (optional) id of the play's details modal. When given,
+                     rows WITHOUT a CTA of their own ("wkrótce", manual-price)
+                     get an invisible full-row button that opens that modal, so
+                     every row has its own hover + click target. Buy and call
+                     rows instead stretch their own link over the whole row.
+                     The modal itself renders these tickets without modal_id, so
+                     its rows never try to re-open the modal they live in.
+
+          CARD CONTEXT (modal_id present) also caps the visible tickets to the
+          first 3 and wraps them in a .pc-terminy block. When a play has more,
+          the extra tickets get .pc-ticket--extra (hidden) and a full-width
+          "+N kolejnych terminów" ghost button (a pure-CSS checkbox toggle)
+          unfolds them IN PLACE — no modal. On the Spektakle masonry grid the
+          toggle also fires a re-layout so the taller card pushes its neighbours
+          down instead of overlapping them (t/js/pc-expand.js). The modal itself
+          (no modal_id) keeps listing every ticket, unwrapped.
+{% endcomment %}
+{% assign pc_months = 'stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia'
+  | split: ','
+%}
+{% assign pc_days = 'Niedziela,Poniedziałek,Wtorek,Środa,Czwartek,Piątek,Sobota' | split: ',' %}
+{% assign pc_cap = 3 %}
+{% if events.size > 0 %}
+  {% if modal_id %}
+    {% assign pc_extra = events.size | minus: pc_cap %}
+    <div class="pc-terminy">
+      <p class="pc-terminy-label" aria-hidden="true">Najbliższe spektakle</p>
+  {% endif %}
+  <div class="pc-tickets">
+    {% for event in events %}
+      {% assign pc_dw = event.data | date: '%w' | plus: 0 %}
+      {% if pc_dw == 0 or pc_dw == 6 %}
+        {% assign event_type = 'weekend' %}
+      {% else %}
+        {% assign event_type = 'weekday' %}
+      {% endif %}
+      {% assign pc_mi = event.data | date: '%-m' | minus: 1 %}
+      {% assign row_cta = 'none' %}
+      {% if event.manual_price != true %}
+        {% if event_type == 'weekday' %}
+          {% assign row_cta = 'tel' %}
+        {% elsif event.link and event.link != '-' %}
+          {% assign row_cta = 'buy' %}
+        {% endif %}
+      {% endif %}
+      {% assign pc_extra_class = '' %}
+      {% if modal_id and forloop.index > pc_cap %}
+        {% assign pc_extra_class = ' pc-ticket--extra' %}
+      {% endif %}
+      <article class="pc-ticket{{ pc_extra_class }}" data-event-type="{{ event_type }}">
+        <div class="pc-block">
+          <span class="pc-time">{{ event.data | date: '%R' }}</span>
+        </div>
+        <div class="pc-tbody">
+          <span class="pc-when">
+            <span class="pc-dow">{{ pc_days[pc_dw] }},</span>
+            <span class="pc-date">
+              {{- event.data | date: '%-d' }}
+              {{ pc_months[pc_mi] -}}
+            </span>
+          </span>
+          {% if event.manual_price == true %}
+            <span class="pc-soon">{{ event.link }}</span>
+          {% elsif row_cta == 'buy' %}
+            <a href="{{ event.link }}" target="_blank" rel="noopener noreferrer" class="pc-buy stretched-link"
+              >Kup bilet 🎫</a
+            >
+          {% elsif row_cta == 'tel' %}
+            <span class="pc-groups-note">Rezerwacja dla grup zorganizowanych:</span>
+            <a href="tel:501-027-278" class="pc-tel stretched-link">Zadzwoń 501 027 278 ☎</a>
+          {% else %}
+            <span class="pc-soon">Bilety online wkrótce</span>
+          {% endif %}
+        </div>
+        {% if modal_id and row_cta == 'none' %}
+          <button
+            type="button"
+            class="pc-row-details"
+            data-bs-toggle="modal"
+            data-bs-target="#{{ modal_id }}"
+            tabindex="-1"
+            aria-hidden="true"
+          ></button>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+  {% if modal_id and pc_extra > 0 %}
+    {% comment %}
+      Pure-CSS unfold: the ghost button is a <label> that toggles this
+      checkbox; scss/_upcoming-dates.scss reveals .pc-ticket--extra when it is
+      checked and swaps the button label to "Zwiń". t/js/pc-expand.js re-lays-out
+      the masonry grid on toggle so the taller card pushes the rest down.
+    {% endcomment %}
+    <input type="checkbox" id="pc-more-{{ modal_id }}" class="pc-more-toggle" hidden>
+    <label for="pc-more-{{ modal_id }}" class="pc-more" data-extra="{{ pc_extra }}"></label>
+  {% endif %}
+  {% if modal_id %}
+    </div>
+  {% endif %}
+{% endif %}

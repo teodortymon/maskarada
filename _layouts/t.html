@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
+{% include 'header_t.html' %}
+{% include 'test_banner.html' %}
 
-  <body>
+<main class="page-main">
+  {{ content }}
+</main>
 
-    {% include header_t.html %}
-
-        {{ content }}
-
-    {% include footer_t.html %}
-
-  </body>
-
-</html>
+<script src="js/pc-expand.js" defer></script>
+{% include 'footer_t.html' %}

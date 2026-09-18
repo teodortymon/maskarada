@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html>
+{% comment %}
+  Wypożyczalnia layout. header_w.html opens the document (<!DOCTYPE…><body>);
+  this layout drops in the content and the footer, then closes the document.
+  `cat` (set by gallery pages) tags <main> so per-category colouring can key off it.
+{% endcomment %}
+{% include 'header_w.html' %}
+{% include 'test_banner.html' %}
 
-  <body>
+<main class="page-main w-main"{% if cat %} data-cat="{{ cat }}"{% endif %}>
+  {{ content }}
+</main>
 
-    {% include header_w.html %}
-
-        {{ content }}
-  
-    {% include footer_w.html %}
-
+{% include 'footer_w.html' %}
   </body>
-
 </html>

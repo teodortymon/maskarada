@@ -1,0 +1,78 @@
+// Bootstrap, imported modularly (Option 2): variable overrides first, then only
+// the modules the templates actually use — cuts the compiled CSS roughly in
+// half vs `@import "bootstrap/scss/bootstrap"`.
+//
+// Module list derived from a class audit of _layouts/_includes/t/w:
+//   card, btn/btn-group/btn-check, nav/navbar, ratio (helpers), badge,
+//   modal (+transitions, close), grid/containers, utilities. Re-add a module
+//   here if you introduce a new component. (tables / list-group / placeholders
+//   were dropped 2026-07 — no matching markup anywhere; see issue #53.)
+//
+// NOTE: the production build additionally runs PurgeCSS over the compiled CSS
+// (see purgecss.config.js) — only selectors present in the built _site/ HTML
+// (plus a safelist of JS-toggled classes) ship to production. The dev build
+// stays un-purged.
+
+@font-face {
+  font-family: YoungSerif;
+  src: url("../t/lay/YoungSerif-Regular.otf") format("opentype");
+}
+
+// Include functions first (so variable overrides can use them)
+@import "bootstrap/scss/functions";
+
+// Customize defaults (all Bootstrap vars are !default, so these win)
+$theme-colors: (
+  "light": #cdd5db,
+  "dark": #380200,
+  "primary": #e07b78,
+  "secondary": #9a6265,
+  "info": #335794,
+  "success": #4da604,
+  "warning": #ffc04e,
+  "danger": #f3015e,
+);
+// $font-family-sans-serif: YoungSerif, system-ui, -apple-system, "Segoe UI",
+//   Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+//   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$body-bg: #fbe9e8;
+$card-bg: #faf3f3;
+
+// Required core
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+
+// Layout & content
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+// Components in use
+@import "bootstrap/scss/forms/form-check"; // .btn-check toggle buttons
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions"; // modal fade
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/modal"; // Requires transitions
+
+// Helpers (.ratio, .visually-hidden, …) and utility classes
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+
+//
+// Custom styles
+//
+
+@import "spektakle";
+@import "play-card";
+@import "upcoming-dates";
