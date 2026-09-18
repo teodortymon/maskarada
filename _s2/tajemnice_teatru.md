@@ -2,7 +2,7 @@
 title: "Tajemnice Teatru"
 id2: tajemnice_teatru
 headline: "Historia księżniczki i reżysera — spektakl-warsztaty teatralne. Czy wiecie, jak powstaje spektakl?"
-age: "od 3 do 10 lat i całej rodziny"
+age: "od 3,5 do 10 lat i całej rodziny"
 duration: "około 50 minut"
 premiere: "22.04.2023"
 poster: lay/img/p/tajemnice_teatru_big.png
