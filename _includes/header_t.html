@@ -18,8 +18,13 @@
          (~24 KB gz → ~7 KB gz, and one third-party origin fewer). -->
     <script defer src="js/bootstrap-modal.min.js"></script>
 
-    <!-- EWEJSCIOWKI -->
-    <script defer src="https://kicket.com/embedded_static/embedded.js"></script>
+    <!-- Biletomat embedded manager: intercepts clicks on ticket links pointing at
+         biletomat.pl/embedded/… (also kicket.com / ewejsciowki.pl) and opens the
+         booking form in an in-page popup overlay instead of a new tab. Without it
+         the "Kup bilet" links just fall through to their target="_blank" href.
+         (kicket's own embedded.js only bound kicket.com links, so biletomat links
+         were never intercepted — this is the manager master shipped.) -->
+    <script defer src="https://biletomat.pl/embeddables/embedded-manager.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
