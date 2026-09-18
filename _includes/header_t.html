@@ -26,38 +26,6 @@
          were never intercepted — this is the manager master shipped.) -->
     <script defer src="https://biletomat.pl/embeddables/embedded-manager.js"></script>
 
-    <!-- Force the ticket popup into a centered, dimmed modal (desktop). Once the
-         biletomat booking app finishes loading, embedded-manager.js expands
-         #kicket-iframe to fill the whole window, which hides its own dark
-         .kicket-overlay backdrop (the iframe's pale page then covers everything).
-         We pin the iframe to a centered box so the dim always shows — the look
-         master had. On phones we leave biletomat's native fullscreen alone.
-         !important is needed to beat the manager's inline full-window styles;
-         these runtime-injected ids/classes never appear in the built HTML, so
-         this lives inline (PurgeCSS would strip them from css/styles.css). -->
-    <style>
-      /* Put the dark dim on the fixed full-window container itself, so it's
-         guaranteed regardless of what the manager does to .kicket-overlay
-         (it clears the overlay to transparent in its load-fallback path, and
-         paints the container opaque white). Neutralise the overlay so the dim
-         is a single, predictable 60% — not doubled up. */
-      #kicket-container { background-color: rgba(0, 0, 0, 0.6) !important; }
-      .kicket-overlay { background-color: rgba(0, 0, 0, 0) !important; }
-
-      @media (min-width: 768px) {
-        #kicket-iframe {
-          position: fixed !important;
-          inset: 0 !important;
-          margin: auto !important;
-          width: min(920px, 92vw) !important;
-          height: min(900px, 90vh) !important;
-          border-radius: 12px !important;
-          box-shadow: 0 12px 48px rgba(0, 0, 0, 0.35) !important;
-          background-color: #fff !important;
-        }
-      }
-    </style>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
