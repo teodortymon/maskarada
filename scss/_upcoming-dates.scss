@@ -1,0 +1,74 @@
+// Upcoming-dates ("Najbliższe spektakle") treatment on the play card.
+//
+// The card caps the showtime list to the first 3 tickets. When a play has more,
+// the rest are .pc-ticket--extra (hidden) and a full-width coral ghost button
+// unfolds them IN PLACE — a pure-CSS checkbox toggle, no modal. The button reads
+// "+N kolejnych terminów" collapsed and "Zwiń" expanded.
+//
+// On the Spektakle masonry grid, revealing the extra tickets grows the card;
+// t/js/pc-expand.js re-lays-out masonry on toggle so the taller card pushes its
+// neighbours down instead of sliding under them.
+
+.pc-terminy {
+  margin-top: 0.15rem;
+}
+
+// Section label above the tickets.
+.pc-terminy-label {
+  margin: 0 0 0.5rem;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9a6265;
+}
+
+// Overflow tickets past the first 3 — hidden until the toggle is checked.
+.pc-ticket--extra {
+  display: none;
+}
+
+// Full-width coral ghost button that unfolds the rest. It is a <label> for the
+// hidden .pc-more-toggle checkbox; text comes from ::before so it can flip
+// between the count and "Zwiń" without markup.
+.pc-more {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border: 2px solid #e07b78;
+  border-radius: 0.75rem;
+  background: none;
+  color: #e07b78;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  cursor: pointer;
+  // Lift above the card's stretched-link (modal) overlay so it stays clickable.
+  position: relative;
+  z-index: 2;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+
+  &::before {
+    content: "+" attr(data-extra) " kolejnych terminów";
+  }
+
+  &:hover {
+    background: #e07b78;
+    color: #fff;
+  }
+}
+
+// Expanded state: show every ticket, flip the button to a collapse control.
+.pc-terminy:has(.pc-more-toggle:checked) {
+  .pc-ticket--extra {
+    display: flex;
+  }
+  .pc-more::before {
+    content: "Zwiń ▴";
+  }
+}
