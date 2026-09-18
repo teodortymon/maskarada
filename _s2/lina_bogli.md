@@ -8,6 +8,7 @@ duration: "50 minut"
 premiere: "Kwiecień 2026"
 poster: lay/img/lina_big.jpg
 poster_thumb: lay/img/lina_min.jpg
+card_poster: true
 video:
 gallery:
   folder: lay/img/lina

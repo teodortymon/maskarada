@@ -12,7 +12,14 @@
     params    - extra iframe params passed through to play_media/lite_video
 {% endcomment %}
 <div class="card my-2 pcard">
-  {% render 'play_media.html', video: s.video, gallery: s.gallery, poster: s.poster, title: title, params: params %}
+  {% render 'play_media.html',
+    video: s.video,
+    gallery: s.gallery,
+    poster: s.poster,
+    card_poster: s.card_poster,
+    title: title,
+    params: params
+  %}
   <div class="card-body">
     <h3 class="pc-title">
       {{ title -}}
