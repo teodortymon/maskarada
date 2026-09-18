@@ -10,16 +10,12 @@ poster: lay/img/lina_big.jpg
 poster_thumb: lay/img/lina_min.jpg
 video:
 credits:
-  - role: Wykonanie
+  - role: W roli głównej
     people:
       - Joanna Pietrońska
-  - role: Na podstawie komiksu
-    people:
-      - Beata Puczyna (tekst)
-      - Paulina Kopestyńska (ilustracje)
 ---
 Lina Bögli, szwajcarska guwernantka, autorka tysięcy stron dzienników z podróży, w teatralnej opowieści w wykonaniu Joanny Pietrońskiej. Lina, ta niezwykła kobieta, sto trzydzieści lat temu samotnie wyruszyła z Krakowa w świat. Uczyła dziewczęta w szkołach w Australii, Nowej Zelandii, USA i na pensji w Kwiatonowicach.
 
-Spektakl powstał w oparciu o komiks napisany przez Beatę Puczyną i zilustrowany przez Paulinę Kopestyńską.
+Spektakl powstał w oparciu o pamiętnik Liny Bögli i książkę Beaty Puczyny z ilustracjami Pauliny Kopestyńskiej.
 
 Spektakl dla młodzieży i widzów dorosłych.

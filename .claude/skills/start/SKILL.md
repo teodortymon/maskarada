@@ -68,28 +68,13 @@ end
 
 Report which env files were copied (or that there were none).
 
-## 5. Open the worktree in a new IntelliJ window
-
-Launch IntelliJ IDEA on the new worktree so the user can edit alongside you. The
-JetBrains Toolbox `idea` launcher is on `PATH`; pointing it at a directory opens
-that directory in a **new** project window (it doesn't disturb the `v2` window):
-
-```
-idea "$WT"
-```
-
-If `idea` isn't found on `PATH`, fall back to the Toolbox script directly
-(`"$HOME/Library/Application Support/JetBrains/Toolbox/scripts/idea" "$WT"`), and
-if that's also missing, just tell the user to open `$WT` manually — don't block
-the rest of the flow on it.
-
-## 6. Work in the new worktree
+## 5. Work in the new worktree
 
 From here on, do the actual change **inside `$WT`** — read, edit, and commit
 there. Everything below runs with the worktree as the working directory (use
 absolute paths under `$WT`, or `git -C "$WT" ...`).
 
-## 7. Verify with a non-conflicting `mise run dev`
+## 6. Verify with a non-conflicting `mise run dev`
 
 Before starting the server, avoid clobbering a dev server the user (or another
 worktree) already has running:
