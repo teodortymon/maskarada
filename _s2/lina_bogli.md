@@ -14,6 +14,6 @@ Lina Bögli, szwajcarska guwernantka, autorka tysięcy stron dzienników z podr�
 
 Spektakl powstał w oparciu o pamiętnik Liny Bögli i książkę Beaty Puczyny z ilustracjami Pauliny Kopestyńskiej.
 
-**W roli głównej: Joanna Pietrońska.**
+W roli głównej: Joanna Pietrońska.
 
 Spektakl dla młodzieży i widzów dorosłych.
