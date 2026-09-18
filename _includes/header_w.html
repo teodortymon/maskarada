@@ -1,70 +1,102 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" >
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="Description" content="Szeroki wybór ponad 800 kostiumów i strojów dla dzieci. Nasz adres: Warszawa Zacisze ul. Ewy 5" />
-	<meta name="Content-Language" content="pl" />
-	<title>MASKARADA Wypożyczalnia kostiumów dla dzieci</title>
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.1.css" type="text/css" />
-	<link rel="stylesheet" href="lay/style.css" type="text/css" />
+<!DOCTYPE html>
+<html lang="pl" data-variant="v5">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Content-Language" content="pl" />
+    <meta name="theme-color" content="#cfe6f4" />
+    <meta name="Description" content="Wypożyczalnia kostiumów Maskarada w Warszawie (Zacisze, ul. Ewy 5). Ponad 800 strojów dla dzieci, młodzieży i dorosłych w rozmiarach od 80 cm wzwyż." />
 
-	<base href="BASE_HREF"/>
+    <title>{{ title | default: "MASKARADA Wypożyczalnia kostiumów dla dzieci" }}</title>
+    <link rel="icon" type="image/png" href="../t/lay/img/favicon-96.png" />
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
-	
-	<script type="text/javascript">
-    //<![CDATA[
-		$(document).ready(function () {
-			$(".lista-kostiumow a").fancybox();
-		// 	var isshow = localStorage.getItem('bal');
-	    // // var isshow = null;
-	    // if (isshow== null) {
-	    //     localStorage.setItem('bal', 1);
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Async font CSS (defer off the critical path; onload flips it live). -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
+    </noscript>
 
-	    //     // Show popup here
-	    //     // $.fancybox(
-	    //     // 		'<center><br /><br /><br /><h2>Rusza nasza nowa Szkoła Szycia</h2><br /><br /><p>Warsztaty szycia prowadzone przez kostiumologów i krawcowe w Kostiumerii Teatru Maskarada<br />Więcej informacji: <a href="http://www.maskarada.waw.pl/t/warsztaty.html"> Szkoła Szycia <br /><p><img src="../t/lay/img/szycie_big.jpg" alt="Szkoła szycia" /></p></a></p></center>',
-	    //     // 		{
-	    //     //         		'autoDimensions'	: false,
-	    //     // 			'width'         		: 700,
-	    //     // 			'height'        		: 900,
-	    //     // 			// 'transitionIn'		: 'none',
-	    //     // 			// 'transitionOut'		: 'none'
-	    //     // 		}
-	    //     // 	);
-
-		// 	$.fancybox(
-		// 		'<center><br /><br /><br /><h2>Wielki Bal Rycerzy i Księżniczek</h2><br /><br /><p>Teatr Maskarada, księgarnia Tarabuk i Nowy Świat Muzyki zapraszają na bal karnawałowy: Wielki Bal Rycerzy i Księżniczek. <br />Bal poprowadzi król Zbigniew Kozłowski a więc zabawa do utraty tchu gwarantowana. Na miejscu możliwość wypożyczenia kostiumy ze zbiorów Wypożyczalni Kostiumów Maskarada.Zachęcamy dzieci i dorosłych do przebrania w karnawałowe szaty.<br />Więcej informacji: <a href="http://www.maskarada.waw.pl/t/repertuar.html"> Wielki Bal <br /><p><img src="../t/lay/img/bal_big.jpg" alt="Wielki Bal" /></p></a></p></center>',
-		// 		{
-		// 										'autoDimensions'	: false,
-		// 			'width'         		: 700,
-		// 			'height'        		: 900,
-		// 			// 'transitionIn'		: 'none',
-		// 			// 'transitionOut'		: 'none'
-		// 		}
-		// 	);
-	    // }
-		});
-
-    //]]>
+    <!-- Compiled Bootstrap + shared components (grid, .card, .btn, lightbox,
+         .ratio) — also declares the self-hosted YoungSerif @font-face. -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Hand-written rental skin (the sky/paper grammar + the 5 identities). -->
+    <link rel="stylesheet" href="{{ 'lay/style.css' | bust_file_cache }}" type="text/css" />
+  </head>
+  <body>
+    {% assign url = page.url | downcase | split: '/' %}
+    {% assign ur = url[2] | split: '.' %}
+    {% assign u = ur[0] %}
+    {% assign cats = grupy_strojow | map: 'url' %}
+    <header class="site-header">
+      <div class="bar">
+        <div class="container">
+          {% include 'w_brand.html' %}
+          <nav class="site-nav">
+            <a class="nav-link {% if u == 'index' or page.url == '/w/' %}active{% endif %}" href="index.html">Strona główna</a>
+            <a class="nav-link {% if u == 'kostiumy' or cats contains u %}active{% endif %}" href="kostiumy.html">Kostiumy</a>
+            <a class="nav-link {% if u == 'cennik' %}active{% endif %}" href="cennik.html">Cennik</a>
+            <a class="nav-link {% if u == 'kontakt' %}active{% endif %}" href="kontakt.html">Kontakt</a>
+            <span class="nav-social">
+              <a class="social-link" href="https://www.facebook.com/Maskarada-Teatr-dla-Dzieci-1506342302958267" target="_blank" rel="noopener" aria-label="Facebook Maskarady">
+                <svg viewBox="0 0 16 16" role="img" aria-hidden="true">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </a>
+              <a class="social-link" href="https://www.instagram.com/teatr.maskarada/" target="_blank" rel="noopener" aria-label="Instagram Maskarady">
+                <svg viewBox="0 0 16 16" role="img" aria-hidden="true">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </a>
+            </span>
+            <!-- Switch → Teatr Maskarada (the sibling site). A stage-curtain glyph
+                 mirrors the theatre header's coat-hanger switch to the rental. -->
+            <a class="sp-switch" href="../t/index.html">
+              <svg class="sp-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+                <path d="M13 5v2" />
+                <path d="M13 11v2" />
+                <path d="M13 17v2" />
+              </svg>
+              <span>Do Teatru Maskarada</span>
+              <span class="sp-chevron" aria-hidden="true">→</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="w-garland" aria-hidden="true"></div>
+    </header>
+    <script>
+      // Auto-hiding site header: hide on scroll down, reveal on scroll up.
+      // Maintains --hdr-h (visible header height) for any sticky elements below.
+      (function () {
+        var hdr = document.querySelector(".site-header");
+        if (!hdr) return;
+        var hdrHidden = false;
+        function setHdrVar() {
+          var h = hdrHidden ? 0 : hdr.getBoundingClientRect().height;
+          document.documentElement.style.setProperty("--hdr-h", h + "px");
+        }
+        setHdrVar();
+        var lastY = window.scrollY || 0;
+        window.addEventListener("scroll", function () {
+          var y = window.scrollY || 0;
+          if (y > lastY + 6 && y > 180 && !hdrHidden) {
+            hdrHidden = true;
+            hdr.classList.add("hdr-hide");
+            setHdrVar();
+          } else if ((y < lastY - 6 || y < 120) && hdrHidden) {
+            hdrHidden = false;
+            hdr.classList.remove("hdr-hide");
+            setHdrVar();
+          }
+          lastY = y;
+        }, { passive: true });
+        window.addEventListener("resize", setHdrVar, { passive: true });
+      })();
     </script>
-</head>
-<body > 
-
-<div id="page">
-
-<div id="header" class="container" >
-	<h1><a href="index.html">MASKARADA Wypożyczalnia kostiumów dla dzieci</a></h1>
-	<ul>
-		<li><a href="index.html">Strona główna</a></li>
-		<li><a href="kostiumy.html">Kostiumy</a></li>
-		<li><a href="cennik.html">Cennik</a></li>
-		<li><a href="kontakt.html">Kontakt</a></li>
-	</ul>
-</div>
-
-<div id="main" class="container">
-	

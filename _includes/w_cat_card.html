@@ -1,0 +1,20 @@
+{% comment %}
+  One costume-category card. Assign `grupa` (a row of grupy_strojow) before
+  including. Cover image is a 400×600 large photo (grupy/*.jpg is only 120×180).
+  The hook span is the V1 "hanger" ornament; other variants restyle/hide it.
+{% endcomment %}
+<a class="w-cat" data-cat="{{ grupa.url }}" href="{{ grupa.url }}.html">
+  <span class="w-cat__hook" aria-hidden="true"></span>
+  <span class="card w-cat__card">
+    <img
+      class="w-cat__img"
+      src="kostiumy/large/{{ grupa.url }}/{{ grupa.cover | default: '1/1' }}.jpg"
+      alt="Kostiumy — {{ grupa.nazwa }}"
+      width="400"
+      height="600"
+      loading="lazy"
+      decoding="async"
+    >
+    <span class="w-cat__label">{{ grupa.nazwa }}</span>
+  </span>
+</a>
