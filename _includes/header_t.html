@@ -111,7 +111,7 @@
        The extra 64px covers the logo sign hanging below the header
        (plus its drop shadow), so nothing stays peeking out. */
     .site-header.hdr-hide {
-      transform: translateY(calc(-100% - 64px));
+      transform: translateY(calc(-100% - 84px));
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -216,8 +216,9 @@
       }
 
       .brand img {
-        height: 88px;
-        margin-bottom: -30px;
+        height: 128px;
+        margin-top: -6px;
+        margin-bottom: -40px;
         filter: drop-shadow(0 4px 3px rgba(74, 125, 165, 0.3));
         transform-origin: 50% 0;
         animation: logo-sway 5s ease-in-out infinite;
@@ -247,7 +248,7 @@
       }
 
       .brand img {
-        height: 52px;
+        height: 80px;
       }
 
       .site-header .site-nav {
@@ -334,7 +335,7 @@
         <a class="brand" href="index.html">
           <picture>
             <source srcset="lay/img/logo2.webp" type="image/webp" />
-            <img src="lay/img/logo2.png" alt="Teatr Maskarada" width="794" height="184" fetchpriority="high" />
+            <img src="lay/img/logo2.png" alt="Teatr Maskarada" width="976" height="400" fetchpriority="high" />
           </picture>
         </a>
         <nav class="site-nav">
