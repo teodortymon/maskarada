@@ -3,7 +3,7 @@ title: "Mała Syrenka"
 new_premiere: true
 id2: syrenka
 headline: "Marzenia to coś, co bije głęboko w naszych sercach, tak jak głębiny oceanu. Przyjdź i pozwól Małej Syrence spełnić swoje marzenie o zobaczeniu lądu, poznaniu ludzi i miłości do księcia."
-age: "od 2,5 do 99 lat"
+age: "od 3 do 99 lat"
 duration: "około 55 minut"
 premiere: "6.11.2023"
 poster: lay/img/p/syrenka_big.jpg
