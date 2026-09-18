@@ -8,7 +8,8 @@ layout: t
   <div class="card my-2">
     <div class="card-body">
       Wejście od strony placu przy Pomniku Mikołaja Kopernika<br/>
-      Sala pod Kopułą PAN, 3 piętro-schodami lub windą
+      Sala pod Kopułą PAN, 3 piętro-schodami lub windą<br/>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Teatr+Maskarada+dla+dzieci" target="_blank" rel="noopener">ul. Nowy Świat 72</a>
 
       <br/><br/>
       Organizujemy również spektakle dla firm. <br/>
