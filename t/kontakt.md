@@ -3,14 +3,13 @@ layout: t
 ---
 <div class="container">
 
-  <h2>SCENA</h2>
+  <h2>Gramy w Pałacu Staszica <a href="https://www.google.com/maps/search/?api=1&amp;query=Teatr+Maskarada+dla+dzieci" target="_blank" rel="noopener">ul. Nowy Świat 72</a></h2>
 
   <div class="card my-2">
     <div class="card-body">
-      Zapraszamy do nowego, pięknego miejsca<br/>
-      Pałac Staszica ul. Nowy Świat 72<br/>
       Wejście od strony placu przy Pomniku Mikołaja Kopernika<br/>
-      Sala pod Kopułą PAN, 3 piętro-schodami lub windą
+      Sala pod Kopułą PAN, 3 piętro-schodami lub windą<br/>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Teatr+Maskarada+dla+dzieci" target="_blank" rel="noopener">ul. Nowy Świat 72</a>
 
       <br/><br/>
       Organizujemy również spektakle dla firm. <br/>
