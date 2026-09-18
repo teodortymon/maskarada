@@ -282,6 +282,26 @@ templateEngineOverride: liquid
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
   }
+
+  /* Month header — opens every month as its own section, so months no longer
+     blur into one another. Big serif name + coral underline rule. */
+  .ksf-month-header {
+    display: flex;
+    align-items: baseline;
+    margin: 2.75rem 0 1.15rem;
+    border-bottom: 2px solid rgba(224, 123, 120, 0.45);
+    padding-bottom: 0.4rem;
+  }
+  .ksf-month-block:first-of-type .ksf-month-header { margin-top: 0.5rem; }
+  .ksf-month-name { font-family: YoungSerif, serif; font-size: 1.7rem; line-height: 1; color: #380200; }
+
+  /* Weekend days (Sat/Sun) read warmer than weekdays — same coral-vs-blue flap
+     tint as the Spektakle mini-tickets, just a touch stronger on the weekend so
+     it stands out. Time text stays dark, like Spektakle. */
+  .ksf-stub[data-event-type="weekend"] .ksf-block { background: rgba(224, 123, 120, 0.2); }
+  /* The weekday name (sobota/niedziela) in the same coral as the ticket flap —
+     not bold, just tinted. */
+  .ksf-day-sec[data-event-type="weekend"] .ksf-day-title .ksf-day-dow { color: #e07b78; }
 </style>
 <div class="container container--tight">
   <div class="ksf-head">
@@ -437,7 +457,12 @@ templateEngineOverride: liquid
           {% endif %}
         {% endcapture %}
         {% if month_secs contains "<section" %}
-          <div class="ksf-month-block">{{ month_secs }}</div>
+          <div class="ksf-month-block">
+            <div class="ksf-month-header">
+              <span class="ksf-month-name">{{ month_data.title }}</span>
+            </div>
+            {{ month_secs }}
+          </div>
         {% endif %}
       {% endif %}
     {% endfor %}
