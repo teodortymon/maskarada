@@ -1,0 +1,68 @@
+# Production deploy — Eleventy static site to GitHub Pages.
+#
+# Replaces the old Jekyll pipeline (jeykyll-gh-pages.yml, removed in the v2
+# merge). Builds the Eleventy site with the same command we use locally
+# (`npm run build` == SCSS + modal JS + Eleventy + PurgeCSS -> ./_site) and
+# publishes it to GitHub Pages. The custom domain (www.maskarada.waw.pl) is
+# carried in ./CNAME, which Eleventy passes through into _site/.
+#
+# No TinaCMS build step is needed: Tina is a git-backed, edit-time CMS — the
+# static build just reads the committed content, so no TINA_* secrets here.
+#
+# NOTE: _site/_headers is a Cloudflare Pages file and is ignored by GitHub
+# Pages; CSP headers are not applied when hosting on Pages.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# Permissions the GITHUB_TOKEN needs to publish to Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One production deploy at a time; never cancel an in-flight deploy.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (SCSS + modal JS + Eleventy + PurgeCSS)
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

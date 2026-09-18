@@ -1,41 +1,81 @@
-[env]
-# CI decrypt recipient (public key of the dedicated CI age key — not secret).
-# The private half is stored as the GitHub Actions secret MISE_AGE_KEY; CI uses it
-# to decrypt the two BILETOMAT_* values below. On password rotation, re-encrypt with:
-#   mise set --age-encrypt --prompt --age-key-file ~/.config/mise/age.txt \
-#     --age-recipient age1qhrx4ejxhrl9vek05qw3lp47vt4c7e8mcg9w4z8a56wed5ygcptspuwjf BILETOMAT_USER
-# CI recipient: age1qhrx4ejxhrl9vek05qw3lp47vt4c7e8mcg9w4z8a56wed5ygcptspuwjf
-BILETOMAT_USER = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpcU5OVGh4T1ZUWkI5MUs3cXEvUDdVeUxhZXVUR28xRXpMeEQvdXZPWjBNCklwdTQ0alRlS3RZdFh2ekJ3R3hWUjNnN0tlVlhsU3lFM3VJaFhrZ1htZDgKLT4gWDI1NTE5IHVJVUlrZnl0UmhoNUoyT0JUMHB5SDRIeUVLR1lXaE1wSDFITDFSU1lKbWMKaEhySVgxNXRUc1kzUVF1QzlkanFxdGRGY00wMU9hdGdISjUrSTEycWZUdwotPiBXJk8yVEduVS1ncmVhc2UgaVNCZCB2SzIuCk1KeC9zZWR3Q2ZWMlVPQlhNdTlkaE1vZzdUU3VCSmJTVW1SZG54Y0xoZkt1cFlud2R3eEx0Zk9vVjMyZU9NcEwKZXhnQzNlNkRSa1JrdFh2QmxQYnFZYi9sejlDajJMUllXUQotLS0gVlF1ekdYRk96RU1BUk51QS9GTWcyZzZHWllQTlZ2Y2tqYnQ3a0dkL3RKWQoU7BZGgb7s23mx0eikEK5ao0uP61e7rrlGDdPAHbPxviDBvVMyBwDaS2hfTVcMlQQCTYXvgA" }
-BILETOMAT_PASS = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBOa3JNSFlKSVlMd0ZpTk9LVi9PZU1wVm00aTlSZDl4T0NlSVR4NUt5KzM4CkZtM0JOMURkL2t2eHNBb0VyRjFNQXVoQU1qdDJJT3FJWlptL3VLNHNTd2MKLT4gWDI1NTE5IHZQVEpoQ0xSU1Vua0YvOHdiSHloblNtT2l6ZUYzUnVNMHJ6dUlSTDl0Z0UKdlJZVDhSZUpySjkzMUlmSHdiZGVaRDBwZ25iZnp2eFNVUmpTOUw3ZTY1TQotPiAnTC1ncmVhc2UKRGNMd3QyRVRvR3MwR3IrZHlJUHE4YVZxaVE5TysyZW1nZU5XZWdaVnIreGVmSXk5bDQzOUlEeGloOW9zbjRSOApIS0tqWDFibGtGWnIvSm0vWm1kTzlnZVc4ZnNsSDEycWJ4dWFmVzRFVnJ5RTNHRnZ6cmp1UU1VSHBKQmlWZmlkCkdnCi0tLSBUUUVQaEVRVytsSFFROG15cVBMSVBQa2pNeTloSUlsWUhSMFAxc2pORHY0Cn+PHx8sDXluJR9j4YGwDbe7vOqZHNaETi6EA1ucsmuhZcRPP3erK0w" }
-# Organizer whose events are fetched from Biletomat (see tasks.fetch-events).
-BILETOMAT_ORGANIZER_ID = "333"
-
-# ---------------------------------------------------------------------------
-# Tasks (migrated from Makefile). The Makefile is kept until these are verified.
-# ---------------------------------------------------------------------------
+# Mise task runner — the source of truth for build/run/serve commands.
+# See CLAUDE.md: every serving/build command goes through `mise run <task>`,
+# and any new working command must be added back here as a task.
 
 [tools]
-uv = "latest"
+# Node 20 (>= 20.19) satisfies Eleventy's deps and TinaCMS's better-sqlite3.
+node = "20"
 
-[tasks.dev]
-description = "Run Jekyll dev server with livereload"
-shell = "fish -lc"
-run = "chruby ruby-3.1.3; bundle exec jekyll serve --livereload --host 0.0.0.0"
+[env]
+# Loads gitignored env (e.g. CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID for
+# wrangler) if a .env is present; wrangler otherwise falls back to OAuth login.
+_.file = ".env"
+
+[tasks.deps]
+description = "Install npm dependencies (auto-runs before dev/build; skipped when node_modules is already up to date)"
+run = "npm install"
+# Change detection: mise skips this task unless package.json / package-lock.json
+# are newer than npm's install marker. Keeps node_modules in sync with
+# package.json so a newly-added dep (e.g. onchange) can't go missing.
+sources = ["package.json", "package-lock.json"]
+outputs = ["node_modules/.package-lock.json"]
+
+[tasks.css]
+description = "Compile Bootstrap SCSS (scss/) into css/styles.css"
+depends = ["deps"]
+run = "npm run css"
+
+[tasks.build]
+description = "Build the static site into _site/ (SCSS + modal-only Bootstrap JS + Eleventy, then PurgeCSS trims _site/css/styles.css to used selectors)"
+depends = ["deps"]
+run = "npm run build"
+
+[tasks.js-modal]
+description = "Rebuild t/js/bootstrap-modal.min.js (esbuild bundle of Bootstrap's Modal plugin only; committed artifact, also refreshed by build)"
+depends = ["deps"]
+run = "npm run js-modal"
+
+[tasks.css-purge]
+description = "Run PurgeCSS over the built _site/css/styles.css (prod-only trim; config + JS-toggled-class safelist in purgecss.config.js). Needs a prior build."
+depends = ["deps"]
+run = "npm run css-purge"
+
+# `dev` and `dev-stop` are file tasks under `mise-tasks/` (multi-line logic):
+# `dev` records a worktree-local .dev-server.pid so `dev-stop` can stop only THIS
+# worktree's server instead of every worktree's via a broad `pkill`.
+
+[tasks.dev-pinned]
+description = "Like dev but on a pinned port (default 8790; override: PORT=8791 mise run dev-pinned) — avoids 808x port races when several worktree sessions serve at once"
+depends = ["deps"]
+run = 'npm run css && npx npm-run-all --parallel watch "serve -- --port=${PORT:-8790}"'
+
+[tasks.format]
+description = "Reformat HTML/Liquid templates (_layouts, _includes, index.html) with Prettier"
+depends = ["deps"]
+run = "npm run format"
+
+[tasks.format-check]
+description = "Check HTML/Liquid template formatting without writing (CI-friendly)"
+depends = ["deps"]
+run = "npm run format:check"
 
 [tasks.dev-tina]
-description = "Run Jekyll dev server with TinaCMS"
-run = 'npx tinacms dev -c "bundle exec jekyll serve --livereload --host localhost"'
+description = "Serve Eleventy behind the TinaCMS dev server (content editing UI)"
+depends = ["deps"]
+run = "npx tinacms dev -c 'npx @11ty/eleventy --serve'"
+
+[tasks.cf-pages-deploy]
+description = "Deploy the built _site/ to the Cloudflare Pages beta (build first)"
+run = "npx --yes wrangler pages deploy _site --project-name=maskarada-new-design"
+
+[tasks.preview]
+description = "Serve the built _site/ locally with Cloudflare Pages emulation (applies _headers/CSP — unlike `dev`; build first)"
+run = "npx --yes wrangler pages dev _site --port 8788 --compatibility-date=2026-05-03"
+
+[tasks.update-links]
+description = "Update ticket links in spektakle YAML from new_events_raw.html export"
+run = "python3 scripts/update_spektakle_links.py"
 
 [tasks.resize-logo]
 description = "Resize a logo image to web size (usage: mise run resize-logo -- path/to/logo.png)"
 run = "mogrify -resize 600x600"
-
-[tasks.fetch-events]
-description = "Log into Biletomat and capture the organizer's events list as JSON (uses BILETOMAT_USER/PASS)"
-depends = ["install-browser"]
-run = "uv run scripts/fetch_biletomat_events.py"
-
-[tasks.update-links]
-description = "Fetch latest Biletomat events, then update ticket links in spektakle YAML"
-depends = ["fetch-events"]
-run = "python3 scripts/update_spektakle_links.py"

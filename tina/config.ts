@@ -1,10 +1,9 @@
 import { defineConfig } from "tinacms";
 import { repertuar_blocksFields } from "./templates";
-import { spektaklFields } from "./templates";
 
-// Your hosting provider likely exposes this as an environment variable
-// const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
-const branch = "master";
+// For cloud/prod this comes from the hosting env; locally `tinacms dev` runs in
+// local mode and ignores branch/clientId/token.
+const branch = process.env.HEAD || process.env.CF_PAGES_BRANCH || "v2";
 
 export default defineConfig({
   branch,
@@ -12,6 +11,7 @@ export default defineConfig({
   token: process.env.TINA_TOKEN,
   client: { skip: true },
   build: {
+    // Tina builds its admin SPA here; Eleventy passthrough-copies admin/ → _site/admin.
     outputFolder: "admin",
     publicFolder: "./",
   },
@@ -30,6 +30,7 @@ export default defineConfig({
         path: "_data/spektakle",
         match: {
           include: "*",
+          exclude: "spektakle",
         },
         fields: [
           {
@@ -47,12 +48,6 @@ export default defineConfig({
         label: "Nazwy spektakli",
         name: "nazwy_spektakli",
         path: "_data/spektakle",
-        // ui: {
-        //   allowedActions: {
-        //     create: false,
-        //     delete: false,
-        //   },
-        // },
         match: {
           include: "spektakle",
         },
@@ -62,18 +57,6 @@ export default defineConfig({
             type: "string",
             list: true,
           },
-          // {
-          //   name: "tytuly",
-          //   label: "Dummy field",
-          //   type: "object",
-          //   list: true,
-          //   fields: [
-          //     {
-          //       type: "string",
-          //       name: "tytul",
-          //     },
-          //   ],
-          // },
         ],
       },
       {
@@ -219,16 +202,6 @@ export default defineConfig({
             isBody: true,
           },
         ],
-      },
-      {
-        format: "yml",
-        label: "Wszystkie bazy danych",
-        name: "wszystkie_bazy_danych",
-        path: "_data",
-        match: {
-          include: "**/*",
-        },
-        fields: repertuar_blocksFields(),
       },
     ],
   },

@@ -1,17 +1,12 @@
 ---
 layout: w
+title: Kostiumy | Wypożyczalnia Maskarada
 ---
 
-<h2>Kostiumy</h2>
-
-<ul class="lista-grup">
-	{% for grupa in site.data.grupy_strojow %}
-
-		<li><a href="{{ grupa.url }}.html">
-			<img src="kostiumy/grupy/{{ grupa.url }}.jpg" alt="{{ grupa.nazwa }}" />
-			<p>{{ grupa.nazwa }}</p>
-			</a>
-		</li>
-
-	{% endfor %}
-</ul>
+<div class="container">
+  <h2>Kostiumy</h2>
+  <p>Wybierz kategorię, żeby zobaczyć przykładowe stroje z naszej wypożyczalni.</p>
+  <div class="w-cats">
+    {% for grupa in grupy_strojow %}{% include 'w_cat_card.html' %}{% endfor %}
+  </div>
+</div>

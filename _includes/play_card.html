@@ -1,0 +1,54 @@
+{% comment %}
+  Play card shared by Teraz (index) and Spektakle. Media on top, then title,
+  optional meta, headline, "Szczegóły spektaklu →" modal link, and one
+  mini-ticket per showtime (design aligned with the Kalendarz ksf-stub).
+  Params:
+    title     - play title (always required; used even when s is nil)
+    s         - the play object from collections.s2, or nil when unmatched
+                (no media/details/headline in that case)
+    events    - array of repertuar events ({data, link, manual_price}) to list;
+                may be empty
+    show_meta - true to show the age / duration line (Spektakle)
+    params    - extra iframe params passed through to play_media/lite_video
+{% endcomment %}
+<div class="card my-2 pcard">
+  {% render 'play_media.html',
+    video: s.video,
+    gallery: s.gallery,
+    poster: s.poster,
+    card_poster: s.card_poster,
+    title: title,
+    params: params
+  %}
+  <div class="card-body">
+    <h3 class="pc-title">
+      {{ title -}}
+      {%- if s.new_premiere %}
+        <span class="badge text-bg-primary">nowa premiera</span>
+      {%- endif %}
+    </h3>
+    {% if show_meta and s %}
+      <p class="pc-meta">{{ s.age }} · {{ s.duration }}</p>
+    {% endif %}
+    {% if s.headline %}
+      <p class="pc-headline">{{ s.headline }}</p>
+    {% endif %}
+    {% if s %}
+      {% comment %}
+        .stretched-link turns the whole card into one click target for the
+        details modal. The media facade and the mini-tickets below opt back out
+        via z-index (see _play-card.scss) so the video and "Kup bilet" links
+        keep their own clicks.
+      {% endcomment %}
+      <button
+        type="button"
+        class="pc-details stretched-link"
+        data-bs-toggle="modal"
+        data-bs-target="#{{ s.id2 }}"
+      >
+        Szczegóły spektaklu →
+      </button>
+    {% endif %}
+    {% render 'play_tickets.html', events: events, modal_id: s.id2 %}
+  </div>
+</div>

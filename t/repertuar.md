@@ -1,93 +1,529 @@
 ---
 layout: t
+templateEngineOverride: liquid
 ---
-
-<link crossorigin="anonymous" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" rel="stylesheet">
-
-## Repertuar
-
-## Szanowni Widzowie!
-
-Gramy dla was w Pałacu Staszica przy **ul. Nowy Świat 72**
-
-<br/>
-<br/>
-{% assign miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
-{% assign current_month_index = site.time | date: "%-m" | minus: 1 %}
-{% for i in (0..11) %}
-{% assign month_index = i | plus: current_month_index | modulo: 12 %}
-{% assign miesiac = miesiace[month_index] %}
-
-{% if site.data.spektakle\[miesiac\].repertuar.size > 0 %}
-
-## {{site.data.spektakle\[miesiac\].title}}
-
-<table class="pure-table pure-table-horizontal">
-{% assign spektakle = site.data.spektakle\[miesiac\].repertuar | sort: 'data' %}
-{% for spektakl in spektakle %}
-{% assign dzien_tygodnia = spektakl.data | date: "%w" | minus: 1 | plus: 1 %}
-<tr>
-<th>{{ spektakl.data | date: "%-d.%m" }}<br/>{{ site.data.dni_tygodnia.dni\[dzien_tygodnia\] }}</th>
-<th>{{ spektakl.data | date: "%R"  }}</th>
-<th style="width: 40%;">{{ spektakl.tytul }}</th>
-<th>
-{% if spektakl.manual_price == true %}
-{{ spektakl.link }}
-{% else %}
-{% if dzien_tygodnia == 0 or dzien_tygodnia == 6 %}
-{% if spektakl.link == "-" %}
-<i>Bilety online wkrótce</i>
-{% else %}
-<a onclick="fbq('track', 'OpenBuy');" href="{{ spektakl.link }}">Kup bilet</a>
-{% endif %}
-{% else %}
-Zapraszamy grupy zorganizowane do rezerwacji tel.
-<a href="tel:501-027-278" onclick="fbq('track', 'CallFromEventList');">501 027 278</a>
-{% endif %}
-{% endif %}
-</th>
-</tr>
-{% endfor %}
-</table>
-<br /><br />
-{% endif %}
-
-{% endfor %}
-
-<br/><br/>
-
 <style>
-.pure-table thead {
-background-color: rgba(143, 223, 255, 0.19) !important;
-color: #000;
-text-align: left;
-vertical-align: bottom;
-}
+  /* ===== Kalendarz — ticket-stub schedule ===== */
+  html { scroll-behavior: smooth; }
+  .ksf-head { text-align: center; margin: 0 0 0.75rem; }
+  .ksf-head h2 { font-family: YoungSerif, serif; color: #380200; margin: 0; }
+  .ksf-sub { font-size: 0.8rem; color: #9a6265; margin: 0.3rem 0 0; }
+  .num { font-family: Montserrat, sans-serif; font-weight: 600; font-size: 0.94em; }
+
+  /* Flat, compact overview bar (not sticky) */
+  .ksf-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    background: rgba(255, 253, 252, 0.7);
+    border: 1px solid rgba(56, 2, 0, 0.08);
+    border-radius: 0.75rem;
+    padding: 0.35rem 0.6rem;
+    /* full container width — aligned with the Kalendarz title; only the
+       day sections below (.ksf-month-block) stay in the narrow column */
+    margin: 0 0 1.25rem;
+  }
+  /* Narrower reading column on desktop — buttons sit closer to titles */
+  .ksf-month-block { max-width: 46rem; margin: 0 auto; }
+  .ksf-filter { flex: 0 0 auto; display: inline-flex; gap: 0.9rem; }
+  .ksf-filter .btn-check { position: absolute; clip: rect(0, 0, 0, 0); pointer-events: none; }
+  .ksf-filter label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #9a6265;
+    cursor: pointer;
+    padding: 0.22rem 0.05rem;
+    border-bottom: 2.5px solid transparent;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .ksf-filter .btn-check:checked + label { color: #380200; border-bottom-color: #e07b78; }
+  .ksf-filter .btn-check:focus-visible + label { outline: 2px solid #380200; outline-offset: 2px; }
+
+  .ksf-rail {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.15rem 0.1rem;
+  }
+  .ksf-rail::-webkit-scrollbar { height: 4px; }
+  .ksf-rail::-webkit-scrollbar-thumb { background: rgba(154, 98, 101, 0.3); border-radius: 999px; }
+  .ksf-rail-group { display: flex; align-items: center; gap: 0.35rem; }
+  .ksf-rail-mon {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #b08a8d;
+    margin: 0 0.35rem 0 0.5rem;
+    white-space: nowrap;
+  }
+  .ksf-rail-group:first-child .ksf-rail-mon { margin-left: 0.1rem; }
+  /* Mini-ticket day chips: tinted weekday flap + dashed perforation + number */
+  .ksf-rail-day {
+    flex: 0 0 auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    border-radius: 0.5rem;
+    background: #fffdfc;
+    border: 1px solid rgba(56, 2, 0, 0.12);
+    overflow: hidden;
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .ksf-rail-day:hover { border-color: rgba(224, 123, 120, 0.7); box-shadow: 0 1px 4px rgba(56, 2, 0, 0.12); }
+  .ksf-rail-dow {
+    display: flex;
+    align-items: center;
+    padding: 0.14rem 0.4rem 0;
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9a6265;
+  }
+  .ksf-rail-num {
+    display: flex;
+    align-items: center;
+    padding: 0 0.4rem 0.16rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #380200;
+  }
+  /* #44: the today chip uses the SAME colour as every other chip — only its
+     "Dziś" label marks it, no dark flap. */
+  .ksf-rail-day.is-today { border-color: rgba(56, 2, 0, 0.12); }
+  .ksf-rail-today { cursor: default; }
+  .ksf-rail-today:hover { border-color: rgba(56, 2, 0, 0.12); box-shadow: none; }
+
+  /* Day sections */
+  .ksf-day-sec { scroll-margin-top: calc(var(--hdr-h, 100px) + 1.5rem); margin-bottom: 1.5rem; }
+  .ksf-day-title {
+    font-family: YoungSerif, serif;
+    font-size: 1.15rem;
+    color: #380200;
+    margin: 0 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .ksf-day-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(56, 2, 0, 0.16);
+  }
+  /* #41: date heading reads "19 lipca — sobota" (day + genitive month + weekday) */
+  .ksf-day-title .num { font-family: Montserrat, sans-serif; font-variant-numeric: tabular-nums; }
+  .ksf-day-title .ksf-day-sep { color: rgba(56, 2, 0, 0.38); margin: 0 0.08em; }
+  .ksf-day-title .ksf-day-dow { color: rgba(56, 2, 0, 0.6); }
+
+  /* Ticket stub — perforated time block. Row mechanics mirror the play-card
+     mini-tickets (scss/_play-card.scss): the row's CTA link stretches over the
+     whole stub, the stub lifts on hover, and the lifted edge echoes the action
+     — coral = buy, blue = call, neutral = open the play's modal. */
+  .ksf-stub {
+    --datew: 4.6rem;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    background: #fffdfc;
+    border: 1px solid rgba(56, 2, 0, 0.09);
+    border-radius: 0.75rem;
+    margin-bottom: 0.55rem;
+    box-shadow: 0 1px 3px rgba(56, 2, 0, 0.05);
+    overflow: hidden;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .ksf-stub:has(.stretched-link) { cursor: pointer; }
+  .ksf-stub:has(.stretched-link):hover,
+  .ksf-stub:has(.stretched-link):focus-within {
+    box-shadow: 0 4px 12px rgba(56, 2, 0, 0.14);
+    transform: translateY(-2px);
+    z-index: 3;
+  }
+  .ksf-stub:has(.ksf-buy.stretched-link):hover,
+  .ksf-stub:has(.ksf-buy.stretched-link):focus-within { border-color: rgba(224, 123, 120, 0.6); }
+  .ksf-stub:has(.ksf-tel.stretched-link):hover,
+  .ksf-stub:has(.ksf-tel.stretched-link):focus-within { border-color: rgba(91, 115, 149, 0.6); }
+  .ksf-stub:has(.ksf-title-btn.stretched-link):hover { border-color: rgba(56, 2, 0, 0.2); }
+  .ksf-stub::before,
+  .ksf-stub::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--datew) - 7px);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #f3ecf2;
+    border: 1px solid rgba(56, 2, 0, 0.09);
+    z-index: 2;
+    /* decorative: they sit above the stretched row overlay, so without this
+       they'd punch two dead spots into the row's click area */
+    pointer-events: none;
+  }
+  .ksf-stub::before { top: -8px; }
+  .ksf-stub::after { bottom: -8px; }
+  .ksf-block {
+    width: var(--datew);
+    flex: 0 0 var(--datew);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem 0.25rem;
+    border-right: 2px dashed rgba(56, 2, 0, 0.18);
+    background: rgba(224, 123, 120, 0.1);
+  }
+  .ksf-stub[data-event-type="weekday"] .ksf-block { background: rgba(91, 115, 149, 0.09); }
+  .ksf-time-big {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.08rem;
+    color: #380200;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ksf-body {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.35rem 1rem;
+    padding: 0.6rem 1rem;
+    min-width: 0;
+  }
+  .ksf-title-btn {
+    border: 0;
+    background: none;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #380200;
+    text-align: left;
+    cursor: pointer;
+  }
+  /* Keep the title's own modal click above a buy/tel row overlay (z-index 1).
+     Only when it is NOT itself the row's stretched-link: positioning the
+     stretched title would trap its ::after inside the label instead of
+     letting it cover the stub. */
+  .ksf-title-btn:not(.stretched-link) {
+    position: relative;
+    z-index: 2;
+  }
+  .ksf-title-btn:hover { color: #e07b78; }
+  .ksf-title-more { font-size: 0.78em; font-weight: 500; color: #e07b78; white-space: nowrap; }
+  .ksf-action {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .ksf-groups-note { font-size: 0.78rem; color: #9a6265; text-align: right; }
+  /* #49 — flat "pill" buy button, matching the "Cały repertuar" CTA:
+     transparent fill, coral outline + label, fills coral on hover. Kept in
+     sync with .pc-buy; alternate looks flip via html[data-btnvariant]
+     (see scss/_buy-button.scss). */
+  .ksf-buy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    line-height: 1;
+    background: transparent;
+    color: #e07b78;
+    border: 2px solid #e07b78;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: calc(0.45rem - 2px) calc(0.9rem - 2px);
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .ksf-buy:hover { background: #e07b78; color: #fff; }
+  .ksf-soon { font-size: 0.8rem; font-style: italic; color: #9a6265; }
+  /* #49 — flat outline pill in blue, mirroring .ksf-buy (coral). Border/label
+     in the site blue, fills blue on hover; padding trimmed 2px to match the
+     bordered .ksf-buy height. */
+  .ksf-tel {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #33517e;
+    background: transparent;
+    border: 2px solid #5b7395;
+    border-radius: 999px;
+    padding: calc(0.4rem - 2px) calc(0.9rem - 2px);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .ksf-tel:hover { background: #5b7395; color: #fff; }
+
+  @media (max-width: 700px) {
+    .ksf-bar { flex-wrap: wrap; gap: 0.2rem; padding: 0.35rem 0.5rem 0.45rem; }
+    .ksf-filter { width: 100%; justify-content: center; gap: 1.4rem; }
+    .ksf-rail { flex-basis: 100%; }
+    .ksf-stub { --datew: 4rem; }
+    .ksf-body { padding: 0.55rem 0.75rem; }
+    .ksf-title-btn { font-size: 0.94rem; }
+    .ksf-action { margin-left: 0; flex-basis: 100%; justify-content: flex-start; }
+    .ksf-groups-note { text-align: left; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  /* Month header — opens every month as its own section, so months no longer
+     blur into one another. Big serif name + coral underline rule. */
+  .ksf-month-header {
+    display: flex;
+    align-items: baseline;
+    margin: 2.75rem 0 1.15rem;
+    border-bottom: 2px solid rgba(224, 123, 120, 0.45);
+    padding-bottom: 0.4rem;
+  }
+  .ksf-month-block:first-of-type .ksf-month-header { margin-top: 0.5rem; }
+  .ksf-month-name { font-family: YoungSerif, serif; font-size: 1.7rem; line-height: 1; color: #380200; }
+
+  /* Weekend days (Sat/Sun) read warmer than weekdays — same coral-vs-blue flap
+     tint as the Spektakle mini-tickets, just a touch stronger on the weekend so
+     it stands out. Time text stays dark, like Spektakle. */
+  .ksf-stub[data-event-type="weekend"] .ksf-block { background: rgba(224, 123, 120, 0.2); }
+  /* The weekday name (sobota/niedziela) in the same coral as the ticket flap —
+     not bold, just tinted. */
+  .ksf-day-sec[data-event-type="weekend"] .ksf-day-title .ksf-day-dow { color: #e07b78; }
 </style>
+<div class="container container--tight">
+  <div class="ksf-head">
+    <h2>Kalendarz</h2>
+  </div>
+  {% assign current_month_num = 'now' | date: "%-m" | minus: 1 %}
+  {% assign all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+  {% assign mon_gen = "stycznia,lutego,marca,kwietnia,maja,czerwca,lipca,sierpnia,września,października,listopada,grudnia" | split: ',' %}
+  {% assign miesiace_rest = all_miesiace | slice: current_month_num, 12 %}
+  {% assign miesiace_start = all_miesiace | slice: 0, current_month_num %}
+  {% assign miesiace = miesiace_rest | concat: miesiace_start %}
+  {% assign now_timestamp = 'now' | date: "%s" | plus: 0 %}
+  {% assign wd_short = "Nd,Pn,Wt,Śr,Czw,Pt,Sob" | split: ',' %}
+  {% assign today_key = 'now' | date: "%Y%m%d" %}
+  {% comment %} Does today still have upcoming shows? (only the current month can) {% endcomment %}
+  {% assign has_today = false %}
+  {% assign cur_mon_data = spektakle[all_miesiace[current_month_num]] %}
+  {% if cur_mon_data.repertuar.size > 0 %}
+    {% for e in cur_mon_data.repertuar %}
+      {% assign ts = e.data | date: "%s" | plus: 0 %}
+      {% if ts >= now_timestamp %}
+        {% assign dk = e.data | date: "%Y%m%d" %}
+        {% if dk == today_key %}
+          {% assign has_today = true %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% capture rail %}
+    {% for miesiac in miesiace %}
+      {% assign month_data = spektakle[miesiac] %}
+      {% if month_data.repertuar.size > 0 %}
+        {% assign month_events = month_data.repertuar | sort: 'data' %}
+        {% capture group_chips %}
+          {%- comment -%} When today has no show, anchor the "Dziś" chip as the first day AFTER the current month's label (not floating before the month). {%- endcomment -%}
+          {%- if miesiac == all_miesiace[current_month_num] and has_today == false -%}
+            <span class="ksf-rail-day is-today ksf-rail-today" title="Dzisiaj"><span class="ksf-rail-dow">Dziś</span><span class="ksf-rail-num">{{ 'now' | date: "%-d" }}</span></span>
+          {%- endif -%}
+          {% assign prev_day = "" %}
+          {% for spektakl in month_events %}
+            {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
+            {% if event_timestamp >= now_timestamp %}
+              {% assign day_key = spektakl.data | date: "%Y%m%d" %}
+              {% if day_key != prev_day %}
+                {% assign prev_day = day_key %}
+                {% assign dw = spektakl.data | date: "%w" | plus: 0 %}
+                {% if dw == 0 or dw == 6 %}
+                  {% assign day_type = "weekend" %}
+                {% else %}
+                  {% assign day_type = "weekday" %}
+                {% endif %}
+                {% if day_key == today_key %}
+                  <a class="ksf-rail-day is-today" data-event-type="{{ day_type }}" href="#d{{ day_key }}" title="Dzisiaj"><span class="ksf-rail-dow">Dziś</span><span class="ksf-rail-num">{{ spektakl.data | date: "%-d" }}</span></a>
+                {% else %}
+                  <a class="ksf-rail-day" data-event-type="{{ day_type }}" href="#d{{ day_key }}"><span class="ksf-rail-dow">{{ wd_short[dw] }}</span><span class="ksf-rail-num">{{ spektakl.data | date: "%-d" }}</span></a>
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endcapture %}
+        {% if group_chips contains "ksf-rail-day" %}
+          <span class="ksf-rail-group"><span class="ksf-rail-mon">{{ month_data.title }}</span>{{ group_chips }}</span>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% if rail contains "ksf-rail-day" %}
+    <div class="ksf-bar">
+      <div class="ksf-filter" role="group" aria-label="Filtr spektakli">
+        <input type="radio" class="btn-check" name="ksfradio" id="ksfradio1" autocomplete="off" checked>
+        <label for="ksfradio1">Wszystkie</label>
+        <input type="radio" class="btn-check" name="ksfradio" id="ksfradio2" autocomplete="off">
+        <label for="ksfradio2">Dla rodzin</label>
+        <input type="radio" class="btn-check" name="ksfradio" id="ksfradio3" autocomplete="off">
+        <label for="ksfradio3">Dla grup</label>
+      </div>
+      <div class="ksf-rail">
+        {{ rail }}
+      </div>
+    </div>
+    {% for miesiac in miesiace %}
+      {% assign month_data = spektakle[miesiac] %}
+      {% if month_data.repertuar.size > 0 %}
+        {% assign month_events = month_data.repertuar | sort: 'data' %}
+        {% capture month_secs %}
+          {% assign prev_day = "" %}
+          {% for spektakl in month_events %}
+            {% assign event_timestamp = spektakl.data | date: "%s" | plus: 0 %}
+            {% if event_timestamp >= now_timestamp %}
+              {% assign day_key = spektakl.data | date: "%Y%m%d" %}
+              {% assign dw = spektakl.data | date: "%w" | plus: 0 %}
+              {% assign mi = spektakl.data | date: "%-m" | minus: 1 %}
+              {% if dw == 0 or dw == 6 %}
+                {% assign event_type = "weekend" %}
+              {% else %}
+                {% assign event_type = "weekday" %}
+              {% endif %}
+              {% if day_key != prev_day %}
+                {% if prev_day != "" %}
+                  </section>
+                {% endif %}
+                {% assign prev_day = day_key %}
+                <section class="ksf-day-sec" id="d{{ day_key }}" data-event-type="{{ event_type }}">
+                  <h3 class="ksf-day-title"><span class="num">{{ spektakl.data | date: "%-d" }}</span> {{ mon_gen[mi] }} <span class="ksf-day-sep">—</span> <span class="ksf-day-dow">{{ dni_tygodnia.dni[dw] }}</span></h3>
+              {% endif %}
+              {% assign matched_play = nil %}
+              {% for play in collections.s2 %}
+                {% if play.title == spektakl.tytul %}
+                  {% assign matched_play = play %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% comment %} Row CTA mirrors _includes/play_tickets.html: the CTA link
+                 stretches over the whole stub (buy/dial), CTA-less stubs stretch the
+                 title button instead so the whole row opens the play's modal. The
+                 title button stays raised (z-index) above a buy/tel overlay. {% endcomment %}
+              {% assign row_cta = "none" %}
+              {% if spektakl.manual_price != true %}
+                {% if event_type == "weekday" %}
+                  {% assign row_cta = "tel" %}
+                {% elsif spektakl.link and spektakl.link != "-" %}
+                  {% assign row_cta = "buy" %}
+                {% endif %}
+              {% endif %}
+              <article class="ksf-stub" data-event-type="{{ event_type }}">
+                <div class="ksf-block">
+                  <span class="ksf-time-big">{{ spektakl.data | date: "%R" }}</span>
+                </div>
+                <div class="ksf-body">
+                  {% if matched_play %}
+                    <button type="button" class="ksf-title-btn{% if row_cta == 'none' %} stretched-link{% endif %}" data-bs-toggle="modal" data-bs-target="#{{ matched_play.id2 }}">{{ spektakl.tytul }} <span class="ksf-title-more" aria-hidden="true">więcej →</span></button>
+                  {% else %}
+                    <span class="ksf-title-btn" style="cursor:default">{{ spektakl.tytul }}</span>
+                  {% endif %}
+                  <span class="ksf-action">
+                    {% if spektakl.manual_price == true %}
+                      {{ spektakl.link }}
+                    {% elsif row_cta == "buy" %}
+                      <a href="{{ spektakl.link }}" target="_blank" rel="noopener noreferrer" class="ksf-buy stretched-link">Kup bilet 🎫</a>
+                    {% elsif row_cta == "tel" %}
+                      <span class="ksf-groups-note">Zapraszamy grupy zorganizowane do rezerwacji tel.</span>
+                      <a href="tel:501-027-278" class="ksf-tel stretched-link">Zadzwoń 501 027 278 ☎</a>
+                    {% else %}
+                      <span class="ksf-soon">Bilety online wkrótce</span>
+                    {% endif %}
+                  </span>
+                </div>
+              </article>
+            {% endif %}
+          {% endfor %}
+          {% if prev_day != "" %}
+            </section>
+          {% endif %}
+        {% endcapture %}
+        {% if month_secs contains "<section" %}
+          <div class="ksf-month-block">
+            <div class="ksf-month-header">
+              <span class="ksf-month-name">{{ month_data.title }}</span>
+            </div>
+            {{ month_secs }}
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <p class="text-center my-4"><i>Aktualnie nie mamy zaplanowanych spektakli. Zajrzyj wkrótce!</i></p>
+  {% endif %}
+  <p id="filter-empty" class="text-center my-4" style="display: none;">
+    <i>Brak spektakli w wybranej kategorii. Wybierz <b>Wszystkie</b>, aby zobaczyć pełny repertuar.</i>
+  </p>
+  <br/><br/>
+</div>
 
-<!-- 	<tr>
-<th><strike>10.06.2018 niedziela</strike></th>
-<th><strike>12.30</strike></th>
-<th><strike>Urodziny Turli-Taja</strike></th>
-<th>Spektatkl odwołany</th>
-</tr> -->
-<!-- 	<tr>
-<th>24.06.2018 niedziela</th>
-<th>12.30</th>
-<th>Calineczka</th>
-<th><a href="https://kicket.com/embedded/rezerwacja/107628">Kup bilet</a></th>
-</tr> -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var radios = [
+      { el: document.getElementById('ksfradio1'), type: 'all' },
+      { el: document.getElementById('ksfradio2'), type: 'weekend' },
+      { el: document.getElementById('ksfradio3'), type: 'weekday' }
+    ];
+    function visible(elts) {
+      return Array.prototype.some.call(elts, function (e) { return e.style.display !== 'none'; });
+    }
+    function applyFilter(type) {
+      document.querySelectorAll('.ksf-rail-day[data-event-type], .ksf-day-sec').forEach(function (el) {
+        var t = el.getAttribute('data-event-type');
+        el.style.display = (type === 'all' || t === type) ? '' : 'none';
+      });
+      document.querySelectorAll('.ksf-rail-group').forEach(function (g) {
+        g.style.display = visible(g.querySelectorAll('.ksf-rail-day')) ? '' : 'none';
+      });
+      document.querySelectorAll('.ksf-month-block').forEach(function (b) {
+        b.style.display = visible(b.querySelectorAll('.ksf-day-sec')) ? '' : 'none';
+      });
+      var secs = document.querySelectorAll('.ksf-day-sec');
+      var emptyMsg = document.getElementById('filter-empty');
+      if (emptyMsg) emptyMsg.style.display = (secs.length > 0 && !visible(secs)) ? '' : 'none';
+    }
+    radios.forEach(function (r) {
+      if (!r.el) return;
+      r.el.addEventListener('change', function () { if (this.checked) applyFilter(r.type); });
+    });
+    applyFilter('all');
+    // Header auto-hide + --hdr-h upkeep moved to _includes/header_t.html (site-wide).
+  });
+</script>
 
-<!-- ## Zapraszamy na
-
-## Wielki Bal Karnawałowych Rycerzy i Księżniczek
-
-## już 11.02.2018
-
-### Dzięki Wypożyczalni Kostiumów Maskarada dzieci bęgą mogły przebrać się za swoich ulubionych bohaterów wziąć udział w karnawałowej zabawie prowadzonej przez naszych aktorów
-
-<br />
-<br />
-<ul class="photos">
-<a id="single_image" rel="1000" href='lay/img/bal_big.jpg'><img src="lay/img/bal_small.jpg"/></a>
-</ul> -->
+{% comment %} Each modal lists the play's upcoming showtimes — same as Teraz/Spektakle. {% endcomment %}
+{% assign modal_all_miesiace = "styczen,luty,marzec,kwiecien,maj,czerwiec,lipiec,sierpien,wrzesien,pazdziernik,listopad,grudzien" | split: ',' %}
+{% assign modal_now = 'now' | date: "%s" | plus: 0 %}
+{% for s in collections.s2 %}
+  {% assign modal_events = "" | split: "" %}
+  {% for miesiac in modal_all_miesiace %}
+    {% if spektakle[miesiac].repertuar %}
+      {% for event in spektakle[miesiac].repertuar %}
+        {% assign ets = event.data | date: "%s" | plus: 0 %}
+        {% if event.tytul == s.title and ets >= modal_now %}
+          {% assign modal_events = modal_events | push: event %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% assign modal_events = modal_events | sort: 'data' %}
+  {% render "spektakl_modal.html", s: s, events: modal_events %}
+{% endfor %}

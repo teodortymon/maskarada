@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#MISE description="Run /backlog unattended (cron): fetch every open GitHub issue and open a draft PR into v2 per issue. Headless — no IntelliJ, no dev servers, worktrees cleaned up. Point system cron / launchd at this task."
+#
+# The single entry point any scheduler targets. Sets BACKLOG_CRON=1 (the /backlog
+# skill treats that as equivalent to `--cron`) and runs Claude Code headless with
+# `-p`. --permission-mode acceptEdits + the allowlist in .claude/settings.json let
+# the run complete without stalling on permission prompts. There is no dev server
+# or IntelliJ window in cron mode, so nothing to clean up here.
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+export BACKLOG_CRON=1
+exec claude -p "/backlog --cron" --permission-mode acceptEdits

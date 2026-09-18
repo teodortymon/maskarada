@@ -1,29 +1,57 @@
 {
-  "name": "maskarada",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "sass-js",
+  "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
+  "version": "0.0.0",
+  "private": true,
+  "repository": "twbs/examples",
+  "license": "MIT",
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tinacms dev",
-    "dev-with-jekyll": "npx tinacms dev -c 'bundle exec jekyll serve --livereload --host localhost'"
+    "build": "npm run css-prod && npm run js-modal && eleventy && npm run css-purge",
+    "build:11ty": "eleventy",
+    "serve": "eleventy --serve",
+    "dev": "npm run css && npm-run-all --parallel watch watch:fmt serve",
+    "format": "prettier --write \"_layouts/**/*.html\" \"_includes/*.html\" index.html",
+    "format:check": "prettier --check \"_layouts/**/*.html\" \"_includes/*.html\" index.html",
+    "watch:fmt": "onchange \"_layouts/**/*.html\" \"_includes/*.html\" index.html -- prettier --write {{changed}}",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
+    "css-compile-prod": "sass --style compressed --no-source-map --no-error-css --load-path=node_modules scss/:css/",
+    "css-lint": "stylelint scss/",
+    "css-prefix": "postcss --replace css/styles.css --use autoprefixer --map",
+    "css-prefix-prod": "postcss --replace css/styles.css --use autoprefixer --no-map",
+    "css": "npm-run-all css-compile css-prefix",
+    "css-prod": "rm -f css/styles.css.map && npm-run-all css-compile-prod css-prefix-prod",
+    "css-purge": "purgecss --config purgecss.config.js",
+    "js-modal": "esbuild script/bootstrap-modal.entry.js --bundle --minify --format=iife --outfile=t/js/bootstrap-modal.min.js",
+    "server": "sirv --dev --no-clear --port 3000",
+    "start": "npm-run-all --parallel watch server",
+    "watch": "nodemon -e scss -x \"npm run css\"",
+    "test": "npm-run-all css-lint css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/teodortymon/maskarada.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/teodortymon/maskarada/issues"
-  },
-  "homepage": "https://github.com/teodortymon/maskarada#readme",
   "dependencies": {
-    "@tinacms/cli": "1.5.31",
-    "tinacms": "1.5.22"
+    "@11ty/eleventy": "^3.1.6",
+    "@popperjs/core": "^2.11.8",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0",
+    "js-yaml": "^5.2.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.64.1"
   },
-  "resolutions": {
-    "use-deep-compare": "1.1.0"
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.10.3",
+    "@tinacms/cli": "^2.5.3",
+    "esbuild": "^0.24.0",
+    "purgecss": "^6.0.0",
+    "nodemon": "^3.0.1",
+    "onchange": "^7.1.0",
+    "prettier": "^3.9.4",
+    "sirv-cli": "^2.0.2",
+    "stylelint": "^15.10.2",
+    "stylelint-config-twbs-bootstrap": "^11.0.1",
+    "tinacms": "^3.10.0"
   }
 }
