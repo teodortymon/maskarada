@@ -7,12 +7,21 @@
     gallery - the play's `gallery` front-matter object (optional; same shape
               as gallery.html: .folder required, .ext / .count / .images)
     poster  - the play's `poster` front-matter path (optional)
+    card_poster - when true, force the poster onto the card even if the play
+              also has a gallery (opt-in; default is gallery-first)
     title   - play title, used for the play label / alt text
     params  - extra iframe query params passed through to lite_video.html
 {% endcomment %}
 <div class="ratio ratio-16x9">
   {% if video and video != '' %}
     {% render 'lite_video.html', video: video, title: title, params: params %}
+  {% elsif card_poster and poster and poster != '' %}
+    <img
+      class="play-media-img"
+      loading="lazy"
+      src="{{ poster }}"
+      alt="{{ title }} — plakat spektaklu"
+    >
   {% elsif gallery and gallery.folder %}
     {% assign ext = gallery.ext | default: 'jpg' %}
     {% if gallery.images %}
