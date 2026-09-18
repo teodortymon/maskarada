@@ -5,7 +5,7 @@ headline: "Piękne wiersze M. Konopnickiej, barokowe kocie kostiumy, muzyka H. W
 age: "od 4 do 8 lat"
 duration: "około 45 minut"
 premiere: "25 września 2016"
-poster: lay/img/koty_big.jpg
+poster: lay/img/koty/large/9.jpg
 poster_thumb: lay/img/koty_min.jpg
 video: https://www.youtube.com/embed/FjIP1sC9Yxw
 credits:

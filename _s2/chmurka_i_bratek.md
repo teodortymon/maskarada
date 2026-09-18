@@ -5,7 +5,7 @@ headline: "Rezolutna Chmurka i bohaterski Bratek zapraszają na interaktywny muz
 age: "od 1,5 roku do 6 lat"
 duration: "około 45 minut"
 premiere: "26 października 2014"
-poster: lay/img/chmurka_big.jpg
+poster: lay/img/bratek/large/1.jpg
 poster_thumb: lay/img/chmurka_min.jpg
 video:
 credits:

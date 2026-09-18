@@ -5,7 +5,7 @@ headline: "Posłuchajcie — lecą wróżki, kto ich nie zna, poznać musi. Wró
 age: "od 1 do 6 lat i całej rodziny"
 duration: "około 55 minut"
 premiere: "7.11.2021"
-poster: lay/img/drzewko_big.jpg
+poster: lay/img/drzewko/large/2.jpg
 poster_thumb: lay/img/drzewko_min.jpg
 video: https://www.youtube.com/embed/02LBv_25oyM
 credits:

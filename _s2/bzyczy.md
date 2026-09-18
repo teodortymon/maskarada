@@ -5,7 +5,7 @@ headline: "Kameralny, interaktywny spektakl dla maluchów, w którym spotkają p
 age: "od 1,5 roku do 5 lat"
 duration: "około 30 minut oraz 15 minut zabawy z aktorami"
 premiere: "12 października 2013"
-poster: lay/img/plakat_big2.jpg
+poster: lay/img/ps/large/4.jpg
 poster_thumb: lay/img/plakat_mini2.png
 video:
 credits:

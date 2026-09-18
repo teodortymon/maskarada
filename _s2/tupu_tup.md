@@ -5,7 +5,7 @@ headline: "Muzyczny, sensoryczny spektakl dla najmłodszych na podstawie baśni 
 age: "od 1,5 do 6 lat"
 duration: "około 50 minut"
 premiere: "5.11.2017 / 26.05.2024"
-poster: lay/img/tup_big.jpg
+poster: lay/img/tuptup/large/9.jpg
 poster_thumb: lay/img/tup_min.jpg
 video: https://www.youtube.com/embed/d7V63BJ2-Wg
 credits:

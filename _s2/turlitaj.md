@@ -1,6 +1,7 @@
 ---
 title: "Urodziny Turli i Taja"
 id2: turlitaj
+poster: lay/img/turlitaj/large/1.jpg
 headline: "W krainie Turli-Taja dzisiaj wielki dzień — Pierwsze Urodziny! Świętujcie z nami, turlajcie się i bawcie w labiryncie."
 age: "od 0 do 5 lat"
 duration: "około 45 minut"
