@@ -58,6 +58,61 @@ module.exports = function (eleventyConfig) {
   // ---------------------------------------------------------------------------
   eleventyConfig.addDataExtension("yml,yaml", (contents) => yaml.load(contents));
 
+  // ---------------------------------------------------------------------------
+  // Calendar-title guard. The kalendarz (t/repertuar.md) links each event to its
+  // play modal by EXACT title equality (`play.title == spektakl.tytul`). If a
+  // monthly `_data/spektakle/*.yml` event `tytul` doesn't match any `_s2/*.md`
+  // `title` verbatim, the event silently renders as a dead, un-clickable label
+  // with no "więcej →" link (this bit "Brzydkie Kaczątko" vs the play title
+  // "Brzydkie Kaczątko czyli tupu tup"). Surface every such mismatch loudly at
+  // build/serve time so it can't ship unnoticed again.
+  // ---------------------------------------------------------------------------
+  eleventyConfig.on("eleventy.before", () => {
+    let playTitles;
+    try {
+      playTitles = new Set(
+        fs
+          .readdirSync(path.join(__dirname, "_s2"))
+          .filter((f) => f.endsWith(".md"))
+          .map((f) => yaml.load(
+            (fs.readFileSync(path.join(__dirname, "_s2", f), "utf8")
+              .match(/^---\r?\n([\s\S]*?)\r?\n---/) || [, ""])[1]
+          ))
+          .map((fm) => fm && fm.title)
+          .filter(Boolean)
+      );
+    } catch (e) {
+      return; // never fail the build over the guard itself
+    }
+
+    const dir = path.join(__dirname, "_data", "spektakle");
+    const unmatched = [];
+    for (const file of fs.readdirSync(dir)) {
+      if (!/\.ya?ml$/.test(file)) continue;
+      let data;
+      try {
+        data = yaml.load(fs.readFileSync(path.join(dir, file), "utf8"));
+      } catch (e) {
+        continue;
+      }
+      if (!data || !Array.isArray(data.repertuar)) continue;
+      for (const ev of data.repertuar) {
+        if (ev && ev.tytul && !playTitles.has(ev.tytul)) {
+          unmatched.push(`${file}: "${ev.tytul}" (${ev.data || "?"})`);
+        }
+      }
+    }
+
+    if (unmatched.length) {
+      console.warn(
+        "\n⚠️  KALENDARZ: event tytuł with no matching _s2 play title — " +
+          'these render with NO "więcej →" link:\n  ' +
+          unmatched.join("\n  ") +
+          "\n  Fix the event tytuł to exactly match a play title in _s2/.\n"
+      );
+    }
+  });
+
   // Match kramdown's typographic output (curly quotes, … for ...) in the
   // markdown-rendered play descriptions, so content reads identically to the
   // old Jekyll build.
