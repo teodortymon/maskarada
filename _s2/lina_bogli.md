@@ -9,6 +9,9 @@ premiere: "Kwiecień 2026"
 poster: lay/img/lina_big.jpg
 poster_thumb: lay/img/lina_min.jpg
 video:
+gallery:
+  folder: lay/img/lina
+  count: 1
 ---
 Lina Bögli, szwajcarska guwernantka, autorka tysięcy stron dzienników z podróży, w teatralnej opowieści w wykonaniu Joanny Pietrońskiej. Lina, ta niezwykła kobieta, sto trzydzieści lat temu samotnie wyruszyła z Krakowa w świat. Uczyła dziewczęta w szkołach w Australii, Nowej Zelandii, USA i na pensji w Kwiatonowicach.
 
