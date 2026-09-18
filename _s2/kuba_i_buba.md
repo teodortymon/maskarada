@@ -1,6 +1,7 @@
 ---
 title: "Kuba i Buba, czyli awantura do kwadratu"
 id2: kuba_i_buba
+poster: lay/img/kuba_i_buba/large/1.jpg
 headline: "Na podstawie cieszących się wielką popularnością książek Grzegorza Kasdepke — o niesfornych bliźniakach, których w domu trudno opanować, a w szkole dokazują jeszcze bardziej."
 age: "od 5 do 12 lat"
 duration: "55 minut"

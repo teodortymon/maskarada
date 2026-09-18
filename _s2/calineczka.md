@@ -5,7 +5,7 @@ headline: "Impresja teatralna na podstawie bajki Andersena — magiczny świat p
 age: "od 1,5 do 10 lat"
 duration: "około 45 minut"
 premiere: "30 marca 2014"
-poster: lay/img/cal_big.jpg
+poster: lay/img/cal/large/8.JPG
 poster_thumb: lay/img/cal_min.jpg
 video: https://www.youtube.com/embed/aq-JZwyPaGQ
 credits:

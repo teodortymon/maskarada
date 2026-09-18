@@ -5,7 +5,7 @@ headline: "Klasyczna bajka o czarach, królewnie i czekoladzie, opowiedziana prz
 age: "od 2 do 8 lat i całej rodziny"
 duration: "około 50 minut"
 premiere: "17.10.2021"
-poster: lay/img/krolowa_myszy_big.jpg
+poster: lay/img/myszy/large/2.JPG
 poster_thumb: lay/img/krolowa_myszy_min.jpg
 video: https://www.youtube.com/embed/Q9LHmJW0_6g
 credits:

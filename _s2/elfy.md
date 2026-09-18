@@ -5,7 +5,7 @@ headline: "W magicznej fabryce prezentów na biegunie praca wre — Mikołaj odp
 age: "od 2,5 do 99 lat"
 duration: "około 55 minut"
 premiere: "7 grudnia 2013"
-poster: lay/img/elfy_big.jpg
+poster: lay/img/elfy/large/01.jpg
 poster_thumb: lay/img/elfy_mini.jpg
 video: https://www.youtube.com/embed/ovOwUmozCns
 credits:

@@ -5,7 +5,7 @@ headline: "Spektakl dla młodszych widzów o zgubnych skutkach nieprzemyślanych
 age: "od 1,5 do 8 lat"
 duration: "około 45 minut"
 premiere: "28.10.2018"
-poster: lay/img/rybka_big.jpg
+poster: lay/img/rybka/large/1.jpg
 poster_thumb: lay/img/rybka_min.jpg
 video: https://www.youtube.com/embed/I6uIPXobj9s
 credits:

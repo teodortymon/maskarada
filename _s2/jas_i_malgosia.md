@@ -5,7 +5,7 @@ headline: "Warsztaty teatralno-plastyczne, na których zbudujemy „piernikowe�
 age: "od 2 lat"
 duration: "około półtorej godziny"
 price: "dziecko 39 zł, dorosły 25 zł"
-poster: lay/img/piernik_big.jpg
+poster: lay/img/jas_malg/large/1.jpg
 poster_thumb: lay/img/piernik_min.jpg
 video:
 credits:

@@ -5,7 +5,7 @@ headline: "Klasyczna opowieść Hansa Christiana Andersena w pięknych kostiumac
 age: "od 4 do 12 lat"
 duration: "około 50 minut bez przerwy"
 premiere: "13 października 2013"
-poster: lay/img/plakat_big.jpg
+poster: lay/img/ks/large/15.jpg
 poster_thumb: lay/img/plakat_mini.png
 video: https://www.youtube.com/embed/fBmbJFhO638
 credits:
