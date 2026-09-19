@@ -1,10 +1,13 @@
 # Maskarada — project instructions
 
 Eleventy (11ty) static site (with TinaCMS for content editing) for Teatr
-Maskarada. The active redesign lives on the `v2` branch. Styling is Bootstrap 5
-compiled from `scss/` into `css/styles.css` via the npm `sass` build; Eleventy
-renders the Liquid templates (`_layouts/`, `_includes/`, `_s2/` plays,
-`_data/`). The v2 beta deploys to Cloudflare Pages. (Migrated off Jekyll — see
+Maskarada. **Production lives on `master`**, which deploys to GitHub Pages
+(`www.maskarada.waw.pl`) on every push via
+`.github/workflows/deploy-github-pages.yml`. The v2 redesign has been merged into
+master; a Cloudflare Pages beta still exists for preview (`mise run
+cf-pages-deploy`). Styling is Bootstrap 5 compiled from `scss/` into
+`css/styles.css` via the npm `sass` build; Eleventy renders the Liquid templates
+(`_layouts/`, `_includes/`, `_s2/` plays, `_data/`). (Migrated off Jekyll — see
 `eleventy.config.js` for the collection, YAML/CSV data, and custom-filter setup.)
 
 ## Every wrap-up message ends with URL + CHANGES
@@ -47,20 +50,22 @@ This applies to every completion hand-off, including after `/finish`.
 ## Feature work: branch + worktree per change
 
 Every new piece of work starts on its own branch in its own git worktree — never
-commit feature work directly onto `v2`.
+commit feature work directly onto `master` (a push to `master` deploys straight to
+production). Use **`/start`**, which automates all of this.
 
-1. **Branch name** follows `v2-<type>/<name-of-change>`, where `<type>` is one of:
-   - `feature` — new user-facing functionality (`v2-feature/gallery-lightbox`)
-   - `chore` — maintenance, deps, content, refactors (`v2-chore/bump-tina`)
-   - `infra` — build/CI/tooling/config (`v2-infra/mise-tasks`)
-2. **Create it in a new worktree** branched off `v2`:
+1. **Branch name** follows `<type>/<name-of-change>`, where `<type>` is one of:
+   - `feature` — new user-facing functionality (`feature/gallery-lightbox`)
+   - `chore` — maintenance, deps, content, refactors, bug fixes (`chore/bump-tina`)
+   - `infra` — build/CI/tooling/config (`infra/mise-tasks`)
+2. **Create it in a new worktree** branched off `master`:
    ```fish
-   git worktree add .claude/worktrees/<name-of-change> -b v2-<type>/<name-of-change> v2
+   git worktree add .claude/worktrees/<name-of-change> -b <type>/<name-of-change> master
    ```
    Copy the project's gitignored env files (e.g. `.env`, `.env.local`) into the new
    worktree if they exist — worktrees don't inherit them.
 3. Do the work there, committing to the feature branch.
-4. When done, run **`/finish`** (see below) to merge it up into `v2`.
+4. When done, run **`/finish`** (see below) to open + merge a GitHub PR into
+   `master`.
 
 ## Design experiments: clickable prototypes
 
@@ -99,12 +104,18 @@ the change on my phone, and give me the public URL in the hand-off:
 
 ## Finishing work: `/finish`
 
-The `/finish` local skill wraps up a feature branch: it merges the current
-`v2-<type>/<name>` branch up into `v2`, pushes `v2`, then deletes the feature
-branch and removes its worktree. Run it from inside the feature worktree once the
-work is committed and reviewed.
+The `/finish` local skill wraps up a feature branch: it commits anything pending,
+pushes the `<type>/<name>` branch, opens a **GitHub PR into `master`** (with
+`Closes #N` so the linked issue auto-closes on merge — master is the default
+branch), merges the PR (squash), then deletes the branch and removes its worktree.
+The merge into `master` triggers the GitHub Pages production deploy. Run it from
+inside the feature worktree once the work is committed and reviewed.
 
 ## Clearing the backlog: `/backlog`
+
+> **Legacy — still v2-based.** Unlike `/start` and `/finish` (now master + PR),
+> `/backlog` has not yet been migrated: it still branches off `v2` and opens draft
+> PRs into `v2`. Migrate it to the master/PR flow before relying on it again.
 
 The `/backlog` local skill works the **open GitHub issue backlog** end to end:
 it fetches every open issue and, per issue not already in flight, creates a
