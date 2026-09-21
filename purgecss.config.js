@@ -61,6 +61,10 @@ module.exports = {
       "visually-hidden-focusable",
       // site JS togglers
       "hdr-hide",
+      // showtime-cutoff.js adds this to a ticket row once online sales close
+      // (~2h before curtain); it never appears in the static HTML, so without
+      // safelisting it every .is-sales-closed rule would be purged in prod.
+      "is-sales-closed",
       "open",
       "lyt-activated",
       "lyt-playbtn",

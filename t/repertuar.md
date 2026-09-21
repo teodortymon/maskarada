@@ -426,7 +426,7 @@ templateEngineOverride: liquid
                   {% assign row_cta = "buy" %}
                 {% endif %}
               {% endif %}
-              <article class="ksf-stub" data-event-type="{{ event_type }}">
+              <article class="ksf-stub" data-event-type="{{ event_type }}" data-showtime="{{ spektakl.data | date: '%Y-%m-%dT%H:%M' }}">
                 <div class="ksf-block">
                   <span class="ksf-time-big">{{ spektakl.data | date: "%R" }}</span>
                 </div>
@@ -441,6 +441,7 @@ templateEngineOverride: liquid
                       {{ spektakl.link }}
                     {% elsif row_cta == "buy" %}
                       <a href="{{ spektakl.link }}" target="_blank" rel="noopener noreferrer" class="ksf-buy stretched-link">Kup bilet 🎫</a>
+                      {% render 'sales_closed.html' %}
                     {% elsif row_cta == "tel" %}
                       <span class="ksf-groups-note">Zapraszamy grupy zorganizowane do rezerwacji tel.</span>
                       <a href="tel:501-027-278" class="ksf-tel stretched-link">Zadzwoń 501 027 278 ☎</a>

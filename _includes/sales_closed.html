@@ -1,0 +1,14 @@
+{% comment %}
+  Sales-closed state for a single showtime. Our online seller (Biletomat) shuts
+  ~2h before curtain, so once a play is inside that window the "Kup bilet" pill is
+  no longer valid — the audience has to phone to reserve.
+
+  Hidden by default; t/js/showtime-cutoff.js adds .is-sales-closed to the row
+  (which hides the buy pill and reveals this) once now >= showtime - 2h. Styling
+  in scss/_sales-closed.scss. One shared block so the play cards (pc-*) and the
+  Kalendarz stubs (ksf-*) stay in sync; the .sc-* classes are context-neutral.
+{% endcomment %}
+<span class="sales-closed" data-sales-closed>
+  <span class="sc-note" aria-live="polite">Sprzedaż online zakończona. Zadzwoń by kupić.</span>
+  <a href="tel:501-027-278" class="sc-call stretched-link">Zadzwoń 501&nbsp;027&nbsp;278&nbsp;☎</a>
+</span>
