@@ -2,8 +2,17 @@ import { defineConfig } from "tinacms";
 import { repertuar_blocksFields } from "./templates";
 
 // For cloud/prod this comes from the hosting env; locally `tinacms dev` runs in
-// local mode and ignores branch/clientId/token.
-const branch = process.env.HEAD || process.env.CF_PAGES_BRANCH || "v2";
+// local mode and ignores branch/clientId/token. Each var is a different host's
+// convention: GITHUB_REF_NAME (GitHub Actions — our production Pages deploy),
+// HEAD (Netlify), CF_PAGES_BRANCH (the Cloudflare Pages beta). The fallback is
+// "master" (production); it used to be "v2" from the v2-redesign era, which made
+// the GitHub Pages build silently target the wrong branch (GitHub Actions sets
+// none of HEAD/CF_PAGES_BRANCH, so it fell through to the stale default).
+const branch =
+  process.env.GITHUB_REF_NAME ||
+  process.env.HEAD ||
+  process.env.CF_PAGES_BRANCH ||
+  "master";
 
 export default defineConfig({
   branch,
