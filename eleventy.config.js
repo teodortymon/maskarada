@@ -225,12 +225,17 @@ module.exports = function (eleventyConfig) {
   ["lay", "css", "_headers", "google958f145c78b1087b.html", "CNAME"].forEach((p) =>
     eleventyConfig.addPassthroughCopy(p)
   );
-  // admin/ is the TinaCMS dev-mode shell (it just redirects to localhost:4001),
-  // so it must NOT ship in production builds — but `tinacms dev` needs /admin
-  // served locally. Eleventy v3 sets ELEVENTY_RUN_MODE ("build"|"serve"|"watch");
-  // skip the copy only for one-shot builds. A production `tinacms build` step
-  // can generate a real admin bundle and restore this passthrough later.
-  if (process.env.ELEVENTY_RUN_MODE !== "build") {
+  // admin/ holds the TinaCMS admin SPA. In local `tinacms dev` it is a dev-mode
+  // shell that only redirects to localhost:4001, so that committed shell must NOT
+  // ship in a plain production build. But `tinacms build` (run by the deploy
+  // workflow via `mise run tina-build`) overwrites admin/ with a real, hosted
+  // bundle whose fingerprint is an admin/assets/ directory — and THAT must ship,
+  // or /admin 404s in production. So copy admin/ whenever we're serving locally
+  // (ELEVENTY_RUN_MODE != "build") OR a real built bundle is present.
+  if (
+    process.env.ELEVENTY_RUN_MODE !== "build" ||
+    fs.existsSync("admin/assets")
+  ) {
     eleventyConfig.addPassthroughCopy("admin");
   }
   // Section asset trees (images, vendored JS, compiled costume galleries).
