@@ -41,6 +41,19 @@ export default defineConfig({
           include: "*",
           exclude: "spektakle",
         },
+        ui: {
+          // Auto-sort each month's shows into reverse-chronological order
+          // (newest date first) on every save. The `data` values are ISO
+          // strings, which sort lexicographically == chronologically, so a
+          // plain string compare is enough (no Date parsing / timezone math).
+          beforeSubmit: async ({ values }: { values: any }) => {
+            if (!Array.isArray(values?.repertuar)) return values;
+            const repertuar = [...values.repertuar].sort((a, b) =>
+              String(b?.data ?? "").localeCompare(String(a?.data ?? ""))
+            );
+            return { ...values, repertuar };
+          },
+        },
         fields: [
           {
             type: "string",

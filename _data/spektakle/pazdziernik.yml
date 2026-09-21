@@ -1,14 +1,5 @@
 title: Październik
 repertuar:
-  - tytul: Wesołe Koty
-    data: 2026-10-12T09:30:00.000Z
-    link: '-'
-  - tytul: Mała Syrenka
-    data: 2026-10-05T09:30:00.000Z
-    link: '-'
-  - tytul: Magiczne Drzewko Wróżek
-    data: 2026-10-19T11:00:00.000Z
-    link: '-'
   - tytul: Złota Rybka
     data: 2026-10-26T11:00:00.000Z
     link: '-'
@@ -25,16 +16,25 @@ repertuar:
     data: 2026-10-20T11:00:00.000Z
     link: '-'
   - tytul: Magiczne Drzewko Wróżek
+    data: 2026-10-19T11:00:00.000Z
+    link: '-'
+  - tytul: Magiczne Drzewko Wróżek
     data: 2026-10-18T12:30:00.000Z
     link: 'https://biletomat.pl/embedded/rezerwacja/357615'
   - tytul: Wesołe Koty
     data: 2026-10-12T11:00:00.000Z
+    link: '-'
+  - tytul: Wesołe Koty
+    data: 2026-10-12T09:30:00.000Z
     link: '-'
   - tytul: Calineczka
     data: 2026-10-11T12:30:00.000Z
     link: 'https://biletomat.pl/embedded/rezerwacja/353515'
   - tytul: Mała Syrenka
     data: 2026-10-05T11:00:00.000Z
+    link: '-'
+  - tytul: Mała Syrenka
+    data: 2026-10-05T09:30:00.000Z
     link: '-'
   - tytul: Mała Syrenka
     data: 2026-10-04T12:30:00.000Z
