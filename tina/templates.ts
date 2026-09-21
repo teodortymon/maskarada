@@ -1,6 +1,26 @@
 import type { TinaField } from "tinacms";
 
 import defineConfig from "./config";
+import { utcDateTimeUi } from "./fields/utc-datetime";
+
+/** Friendly "18.10.2026, 12:30" label for the repertoire list rows. */
+function itemLabelPl(value?: string): string {
+  if (!value) return "(brak daty)";
+  const d = new Date(value);
+  if (isNaN(d.getTime())) return value;
+  try {
+    return new Intl.DateTimeFormat("pl-PL", {
+      timeZone: "UTC", // stored clock is the wall clock — never shift to browser tz
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(d);
+  } catch {
+    return value;
+  }
+}
 
 const spektakle = [
   "Tajemnice Teatru",
@@ -38,10 +58,8 @@ export function repertuar_blocksFields() {
       label: "Repertuar",
       list: true,
       itemProps: (item) => {
-        console.log(item);
         return {
-          // key: item.id,
-          label: item.data + " -- " + item.tytul,
+          label: (item.tytul || "(brak tytułu)") + " — " + itemLabelPl(item.data),
         };
       },
       fields: [
@@ -59,10 +77,10 @@ export function repertuar_blocksFields() {
           name: "data",
           label: "Data spektaklu",
           required: true,
-          ui: {
-            timeFormat: "HH:mm ZZ",
-            utc: true,
-          },
+          // Custom UTC-literal editor: shows/stores the wall-clock time exactly
+          // as the site renders it, with no browser-timezone drift.
+          // See tina/fields/utc-datetime.tsx for the full rationale.
+          ui: utcDateTimeUi,
         },
         {
           type: "string",
@@ -86,6 +104,7 @@ export function spektaklFields() {
       name: "data",
       label: "Data spektaklu2",
       required: true,
+      ui: utcDateTimeUi,
     },
     {
       type: "string",
