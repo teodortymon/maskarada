@@ -36,6 +36,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # The Tina build reads TINA_PUBLIC_CLIENT_ID / TINA_TOKEN, which are stored
+    # as ENVIRONMENT secrets on `github-pages` (not repo secrets). Environment
+    # secrets are only injected into jobs that opt into that environment, so
+    # this job must declare it too — otherwise `secrets.*` resolve to empty and
+    # `npx tinacms build` fails with "Missing clientId, token". (The env's
+    # branch policy allows only `master`, which is the only branch this workflow
+    # deploys from, so gating the build job on it is safe.)
+    environment: github-pages
     steps:
       - name: Checkout
         uses: actions/checkout@v4
