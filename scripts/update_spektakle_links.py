@@ -15,6 +15,7 @@ The script expects:
 
 import json
 import re
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 
@@ -68,18 +69,50 @@ def convert_yaml_date_to_html_format(yaml_date_str):
     return dt.strftime('%d.%m.%Y %H:%M')
 
 
+def normalize_title(title):
+    """Normalize a title for fuzzy comparison: lowercase, strip Polish
+    diacritics, drop punctuation, collapse whitespace."""
+    # Decompose accents (ą -> a + combining mark) and drop the marks.
+    decomposed = unicodedata.normalize('NFKD', title)
+    stripped = ''.join(c for c in decomposed if not unicodedata.combining(c))
+    # ł has no decomposition, handle it (and its uppercase) explicitly.
+    stripped = stripped.replace('ł', 'l').replace('Ł', 'L')
+    lowered = stripped.lower()
+    no_punct = re.sub(r'[^\w\s]', ' ', lowered)
+    return re.sub(r'\s+', ' ', no_punct).strip()
+
+
+def title_matches(yaml_title, biletomat_title):
+    """A YAML title and a Biletomat title refer to the same play when, after
+    normalization, one is a prefix/substring of the other. Biletomat often
+    stores a shorter name (e.g. "Brzydkie Kaczątko") than the YAML repertoire
+    ("Brzydkie Kaczątko czyli tupu tup")."""
+    a = normalize_title(yaml_title)
+    b = normalize_title(biletomat_title)
+    if not a or not b:
+        return False
+    return a == b or a.startswith(b) or b.startswith(a) or a in b or b in a
+
+
 def update_yaml_with_links(yaml_path, html_events):
     """Update YAML file with ticket links based on HTML events. Returns (updated, fixed, not_found, messages)."""
 
     with open(yaml_path, 'r', encoding='utf-8') as f:
         yaml_lines = f.readlines()
 
-    # Create lookup: (title, date) -> event_id
-    # Each Biletomat event ID is one specific performance (one date/time)
-    event_lookup = {}
+    # Index events by their exact date/time. Each Biletomat event ID is one
+    # specific performance, so the date is a near-unique key; the title is
+    # matched fuzzily (see title_matches) because Biletomat often stores a
+    # shorter name than the YAML repertoire.
+    events_by_date = {}
     for event in html_events:
-        key = (event['title'], event['date'])
-        event_lookup[key] = event['id']
+        events_by_date.setdefault(event['date'], []).append(event)
+
+    def find_event_id(yaml_title, html_date):
+        for event in events_by_date.get(html_date, []):
+            if title_matches(yaml_title, event['title']):
+                return event['id']
+        return None
 
     updated_count = 0
     not_found_count = 0
@@ -112,10 +145,9 @@ def update_yaml_with_links(yaml_path, html_events):
                     if link_match:
                         indent = link_match.group(1)
                         current_link = link_match.group(2).strip().strip("'\"")
-                        key = (title, html_date)
+                        event_id = find_event_id(title, html_date)
 
-                        if key in event_lookup:
-                            event_id = event_lookup[key]
+                        if event_id is not None:
                             new_link = f'https://biletomat.pl/embedded/rezerwacja/{event_id}'
 
                             if current_link == '-':
