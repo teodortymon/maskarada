@@ -1,0 +1,43 @@
+name: Update Biletomat ticket links
+
+# Manually-triggered pipeline: logs into Biletomat, refreshes the ticket booking
+# links, and opens a PR containing ONLY the event data changes (_data/spektakle/*.yml).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  # Dedicated CI age key (a recipient of only the Biletomat values in mise.toml).
+  # mise uses it to decrypt BILETOMAT_USER/PASS at runtime — same as locally.
+  MISE_AGE_KEY: ${{ secrets.MISE_AGE_KEY }}
+  MISE_EXPERIMENTAL: "true"
+
+jobs:
+  update-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up mise (installs uv from [tools], decrypts creds)
+        uses: jdx/mise-action@v2
+
+      - name: Update ticket links (install browser + fetch + update)
+        run: mise run update-links
+
+      - name: Open PR with the event link changes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          base: master
+          branch: automated/biletomat-links
+          add-paths: _data/spektakle/*.yml
+          commit-message: "Update Biletomat ticket links"
+          title: "Update Biletomat ticket links"
+          body: |
+            Automated ticket-link refresh from Biletomat (triggered manually).
+
+            Only `_data/spektakle/*.yml` files are changed. Review the diff and
+            merge if the new `link:` values look right.
+          delete-branch: true
