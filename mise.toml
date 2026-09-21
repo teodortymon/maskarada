@@ -25,6 +25,11 @@ description = "Compile Bootstrap SCSS (scss/) into css/styles.css"
 depends = ["deps"]
 run = "npm run css"
 
+[tasks.tina-build]
+description = "Build the real TinaCMS admin SPA into admin/ (index.html + assets/) so /admin works in production. Needs TINA_PUBLIC_CLIENT_ID + TINA_TOKEN (Tina Cloud). The deploy workflow runs this before `build`; a plain `build` ships the admin only when this bundle is present."
+depends = ["deps"]
+run = "npx tinacms build"
+
 [tasks.build]
 description = "Build the static site into _site/ (SCSS + modal-only Bootstrap JS + Eleventy, then PurgeCSS trims _site/css/styles.css to used selectors)"
 depends = ["deps"]
