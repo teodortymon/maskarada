@@ -12,6 +12,8 @@ permissions:
 env:
   # Dedicated CI age key (a recipient of only the Biletomat values in mise.toml).
   # mise uses it to decrypt BILETOMAT_USER/PASS at runtime — same as locally.
+  # Its public half lives in mise.toml's `biletomat-secrets` task; re-encrypt
+  # through that task so this key stays a recipient.
   MISE_AGE_KEY: ${{ secrets.MISE_AGE_KEY }}
   MISE_EXPERIMENTAL: "true"
 
