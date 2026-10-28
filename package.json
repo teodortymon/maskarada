@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.10.3",
-    "@tinacms/cli": "^2.5.3",
+    "@tinacms/cli": "^2.7.0",
     "esbuild": "^0.24.0",
     "purgecss": "^6.0.0",
     "nodemon": "^3.0.1",
