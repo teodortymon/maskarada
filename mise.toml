@@ -8,16 +8,23 @@ node = "20"
 # uv runs the Biletomat fetch script (PEP-723 inline deps → Playwright).
 uv = "latest"
 
+[settings]
+# Local decrypt identity for the BILETOMAT_* values below (not a default name mise
+# tries). Absent on CI, which decrypts via MISE_AGE_KEY first — harmless there.
+age.ssh_identity_files = ["~/.ssh/personal_github"]
+
 [env]
 # Loads gitignored env (e.g. CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID for
 # wrangler) if a .env is present; wrangler otherwise falls back to OAuth login.
 _.file = ".env"
 
 # Biletomat credentials for the fetch script (see tasks.fetch-events). Values are
-# age-encrypted inline — decrypted at runtime by the global age key locally, and
-# by the MISE_AGE_KEY secret in the "Update Biletomat ticket links" GitHub Action.
-BILETOMAT_USER = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB2SVVBczhGa0xXaTdMQVJlRlJTN3VNQnFWeEdQYldhR0laNHV4QTdvM0J3CnJzbCt6ZDlML1ltZzhKanhDQkFlSTI1Ynd0bEdqajJhNDNXN2F0SU5qMG8KLT4gc3NoLXJzYSBWNXR3cXcKZmplQVI2K005RnVIUTF0NFp0S011ZjNvYnBFNllFdEhnbk1kRTJIOHNmdmFhNTlLbFFPZ1poNWptc0M5ZElPaQorUXBZbnMvMmdoMFVYYk5HdzNVazFiRk9LbkNJa09ERnRNaVpIaEpvZE1XWXplVjRsU3E0Z2pPZlRzN1Y1b2RoCnVyUlhxbVN2OGlSUFVDWWJyN0x5WS91QkF0clBoZlFGV3VjUm5UQUFpVTEyZW9GeFUvTi9jYjI4bG8zWjkrc3UKVXp1TlprNXFsS2paLzhvZUZPcDVhVHcxdnpNZmkwWVIxQ3ZFSkJEeW9GbUc4V2NrQjhwVnczbTFVa2trbXQwMgplK05YNDNvcUcvZDRUajN1alZGSDJmT29LUmFaY0lWYmo5UUZaOE1Id1UyUEEzT000QlA2TklUMkp3R0NjZmN0CkhHUEtYLytpV25SUGJSeWtkOWE5OHFEcTFYRnRiMWYrTy9XQ1JnMWlXWVZwYlNDM0tKOExudkZ4REFYdENkU0wKN3NTdlVaTzUwZzROU0dzbVlCdzhQNDBoWThoZVVDSEJteW90bzU2UTgyVG1wQ0lhL01rQjRua0RuMmxRSk8xbwppdUd2R0lCVlZyc0JKb21IclYwYW1Sa3BydjUrWkwrSkFySGRzR2IyWDJCM2M3bmdSdjYvRGNBendmc21BeXluCmlDT3RvaHkxWTZGQVFGQ3ptSEhiem1CaWJjMU9zbFNhamRIZldBS1hGbmRVM1BPU29ZRGtBdUgxcDV5ekRJMU8KaDVIdUJWRW9BaWo1ekQ4cjdSQlF5OU0xQnBpTW1EV2FrQ0NUaS9ONlpobEJ4MFFUN3V6Zm9pU2lndFdZb2JSaAozRnUzeG01YjErVUNqenhEQnhDR21tN3g5bU80WnNMYnBnUzZLWTFaNFZJCi0+ID5PZERGLWdyZWFzZSBeYGFEICRbWHJDIEAgW3BbU2QKOTluKzBldGxWMG9tWExIZU1VV1czVWxHCi0tLSB3TXFQanppbG9DT2RYYjdkTk1tNnk1TTRZY1pxb1lCcG1SNUtKcGlnVFVvChmUVTY0lzffIq0nGYLuEOFMGc2Mb32NKBwmvGHCnGlAtzlIrLrHWkKVBeh+BiteADNOgZKj" }
-BILETOMAT_PASS = { age = { value = "KLUv/QBYhRsAikCsDTgwTTugQ4zpw8APcTCA8fcwRH1GGgkyWLjCQiezf7gkkCGBRSA+yZCw1EhgQQIN5+r56WG9gGVxBMgAxgDGAPu0enjqvqE6whBMb4wMbXa+3UUlJwxmujju5YiMttHdMBE5WsTxK1/JOzY1hpNRD91lmnTg2zpJlSIhcNtmSum+1X9ELxXl7R5/8yFq+1TQ1U+dhkRU7kpw9dFx0+P9TqWKVs8XFV1XTCyaSUaxrTlHSTBCd6g1Vf6Jg4at3NLz8f/hOCTdmZ934AOcmsdPgRUWdpBI8r7akOwbC2aZg8/i5mqVBrF2krp9fXJxVHFBFBVJFBOLBuKfOL8Z2Ldlv/j5xH4Xb9wG+ZWynepJsifX39hymilJSWZz1ip5dP33jEifJOG9Z5zMFvVwXaRgumvAaCdZMs0jfcyRlrTFaM029jLD4hpWv5VBOrMe/iUGXmU/Ikv7z5gRvO1mendQrel9Dc236WfmnZ168VixUDej7KrxMFrKrmNGmK31VV64+0uNt98x3OO6kAdTqlZ51pxx0aoh5QzLXTYQrigluc4+n5El6BJ6O+Ry34sJcQ+M9lCceHllu+vhQgpbyeAnlLBQPOnoajiWst8RWL8BnDPZWJxx4OrVVJHrptWyxt53KfP5pSwrHK+4s1U42034yj27tAGSzUaBJ9Xz154FSen43zKYfV/3c6Q30/eznNDh45FYxjhcO+6sOtCM7Qje+1gs7bfDEXmaR8Pi4ioEtXXlKqspXl6m53gn6dabqif8u14RrDmn/k7/XSOY5cn2YzZwjGKY7fqQ08atJlztuvCHPmfOJxMmfSoW/njmjMU8Uwx9w7bjdf4qc4mBQrmlKj3+lP2UBPvrJrVKE2qqfXuWiAnTIixogHwAAGklJjgAweFCBg9+RGAdIGFghIUGFBZoHQpA2IBVwBBCQB+geTwwiw5RGSxPcWyvCH/BHKcIhhRqlMqPMmH/mFEXnVcbtWKxWDQP2WxLM4MbzoN8r4/B2OP8TDJ6lNY8fKFMVYPVG/z+6WnLnvxE0zvfczI2nV9UxDgjoChpKVvVW1QTAX8UPOgVCcLJQ6AIJSga7NwB1QFkVLx6++bxIuNQTCyazYJAr9v+9eNQ7wwfJw+Lpm2zlWhzRTo2EaNwq+Nlkwi1mv6CTtZZSSUHtNEBAA", format = "zstd" } }
+# age-encrypted inline to TWO recipients: ~/.ssh/personal_github (local decrypt) and
+# the CI age key (private half = MISE_AGE_KEY secret of the "Update Biletomat ticket
+# links" GitHub Action). Always (re-)set them via `mise run biletomat-secrets` so
+# neither recipient gets dropped.
+BILETOMAT_USER = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBlTlBMbi96VDlUbzJDNkh4eWNQSnZvclpqbkFKRnh5NjhJYkNiamRUdlVNCjZvS1pab29seG4raStDNW94ZjJ2azhDSTZBc1VwOS8zcEFkY25rK1hsekkKLT4gc3NoLXJzYSBTdFdkTmcKWFhpYnJBWkZHVDZBci9iTzdUcW51Q0tmdGFwUUZzak05VUhFRFQ5eHFkZUJYL2c2ZDgvaWhZUitrK3RkL2swbApKYlB6K0J1aTgwczNDaUFXQWpFK3huTEpTVnJQVXU4MStGK2RJWndOdUlVbXQwZXpOWTQ0VUxHOUtlMFdtWFVxCk9TMGlXNGVhTnJoMDYxbGFPMEdHc3BjMkpYR215SHlZQVEwbHdpRUFMQytMVFpnK2NUVUQ1RFI3dFllRXh5TnoKYjJvYXIyTklGcXpvNUtlUHVFTG9GK2ltZTdKYVpSYjhJcnhrNmtYQW1rU2VURk5WOVNDR0d6ZDBPbjM1WHQ2aQpyRWlYZWwyTWJGd2RNVVBCdm1wY1VWMkZ2SUpsSjdwSlZOQWp4RVUxQmRwaGlnOHljdnZpdkRMOUlqWXhyV240CkJ1cWhMU1lVd2Myc2VrODdDZUNQNG5tUko4L21sMi9Tcm5MWmdHWHJTbVg3a0ptVlNhRDFLdUowbkh3bzg4dksKRURKUEFyZW9oVTZKZEhEeXhXWTdjKzhnYjVaUVZwL0N6djkwWEFXNzQzZlVjQnFxOXJKUE9LS2txR0c4Z3ZyNwphN3Y3d1J0NnFyc20wYmVSSTVzbFRidnFXbXdGaDFTbFVyaGxlYVA3VDR5STVCb25ZcmRNWkcwTzZKQktzQUJzCgotPiBPPmUtZ3JlYXNlIFhSWVIgLHcKVnR0WG1rZzFZZ2lJL3JYREZPNWFieEUzTS9ZSTFhSXpKc05KUDhBWHFvdmJyTzg0YmlmVnhsVTZ0aW1TaEVhagpkTmZIVFRCcGVBeHBGQQotLS0gOUcyWkd2M3VJcnlRNVo5RjFiM09NR3RzcTFPWXE0V2dNWWxpQTlnRVhROAqFql1iu6CyCAH1vcHPkBRdovtK0DyRuXLXqE6Ize7X2OjCfNdrgnKdtfzwi0ehFS82FHkQtw" }
+BILETOMAT_PASS = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpam0rZFRKbUg3SkNUb2l0a0ptL2lKVGhjRThJY0IzYmhBbm9yRWNNOHkwCk5XZXVNL2pQY1hZTlBhNmtSMjRRTm5zNnZhTUVjMzM4MUxMUi8zcTVGTWcKLT4gc3NoLXJzYSBTdFdkTmcKSmtMdFFtczluRjBzdzRtWm8xNy9FYVVvMnp1TGtaSFNwanlRYVhtbTZ4UndZQzQ0QU96WHlaN0JTN05LVzJIawo0S2JzdGcrNWM2NTNBVnEwK2FzTm5wUGZCV01uSjErcjlxQk85SmdKSXJsR2dWVUpYLzJtYUNKWEJQb2hKRFVhCkNSNTdxN0x0YWxEZmtCblo5em5xdDRNc2tPWEg0VDRpUlNMUTJ2TWRiL1BxblRFSE9nQnpTYjJGK1VHdGFvRGYKRzBwMmFtYXJ6dDdZWmdQWmdUNUdGZzJUU24vRFMrblJkS1BVR0FBQkdrWHJyTldnQ1A4ckxKamhnQ3pUNlpZQgpwNGNTeEh3bzZtaTdPT2VrenRNTGV1MkY0VU5tSVloWnJab0JtQjN1VmJlaWJtbDVVaGFBUHdSUFFBZmpiUG5yClB0MjJpOHFGeitnQzd0b2lIcms0RFFoY0pybW1DSzg5ZUIzelZheVhMdmdCZlJqeTg4TzVXRzJzUDJMT1M0cDEKdWNhSGo2eDZScVZhOWlmZWpvOVNIcEhZUVNZMkcvSHZkQ1BKQ3YrSFgxRTJLUlpiaFFYaEhaTkJKU2FEeWNMZwp5RmI5WjdMNEYxQzMrazVXRFFpNmxKS3pzb0ZEazg5OTBwODZsVDdJSUhJdW5BZmJodDdHRzNJemtCYkszT1RKCgotPiBwOkktZ3JlYXNlID9NfgpFd1J3Tk5tRnhsRldjYnFxYWg4MHhGK1lhU0xxWEliZVZBUkJkY1dXOTNrbThoQ3RHSExRYXo1MHNiRHpRTlh2Cm5OaHNNekJSRWlmeUR3MW5SN0lZNjhXa21GazA4RkdOT0NHR3lqZlBic3lMOVBEUXllWEN0RjAKLS0tIDlmQTV5NkN5bDdlNlNNamYrUEdvaitkaG1XUDBlYUpKUXIzRnNYNXozbjQK+PayUOZm8w192Wd9c3j1npdFIlVQjwRJVXjNN5WHpDTwS5NsxCaNjg" }
 # Organizer whose events are fetched from Biletomat (see tasks.fetch-events).
 BILETOMAT_ORGANIZER_ID = "333"
 
@@ -86,6 +93,22 @@ run = "npx --yes wrangler pages deploy _site --project-name=maskarada-new-design
 [tasks.preview]
 description = "Serve the built _site/ locally with Cloudflare Pages emulation (applies _headers/CSP — unlike `dev`; build first)"
 run = "npx --yes wrangler pages dev _site --port 8788 --compatibility-date=2026-05-03"
+
+[tasks.biletomat-secrets]
+description = "Set/rotate BILETOMAT_USER/PASS (prompts) — age-encrypted to ~/.ssh/personal_github + the CI key"
+# raw: give the task the terminal's stdin/TTY, otherwise --prompt reads EOF and
+# silently stores empty values.
+raw = true
+run = """
+[ -t 0 ] || { echo "biletomat-secrets: needs an interactive terminal (no TTY on stdin)" >&2; exit 1; }
+# Public half of the MISE_AGE_KEY GitHub secret (not secret). If you replace that
+# secret with a new key, update this recipient and re-run this task.
+CI_RECIPIENT=age1swtgrepsrwv37exj0klwf7rczjlg7kr59akputps9l0wvuya35tse0rqq8
+for var in BILETOMAT_USER BILETOMAT_PASS; do
+  mise set --age-encrypt --prompt --age-recipient "$CI_RECIPIENT" \
+    --age-ssh-recipient ~/.ssh/personal_github.pub "$var"
+done
+"""
 
 [tasks.install-browser]
 description = "Install the Playwright Chromium browser used by the Biletomat fetch"
