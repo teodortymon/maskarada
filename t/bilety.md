@@ -7,7 +7,7 @@ layout: t
   <div class="card my-2">
     <div class="card-header">Cena biletu</div>
     <div class="card-body">
-      - Bilet pojedynczy - 65 zł
+      - Bilet pojedynczy - 70 zł
       <br/>
       <i>Zarówno dziecko jak i dorosły musi posiadać bilet</i>
       <br/>
